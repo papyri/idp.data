@@ -1,0 +1,58 @@
+#!/usr/bin/perl
+# find particular features in texts
+
+use strict;
+my $pattern = $ARGV[0];
+shift;
+
+print "Occurrences of \"$pattern\"\n\n";
+
+$pattern = quotemeta($pattern);
+
+my ($series, $volume, $doc, $line, $docline);
+my $in_text = 0;
+my $found_lines = 0;
+my $found_files = 0;
+my $in_this_file = 0;
+while(<>)
+{
+    if (/DOCTYPE/)
+    {
+	$series = '';
+	$in_text = 0;
+	$line = 0;
+	$docline = 0;
+	$in_this_file = 0;
+    }
+    if (/<title>/ and $series eq '')
+    {
+	($series) = $_ =~ /<title>(.*)<\/title>/;
+    }
+
+    $volume = $1 if (/<div0 type=\"?volume\"? n=\"?(\d+)\"?>/i);
+    if (/<div1 type=\"?document\"? n=\"(\d+)\"?>/i)
+    {
+	$doc = $1;
+	$docline = 0;
+    }
+
+    $in_text = 1 if (/<\/teiheader>/i);
+
+    ++ $line;
+    ++ $docline;
+
+    next unless ($in_text);
+
+    if (/$pattern/)
+    {
+	++ $found_lines;
+	if ($in_this_file == 0)
+	{
+	    ++ $found_files;
+	    $in_this_file = 1;
+	}
+	print "$series $volume.$doc $docline (file line $line)\n";
+    }
+}
+
+print "\n\nSummary:  $found_lines occurrences in $found_files files.\n";
