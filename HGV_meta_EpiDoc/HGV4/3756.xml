@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3756">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3756">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,8 +29,8 @@
                      <p>
                         <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </p>
-                     <origDate type="textDate" notBefore="-0064-09-28">nach 28. Sept. 64 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate type="textDate" notBefore="-0097-10-06">nach 6. Okt. 97 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" notBefore="-0064-09-28">nach 28. Sept. 64 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" notBefore="-0097-10-06">nach 6. Okt. 97 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,8 +62,8 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="1997-02-26">Record created</change>
-         <change who="HGV" when="2009-07-04">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2010-09-22">Record last modified</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,7 +73,45 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 1: 30. Juli 64 v. Chr.; Z. 33: 12. Aug. 64 v. Chr.; Z. 60: 18. Aug. 64 v. Chr.; Z. 132: 28. Sept. 64 v. Chr.; Z. 150: 17. Mai 64 v. Chr.</p>
+            <note type="original" subtype="X">Z. 1: 30. Juli 64 v. Chr.; Z. 33: 12. Aug. 64 v. Chr.; Z. 60: 18. Aug. 64 v. Chr.; Z. 132: 28. Sept. 64 v. Chr.; Z. 150: 17. Mai 64 v. Chr.</note>
+            <note type="original" subtype="Y">Z. 1: 7. Aug. 97 v. Chr.; Z. 33: 20. Aug. 97 v. Chr.; Z. 60: 26. Aug. 97 v. Chr.; Z. 132: 6. Okt. 97 v. Chr.; Z. 150: 25. Mai 97 v. Chr.</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 1</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 33</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 60</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 132</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 150</ref>: <date type="mentioned"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 1</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 33</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 60</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 132</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 150</ref>: <date type="mentioned"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -106,9 +144,9 @@
             <bibl type="publication" subtype="other">C.Ptol.Sklav. II 127</bibl>
          </div>
          <div type="bibliography" subtype="translations">
-            <head>Übersetzungen</head>
-            <listBibl>
-               <head lang="de">Deutsch:</head>
+            <head xml:lang="de">Übersetzungen</head>
+            <listBibl xml:lang="de">
+               <head xml:lang="de">Deutsch:</head>
                <bibl type="translations">Mees, Organisationsformen römischer Töpfer-Manufakturen (2002), S. 377 (Z. 1-2)</bibl>
             </listBibl>
          </div>

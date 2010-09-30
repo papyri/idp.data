@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20609">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20609">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,8 +29,8 @@
                      <p>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </p>
-                     <origDate type="textDate" notBefore="0216-12-16">nach 16. Dez. 216 (Jahr unsicher)</origDate>
-                     <origDate type="textDate" notBefore="0184-12-16">nach 16. Dez. 184 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" notBefore="0216-12-16">nach 16. Dez. 216 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" notBefore="0184-12-16">nach 16. Dez. 184 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,8 +61,8 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="1996-07-22">Record created</change>
-         <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2010-09-22">Record last modified</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,7 +72,37 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 19: 215 - 216; Z. 10 - 30: Abschrift eines Dokuments vom 16. Dez. 216; Z. 31 - 41: Abschrift eines Dokuments von ca. 16. Dez. 216</p>
+            <note type="original" subtype="X">Z. 19: 215 - 216; Z. 10 - 30: Abschrift eines Dokuments vom 16. Dez. 216; Z. 31 - 41: Abschrift eines Dokuments von ca. 16. Dez. 216</note>
+            <note type="original" subtype="Y">Z. 19: 183 - 184; Z. 10 - 30: Abschrift eines Dokuments vom 16. Dez. 184; Z. 31 - 41: Abschrift eines Dokuments von ca. 16. Dez. 184</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 19</ref>: <date type="mentioned" from="0215" to="0216"/>
+               </item>
+               <item>
+                  <ref>Z. 10 - 30</ref>: <date type="mentioned" when="0216-12-16"/>
+               </item>
+               <item>
+                  <ref>Z. 31 - 41</ref>: <date type="mentioned" when="0216-12-16">
+                     <certainty locus="value" degree="0.8"/>
+                  </date>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 19</ref>: <date type="mentioned" from="0183" to="0184"/>
+               </item>
+               <item>
+                  <ref>Z. 10 - 30</ref>: <date type="mentioned" when="0184-12-16"/>
+               </item>
+               <item>
+                  <ref>Z. 31 - 41</ref>: <date type="mentioned" when="0184-12-16">
+                     <certainty locus="value" degree="0.8"/>
+                  </date>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -93,9 +123,9 @@
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="translations">
-            <head>Übersetzungen</head>
-            <listBibl>
-               <head lang="de">Englisch:</head>
+            <head xml:lang="de">Übersetzungen</head>
+            <listBibl xml:lang="en">
+               <head xml:lang="de">Englisch:</head>
                <bibl type="translations">Johnson, Roman Egypt (1936), S. 585, Nr. 337 (Z. 31-41)</bibl>
             </listBibl>
          </div>

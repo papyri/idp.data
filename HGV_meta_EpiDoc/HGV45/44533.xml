@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv44533">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv44533">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,8 +31,8 @@
                      <p>
                         <placeName type="ancientFindspot" cert="low">Gurob (Arsinoites)</placeName>
                      </p>
-                     <origDate type="textDate" notBefore="-0235" notAfter="-0234">235 - 234 v.Chr. (?)</origDate>
-                     <origDate type="textDate" notBefore="-0210" notAfter="-0209">210 - 209 v.Chr. (?)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" notBefore="-0235" notAfter="-0234">235 - 234 v.Chr. (?)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" notBefore="-0210" notAfter="-0209">210 - 209 v.Chr. (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -65,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="2006-07-13">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,7 +75,51 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 17.21: 235 - 234 v.Chr.; Z. 18.22: 236 - 235 v.Chr.; Z. 22: 237 - 236 v.Chr.; Z. 23: 238 - 237 v.Chr.; Z.23: 240 - 239 v.Chr.; Z. 24: 242 - 241 v.Chr.</p>
+            <note type="original" subtype="X">Z. 17.21: 235 - 234 v.Chr.; Z. 18.22: 236 - 235 v.Chr.; Z. 22: 237 - 236 v.Chr.; Z. 23: 238 - 237 v.Chr.; Z.23: 240 - 239 v.Chr.; Z. 24: 242 - 241 v.Chr.</note>
+            <note type="original" subtype="Y">Z. 17.21: 210 - 209 v.Chr.; Z. 18.22: 211 - 210 v.Chr.; Z. 22: 212 - 211 v.Chr.; Z. 23: 213 - 212 v.Chr.; Z.23: 215 - 214 v.Chr.; Z. 24: 217 - 216 v.Chr.</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 17.21</ref>: <date type="mentioned" from="-0235" to="-0234"/>
+               </item>
+               <item>
+                  <ref>Z. 18.22</ref>: <date type="mentioned" from="-0236" to="-0235"/>
+               </item>
+               <item>
+                  <ref>Z. 22</ref>: <date type="mentioned" from="-0237" to="-0236"/>
+               </item>
+               <item>
+                  <ref>Z. 23</ref>: <date type="mentioned" from="-0238" to="-0237"/>
+               </item>
+               <item>
+                  <ref>Z.23</ref>: <date type="mentioned" from="-0240" to="-0239"/>
+               </item>
+               <item>
+                  <ref>Z. 24</ref>: <date type="mentioned" from="-0242" to="-0241"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 17.21</ref>: <date type="mentioned" from="-0210" to="-0209"/>
+               </item>
+               <item>
+                  <ref>Z. 18.22</ref>: <date type="mentioned" from="-0211" to="-0210"/>
+               </item>
+               <item>
+                  <ref>Z. 22</ref>: <date type="mentioned" from="-0212" to="-0211"/>
+               </item>
+               <item>
+                  <ref>Z. 23</ref>: <date type="mentioned" from="-0213" to="-0212"/>
+               </item>
+               <item>
+                  <ref>Z.23</ref>: <date type="mentioned" from="-0215" to="-0214"/>
+               </item>
+               <item>
+                  <ref>Z. 24</ref>: <date type="mentioned" from="-0217" to="-0216"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="edition">
             <p>Kein Text: not yet entered</p>
