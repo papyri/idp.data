@@ -1,1 +1,0 @@
-Exports from FP7 are made using FMPXMLResult (because FMPDSOResult grammar is deprecated), therefore transformations will have to be performed based on (1) positioning of <DATA> elements, and (2) field-names in the header row at the top of the output table.
