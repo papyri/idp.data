@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23785">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23785">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,9 +29,9 @@
                      <p>
                         <placeName type="ancientFindspot" cert="low">Hermopolis</placeName>
                      </p>
-                     <origDate type="textDate" notBefore="0492-01-23">nach 23. Jan. 492 (Jahr unsicher)</origDate>
-                     <origDate type="textDate" notBefore="0507-01-22">nach 22. Jan. 507 (Jahr unsicher)</origDate>
-                     <origDate type="textDate" notBefore="0522-01-22">nach 22. Jan. 522 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" notBefore="0492-01-23">nach 23. Jan. 492 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" notBefore="0507-01-22">nach 22. Jan. 507 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeZ" notBefore="0522-01-22">nach 22. Jan. 522 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,8 +62,8 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="1998-05-26">Record created</change>
-         <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2010-09-22">Record last modified</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,7 +73,37 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 33: 491 - 492; Z. 34: 490 - 491</p>
+            <note type="original" subtype="X">Z. 33: 491 - 492; Z. 34: 490 - 491</note>
+            <note type="original" subtype="Y">Z. 33: 506 - 507; Z. 34: 505 - 506</note>
+            <note type="original" subtype="Z">Z. 33: 521 - 522; Z. 34: 520 - 521</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 33</ref>: <date type="mentioned" from="0491" to="0492"/>
+               </item>
+               <item>
+                  <ref>Z. 34</ref>: <date type="mentioned" from="0490" to="0491"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 33</ref>: <date type="mentioned" from="0506" to="0507"/>
+               </item>
+               <item>
+                  <ref>Z. 34</ref>: <date type="mentioned" from="0505" to="0506"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 33</ref>: <date type="mentioned" from="0521" to="0522"/>
+               </item>
+               <item>
+                  <ref>Z. 34</ref>: <date type="mentioned" from="0520" to="0521"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -98,6 +128,14 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <bibl type="publication" subtype="other">CPR VII 26</bibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://aleph.onb.ac.at/F/?func=find-c&amp;ccl_term=WID%3DRZ00003440&amp;local_base=ONB08"/>
+                  <head>Abbildung im Internet</head>
+               </figure>
+            </p>
          </div>
       </body>
    </text>
