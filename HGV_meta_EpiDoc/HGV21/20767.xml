@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20767">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20767">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,8 +29,10 @@
                      <p>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </p>
-                     <origDate type="textDate" when="0215-09-28" notBefore="0215" notAfter="0215">28. Sept. 215 (Jahr unsicher)</origDate>
-                     <origDate type="textDate" when="0183-09-28" notBefore="0183" notAfter="0183">28. Sept. 183 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" when="0215-09-28" notBefore="0215"
+                               notAfter="0215">28. Sept. 215 (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" when="0183-09-28" notBefore="0183"
+                               notAfter="0183">28. Sept. 183 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,8 +63,8 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="1996-08-12">Record created</change>
-         <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2010-07-26">Record last modified</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,7 +74,27 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Kol. I, Z. 1 - Kol. II, Z. 8: 30. Aug. - 24. Sept. 215; Kol. II, Z. 12 - 20: 11. - 26. Aug. 215</p>
+            <note type="original" subtype="X">Kol. I, Z. 1 - Kol. II, Z. 8: 30. Aug. - 24. Sept. 215; Kol. II, Z. 12 - 20: 11. - 26. Aug. 215</note>
+            <note type="original" subtype="Y">Kol. I, Z. 1 - Kol. II, Z. 8: 30. Aug. - 24. Sept. 183; Kol. II, Z. 12 - 20: 11. - 26. Aug. 183</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Kol. I, Z. 1 - Kol. II, Z. 8</ref>: <date type="mentioned" from="0215-08-30" to="0215-09-24"/>
+               </item>
+               <item>
+                  <ref>Kol. II, Z. 12 - 20</ref>: <date type="mentioned" from="0215-08-11" to="0215-08-26"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Kol. I, Z. 1 - Kol. II, Z. 8</ref>: <date type="mentioned" from="0183-08-30" to="0183-09-24"/>
+               </item>
+               <item>
+                  <ref>Kol. II, Z. 12 - 20</ref>: <date type="mentioned" from="0183-08-11" to="0183-08-26"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -92,6 +114,14 @@
                <bibl type="publication" subtype="other">Sel. Pap. I 188</bibl>
                <bibl type="publication" subtype="other">C.Pap. Hengstl 81 (Kol. I und II, Z. 1-10)</bibl>
             </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://sceti.library.upenn.edu/pages/index.cfm?so_id=4069"/>
+                  <head>Abbildung im Internet</head>
+               </figure>
+            </p>
          </div>
       </body>
    </text>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20096">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20096">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Abrechnung über Lieferungen an den yhsaurÒw</title>
+            <title>Abrechnung über Lieferungen an den θησαυρός</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">20096</idno>
@@ -29,8 +29,8 @@
                      <p>
                         <placeName type="ancientFindspot">Mendes</placeName>
                      </p>
-                     <origDate type="textDate" notBefore="0130" notAfter="0131">130 - 131 (?)</origDate>
-                     <origDate type="textDate" notBefore="0151" notAfter="0152">nach 151 - 152 (?)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" notBefore="0130" notAfter="0131">130 - 131 (?)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" notBefore="0151" notAfter="0152">nach 151 - 152 (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,8 +60,8 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="1995-11-29">Record created</change>
-         <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2010-09-22">Record last modified</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,7 +71,21 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 22: 129 - 130</p>
+            <note type="original" subtype="X">Z. 22: 129 - 130</note>
+            <note type="original" subtype="Y">Z. 22: 150 - 151</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 22</ref>: <date type="mentioned" from="0129" to="0130"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 22</ref>: <date type="mentioned" from="0150" to="0151"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>

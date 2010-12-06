@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3516">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3516">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,8 +29,10 @@
                      <p>
                         <placeName type="ancientFindspot">Memphis</placeName>
                      </p>
-                     <origDate type="textDate" when="-0175-01-03" notBefore="0175" notAfter="0175">3. Jan. 175 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate type="textDate" when="-0165-12-31" notBefore="0165" notAfter="0165">31. Dez. 165 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" when="-0175-01-03" notBefore="-0175"
+                               notAfter="-0175">3. Jan. 175 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" when="-0165-12-31" notBefore="-0165"
+                               notAfter="-0165">31. Dez. 165 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -63,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1993-09-26">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,7 +75,27 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 4 - 5: 11. Nov. 176 v. Chr.; Z. 16: 12. Nov. 176 v. Chr.</p>
+            <note type="original" subtype="X">Z. 4 - 5: 11. Nov. 176 v. Chr.; Z. 16: 12. Nov. 176 v. Chr.</note>
+            <note type="original" subtype="Y">Z. 4 - 5: 8. Nov. 165 v. Chr.; Z. 16: 9. Nov. 165 v. Chr.</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 4 - 5</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 16</ref>: <date type="mentioned"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 4 - 5</ref>: <date type="mentioned"/>
+               </item>
+               <item>
+                  <ref>Z. 16</ref>: <date type="mentioned"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -99,9 +121,9 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
-            <head>Übersetzungen</head>
-            <listBibl>
-               <head lang="de">Englisch:</head>
+            <head xml:lang="de">Übersetzungen</head>
+            <listBibl xml:lang="en">
+               <head xml:lang="de">Englisch:</head>
                <bibl type="translations">Lewis, Greeks in Ptolemaic Egypt (1986), S. 64 (Auszug)</bibl>
             </listBibl>
          </div>

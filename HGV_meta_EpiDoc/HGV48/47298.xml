@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv47298">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv47298">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -29,8 +29,10 @@
                      <p>
                         <placeName type="ancientFindspot">Herakleopolis</placeName>
                      </p>
-                     <origDate type="textDate" when="-0201-10-12" notBefore="0201" notAfter="0201">12. Okt. 201 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate type="textDate" when="-0177-10-06" notBefore="0177" notAfter="0177">6. Okt. 177 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeX" when="-0201-10-12" notBefore="-0201"
+                               notAfter="-0201">12. Okt. 201 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate type="textDate" xml:id="dateAlternativeY" when="-0177-10-06" notBefore="-0177"
+                               notAfter="-0177">6. Okt. 177 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,8 +62,8 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2001-05-21">Record created</change>
-         <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2010-09-22">Record last modified</change>
+         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,7 +73,57 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Frag. A v 4: 203-202 v.Chr. (Jahr unsicher); Frag. B v 1: 202-201 v.Chr. (Jahr unsicher); Frag. b v 2: 204-203 v.Chr. (Jahr unsicher)</p>
+            <note type="original" subtype="X">Frag. A v 4: 203-202 v.Chr. (Jahr unsicher); Frag. B v 1: 202-201 v.Chr. (Jahr unsicher); Frag. b v 2: 204-203 v.Chr. (Jahr unsicher)</note>
+            <note type="original" subtype="Y">Frag. A v 4: 179-178 v.Chr. (Jahr unsicher); Frag. B v 1: 178-177 v.Chr. (Jahr unsicher); Frag. b v 2: 180-179 v.Chr. (Jahr unsicher)</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Frag. A v 4</ref>: <date type="mentioned" from="-0203" to="-0202">
+                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty locus="value" degree="0.7"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Frag. B v 1</ref>: <date type="mentioned" from="-0202" to="-0201">
+                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty locus="value" degree="0.7"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Frag. b v 2</ref>: <date type="mentioned" from="-0204" to="-0203">
+                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty locus="value" degree="0.7"/>
+                  </date>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Frag. A v 4</ref>: <date type="mentioned" from="-0179" to="-0178">
+                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty locus="value" degree="0.7"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Frag. B v 1</ref>: <date type="mentioned" from="-0178" to="-0177">
+                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty locus="value" degree="0.7"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Frag. b v 2</ref>: <date type="mentioned" from="-0180" to="-0179">
+                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty locus="value" degree="0.7"/>
+                  </date>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
