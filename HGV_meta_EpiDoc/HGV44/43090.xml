@@ -29,9 +29,9 @@
                      <origPlace>
                         <geogName type="nome">Herakleopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0161" notAfter="-0160">
+                     <origDate xml:id="dateAlternativeX" notBefore="-0161" notAfter="-0160" cert="low">
                         <offset type="after">nach</offset> 161 - 160 v.Chr. (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0185" notAfter="-0184">
+                     <origDate xml:id="dateAlternativeY" notBefore="-0185" notAfter="-0184" cert="low">
                         <offset type="after">nach</offset> 185 - 184 v.Chr. (?)</origDate>
                   </origin>
                </history>
@@ -67,7 +67,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-08-27">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,18 +79,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 7: 161 - 160 v. Chr.</note>
             <note type="original" subtype="Y">Z. 7: 185 - 184 v.Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" from="-0161" to="-0160"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" notBefore="-0185" notAfter="-0184">185 - 184 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" from="-0185" to="-0184"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" notBefore="-0161" notAfter="-0160">161 - 160 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

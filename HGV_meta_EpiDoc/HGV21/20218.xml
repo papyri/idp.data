@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0059-07-13">13. Juli 59 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0059-07-23">23. Juli 59 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0059-07-13">
+                        <certainty locus="value" match="../day-from-date(@when)"/>13. Juli 59 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0059-07-23">
+                        <certainty locus="value" match="../day-from-date(@when)"/>23. Juli 59 (Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -63,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-05-28">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +77,12 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 12 - 13: 26. Mai - 24. Juni 59</note>
             <note type="original" subtype="Y">Z. 12 - 13: 26. Mai - 24. Juni 59</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 12 - 13</ref>: <date type="mentioned" from="0059-05-26" to="0059-06-24"/>
+                  <ref>Z. 12-13</ref>: <date type="mentioned" notBefore="0059-05-26" notAfter="0059-06-24">26. Mai  - 24. Juni 59<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 12 - 13</ref>: <date type="mentioned" from="0059-05-26" to="0059-06-24"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

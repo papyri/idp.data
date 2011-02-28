@@ -29,9 +29,13 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Tebtynis</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0105-09-28" notAfter="0105-10-07">28. Sept. - 7. Okt. 105 (Tage unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0105-10-17">17. Okt. 105 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0105-10-27">27. Okt. 105 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="0105-09-28" notAfter="0105-10-07">
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notAfter)"/>28. Sept. - 7. Okt. 105 (Tage unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0105-10-17">
+                        <certainty locus="value" match="../day-from-date(@when)"/>17. Okt. 105 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ" when="0105-10-27">
+                        <certainty locus="value" match="../day-from-date(@when)"/>27. Okt. 105 (Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +66,7 @@
       <revisionDesc>
          <change who="HGV" when="1993-03-17">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,24 +79,12 @@
             <note type="original" subtype="X">Z. 4: 104 - 105</note>
             <note type="original" subtype="Y">Z. 4: 104 - 105</note>
             <note type="original" subtype="Z">Z. 4: 104 - 105</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="0104" to="0105"/>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="0104" notAfter="0105">104 - 105<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="0104" to="0105"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="0104" to="0105"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

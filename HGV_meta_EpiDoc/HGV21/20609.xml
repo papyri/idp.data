@@ -30,8 +30,10 @@
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0216-12-16">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 16. Dez. 216 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="0184-12-16">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 16. Dez. 184 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -64,7 +66,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-07-22">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,34 +78,32 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 19: 215 - 216; Z. 10 - 30: Abschrift eines Dokuments vom 16. Dez. 216; Z. 31 - 41: Abschrift eines Dokuments von ca. 16. Dez. 216</note>
             <note type="original" subtype="Y">Z. 19: 183 - 184; Z. 10 - 30: Abschrift eines Dokuments vom 16. Dez. 184; Z. 31 - 41: Abschrift eines Dokuments von ca. 16. Dez. 184</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 19</ref>: <date type="mentioned" from="0215" to="0216"/>
-               </item>
-               <item>
-                  <ref>Z. 10 - 30</ref>: <date type="mentioned" when="0216-12-16"/>
-               </item>
-               <item>
-                  <ref>Z. 31 - 41</ref>: <date type="mentioned" when="0216-12-16">
-                     <certainty locus="value" degree="0.8"/>
+                  <ref>Z. 10-30</ref>: <date type="mentioned" when="0184-12-16">16. Dez. 184<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 19</ref>: <date type="mentioned" from="0183" to="0184"/>
-               </item>
-               <item>
-                  <ref>Z. 10 - 30</ref>: <date type="mentioned" when="0184-12-16"/>
-               </item>
-               <item>
-                  <ref>Z. 31 - 41</ref>: <date type="mentioned" when="0184-12-16">
-                     <certainty locus="value" degree="0.8"/>
+                  <ref>Z. 10-30</ref>: <date type="mentioned" when="0216-12-16">16. Dez. 216<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 19</ref>: <date type="mentioned" notBefore="0183" notAfter="0184">183 - 184<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 19</ref>: <date type="mentioned" notBefore="0215" notAfter="0216">215 - 216<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 31-41</ref>: <date type="mentioned" when="0184-12-16">16. Dez. 184 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 31-41</ref>: <date type="mentioned" when="0216-12-16">16. Dez. 216 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

@@ -29,8 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Hermopolis</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0087">87 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0103">103 (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0087" cert="low">87 (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0103" cert="low">103 (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="2003-10-24">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,22 +78,24 @@
 Z. 198: 86-87 (?)</note>
             <note type="original" subtype="Y">Z. 161: 103-104 (?)
 Z. 198: 102-103 (?)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 161</ref>: <date type="mentioned" from="0087" to="0088">
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 161</ref>: <date type="mentioned" notBefore="0087" notAfter="0088">87 - 88 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 161</ref>: <date type="mentioned" from="0103" to="0104">
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 161</ref>: <date type="mentioned" notBefore="0103" notAfter="0104">103 - 104 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 198</ref>: <date type="mentioned" notBefore="0086" notAfter="0087">86 - 87 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 198</ref>: <date type="mentioned" notBefore="0102" notAfter="0103">102 - 103 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

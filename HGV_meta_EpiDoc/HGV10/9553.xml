@@ -29,8 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Philadelphia</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0165" notAfter="0166">165 - 166 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0248" notAfter="0249">248 - 249 (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="0165" notAfter="0166" cert="low">165 - 166 (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0248" notAfter="0249" cert="low">248 - 249 (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +62,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-04-26">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,30 +74,32 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1: 28. Sept. - 27. Okt. 165; Z. 5: 25. Febr. - 26. März 166; Z. 6: 28. Okt. - 26. Nov. 165</note>
             <note type="original" subtype="Y">Z. 1: 28. Sept. - 27. Okt. 248; Z. 5: 25. Febr. - 26. März 249; Z. 6: 28. Okt. - 26. Nov. 248</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" from="0165-09-28" to="0165-10-27"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" notBefore="0165-09-28" notAfter="0165-10-27">28. Sept.  - 27. Okt. 165<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 5</ref>: <date type="mentioned" from="0166-02-25" to="0166-03-26"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" notBefore="0248-09-28" notAfter="0248-10-27">28. Sept.  - 27. Okt. 248<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" from="0165-10-28" to="0165-11-26"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" from="0248-09-28" to="0248-10-27"/>
+                  <ref>Z. 5</ref>: <date type="mentioned" notBefore="0166-02-25" notAfter="0166-03-26">25. Febr.  - 26. März 166<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 5</ref>: <date type="mentioned" from="0249-02-25" to="0249-03-26"/>
+                  <ref>Z. 5</ref>: <date type="mentioned" notBefore="0249-02-25" notAfter="0249-03-26">25. Febr.  - 26. März 249<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" from="0248-10-28" to="0248-11-26"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" notBefore="0165-10-28" notAfter="0165-11-26">28. Okt.  - 26. Nov. 165<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 6</ref>: <date type="mentioned" notBefore="0248-10-28" notAfter="0248-11-26">28. Okt.  - 26. Nov. 248<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

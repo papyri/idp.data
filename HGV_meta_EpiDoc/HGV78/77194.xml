@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Theben</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0174-11-17">17. Nov. 174 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0206-11-17">17. Nov. 206 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0174-11-17">
+                        <certainty locus="value" match="../year-from-date(@when)"/>17. Nov. 174 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0206-11-17">
+                        <certainty locus="value" match="../year-from-date(@when)"/>17. Nov. 206 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1998-12-01">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,18 +76,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1: 11. Nov. 174</note>
             <note type="original" subtype="Y">Z. 1: 11. Nov. 206</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="0174-11-11"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="0174-11-11">11. Nov. 174 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="0206-11-11"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="0206-11-11">11. Nov. 206 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

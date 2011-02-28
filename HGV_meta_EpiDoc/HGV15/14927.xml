@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Euhemeria</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0206-09-10">10. Sept. 206 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0235-09-10">10. Sept. 235 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0206-09-10">
+                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 206 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0235-09-10">
+                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 235 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1998-03-05">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,16 +76,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Wiederholte Einzeldaten im Zeitraum 26. Mai 205 - 10. Aug. 206</note>
             <note type="original" subtype="Y">Wiederholte Einzeldaten im Zeitraum 26. Mai 234 - 10. Aug. 235</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref/>: </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
+                  <ref/>: <date type="mentioned" notBefore="0205-05-26" notAfter="0206-08-10">26. Mai 205 - 10. Aug. 206<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
                <item>
-                  <ref/>: </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <ref/>: <date type="mentioned" notBefore="0234-05-26" notAfter="0235-08-10">26. Mai 234 - 10. Aug. 235<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

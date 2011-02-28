@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Elephantine oder Syene</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0037-10-07">7. Okt. 37 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0066-10-15">15. Okt. 66 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0037-10-07">
+                        <certainty locus="value" match="../year-from-date(@when)"/>7. Okt. 37 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0066-10-15">
+                        <certainty locus="value" match="../year-from-date(@when)"/>15. Okt. 66 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-05-11">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,18 +76,12 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 3: 38 - 37 v. Chr. (vgl. BL IX, S. 233)</note>
             <note type="original" subtype="Y">Z. 3: 38 - 37 v. Chr. (vgl. BL IX, S. 233)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="-0038" to="-0037"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" notBefore="-0038" notAfter="-0037">38 - 37 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="-0038" to="-0037"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

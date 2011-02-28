@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Tholthis</placeName> (<geogName type="nome">Oxyrhynchites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0220-12-16">16. Dez. 220 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0224-12-16">16. Dez. 224 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0220-12-16">
+                        <certainty locus="value" match="../year-from-date(@when)"/>16. Dez. 220 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0224-12-16">
+                        <certainty locus="value" match="../year-from-date(@when)"/>16. Dez. 224 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -66,7 +68,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-08-17">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,18 +80,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Kol. II, Z. 14: 23. Nov. 220</note>
             <note type="original" subtype="Y">Kol. II, Z. 14: 23. Nov. 224</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Kol. II, Z. 14</ref>: <date type="mentioned" when="0220-11-23"/>
+                  <ref>Kol. II, Z. 14</ref>: <date type="mentioned" when="0220-11-23">23. Nov. 220<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Kol. II, Z. 14</ref>: <date type="mentioned" when="0224-11-23"/>
+                  <ref>Kol. II, Z. 14</ref>: <date type="mentioned" when="0224-11-23">23. Nov. 224<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

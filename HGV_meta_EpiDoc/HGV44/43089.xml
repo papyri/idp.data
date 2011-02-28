@@ -29,8 +29,10 @@
                      <origPlace>
                         <geogName type="nome">Herakleopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0197-01-12">12. Jan. 197 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0173-01-06">6. Jan. 173 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0197-01-12">
+                        <certainty locus="value" match="../year-from-date(@when)"/>12. Jan. 197 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0173-01-06">
+                        <certainty locus="value" match="../year-from-date(@when)"/>6. Jan. 173 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -63,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-08-27">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +77,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Empfangsvermerk: 27. Jan. 197 v. Chr.</note>
             <note type="original" subtype="Y">Empfangsvermerk: 21. Jan. 173 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Empfangsvermerk</ref>: <date type="mentioned" when="-0197-01-27"/>
+                  <ref/>: <date type="mentioned" when="-0197-01-27">27. Jan. 197 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Empfangsvermerk</ref>: <date type="mentioned" when="-0173-01-21"/>
+                  <ref/>: <date type="mentioned" when="-0173-01-21">21. Jan. 173 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

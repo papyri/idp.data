@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Aphrodites Kome</placeName> (<geogName type="nome">Antaiopolites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0733-02-25" notAfter="0733-03-26">25. Febr. - 26. März 733 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0734-02-25" notAfter="0734-03-26">25. Febr. - 26. März 734 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="0733-02-25" notAfter="0733-03-26">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>25. Febr. - 26. März 733 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0734-02-25" notAfter="0734-03-26">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>25. Febr. - 26. März 734 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-07-12">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,7 +76,17 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 4 - 6, 22: 731 - 732</note>
             <note type="original" subtype="Y">Z. 4 - 6, 22: 732 - 733</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 4-6.22</ref>: <date type="mentioned" notBefore="0731" notAfter="0732">731 - 732<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 4-6.22</ref>: <date type="mentioned" notBefore="0732" notAfter="0733">732 - 733<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>

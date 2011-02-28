@@ -28,8 +28,10 @@
                   <origin>
                      <origPlace>unbekannt</origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0200-05-17">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 17. Mai 200 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="0229-05-17">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 17. Mai 229 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -64,7 +66,7 @@
       <revisionDesc>
          <change who="HGV" when="1992-03-05">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,36 +78,48 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 8: 26. Mai - 24. Juni 196; Z. 9: 27. Dez. 198 - 25. Jan. 199; Z. 12: 25. Juni - 24. Juli 196 und 27. Dez. 198 - 25. Jan. 199; Z. 22: 17. Mai 200</note>
             <note type="original" subtype="Y">Z. 8: 26. Mai - 24. Juni 225; Z. 9: 28. Dez. 227 - 26. Jan. 228; Z. 12: 25. Juni - 24. Juli 225 und 28. Dez. 227 - 26. Jan. 228; Z. 22: 17. Mai 229</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 8</ref>: <date type="mentioned" from="0196-05-26" to="0196-06-24"/>
+                  <ref>a Z. 12</ref>: <date type="mentioned" notBefore="0196-06-25" notAfter="0196-07-24">25. Juni  - 24. Juli 196 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 9</ref>: <date type="mentioned" from="0198-12-27" to="0199-01-25"/>
+                  <ref>a Z. 12</ref>: <date type="mentioned" notBefore="0198-12-27" notAfter="0199-01-25">27. Dez. 198 - 25. Jan. 199 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" from="0198-12-27" to="0199-01-25"/>
+                  <ref>a Z. 12</ref>: <date type="mentioned" notBefore="0225-06-25" notAfter="0225-07-24">25. Juni  - 24. Juli 225 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 22</ref>: <date type="mentioned" when="0200-05-17"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 8</ref>: <date type="mentioned" from="0225-05-26" to="0225-06-24"/>
+                  <ref>a Z. 12</ref>: <date type="mentioned" notBefore="0227-12-28" notAfter="0228-01-26">28. Dez. 227 - 26. Jan. 228 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 9</ref>: <date type="mentioned" from="0227-12-28" to="0228-01-26"/>
+                  <ref>a Z. 22</ref>: <date type="mentioned" when="0200-05-17">17. Mai 200 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" from="0227-12-28" to="0228-01-26"/>
+                  <ref>a Z. 22</ref>: <date type="mentioned" when="0229-05-17">17. Mai 229 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 22</ref>: <date type="mentioned" when="0229-05-17"/>
+                  <ref>a Z. 8</ref>: <date type="mentioned" notBefore="0196-05-26" notAfter="0196-06-24">26. Mai  - 24. Juni 196 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>a Z. 8</ref>: <date type="mentioned" notBefore="0225-05-26" notAfter="0225-06-24">26. Mai  - 24. Juni 225 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>a Z. 9</ref>: <date type="mentioned" notBefore="0198-12-27" notAfter="0199-01-25">27. Dez. 198 - 25. Jan. 199 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>a Z. 9</ref>: <date type="mentioned" notBefore="0227-12-28" notAfter="0228-01-26">28. Dez. 227 - 26. Jan. 228 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

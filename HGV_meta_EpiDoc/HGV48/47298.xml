@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Herakleopolis</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0201-10-12">12. Okt. 201 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0177-10-06">6. Okt. 177 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0201-10-12">
+                        <certainty locus="value" match="../year-from-date(@when)"/>12. Okt. 201 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0177-10-06">
+                        <certainty locus="value" match="../year-from-date(@when)"/>6. Okt. 177 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="2001-05-21">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,54 +75,32 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Frag. A v 4: 203-202 v.Chr. (Jahr unsicher); Frag. B v 1: 202-201 v.Chr. (Jahr unsicher); Frag. b v 2: 204-203 v.Chr. (Jahr unsicher)</note>
             <note type="original" subtype="Y">Frag. A v 4: 179-178 v.Chr. (Jahr unsicher); Frag. B v 1: 178-177 v.Chr. (Jahr unsicher); Frag. b v 2: 180-179 v.Chr. (Jahr unsicher)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Frag. A v 4</ref>: <date type="mentioned" from="-0203" to="-0202">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Frag. A v 4</ref>: <date type="mentioned" notBefore="-0203" notAfter="-0202">203 - 202 v.Chr. (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Frag. B v 1</ref>: <date type="mentioned" from="-0202" to="-0201">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Frag. A v 4</ref>: <date type="mentioned" notBefore="-0179" notAfter="-0178">179 - 178 v.Chr. (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Frag. b v 2</ref>: <date type="mentioned" from="-0204" to="-0203">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Frag. A v 4</ref>: <date type="mentioned" from="-0179" to="-0178">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Frag. B v 1</ref>: <date type="mentioned" notBefore="-0202" notAfter="-0201">202 - 201 v.Chr. (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Frag. B v 1</ref>: <date type="mentioned" from="-0178" to="-0177">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Frag. B v 1</ref>: <date type="mentioned" notBefore="-0178" notAfter="-0177">178 - 177 v.Chr. (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Frag. b v 2</ref>: <date type="mentioned" from="-0180" to="-0179">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Frag. B v 2</ref>: <date type="mentioned" notBefore="-0204" notAfter="-0203">204 - 203 v.Chr. (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Frag. B v 2</ref>: <date type="mentioned" notBefore="-0180" notAfter="-0179">180 - 179 v.Chr. (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

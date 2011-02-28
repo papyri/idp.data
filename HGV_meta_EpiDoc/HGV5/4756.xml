@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Philadelphia</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0206-12-13" notAfter="-0205-01-11">13. Dez. 206 - 11. Jan. 205 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0189-12-08" notAfter="-0188-01-06">8. Dez. 189 - 6. Jan. 188 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0206-12-13" notAfter="-0205-01-11">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>13. Dez. 206 - 11. Jan. 205 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0189-12-08" notAfter="-0188-01-06">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>8. Dez. 189 - 6. Jan. 188 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +66,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-04-21">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,36 +78,48 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1 - 3: 21. Okt. 206 v. Chr.; Z. 6: 11. Nov. 206 v. Chr.; Z. 7: 30. Nov. 206 v. Chr.; Z. 17: 208 - 207 und 207 - 206 v. Chr.</note>
             <note type="original" subtype="Y">Z. 1 - 3: 16. Okt. 189 v. Chr.; Z. 6: 6. Nov. 189 v. Chr.; Z. 7: 25. Nov. 189 v. Chr.; Z. 17: 191 - 190 und 190 - 189 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1 - 3</ref>: <date type="mentioned" when="-0206-10-21"/>
+                  <ref>Z. 1-3</ref>: <date type="mentioned" when="-0206-10-21">21. Okt. 206 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="-0206-11-11"/>
+                  <ref>Z. 1-3</ref>: <date type="mentioned" when="-0189-10-16">16. Okt. 189 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="-0206-11-30"/>
+                  <ref>Z. 17</ref>: <date type="mentioned" notBefore="-0208" notAfter="-0207">208 - 207 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 17</ref>: <date type="mentioned" from="-0207" to="-0206"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1 - 3</ref>: <date type="mentioned" when="-0189-10-16"/>
+                  <ref>Z. 17</ref>: <date type="mentioned" notBefore="-0207" notAfter="-0206">207 - 206 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="-0189-11-06"/>
+                  <ref>Z. 17</ref>: <date type="mentioned" notBefore="-0191" notAfter="-0190">191 - 190 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="-0189-11-25"/>
+                  <ref>Z. 17</ref>: <date type="mentioned" notBefore="-0190" notAfter="-0189">190 - 189 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 17</ref>: <date type="mentioned" from="-0190" to="-0189"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" when="-0206-11-11">11. Nov. 206 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 6</ref>: <date type="mentioned" when="-0189-11-06">6. Nov. 189 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="-0206-11-30">30. Nov. 206 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="-0189-11-25">25. Nov. 189 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

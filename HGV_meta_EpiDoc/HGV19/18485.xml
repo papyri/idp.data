@@ -29,9 +29,12 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0370-12-10">10. Dez. 370 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0385-12-10">10. Dez. 385 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0400-12-10">10. Dez. 400 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0370-12-10">
+                        <certainty locus="value" match="../year-from-date(@when)"/>10. Dez. 370 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0385-12-10">
+                        <certainty locus="value" match="../year-from-date(@when)"/>10. Dez. 385 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ" when="0400-12-10">
+                        <certainty locus="value" match="../year-from-date(@when)"/>10. Dez. 400 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-11-07">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,24 +78,20 @@
             <note type="original" subtype="X">Z. 8-9: 369-370</note>
             <note type="original" subtype="Y">Z. 8-9: 384-385</note>
             <note type="original" subtype="Z">Z. 8-9: 399-400</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 8-9</ref>: <date type="mentioned" from="0369" to="0370"/>
+                  <ref>Z. 8 - 9</ref>: <date type="mentioned" notBefore="0369" notAfter="0370">369 - 370<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 8-9</ref>: <date type="mentioned" from="0384" to="0385"/>
+                  <ref>Z. 8 - 9</ref>: <date type="mentioned" notBefore="0384" notAfter="0385">384 - 385<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 8-9</ref>: <date type="mentioned" from="0399" to="0400"/>
+                  <ref>Z. 8 - 9</ref>: <date type="mentioned" notBefore="0399" notAfter="0400">399 - 400<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

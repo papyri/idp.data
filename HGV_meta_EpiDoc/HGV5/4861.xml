@@ -30,8 +30,10 @@
                         <geogName type="nome">Herakleopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="-0050-07-21">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 21. Juli 50 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="-0057-07-22">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 22. Juli 57 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -67,7 +69,7 @@
       <revisionDesc>
          <change who="HGV" when="1992-12-11">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,18 +81,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 3: 21. Juli 50 v. Chr.</note>
             <note type="original" subtype="Y">Z. 3: 22. Juli 56 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" when="-0050-07-21"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" when="-0056-07-22">22. Juli 56 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" when="-0056-07-22"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" when="-0050-07-21">21. Juli 50 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

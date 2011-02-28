@@ -30,8 +30,10 @@
                         <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="-0231-11-07">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 7. Nov. 231 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="-0206-11-01">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 1. Nov. 206 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -65,7 +67,7 @@
       <revisionDesc>
          <change who="HGV" when="1998-02-06">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,28 +79,32 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Kol. I, Z. 1: 7. Nov. 231 v. Chr.; Kol. III, Z. 2: 5. Nov. 231 v. Chr., Kol. III, Z. 3: 6. Nov. 231 v. Chr.</note>
             <note type="original" subtype="Y">Kol. I, Z. 1: 1. Nov. 206 v. Chr.; Kol. III, Z. 2: 30. Okt. 206 v. Chr., Kol. III, Z. 3: 31. Okt. 231 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Kol. I, Z. 1</ref>: <date type="mentioned" when="-0231-11-07"/>
+                  <ref>Kol. I, Z. 1</ref>: <date type="mentioned" when="-0231-11-07">7. Nov. 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Kol. III, Z. 2</ref>: <date type="mentioned" when="-0231-11-05"/>
-                  <date type="mentioned"/>
-                  <date type="mentioned" when="-0231-11-06"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Kol. I, Z. 1</ref>: <date type="mentioned" when="-0206-11-01"/>
+                  <ref>Kol. I, Z. 1</ref>: <date type="mentioned" when="-0206-11-01">1. Nov. 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Kol. III, Z. 2</ref>: <date type="mentioned" when="-0206-10-30"/>
-                  <date type="mentioned"/>
-                  <date type="mentioned" when="-0231-10-31"/>
+                  <ref>Kol. III, Z. 2</ref>: <date type="mentioned" when="-0231-11-05">5. Nov. 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Kol. III, Z. 2</ref>: <date type="mentioned" when="-0206-10-30">30. Okt. 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Kol. III, Z. 3</ref>: <date type="mentioned" when="-0231-10-31">31. Okt. 231 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Kol. III, Z. 3</ref>: <date type="mentioned" when="-0231-11-06">6. Nov. 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

@@ -27,8 +27,10 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0207-01-16">16. Jan. 207 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0268-01-17">17. Jan. 268 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0207-01-16">
+                        <certainty locus="value" match="../year-from-date(@when)"/>16. Jan. 207 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0268-01-17">
+                        <certainty locus="value" match="../year-from-date(@when)"/>17. Jan. 268 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -65,7 +67,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,18 +79,12 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1 - 30: Abschrift eines Dokuments von 200 - 203</note>
             <note type="original" subtype="Y">Z. 1 - 30: Abschrift eines Dokuments von 200 - 203</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1 - 30</ref>: <date type="mentioned" from="0200" to="0203"/>
+                  <ref>Z. 1-30</ref>: <date type="mentioned" notBefore="0200" notAfter="0203">200 - 203<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1 - 30</ref>: <date type="mentioned" from="0200" to="0203"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
