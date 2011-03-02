@@ -26,10 +26,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <p>
+                     <origPlace>
                         <placeName type="ancientFindspot">Bubastos</placeName>
-                     </p>
-                     <origDate type="textDate" notBefore="0224">nach 224</origDate>
+                     </origPlace>
+                     <origDate notBefore="0224">
+                        <offset type="after">nach</offset> 224</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -67,7 +68,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-10-24">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -109,10 +110,10 @@
                </item>
                <item>
                   <ref>Kol. XVII, Z. 1 - 11</ref>: <date type="mentioned" from="0223-08-30" to="0223-09-28">
-                     <certainty target="./../substring(from, 9, 2)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(from, 6, 2)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(to, 9, 2)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(to, 6, 2)" locus="value" degree="0.7"/>
+                     <certainty target="./../day-from-date(@from)" locus="value"/>
+                     <certainty target="./../month-from-date(@from)" locus="value"/>
+                     <certainty target="./../day-from-date(@to)" locus="value"/>
+                     <certainty target="./../month-from-date(@to)" locus="value"/>
                      <certainty locus="value" degree="0.7"/>
                   </date>
                </item>
