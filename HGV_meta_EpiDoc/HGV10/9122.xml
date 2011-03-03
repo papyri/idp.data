@@ -29,7 +29,8 @@
                      <origPlace>
                         <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate when="0248-08-24">24. Aug. 248 (Jahr unsicher)</origDate>
+                     <origDate when="0248-08-24">
+                        <certainty locus="value" match="../year-from-date(@when)"/>24. Aug. 248 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +61,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-02-07">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,22 +72,22 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Kol. II, Z. 2: 26. Apr. - 25. Mai 247; Kol. II, Z. 11, 21: 25. Juni - 24. Juli 248; Kol. II, Z. 15: 26. Mai - 24. Juni 248; Kol. II, Z. 23: 4. Aug. 248; Kol. III, Z. 11: 246 - 247</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Kol. II, Z. 2</ref>: <date type="mentioned" from="0247-04-26" to="0247-05-25"/>
+                  <ref>Kol. II, Z. 11.21</ref>: <date type="mentioned" notBefore="0248-06-25" notAfter="0248-07-24">25. Juni  - 24. Juli 248</date>
                </item>
                <item>
-                  <ref>Kol. II, Z. 11, 21</ref>: <date type="mentioned" from="0248-06-25" to="0248-07-24"/>
+                  <ref>Kol. II, Z. 15</ref>: <date type="mentioned" notBefore="0248-05-26" notAfter="0248-06-24">26. Mai  - 24. Juni 248</date>
                </item>
                <item>
-                  <ref>Kol. II, Z. 15</ref>: <date type="mentioned" from="0248-05-26" to="0248-06-24"/>
+                  <ref>Kol. II, Z. 2</ref>: <date type="mentioned" notBefore="0247-04-26" notAfter="0247-05-25">26. Apr.  - 25. Mai 247</date>
                </item>
                <item>
-                  <ref>Kol. II, Z. 23</ref>: <date type="mentioned" when="0248-08-04"/>
+                  <ref>Kol. II, Z. 23</ref>: <date type="mentioned" when="0248-08-04">4. Aug. 248</date>
                </item>
                <item>
-                  <ref>Kol. III, Z. 11</ref>: <date type="mentioned" from="0246" to="0247"/>
+                  <ref> Kol. III, Z. 11</ref>: <date type="mentioned" notBefore="0246" notAfter="0247">246 - 247</date>
                </item>
             </list>
          </div>
@@ -106,7 +107,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">Kol. II 26 - III 4: W.Chr. 170</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">Kol. II 26 - III 4: W.Chr. 170</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

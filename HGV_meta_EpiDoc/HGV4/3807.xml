@@ -29,7 +29,9 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Kerkeosiris</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate when="-0117-09"> Sept. 117 v.Chr. (Tage unsicher)</origDate>
+                     <origDate when="-0117-09">
+                        <certainty locus="value" match="../day-from-date(@when)"/>
+                        <certainty locus="value" match="../day-from-date(@notAfter)"/> Sept. 117 v.Chr. (Tage unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-06-22">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,16 +74,16 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 65, 67, 69, 73, 125, 126, 128, 129, 189: 132 - 131 v. Chr.; Z. 72, 118, 122, 140, 162, 184, 199, 202, 205, 207: 131 - 130 v. Chr.; Z. 138, 147: 130 - 129 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 65, 67, 69, 73, 125, 126, 128, 129, 189</ref>: <date type="mentioned" from="-0132" to="-0131"/>
+                  <ref>Z. 138.147</ref>: <date type="mentioned" notBefore="-0130" notAfter="-0129">130 - 129 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 72, 118, 122, 140, 162, 184, 199, 202, 205, 207</ref>: <date type="mentioned" from="-0131" to="-0130"/>
+                  <ref>Z. 65.67.69.73.125.126.128.129.189</ref>: <date type="mentioned" notBefore="-0132" notAfter="-0131">132 - 131 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 138, 147</ref>: <date type="mentioned" from="-0130" to="-0129"/>
+                  <ref>Z. 72.118.122.140.162.184.199.202.205.207</ref>: <date type="mentioned" notBefore="-0131" notAfter="-0130">131 - 130 v.Chr.</date>
                </item>
             </list>
          </div>
@@ -96,16 +98,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">283</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">283</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Tebt. I 173 R descr.</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Tebt. I 173 R descr.</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>

@@ -29,7 +29,8 @@
                      <origPlace>
                         <geogName type="nome">Herakleopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate when="-0086-08-01">1. Aug. 86 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate when="-0086-08-01">
+                        <certainty locus="value" match="../year-from-date(@when)"/>1. Aug. 86 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="2001-03-13">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,13 +76,10 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 3-21: Abschrift eines Dokuments vom vor 1. Aug. 86 v.Chr. (Jahr unsicher)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 3-21</ref>: <date type="mentioned" when="-0086-08-01">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
+                  <ref>Z. 3-21</ref>: <date type="mentioned" notAfter="-0086-08-01">vor 1. Aug. 86 v.Chr. (Jahr unsicher)</date>
                </item>
             </list>
          </div>

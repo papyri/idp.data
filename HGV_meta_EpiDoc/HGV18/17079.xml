@@ -63,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1992-03-03">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,22 +74,22 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 1 und 23, 51: 26. Apr. - 25. Mai 128; Z. 4 und 36: 126 - 127; Z. 6, 10, 13, 14, 15, 21-22, 25, 33, 35, 37, 58, 60-61, 67, 73, 75-76, 78, 80 und 89: 26. Mai - 24. Juni 128; Z. 43 und 88: 25. Juni - 16. Juli 128; Z. 71: 26. Febr. - 26. März 128</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1 und 23, 51</ref>: <date type="mentioned" from="0128-04-26" to="0128-05-25"/>
+                  <ref>Z. 1 und 23, 51</ref>: <date type="mentioned" notBefore="0128-04-26" notAfter="0128-05-25">26. Apr.  - 25. Mai 128</date>
                </item>
                <item>
-                  <ref>Z. 4 und 36</ref>: <date type="mentioned" from="0126" to="0127"/>
+                  <ref>Z. 4 und 36</ref>: <date type="mentioned" notBefore="0126" notAfter="0127">126 - 127</date>
                </item>
                <item>
-                  <ref>Z. 6, 10, 13, 14, 15, 21-22, 25, 33, 35, 37, 58, 60-61, 67, 73, 75-76, 78, 80 und 89</ref>: <date type="mentioned" from="0128-05-26" to="0128-06-24"/>
+                  <ref>Z. 43 und 88</ref>: <date type="mentioned" notBefore="0128-06-25" notAfter="0128-07-16">25. Juni  - 16. Juli 128</date>
                </item>
                <item>
-                  <ref>Z. 43 und 88</ref>: <date type="mentioned" from="0128-06-25" to="0128-07-16"/>
+                  <ref>Z. 6, 10, 13, 14, 15, 21-22, 25, 33, 35, 37, 58, 60-61, 67, 73, 75-76, 78, 80 und 89</ref>: <date type="mentioned" notBefore="0128-05-26" notAfter="0128-06-24">26. Mai  - 24. Juni 128</date>
                </item>
                <item>
-                  <ref>Z. 71</ref>: <date type="mentioned" from="0128-02-26" to="0128-03-26"/>
+                  <ref>Z. 71</ref>: <date type="mentioned" notBefore="0128-02-26" notAfter="0128-03-26">26. Febr.  - 26. März 128</date>
                </item>
             </list>
          </div>
@@ -103,9 +103,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">389</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">389</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -114,7 +117,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Amh. II 128 Recto</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Amh. II 128 Recto</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

@@ -29,7 +29,9 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Soknopaiu Nesos</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate notBefore="0220-07" notAfter="0220-08"> Juli -  Aug. 220 (Monate unsicher)</origDate>
+                     <origDate notBefore="0220-07" notAfter="0220-08">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../month-from-date(@notAfter)"/> Juli -  Aug. 220 (Monate unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -68,7 +70,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-05-15">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -87,9 +89,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">292</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">292</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -105,7 +110,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">BGU I 296 und SPP XXII 73</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">BGU I 296 und SPP XXII 73</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

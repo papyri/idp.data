@@ -29,7 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Ptolemais Euergetis</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate notBefore="0155-02-08" notAfter="0155-02-09">8. - 9. Febr. 155 (Tag unsicher)</origDate>
+                     <origDate notBefore="0155-02-08" notAfter="0155-02-09">
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>8. - 9. Febr. 155 (Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -59,7 +60,7 @@
       <revisionDesc>
          <change who="HGV" when="1993-08-01">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -70,13 +71,13 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 12: 153 - 154; Z. 16: 8. Febr. 155</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" from="0153" to="0154"/>
+                  <ref>Z. 12</ref>: <date type="mentioned" notBefore="0153" notAfter="0154">153 - 154</date>
                </item>
                <item>
-                  <ref>Z. 16</ref>: <date type="mentioned" when="0155-02-08"/>
+                  <ref>Z. 16</ref>: <date type="mentioned" when="0155-02-08">8. Febr. 155</date>
                </item>
             </list>
          </div>
@@ -93,13 +94,16 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">27</biblScope>
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">27</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">38</biblScope>
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">38</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope>, S. <biblScope type="pages">31</biblScope>
+                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="pages">31</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -108,7 +112,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">SB V 7515, Kol. XIX</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">SB V 7515, Kol. XIX</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

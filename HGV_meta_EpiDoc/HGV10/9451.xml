@@ -30,7 +30,9 @@
                         <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
                      <origDate notBefore="0245-06" notAfter="0245-08">
-                        <precision match="../@notBefore" degree="0.5"/>ca. Juni  -  Aug. 245 (Monate unsicher)</origDate>
+                        <precision match="../@notBefore" degree="0.5"/>
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../month-from-date(@notAfter)"/>ca. Juni  -  Aug. 245 (Monate unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-10-27">Record created</change>
          <change who="HGV" when="2011-02-17">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,10 +74,10 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 7: 243 - 244</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" from="0243" to="0244"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" notBefore="0243" notAfter="0244">243 - 244</date>
                </item>
             </list>
          </div>
@@ -93,10 +95,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">25</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">25</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">19</biblScope>
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">19</biblScope>
                </bibl>
             </listBibl>
          </div>

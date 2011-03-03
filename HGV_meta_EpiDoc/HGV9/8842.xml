@@ -29,7 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Kerkesucha Orus</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
                      </origPlace>
-                     <origDate when="0185-10-17">17. Okt. 185 (Tag unsicher)</origDate>
+                     <origDate when="0185-10-17">
+                        <certainty locus="value" match="../day-from-date(@when)"/>17. Okt. 185 (Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +61,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,15 +72,13 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 10 - 13: 184 - 185; Z. 25 - 26: 17. (?) Okt. 185</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 10 - 13</ref>: <date type="mentioned" from="0184" to="0185"/>
+                  <ref>Z. 10-13</ref>: <date type="mentioned" notBefore="0184" notAfter="0185">184 - 185</date>
                </item>
                <item>
-                  <ref>Z. 25 - 26</ref>: <date type="mentioned" when="0185-10-17">
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
+                  <ref>Z.  25-26</ref>: <date type="mentioned" when="0185-10-17">17. Okt. 185 (Tag unsicher)</date>
                </item>
             </list>
          </div>
@@ -93,9 +92,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">277</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">277</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -105,7 +107,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">CPGr II, App. 2</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">CPGr II, App. 2</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>

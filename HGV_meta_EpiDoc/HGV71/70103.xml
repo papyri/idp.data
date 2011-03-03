@@ -27,7 +27,9 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0217-07-16" notAfter="0217-07-31">16. - 31. Juli 217 (Tag und Jahr unsicher)</origDate>
+                     <origDate notBefore="0217-07-16" notAfter="0217-07-31">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>16. - 31. Juli 217 (Tag und Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -58,7 +60,7 @@
       <revisionDesc>
          <change who="HGV" when="1999-03-01">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-03" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -69,41 +71,37 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Kol. I, Z. 1: 205 (?); Z. 6: 206; Z. 11: 207; Z. 13: 208; Kol. II, Z. 4: 212; Z. 5: 190; Z. 7: 192; Z. 9: 193; Z. 11: 194; Z. 20: 195 (?)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Kol. I, Z. 1</ref>: <date type="mentioned" when="0205">
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
+                  <ref>Kol. I, Z. 1</ref>: <date type="mentioned" when="0205">205 (?)</date>
                </item>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="0206"/>
+                  <ref>Kol. I, Z. 11</ref>: <date type="mentioned" when="0207">207</date>
                </item>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" when="0207"/>
+                  <ref>Kol. I, Z. 13</ref>: <date type="mentioned" when="0208">208</date>
                </item>
                <item>
-                  <ref>Z. 13</ref>: <date type="mentioned" when="0208"/>
+                  <ref>Kol. I, Z. 6</ref>: <date type="mentioned" when="0206">206</date>
                </item>
                <item>
-                  <ref>Kol. II, Z. 4</ref>: <date type="mentioned" when="0212"/>
+                  <ref>Kol. II, Z. 11</ref>: <date type="mentioned" when="0194">194</date>
                </item>
                <item>
-                  <ref>Z. 5</ref>: <date type="mentioned" when="0190"/>
+                  <ref>Kol. II, Z. 20</ref>: <date type="mentioned" when="0195">195 (?)</date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="0192"/>
+                  <ref>Kol. II, Z. 4</ref>: <date type="mentioned" when="0212">212</date>
                </item>
                <item>
-                  <ref>Z. 9</ref>: <date type="mentioned" when="0193"/>
+                  <ref>Kol. II, Z. 5</ref>: <date type="mentioned" when="0190">190</date>
                </item>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" when="0194"/>
+                  <ref>Kol. II, Z. 7</ref>: <date type="mentioned" when="0192">192</date>
                </item>
                <item>
-                  <ref>Z. 20</ref>: <date type="mentioned" when="0195">
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
+                  <ref>Kol. II, Z. 9</ref>: <date type="mentioned" when="0193">193</date>
                </item>
             </list>
          </div>
@@ -124,7 +122,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">Rom.Mil.Rec. 5</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">Rom.Mil.Rec. 5</bibl>
+            </listBibl>
          </div>
       </body>
    </text>
