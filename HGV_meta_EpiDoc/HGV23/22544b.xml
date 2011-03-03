@@ -26,10 +26,10 @@
                </physDesc>
                <history>
                   <origin>
-                     <p>
+                     <origPlace>
                         <placeName type="ancientFindspot">Nesyt</placeName>
-                     </p>
-                     <origDate type="textDate" notBefore="0161-05-26" notAfter="0161-06-24">26. Mai - 24. Juni 161</origDate>
+                     </origPlace>
+                     <origDate notBefore="0161-05-26" notAfter="0161-06-24">26. Mai - 24. Juni 161</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +61,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-08-18">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,17 +76,17 @@
             <list>
                <item>
                   <ref>Z. 39</ref>: <date type="mentioned" from="0161-07-25" to="0161-08-23">
-                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../year-from-date(@from)" locus="value"/>
+                     <certainty target="./../year-from-date(@to)" locus="value"/>
                      <certainty locus="value" degree="0.7"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 56</ref>: <date type="mentioned" from="0160-09-28" to="0160-10-27">
-                     <certainty target="./../substring(from, 6, 2)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(from, 1, 4)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(to, 6, 2)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(to, 1, 4)" locus="value" degree="0.7"/>
+                     <certainty target="./../month-from-date(@from)" locus="value"/>
+                     <certainty target="./../year-from-date(@from)" locus="value"/>
+                     <certainty target="./../month-from-date(@to)" locus="value"/>
+                     <certainty target="./../year-from-date(@to)" locus="value"/>
                      <certainty locus="value" degree="0.7"/>
                   </date>
                </item>

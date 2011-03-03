@@ -26,10 +26,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <p>
+                     <origPlace>
                         <geogName type="nome">Heliopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
-                     </p>
-                     <origDate type="textDate" notAfter="0161-06-22">vor 22. Juni 161</origDate>
+                     </origPlace>
+                     <origDate notAfter="0161-06-22">
+                        <offset type="before">vor</offset> 22. Juni 161</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-08-18">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2010-09-30" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,8 +78,8 @@
             <list>
                <item>
                   <ref>Z. 96</ref>: <date type="mentioned" when="0161-07-02">
-                     <certainty target="./../substring(when, 9, 2)" locus="value" degree="0.7"/>
-                     <certainty target="./../substring(when, 6, 2)" locus="value" degree="0.7"/>
+                     <certainty target="./../day-from-date(@when)" locus="value"/>
+                     <certainty target="./../month-from-date(@when)" locus="value"/>
                      <certainty locus="value" degree="0.7"/>
                   </date>
                </item>

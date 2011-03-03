@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://epidoc.googlecode.com/files/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4145">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4145">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -26,15 +26,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <p>
+                     <origPlace>
                         <geogName type="nome">Lykopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
-                     </p>
-                     <origDate type="textDate" notBefore="-0160" notAfter="-0159">160 - 159 v.Chr. (?)</origDate>
-                     <origDate type="textDate" notBefore="-0093" notAfter="-0092">93 - 92 v.Chr. (?)</origDate>
-                     <origDate type="textDate" notBefore="-0160" notAfter="-0159">160 - 159 v.Chr. (?)</origDate>
-                     <origDate type="textDate" notBefore="-0093" notAfter="-0092">93 - 92 v.Chr. (?)</origDate>
-                     <origDate type="textDate" notBefore="-0160" notAfter="-0159">160 - 159 v.Chr. (?)</origDate>
-                     <origDate type="textDate" notBefore="-0093" notAfter="-0092">93 - 92 v.Chr. (?)</origDate>
+                     </origPlace>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0160" notAfter="-0159">160 - 159 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0093" notAfter="-0092">93 - 92 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeZ" notBefore="-0160" notAfter="-0159">160 - 159 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0093" notAfter="-0092">93 - 92 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0160" notAfter="-0159">160 - 159 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeZ" notBefore="-0093" notAfter="-0092">93 - 92 v.Chr. (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -66,9 +66,8 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change who="HGV" when="--">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2010-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,7 +77,37 @@
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
-            <p>Z. 10: 161-160 v. Chr. </p>
+            <note type="original" subtype="X">Z. 10: 161-160 v. Chr. </note>
+            <note type="original" subtype="Y">Z. 10: 94 - 93 v. Chr. </note>
+            <note type="original" subtype="Z"/>
+            <note type="original" subtype="X"/>
+            <note type="original" subtype="Y"/>
+            <note type="original" subtype="Z"/>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 10</ref>: <date type="mentioned" from="-0161" to="-0160"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <item>
+                  <ref>Z. 10</ref>: <date type="mentioned" from="-0094" to="-0093"/>
+               </item>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
+            <list>
+               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+            </list>
+            <list>
+               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+            </list>
+            <list>
+               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+            </list>
+            <list>
+               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
