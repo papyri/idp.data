@@ -27,10 +27,13 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0699-08-09">9. Aug. 699 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0700-08-09">9. Aug. 700 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0699-08-09">
+                        <certainty locus="value" match="../year-from-date(@when)"/>9. Aug. 699 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0700-08-09">
+                        <certainty locus="value" match="../year-from-date(@when)"/>9. Aug. 700 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +64,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -80,9 +83,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">70</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">70</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -92,7 +98,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">SB VI 9460</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">SB VI 9460</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

@@ -27,9 +27,13 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Pselkis</placeName> (<geogName type="ancientRegion">Nubien</geogName>)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0162-12-29">29. Dez. 162 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0194-12-29">29. Dez. 194 (Jahr unsicher)</origDate>
+                        <placeName type="ancientRegion">Nubien</placeName>
+                        <placeName type="ancientFindspot">Pselkis</placeName>
+                     </origPlace>
+                     <origDate xml:id="dateAlternativeX" when="0162-12-29">
+                        <certainty locus="value" match="../year-from-date(@when)"/>29. Dez. 162 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0194-12-29">
+                        <certainty locus="value" match="../year-from-date(@when)"/>29. Dez. 194 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-01-30">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,16 +83,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">199f.</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">199f.</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">Rom.Mil.Rec. 78, No. 15</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">Rom.Mil.Rec. 78, No. 15</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

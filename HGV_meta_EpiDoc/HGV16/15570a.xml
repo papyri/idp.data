@@ -27,10 +27,13 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Hermopolites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Hermopolites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0324-10-13">13. Okt. 324 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0325-10-12">12. Okt. 325 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0324-10-13">
+                        <certainty locus="value" match="../year-from-date(@when)"/>13. Okt. 324 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0325-10-12">
+                        <certainty locus="value" match="../year-from-date(@when)"/>12. Okt. 325 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +63,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-01-20">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,18 +75,24 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 11: 10. Okt. 324 und 11. Okt. 324</note>
             <note type="original" subtype="Y">Z. 11: 9. Okt. 325 und 10. Okt. 325</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" when="0324-10-11"/>
+                  <ref>Z. 11</ref>: <date type="mentioned" when="0324-10-10">10. Okt. 324<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" when="0325-10-10"/>
+                  <ref>Z. 11</ref>: <date type="mentioned" when="0324-10-11">11. Okt. 324<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 11</ref>: <date type="mentioned" when="0325-10-09">9. Okt. 325<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 11</ref>: <date type="mentioned" when="0325-10-10">10. Okt. 325<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -99,10 +108,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">81</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">81</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">56</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">56</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -113,7 +124,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Vindob.Worp 8, Z. 22 - 32</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Vindob.Worp 8, Z. 22 - 32</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>

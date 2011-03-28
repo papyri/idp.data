@@ -27,9 +27,15 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Deir el-Bahari</placeName> (<geogName type="ancientRegion">Theben</geogName>)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0332-12-27" notAfter="0333-01-25">27. Dez. 332 - 25. Jan. 333 (Jahre unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0347-12-28" notAfter="0348-01-26">28. Dez. 347 - 26. Jan. 348 (Jahre unsicher)</origDate>
+                        <placeName type="ancientRegion">Theben</placeName>
+                        <placeName type="ancientFindspot">Deir el-Bahari</placeName>
+                     </origPlace>
+                     <origDate xml:id="dateAlternativeX" notBefore="0332-12-27" notAfter="0333-01-25">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../year-from-date(@notAfter)"/>27. Dez. 332 - 25. Jan. 333 (Jahre unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0347-12-28" notAfter="0348-01-26">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../year-from-date(@notAfter)"/>28. Dez. 347 - 26. Jan. 348 (Jahre unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -59,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1998-04-08">Record created</change>
          <change who="HGV" when="2010-02-05">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,9 +84,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">229</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">229</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -90,7 +99,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">SEG XLI 1613</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">SEG XLI 1613</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

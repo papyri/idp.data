@@ -29,7 +29,9 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Memphis</placeName>
                      </origPlace>
-                     <origDate notBefore="-0163-04-01" notAfter="-0163-10-03">1. Apr. - 3. Okt. 163 v.Chr. (Tage unsicher)</origDate>
+                     <origDate notBefore="-0163-04-01" notAfter="-0163-10-03">
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notAfter)"/>1. Apr. - 3. Okt. 163 v.Chr. (Tage unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +66,7 @@
       <revisionDesc>
          <change who="HGV" when="1904-04-14">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,10 +77,10 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 17: 2. - 31. März 163 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 17</ref>: <date type="mentioned" from="-0163-03-02" to="-0163-03-31"/>
+                  <ref>Z. 17</ref>: <date type="mentioned" notBefore="-0163-03-02" notAfter="-0163-03-31">2. - 31. März 163 v.Chr.</date>
                </item>
             </list>
          </div>
@@ -95,13 +97,16 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">499</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">499</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">362</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">362</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">286f.</biblScope>
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">286f.</biblScope>
                </bibl>
             </listBibl>
          </div>

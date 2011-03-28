@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oberägypten</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0216-08-30">30. Aug. 216 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0199-08-26">26. Aug. 199 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0216-08-30">
+                        <certainty locus="value" match="../year-from-date(@when)"/>30. Aug. 216 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0199-08-26">
+                        <certainty locus="value" match="../year-from-date(@when)"/>26. Aug. 199 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-04-08">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -80,9 +82,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">259</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">259</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -91,7 +96,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">O.Cair.Cat. 9514</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">O.Cair.Cat. 9514</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

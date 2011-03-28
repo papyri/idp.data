@@ -29,7 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
-                     <origDate notBefore="0061-04-26" notAfter="0061-05-25">26. Apr. - 25. Mai 61 (Jahr unsicher)</origDate>
+                     <origDate notBefore="0061-04-26" notAfter="0061-05-25">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>26. Apr. - 25. Mai 61 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +61,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-07-29">Record created</change>
          <change who="HGV" when="2010-07-26">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -68,19 +69,19 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 6: 56 - 57; Z. 12 - 13: 24. - 28. Aug. 57; Z. 14: 52 - 53; Z. 17: 53 - 54</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" from="0056" to="0057"/>
+                  <ref>Z. 12-13</ref>: <date type="mentioned" notBefore="0057-08-24" notAfter="0057-08-28">24. - 28. Aug. 57</date>
                </item>
                <item>
-                  <ref>Z. 12 - 13</ref>: <date type="mentioned" from="0057-08-24" to="0057-08-28"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" notBefore="0052" notAfter="0053">52 - 53</date>
                </item>
                <item>
-                  <ref>Z. 14</ref>: <date type="mentioned" from="0052" to="0053"/>
+                  <ref>Z. 17</ref>: <date type="mentioned" notBefore="0053" notAfter="0054">53 - 54</date>
                </item>
                <item>
-                  <ref>Z. 17</ref>: <date type="mentioned" from="0053" to="0054"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" notBefore="0056" notAfter="0057">56 - 57</date>
                </item>
             </list>
          </div>
@@ -95,9 +96,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">234</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">234</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>

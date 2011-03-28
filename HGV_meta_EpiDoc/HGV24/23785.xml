@@ -30,10 +30,13 @@
                         <placeName type="ancientFindspot" cert="low">Hermopolis</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0492-01-23">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 23. Jan. 492 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="0507-01-22">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 22. Jan. 507 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeZ" notBefore="0522-01-22">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 22. Jan. 522 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -66,7 +69,7 @@
       <revisionDesc>
          <change who="HGV" when="1998-05-26">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,33 +82,32 @@
             <note type="original" subtype="X">Z. 33: 491 - 492; Z. 34: 490 - 491</note>
             <note type="original" subtype="Y">Z. 33: 506 - 507; Z. 34: 505 - 506</note>
             <note type="original" subtype="Z">Z. 33: 521 - 522; Z. 34: 520 - 521</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 33</ref>: <date type="mentioned" from="0491" to="0492"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" notBefore="0491" notAfter="0492">491 - 492<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 34</ref>: <date type="mentioned" from="0490" to="0491"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 33</ref>: <date type="mentioned" from="0506" to="0507"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" notBefore="0506" notAfter="0507">506 - 507<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 34</ref>: <date type="mentioned" from="0505" to="0506"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 33</ref>: <date type="mentioned" from="0521" to="0522"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" notBefore="0521" notAfter="0522">521 - 522<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 34</ref>: <date type="mentioned" from="0520" to="0521"/>
+                  <ref>Z. 34</ref>: <date type="mentioned" notBefore="0490" notAfter="0491">490 - 491<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+               <item>
+                  <ref>Z. 34</ref>: <date type="mentioned" notBefore="0505" notAfter="0506">505 - 506<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 34</ref>: <date type="mentioned" notBefore="0520" notAfter="0521">520 - 521<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -119,9 +121,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">231</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">231</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -130,7 +135,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">CPR VII 26</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">CPR VII 26</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>

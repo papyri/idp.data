@@ -27,10 +27,14 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Karanis</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
+                        <placeName type="ancientFindspot">Karanis</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0183-08-23">23. Aug. 183 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0215-08-23">23. Aug. 215 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0183-08-23">
+                        <certainty locus="value" match="../year-from-date(@when)"/>23. Aug. 183 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0215-08-23">
+                        <certainty locus="value" match="../year-from-date(@when)"/>23. Aug. 215 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +68,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,30 +80,48 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1: 7. Aug. 182; Z. 3: 180 - 181; Z. 4: 3., 13. oder 23. Okt. 182</note>
             <note type="original" subtype="Y">Z. 1: 7. Aug. 214; Z. 3: 212 - 213; Z. 4: 3., 13. oder 23. Okt. 214</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="0182-08-07"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="0182-08-07">7. Aug. 182<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="0180" to="0181"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="0214-08-07">7. Aug. 214<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" when="0182-10-23"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="0214-08-07"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" notBefore="0180" notAfter="0181">180 - 181<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="0212" to="0213"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" notBefore="0212" notAfter="0213">212 - 213<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" when="0214-10-23"/>
+                  <ref>Z. 4</ref>: <date type="mentioned" when="0182-10-03">3. Okt. 182 (Tag unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" when="0182-10-13">13. Okt. 182 (Tag unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" when="0182-10-23">23. Okt. 182 (Tag unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" when="0214-10-03">3. Okt. 214 (Tag unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" when="0214-10-13">13. Okt. 214 (Tag unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" when="0214-10-23">23. Okt. 214 (Tag unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

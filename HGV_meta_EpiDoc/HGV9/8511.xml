@@ -27,10 +27,11 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0203" notAfter="-0202">203 - 202 v.Chr. (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0179" notAfter="-0178">179 - 178 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0203" notAfter="-0202" cert="low">203 - 202 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0179" notAfter="-0178" cert="low">179 - 178 v.Chr. (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="2002-01-14">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,26 +77,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 4: 204 - 203 v. Chr. (Jahr unsicher)</note>
             <note type="original" subtype="Y">Z. 4: 180 - 179 v. Chr. (Jahr unsicher)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="-0204" to="-0203">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="-0204" notAfter="-0203">204 - 203 v.Chr. (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="-0180" to="-0179">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="-0180" notAfter="-0179">180 - 179 v.Chr. (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -109,9 +100,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XII</biblScope>, S. <biblScope type="pages">230</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="pages">230</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>

@@ -29,7 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Memphis</placeName>
                      </origPlace>
-                     <origDate when="-0158-06-21">21. Juni 158 v.Chr. (Tag unsicher)</origDate>
+                     <origDate when="-0158-06-21">
+                        <certainty locus="value" match="../day-from-date(@when)"/>21. Juni 158 v.Chr. (Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +61,7 @@
       <revisionDesc>
          <change who="HGV" when="1993-09-22">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,28 +72,28 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Kol. I, Z. 3: 16. Juni 164 - 162 v. Chr.; Z. 15: 24. Juni 164 - 162 v. Chr.; Z. 21: 28. Juni 164 - 162 v. Chr.; Kol. II, Z. 3: 13. Juni 161 v. Chr.; Z. 18 - 19: 18. Juni 161 v. Chr.; Z. 20 - 21: 3. - 22. Okt. 162 v. Chr.; Z. 22: 2. Juni 158 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Kol. I, Z. 3</ref>: <date type="mentioned" from="-0164-06-16" to="-0162"/>
+                  <ref>Kol. I I Z. 18-19</ref>: <date type="mentioned" when="-0161-06-18">18. Juni 161 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 15</ref>: <date type="mentioned" from="-0164-06-24" to="-0162"/>
+                  <ref>Kol. I I Z. 20-21</ref>: <date type="mentioned" notBefore="-0162-10-03" notAfter="-0162-10-22">3. - 22. Okt. 162 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 21</ref>: <date type="mentioned" from="-0164-06-28" to="-0162"/>
+                  <ref>Kol. I I Z. 22</ref>: <date type="mentioned" when="-0158-06-02">2. Juni 158 v.Chr.</date>
                </item>
                <item>
-                  <ref>Kol. II, Z. 3</ref>: <date type="mentioned" when="-0161-06-13"/>
+                  <ref>Kol. I I Z. 3</ref>: <date type="mentioned" when="-0161-06-13">13. Juni 161 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 18 - 19</ref>: <date type="mentioned" when="-0161-06-18"/>
+                  <ref>Kol. I Z. 15</ref>: <date type="mentioned" notBefore="-0164-06-24" notAfter="-0162-06-24">24. Juni 164 - 162 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 20 - 21</ref>: <date type="mentioned" from="-0162-10-03" to="-0162-10-22"/>
+                  <ref>Kol. I Z. 21</ref>: <date type="mentioned" notBefore="-0164-06-28" notAfter="-0162-06-28">28. Juni 164 - 162 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 22</ref>: <date type="mentioned" when="-0158-06-02"/>
+                  <ref>Kol I Z. 3</ref>: <date type="mentioned" notBefore="-0164-06-16" notAfter="-0162-06-16">16. Juni 164 - 162 v.Chr.</date>
                </item>
             </list>
          </div>
@@ -109,10 +110,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">363</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">363</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">287</biblScope>
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">287</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -125,7 +128,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Leid. I C Verso (S. 117)</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Leid. I C Verso (S. 117)</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

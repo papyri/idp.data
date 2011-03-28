@@ -27,11 +27,16 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Magdola Bukolon</placeName> (<geogName type="nome">Hermopolites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Hermopolites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
+                        <placeName type="ancientFindspot">Magdola Bukolon</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0321-10-23">23. Okt. 321 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0336-10-23">23. Okt. 336 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0351-10-24">24. Okt. 351 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0321-10-23">
+                        <certainty locus="value" match="../year-from-date(@when)"/>23. Okt. 321 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0336-10-23">
+                        <certainty locus="value" match="../year-from-date(@when)"/>23. Okt. 336 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ" when="0351-10-24">
+                        <certainty locus="value" match="../year-from-date(@when)"/>24. Okt. 351 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +69,7 @@
       <revisionDesc>
          <change who="HGV" when="1991-11-14">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,24 +82,20 @@
             <note type="original" subtype="X">Z. 6: 7. Okt. 321</note>
             <note type="original" subtype="Y">Z. 6: 7. Okt. 336</note>
             <note type="original" subtype="Z">Z. 6: 8. Okt. 351</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="0321-10-07"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" when="0321-10-07">7. Okt. 321<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="0336-10-07"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" when="0336-10-07">7. Okt. 336 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="0351-10-08"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" when="0351-10-08">8. Okt. 351 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -110,10 +111,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">417</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">417</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope>, S. <biblScope type="pages">261</biblScope>
+                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="pages">261</biblScope>
                </bibl>
             </listBibl>
          </div>

@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Arsinoiton Polis</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0543-03-31">31. März 543 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0558-03-31">31. März 558 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0543-03-31">
+                        <certainty locus="value" match="../year-from-date(@when)"/>31. März 543 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0558-03-31">
+                        <certainty locus="value" match="../year-from-date(@when)"/>31. März 558 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-05-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,18 +76,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 15 - 16: 27. März 543</note>
             <note type="original" subtype="Y">Z. 15 - 16: 27. März 558</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 15 - 16</ref>: <date type="mentioned" when="0543-03-27"/>
+                  <ref>Z. 15 - 16</ref>: <date type="mentioned" when="0543-03-27">27. März 543<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 15 - 16</ref>: <date type="mentioned" when="0558-03-27"/>
+                  <ref>Z. 15 - 16</ref>: <date type="mentioned" when="0558-03-27">27. März 558<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -99,9 +99,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">45</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">45</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>

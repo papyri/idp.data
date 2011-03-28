@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Thebais</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0128-02-25">25. Febr. 128 v.Chr. (Monat unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0128-08-24">24. Aug. 128 v.Chr. (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0128-02-25">
+                        <certainty locus="value" match="../month-from-date(@when)"/>25. Febr. 128 v.Chr. (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0128-08-24">
+                        <certainty locus="value" match="../month-from-date(@when)"/>24. Aug. 128 v.Chr. (Monat unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-07-01">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -81,16 +83,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XII</biblScope>, S. <biblScope type="pages">222</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="pages">222</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Lond. III 615 descr. (S. XX)</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. III 615 descr. (S. XX)</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

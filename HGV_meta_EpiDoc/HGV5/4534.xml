@@ -27,8 +27,10 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0152-01-31">31. Jan. 152 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0141-01-29">29. Jan. 141 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0152-01-31">
+                        <certainty locus="value" match="../year-from-date(@when)"/>31. Jan. 152 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0141-01-29">
+                        <certainty locus="value" match="../year-from-date(@when)"/>29. Jan. 141 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -59,7 +61,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-12-08">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +73,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 14: 29. Jan. - 27. Febr. 153 v. Chr.</note>
             <note type="original" subtype="Y">Z. 14: 26. Jan. - 24. Febr. 142 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 14</ref>: <date type="mentioned" from="-0153-01-29" to="-0153-02-27"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" notBefore="-0153-01-29" notAfter="-0153-02-27">29. Jan.  - 27. Febr. 153 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 14</ref>: <date type="mentioned" from="-0142-01-26" to="-0142-02-24"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" notBefore="-0142-01-26" notAfter="-0142-02-24">26. Jan.  - 24. Febr. 142 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -96,9 +96,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">26</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">26</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>

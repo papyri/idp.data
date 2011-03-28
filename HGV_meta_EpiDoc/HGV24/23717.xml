@@ -29,8 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0091" notAfter="0092">91 - 92 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0107" notAfter="0108">107 - 108 (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="0091" notAfter="0092" cert="low">91 - 92 (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0107" notAfter="0108" cert="low">107 - 108 (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +62,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-11-17">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,18 +74,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 3 - 4: 29. Aug. 91</note>
             <note type="original" subtype="Y">Z. 3 - 4: 29. Aug. 107</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 3 - 4</ref>: <date type="mentioned" when="0091-08-29"/>
+                  <ref>Z. 3 - 4</ref>: <date type="mentioned" when="0091-08-29">29. Aug. 91<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 3 - 4</ref>: <date type="mentioned" when="0107-08-29"/>
+                  <ref>Z. 3 - 4</ref>: <date type="mentioned" when="0107-08-29">29. Aug. 107<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -104,7 +102,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Oxy. III 633 descr.</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Oxy. III 633 descr.</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>

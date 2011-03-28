@@ -30,8 +30,10 @@
                         <placeName type="ancientFindspot">Dura - Europos</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0239-06-28">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 28. Juni 239 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="0241-06-28">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 28. Juni 241 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -65,7 +67,7 @@
       <revisionDesc>
          <change who="HGV" when="1999-11-24">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,36 +79,44 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1: 239; Z. 7: 29. Mai oder 28. Juni 239; Z. 12: 225; Z. 15: 239</note>
             <note type="original" subtype="Y">Z. 1: 241; Z. 7: 29. Mai oder 28. Juni 241; Z. 12: 225; Z. 15: 241</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="0239"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="0241">241 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="0239-06-28"/>
+                  <ref>Z. 1, 15</ref>: <date type="mentioned" when="0239">239 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" when="0225"/>
+                  <ref>Z. 12</ref>: <date type="mentioned" when="0225">225 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 15</ref>: <date type="mentioned" when="0239"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="0241"/>
+                  <ref>Z. 15</ref>: <date type="mentioned" when="0239">239 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="0241-06-28"/>
+                  <ref>Z. 15</ref>: <date type="mentioned" when="0241">241 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" when="0225"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="0239-05-29">29. Mai 239 (Monat unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 15</ref>: <date type="mentioned" when="0241"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="0239-06-28">28. Juni 239 (Monat unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="0241-05-29">29. Mai 241 (Monat unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="0241-06-28">28. Juni 241 (Monat unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

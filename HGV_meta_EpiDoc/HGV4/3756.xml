@@ -27,11 +27,14 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="-0064-09-28">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 28. Sept. 64 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="-0097-10-06">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 6. Okt. 97 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -65,7 +68,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-02-26">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,42 +80,48 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1: 30. Juli 64 v. Chr.; Z. 33: 12. Aug. 64 v. Chr.; Z. 60: 18. Aug. 64 v. Chr.; Z. 132: 28. Sept. 64 v. Chr.; Z. 150: 17. Mai 64 v. Chr.</note>
             <note type="original" subtype="Y">Z. 1: 7. Aug. 97 v. Chr.; Z. 33: 20. Aug. 97 v. Chr.; Z. 60: 26. Aug. 97 v. Chr.; Z. 132: 6. Okt. 97 v. Chr.; Z. 150: 25. Mai 97 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="-0064-07-30"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="-0097-08-07">7. Aug. 97 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 33</ref>: <date type="mentioned" when="-0064-08-12"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" when="-0064-07-30">30. Juli 64 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 60</ref>: <date type="mentioned" when="-0064-08-18"/>
+                  <ref>Z. 132</ref>: <date type="mentioned" when="-0097-10-06">6. Okt. 97 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 132</ref>: <date type="mentioned" when="-0064-09-28"/>
+                  <ref>Z. 132</ref>: <date type="mentioned" when="-0064-09-28">28. Sept. 64 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 150</ref>: <date type="mentioned" when="-0064-05-17"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" when="-0097-08-07"/>
+                  <ref>Z. 150</ref>: <date type="mentioned" when="-0097-05-25">25. Mai 97 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 33</ref>: <date type="mentioned" when="-0097-08-20"/>
+                  <ref>Z. 150</ref>: <date type="mentioned" when="-0064-05-17">17. Mai 64 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 60</ref>: <date type="mentioned" when="-0097-08-26"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" when="-0097-08-20">20. Aug. 97 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 132</ref>: <date type="mentioned" when="-0097-10-06"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" when="-0064-08-12">12. Aug. 64 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 150</ref>: <date type="mentioned" when="-0097-05-25"/>
+                  <ref>Z. 60</ref>: <date type="mentioned" when="-0097-08-26">26. Aug. 97 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 60</ref>: <date type="mentioned" when="-0064-08-18">18. Aug. 64 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -128,10 +137,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">490</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">490</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">354</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">354</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -143,7 +154,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">C.Ptol.Sklav. II 127</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">C.Ptol.Sklav. II 127</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

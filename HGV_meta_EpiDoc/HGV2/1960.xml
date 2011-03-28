@@ -27,11 +27,15 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Philadelphia</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
+                        <placeName type="ancientFindspot">Philadelphia</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notAfter="-0248-05-11">
+                        <certainty locus="value" match="../year-from-date(@notAfter)"/>
                         <offset type="before">vor</offset> 11. Mai 248 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notAfter="-0247-05-11">
+                        <certainty locus="value" match="../year-from-date(@notAfter)"/>
                         <offset type="before">vor</offset> 11. Mai 247 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -67,7 +71,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-08-30">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -86,16 +90,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">128</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">128</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">PSI VI 619 (Z. 1 - 13 rechte Hälfte)</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI VI 619 (Z. 1 - 13 rechte Hälfte)</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

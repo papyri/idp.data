@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0274-02-27">27. Febr. 274 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0280-02-28">28. Febr. 280 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0274-02-27">
+                        <certainty locus="value" match="../year-from-date(@when)"/>27. Febr. 274 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0280-02-28">
+                        <certainty locus="value" match="../year-from-date(@when)"/>28. Febr. 280 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -63,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-09-01">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,22 +77,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 6: 26. Jan. - 24. Febr. 274 (?)</note>
             <note type="original" subtype="Y">Z. 6: 27. Jan. - 25. Febr. 280 (?)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="0274-02-24">
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" notBefore="0274-01-26" notAfter="0274-02-24">26. Jan.  - 24. Febr. 274 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" when="0280-02-25">
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" notBefore="0280-01-27" notAfter="0280-02-25">27. Jan.  - 25. Febr. 280 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -106,10 +102,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">125</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">125</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">83/84</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">83/84</biblScope>
                </bibl>
             </listBibl>
          </div>

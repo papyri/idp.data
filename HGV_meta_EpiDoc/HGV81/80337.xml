@@ -27,8 +27,13 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Theben</placeName> (<geogName type="ancientRegion">Charax</geogName>)</origPlace>
-                     <origDate notBefore="0191-07-25" notAfter="0191-08-23">25. Juli - 23. Aug. 191 (Monat und Tage unsicher)</origDate>
+                        <placeName type="ancientRegion">Charax</placeName>
+                        <placeName type="ancientFindspot">Theben</placeName>
+                     </origPlace>
+                     <origDate notBefore="0191-07-25" notAfter="0191-08-23">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notAfter)"/>25. Juli - 23. Aug. 191 (Monat und Tage unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -60,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1999-02-23">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>

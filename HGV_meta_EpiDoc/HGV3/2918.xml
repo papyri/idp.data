@@ -27,10 +27,13 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0259-09-22" notAfter="-0259-10-21">22. Sept. - 21. Okt. 259 v.Chr. (Monat unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0258-03-26" notAfter="-0258-04-24">26. März - 24. Apr. 258 v.Chr. (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0259-09-22" notAfter="-0259-10-21">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>22. Sept. - 21. Okt. 259 v.Chr. (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0258-03-26" notAfter="-0258-04-24">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>26. März - 24. Apr. 258 v.Chr. (Monat unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-09-10">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -82,16 +85,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">178</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">178</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Rev. App. II 2 (S. 187 - 188)</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Rev. App. II 2 (S. 187 - 188)</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

@@ -29,7 +29,8 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Hermopolis</placeName>
                      </origPlace>
-                     <origDate notBefore="0185-08-29" notAfter="0185-11-26">29. Aug. - 26. Nov. 185 (Monat unsicher)</origDate>
+                     <origDate notBefore="0185-08-29" notAfter="0185-11-26">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>29. Aug. - 26. Nov. 185 (Monat unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +62,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-12-09">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,10 +73,10 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 12: 184 - 185</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" from="0184" to="0185"/>
+                  <ref>Z. 12</ref>: <date type="mentioned" notBefore="0184" notAfter="0185">184 - 185</date>
                </item>
             </list>
          </div>
@@ -93,13 +94,16 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">6</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">6</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">4/5</biblScope>
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">4/5</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">5</biblScope>
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">5</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -110,7 +114,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">W.Chr. 418</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">W.Chr. 418</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

@@ -27,8 +27,10 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0158-08-31">31. Aug. 158 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0155-08-30">30. Aug. 155 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="-0158-08-31">
+                        <certainty locus="value" match="../year-from-date(@when)"/>31. Aug. 158 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="-0155-08-30">
+                        <certainty locus="value" match="../year-from-date(@when)"/>30. Aug. 155 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="2003-07-01">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,24 +75,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Empfangsvermerk Z. 33: 12. Sept. 158 v.Chr. (Jahr unsicher)</note>
             <note type="original" subtype="Y">Empfangsvermerk Z. 33: 11. Sept. 155 v.Chr. (Jahr unsicher)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Empfangsvermerk Z. 33</ref>: <date type="mentioned" when="-0158-09-12">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" when="-0158-09-12">12. Sept. 158 v.Chr. (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Empfangsvermerk Z. 33</ref>: <date type="mentioned" when="-0155-09-11">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 33</ref>: <date type="mentioned" when="-0155-09-11">11. Sept. 155 v.Chr. (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">

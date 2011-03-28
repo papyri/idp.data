@@ -30,8 +30,10 @@
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0176-08-28">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 28. Aug. 176 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0208-08-28">28. Aug. 208 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0208-08-28">
+                        <certainty locus="value" match="../year-from-date(@when)"/>28. Aug. 208 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -63,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1998-03-09">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +77,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Kol. II, Z. 1 - 24: Wiederholte Einzeldaten im Zeitraum 14. Dez. 175 - 28. Aug. 176</note>
             <note type="original" subtype="Y">Kol. II, Z. 1 - 24: Wiederholte Einzeldaten im Zeitraum 14. Dez. 207 - 28. Aug. 208</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Kol. II, Z. 1 - 24</ref>: <date type="mentioned" from="0175-12-14" to="0176-08-28"/>
+                  <ref>Kol. II, Z. 1 - 24</ref>: <date type="mentioned" notBefore="0175-12-14" notAfter="0176-08-28">14. Dez. 175 - 28. Aug. 176<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Kol. II, Z. 1 - 24</ref>: <date type="mentioned" from="0207-12-14" to="0208-08-28"/>
+                  <ref>Kol. II, Z. 1 - 24</ref>: <date type="mentioned" notBefore="0207-12-14" notAfter="0208-08-28">14. Dez. 207 - 28. Aug. 208<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -100,9 +100,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">174</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">174</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>

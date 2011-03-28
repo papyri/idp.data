@@ -29,8 +29,10 @@
                      <origPlace>
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0283-08-30" notAfter="0283-09-28">30. Aug. - 28. Sept. 283 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0285-08-29" notAfter="0285-09-27">29. Aug. - 27. Sept. 285 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="0283-08-30" notAfter="0283-09-28">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>30. Aug. - 28. Sept. 283 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0285-08-29" notAfter="0285-09-27">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>29. Aug. - 27. Sept. 285 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -65,7 +67,7 @@
       <revisionDesc>
          <change who="HGV" when="1993-05-03">Record created</change>
          <change who="HGV" when="2009-08-26">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,64 +79,40 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 27 - 30: Abschrift eines Dokuments vom 30. Aug. - 28. Sept. 283 (Jahr unsicher); Z. 30 - 36: Abschrift eines Dokuments vom 30. Aug. - 28. Sept. 283 (Jahr unsicher); Z. 37 - 41: Abschrift eines Dokuments vom 7. Sept. 283 (Jahr unsicher); Z. 41 - 43: Abschrift eines Dokuments vom 4. Sept. 283 (Jahr unsicher)</note>
             <note type="original" subtype="Y">Z. 27 - 30: Abschrift eines Dokuments vom 29. Aug. - 27. Sept. 285 (Jahr unsicher); Z. 30 - 36: Abschrift eines Dokuments vom 29. Aug. - 27. Sept. 285 (Jahr unsicher); Z. 37 - 41: Abschrift eines Dokuments vom 6. Sept. 285 (Jahr unsicher); Z. 41 - 43: Abschrift eines Dokuments vom 3. Sept. 285 (Jahr unsicher)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 27 - 30</ref>: <date type="mentioned" from="0283-08-30" to="0283-09-28">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 27-30</ref>: <date type="mentioned" notBefore="0283-08-30" notAfter="0283-09-28">30. Aug.  - 28. Sept. 283 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Z. 30 - 36</ref>: <date type="mentioned" from="0283-08-30" to="0283-09-28">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 27-30</ref>: <date type="mentioned" notBefore="0285-08-29" notAfter="0285-09-27">29. Aug.  - 27. Sept. 285 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Z. 37 - 41</ref>: <date type="mentioned" when="0283-09-07">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 30-36</ref>: <date type="mentioned" notBefore="0283-08-30" notAfter="0283-09-28">30. Aug.  - 28. Sept. 283 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Z. 41 - 43</ref>: <date type="mentioned" when="0283-09-04">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 27 - 30</ref>: <date type="mentioned" from="0285-08-29" to="0285-09-27">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 30-36</ref>: <date type="mentioned" notBefore="0285-08-29" notAfter="0285-09-27">29. Aug.  - 27. Sept. 285 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Z. 30 - 36</ref>: <date type="mentioned" from="0285-08-29" to="0285-09-27">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 37-41</ref>: <date type="mentioned" when="0283-09-07">7. Sept. 283 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Z. 37 - 41</ref>: <date type="mentioned" when="0285-09-06">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 37-41</ref>: <date type="mentioned" when="0285-09-06">6. Sept. 285 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
-                  <ref>Z. 41 - 43</ref>: <date type="mentioned" when="0285-09-03">
-                     <certainty target="./../year-from-date(@when)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
+                  <ref>Z. 41-43</ref>: <date type="mentioned" when="0283-09-04">4. Sept. 283 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 41-43</ref>: <date type="mentioned" when="0285-09-03">3. Sept. 285 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -150,13 +128,16 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">255</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">255</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">194</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">194</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope>, S. <biblScope type="pages">145</biblScope>
+                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="pages">145</biblScope>
                </bibl>
             </listBibl>
          </div>

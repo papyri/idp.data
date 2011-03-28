@@ -27,8 +27,11 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Petra</placeName> (<geogName type="ancientRegion">Tertia Palaestina Salutaris</geogName>)</origPlace>
-                     <origDate notBefore="0571-07-20" notAfter="0571-08-18">20. Juli - 18. Aug. 571 (Monat unsicher)</origDate>
+                        <placeName type="ancientRegion">Tertia Palaestina Salutaris</placeName>
+                        <placeName type="ancientFindspot">Petra</placeName>
+                     </origPlace>
+                     <origDate notBefore="0571-07-20" notAfter="0571-08-18">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>20. Juli - 18. Aug. 571 (Monat unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -59,7 +62,7 @@
       <revisionDesc>
          <change who="HGV" when="2002-12-06">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -70,13 +73,13 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 1: 568 - 569; Z. 2: 569 - 570</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" from="0568" to="0569"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" notBefore="0568" notAfter="0569">568 - 569</date>
                </item>
                <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0569" to="0570"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0569" notAfter="0570">569 - 570</date>
                </item>
             </list>
          </div>

@@ -27,10 +27,12 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Philadelphia</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
+                        <placeName type="ancientFindspot">Philadelphia</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0206" notAfter="-0205">206 - 205 v.Chr. (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0189" notAfter="-0188">189 - 188 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0206" notAfter="-0205" cert="low">206 - 205 v.Chr. (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0189" notAfter="-0188" cert="low">189 - 188 v.Chr. (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-04-21">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,30 +75,32 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 5: 208 - 207 v. Chr.; Z. 7: 207 - 206 v. Chr.; Z. 11: 210 - 209 v. Chr.</note>
             <note type="original" subtype="Y">Z. 5: 190 - 189 v. Chr.; Z. 7: 191 - 190 v. Chr.; Z. 11: 193 - 192 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 5</ref>: <date type="mentioned" from="-0208" to="-0207"/>
+                  <ref>Z. 11</ref>: <date type="mentioned" notBefore="-0210" notAfter="-0209">210 - 209 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" from="-0207" to="-0206"/>
+                  <ref>Z. 11</ref>: <date type="mentioned" notBefore="-0193" notAfter="-0192">193 - 192 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" from="-0210" to="-0209"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 5</ref>: <date type="mentioned" from="-0190" to="-0189"/>
+                  <ref>Z. 5</ref>: <date type="mentioned" notBefore="-0208" notAfter="-0207">208 - 207 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" from="-0191" to="-0190"/>
+                  <ref>Z. 5</ref>: <date type="mentioned" notBefore="-0190" notAfter="-0189">190 - 189 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" from="-0193" to="-0192"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" notBefore="-0207" notAfter="-0206">207 - 206 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 7</ref>: <date type="mentioned" notBefore="-0191" notAfter="-0190">191 - 190 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -110,9 +114,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">28</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">28</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>

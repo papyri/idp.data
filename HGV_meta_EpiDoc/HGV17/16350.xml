@@ -27,9 +27,9 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0319" notAfter="0320">319 - 320 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0334" notAfter="0335">334 - 335 (?)</origDate>
-                     <origDate xml:id="dateAlternativeZ" notBefore="0349" notAfter="0350">349 - 350 (?)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="0319" notAfter="0320" cert="low">319 - 320 (?)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0334" notAfter="0335" cert="low">334 - 335 (?)</origDate>
+                     <origDate xml:id="dateAlternativeZ" notBefore="0349" notAfter="0350" cert="low">349 - 350 (?)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -65,7 +65,7 @@
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,42 +78,44 @@
             <note type="original" subtype="X">Z. 2: 316 - 317; Z. 3: 317 - 318; Z. 4: 318 - 319</note>
             <note type="original" subtype="Y">Z. 2: 331 - 332; Z. 3: 332 - 333; Z. 4: 333 - 334</note>
             <note type="original" subtype="Z">Z. 2: 346 - 347; Z. 3: 347 - 348; Z. 4: 348 - 349</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0316" to="0317"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0316" notAfter="0317">316 - 317<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="0317" to="0318"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0331" notAfter="0332">331 - 332<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="0318" to="0319"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0331" to="0332"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0346" notAfter="0347">346 - 347<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="0332" to="0333"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" notBefore="0317" notAfter="0318">317 - 318<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="0333" to="0334"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0346" to="0347"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" notBefore="0332" notAfter="0333">332 - 333<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 3</ref>: <date type="mentioned" from="0347" to="0348"/>
+                  <ref>Z. 3</ref>: <date type="mentioned" notBefore="0347" notAfter="0348">347 - 348<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 4</ref>: <date type="mentioned" from="0348" to="0349"/>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="0318" notAfter="0319">318 - 319<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="0333" notAfter="0334">333 - 334<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="0348" notAfter="0349">348 - 349<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -127,16 +129,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">296</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">296</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">P.Bon. 40</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bon. 40</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>

@@ -27,11 +27,14 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot" cert="low">Hermopolites</placeName>
+                        <placeName type="nome" cert="low">Hermopolites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0155-04-07">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 7. Apr. 155 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="0178-04-07">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 7. Apr. 178 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -67,7 +70,7 @@
       <revisionDesc>
          <change who="HGV" when="1991-04-11">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,66 +82,72 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 5, 16, 32, 41: 19. Nov. 153; Z. 18: 23. Nov. 153; Z. 5, 26: 3. Apr. 154; Z. 18: 7. Apr. 154; Z. 40: 20. Mai 154; Z. 6, 16, 26, 41: 23. Nov. 154; Z. 20, 32: 26. Nov. 154; Z. 31: 3. Apr. 155; Z. 44: 7. Apr. 155</note>
             <note type="original" subtype="Y">Z. 5, 16, 32, 41: 19. Nov. 176; Z. 18: 23. Nov. 176; Z. 5, 26: 3. Apr. 177; Z. 18: 7. Apr. 177; Z. 40: 20. Mai 177; Z. 6, 16, 26, 41: 23. Nov. 177; Z. 20, 32: 26. Nov. 177; Z. 31: 3. Apr. 138; Z. 44: 7. Apr. 178</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 5, 16, 32, 41</ref>: <date type="mentioned" when="0153-11-19"/>
+                  <ref>Z. 18</ref>: <date type="mentioned" when="0153-11-23">23. Nov. 153<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 18</ref>: <date type="mentioned" when="0153-11-23"/>
+                  <ref>Z. 18</ref>: <date type="mentioned" when="0154-04-07">7. Apr. 154<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 5, 26</ref>: <date type="mentioned" when="0154-04-03"/>
+                  <ref>Z. 18</ref>: <date type="mentioned" when="0176-11-23">23. Nov. 176<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 18</ref>: <date type="mentioned" when="0154-04-07"/>
+                  <ref>Z. 20.32</ref>: <date type="mentioned" when="0154-11-26">26. Nov. 154<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 40</ref>: <date type="mentioned" when="0154-05-20"/>
+                  <ref>Z. 20.32</ref>: <date type="mentioned" when="0177-11-26">26. Nov. 177<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 6, 16, 26, 41</ref>: <date type="mentioned" when="0154-11-23"/>
+                  <ref>Z. 31</ref>: <date type="mentioned" when="0138-04-03">3. Apr. 138<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 20, 32</ref>: <date type="mentioned" when="0154-11-26"/>
+                  <ref>Z. 31</ref>: <date type="mentioned" when="0155-04-03">3. Apr. 155<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 31</ref>: <date type="mentioned" when="0155-04-03"/>
+                  <ref>Z. 40</ref>: <date type="mentioned" when="0154-05-20">20. Mai 154<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 44</ref>: <date type="mentioned" when="0155-04-07"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 5, 16, 32, 41</ref>: <date type="mentioned" when="0176-11-19"/>
+                  <ref>Z. 44</ref>: <date type="mentioned" when="0155-04-07">7. Apr. 155<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 18</ref>: <date type="mentioned" when="0176-11-23"/>
+                  <ref>Z. 44</ref>: <date type="mentioned" when="0178-04-07">7. Apr. 178<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 5, 26</ref>: <date type="mentioned" when="0177-04-03"/>
+                  <ref>Z. 5.15.32.41</ref>: <date type="mentioned" when="0176-11-19">19. Nov. 176<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 18</ref>: <date type="mentioned" when="0177-04-07"/>
+                  <ref>Z. 5.16.32.41</ref>: <date type="mentioned" when="0153-11-19">19. Nov. 153<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 40</ref>: <date type="mentioned" when="0177-05-20"/>
+                  <ref>Z. 5.26</ref>: <date type="mentioned" when="0154-04-03">3. Apr. 154<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 6, 16, 26, 41</ref>: <date type="mentioned" when="0177-11-23"/>
+                  <ref>Z. 5.26</ref>: <date type="mentioned" when="0177-04-03">3. Apr. 177<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 20, 32</ref>: <date type="mentioned" when="0177-11-26"/>
+                  <ref>Z. 6.16.26.41</ref>: <date type="mentioned" when="0154-11-23">23. Nov. 154<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 31</ref>: <date type="mentioned" when="0138-04-03"/>
+                  <ref>Z. 6.16.26.41</ref>: <date type="mentioned" when="0177-11-23">23. Nov. 177<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <item>
-                  <ref>Z. 44</ref>: <date type="mentioned" when="0178-04-07"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -154,10 +163,12 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">266</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">266</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">201</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">201</biblScope>
                </bibl>
             </listBibl>
          </div>

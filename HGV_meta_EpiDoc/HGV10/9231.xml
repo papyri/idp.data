@@ -27,7 +27,8 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
                      <origDate notBefore="0117-08">
                         <offset type="after">nach</offset> Aug. 117</origDate>
@@ -61,7 +62,7 @@
       <revisionDesc>
          <change who="HGV" when="1996-02-01">Record created</change>
          <change who="HGV" when="2010-03-18">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -72,16 +73,16 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 6: 103 - 104; Z. 9 u. a: 102 - 103; Z. 14: 104 - 105</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 6</ref>: <date type="mentioned" from="0103" to="0104"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" notBefore="0104" notAfter="0105">104 - 105</date>
                </item>
                <item>
-                  <ref>Z. 9 u. a</ref>: <date type="mentioned" from="0102" to="0103"/>
+                  <ref>Z. 6</ref>: <date type="mentioned" notBefore="0103" notAfter="0104">103 - 104</date>
                </item>
                <item>
-                  <ref>Z. 14</ref>: <date type="mentioned" from="0104" to="0105"/>
+                  <ref>Z. 9 u.a.</ref>: <date type="mentioned" notBefore="0102" notAfter="0103">102 - 103</date>
                </item>
             </list>
          </div>
@@ -96,16 +97,21 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">29</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">29</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">W.Chr. 220</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">W.Chr. 220</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

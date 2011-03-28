@@ -27,9 +27,11 @@
                <history>
                   <origin>
                      <origPlace>
-                        <geogName type="nome">Arsinoites</geogName>, <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
                      </origPlace>
-                     <origDate when="-0240-09-30">30. Sept. 240 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate when="-0240-09-30">
+                        <certainty locus="value" match="../year-from-date(@when)"/>30. Sept. 240 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -62,7 +64,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-04-17">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -70,13 +72,16 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">4 und 14: 20. Sept. - 19. Okt. 240 v. Chr.; Z. 15: 22. Aug. - 19. Sept. 240 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>4 und 14</ref>: <date type="mentioned" from="-0240-09-20" to="-0240-10-19"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" notBefore="-0240-09-20" notAfter="-0240-10-19">20. Sept.  - 19. Okt. 240 v.Chr.</date>
                </item>
                <item>
-                  <ref>Z. 15</ref>: <date type="mentioned" from="-0240-08-22" to="-0240-09-19"/>
+                  <ref>Z. 15</ref>: <date type="mentioned" notBefore="-0240-08-22" notAfter="-0240-09-19">22. Aug.  - 19. Sept. 240 v.Chr.</date>
+               </item>
+               <item>
+                  <ref>Z. 4</ref>: <date type="mentioned" notBefore="-0240-09-20" notAfter="-0240-10-19">20. Sept.  - 19. Okt. 240 v.Chr.</date>
                </item>
             </list>
          </div>
@@ -91,9 +96,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XI</biblScope>, S. <biblScope type="pages">85</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="pages">85</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>

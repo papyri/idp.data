@@ -27,11 +27,16 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Theadelphia</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
+                        <placeName type="ancientFindspot">Theadelphia</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0260-11-04">4. Nov. 260 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0243-11-05">5. Nov. 243 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0249-11-04">4. Nov. 249 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" when="0260-11-04">
+                        <certainty locus="value" match="../year-from-date(@when)"/>4. Nov. 260 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" when="0243-11-05">
+                        <certainty locus="value" match="../year-from-date(@when)"/>5. Nov. 243 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ" when="0249-11-04">
+                        <certainty locus="value" match="../year-from-date(@when)"/>4. Nov. 249 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -63,7 +68,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-05-12">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,24 +81,20 @@
             <note type="original" subtype="X">Z. 2: 258 - 259</note>
             <note type="original" subtype="Y">Z. 2: 242 - 243</note>
             <note type="original" subtype="Z">Z. 2: 248 - 249</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0258" to="0259"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0242" notAfter="0243">242 - 243<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0242" to="0243"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0248" notAfter="0249">248 - 249<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
-            </list>
-            <list>
                <item>
-                  <ref>Z. 2</ref>: <date type="mentioned" from="0248" to="0249"/>
+                  <ref>Z. 2</ref>: <date type="mentioned" notBefore="0258" notAfter="0259">258 - 259<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -107,9 +108,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">175</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">175</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>

@@ -27,8 +27,10 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0187-09-04" notAfter="-0187-10-03">4. Sept.  - 3. Okt. 187 v.Chr. (Monat unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0187-03-08" notAfter="-0187-04-06">8. März  - 6. Apr. 187 v.Chr. (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0187-09-04" notAfter="-0187-10-03">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>4. Sept.  - 3. Okt. 187 v.Chr. (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0187-03-08" notAfter="-0187-04-06">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>8. März  - 6. Apr. 187 v.Chr. (Monat unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -61,7 +63,7 @@
       <revisionDesc>
          <change who="HGV" when="1904-01-23">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -80,9 +82,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">41</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">41</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
@@ -91,7 +96,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
-            <bibl type="publication" subtype="other">SB V 8257</bibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">SB V 8257</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>

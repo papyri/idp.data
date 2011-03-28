@@ -30,8 +30,10 @@
                         <placeName type="ancientFindspot">Oxyrhynchos</placeName>
                      </origPlace>
                      <origDate xml:id="dateAlternativeX" notBefore="0561-07-04">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 4. Juli 561 (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" notBefore="0621-07-04">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
                         <offset type="after">nach</offset> 4. Juli 621 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -63,7 +65,7 @@
       <revisionDesc>
          <change who="HGV" when="1994-01-04">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,42 +77,48 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 1, 4, 5, 6: 27. März - 25. Apr. 561; Z. 7: 19. Apr. 561; Z. 13: 26. Mai - 24. Juni 561; Z. 14: 25. Juni 561; Z. 16: 4. Juli 561</note>
             <note type="original" subtype="Y">Z. 1, 4, 5, 6: 27. März - 25. Apr. 621; Z. 7: 19. Apr. 621; Z. 13: 26. Mai - 24. Juni 621; Z. 14: 25. Juni 621; Z. 16: 4. Juli 621</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1, 4, 5, 6</ref>: <date type="mentioned" from="0561-03-27" to="0561-04-25"/>
+                  <ref>Z. 13</ref>: <date type="mentioned" notBefore="0561-05-26" notAfter="0561-06-24">26. Mai  - 24. Juni 561 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="0561-04-19"/>
+                  <ref>Z. 13</ref>: <date type="mentioned" notBefore="0621-05-26" notAfter="0621-06-24">26. Mai  - 24. Juni 621 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 13</ref>: <date type="mentioned" from="0561-05-26" to="0561-06-24"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" when="0561-06-25">25. Juni 561 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 14</ref>: <date type="mentioned" when="0561-06-25"/>
+                  <ref>Z. 14</ref>: <date type="mentioned" when="0621-06-25">25. Juni 621 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 16</ref>: <date type="mentioned" when="0561-07-04"/>
-               </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
-               <item>
-                  <ref>Z. 1, 4, 5, 6</ref>: <date type="mentioned" from="0621-03-27" to="0621-04-25"/>
+                  <ref>Z. 1.4.5.6</ref>: <date type="mentioned" notBefore="0561-03-27" notAfter="0561-04-25">27. März  - 25. Apr. 561 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 7</ref>: <date type="mentioned" when="0621-04-19"/>
+                  <ref>Z. 1.4.5.6</ref>: <date type="mentioned" notBefore="0621-03-27" notAfter="0621-04-25">27. März  - 25. Apr. 621 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 13</ref>: <date type="mentioned" from="0621-05-26" to="0621-06-24"/>
+                  <ref>Z. 16</ref>: <date type="mentioned" when="0561-07-04">4. Juli 561 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 14</ref>: <date type="mentioned" when="0621-06-25"/>
+                  <ref>Z. 16</ref>: <date type="mentioned" when="0621-07-04">4. Juli 621 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 16</ref>: <date type="mentioned" when="0621-07-04"/>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="0561-04-19">19. Apr. 561 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item>
+                  <ref>Z. 7</ref>: <date type="mentioned" when="0621-04-19">19. Apr. 621 (Jahr unsicher)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -126,13 +134,16 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">251</biblScope>
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">251</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>, S. <biblScope type="pages">191</biblScope>
+                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="pages">191</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>, S. <biblScope type="pages">145</biblScope>
+                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="pages">145</biblScope>
                </bibl>
             </listBibl>
          </div>

@@ -27,10 +27,14 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientFindspot">Theogonis</placeName> (<geogName type="nome">Arsinoites</geogName>), <geogName type="ancientRegion" key="Aegyptus">Egypt</geogName>
+                        <placeName type="nome">Arsinoites</placeName>
+                        <placeName type="ancientRegion" key="Aegyptus">Egypt</placeName>
+                        <placeName type="ancientFindspot">Theogonis</placeName>
                      </origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0231-05-18" notAfter="-0231-06-16">18. Mai - 16. Juni 231 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0206-05-12" notAfter="-0206-06-10">12. Mai - 10. Juni 206 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX" notBefore="-0231-05-18" notAfter="-0231-06-16">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>18. Mai - 16. Juni 231 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="-0206-05-12" notAfter="-0206-06-10">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>12. Mai - 10. Juni 206 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -64,7 +68,7 @@
       <revisionDesc>
          <change who="HGV" when="1997-08-21">Record created</change>
          <change who="HGV" when="2010-09-23">Record last modified</change>
-         <change when="2011-02-24" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,16 +80,16 @@
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Abschrift eines Dokuments vom 19. Dez. 232 - 17. Jan. 231 v. Chr.</note>
             <note type="original" subtype="Y">Abschrift eines Dokuments vom 13. März - 11. Apr. 206 v. Chr.</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref/>: </item>
-               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-            </list>
-            <list>
+                  <ref/>: <date type="mentioned" notBefore="-0232-12-19" notAfter="-0231-01-17">19. Dez. 232 - 17. Jan. 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
                <item>
-                  <ref/>: </item>
-               <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <ref/>: <date type="mentioned" notBefore="-0206-03-13" notAfter="-0206-04-11">13. März  - 11. Apr. 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
+               </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
@@ -99,9 +103,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">XII</biblScope>, S. <biblScope type="pages">63</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="pages">63</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>

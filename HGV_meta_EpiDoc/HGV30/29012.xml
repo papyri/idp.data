@@ -60,7 +60,7 @@
       <revisionDesc>
          <change who="HGV" when="1993-11-02">Record created</change>
          <change who="HGV" when="2010-09-22">Record last modified</change>
-         <change when="2011-02-18" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,32 +71,28 @@
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 1: 146 - 147; Z. 8: 165 - 166; Z. 26: 117 - 118; Z. 44: 80 - 81; Z. 45: 7. Juni 154; Z. 65: 27. März 57; Z. 70: 26. Mai - 24. Juni 185 (Jahr unsicher)</note>
-            <note type="source">HGV.fp7</note>
+            <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 1</ref>: <date type="mentioned" from="0146" to="0147"/>
+                  <ref>Z. 1</ref>: <date type="mentioned" notBefore="0146" notAfter="0147">146 - 147</date>
                </item>
                <item>
-                  <ref>Z. 8</ref>: <date type="mentioned" from="0165" to="0166"/>
+                  <ref>Z. 26</ref>: <date type="mentioned" notBefore="0117" notAfter="0118">117 - 118</date>
                </item>
                <item>
-                  <ref>Z. 26</ref>: <date type="mentioned" from="0117" to="0118"/>
+                  <ref>Z. 44</ref>: <date type="mentioned" notBefore="0080" notAfter="0081">80 - 81</date>
                </item>
                <item>
-                  <ref>Z. 44</ref>: <date type="mentioned" from="0080" to="0081"/>
+                  <ref>Z. 45</ref>: <date type="mentioned" when="0154-06-07">7. Juni 154</date>
                </item>
                <item>
-                  <ref>Z. 45</ref>: <date type="mentioned" when="0154-06-07"/>
+                  <ref>Z. 65</ref>: <date type="mentioned" when="0057-03-27">27. März 57</date>
                </item>
                <item>
-                  <ref>Z. 65</ref>: <date type="mentioned" when="0057-03-27"/>
+                  <ref>Z. 70</ref>: <date type="mentioned" notBefore="0185-05-26" notAfter="0185-06-24">26. Mai  - 24. Juni 185 (Jahr unsicher)</date>
                </item>
                <item>
-                  <ref>Z. 70</ref>: <date type="mentioned" from="0185-05-26" to="0185-06-24">
-                     <certainty target="./../year-from-date(@from)" locus="value"/>
-                     <certainty target="./../year-from-date(@to)" locus="value"/>
-                     <certainty locus="value" degree="0.7"/>
-                  </date>
+                  <ref>Z. 8</ref>: <date type="mentioned" notBefore="0165" notAfter="0166">165 - 166</date>
                </item>
             </list>
          </div>
@@ -111,9 +107,12 @@
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <bibl type="BL">
-               <biblScope type="volume">VIII</biblScope>, S. <biblScope type="pages">248</biblScope>
-            </bibl>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="pages">248</biblScope>
+               </bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
