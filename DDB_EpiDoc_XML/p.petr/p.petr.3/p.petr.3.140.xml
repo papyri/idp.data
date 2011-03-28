@@ -33,7 +33,7 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -60,7 +60,7 @@
 
     <lb n="6"/>κρόμμυα <expan><ex>τέταρτον ὀβολοῦ</ex></expan> <num value="1/4"/>, ῥῖποι <expan><ex>ὀβολοὶ 3</ex></expan><num value="3"/> <expan><ex>γίνεται</ex></expan> <num value="1">α</num> <expan><ex>ἡμιωβέλιον</ex></expan> <num value="1/2"/> <expan>χ<ex>αλκοῦς 1</ex></expan><num value="1"/> 
 
-    <lb n="7"/>οἴνου <expan>χο<ex>ῖνιξ</ex></expan> <num value="1">α</num> <num value="1/2" rend="fraction">𐅵</num> <expan><ex>δραχμαὶ</ex></expan> <num value="2">β</num> <expan><ex>ἡμιωβέλιον</ex></expan> <num value="1/2"/>, σῦκα <expan><ex>ὀβολὸς 1</ex></expan><num value="1"/>, 
+    <lb n="7"/>οἴνου <expan>χο<ex>ῖνιξ</ex></expan> <num value="1">α</num> <num value="1/2">𐅵</num> <expan><ex>δραχμαὶ</ex></expan> <num value="2">β</num> <expan><ex>ἡμιωβέλιον</ex></expan> <num value="1/2"/>, σῦκα <expan><ex>ὀβολὸς 1</ex></expan><num value="1"/>, 
 
     <lb n="8"/>κρέων <app type="BL"><lem resp="6.117"><expan>μν<ex>ῶν</ex></expan> <num value="3">γ</num></lem><rdg><abbr>μιγ</abbr></rdg></app> <expan><ex>ὀβολοὶ 4</ex></expan><num value="4"/> <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> <expan>χ<ex>αλκοῦς 1</ex></expan><num value="1"/> 
 </ab></div><div n="B" type="textpart"><!--milestone unit="4"--><ab>
@@ -69,11 +69,11 @@
 
     <lb n="2"/>λοπὰς <expan>χ<ex>αλκοῦς 1</ex></expan><num value="1"/>, γναφεῖ <expan><ex>ἡμιωβέλιον</ex></expan> <num value="1/2"/>, 
 
-    <lb n="3"/>ὀπὸς <expan><ex>ὀβολοὶ 2</ex></expan><num value="2"/> <expan><ex>γίνονται</ex></expan> <expan><ex>ὀβολοὶ</ex></expan> <num value="3">γ</num> <num value="1/4" rend="fraction">δ</num> <expan>χ<ex>αλκοῦς 1</ex></expan><num value="1"/> 
+    <lb n="3"/>ὀπὸς <expan><ex>ὀβολοὶ 2</ex></expan><num value="2"/> <expan><ex>γίνονται</ex></expan> <expan><ex>ὀβολοὶ</ex></expan> <num value="3">γ</num> <num value="1/4" rend="tick">δ</num> <expan>χ<ex>αλκοῦς 1</ex></expan><num value="1"/> 
 
     <lb n="4"/>Ἀπολλωνίωι σιτομετρ<supplied reason="lost">ία</supplied> 
 
-    <lb n="5"/><num value="7">ζ</num> εἰς <num value="30">λ</num> ἡμέρας <expan><ex cert="low">ἀνὰ</ex></expan> <num value="1"><unclear>α</unclear></num> <num value="2/3" rend="fraction"><unclear>𐅷</unclear></num> <gap reason="lost" extent="unknown" unit="character"/> 
+    <lb n="5"/><num value="7">ζ</num> εἰς <num value="30">λ</num> ἡμέρας <expan><ex cert="low">ἀνὰ</ex></expan> <num value="1"><unclear>α</unclear></num> <num value="2/3"><unclear>𐅷</unclear></num> <gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="6"/>Διοσκουρίδηι <expan><ex>δραχμὴ</ex></expan> <num value="1">α</num> <expan><ex>ὀβολοὶ 3</ex></expan><num value="3"/>, Κά<unclear>ρ</unclear><supplied reason="lost">πωι </supplied><gap reason="lost" quantity="1" unit="character"/> 
 
@@ -81,7 +81,7 @@
 
     <lb n="8"/>Κάρπωι <expan><ex>δραχμὴ</ex></expan> <num value="1">α</num> <expan><ex>γίνονται</ex></expan> <num value="6">ϛ</num> <expan><ex>ὀβολὸς 1</ex></expan><num value="1"/> 
 
-    <lb n="9"/><expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="10">ι</num> <expan><ex>ὀβολοὶ</ex></expan> <num value="3">γ</num> <num value="1/2" rend="fraction">𐅵</num> 
+    <lb n="9"/><expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="10">ι</num> <expan><ex>ὀβολοὶ</ex></expan> <num value="3">γ</num> <num value="1/2">𐅵</num> 
 </ab></div><div n="C" type="textpart"><!--milestone unit="4"--><ab>
 
     <lb n="1"/><gap reason="lost" quantity="1" unit="character"/><unclear>ν</unclear>ει λάχανα <gap reason="lost" extent="unknown" unit="character"/> 
@@ -100,12 +100,12 @@
 
     <lb n="8" type="inWord"/>τοὶ <expan><ex>τέταρτον ὀβολοῦ</ex></expan> <num value="1/4"/> 
 
-    <lb n="9"/><expan><ex>γίνονται</ex></expan> <expan><ex>ὀβολοὶ</ex></expan> <num value="2">β</num> <num value="1/4" rend="fraction">δ</num> 
+    <lb n="9"/><expan><ex>γίνονται</ex></expan> <expan><ex>ὀβολοὶ</ex></expan> <num value="2">β</num> <num value="1/4" rend="tick">δ</num> 
 
     <lb n="10"/><gap reason="lost" quantity="2" unit="character"/> ἔχω παρὰ <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
 </ab></div><div n="D" type="textpart"><!--milestone unit="4"--><ab>
 
-    <lb n="1"/>τοῦ ἱματίου καὶ χιτῶνος <expan><ex>ὀβολὸς</ex></expan> <num value="1">α</num> <num value="1/4" rend="fraction">δ</num> 
+    <lb n="1"/>τοῦ ἱματίου καὶ χιτῶνος <expan><ex>ὀβολὸς</ex></expan> <num value="1">α</num> <num value="1/4" rend="tick">δ</num> 
 
     <lb n="2"/><num value="12">ιβ</num> <add place="above">λάχανα <expan><ex>τέταρτον ὀβολοῦ</ex></expan> <num value="1/4"/>,</add> ἄρτοι <expan><ex>ὀβολὸς 1</ex></expan><num value="1"/>, <expan>θρίδα<ex>ξ</ex></expan> <expan>χ<ex>αλκοῦς 1</ex></expan><num value="1"/>, ῥαφάνια ὥστε 
 

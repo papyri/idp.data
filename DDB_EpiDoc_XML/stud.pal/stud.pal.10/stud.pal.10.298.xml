@@ -33,7 +33,7 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -142,7 +142,7 @@
     <lb n="13"/><expan>Πόλε<ex>ως</ex></expan> <expan>Μέμφε<ex>ως</ex></expan> 
 
     <lb n="14"/><expan>Ἰωάννη<ex>ς</ex></expan> <expan>Μην<ex>ᾶ</ex></expan>, <supplied reason="lost">Κοσ</supplied>μᾶ <gap reason="lost" quantity="5" unit="character"/> <abbr>χωρ</abbr> <expan>Ἰωάνν<ex>ο</ex></expan>υ Ἄπα <abbr><expan>Τερμ<ex>ου</ex></expan>θ</abbr> <gap reason="lost" extent="unknown" unit="character"/> <expan>Ἰωά<ex>ννου</ex></expan> <expan>δια<ex>κόνου</ex></expan>, <expan>Κολλοῦθ<ex>ος</ex></expan> 
-<expan>Ἀθανα<ex>νίου</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1/2" rend="fraction">𐅵</num> Ἀπολλὼ <expan>Στεφά<ex>νου</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1/2" rend="fraction">𐅵</num> <expan>λ<ex>οι</ex>π<ex>ὰ</ex></expan> <expan>ἀγγ<ex>αρευτὴς</ex></expan> <num value="1">α</num> 
+<expan>Ἀθανα<ex>νίου</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1/2">𐅵</num> Ἀπολλὼ <expan>Στεφά<ex>νου</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1/2">𐅵</num> <expan>λ<ex>οι</ex>π<ex>ὰ</ex></expan> <expan>ἀγγ<ex>αρευτὴς</ex></expan> <num value="1">α</num> 
 
     <lb n="15"/><expan>Ἀλέξανδ<ex>ρος</ex></expan> <abbr>Ἰα</abbr> Ζαχα<supplied reason="lost">ρία</supplied> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap> <gap reason="lost" quantity="16" unit="character"/> <expan>Ἰωάνν<ex>ης</ex></expan> Στυλλε<gap reason="lost" quantity="3" unit="character"/>, <expan>Φοιβ<ex>άμμωνος</ex></expan> <expan>Ἰερ<ex>εμίου</ex></expan> <expan>πρε<ex>σβυτέρου</ex></expan> <expan>ἀπ<ex>ὸ</ex></expan> <expan>χ<ex>ωρίου</ex></expan> 
 <supplied reason="lost">Χε</supplied>μπαβι <expan><ex>ὑπὲρ</ex></expan> Ἄ<supplied reason="lost">πα</supplied> <expan>Μέλα<ex>νος</ex></expan> <expan>Σενοθ<ex>ίου</ex></expan> <expan>πρε<ex>σβυτέρου</ex></expan> 
@@ -171,7 +171,7 @@
 
     <lb n="11"/><expan>δ<ex>ιὰ</ex></expan> <expan>Σενουθ<ex>ίου</ex></expan> <abbr>Πιακ</abbr> 
 
-    <lb n="12"/><expan>χωρ<ex>ίον</ex></expan> <abbr>κ</abbr> <num value="6">ϛ<certainty locus="value" match=".."/></num>  Εὐδέμ<unclear>ω</unclear>ν <expan>Ἀνδρέ<ex>α</ex></expan> <expan>ἀγγ<ex>αρευτὴς</ex></expan> <num value="1">α</num> 
+    <lb n="12"/><expan>χωρ<ex>ίον</ex></expan> <abbr>κ</abbr> <num value="6">ϛ<certainty match="../@value" locus="value"/></num>  Εὐδέμ<unclear>ω</unclear>ν <expan>Ἀνδρέ<ex>α</ex></expan> <expan>ἀγγ<ex>αρευτὴς</ex></expan> <num value="1">α</num> 
 
     <lb n="13"/><expan>χωρ<ex>ίον</ex></expan> Πι<gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>  <expan>ἀγγ<ex>αρευταὶ</ex></expan> <num value="2">β</num> 
 
@@ -180,7 +180,7 @@
     <lb n="15"/><expan>Πόλε<ex>ως</ex></expan> <expan>Μέμφ<ex>εως</ex></expan> 
 
     <lb n="16"/>Ἀνοῦπ <expan>Ἰερεμί<ex>ου</ex></expan>, Σαραπάμων Ἄπα <expan>Ἰουλ<ex>ίου</ex></expan>, <expan>Ἰωάνν<ex>ης</ex></expan> <expan>Γεωργ<ex>ίου</ex></expan> <expan>πρ<ex>εσβυτέρου</ex></expan>, <gap reason="illegible" quantity="1" unit="character"/>α<gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><abbr>π<gap reason="lost" quantity="3" unit="character"/>ελ</abbr> Μηνᾶ, 
-<expan>Παφνούθ<ex>ιος</ex></expan> <expan>Γεωργ<ex>ίου</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1/2" rend="fraction">𐅵</num> <g type="unintelligible"/> <num value="41">μα</num> <expan>Ἀλεξάνδ<ex>ρου</ex></expan> Ἄπα <expan>Κ<ex>ύρου</ex></expan> 
+<expan>Παφνούθ<ex>ιος</ex></expan> <expan>Γεωργ<ex>ίου</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1/2">𐅵</num> <g type="unintelligible"/> <num value="41">μα</num> <expan>Ἀλεξάνδ<ex>ρου</ex></expan> Ἄπα <expan>Κ<ex>ύρου</ex></expan> 
 
     <lb n="17"/>Ναα<supplied reason="lost">ρωυ</supplied> <expan>Ἰωά<ex>ννου</ex></expan> <expan><ex>ὑπὲρ</ex></expan> Κοσμᾶ <expan>πρε<ex>σβυτέρου</ex></expan> <expan>Ἀλεξάνδ<ex>ρου</ex></expan> <del rend="erasure"><g type="unintelligible"/> <expan>Ἀλεξανδ<ex>ρ  </ex></expan> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap></del> 
 

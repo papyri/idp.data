@@ -33,7 +33,7 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -51,9 +51,9 @@
 
     <lb n="1"/>χμγ  <num value="32">λβ</num> 
 
-    <lb n="2"/><abbr>λοιπ</abbr> <expan><ex>ἄρουραι</ex></expan> <num value="17">ιζ</num> <num value="1/2" rend="fraction"><unclear>𐅵</unclear></num> <gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>ο</unclear>φ 
+    <lb n="2"/><abbr>λοιπ</abbr> <expan><ex>ἄρουραι</ex></expan> <num value="17">ιζ</num> <num value="1/2"><unclear>𐅵</unclear></num> <gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>ο</unclear>φ 
 
-    <lb n="3"/><g type="unintelligible"/> Σαραπίων Κολλούθου <expan><ex>ἄρουραι</ex></expan> <num value="17">ιζ</num> <num value="1/2" rend="fraction">𐅵</num> <num value="1/8" rend="fraction">η</num> <num value="1/16" rend="fraction">ιϛ</num> <expan><ex>δηναρίων μυριάδ  </ex></expan> 
+    <lb n="3"/><g type="unintelligible"/> Σαραπίων Κολλούθου <expan><ex>ἄρουραι</ex></expan> <num value="17">ιζ</num> <num value="1/2">𐅵</num> <num value="1/8" rend="tick">η</num> <num value="1/16" rend="tick">ιϛ</num> <expan><ex>δηναρίων μυριάδ  </ex></expan> 
 
     <lb n="4"/><g type="check"/> τῷ <abbr>β</abbr> <del rend="erasure"><expan><ex>δηναρίων μυριὰς</ex></expan> <num value="1">α</num> <num value="8000"><unclear>Η</unclear></num> </del> 
 </ab></div><div n="1,md" type="textpart"><!--milestone unit="4"--><ab>
@@ -109,9 +109,9 @@
 
     <lb n="1"/><expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> <expan><ex>δηναρίων μυριάδες</ex></expan> <num value="2">β</num>  <num value="8000">Η</num> <num value="28000"/> 
 
-    <lb n="2"/><g type="check"/> <num value="1">α<certainty locus="value" match=".."/></num>  <abbr>Μιν</abbr> Κολλούθου <expan><ex>τάλαντα</ex></expan> <num value="7000">Ζ</num> 
+    <lb n="2"/><g type="check"/> <num value="1">α<certainty match="../@value" locus="value"/></num>  <abbr>Μιν</abbr> Κολλούθου <expan><ex>τάλαντα</ex></expan> <num value="7000">Ζ</num> 
 
-    <lb n="3"/><g type="check"/> <num value="1">α<certainty locus="value" match=".."/></num>  Μόνης <expan>Φοιβάμ<ex>μωνος</ex></expan> <expan><ex>δηναρίων μυριὰς</ex></expan> <num value="1">α</num>  <num value="6700">Ϛψ</num> <num value="16700"/> 
+    <lb n="3"/><g type="check"/> <num value="1">α<certainty match="../@value" locus="value"/></num>  Μόνης <expan>Φοιβάμ<ex>μωνος</ex></expan> <expan><ex>δηναρίων μυριὰς</ex></expan> <num value="1">α</num>  <num value="6700">Ϛψ</num> <num value="16700"/> 
 
     <lb n="4"/><expan>ὑ<ex>πὲρ</ex></expan> <choice><reg>τοῦ</reg><orig>των</orig></choice> <expan>νο<ex>μισματίου</ex></expan> <num value="1">α</num> <expan>δι<ex>ὰ</ex></expan> <abbr>Ἀντιουχ</abbr> <expan>στρ<ex>ατιώτου</ex></expan> <expan>δι<ex>ὰ</ex></expan> <abbr>Ἰαι</abbr> <del rend="erasure">ὧν <expan><ex>δηναρίων μυριάδες</ex></expan> <num value="10">ι</num> <num value="4000">Δ</num> <num value="104000"/></del> 
 
@@ -133,15 +133,15 @@
 
     <lb n="13"/><expan>ἡμερ<ex>ῶν</ex></expan> τῶν ἀπὸ <expan><hi rend="diaeresis">Ἰ</hi>ώνθ<ex>εως</ex></expan> <expan><ex>τάλαντον</ex></expan> <num value="1">α</num> 
 
-    <lb n="14"/><gap reason="illegible" quantity="1" unit="character"/> <abbr>κουφ</abbr> εἰς <expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> Βάνο<supplied reason="lost">ς <expan><ex>καὶ</ex></expan></supplied> <expan>Ψῦρο<ex>ς</ex></expan> <expan><ex>ἄρουραι</ex></expan> <num value="16">ιϛ</num> <num value="1/32" rend="fraction">λβ</num> 
+    <lb n="14"/><gap reason="illegible" quantity="1" unit="character"/> <abbr>κουφ</abbr> εἰς <expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> Βάνο<supplied reason="lost">ς <expan><ex>καὶ</ex></expan></supplied> <expan>Ψῦρο<ex>ς</ex></expan> <expan><ex>ἄρουραι</ex></expan> <num value="16">ιϛ</num> <num value="1/32" rend="tick">λβ</num> 
 
-    <lb n="15"/><gap reason="illegible" quantity="1" unit="character"/> <abbr>κουφ</abbr> εἰς <expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> <expan>Σιλβ<ex>ανὸς</ex></expan> <expan><ex>καὶ</ex></expan> Παῦλ<unclear>ο</unclear>ς <expan><ex>ἄρουραι</ex></expan> <num value="16"><unclear>ιϛ</unclear></num> <num value="1/32" rend="fraction">λβ</num> 
+    <lb n="15"/><gap reason="illegible" quantity="1" unit="character"/> <abbr>κουφ</abbr> εἰς <expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> <expan>Σιλβ<ex>ανὸς</ex></expan> <expan><ex>καὶ</ex></expan> Παῦλ<unclear>ο</unclear>ς <expan><ex>ἄρουραι</ex></expan> <num value="16"><unclear>ιϛ</unclear></num> <num value="1/32" rend="tick">λβ</num> 
 
-    <lb n="16"/><gap reason="illegible" quantity="1" unit="character"/> <abbr>κουφ</abbr> εἰς <expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> <unclear>Ἀμ</unclear>ουν<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <expan><ex>ἀρούρης</ex></expan> <num value="1/4" rend="fraction">δ</num> 
+    <lb n="16"/><gap reason="illegible" quantity="1" unit="character"/> <abbr>κουφ</abbr> εἰς <expan>ὀν<ex>όματα</ex></expan> <num value="2">β</num> <unclear>Ἀμ</unclear>ουν<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <expan><ex>ἀρούρης</ex></expan> <num value="1/4" rend="tick">δ</num> 
 
     <lb n="17"/><expan>ἡμερ<ex>ῶν</ex></expan> τῶν ἀπὸ <gap reason="illegible" quantity="3" unit="character"/> <del rend="erasure"><expan><ex>τάλαντα</ex></expan> <gap reason="illegible" quantity="1" unit="character"/></del> <expan><ex>τάλαντα</ex></expan> <num value="400">υ</num> 
 
-    <lb n="18"/>καὶ <choice><reg>τῶν</reg><orig>τον</orig></choice> <expan>ἀξι<unclear>ο</unclear>λ<unclear>ο</unclear>γ<ex>ωτάτων</ex></expan> <expan><ex>ἄρουραι</ex></expan> <num value="2"><unclear>β</unclear></num> <num value="1/16" rend="fraction">ιϛ</num> 
+    <lb n="18"/>καὶ <choice><reg>τῶν</reg><orig>τον</orig></choice> <expan>ἀξι<unclear>ο</unclear>λ<unclear>ο</unclear>γ<ex>ωτάτων</ex></expan> <expan><ex>ἄρουραι</ex></expan> <num value="2"><unclear>β</unclear></num> <num value="1/16" rend="tick">ιϛ</num> 
 
     <lb n="19"/><num value="2">β</num> <expan>Φοιβάμμ<ex>ων</ex></expan> <expan>Κωμ<unclear>ασί</unclear><ex>ου</ex></expan> <expan><ex>δηναρίων μυριάδες</ex></expan> <num value="9"><unclear>θ</unclear></num> <num value="90000"/> 
 
@@ -163,7 +163,7 @@
 
     <lb n="3"/>ὁμοῦ <expan><ex>ἄρουραι</ex></expan> 
 
-    <lb n="4"/><g type="unintelligible"/> Π<supplied reason="lost">αῦ</supplied>λος Ἀνουβᾶτος <expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/4" rend="fraction">δ</num> <num value="1/8" rend="fraction">η</num> <num value="1/32" rend="fraction">λβ</num> <expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/2" rend="fraction">𐅵</num> 
+    <lb n="4"/><g type="unintelligible"/> Π<supplied reason="lost">αῦ</supplied>λος Ἀνουβᾶτος <expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/4" rend="tick">δ</num> <num value="1/8" rend="tick">η</num> <num value="1/32" rend="tick">λβ</num> <expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/2">𐅵</num> 
 
     <lb n="5"/><g type="mid-punctus"/>π<g type="mid-punctus"/> τῷ <abbr><supplied reason="lost">β</supplied></abbr> <expan><ex>δηναρίων μυριάδες</ex></expan> <num value="2">β</num>  <num value="2000">Β</num> <num value="22000"/> 
 
@@ -204,7 +204,7 @@
 
     <lb n="2"/><num value="2">β</num> <expan>ὀν<ex>όματος</ex></expan> <del rend="erasure"><num value="1">α</num>  <num value="2">β</num></del>  <num value="1">α</num> <expan><ex>δηναρίων μυριὰς</ex></expan> <num value="1"><unclear>α</unclear></num>  <num value="8000"><unclear>Η</unclear></num>  
 
-    <lb n="3"/><g type="check"/> καὶ <expan>ὑπ<ex>ὲρ</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1">α</num> <expan>Ἰωάν<ex>νης</ex></expan> Βάνου <expan><ex>ἄρουραι</ex></expan> <num value="6">ϛ</num> <num value="1/4" rend="fraction">δ</num> <g type="unintelligible"/> 
+    <lb n="3"/><g type="check"/> καὶ <expan>ὑπ<ex>ὲρ</ex></expan> <expan>ὀν<ex>όματος</ex></expan> <num value="1">α</num> <expan>Ἰωάν<ex>νης</ex></expan> Βάνου <expan><ex>ἄρουραι</ex></expan> <num value="6">ϛ</num> <num value="1/4" rend="tick">δ</num> <g type="unintelligible"/> 
 
     <lb n="4"/><g type="check"/>  <num value="1">α</num> Ἀπόλλων Ἀνο<del rend="erasure">υθίου <expan><ex>τάλαντα</ex></expan> <num value="2600">Βχ</num></del> 
 
@@ -248,7 +248,7 @@
 
     <lb n="24"/><del rend="erasure"><gap reason="illegible" quantity="2" unit="character"/> <unclear>Κ</unclear><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <expan><ex>τάλαντα</ex></expan> <num value="3100">Γ<unclear>ρ</unclear></num></del> 
 
-    <lb n="25"/><gap reason="lost" extent="unknown" unit="character"/><del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/> <expan>ἡμερ<ex>ῶν</ex></expan> <unclear>νε</unclear><gap reason="illegible" quantity="1" unit="character"/> <expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/4" rend="fraction">δ</num> <num value="1/6" rend="fraction">ϛ</num></del> 
+    <lb n="25"/><gap reason="lost" extent="unknown" unit="character"/><del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/> <expan>ἡμερ<ex>ῶν</ex></expan> <unclear>νε</unclear><gap reason="illegible" quantity="1" unit="character"/> <expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/4" rend="tick">δ</num> <num value="1/6" rend="tick">ϛ</num></del> 
 </ab></div><div n="3" type="textpart"><!--milestone unit="4"--><ab>
 
     <lb n="1"/>β  <expan>Φοιβ<ex>άμμων</ex></expan> <expan>κωμάρχ<ex>ης</ex></expan> <del rend="erasure"><expan><ex>τάλαντα</ex></expan> <num value="1600">Αχ</num></del> 
@@ -262,7 +262,7 @@
 
     <lb n="5"/><expan>ὑ<ex>πὲρ</ex></expan> τῶν <num value="51"><unclear>να</unclear></num> <expan>ἡμερ<ex>ῶν</ex></expan> τῶ<del rend="erasure">ν ἀπὸ <abbr><hi rend="diaeresis">Ι</hi>θ</abbr></del> 
 
-    <lb n="6"/>β<g type="slanting-stroke"/><unclear>α</unclear> <supplied reason="lost"><expan>ὑ<ex>πὲρ</ex></expan></supplied> <expan>ὀν<ex>ομάτων</ex></expan> <num value="2">β</num> Μίας Βέτος <del rend="erasure"><expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/8" rend="fraction">η</num></del> <expan>δι<ex>ὰ</ex></expan> <expan>Βάν<ex>ου</ex></expan> 
+    <lb n="6"/>β<g type="slanting-stroke"/><unclear>α</unclear> <supplied reason="lost"><expan>ὑ<ex>πὲρ</ex></expan></supplied> <expan>ὀν<ex>ομάτων</ex></expan> <num value="2">β</num> Μίας Βέτος <del rend="erasure"><expan><ex>ἄρουρα</ex></expan> <num value="1">α</num> <num value="1/8" rend="tick">η</num></del> <expan>δι<ex>ὰ</ex></expan> <expan>Βάν<ex>ου</ex></expan> 
 
     <lb n="7"/>Βίκτωρ <expan>Σιλβαν<ex>οῦ</ex></expan> <expan>δι<ex>ὰ</ex></expan> Παύλου <expan><ex>τάλαντα</ex></expan> 
 
