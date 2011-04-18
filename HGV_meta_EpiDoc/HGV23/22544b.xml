@@ -67,7 +67,7 @@
       <revisionDesc>
          <change who="HGV" when="1995-08-18">Record created</change>
          <change who="HGV" when="2010-09-24">Record last modified</change>
-         <change when="2011-04-13" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-04-18" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -81,10 +81,18 @@
             <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 39</ref>: <date type="mentioned" notBefore="0161-07-25" notAfter="0161-08-23">25. Juli  - 23. Aug. 161 (Jahr unsicher)</date>
+                  <ref>Z. 39</ref>
+                  <date type="mentioned" notBefore="0161-07-25" notAfter="0161-08-23">25. Juli  - 23. Aug. 161 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
+                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 56</ref>: <date type="mentioned" notBefore="0160-09-28" notAfter="0160-10-27">28. Sept.  - 27. Okt. 160 (Jahr und Monat unsicher)</date>
+                  <ref>Z. 56</ref>
+                  <date type="mentioned" notBefore="0160-09-28" notAfter="0160-10-27">28. Sept.  - 27. Okt. 160 (Jahr und Monat unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
+                     <certainty locus="value" match="../date/month-from-date(@notBefore)"/>
+                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                     <certainty locus="value" match="../date/month-from-date(@notAfter)"/>
+                  </date>
                </item>
             </list>
          </div>
