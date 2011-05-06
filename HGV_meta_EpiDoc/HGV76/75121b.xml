@@ -14,7 +14,11 @@
          </publicationStmt>
          <sourceDesc>
             <msDesc>
-               <msIdentifier/>
+               <msIdentifier>
+                  <placeName>
+                     <settlement>unbekannt</settlement>
+                  </placeName>
+               </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
@@ -27,8 +31,12 @@
                <history>
                   <origin>
                      <origPlace>
-                        <placeName type="ancientRegion">Theben</placeName>
-                        <placeName type="ancientFindspot">Ta Memnoneia</placeName>
+                        <placeName type="ancientRegion">
+                           <placeName key="Aegyptus">Ägypten</placeName>
+                        </placeName>
+                        <placeName type="ancientFindspot">
+                           <placeName>Ta Memnoneia (Theben)</placeName>
+                        </placeName>
                      </origPlace>
                      <origDate when="0114-02-28">28. Febr. 114</origDate>
                   </origin>
@@ -62,7 +70,7 @@
       <revisionDesc>
          <change who="HGV" when="1999-05-21">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
-         <change when="2011-03-16" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,19 +81,26 @@
             <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref>Z. 10</ref>: <date type="mentioned" notBefore="0113-04-26" notAfter="0113-05-25">26. Apr.  - 25. Mai 113</date>
+                  <ref>Z. 10</ref>
+                  <date type="mentioned" notBefore="0113-04-26" notAfter="0113-05-25">26. Apr.  - 25. Mai 113</date>
                </item>
                <item>
-                  <ref>Z. 11</ref>: <date type="mentioned" when="0113-07-03">3. Juli 113</date>
+                  <ref>Z. 11</ref>
+                  <date type="mentioned" when="0113-07-03">3. Juli 113</date>
                </item>
                <item>
-                  <ref>Z. 12</ref>: <date type="mentioned" when="0113-06-24">24. Juni 113</date>
+                  <ref>Z. 12</ref>
+                  <date type="mentioned" when="0113-06-24">24. Juni 113</date>
                </item>
                <item>
-                  <ref>Z. 13</ref>: <date type="mentioned" when="0114-01-22">22. Jan. 114 (Monat und Tag unsicher)</date>
+                  <ref>Z. 13</ref>
+                  <date type="mentioned" when="0114-01-22">22. Jan. 114 (Monat und Tag unsicher)<certainty locus="value" match="../date/month-from-date(@when)"/>
+                     <certainty locus="value" match="../date/day-from-date(@when)"/>
+                  </date>
                </item>
                <item>
-                  <ref>Z. 9</ref>: <date type="mentioned" when="0113-03-12">12. März 113</date>
+                  <ref>Z. 9</ref>
+                  <date type="mentioned" when="0113-03-12">12. März 113</date>
                </item>
             </list>
          </div>
