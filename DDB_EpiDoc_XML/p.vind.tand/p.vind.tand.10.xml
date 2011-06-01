@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0222;;10" xml:id="p.vind.tand.10" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0222;;10" xml:id="p.vind.tand.10"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -41,9 +42,16 @@
             <handNote xml:id="m7"/>
             <handNote xml:id="m8"/>
             <handNote xml:id="m9"/>
+            <handNote xml:id="m10"/>
+            <handNote xml:id="m11"/>
          </handNotes>
       </profileDesc>
-      <revisionDesc><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+         <change when="2011-06-01T15:42:32.879-04:00" who="Joshua D. Sosin">Finalized - ready</change>
+         <change when="2011-06-01T15:42:32.87-04:00" who="Joshua D. Sosin">Vote - Accept-Straight-to-FInalization - Accept. Lin2--&gt; καὶ Σαροσ.1(?); lin6--&gt; &amp;lt;:[ὀ]μνύομεν(?)|BL:8.505|&amp;lt;:[ὀ]μνύομαι|reg|[ὀ]μ̣νύωμαι:&amp;gt;:&amp;gt; ; lin11--&gt; &amp;lt;κ̣ώμης(?)|BL:8.505|.2μης:&amp;gt; ; lin22 seems fine to me; lin32--&gt; BL:7.279 (already caught by BL); add diacriticals to reg throughout.</change>
+         <change when="2011-05-27T12:10:00.947-04:00" who="Mario C.D. Paganini">Entered corrections from BL for ll. 2, 6, 11, 18, 22 and 46.&#xD;
+In l. 32 the correction Κερκύτου for the name of the village was not included in BL: the new reading is recorded by R. Hübner, Gnomon (1979) p. 571, although it had already been proposed by D. Hagedorn in P.Köln II 99.3.</change>
+         <change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -56,13 +64,13 @@
             <date>AD54</date>
             <placeName>Arsinoite?</placeName>
          </head>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="2" type="textpart"><!--milestone unit="4"--><ab>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="2" type="textpart"><ab>
 
     <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/> 
 
-    <lb n="1"/><handShift new="m2"/> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap> 
+    <lb n="1"/><handShift new="m2"/> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
 
-    <lb n="2"/><unclear>Ατ</unclear>ειρε<unclear>ω</unclear>ς Καίσ<unclear>αρος</unclear> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+    <lb n="2"/><unclear>Ατ</unclear>ειρε<unclear>ω</unclear>ς <app type="BL"><lem resp="8.505">καὶ Σ<unclear>αροσ</unclear><gap reason="illegible" quantity="1" unit="character"/><certainty match=".." locus="value"/></lem><rdg>Καίσ<unclear>αρος</unclear></rdg></app> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="3"/><unclear>τῶν</unclear> ἀ<unclear>πὸ</unclear> κώμη<unclear>ς</unclear> Ατ<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
 
@@ -70,7 +78,7 @@
 
     <lb n="5"/><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>υ <surplus>Αυ</surplus> Αὐτοκρ<unclear>άτορος</unclear> <gap reason="lost" extent="unknown" unit="character"/> 
 
-    <lb n="6"/><choice><reg>ὀμνύομαι</reg><orig><supplied reason="lost">ο</supplied><unclear>μ</unclear>νυωμαι</orig></choice> θεὸν <unclear>Τιβέ</unclear><supplied reason="lost">ριον Κλαύδιον Καίσα</supplied>
+    <lb n="6"/><app type="BL"><lem resp="8.505"><supplied reason="lost">ὀ</supplied>μνύομεν<certainty match=".." locus="value"/></lem><rdg><choice><reg><supplied reason="lost">ὀ</supplied>μνύομαι</reg><orig><supplied reason="lost">ὀ</supplied><unclear>μ</unclear>νύωμαι</orig></choice></rdg></app> θεὸν <unclear>Τιβέ</unclear><supplied reason="lost">ριον Κλαύδιον Καίσα</supplied>
 
     <lb n="7" type="inWord"/><supplied reason="lost">ρα</supplied> Αὐ<unclear>τ</unclear><supplied reason="lost">ο</supplied><unclear>κρ</unclear>ά<unclear>το</unclear>ρ<unclear>α</unclear> εἰ μὴ<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">  τοῦ</supplied> 
 
@@ -80,7 +88,7 @@
 
     <lb n="10"/>πρότερον Γαίου Ἰουλ<unclear>ί</unclear><supplied reason="lost">ου </supplied><gap reason="lost" extent="unknown" unit="character"/> 
 
-    <lb n="11"/><unclear>τ</unclear>ῆς <gap reason="illegible" quantity="2" unit="character"/>μης γεωργῶ<supplied reason="lost">ν </supplied><gap reason="lost" extent="unknown" unit="character"/> 
+    <lb n="11"/><unclear>τ</unclear>ῆς <app type="BL"><lem resp="8.505"><unclear>κ</unclear>ώμης <certainty match=".." locus="value"/></lem><rdg><gap reason="illegible" quantity="2" unit="character"/>μης</rdg></app> γεωργῶ<supplied reason="lost">ν </supplied><gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="12"/>τ<gap reason="illegible" quantity="4" unit="character"/>ς Τιβερίου <unclear>Κλα</unclear><supplied reason="lost">υδίου Καίσαρος Αὐτοκράτο</supplied>
 
@@ -88,7 +96,7 @@
 
     <lb n="14"/><gap reason="illegible" quantity="4" unit="line"/> 
 
-    <lb n="18"/><supplied reason="lost">μοι</supplied> εὐ εἴη<supplied reason="lost">ι, ἐ</supplied><unclear>φ</unclear>ι<unclear>ο</unclear>ρ<unclear>κοῦν</unclear><supplied reason="lost">τι δὲ τὰ ἐνάντια. </supplied><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">  ἔγραψα</supplied> 
+    <lb n="18"/><supplied reason="lost">μοι</supplied> εὐ εἴη<supplied reason="lost">ι</supplied>, <app type="BL"><lem resp="8.505"><supplied reason="lost">ἐ</supplied><unclear>φ</unclear>ι<unclear>ο</unclear>ρ<unclear>κοῦσ</unclear><supplied reason="lost">ι</supplied></lem><rdg><supplied reason="lost">ἐ</supplied><unclear>φ</unclear>ι<unclear>ο</unclear>ρ<unclear>κοῦν</unclear><supplied reason="lost">τι</supplied></rdg></app> <supplied reason="lost">δὲ τὰ ἐνάντια. </supplied><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">  ἔγραψα</supplied> 
 
     <lb n="19"/><supplied reason="lost">ὑ</supplied>πὲρ <unclear>αὐ</unclear><supplied reason="lost">τ</supplied><unclear>ῶ</unclear>ν <unclear>ἀ</unclear><supplied reason="lost">ξ</supplied><unclear>ιωθ</unclear><supplied reason="lost">εὶς διὰ τὸ φάσκειν μὴ</supplied> 
 
@@ -96,14 +104,14 @@
 
     <lb n="21"/><handShift new="m3"/> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap> 
 
-    <lb n="22"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>τον <unclear>χ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>σ</unclear><add place="above">ο</add><unclear>αφ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+    <lb n="22"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>τον <unclear>χ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>σ</unclear><add place="above">ο</add><unclear>αφ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="illegible" quantity="2" unit="character"/> <app type="BL"><lem resp="8.505"><supplied reason="lost" cert="low">ἔγραψα </supplied></lem><rdg><gap reason="lost" extent="unknown" unit="character"/></rdg></app> 
 
     <lb n="23"/><handShift new="m4"/> <supplied reason="lost">ὁ κα</supplied>ὶ Πτολλίων Ἱε<unclear>ρ</unclear>α<gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="24"/><handShift new="m5"/> Ἀρό<unclear>μ</unclear>βας <expan><unclear>κεχρη</unclear><ex>μάτικα</ex></expan>. ἔτους <unclear>π</unclear><supplied reason="lost">εντεκαιδεκάτου Τιβερίου Κλαυδίου</supplied> 
 
     <lb n="25"/>Καίσαρος Σεβαστοῦ Γερμανικο<supplied reason="lost">ῦ Αὐτοκράτορος   </supplied><gap reason="lost" extent="unknown" unit="character"/> 
-</ab></div><div n="3" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="3" type="textpart"><ab>
 
     <lb n="25"/><gap reason="lost" extent="unknown" unit="line"/> 
 
@@ -119,7 +127,7 @@
 
     <lb n="31" type="inWord"/>μίας Ἡρακλείδου οἱ δύο <num value="2"/> τῶν ἀπὸ κώ
 
-    <lb n="32" type="inWord"/>μης Κερκητου Γαίωι Ἰουλίωι Ιο<gap reason="lost" quantity="4" unit="character"/> 
+    <lb n="32" type="inWord"/>μης <app type="BL"><lem resp="7.279">Κερκύτου</lem><rdg>Κερκητου</rdg></app> Γαίωι Ἰουλίωι Ιο<gap reason="lost" quantity="4" unit="character"/> 
 
     <lb n="33"/><unclear>ἱ</unclear>ερεῖ καὶ γυμ<unclear>νασ</unclear>ιάρχωι Ἀλεξα<supplied reason="lost">νδρείας</supplied> 
 
@@ -127,7 +135,7 @@
 
     <lb n="35"/>Κλαύδιον Καίσ<unclear>αρ</unclear>α Σεβαστὸν Γερμ<supplied reason="lost">α</supplied><unclear>ν</unclear><supplied reason="lost">ι</supplied><unclear>κ</unclear><supplied reason="lost">ὸν</supplied> 
 
-    <lb n="36"/>Αὐτοκράτορα εἰ μὴν <choice><reg>καθεστάσθαι</reg><orig>κατεστασ<unclear>θ</unclear><supplied reason="lost">αι</supplied></orig></choice> 
+    <lb n="36"/>Αὐτοκράτορα εἰ μὴν <choice><reg>καθεστάσθ<supplied reason="lost">αι</supplied></reg><orig>κατεστάσ<unclear>θ</unclear><supplied reason="lost">αι</supplied></orig></choice> 
 
     <lb n="37"/>προστάτας γε<unclear>ω</unclear>ργῶν τὸν μὲν Μν<unclear>ά</unclear><supplied reason="lost">σω</supplied>
 
@@ -147,11 +155,11 @@
 
     <lb n="45" type="inWord"/>σειν τῶν γεωργῶν καὶ πρ<supplied reason="lost">ονοή</supplied>
 
-    <lb n="46" type="inWord"/>σει<unclear>ν</unclear> ὅπως μηδὲν ἀμελῇ <supplied reason="lost">τῶν</supplied> 
+    <lb n="46" type="inWord"/>σει<unclear>ν</unclear> ὅπως μηδὲν <app type="BL"><lem resp="8.505">ἀμελη<supplied reason="lost">θῇ τῶν</supplied></lem><rdg>ἀμελῇ <supplied reason="lost">τῶν</supplied></rdg></app>
 
     <lb n="47"/>ο<unclear>ὐσι</unclear>ῶν καὶ π<supplied reason="lost">ά</supplied>ντα ἐκ πλή<supplied reason="lost">ρους</supplied> 
 
-    <lb n="48"/>ε<unclear>ὖ</unclear> <unclear>τά</unclear>ξειν. ἐὰν δέ τις <choice><reg>ἔκδει<supplied reason="lost">α</supplied></reg><orig>εγδ<unclear>ει</unclear><supplied reason="lost">α</supplied></orig></choice> <supplied reason="lost">γ</supplied>έ
+    <lb n="48"/>ε<unclear>ὖ</unclear> <unclear>τά</unclear>ξειν. ἐὰν δέ τις <choice><reg>ἔκδει<supplied reason="lost">α</supplied></reg><orig>ἔγδ<unclear>ει</unclear><supplied reason="lost">α</supplied></orig></choice> <supplied reason="lost">γ</supplied>έ
 
     <lb n="49" type="inWord"/>νηται ἔν τινι οὐσίᾳ τ<unclear>ῶν</unclear> π<supplied reason="lost">ροκ</supplied><unclear>ει</unclear>
 
@@ -159,7 +167,7 @@
 
     <lb n="51" type="inWord"/>τοῦντα τῆς οὐσίας. εὐορκοῦ<unclear>σι</unclear> 
 
-    <lb n="52"/>μὲν <choice><reg>ἡμῖν</reg><orig>ημειν</orig></choice> εὖ εἴηι, ἐφ<unclear>ιο</unclear>ρκοῦ<supplied reason="lost">σι</supplied> <unclear>δὲ</unclear> 
+    <lb n="52"/>μὲν <choice><reg>ἡμῖν</reg><orig>ἡμεῖν</orig></choice> εὖ εἴηι, ἐφ<unclear>ιο</unclear>ρκοῦ<supplied reason="lost">σι</supplied> <unclear>δὲ</unclear> 
 
     <lb n="53"/>τὰ ἐνάντια.  Δίδυμος Π<unclear>ο</unclear><gap reason="illegible" quantity="1" unit="character"/>τίου <unclear>γέγρα</unclear>
 
@@ -167,14 +175,14 @@
 
     <lb n="55"/>αὐτοὺς γράφειν. <handShift new="m7"/> Μνάσων νεώ
 
-    <lb n="56" type="inWord"/>τερος Ἀπολλωνίου ὀμ
+    <lb n="56" type="inWord"/>τερος Ἀπολλωνίου <choice><reg>ὀμ
 
-    <lb n="57" type="inWord"/><choice><reg>ώμοκα</reg><orig><unclear>ωμ</unclear>ωμοχα</orig></choice> <choice><reg>καθὼς</reg><orig>καθος</orig></choice> πρό<unclear>κ</unclear>ειτα<supplied reason="lost">ι</supplied>. 
+    <lb n="57" type="inWord"/>ώμοκα</reg><orig><unclear>ὠμ</unclear><lb n="57" type="inWord"/>ώμοχα</orig></choice> <choice><reg>καθὼς</reg><orig>καθὸς</orig></choice> πρό<unclear>κ</unclear>ειτα<supplied reason="lost">ι</supplied>. 
 
-    <lb n="58"/><handShift new="m8"/> Ἑρμίας Ἡρακλείδου <choice><reg>ὀμώμοκα</reg><orig>ωμωμωκα</orig></choice> κα
+    <lb n="58"/><handShift new="m8"/> Ἑρμίας Ἡρακλείδου <choice><reg>ὀμώμοκα</reg><orig>ὠμώμωκα</orig></choice> <choice><reg>κα
 
-    <lb n="59" type="inWord"/><choice><reg>θὼς</reg><orig>καθος</orig></choice> πρόκειται. 
-</ab></div><div n="4" type="textpart"><!--milestone unit="4"--><ab>
+    <lb n="59" type="inWord"/>θὼς</reg><orig>κα<lb n="59" type="inWord"/>θὸς</orig></choice> πρόκειται. 
+</ab></div><div n="4" type="textpart"><ab>
 
     <lb n="59"/><gap reason="lost" extent="unknown" unit="line"/> 
 
@@ -212,17 +220,17 @@
 
     <lb n="76"/>Αὐτοκράτ<supplied reason="lost">ορος </supplied><gap reason="lost" extent="unknown" unit="character"/> 
 
-    <lb n="77"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap> 
+    <lb n="77"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
 
-    <lb n="78"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap> 
+    <lb n="78"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
 
-    <lb n="79"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>      <supplied reason="lost">γέγραφα ὑπὲρ αὐ</supplied>
+    <lb n="79"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap><supplied reason="lost">γέγραφα ὑπὲρ αὐ</supplied>
 
     <lb n="80" type="inWord"/>τοῦ φ<unclear>άσκ</unclear><supplied reason="lost">ο</supplied><unclear>ν</unclear><supplied reason="lost">τος μὴ εἰδέναι γράμματα</supplied>. 
 
-    <lb n="81"/><note xml:lang="en">m10 ?</note> τοθη<unclear>νο</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+    <lb n="81"/><handShift new="m10" cert="low"/>τοθη<unclear>νο</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
 
-    <lb n="82"/><note xml:lang="en">m11 ?</note>          βεβλη<gap reason="lost" extent="unknown" unit="character"/> 
+    <lb n="82"/><handShift new="m11" cert="low"/>         βεβλη<gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="83"/><handShift new="m5"/> Ἀρόμβας <expan><unclear>κε</unclear><supplied reason="lost">χρη<ex>μάτικα</ex></supplied></expan><supplied reason="lost">. ἔτους </supplied><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"> καιδεκάτου</supplied> 
 
