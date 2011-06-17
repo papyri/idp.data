@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0001;15;2501" xml:id="bgu.15.2501" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0001;15;2501" xml:id="bgu.15.2501"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -40,7 +41,9 @@
             <handNote xml:id="m6"/>
          </handNotes>
       </profileDesc>
-      <revisionDesc><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+         <change when="2011-06-14T15:08:07.723-04:00" who="Joshua D. Sosin">fixed broken XML and added diacriticals</change>
+         <change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -53,7 +56,7 @@
             <date>AD183-84</date>
             <placeName>Bacchias</placeName>
          </head>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="r" type="textpart"><!--milestone unit="4"--><ab>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="r" type="textpart"><ab>
 
     <lb n="1"/><supplied reason="lost">ἔτους τ</supplied><unclear>ρ</unclear>ίτου καὶ <subst><add place="inline">εἰκοστο<unclear>ῦ</unclear></add><del rend="corrected">ειγοστο<unclear>υ</unclear></del></subst> <supplied reason="lost">Μάρκο</supplied>υ Αὐρηλίου 
 
@@ -63,11 +66,12 @@
 
     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">  ε</supplied>ἰς ἄλλον <hi rend="diaeresis">υ</hi>ἱὸ<unclear>ν</unclear> <supplied reason="lost"><expan>ζυτ<ex>ηρᾶς</ex></expan> τοῦ <expan>αὐ<ex>τοῦ</ex></expan></supplied> ἔτους 
 
-    <lb n="5"/><supplied reason="lost" cert="low">Βακχιάδος</supplied>  <expan><ex>δραχμὰς</ex></expan> <choice><reg>τέσ<supplied reason="omitted">σ</supplied>αρας</reg><orig>τεσαρες</orig></choice>, <supplied reason="omitted"><expan><ex>γίνονται</ex></expan></supplied> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <supplied reason="lost"><handShift new="m2"/> Φαμενὼ</supplied>θ <num value="24">κδ</num> 
+    <lb n="5"/><supplied reason="lost" cert="low">Βακχιάδος</supplied>  <expan><ex>δραχμὰς</ex></expan> <choice><reg>τέσ<supplied reason="omitted">σ</supplied>αρας</reg><orig>τέσαρες</orig></choice>, <supplied reason="omitted"><expan><ex>γίνονται</ex></expan></supplied> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <supplied reason="lost"><handShift new="m2"/> Φαμενὼ</supplied>θ <num value="24">κδ</num> 
 
-    <lb n="6"/><supplied reason="lost"><expan>ἄλ<ex cert="low">λας</ex></expan> <expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τ</supplied>έσσαρας</reg><orig><supplied reason="lost">τ</supplied><unclear>εσ</unclear>σαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> <gap reason="lost" extent="unknown" unit="character"/> <num value="4?1">δ</num> 
+    <lb n="6"/><supplied reason="lost"><expan>ἄλ<ex cert="low">λας</ex></expan> <expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τ</supplied>έσσαρας</reg><orig><supplied reason="lost">τ</supplied><unclear>έσ</unclear>σαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> 
+<app type="alternative"><lem><supplied reason="lost"><note xml:lang="en">date</note></supplied> <num value="14" rend="tick">ιδ</num></lem><rdg><app type="alternative"><lem><supplied reason="lost">Φαρμοῦθ</supplied>ι <num value="4" rend="tick">δ</num></lem><rdg><supplied reason="lost">Παῦν</supplied>ι <num value="4" rend="tick">δ</num></rdg></app></rdg></app>
 
-    <lb n="7"/><supplied reason="lost"><expan>ἄλ<ex cert="low">λας</ex></expan> <expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσ</supplied>σαρας</reg><orig><supplied reason="lost">τεσ</supplied>σαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> <supplied reason="lost"> <note xml:lang="en">vac ?</note> </supplied> 
+    <lb n="7"/><supplied reason="lost"><expan>ἄλ<ex cert="low">λας</ex></expan> <expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσ</supplied>σαρας</reg><orig><supplied reason="lost">τέσ</supplied>σαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> <supplied reason="lost" cert="low"><space extent="unknown" unit="character"/></supplied> 
 
     <lb n="8"/><supplied reason="lost"><handShift new="m3"/> ἔτους <num value="23">κγ</num> Μά</supplied>ρκο<unclear>υ</unclear> <unclear>Αὐρ</unclear><supplied reason="lost">ηλίου Κομμόδου Ἀ</supplied>ντωνί<unclear>ν</unclear><supplied reason="lost">ου</supplied> 
 
@@ -77,22 +81,22 @@
 
     <lb n="11"/><gap reason="lost" quantity="10" unit="character"/><unclear>υ</unclear>φεως <expan>ὑπ<ex>ὲρ</ex></expan> ζυτηρᾶς καὶ <expan>ἄλ<ex>λων</ex></expan> εἰδῶν 
 
-    <lb n="12"/><supplied reason="lost"><expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσσα</supplied>ρας</reg><orig><supplied reason="lost">τεσσα</supplied>ρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <handShift new="m4"/> <num value="25">κε</num> <expan>δραχ<ex>μὰς</ex></expan> <expan>τέσ<ex>σαρας</ex></expan>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> 
+    <lb n="12"/><supplied reason="lost"><expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσσα</supplied>ρας</reg><orig><supplied reason="lost">τέσσα</supplied>ρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <handShift new="m4"/> <num value="25">κε</num> <expan>δραχ<ex>μὰς</ex></expan> <expan>τέσ<ex>σαρας</ex></expan>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> 
 
     <lb n="13"/><supplied reason="lost"><handShift new="m5"/></supplied><gap reason="lost" quantity="10" unit="character"/><supplied reason="lost">  ε</supplied>ἰς <expan>Διόσκορο<ex>ν</ex></expan> <hi rend="diaeresis">υ</hi>ἱὸν <expan>ζυτ<ex>ηρᾶς</ex></expan> 
 
-    <lb n="14"/><gap reason="lost" quantity="5" unit="character"/><choice><reg><supplied reason="lost">τ</supplied>έσσαρας</reg><orig><supplied reason="lost">τ</supplied>εσσαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> <handShift new="m6"/> Παῦνι <num value="14">ιδ</num> <unclear>ἄ</unclear><supplied reason="lost">λλας</supplied> 
+    <lb n="14"/><gap reason="lost" quantity="5" unit="character"/><choice><reg><supplied reason="lost">τ</supplied>έσσαρας</reg><orig><supplied reason="lost">τ</supplied>έσσαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num> <handShift new="m6"/> Παῦνι <num value="14">ιδ</num> <unclear>ἄ</unclear><supplied reason="lost">λλας</supplied> 
 
-    <lb n="15"/><supplied reason="lost"><expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσσαρα</supplied>ς</reg><orig><supplied reason="lost">τεσσαρε</supplied><unclear>ς</unclear></orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <handShift new="m2"/> Μεσορὴ <num value="24">κδ</num> 
+    <lb n="15"/><supplied reason="lost"><expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσσαρα</supplied>ς</reg><orig><supplied reason="lost">τέσσαρε</supplied><unclear>ς</unclear></orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <handShift new="m2"/> Μεσορὴ <num value="24">κδ</num> 
 
-    <lb n="16"/><supplied reason="lost" cert="low">ἄλλας</supplied><supplied reason="lost"> <expan>δραχ<ex>μὰς</ex></expan></supplied> <choice><reg>τέσσαρας</reg><orig>τεσσαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <num value="24">κδ</num> <expan><ex>ἔτους</ex></expan> Θὼ<supplied reason="lost">θ </supplied><gap reason="lost" quantity="2" unit="character"/> 
+    <lb n="16"/><supplied reason="lost" cert="low">ἄλλας</supplied><supplied reason="lost"> <expan>δραχ<ex>μὰς</ex></expan></supplied> <choice><reg>τέσσαρας</reg><orig>τέσσαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, <num value="24">κδ</num> <expan><ex>ἔτους</ex></expan> Θὼ<supplied reason="lost">θ </supplied><gap reason="lost" quantity="2" unit="character"/> 
 
-    <lb n="17"/><supplied reason="lost" cert="low">ἄλλας</supplied><supplied reason="lost"> <expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τ</supplied>έσσαρας</reg><orig><supplied reason="lost">τ</supplied><unclear>ε</unclear>σσαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, Φαῶφι <num value="1">α</num><gap reason="lost" quantity="1" unit="character"/> 
+    <lb n="17"/><supplied reason="lost" cert="low">ἄλλας</supplied><supplied reason="lost"> <expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τ</supplied>έσσαρας</reg><orig><supplied reason="lost">τ</supplied><unclear>έ</unclear>σσαρες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num>, Φαῶφι <num value="1">α</num><gap reason="lost" quantity="1" unit="character"/> 
 
-    <lb n="18"/><supplied reason="lost"><expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσσαρ</supplied>ας</reg><orig><supplied reason="lost">τεσσαρ</supplied>ες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num><surplus>ραχ</surplus>, Φαῶ<unclear>φ</unclear>ι <num value="23">κ<unclear>γ</unclear></num> <supplied reason="lost">ἄλ</supplied>λ<supplied reason="lost">ας</supplied> 
+    <lb n="18"/><supplied reason="lost"><expan>δραχ<ex>μὰς</ex></expan> </supplied><choice><reg><supplied reason="lost">τέσσαρ</supplied>ας</reg><orig><supplied reason="lost">τέσσαρ</supplied>ες</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="4">δ</num><surplus>ραχ</surplus>, Φαῶ<unclear>φ</unclear>ι <num value="23">κ<unclear>γ</unclear></num> <supplied reason="lost">ἄλ</supplied>λ<supplied reason="lost">ας</supplied> 
 
     <lb n="19"/><gap reason="lost" extent="unknown" unit="line"/> 
-</ab></div><div n="v" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="v" type="textpart"><ab>
 
     <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ρα</unclear> </ab></div></div>
       </body>
