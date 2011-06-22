@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0135;1;112" xml:id="p.hib.1.112" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0135;1;112" xml:id="p.hib.1.112"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -33,7 +34,9 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change>
+      <revisionDesc>
+         <change when="2011-06-22T15:32:58.45-04:00" who="Joshua D. Sosin">Fixed a number of XML errors (to do with expan) that were causing non-parse errors.</change>
+         <change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -46,11 +49,11 @@
             <date>c260BC</date>
             <placeName>Hibeh</placeName>
          </head>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="FrA" type="textpart"><!--milestone unit="3"--><ab>
-</ab></div><div n="1" type="textpart"><!--milestone unit="4"--><ab>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="FrA" type="textpart"><ab>
+</ab></div><div n="1" type="textpart"><ab>
 
     <lb n="1"/><gap reason="illegible" extent="unknown" unit="line"/> 
-</ab></div><div n="2" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="2" type="textpart"><ab>
 
     <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/> 
 
@@ -64,7 +67,7 @@
 
     <lb n="5"/><supplied reason="lost">Ἀ</supplied>σσύας Πετοσῖρ<unclear>ι</unclear><supplied reason="lost">ς </supplied><gap reason="lost" quantity="6" unit="character"/> <num value="30"><unclear>λ</unclear></num>. 
 
-    <lb n="6"/>Κερκέσης Ἡρακλ<unclear>ε</unclear><supplied reason="lost">ίδη</supplied>ς <gap reason="lost" quantity="4" unit="character"/> <expan><ex><supplied reason="lost">δω</supplied>δεκα</ex><supplied reason="lost">χ<ex>αλκίαν</ex></supplied></expan> 
+    <lb n="6" xml:id="div3-lb7"/>Κερκέσης Ἡρακλ<unclear>ε</unclear><supplied reason="lost">ίδη</supplied>ς <gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost"><expan><ex cert="low">δωδεκα</ex>χ<ex>αλκίαν</ex></expan></supplied>
 
     <lb n="7"/>τοῦ Πολεμάρχου <supplied reason="lost"><num value="10">ι</num>, <expan>χα<ex>λκοῦ</ex></expan></supplied> <num value="10"><unclear>ι</unclear></num>. 
 
@@ -123,7 +126,7 @@
     <lb n="34"/><gap reason="lost" quantity="20" unit="character"/> <num value="11">ια</num>, <expan>χα<ex>λκοῦ</ex></expan> <num value="11">ια</num>. 
 
     <lb n="35"/><gap reason="lost" extent="unknown" unit="line"/> 
-</ab></div><div n="3" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="3" type="textpart"><ab>
 
     <lb n="35"/><gap reason="lost" extent="unknown" unit="line"/> 
 
@@ -198,8 +201,8 @@
     <lb n="68"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><unclear>υ</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>τιτ</unclear><gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="69"/><gap reason="lost" extent="unknown" unit="line"/> 
-</ab></div><div n="FrB" type="textpart"><!--milestone unit="3"--><ab>
-</ab></div><div n="1" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="FrB" type="textpart"><ab>
+</ab></div><div n="1" type="textpart"><ab>
 
     <lb n="73"/><gap reason="illegible" quantity="4" unit="line"/> 
 
@@ -230,7 +233,7 @@
     <lb n="85" type="inWord"/><gap reason="lost" quantity="10" unit="character"/> <num value="1">α</num> <expan><ex>ὀβολὸν</ex></expan> <num value="1">α</num> <num value="1/2">𐅵</num>, <expan>χα<ex>λκοῦ</ex></expan> <num value="1">α</num> <expan><ex>ὀβολὸν</ex></expan> <num value="1">α</num> <num value="1/2">𐅵</num>. 
 
     <lb n="86"/><gap reason="lost" extent="unknown" unit="line"/> 
-</ab></div><div n="2" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="2" type="textpart"><ab>
 
     <lb n="86"/><gap reason="lost" extent="unknown" unit="line"/> 
 
@@ -257,6 +260,12 @@
     <lb n="96"/>βαλα<supplied reason="lost">νείου </supplied><gap reason="lost" quantity="2" unit="character"/><unclear>ος</unclear> Φίλωνος <gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="97"/><gap reason="lost" extent="unknown" unit="line"/> </ab></div></div>
+         <div type="commentary">
+            <list>
+               <item corresp="#div3-lb7">
+                  <ref>6</ref> Ed. pr. has [(δω]δεκα)[χ(αλκίαν)], which is potentially confusing. The papyrus (APIS image) shows holes on either side of what might be the iota (="δεκα") in the ιβ written above the lost χ. EpiDoc does not permit markup inside &lt;ex&gt;, so that it is impossible, at the moment, to indicate precisely what seems to be on the papyrus, except to write [χ]\ι̣[β]/, which does not add much to clarity. (J. Sosin)</item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
