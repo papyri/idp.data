@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;22;15635" xml:id="sb.22.15635" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;22;15635" xml:id="sb.22.15635"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -33,7 +34,9 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change>
+      <revisionDesc>
+         <change when="2011-06-23T15:35:24.571-04:00" who="Joshua D. Sosin">Fixes to non-parsing XML in p.stras;6;551 | sb;22;15248 | sb;22;15635 | sb;24;16041 | p.mich;4.1;224 | p.tebt;1;93 | p.tebt;2;363 | p.lond;5;1734 | p.lond;5;1673. Did not succeed in fully correcting p.mich;4.1;224 | p.tebt;1;93 | p.lond;5;1673.</change>
+         <change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -59,7 +62,7 @@
 
     <lb n="6"/><abbr>χει</abbr> <expan><ex>ἀρτάβαι</ex></expan> <num value="3">γ</num> <num value="1/6" rend="tick">ϛ</num> <num value="1/24" rend="tick">κδ</num> <expan>νομ<supplied reason="lost">ι</supplied>κ<ex>ῷ</ex></expan> <expan><ex>ἀρτάβαι</ex></expan> <num value="2">β</num> <num value="1/3" rend="tick">γ</num> <num value="1/12" rend="tick"><unclear>ιβ</unclear></num> <expan><ex>γίνονται</ex></expan> ὁμοῦ <expan><ex>ἀρτάβαι</ex></expan> <num value="3">γ</num> <num value="202">σβ</num> <num value="1/2">𐅵</num>
 
-    <lb n="7"/>αἳ <abbr>κα<unclear>ν</unclear><supplied reason="lost"/></abbr> <expan><ex>ἀρτάβαι</ex></expan> <num value="2">β</num> <num value="911">ϡια</num> <num value="1/3" rend="tick">γ</num> <num value="1/12" rend="tick">ιβ</num>.
+    <lb n="7" xml:id="lb7"/>αἳ <abbr>κα<unclear>ν</unclear></abbr> <expan><ex>ἀρτάβαι</ex></expan> <num value="2">β</num> <num value="911">ϡια</num> <num value="1/3" rend="tick">γ</num> <num value="1/12" rend="tick">ιβ</num>.
 
     <lb n="8"/><g type="stauros"/> <expan>μερί<unclear>δ</unclear><ex>ος</ex></expan> Ἁδρ<unclear>ι</unclear>ανοῦ <expan>κόμ<ex>ετος</ex></expan> εἰς πλοῖ<unclear>ον</unclear> <expan><unclear>μο</unclear>ναστ<ex>ηρίου</ex></expan> Μετανο<unclear>ί</unclear><supplied reason="lost">ας</supplied>
 
@@ -74,6 +77,12 @@
     <lb n="13"/><abbr><unclear>χ</unclear>ε<supplied reason="lost">ι</supplied></abbr><supplied reason="lost"> <expan><ex>ἀρτάβαι</ex></expan></supplied> <num value="3">γ</num> <num value="1/6" rend="tick">ϛ</num> <expan>νομικ<ex>ῷ</ex></expan> <expan><ex>ἀρτάβαι</ex></expan> <num value="2">β</num> <num value="1/3" rend="tick">γ</num> <num value="1/24" rend="tick">κδ</num> <expan><ex>γίνονται</ex></expan> ὁμοῦ <expan><ex>ἀρτάβαι</ex></expan> <num value="3">γ</num> <num value="150">ρν</num><supplied reason="lost"><num value="4">δ</num> <num value="1/2">𐅵</num> <num value="1/3" rend="tick">γ</num> <num value="1/24" rend="tick">κδ</num></supplied>
 
     <lb n="14"/><unclear>αἳ</unclear> <abbr>κα<unclear>ν</unclear></abbr> <expan><ex>ἀρτάβαι</ex></expan> <num value="2">β</num> <num value="868">ωξη</num> <num value="1/12" rend="tick">ιβ</num>.</ab></div>
+         <div type="commentary">
+            <list>
+               <item corresp="#lb7">
+                  <ref>7</ref> Εd's "καν[( )]" posits that an abbreviation stroke after καν may have appeared in a subsequent lacuna.</item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>

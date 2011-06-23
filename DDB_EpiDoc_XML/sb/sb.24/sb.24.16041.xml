@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;24;16041" xml:id="sb.24.16041" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;24;16041" xml:id="sb.24.16041"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -34,6 +35,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2011-06-23T15:35:27.697-04:00" who="Joshua D. Sosin">Fixes to non-parsing XML in p.stras;6;551 | sb;22;15248 | sb;22;15635 | sb;24;16041 | p.mich;4.1;224 | p.tebt;1;93 | p.tebt;2;363 | p.lond;5;1734 | p.lond;5;1673. Did not succeed in fully correcting p.mich;4.1;224 | p.tebt;1;93 | p.lond;5;1673.</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -56,10 +58,16 @@
 
     <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"> ἢ παρʼ οἱουδ</supplied>ήποτε προσώπου ἄκυρον εἶνα<supplied reason="lost">ι </supplied><gap reason="lost" extent="unknown" unit="character"/>
 
-    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><abbr><gap reason="illegible" quantity="2" unit="character"/><unclear>μ</unclear><supplied reason="lost"/></abbr><supplied reason="lost" cert="low"> </supplied> <unclear>κ</unclear><supplied reason="lost">αὶ π</supplied><unclear>ρ</unclear>ὸς σὴν ἀσφάλειαν <gap reason="lost" extent="unknown" unit="character"/>
+    <lb n="5" xml:id="lb5"/><gap reason="lost" extent="unknown" unit="character"/><abbr><gap reason="illegible" quantity="2" unit="character"/><unclear>μ</unclear></abbr> <unclear>κ</unclear><supplied reason="lost">αὶ π</supplied><unclear>ρ</unclear>ὸς σὴν ἀσφάλειαν <gap reason="lost" extent="unknown" unit="character"/>
 
     <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"> μεθʼ ὑπ</supplied><unclear>ο</unclear>γρ<unclear>αφῆ</unclear><supplied reason="lost">ς</supplied> ἐ<supplied reason="lost">μ</supplied><unclear>ῆ</unclear><supplied reason="lost">ς </supplied><gap reason="lost" extent="unknown" unit="character"/>
 <gap reason="lost" extent="unknown" unit="line"/></ab></div>
+         <div type="commentary">
+            <list>
+               <item corresp="#lb5">
+                  <ref>5</ref> Εd's " ̣ ̣μ̣[( )?]" posits that an abbreviation stroke after the μ may or may not have appeared in a subsequent lacuna.</item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
