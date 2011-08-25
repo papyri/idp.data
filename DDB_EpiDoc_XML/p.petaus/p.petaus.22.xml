@@ -33,7 +33,9 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -90,9 +92,8 @@
 
     <lb n="21" type="inWord"/>θαι ἀπὸ χέρσου <expan>ἀμπέλ<ex>ου</ex></expan> ὑπολόγου περὶ κώμην Σύρων <expan><ex>ἄρουραν</ex></expan> <num value="1">α</num> <num value="1/4" rend="tick">δ</num> <num value="1/16" rend="tick">ιϛ</num> τὸ <hi rend="diaeresis">ἴ</hi>σον 
 
-    <lb n="22"/>σοι <expan>ἐπιστέλ<ex>λω</ex></expan>, φίλτατε <choice><reg>ἵνʼ</reg><orig>ειν</orig></choice> εἰδῇς <choice><reg>κα<supplied reason="omitted">ὶ</supplied></reg><orig>κα</orig></choice> τὰ <hi rend="diaeresis">ἴ</hi>δια μέρη ἀναπληρώσῃς. ἐρρῶσ
-
-    <lb n="23" type="inWord"/><choice><reg>σθαι</reg><orig>ερωσθε</orig></choice> <choice><reg>σ<supplied reason="omitted">ε</supplied></reg><orig>ς</orig></choice> <expan>εὔχομ<ex>αι</ex></expan>, φίλτατε. ἔτους πέμπτου καὶ εἰκοστοῦ Αὐτοκράτορος 
+    <lb n="22"/>σοι <expan>ἐπιστέλ<ex>λω</ex></expan>, φίλτατε <choice><reg>ἵνʼ</reg><orig>ειν</orig></choice> εἰδῇς <choice><reg>κα<supplied reason="omitted">ὶ</supplied></reg><orig>κα</orig></choice> τὰ <hi rend="diaeresis">ἴ</hi>δια μέρη ἀναπληρώσῃς. 
+<choice><reg>ἐρρῶσ<lb n="23" type="inWord"/>σθαι</reg><orig>ερωσθε</orig></choice> <choice><reg>σ<supplied reason="omitted">ε</supplied></reg><orig>ς</orig></choice> <expan>εὔχομ<ex>αι</ex></expan>, φίλτατε. ἔτους πέμπτου καὶ εἰκοστοῦ Αὐτοκράτορος 
 
     <lb n="24"/>Καίσαρο<supplied reason="lost">ς</supplied> Μάρκου Αὐρηλίου Κομμόδου Ἀντωνείνου Σεβαστοῦ <expan>Εὐσεβ<ex>οῦς</ex></expan> 
 
@@ -110,9 +111,8 @@
 
     <lb n="31"/>καὶ ἕτερα φυτὰ <choice><reg>κ<supplied reason="omitted">ε</supplied>καρκινωμένα</reg><orig>κκαρκινομενα</orig></choice> καὶ φ<supplied reason="lost">ρ</supplied>έατα <choice><reg>καταπεπτωκότα</reg><orig>καταπεπτοκωτα</orig></choice>, 
 
-    <lb n="32"/>ἧς <choice><reg>γεί<supplied reason="lost">το</supplied>νες</reg><orig>γι<supplied reason="lost">το</supplied>νος</orig></choice> ν<supplied reason="lost">ό</supplied>του <expan>Ἰσ<supplied reason="lost">χ</supplied>υρίων<ex>ος</ex></expan> ἀφήλικος <choice><reg>λ<supplied reason="lost">α</supplied>χ<supplied reason="lost">α</supplied>νείαν</reg><orig>λ<supplied reason="lost">α</supplied>χ<supplied reason="lost">α</supplied>νιαν</orig></choice> <choice><reg>καρτή</reg><orig>καρτην</orig></choice>, <choice><reg>βορρᾶ</reg><orig>βορα</orig></choice> καὶ ἀ
-
-    <lb n="33" type="inWord"/><choice><reg>πηλιώτου</reg><orig>απηλιοτου</orig></choice> <supplied reason="lost">σ</supplied>ιτικὰ <choice><reg>ἐδάφη</reg><orig>α<supplied reason="lost">ιδ</supplied>αφη</orig></choice>, λιβὸς <expan>ποτίστρ<ex>α</ex></expan> <expan>ξ<ex>υλίνη</ex></expan>, <subst><add place="inline">ἐφʼ</add><del rend="corrected">εν</del></subst> ἁπλῇ <choice><reg>τιμῇ</reg><orig>τειμη</orig></choice> ὡς τῆς 
+    <lb n="32"/>ἧς <choice><reg>γεί<supplied reason="lost">το</supplied>νες</reg><orig>γι<supplied reason="lost">το</supplied>νος</orig></choice> ν<supplied reason="lost">ό</supplied>του <expan>Ἰσ<supplied reason="lost">χ</supplied>υρίων<ex>ος</ex></expan> ἀφήλικος <choice><reg>λ<supplied reason="lost">α</supplied>χ<supplied reason="lost">α</supplied>νείαν</reg><orig>λ<supplied reason="lost">α</supplied>χ<supplied reason="lost">α</supplied>νιαν</orig></choice> <choice><reg>καρτή</reg><orig>καρτην</orig></choice>, <choice><reg>βορρᾶ</reg><orig>βορα</orig></choice>καὶ 
+<choice><reg>ἀ<lb n="33" type="inWord"/>πηλιώτου</reg><orig>απηλιοτου</orig></choice> <supplied reason="lost">σ</supplied>ιτικὰ <choice><reg>ἐδάφη</reg><orig>α<supplied reason="lost">ιδ</supplied>αφη</orig></choice>, λιβὸς <expan>ποτίστρ<ex>α</ex></expan> <expan>ξ<ex>υλίνη</ex></expan>, <subst><add place="inline">ἐφʼ</add><del rend="corrected">εν</del></subst> ἁπλῇ <choice><reg>τιμῇ</reg><orig>τειμη</orig></choice> ὡς τῆς 
 
     <lb n="34"/><expan><ex>ἀρούρης</ex></expan> ἐκ δραχμῶν π<supplied reason="lost">ε</supplied>ντήκοντα ἕξ <num value="56"/>, ἐφʼ ᾧ <choice><reg>παραδειχθεῖσα</reg><orig>παραδιχθεις</orig></choice> <expan>διαγρά<ex>ψω</ex></expan> τὴν 
 
@@ -121,8 +121,7 @@
     <lb n="36"/>καὶ ἐγγόνο<supplied reason="lost">ι</supplied>ς καὶ τοῖς παρʼ ἐμοῦ μεταλημψομένοις <choice><reg>ἡ</reg><orig>την</orig></choice> ταύτης 
 
     <lb n="37"/><choice><reg>κράτησις</reg><orig>κρατησιν</orig></choice> καὶ <choice><reg>κυρία</reg><orig>κυριαν</orig></choice> <choice><reg>ἀναφαίρετος</reg><orig>αναφερητον</orig></choice> ἐπὶ τὸν ἀεὶ <choice><reg>χρόνον</reg><orig>χρονου</orig></choice> καὶ βεβαιωθ<supplied reason="lost">ή</supplied>
-
-    <lb n="38" type="inWord"/><choice><reg>σεταί</reg><orig>βαιβεοθ<supplied reason="lost">η</supplied>σεται</orig></choice> μοι ἀπὸ δημοσίων πάντων καὶ παντὸς <choice><reg>εἴδους</reg><orig>ιδους</orig></choice> <choice><reg>μέχρι</reg><orig>μεχρει</orig></choice> τοῦ 
+<choice><reg><lb n="38" type="inWord"/>σεταί</reg><orig>βαιβεοθ<supplied reason="lost">η</supplied>σεται</orig></choice> μοι ἀπὸ δημοσίων πάντων καὶ παντὸς <choice><reg>εἴδους</reg><orig>ιδους</orig></choice> <choice><reg>μέχρι</reg><orig>μεχρει</orig></choice> τοῦ 
 
     <lb n="39"/>τῆς <choice><reg>παραδείξεως</reg><orig>πραξεως</orig></choice> χρόνου, ἕξω δὲ εἰς τὴν τούτων κατεργασίαν καὶ 
 
