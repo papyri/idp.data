@@ -33,7 +33,9 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -82,8 +84,7 @@
     <lb n="7"/>ἐπὶ μ<supplied reason="lost">η</supplied><unclear>ν</unclear>ὸς Μεσορ<unclear>ὴ</unclear> <supplied reason="lost"><expan><ex>δραχμαὶ</ex></expan></supplied> <num value="60">ξ</num> 
 
     <lb n="8"/><choice><reg>μισθοῦ</reg><orig>μεισθο<unclear>υ</unclear></orig></choice> <supplied reason="lost">γ</supplied>ερ<unclear>δ</unclear>ίου εἰς Ἀλ<supplied reason="lost">εξάν</supplied>
-
-    <lb n="9" type="inWord"/><choice><reg>δρεια<supplied reason="omitted">ν</supplied></reg><orig>αλ<supplied reason="lost">εξαν</supplied>δρια</orig></choice> γέρδιο<unclear>ς</unclear> <expan>ὁ<ex>μοίως</ex></expan> <expan><ex>τάλαντα</ex></expan> <num value="136">ρλϛ</num> 
+<choice><reg><lb n="9" type="inWord"/>δρεια<supplied reason="omitted">ν</supplied></reg><orig>αλ<supplied reason="lost">εξαν</supplied>δρια</orig></choice> γέρδιο<unclear>ς</unclear> <expan>ὁ<ex>μοίως</ex></expan> <expan><ex>τάλαντα</ex></expan> <num value="136">ρλϛ</num> 
 
     <lb n="10"/><choice><reg>μισθοῦ</reg><orig>μεισθου</orig></choice> β<unclear>ο</unclear>ηθοῦ μην<supplied reason="lost">ῶν</supplied> 
 
@@ -109,9 +110,8 @@
 
     <lb n="20"/><choice><reg>ὅτι</reg><orig>ωτι</orig></choice> <choice><reg>ἐνθάδε</reg><orig>ενθαται</orig></choice> ἐστὶν ὁ <expan>πραι<ex>πόσιτος</ex></expan> <expan><ex>τάλαντα</ex></expan> <num value="5">ε</num> 
 
-    <lb n="21"/><choice><reg>φορέτρου</reg><orig>φορεδρου</orig></choice> ὄνου <choice><reg>ἀγγαρείας</reg><orig>εγκαριας</orig></choice> τῷ στρα
-
-    <lb n="22" type="inWord"/><choice><reg>τιώτῃ</reg><orig>στρατιωτου</orig></choice> ἕνεκεν τῶν δισεκτό
+    <lb n="21"/><choice><reg>φορέτρου</reg><orig>φορεδρου</orig></choice> ὄνου <choice><reg>ἀγγαρείας</reg><orig>εγκαριας</orig></choice>τῷ 
+<choice><reg>στρα<lb n="22" type="inWord"/>τιώτῃ</reg><orig>στρατιωτου</orig></choice> ἕνεκεν τῶν δισεκτό
 
     <lb n="23" type="inWord"/>ρων ὄνος <num value="1">α</num>  <expan><ex>τάλαντα</ex></expan> <num value="20">κ</num> 
 
@@ -193,19 +193,16 @@
 
     <lb n="1"/>καὶ ἐνο<supplied reason="lost">χ</supplied>λοῦμαι <choice><reg>πάλιν</reg><orig>παλλειν</orig></choice> 
 
-    <lb n="2"/>τὴν <choice><reg>λοιπ<supplied reason="lost">ά</supplied>δα</reg><orig>λοι<unclear>π</unclear><supplied reason="lost">α</supplied>δαν</orig></choice> τῆς κρη
+    <lb n="2"/>τὴν <choice><reg>λοιπ<supplied reason="lost">ά</supplied>δα</reg><orig>λοι<unclear>π</unclear><supplied reason="lost">α</supplied>δαν</orig></choice>τῆς 
+<choice><reg>κρη<lb n="3" type="inWord"/>πῖδος</reg><orig>κρεπιδαν</orig></choice> κ<supplied reason="lost">αὶ τὸ</supplied> ναῦλον· 
 
-    <lb n="3" type="inWord"/><choice><reg>πῖδος</reg><orig>κρεπιδαν</orig></choice> κ<supplied reason="lost">αὶ τὸ</supplied> ναῦλον· 
-
-    <lb n="4"/>πρωτοτ<supplied reason="lost">ύπ</supplied>ως ἀπόστει
-
-    <lb n="5" type="inWord"/><choice><reg>λόν</reg><orig>αποστιλον</orig></choice> μοι <supplied reason="lost">τ</supplied>ὴν τιμὴν 
+    <lb n="4"/>πρωτοτ<supplied reason="lost">ύπ</supplied>ως 
+<choice><reg>ἀπόστει<lb n="5" type="inWord"/>λόν</reg><orig>αποστιλον</orig></choice> μοι <supplied reason="lost">τ</supplied>ὴν τιμὴν 
 
     <lb n="6"/>τοῦ <app type="BL"><lem resp="cf. 7.259-60">σιτ<gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ου</lem><rdg>σίτ<supplied reason="lost">ου</supplied></rdg></app> καὶ τὸ 
 
-    <lb n="7"/>ναῦλον <supplied reason="lost">κα</supplied>ὶ τὰ πρόσω
-
-    <lb n="8" type="inWord"/><choice><reg>πα</reg><orig>πρωσωπα</orig></choice> ταῦτα ἐν τ<supplied reason="lost">ῇ</supplied> σήμε
+    <lb n="7"/>ναῦλον <supplied reason="lost">κα</supplied>ὶ τὰ 
+<choice><reg>πρόσω<lb n="8" type="inWord"/>πα</reg><orig>πρωσωπα</orig></choice> ταῦτα ἐν τ<supplied reason="lost">ῇ</supplied> σήμε
 
     <lb n="9" type="inWord"/>ρον <choice><reg>ἐπεὶ</reg><orig>επι</orig></choice> <supplied reason="lost">ἐ</supplied>νοχλοῦμαι 
 

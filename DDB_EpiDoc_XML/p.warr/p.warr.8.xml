@@ -39,7 +39,9 @@
             <handNote xml:id="m1"/>
          </handNotes>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -59,9 +61,8 @@
 
     <lb n="2"/>Περιτίου πέμπτῃ καὶ εἰκάδι, Χοιὰχ πέμπτῃ καὶ εἰκάδι, ἐν Φιλαδελφείᾳ τῆς Ἡρα
 
-    <lb n="3" type="inWord"/>κλείδου μερίδος τοῦ Ἀρσινοείτου νομοῦ. ὁμολογοῦσιν Αὐνῆς ὡς ἐτῶν πεντή
-
-    <lb n="4" type="inWord"/><choice><reg>κοντα</reg><orig>πεντη<g rend="extension" type="filler"/>κοντα</orig></choice> δύο <num value="52"/> οὐλὴ μικρῶι δακτύλωι χειρὸς ἀριστερᾶς καὶ Παποντῶς ὡς ἐτῶν 
+    <lb n="3" type="inWord"/>κλείδου μερίδος τοῦ Ἀρσινοείτου νομοῦ. ὁμολογοῦσιν Αὐνῆς ὡς ἐτῶν 
+<choice><reg>πεντή<lb n="4" type="inWord"/>κοντα</reg><orig>πεντη<g rend="extension" type="filler"/>κοντα</orig></choice> δύο <num value="52"/> οὐλὴ μικρῶι δακτύλωι χειρὸς ἀριστερᾶς καὶ Παποντῶς ὡς ἐτῶν 
 
     <lb n="5"/>πεντήκοντα <num value="50"/> οὐλὴ <choice><reg>ἀντίχειρι</reg><orig>αντιχιρι</orig></choice> ἀριστερῶι, ἀμφότεροι Πετερμούθεος τῶν ἀπὸ <g rend="extension" type="filler"/> 
 
@@ -93,9 +94,8 @@
 
     <lb n="19"/>τῶι Μάρκωι Ἀντωνίωι μεθʼ ἡμι<unclear>ο</unclear>λίας, τῆς <choice><reg>πράξεως</reg><orig>πραξεος</orig></choice> οὔσης τῶι Μάρκωι 
 
-    <lb n="20"/>Ἀντωνίωι ἔκ τε τῶν ὁμολογούντων καὶ ἐξ ἑνὸς καὶ ἐξ οὗ ἐὰν <choice><reg>αὐτων</reg><orig>αυτωι</orig></choice> αἱρῆ
-
-    <lb n="21" type="inWord"/><choice><reg>ται</reg><orig>ερηται</orig></choice> καὶ ἐκ τῶν ὑπαρχόντων αὐτοῖς πάντων <subst><add place="inline">καθάπερ</add><del rend="corrected">καθαπρρ</del></subst> <choice><reg>ἐκ</reg><orig>εγ</orig></choice> <subst><add place="inline">δίκης</add><del rend="corrected">δι<gap reason="illegible" quantity="1" unit="character"/>ης</del></subst>, χωρὶς ἄλλων 
+    <lb n="20"/>Ἀντωνίωι ἔκ τε τῶν ὁμολογούντων καὶ ἐξ ἑνὸς καὶ ἐξ οὗ ἐὰν <choice><reg>αὐτων</reg><orig>αυτωι</orig></choice>
+<choice><reg>αἱρῆ<lb n="21" type="inWord"/>ται</reg><orig>ερηται</orig></choice> καὶ ἐκ τῶν ὑπαρχόντων αὐτοῖς πάντων <subst><add place="inline">καθάπερ</add><del rend="corrected">καθαπρρ</del></subst> <choice><reg>ἐκ</reg><orig>εγ</orig></choice> <subst><add place="inline">δίκης</add><del rend="corrected">δι<gap reason="illegible" quantity="1" unit="character"/>ης</del></subst>, χωρὶς ἄλλων 
 
     <lb n="22"/>ὧν <choice><reg>ὀφείλει</reg><orig>οφιλι</orig></choice> ὁ εἷς Παποντῶς τῶι αὐτῶι <choice><reg>χόρτου</reg><orig>χορτωι</orig></choice> ἀρουρῶν τριῶν <num value="3"/> <choice><reg>εἰς</reg><orig>ις</orig></choice> <expan>κατάβ<ex>ρωμα</ex></expan> <expan>προβ<ex>άτων</ex></expan>, <choice><reg>μενουσῶν</reg><orig>μενοντων</orig></choice> κυρίων 
 
@@ -109,9 +109,8 @@
 
     <lb n="27"/>Ἄπρου ἐν ἔτεσι πέντε <num value="5"/> <subst><add place="inline">ἀπὸ</add><del rend="corrected">α<gap reason="illegible" quantity="1" unit="character"/>ο</del></subst> τοῦ ἐνεστῶτος ἕκτου ἔτους <choice><reg>κατʼ</reg><orig>καθ</orig></choice> ἔτος <surplus>ς</surplus> 
 
-    <lb n="28"/>ἅμα <choice><reg>οἷς</reg><orig>υς</orig></choice> <choice><reg>ὀφείλομεν</reg><orig>οφιλωμεν</orig></choice> <choice><reg>ἐκφορίοις</reg><orig>εκφοριυς</orig></choice> <choice><reg>κατʼ</reg><orig>καθ</orig></choice> ἔτος <choice><reg>τὸ</reg><orig>τω</orig></choice> <choice><reg>αἱροῦν</reg><orig>ερουν</orig></choice> τὰς λελοιπογραφη
-
-    <lb n="29" type="inWord"/><choice><reg>μένας</reg><orig>λελυπογραφημενας</orig></choice> ἐν <choice><reg>ἡμιν</reg><orig>υμιν</orig></choice> ἀπὸ λόγου ἐκφορίων τῶν <choice><reg>ἔμπροσθεν</reg><orig>ενπροστον</orig></choice> χρόνων 
+    <lb n="28"/>ἅμα <choice><reg>οἷς</reg><orig>υς</orig></choice> <choice><reg>ὀφείλομεν</reg><orig>οφιλωμεν</orig></choice> <choice><reg>ἐκφορίοις</reg><orig>εκφοριυς</orig></choice> <choice><reg>κατʼ</reg><orig>καθ</orig></choice> ἔτος <choice><reg>τὸ</reg><orig>τω</orig></choice> <choice><reg>αἱροῦν</reg><orig>ερουν</orig></choice>τὰς 
+<choice><reg>λελοιπογραφη<lb n="29" type="inWord"/>μένας</reg><orig>λελυπογραφημενας</orig></choice> ἐν <choice><reg>ἡμιν</reg><orig>υμιν</orig></choice> ἀπὸ λόγου ἐκφορίων τῶν <choice><reg>ἔμπροσθεν</reg><orig>ενπροστον</orig></choice> χρόνων 
 
     <lb n="30"/><choice><reg>μέχρι</reg><orig>μεχρει</orig></choice> τοῦ διεληλυθότος <expan>πέμ<ex>π</ex>του</expan> ἔτους καὶ αὐτοῦ τοῦ <expan>πέμ<ex>πτου</ex></expan> <subst><add place="inline">ἔτους</add><del rend="corrected"><gap reason="illegible" quantity="1" unit="character"/>τους</del></subst> 
 

@@ -33,7 +33,9 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -178,9 +180,8 @@
 
     <lb n="62"/><subst><add place="inline">οὐ<add place="above">δὲ</add></add><del rend="corrected">ου<del rend="erasure">κ</del></del></subst> <add place="above">λόγον σου <choice><reg>εἴσχηκεν</reg><orig>εισχεκεν</orig></choice>,</add> <del rend="erasure"><choice><reg>ἔμεινεν</reg><orig>εμινεν</orig></choice> τούτοις τοῖς</del> 
 
-    <lb n="63"/>ἀλλὰ πέπρακεν <del rend="erasure">τ</del> Φανή
-
-    <lb n="64" type="inWord"/><choice><reg>σι</reg><orig>φανεσις</orig></choice> <add place="above">τῶι <choice><reg>ἐλαιοπώληι</reg><orig>ελαιοπωλης</orig></choice></add> τὸ <choice><reg>ἥμισυ</reg><orig>ημυσον</orig></choice> τῆς οἰκίας <expan><ex>δραχμῶν</ex></expan> <num value="64">ξδ</num>, 
+    <lb n="63"/>ἀλλὰ πέπρακεν <del rend="erasure">τ</del>
+<choice><reg>Φανή<lb n="64" type="inWord"/>σι</reg><orig>φανεσις</orig></choice> <add place="above">τῶι <choice><reg>ἐλαιοπώληι</reg><orig>ελαιοπωλης</orig></choice></add> τὸ <choice><reg>ἥμισυ</reg><orig>ημυσον</orig></choice> τῆς οἰκίας <expan><ex>δραχμῶν</ex></expan> <num value="64">ξδ</num>, 
 
     <lb n="65"/>τὸ δὲ <choice><reg>ἥμισυ</reg><orig>ημυσ<unclear>ο</unclear>ν</orig></choice> Κοροιβίδης ἀγορά
 
@@ -221,9 +222,8 @@
 
     <lb n="81"/>χρ<unclear>ή</unclear>σιμός σοί εἰμι  <choice><reg>μᾶλλον</reg><orig>μαλον</orig></choice> ἐγὼ 
 
-    <lb n="82"/>ἐ<unclear>κ</unclear>εῖ. <add place="above">ἰ</add>δοὺ <del rend="erasure"><unclear>ἑνδε</unclear></del> δωδεκάμη
-
-    <lb n="83" type="inWord"/><choice><reg>νος</reg><orig>δωδεκαμενος</orig></choice> <supplied reason="lost">ο</supplied>ὐκ ἔ<unclear>χω</unclear> ὀψώνιον· 
+    <lb n="82"/>ἐ<unclear>κ</unclear>εῖ. <add place="above">ἰ</add>δοὺ <del rend="erasure"><unclear>ἑνδε</unclear></del>
+<choice><reg>δωδεκάμη<lb n="83" type="inWord"/>νος</reg><orig>δωδεκαμενος</orig></choice> <supplied reason="lost">ο</supplied>ὐκ ἔ<unclear>χω</unclear> ὀψώνιον· 
 
     <lb n="84"/>ἐ<unclear>κ</unclear> τῶν <gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="illegible" quantity="2" unit="character"/>ων ζῶ. 
 
@@ -231,18 +231,15 @@
 
     <lb n="86" type="inWord"/>νι <del rend="erasure">χαίρ<unclear>ειν</unclear></del> παρὰ Πετο
 
-    <lb n="87" type="inWord"/>σίριος. Πᾶεις ὁ στασιασ
-
-    <lb n="88" type="inWord"/><choice><reg>τὴς</reg><orig>στασιαστες</orig></choice> ὁ γεωργὸς <del rend="erasure"><unclear>ς</unclear> νῦν</del> <add place="above">τὸν τόπον τ<supplied reason="omitted">οῦ</supplied></add>
-
-    <lb n="89" type="inWord"/><choice><reg>τον</reg><orig>ττον</orig></choice> <del rend="erasure"><choice><reg>σκηνοῖ</reg><orig>σκενοι</orig></choice> <unclear>ς</unclear></del> νῦν <choice><reg>σκηνοῖ</reg><orig>σκενοι</orig></choice>. 
+    <lb n="87" type="inWord"/>σίριος. Πᾶεις ὁ 
+<choice><reg>στασιασ<lb n="88" type="inWord"/>τὴς</reg><orig>στασιαστες</orig></choice> ὁ γεωργὸς <del rend="erasure"><unclear>ς</unclear> νῦν</del> <add place="above">τὸν τόπον τ<supplied reason="omitted">οῦ</supplied></add>
+<choice><reg><lb n="89" type="inWord"/>τον</reg><orig>ττον</orig></choice> <del rend="erasure"><choice><reg>σκηνοῖ</reg><orig>σκενοι</orig></choice> <unclear>ς</unclear></del> νῦν <choice><reg>σκηνοῖ</reg><orig>σκενοι</orig></choice>. 
 
     <lb n="90"/><supplied reason="lost">ο</supplied>ὐκ αὐτοῦ ἐστ<supplied reason="lost">ι</supplied>ν, ἀλλὰ βασι-
 </ab></div><div n="3" type="textpart"><!--milestone unit="4"--><ab>
 
-    <lb n="91"/><choice><reg>λικόν</reg><orig>βασισιλικον</orig></choice>. <choice><reg>ἐχρήσατο</reg><orig>εχρεσεν</orig></choice> παρὰ <choice><reg>μοῦ</reg><orig>μοι</orig></choice> μέχρι μη
-
-    <lb n="92" type="inWord"/><choice><reg>νῶν</reg><orig>μενες</orig></choice> <choice><reg>τινων</reg><orig>τινες</orig></choice>, μέχρι τὸν ἑαυτοῦ τόπον 
+    <lb n="91"/><choice><reg>λικόν</reg><orig>βασισιλικον</orig></choice>. <choice><reg>ἐχρήσατο</reg><orig>εχρεσεν</orig></choice> παρὰ <choice><reg>μοῦ</reg><orig>μοι</orig></choice>μέχρι 
+<choice><reg>μη<lb n="92" type="inWord"/>νῶν</reg><orig>μενες</orig></choice> <choice><reg>τινων</reg><orig>τινες</orig></choice>, μέχρι τὸν ἑαυτοῦ τόπον 
 
     <lb n="93"/><choice><reg>οἰκοδόμησαι</reg><orig>οικοδομεσε</orig></choice>, καὶ <subst><add place="inline">σ<add place="above">ὺ</add></add><del rend="corrected">σ<del rend="erasure">οι</del></del></subst> δέδωκας <expan><ex>δραχμὰς</ex></expan> <num value="20">κ</num> εἰς οἰ
 
