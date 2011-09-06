@@ -38,7 +38,9 @@
             <handNote xml:id="m3"/>
          </handNotes>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -65,9 +67,8 @@
 
     <lb n="5" type="inWord"/>σταλείσας <choice><reg>ἡμῖν</reg><orig>υμειν</orig></choice> παρʼ ὑμῶν ὑπὲρ φορέτ<unclear>ρ</unclear>ων 
 
-    <lb n="6"/>πυροῦ καὶ κριθῆς οὗ ἐδηλώθημεν κατη
-
-    <lb n="7" type="inWord"/><choice><reg>χέναι</reg><orig>καταγειωχεναι</orig></choice> ἀπὸ <expan>θησ<ex>αυρῶν</ex></expan> <expan>Πολ<ex>έμωνος</ex></expan> εἰς τοὺς ὅρμους 
+    <lb n="6"/>πυροῦ καὶ κριθῆς οὗ ἐδηλώθημεν 
+<choice><reg>κατη<lb n="7" type="inWord"/>χέναι</reg><orig>καταγειωχεναι</orig></choice> ἀπὸ <expan>θησ<ex>αυρῶν</ex></expan> <expan>Πολ<ex>έμωνος</ex></expan> εἰς τοὺς ὅρμους 
 
     <lb n="8"/><expan><ex>πυροῦ ἀρταβῶν</ex></expan> <num value="28">κη</num> <num value="1/4" rend="tick">δ</num> καὶ <expan>κριθ<ex>ῆς</ex></expan> <num value="2">β</num> <num value="1/3" rend="tick">γ</num> <num value="1/24" rend="tick">κδ</num> ὡς τῆς <expan><ex>ἀρτάβης</ex></expan> <expan>ἑκ<ex>άστης</ex></expan> <expan><ex>δραχμῶν</ex></expan> <num value="8">η</num>, 
 
@@ -370,9 +371,8 @@
 
     <lb n="7"/>καὶ τὰ κατὰ τὴν <expan>στρα<ex>τηγίαν</ex></expan> <unclear>τ</unclear>ῶν δύο <num value="2"/> μ<supplied reason="lost">ερίδ</supplied><unclear>ων</unclear> 
 
-    <lb n="8"/>ὑπὲρ <expan>φορέτρο<ex>υ</ex></expan> πυροῦ οὗ <expan>ἐδ<supplied reason="lost">ηλ<ex>ώθημεν</ex></supplied></expan> κατηχέ
-
-    <lb n="9" type="inWord"/><choice><reg>ναι</reg><orig>κ<unclear>α</unclear><supplied reason="lost">τα</supplied>γ<unclear>ει</unclear>οχεναι</orig></choice> ἀπὸ θησαυρῶν τῆς <expan><supplied reason="lost">Πο</supplied><unclear>λέμ</unclear><ex>ωνος</ex></expan> 
+    <lb n="8"/>ὑπὲρ <expan>φορέτρο<ex>υ</ex></expan> πυροῦ οὗ <expan>ἐδ<supplied reason="lost">ηλ<ex>ώθημεν</ex></supplied></expan>
+<choice><reg>κατηχέ<lb n="9" type="inWord"/>ναι</reg><orig>κ<unclear>α</unclear><supplied reason="lost">τα</supplied>γ<unclear>ει</unclear>οχεναι</orig></choice> ἀπὸ θησαυρῶν τῆς <expan><supplied reason="lost">Πο</supplied><unclear>λέμ</unclear><ex>ωνος</ex></expan> 
 
     <lb n="10"/>μερίδος <expan>ἀπεργ<ex>ασίας</ex></expan> <expan>γενομ<ex>ένης</ex></expan> ἐπʼ αὐτ<unclear>οῦ</unclear> <expan>γενήμ<ex>ατος</ex></expan> 
 
@@ -462,12 +462,10 @@
 
 
     <lb n="8"/>τὴν <expan>στρα<ex>τηγίαν</ex></expan> τῶν <num value="2"><unclear>β</unclear></num> <unclear>μερί</unclear>δων ἃς ᾐτη<supplied reason="omitted">σά</supplied>
+<choice><reg><lb n="9" type="inWord"/>μεθα</reg><orig>ητημεθα</orig></choice> <unclear>ἐ</unclear>πισ<unclear>τ</unclear><supplied reason="lost">α</supplied>λῆν<unclear>α</unclear>ι ὑπὲρ φορέτρων 
 
-    <lb n="9" type="inWord"/><choice><reg>μεθα</reg><orig>ητημεθα</orig></choice> <unclear>ἐ</unclear>πισ<unclear>τ</unclear><supplied reason="lost">α</supplied>λῆν<unclear>α</unclear>ι ὑπὲρ φορέτρων 
-
-    <lb n="10"/>πυ<unclear>ρ</unclear><supplied reason="lost">ο</supplied>ῦ οὗ ἐδηλώθημ<supplied reason="lost">ε</supplied><unclear>ν</unclear> κατηχέ
-
-    <lb n="11" type="inWord"/><choice><reg>ναι</reg><orig>καταγειοχεναι</orig></choice> ἀπὸ θ<unclear>η</unclear><supplied reason="lost">σα</supplied>υρῶν Πολέ
+    <lb n="10"/>πυ<unclear>ρ</unclear><supplied reason="lost">ο</supplied>ῦ οὗ ἐδηλώθημ<supplied reason="lost">ε</supplied><unclear>ν</unclear>
+<choice><reg>κατηχέ<lb n="11" type="inWord"/>ναι</reg><orig>καταγειοχεναι</orig></choice> ἀπὸ θ<unclear>η</unclear><supplied reason="lost">σα</supplied>υρῶν Πολέ
 
     <lb n="12" type="inWord"/>μω<supplied reason="lost">ν</supplied>ος μερίδος ε<supplied reason="lost">ἰς</supplied> τοὺς ὅρμους 
 
@@ -512,9 +510,8 @@
 
     <lb n="2"/>Ἡρακλείδης Διδύμου μη<unclear>τρὸς</unclear> 
 
-    <lb n="3"/>Δημη<unclear>τρ</unclear>οῦτος ἀπὸ Ὅρμ<unclear>ο</unclear>υ Ἡρακλεο
-
-    <lb n="4" type="inWord"/><choice><reg>πολίτου</reg><orig>ηρακλ<unclear>εο</unclear>πολειτ<unclear>ου</unclear></orig></choice> <expan>κυ<unclear>β</unclear><ex>ερνήτης</ex></expan> ἰδίου πλοίου <expan>ἀγω<ex>γῆς</ex></expan> <expan><ex>ἀρταβῶν</ex></expan> <num value="800">ω</num> 
+    <lb n="3"/>Δημη<unclear>τρ</unclear>οῦτος ἀπὸ Ὅρμ<unclear>ο</unclear>υ 
+<choice><reg>Ἡρακλεο<lb n="4" type="inWord"/>πολίτου</reg><orig>ηρακλ<unclear>εο</unclear>πολειτ<unclear>ου</unclear></orig></choice> <expan>κυ<unclear>β</unclear><ex>ερνήτης</ex></expan> ἰδίου πλοίου <expan>ἀγω<ex>γῆς</ex></expan> <expan><ex>ἀρταβῶν</ex></expan> <num value="800">ω</num> 
 
     <lb n="5"/>παρα<unclear>σ</unclear>ταθεὶς καὶ ἐνγυηθεὶς 
 
@@ -628,8 +625,7 @@
 </ab></div><div n="13" type="textpart"><!--milestone unit="4"--><ab>
 
     <lb n="1"/>Σαβείνῳ καὶ μ<unclear>ετό</unclear>χοις δ<supplied reason="lost">η</supplied>
-
-    <lb n="2" type="inWord"/><choice><reg>μοσίοις</reg><orig><unclear>δ</unclear><supplied reason="lost">η</supplied>μοσιων</orig></choice> <choice><reg>τραπεζίταις</reg><orig>τραπεζειτων</orig></choice>. 
+<choice><reg><lb n="2" type="inWord"/>μοσίοις</reg><orig><unclear>δ</unclear><supplied reason="lost">η</supplied>μοσιων</orig></choice> <choice><reg>τραπεζίταις</reg><orig>τραπεζειτων</orig></choice>. 
 
     <lb n="3"/>Διόσκορος Πεσκαμούνεως 
 
@@ -716,8 +712,7 @@
     <lb n="4"/>καμηλοτρόφος κώμη<unclear>ς</unclear> <expan>Σοκνοπ<ex>αίου</ex></expan> 
 
     <lb n="5"/>Νήσου ἀπέχω παρʼ ὑμῶν τὰς ἐπ<supplied reason="lost">ιστα</supplied>
-
-    <lb n="6" type="inWord"/><choice><reg>λείσας</reg><orig>επ<supplied reason="lost">ιστα</supplied>λισας</orig></choice> μοι ὑπὸ <expan>Πτο<ex>λεμαίου</ex></expan> <expan>βασιλ<ex>ικοῦ γραμματέως</ex></expan> Π<unclear>ο</unclear>λέμονος 
+<choice><reg><lb n="6" type="inWord"/>λείσας</reg><orig>επ<supplied reason="lost">ιστα</supplied>λισας</orig></choice> μοι ὑπὸ <expan>Πτο<ex>λεμαίου</ex></expan> <expan>βασιλ<ex>ικοῦ γραμματέως</ex></expan> Π<unclear>ο</unclear>λέμονος 
 
     <lb n="7"/>διαδεχομένου καὶ <unclear>κ</unclear>ατὰ τ<unclear>ὴ</unclear>ν <expan>στρα<ex>τηγίαν</ex></expan> τῶ<supplied reason="lost">ν</supplied> 
 
@@ -746,7 +741,7 @@
 
     <lb n="19"/>Αἰλίου Ἁδριανοῦ Σε<unclear>βασ</unclear>τοῦ Εὐσεβ<unclear>οῦς</unclear> 
 
-    <lb n="20"/><expan>Φαμ<ex>ενὼ</ex></expan>θ <num value="4">δ</num>. 
+    <lb n="20"/><expan>Φαμ<ex>ενὼ</ex>θ</expan> <num value="4">δ</num>. 
 </ab></div><div n="16" type="textpart"><!--milestone unit="4"--><ab>
 
     <lb n="1"/><handShift new="m1"/> <supplied reason="lost">Σαβείνωι καὶ Δεί</supplied><unclear>ω</unclear>ι καὶ <unclear>μ</unclear><supplied reason="lost">ετόχοις</supplied> 
@@ -803,7 +798,7 @@
 
     <lb n="27"/><expan><ex>ἔτους</ex></expan> <num value="18">ιη</num> Ἀντωνίνου Καίσαρος τοῦ κυρίου 
 
-    <lb n="28"/><expan>Φαμ<ex>ενὼ</ex></expan>θ <num value="4">δ</num>. 
+    <lb n="28"/><expan>Φαμ<ex>ενὼ</ex>θ</expan> <num value="4">δ</num>. 
 </ab></div><div n="17" type="textpart"><!--milestone unit="4"--><ab>
 
     <lb n="1"/><handShift new="m1"/> <supplied reason="lost">Σαβ</supplied><unclear>είν</unclear><supplied reason="lost">ῳ καὶ Δε</supplied><unclear>ίω</unclear>ι <unclear>κα</unclear>ὶ <unclear>με</unclear>τόχοις <expan>δημ<ex>οσίοις</ex></expan> <expan>τραπ<ex>εζίταις</ex></expan>. 
@@ -930,9 +925,8 @@
 
     <lb n="2"/>οἱ ὑπο<unclear>γ</unclear><supplied reason="lost">εγ</supplied><unclear>ρα</unclear>μμ<supplied reason="lost">ένοι δημόσιοι κτηνοτρόφ</supplied>οι <supplied reason="lost">κώμης</supplied> 
 
-    <lb n="3"/><supplied reason="lost">Ἰβ</supplied>ιῶνος Ἀργαίου δι<supplied reason="lost">ὰ Διοδώρου</supplied> ἀποσυστ<unclear>α</unclear>θ<supplied reason="lost">έν</supplied><unclear>τ</unclear>ος ἀπέ
-
-    <lb n="4" type="inWord"/><choice><reg><supplied reason="lost">χ</supplied>ομεν</reg><orig>απε<supplied reason="lost">χ</supplied>ωμεν</orig></choice> παρʼ ὑ<unclear>μ</unclear><supplied reason="lost">ῶν τὰς ἐ</supplied>πισταλείσας <choice><reg>ἡμῖν</reg><orig><unclear>η</unclear>μειν</orig></choice> ὑπὸ 
+    <lb n="3"/><supplied reason="lost">Ἰβ</supplied>ιῶνος Ἀργαίου δι<supplied reason="lost">ὰ Διοδώρου</supplied> ἀποσυστ<unclear>α</unclear>θ<supplied reason="lost">έν</supplied><unclear>τ</unclear>ος 
+<choice><reg>ἀπέ<lb n="4" type="inWord"/><supplied reason="lost">χ</supplied>ομεν</reg><orig>απε<supplied reason="lost">χ</supplied>ωμεν</orig></choice> παρʼ ὑ<unclear>μ</unclear><supplied reason="lost">ῶν τὰς ἐ</supplied>πισταλείσας <choice><reg>ἡμῖν</reg><orig><unclear>η</unclear>μειν</orig></choice> ὑπὸ 
 
     <lb n="5"/><expan><unclear>Π</unclear>τολ<ex>εμαίου</ex></expan> <expan>βασιλ<ex>ικοῦ</ex></expan> <expan>γρα<ex>μματέως</ex></expan> <expan>Πολ<ex>έμωνος</ex></expan> <expan><unclear>μ</unclear><supplied reason="lost">ερίδ<ex>ος</ex></supplied></expan> <expan><supplied reason="lost">διαδε</supplied>χομ<ex>ένου</ex></expan> καὶ τὰ κατ<supplied reason="lost">ὰ τ</supplied>ὴν <expan>στρα<ex>τηγίαν</ex></expan> 
 
@@ -968,7 +962,7 @@
 
     <lb n="21"/><expan><ex>ἔτους</ex></expan> <num value="18">ιη</num> <unclear>Αὐτο</unclear>κ<unclear>ρά</unclear><supplied reason="lost">το</supplied>ρ<unclear>ο</unclear>ς Καίσαρος Τίτου <expan>Αἰλίο<ex>υ</ex></expan> 
 
-    <lb n="22"/>Ἁδρι<supplied reason="lost">αν</supplied><unclear>οῦ</unclear> Ἀ<supplied reason="lost">ντ</supplied><unclear>ω</unclear>νί<unclear>νο</unclear>υ <expan>Σεβ<ex>αστ</ex></expan>οῦ <expan>Εὐσεβ<ex>οῦς</ex></expan> 
+    <lb n="22"/>Ἁδρι<supplied reason="lost">αν</supplied><unclear>οῦ</unclear> Ἀ<supplied reason="lost">ντ</supplied><unclear>ω</unclear>νί<unclear>νο</unclear>υ <expan>Σεβ<ex>αστ</ex>οῦ</expan> <expan>Εὐσεβ<ex>οῦς</ex></expan> 
 
     <lb n="23"/>Φα<unclear>μ</unclear><supplied reason="lost">ενὼθ</supplied> <num value="5">ε</num>. </ab></div></div>
       </body>
