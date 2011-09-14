@@ -33,7 +33,9 @@
             <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
-      <revisionDesc><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -74,9 +76,8 @@
 
     <lb n="13"/><supplied reason="lost">πολλὰ</supplied> <choice><reg>προσαγορεύομαι</reg><orig>προσαγορευβομε</orig></choice> τὴν ἐλε<supplied reason="lost">υθ</supplied>έρ<supplied reason="lost">αν</supplied> Ιμι κ<supplied reason="lost">αὶ τὰ</supplied> 
 
-    <lb n="14"/><choice><reg>παιδία</reg><orig><supplied reason="lost">πεδ</supplied>ια</orig></choice> αὐτοῦ, πολλὰ <choice><reg>προσαγορεύομαι</reg><orig>προσαγορευβομε</orig></choice> Αννε τὸν πρω
-
-    <lb n="15" type="inWord"/><choice><reg>τοκωμήτην</reg><orig>προ<supplied reason="lost">τοκο</supplied>μητην</orig></choice> καὶ Φιλέαν τὸν <choice><reg>πρωτοκωμήτην</reg><orig>προτοκομ<supplied reason="lost">ητ</supplied>ιν</orig></choice> κα<supplied reason="lost">ὶ</supplied> Ρ<gap reason="lost" quantity="2" unit="character"/> 
+    <lb n="14"/><choice><reg>παιδία</reg><orig><supplied reason="lost">πεδ</supplied>ια</orig></choice> αὐτοῦ, πολλὰ <choice><reg>προσαγορεύομαι</reg><orig>προσαγορευβομε</orig></choice>Αννε τὸν 
+<choice><reg>πρω<lb n="15" type="inWord"/>τοκωμήτην</reg><orig>προ<supplied reason="lost">τοκο</supplied>μητην</orig></choice> καὶ Φιλέαν τὸν <choice><reg>πρωτοκωμήτην</reg><orig>προτοκομ<supplied reason="lost">ητ</supplied>ιν</orig></choice> κα<supplied reason="lost">ὶ</supplied> Ρ<gap reason="lost" quantity="2" unit="character"/> 
 
     <lb n="16"/><gap reason="lost" quantity="3" unit="character"/> καὶ τὴν ἐλευθέραν <choice><reg>ὑμῶν</reg><orig>ησων</orig></choice> καὶ πάντας 
 
@@ -94,13 +95,10 @@
 
     <lb n="23"/>μετὰ τὰ <choice><reg>πάσχα</reg><orig>πασσχα</orig></choice> <choice><reg>καταλαμβάνω</reg><orig>καταλανβανω</orig></choice> <choice><reg>ὑμᾶς</reg><orig>ησας</orig></choice> ἄρτι 
 
-    <lb n="24"/><supplied reason="lost">ἐὰν θ</supplied>έλῃ ὁ θεός. θ<supplied reason="lost">ε</supplied>λήσατε οὖν καὶ <choice><reg>ἐὰν</reg><orig>καν</orig></choice> μίαν <num value="1"/> ἐπιστο
-
-    <lb n="25" type="inWord"/><choice><reg>λὴν</reg><orig>επισστο<supplied reason="lost">λην</supplied></orig></choice> <choice><reg>πέμψειν</reg><orig>πεμψιν</orig></choice> μοι περὶ τῆς <choice><reg>ὑγιείας</reg><orig>υγυας</orig></choice> <choice><reg>ὑμῶν</reg><orig>ησων</orig></choice>, μὴ ὄγ
-
-    <lb n="26" type="inWord"/><choice><reg>κον</reg><orig>ονκον</orig></choice> <choice><reg>ἕλξετε</reg><orig>ελκσετε</orig></choice> <surplus>θελήσατε οὖν</surplus> ὁ <choice><reg>φέρων</reg><orig>φερον</orig></choice> <choice><reg>ὑμῖν</reg><orig>ησιν</orig></choice> τὴν ἐπι
-
-    <lb n="27" type="inWord"/><choice><reg>στολὴν</reg><orig>ε<supplied reason="lost">πισστ</supplied>ολ<supplied reason="lost">ην</supplied></orig></choice> <supplied reason="lost">ἀ</supplied>ντʼ ἐμοῦ <choice><reg>δέξασθε</reg><orig>δεξεσστε</orig></choice> αὐ<supplied reason="lost">τ</supplied>ὸν· τὴν χάρ<supplied reason="lost">ιν</supplied> 
+    <lb n="24"/><supplied reason="lost">ἐὰν θ</supplied>έλῃ ὁ θεός. θ<supplied reason="lost">ε</supplied>λήσατε οὖν καὶ <choice><reg>ἐὰν</reg><orig>καν</orig></choice> μίαν <num value="1"/>
+<choice><reg>ἐπιστο<lb n="25" type="inWord"/>λὴν</reg><orig>επισστο<supplied reason="lost">λην</supplied></orig></choice> <choice><reg>πέμψειν</reg><orig>πεμψιν</orig></choice> μοι περὶ τῆς <choice><reg>ὑγιείας</reg><orig>υγυας</orig></choice> <choice><reg>ὑμῶν</reg><orig>ησων</orig></choice>, μὴ 
+<choice><reg>ὄγ<lb n="26" type="inWord"/>κον</reg><orig>ονκον</orig></choice> <choice><reg>ἕλξετε</reg><orig>ελκσετε</orig></choice> <surplus>θελήσατε οὖν</surplus> ὁ <choice><reg>φέρων</reg><orig>φερον</orig></choice> <choice><reg>ὑμῖν</reg><orig>ησιν</orig></choice>τὴν 
+<choice><reg>ἐπι<lb n="27" type="inWord"/>στολὴν</reg><orig>ε<supplied reason="lost">πισστ</supplied>ολ<supplied reason="lost">ην</supplied></orig></choice> <supplied reason="lost">ἀ</supplied>ντʼ ἐμοῦ <choice><reg>δέξασθε</reg><orig>δεξεσστε</orig></choice> αὐ<supplied reason="lost">τ</supplied>ὸν· τὴν χάρ<supplied reason="lost">ιν</supplied> 
 
     <lb n="28"/>τ<supplied reason="lost">α</supplied>ύτ<supplied reason="lost">η</supplied>ν ποιῆτε ἐμοί. <g type="slanting-stroke"/><g type="slanting-stroke"/> 
 

@@ -41,7 +41,9 @@
             <handNote xml:id="m7"/>
          </handNotes>
       </profileDesc>
-      <revisionDesc><change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+      <revisionDesc>
+<change when="2011-08-25" who="GB">moved linebreak and missing characters into reg</change>
+<change when="2011-03-27" who="GB">updated markup for fractions (rend=tick)</change><change when="2011-03-02" who="GB">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
          <change when="2010-05-05" who="GB">changed schema; added xml:space=preserve; indented; changed sic to surplus; moved title/@n to idno</change>
          <change when="2009-11-12" who="GB">Added language la-Grek; tagged num rend=fraction</change>
          <change when="2009-06-27" who="GB">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -134,9 +136,8 @@
 
     <lb n="37"/>ἀμφότεροι σιτολόγοι κώμης Φιλαδελφίας καὶ <g rend="extension" type="filler"/> 
 
-    <lb n="38"/>μέρ<unclear>ο</unclear>υς Τάνεως <choice><reg>μεμετρήμεθα</reg><orig>μεμαιτρημεθα</orig></choice> καὶ παρελά
-
-    <lb n="39" type="inWord"/><choice><reg>βαμεν</reg><orig>παραλαβα<unclear>μ</unclear>εν</orig></choice> ἐν <choice><reg>θησαυρῷ</reg><orig>θησαυρο</orig></choice> κώμης Φιλαδελφίας <expan>μέτρ<ex>ῳ</ex></expan> 
+    <lb n="38"/>μέρ<unclear>ο</unclear>υς Τάνεως <choice><reg>μεμετρήμεθα</reg><orig>μεμαιτρημεθα</orig></choice>καὶ 
+<choice><reg>παρελά<lb n="39" type="inWord"/>βαμεν</reg><orig>παραλαβα<unclear>μ</unclear>εν</orig></choice> ἐν <choice><reg>θησαυρῷ</reg><orig>θησαυρο</orig></choice> κώμης Φιλαδελφίας <expan>μέτρ<ex>ῳ</ex></expan> 
 
     <lb n="40"/>μοδίου ὑπὲρ <expan>γενή<ex>ματος</ex></expan> <num value="8">η</num> <expan><ex>ἔτους</ex></expan> καὶ <num value="6">ϛ</num> <expan><ex>ἔτους</ex></expan> καὶ <num value="4">δ</num> <expan><ex>ἔτους</ex></expan> καὶ <num value="2">β</num> <expan><ex>ἔτους</ex></expan> <expan>ὀνόματ<ex>ος</ex></expan> 
 
@@ -298,9 +299,8 @@
 
     <lb n="117"/><expan>διέγ<ex>ραψεν</ex></expan> Ἁρποκρατίων <expan>οὐετρ<ex>ανὸς</ex></expan> ἐν <choice><reg>Φιλαδελφ<supplied reason="omitted">ί</supplied>ᾳ</reg><orig>φιλαδελφα</orig></choice> 
 
-    <lb n="118"/><expan>π<ex>ριμι</ex>π<ex>ίλου</ex></expan> <num value="4">δ</num> ἰνδικτίονος <expan><ex>δραχμὰς</ex></expan> πεντακισ
-
-    <lb n="119" type="inWord"/><choice><reg>χιλίας</reg><orig>πεντακισχει<unclear>λ</unclear>ιας</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="5000">Ε</num>. 
+    <lb n="118"/><expan>π<ex>ριμι</ex>π<ex>ίλου</ex></expan> <num value="4">δ</num> ἰνδικτίονος <expan><ex>δραχμὰς</ex></expan>
+<choice><reg>πεντακισ<lb n="119" type="inWord"/>χιλίας</reg><orig>πεντακισχει<unclear>λ</unclear>ιας</orig></choice>, <expan><ex>γίνονται</ex></expan> <expan><ex>δραχμαὶ</ex></expan> <num value="5000">Ε</num>. 
 
     <lb n="120"/><choice><reg>ὑπατείας</reg><orig>υπατιας</orig></choice> τῶν δεσποτῶν ἡμῶν Κωνσταντίνου καὶ Λικιννίου 
 
@@ -454,9 +454,8 @@
 
     <lb n="192"/>ἑκατὸν ἐνενήκοντα τρία, <expan><ex>δηνάρια</ex></expan> <num value="193">ρϙγ</num>, 
 
-    <lb n="193"/><subst><add place="inline">κριθ<unclear>ῆς</unclear></add><del rend="corrected">κρ<unclear>ι</unclear>θ<gap reason="illegible" quantity="2" unit="character"/></del></subst> <num value="20">κ</num> τάλαντα δύο καὶ <expan><ex>δηνάρια</ex></expan> πεντή
-
-    <lb n="194" type="inWord"/><choice><reg>κοντα</reg><orig>πεντητη<unclear>κον</unclear>τα</orig></choice>, <expan><ex>γίνεται</ex></expan> <expan><ex>τάλαντα</ex></expan> <num value="2">β</num> <expan><ex>δηνάρια</ex></expan> <num value="50"><unclear>ν</unclear></num>. 
+    <lb n="193"/><subst><add place="inline">κριθ<unclear>ῆς</unclear></add><del rend="corrected">κρ<unclear>ι</unclear>θ<gap reason="illegible" quantity="2" unit="character"/></del></subst> <num value="20">κ</num> τάλαντα δύο καὶ <expan><ex>δηνάρια</ex></expan>
+<choice><reg>πεντή<lb n="194" type="inWord"/>κοντα</reg><orig>πεντητη<unclear>κον</unclear>τα</orig></choice>, <expan><ex>γίνεται</ex></expan> <expan><ex>τάλαντα</ex></expan> <num value="2">β</num> <expan><ex>δηνάρια</ex></expan> <num value="50"><unclear>ν</unclear></num>. 
 
     <lb n="195"/>καὶ <num value="20">κ</num> <expan><ex>δηνάρια</ex></expan> <choice><reg>ἐνακόσια</reg><orig>εννακοσια</orig></choice> ἐνενήκοντα, <expan><ex>γίνεται</ex></expan> <expan><ex>δηνάρια</ex></expan> <num value="990">ϡϙ</num> 
 
