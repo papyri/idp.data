@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,37 +9,27 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.142</idno>
-            <idno type="controlno">(ICU)142</idno>
+            <idno type="controlNo">(ICU)142</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 103</idno>
+                  <idno type="invNo">O.Medin.HabuDem 103</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued by the bank</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Number 103 in Lichtheim&amp;apos;s publication. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
+                     <note type="lines">On recto: 4 lines in Demotic</note>
+                     <note type="paleography">After the date there is an unread sign which looks like a Greek abbreviation.</note>
+                     <note type="recto_verso">Source of description: On recto: tax receipt</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>ostracon ;</support>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout>
-                           <ab type="lines">On recto: 4 lines in Demotic</ab>
-                           <ab type="recto-verso">Source of description: On recto: tax receipt</ab>
-                        </layout>
-                     </layoutDesc>
-                  </objectDesc>
-                  <handDesc>
-                     <p>After the date there is an unread sign which looks like a Greek abbreviation.</p>
-                  </handDesc>
+                  <p>ostracon ;</p>
                </physDesc>
                <history>
                   <origin>
@@ -59,21 +50,17 @@
             <language ident="egy-Egyd">Demotic</language>
          </langUsage>
          <textClass>
-            <keywords scheme="#apis">
+            <keywords scheme="apis">
                <term>Jeme</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 4052, recto: (1) Pasemis, son of Pamonthes, son of [Meswer], has paid (2) for wheat of field of god of year 37 in Jeme, (3) 2 staters / 1 stater / 2 staters again. Written in year 38, (4) Pachons 2.</ab>
          </div>
          <div type="bibliography" subtype="citations">
