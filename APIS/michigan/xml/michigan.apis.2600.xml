@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,41 +10,35 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2600</idno>
-            <idno type="controlno">(MiU)2600</idno>
+            <idno type="controlNo">(MiU)2600</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 5927</idno>
+                  <idno type="invNo">P.Mich.inv. 5927</idno>
                </msIdentifier>
                <msContents>
                   <summary>On the recto, register recording payments in money (for land taxes) by day and by taxpayer; on the verso, register recording payments in money for one of the land taxes, by taxpayer</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Relation between Recto and Verso uncertain.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="lines">Recto - 19;;Verso - 15</note>
+                     <note type="recto_verso">Source of description: Recto +Verso</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
+                  <p>1 papyrus ; 11 X 14 cm</p>
                   <objectDesc>
-                     <supportDesc>
-                        <support>1 papyrus ; 11 X 14 cm</support>
-                        <condition>
-                           <ab type="conservation">broken off on left and right sides and at the bottom</ab>
-                        </condition>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout>
-                           <ab type="lines">Recto - 19;;Verso - 15</ab>
-                           <ab type="recto-verso">Source of description: Recto +Verso</ab>
-                        </layout>
-                     </layoutDesc>
+                     <p>
+                        <note type="conservation">broken off on left and right sides and at the bottom</note>
+                     </p>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     
+                     <origDate>160/161 or 183/184 A.D. (date of Recto; Verso: ca. same date)</origDate>
                      <origPlace>Karanis, Herakleidou meris, Arsinoite nome, province of Egypt</origPlace>
                      <persName type="asn">Ailas(?) son of Pek . .</persName>
                      <persName type="asn">Valeria Isias (former owner)</persName>
@@ -72,7 +67,7 @@
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="#apis">
+            <keywords scheme="apis">
                <term>land tenure--Egypt--Karanis (Extinct city)</term>
                <term>Citizenship--Rome.</term>
                <term>Veterans--Rome.</term>
@@ -80,12 +75,8 @@
                <term>Land value taxation--Egypt--Karanis (Extinct city)</term>
                <term>Tax collection--Egypt--Karanis (Extinct city)</term>
                <term>Women--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
