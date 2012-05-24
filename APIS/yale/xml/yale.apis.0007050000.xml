@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,17 +9,17 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">yale.apis.0007050000</idno>
-            <idno type="controlno">(CtY)705</idno>
+            <idno type="controlNo">(CtY)705</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.CtYBR inv.705</idno>
+                  <idno type="invNo">P.CtYBR inv.705</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -27,7 +28,11 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="0001" notAfter="0099">1 CE – 99 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -37,13 +42,9 @@
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Contract</rs>
-               </term>
+            <keywords scheme="apis">
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Contract</term>
             </keywords>
          </textClass>
       </profileDesc>
