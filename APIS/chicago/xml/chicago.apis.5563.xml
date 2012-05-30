@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.5563</idno>
-            <idno type="controlno">(ICU)5563</idno>
+            <idno type="controlNo">(ICU)5563</idno>
+            <idno type="ddbdp">http.//www.perseus.tufts.edu/cgi-bin/ptext?doc=perseus.abo.pap,sb.1.4421dupl</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Kar.Goodsp. 105 (MS 1615)</idno>
+                  <idno type="invNo">P.Kar.Goodsp. 105 (MS 1615)</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Very similar to Berlin Urkunden No. 620, a Faiyum papyrus of the same era, whose lacunae often fall in different places than in this papyrus.</note>
                      <note type="general">Location: Regenstein</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -48,6 +50,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -56,12 +65,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Report</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

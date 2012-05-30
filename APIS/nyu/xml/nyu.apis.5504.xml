@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.5504</idno>
-            <idno type="controlno">(NNU)</idno>
+            <idno type="controlNo">(NNU)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv.cairo 146</idno>
+                  <idno type="invNo">NYU inv.cairo 146</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fragment of a letter dealing with agricultural matters ('there remains to be paid by them, except the clover') and listing amounts of dirhams.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto contains 8 lines with a small blank margin on the right side.</note>
                      <note type="general">Verso continues the text on the recto at a 180 degree angle compared to the text on recto.</note>
                      <note type="general">There are 8 lines on the verso which has a small blank margin on the right side.</note>
+                     <note type="local_note">Held in the Special Collections Department of Bobst library of NYU and stored loose in acid-free file folders.</note>
                      <textLang mainLang="ar-Arab">Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +59,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">paper; letter</rs>
-               </term>
+               <term type="genre_form">paper; letter</term>
             </keywords>
          </textClass>
       </profileDesc>

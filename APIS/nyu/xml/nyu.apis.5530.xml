@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.5530</idno>
-            <idno type="controlno">(NNU)</idno>
+            <idno type="controlNo">(NNU)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv.cairo 164r</idno>
+                  <idno type="invNo">NYU inv.cairo 164r</idno>
                </msIdentifier>
                <msContents>
                   <summary>Recto contains the end of a letter to the sender's father ('may God prolong the life of the father'). Part of the address of the letter on recto is written on verso. The addressee's name seems to be Abu al-Qasim.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto (perpendicular to fibres) has 10 lines and 2 lines written at a 90 degree angle to the main text in the right margin. The original cutting lines are preserved at the bottom and right sides.</note>
                      <note type="general">Verso contains the address of the letter on recto and another letter. See nyu.apis.5531.</note>
+                     <note type="local_note">Held in the Special Collections Department of Bobst library of NYU and stored loose in acid-free file folders.</note>
                      <textLang mainLang="ar-Arab">Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus; Letter</rs>
-               </term>
+               <term type="genre_form">papyrus; Letter</term>
             </keywords>
          </textClass>
       </profileDesc>

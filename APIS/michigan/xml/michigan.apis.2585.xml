@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2585</idno>
-            <idno type="controlno">(MiU)2585</idno>
+            <idno type="controlNo">(MiU)2585</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 590</idno>
+                  <idno type="invNo">P.Mich.inv. 590</idno>
                </msIdentifier>
                <msContents>
                   <summary>The text belongs to the class of subliterary manuals which predict events on the basis of the Kalends of January. The present text unfolds its prognostic advice depending on how the wind blows from 6 to 10 Tybi; in the midst of its account of 10 Tybi, the sheet breaks off.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">-</note>
                      <textLang mainLang="egy-Copt">Coptic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +74,15 @@
                <term>Disasters--Egypt.</term>
                <term>Wealth--Egypt.</term>
                <term>Calendar, Roman.</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">subliterary; Horoscope</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">subliterary; Horoscope</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"... in Phamenoth; the oil will be costly in Phamenoth ...;;This is the sign of 6 (?) Tybi concerning the way in which we are taught what is profitable to us before it happens. If the east wind comes forth on that day, the water is good, and it will cover the entire earth; the cattle will live, the crops will increase, the gardens will blossom, the honey will diminish, and the last of the crops of the field will perish.;If the east wind comes on 8 Tybi, there will be a great winter, the weather (V) will be good, the cattle will miscarry, the wheat will become as dry (?) as cumin, the men will suffer severe illnesses, and the children will die.;If a south wind comes forth on the dawn of 9 Tybi, and the north wind comes forth at evening, it means a great summer, the crops will increase, the small livestock will miscarry but will not continue (to do so), and the honey will become profitable.;If a west wind comes forth on 10 Tybi, and the south wind comes forth at evening, there will be a long winter of fatness (?) ...."</ab>
          </div>
          <div type="bibliography" subtype="citations">

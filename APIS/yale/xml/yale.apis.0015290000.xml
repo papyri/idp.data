@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,18 +9,18 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">yale.apis.0015290000</idno>
-            <idno type="controlno">(CtY)1529</idno>
+            <idno type="controlNo">(CtY)1529</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.CtYBR inv.1529</idno>
+                  <idno type="invNo">P.CtYBR inv.1529</idno>
                </msIdentifier>
                <msContents>
                   <summary>The strategos of the Memphite nome Aurel[ios] Harpokration to the epistrategos Ioulios Klaudianos, to cover a survey-report on dike and canal work submitted by the public land-surveyor Isidoros</summary>
-                  <msItem>
+                  <msItemStruct>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -28,10 +29,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="0280" notAfter="0281">280 CE – 281 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -39,12 +51,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Letter</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Letter</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -53,7 +61,7 @@
       <body>
          <div type="bibliography" subtype="citations">
             <listBibl>
-               <bibl>SB XIV 11647 <note>Par·ssoglou 1971a: 652, 662-66Thomas 1975-1982: 2:206</note>
+               <bibl>SB XIV 11647 <note>Par�ssoglou 1971a: 652, 662-66Thomas 1975-1982: 2:206</note>
                </bibl>
             </listBibl>
          </div>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.177</idno>
-            <idno type="controlno">(ICU)177</idno>
+            <idno type="controlNo">(ICU)177</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">OIM A 6973D</idno>
+                  <idno type="invNo">OIM A 6973D</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="ar-Arab">Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,20 +69,16 @@
                <term>Qus</term>
                <term>Contract</term>
                <term>Agriculture</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>OIM 6973D, recto: (1) [  ] (2) [  ] bn Yaaqub. (3) [  ] Verily you asked me ... (4) and requested that I rent you (a faddan) (5) (of land) in Qus, district of [  ]. (6) during the past year for seven carats (7) weight of the new standard of the Treasury and its weight. (8) And your tax will be in the sultan&amp;apos;s, may God Strengthen him, installments. (9) So sow with the blessing of God and his aid. And (it was written) (10) in the year 267.</ab>
+         <div type="translation">
+            <ab>OIM 6973D, recto: (1) [  ] (2) [  ] bn Yaaqub. (3) [  ] Verily you asked me ... (4) and requested that I rent you (a faddan) (5) (of land) in Qus, district of [  ]. (6) during the past year for seven carats (7) weight of the new standard of the Treasury and its weight. (8) And your tax will be in the sultan's, may God Strengthen him, installments. (9) So sow with the blessing of God and his aid. And (it was written) (10) in the year 267.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <p>No citations.</p>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2905</idno>
-            <idno type="controlno">(MiU)2905</idno>
+            <idno type="controlNo">(MiU)2905</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6645</idno>
+                  <idno type="invNo">P.Mich.inv. 6645</idno>
                </msIdentifier>
                <msContents>
                   <summary>The description of a wall</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Verso; Recto is unpublished</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,12 +72,8 @@
             <keywords scheme="#apis">
                <term>Literature</term>
                <term>Prose</term>
-               <term>
-                  <rs type="genre_form">Literary; prose</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary; prose</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,7 +82,7 @@
       <body>
          <div type="bibliography" subtype="citations">
             <listBibl>
-               <bibl>Luppe W, ZPE 93, 160-161, 1992, Pl VI2 -- The editor&amp;apos;s note that  "Die Rueckseite is leer" is not right.</bibl>
+               <bibl>Luppe W, ZPE 93, 160-161, 1992, Pl VI2 -- The editor's note that  "Die Rueckseite is leer" is not right.</bibl>
             </listBibl>
             <p>
                <ref target="http://images.umdl.umich.edu/cgi/i/image/image-idx?view=entry&amp;subview=detail&amp;cc=apis&amp;entryid=X-2905&amp;viewid=6645V.TIF">Original record</ref>.</p>

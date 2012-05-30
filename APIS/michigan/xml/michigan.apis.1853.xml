@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1853</idno>
-            <idno type="controlno">(MiU)1853</idno>
+            <idno type="controlNo">(MiU)1853</idno>
+            <idno type="ddbdp">sb..16.12592</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3169</idno>
+                  <idno type="invNo">P.Mich.inv. 3169</idno>
                </msIdentifier>
                <msContents>
                   <summary>The text is a receipt issued by a praktor (or two praktores) to a person whose name is lost in a lacuna and who has made the payment through the account of Nilos. The praktor registers the monthly payment of the imposition, at 12 drachmas a month, from March 1, 269 until January/February, 270.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +76,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 1 of Imperator Caesar Marcus Aurelius Claudius Pius Felix Augustus, Phamenoth 5. ? has paid to Seuthos, praktor of the imposition in denarii and didrachmon, . . . into the account of Nilos, son of Ptollas and of the mother Ptolemais, an account of the didrachmon twelve drachmas, in total 12 drachmas; in the month of Pharmouthi he has equally  paid another twelve drachmas, in total 12 drachmas . . . "</ab>
          </div>
          <div type="bibliography" subtype="citations">

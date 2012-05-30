@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2292</idno>
-            <idno type="controlno">(MiU)2292</idno>
+            <idno type="controlNo">(MiU)2292</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4733</idno>
+                  <idno type="invNo">P.Mich.inv. 4733</idno>
                </msIdentifier>
                <msContents>
-                  <summary>Fragments of the acts III and IV of Menander&amp;apos;s Arbitrants</summary>
-                  <msItem>
+                  <summary>Fragments of the acts III and IV of Menander's Arbitrants</summary>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Verso; Recto (unpublished): remains of a document (tax account or receipt?) bearing the name of Domitian</note>
+                     <note type="related">+ P.Mich. inv. 4800, 4801g, 4807 + more fragments from inv. 4733</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,12 +74,8 @@
                <term>-</term>
                <term>Comedy</term>
                <term>Literature</term>
-               <term>
-                  <rs type="genre_form">Literary: Comic</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary: Comic</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

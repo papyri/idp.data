@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2982</idno>
-            <idno type="controlno">(MiU)2982</idno>
+            <idno type="controlNo">(MiU)2982</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6877</idno>
+                  <idno type="invNo">P.Mich.inv. 6877</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of animals, offered as forced contributions by each village of the division of Herakleides for the feast of Sarapis</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">Archive of Petaus, son of Petaus, komogrammateus of Ptolemais Hormou</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +77,15 @@
                <term>Feast</term>
                <term>Religion</term>
                <term>Taxation</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Allocation of contributions of calves and young pigs furnished for the feast of Sarapis. As follows:;of Aphrodites polis and Arabon, [1] calf, 2 young pigs;;of Arsinoe and Tanis, [1] calf, 2 young pigs;;of Alabanthis and Ptolemais Hormou, [1] calf, 2 young pigs;;of Bakchias and Hephaistias, [1 calf], 2 young pigs;;of Boubastos and Kerkesoucha, [1] calf, 2 young pigs;;of Dinnis and [- - -: 1 calf], 2 young pigs;;of Hiera and Mendes, [1] calf, 2 young pigs;;of Nestou and Philadelphia, [1 calf], 2 young pigs;;of Neilou polis and Psenyris, [1] calf, 2 young pigs;;of Stratonos and Sebennytos, [1 calf], 2 young pigs</ab>
          </div>
          <div type="bibliography" subtype="citations">

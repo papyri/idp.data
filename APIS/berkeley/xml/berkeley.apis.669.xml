@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.669</idno>
-            <idno type="controlno">(CU)669</idno>
+            <idno type="controlNo">(CU)669</idno>
+            <idno type="ddbdp">p.tebt..2.505</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0505</idno>
+                  <idno type="invNo">P.Tebt.0505</idno>
                </msIdentifier>
                <msContents>
                   <summary>Acknowledgement by Cronion of the repayment of a loan of 100 drachmas from the representatives of Orseus.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto unpublished</note>
                      <note type="general">Margins: top, 1.6 cm.; left, 3.7 cm.; bottom, 1.3 cm.; In red ink to left corner: 505. On verso, in black ink: T 388.</note>
                      <note type="general">7th year of the Emperors Marcus Aurelius and Verus, in the Egyptian month Pachon.</note>
+                     <note type="local_note">1446</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,12 +71,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Loans, Personal</term>
-               <term>
-                  <rs type="genre_form">Contracts, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Contracts, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

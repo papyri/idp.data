@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.8205</idno>
-            <idno type="controlno">(ICU)8205</idno>
+            <idno type="controlNo">(ICU)8205</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O. OIM 19321</idno>
+                  <idno type="invNo">O. OIM 19321</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Catalogue no. 30; Nelson collection no. N288.  Several of the men named in this list are known from other sources, which point to a date near the end of the reign of Ptolemy II for this text.  At least three of them (lines I,8-9 and II,2) were probably mortuary priests, suggesting that the list may relate to a formal or informal association of mortuary priests.  See OIM 19292 for comparison.  Psenenteris, son of Panouphis may be Muhs&amp;apos; Taxpayer 17.  Harsiesis, son of Amenothes may be Muhs&amp;apos; Taxpayer 29.</note>
+                  <msItemStruct>
+                     <note type="general">Catalogue no. 30; Nelson collection no. N288.  Several of the men named in this list are known from other sources, which point to a date near the end of the reign of Ptolemy II for this text.  At least three of them (lines I,8-9 and II,2) were probably mortuary priests, suggesting that the list may relate to a formal or informal association of mortuary priests.  See OIM 19292 for comparison.  Psenenteris, son of Panouphis may be Muhs' Taxpayer 17.  Harsiesis, son of Amenothes may be Muhs' Taxpayer 29.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -65,6 +66,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -73,19 +81,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Lists</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>OIM 19321, recto: (I,1) The men who received(?) straw: (2) Panouphis son of Teos (3) Paos son of Panouphis (4) Pales (5) Amenothes son of Psentaminis (6) Lolous (7) Panis (8) Teos son of Osoroeris (9) Psenenteris son of Panouphis (10) Phatres (II,1) Petemestous ... (2) Harsiesis son of Amenothes (3) Haeies (4) Horos son of Amenothes (5) ... (6) Espemetis</ab>
          </div>
          <div type="bibliography" subtype="citations">

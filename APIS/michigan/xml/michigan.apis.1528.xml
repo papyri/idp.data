@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1528</idno>
-            <idno type="controlno">(MiU)1528</idno>
+            <idno type="controlNo">(MiU)1528</idno>
+            <idno type="ddbdp">sb..16.12576</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1799</idno>
+                  <idno type="invNo">P.Mich.inv. 1799</idno>
                </msIdentifier>
                <msContents>
                   <summary>The account contained in this text registers the receipt of payments both in money and in kind made by the grammateus Lucius to the anonymous writer. The payments are spread over the greater part of a year, but the nature of the service rendered is not specified. A word crucial in this connection has been virtually obliterated on the papyrus (line 4).</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -60,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +78,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>village of Sepho.</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"Account of the present 16th, 4, and 2nd year. Account of Lucius, scribe. He made a written undertaking for . . . of which the copy is on file. Of these, on Phaophi 29, I received from him 3000 silver drachmas; through Hatres, 6 keramia of wine; through the same, 2 3/4 artabas of wheat:;Hathyr 27, through the same, 3 more keramia of wine:;Tybi 24, through Kalipodias as a festival gift, 1 spathion of wine:;Mecheir 17, I received in addition 2000 silver drachmas:;Pharmouthi 15, there were sent to my mother on account of the price of wool, 2000 drachmas:;Pachon 23, I received from the same 1 talent 4500 drachmas; of these, from Dionysos, son of of Leonteus, 1 talent; from Dioskoros, banker, in the village of Sepho, 4500 drachmas:;and in the month Pauni, 1000 drachmas; as the price of bread, 300 drachmas:;in Mecheir, there was given by his mother, of dates, 1 mation; of white lentils, one-half mation; of chick-peas, one-half mation.;Total of the amounts given by him: in silver, 3 talent 800 drachmas; of wine, 9 keramia, 1 spathion; of wheat, 2 3/4 artabas; of white lentils, 1/2 mation; of chick-peas, 1/2 mation; of dates, 1 mation."</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.8185</idno>
-            <idno type="controlno">(ICU)8185</idno>
+            <idno type="controlNo">(ICU)8185</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O. OIM 19298</idno>
+                  <idno type="invNo">O. OIM 19298</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Catalogue no. 10; Nelson collection no. N264.  No date given.  Thotsutmis, son of Panouphis may be Muhs&amp;apos; Taxpayer 33, if the reading of the patronym is correct.</note>
+                  <msItemStruct>
+                     <note type="general">Catalogue no. 10; Nelson collection no. N264.  No date given.  Thotsutmis, son of Panouphis may be Muhs' Taxpayer 33, if the reading of the patronym is correct.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,7 +42,6 @@
                </physDesc>
                <history>
                   <origin>
-                     
                      <origPlace>Thebes (?)</origPlace>
                      <persName type="asn">Thotsutmis, son of Panouphis</persName>
                   </origin>
@@ -52,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +69,15 @@
                <term>Receipts</term>
                <term>Tax</term>
                <term>Burial</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>OIM 19298, recto: (1) Thotsutmis son of Panouphis(?) has brought [...] (2) Overseer of the Necropolis in the name of Pa-ti-[...] (3) ...has written Wrsh(?)-[...] (4) Khnsw-maa-khrw(?) (on) Phamenoth [...]</ab>
          </div>
          <div type="bibliography" subtype="citations">

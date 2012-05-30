@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p509</idno>
-            <idno type="controlno">(NjP)apis.p0509</idno>
+            <idno type="controlNo">(NjP)apis.p0509</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. AM 13395 1 B recto</idno>
+                  <idno type="invNo">Princ. inv. AM 13395 1 B recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Bilingual text. Recto, written against the fibers, is Coptic with interlinear annotations in Greek. The last line on the verso, upside-down in relation to the rest of the text, is in Coptic and may relate to the Coptic letter on the front</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the verso a letter in Greek</note>
                      <note type="general">8 lines; complete</note>
                      <note type="general">The hand is cursive</note>
-                     <textLang mainLang="egy-Coptgrc">In Coptic and Greek</textLang>
-                  </msItem>
+                     <textLang mainLang="egy-Copt">In Coptic and Greek</textLang>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0600" notAfter="0799"/>
+                     <origDate notBefore="0600" notAfter="0799">600 CE – 799 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Given to Princeton University, in 1947 by Mrs. Charles A. Askren of Tacoma, Washington</p>
@@ -42,16 +43,21 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
-            <language ident="egy-Coptgrc">In Coptic and Greek</language>
+            <language ident="egy-Copt">In Coptic and Greek</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,18 +10,18 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.5651</idno>
-            <idno type="controlno">(MiU)5651</idno>
+            <idno type="controlNo">(MiU)5651</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.Inv. 1023</idno>
+                  <idno type="invNo">P.Mich.Inv. 1023</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -60,12 +68,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

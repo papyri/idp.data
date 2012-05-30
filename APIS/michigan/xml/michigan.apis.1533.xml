@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1533</idno>
-            <idno type="controlno">(MiU)1533</idno>
+            <idno type="controlNo">(MiU)1533</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1810</idno>
+                  <idno type="invNo">P.Mich.inv. 1810</idno>
                </msIdentifier>
                <msContents>
                   <summary>Papontos, son of Alypos, reports the death of his father to the secretary of the city of Oxyrhynchus</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +76,15 @@
                <term>Oxyrhynchon polis; amphodos Chenoboskon</term>
                <term>Census</term>
                <term>Death</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Ptolemaios also called Sarapion, secretary of the city, from Papontos, son of Alypos and Taras and grandson of Papontos, from the city of Oxyrhynchus. My father Alypos, son of Papontos and Teironeia, from the same city, an adult without a trade, registered in the quarter of the gooseherds, died in the past month of Choiak [- - -]</ab>
          </div>
          <div type="bibliography" subtype="citations">

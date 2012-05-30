@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p490</idno>
-            <idno type="controlno">(NNC)aaa3666</idno>
+            <idno type="controlNo">(NNC)aaa3666</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 81(3) recto</idno>
+                  <idno type="invNo">Col. inv. 81(3) recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Accounts.  Column II has the names Ptolemaios and Kyranos "brother"</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; on the verso, an account</note>
                      <note type="general">Two columns: col. I, 6 lines, broken left and bottom; col. II, 5 lines, broken right and bottom</note>
                      <note type="general">The hand of col. II is a large, fluent cursive, sloping slightly towards the right;  The hand of col. I may be the same hand, although what remains appears to be smaller</note>
                      <note type="general">There is a space ca. 6.5 cm between the columns</note>
                      <note type="general">Col. I has many holes and the text is faded</note>
+                     <note type="local_note">Description.  Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -35,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0300" notAfter="0399"/>
+                     <origDate notBefore="0300" notAfter="0399">300 CE – 399 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. II.95 in Bell's inventory</p>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1246</idno>
-            <idno type="controlno">(MiU)1246</idno>
+            <idno type="controlNo">(MiU)1246</idno>
+            <idno type="ddbdp">p.corn..3</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Corn. Inv. II 2</idno>
+                  <idno type="invNo">P.Corn. Inv. II 2</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of estimated expenses connected to the transportation by boat of unknown objects.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; traces of an adress on the Verso</note>
+                     <note type="related">P. L. Bat 20, 54, cf. P. L. Bat 21 A, p.129.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -70,19 +80,15 @@
                <term>Cargo ships--Handling--Egypt.</term>
                <term>Freight and freightage--Egypt.</term>
                <term>Fees, Administrative--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Ll. 4-26. "Freightage, reckoned in copper, 45 drachmas (?). Inspection tax at Memphis, silver, 4 drachmas. Thus there are added to the charges per 100 (artabas), 49 drachmas, 2 1/4 obols (?). Also in Memphis the . . . toll, at 1 chalkous per artaba, (total) silver, 2 drachmas 1/2 obol. Discount, 1 1/4 obols. Clerical charges on the boat,silver, 2 (drachmas) 4 obols. Distributed per 100 (artabas), with discount, 3 obols. Labor charge, 1 (drachma) 4 obols. Added for temple dues per 100 (artabas), tranposed into copper, 2 (drachmas) 3 obols. For commision agent, who will receive and measure, per 100, 1 drachma. Total charges per 100 artabas, in copper, 57 drachmas 2 obols. Figuring the total as 56 drachmas 2 obols, the charge per artaba is 3 1/2 obols, not including interest, lodging, food, police protection (?)." Verso: "T . . . to Phormio."</ab>
          </div>
          <div type="bibliography" subtype="citations">

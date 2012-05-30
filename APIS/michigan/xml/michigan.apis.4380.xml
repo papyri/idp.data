@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.4380</idno>
-            <idno type="controlno">(MiU)4380</idno>
+            <idno type="controlNo">(MiU)4380</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3524</idno>
+                  <idno type="invNo">P.Mich.inv. 3524</idno>
                </msIdentifier>
                <msContents>
                   <summary>The text is the opening portion of a Book of the dead for the "chantress of Amun". The first scene is a decorated vignette with an offering being presented to Re-Horakhty. Therein follows two columns of spells from the Bokk of the Dead with  an additional portion of a column on the verso. The first spell is Book of the Dead 23, Spell for "opening the mouth of a man for himself in the necropolis".</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The description of papyrus was made by Eugene Cruz-Uribe, A Descriptive Catalogue of the Demotic Papyri at University of Michigan, 1988, p.12</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: under research; contact institution</note>
                      <textLang mainLang="egy-Egyh">Hieratic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -39,7 +40,7 @@
                </physDesc>
                <history>
                   <origin>
-                     
+                     <origDate>New Kingdom</origDate>
                      <origPlace>Unkonwn</origPlace>
                   </origin>
                   <provenance>
@@ -49,6 +50,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -56,12 +64,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

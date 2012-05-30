@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.5523</idno>
-            <idno type="controlno">(ICU)5523</idno>
+            <idno type="controlNo">(ICU)5523</idno>
+            <idno type="ddbdp">http.//www.perseus.tufts.edu/cgi-bin/ptext?doc=perseus.abo.pap,p.cair.goodsp..30</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Kar.Goodsp. 96 (MS 1059) (= P.Cair.Goodsp. 30)</idno>
+                  <idno type="invNo">P.Kar.Goodsp. 96 (MS 1059) (= P.Cair.Goodsp. 30)</idno>
                </msIdentifier>
                <msContents>
                   <summary>Record of over 1200 transactions kept by an individual thought to have been a farm manager or steward.  Among the payments listed are those to herdsmen, builders, laborers, watchmen, tax collectors, and craftsmen, and some purchases of goods such as clothing and medicine.  (Goodspeed 1902)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Bar code: 68652877.  Based on the months named in the text, the time covered by the accounts is roughly October 191 - April 192 A.D.  The method of accounting in this text resembles double-entry bookkeeping, where there is a credit corresponding to every item debited.  See, for example, col. 17, lines 7-25.  The separate alignment of receipts and expenditures within the same column is an unusual accounting device.  On the whole, the impression produced is of the manager of an estate, whose income is derived from rents and sales, while his expenditures are for building, labor, and the various commodities required for the maintenance of a household.  (Goodspeed 1902, 31-4)</note>
                      <note type="general">Location: Regenstein</note>
                      <note type="general">Image arrangement: abcdef</note>
                      <note type="general">Pub. status: Published: recto and verso</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,7 +43,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <p>The writing, which is apparently all in one hand, indicates that the accountant copied several days&amp;apos; worth of items in one sitting because at certain points, abrupt changes appear, such as difference in the ink and the freshness or bluntness of the reed pen, and such circumstances of writing as posture, haste, etc., would occasion.  (Goodspeed 1902, 31)</p>
+                     <p>The writing, which is apparently all in one hand, indicates that the accountant copied several days' worth of items in one sitting because at certain points, abrupt changes appear, such as difference in the ink and the freshness or bluntness of the reed pen, and such circumstances of writing as posture, haste, etc., would occasion.  (Goodspeed 1902, 31)</p>
                   </handDesc>
                </physDesc>
                <history>
@@ -167,6 +169,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -176,19 +185,15 @@
             <keywords scheme="#apis">
                <term>Bacchias; Hephaistias; Heraklias; Memphis; Karanis; Ptolemais; Kerkesoucha</term>
                <term>Accounts</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>P. Kar.Goodsp. 96 (MS 1059) (= P.Cair.Goodsp. 30), recto: (col. 17) (7-8)From Sotas; dr. [[6040]] dr. 920; To Horion; dr. [[6040]] dr. 920  (9-10) From Conchus; [[80]] dr. 40; To Horion; dr. [[80]] 40 []  (11-12) From Hatres; dr. 100; To a shepherd; dr. 100  (13-14) From Conchus; dr. 40; To [[Horion]] Kopres; dr. 40  (15-16) From Dioscorus for a jar (of wine); dr. 16; To little Aphrodisius; dr. 16  (17-19) From Sotas; dr. 180; To Horion Soterichus; dr. 120, dr. 60  (20-21) From Conchus; dr. 80; To Soterichus; dr. 80  (22-23) From Dioscorus; dr. 60; To Soterichus; dr. 60  (24-25) From Gaius; dr. 276; To Soterichus; dr. 276 (col. 24) (1-2) From Dioscorus; dr. 36; To Antonas for price of [...]; dr. 36  (3-6) From Dioscorus; dr. 72; To Paseinikus; dr. 12; To myself for a receipt; dr. 8; To Sempronius for wheat; dr. 52  (7-8) From Dioscorus; dr. 100; To Agrippinus for vegetables; dr. 100  (9-10) From Dioscorus; dr. 18, 2 obols; To Pamounis [[the builder]]...; dr. 18, 2 obols  (11-12) 24 From Dioscorus; dr. 56; To Soterichus for Antino[; dr. 5]6  (13-14) 29 From Dioscorus; dr. 124; To Soterichus for Kopres; dr. 124  (15-17) From Dioscorus for four jars of wine; dr. 64; To Antonas for two (jars) of oil; dr. 32; Agrippinus for two (baskets) of vegetables; dr. 32  (18-19) From Dioscorus for ten jars of wine for me at sixteen dr. each; dr. 160; To me for drink; dr. 160  (20-21) From Dioscorus; dr. 6100; To a shepherd; dr. 6100  (22-27) From Conchus, Mecheir 2; dr. 48; [] besides dr. 60, 1 obol; 23 likewise; dr. 80; [] likewise dr. 100, 1 obol; 24 likewise; dr. 100; [] on account, 7; dr. 100, 1 obol; 29 likewise; dr. 212; []...dr. 100; and besides; dr. 36; [] dr. []; besides likewise; [dr...];(Goodspeed 1902, 31-2)</ab>
          </div>
          <div type="bibliography" subtype="citations"/>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p2076</idno>
-            <idno type="controlno">(NNC)p2076</idno>
+            <idno type="controlNo">(NNC)p2076</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 733</idno>
+                  <idno type="invNo">Col.inv. 733</idno>
                </msIdentifier>
                <msContents>
                   <summary>The side with erasures represents several attempts to write a legal document, the third line after the hole is "kitab". The first two lines are both bismillahi. Not enough texts is left to surmise the purport of the document</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">On one side 16 lines of writing, last of which is upside down and probably continued from the other side; on the other 17 lines with several lines crossed out and one erased</note>
                      <note type="general">Three lines of holes in the shape of diamond that run vertically</note>
                      <note type="general">Glassed</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +57,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

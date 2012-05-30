@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p709</idno>
-            <idno type="controlno">(NjP)apis.p0709</idno>
+            <idno type="controlNo">(NjP)apis.p0709</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. GD 7931</idno>
+                  <idno type="invNo">Princ. inv. GD 7931</idno>
                </msIdentifier>
                <msContents>
                   <summary>Release from a property contract(?), signed by one person</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written  the fibers; on the verso, a docket</note>
                      <note type="general">20 lines; broken at left</note>
                      <note type="general">The hand is a large, fluent cursive, tending towards upright</note>
                      <note type="general">The papyrus is dark and brittle; broken on 12 horizontal fold lines, perhaps the result of a roll being flattened</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +35,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0500" notAfter="0699"/>
+                     <origDate notBefore="0500" notAfter="0699">500 CE – 699 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Garrett Deposit 1924, no. II 157 in H. I. Bell's inventory</p>
@@ -43,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

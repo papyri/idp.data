@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p949</idno>
-            <idno type="controlno">(NNC)aaa4361</idno>
+            <idno type="controlNo">(NNC)aaa4361</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. 159a</idno>
+                  <idno type="invNo">Col. 159a</idno>
                </msIdentifier>
                <msContents>
                   <summary>Document dealing with property located in a certain quarter of the metropolis.  Refers to an unnamed nome and probably contains the name Aphrodisios</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; back blank</note>
                      <note type="general">12 lines; broken on all sides</note>
                      <note type="general">Some holes and much of the text is effaced</note>
                      <note type="general">The hand is a clear, fluent cursive with some separation of letters</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +35,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0299"/>
+                     <origDate notBefore="0100" notAfter="0299">100 CE – 299 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. X.98 in Bell's inventory</p>
@@ -43,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

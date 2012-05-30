@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berenike.apis.255</idno>
-            <idno type="controlno">(EG-Ber)255</idno>
+            <idno type="controlNo">(EG-Ber)255</idno>
+            <idno type="ddbdp">o.berenike.2.255</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Inv. BE01-48-074+080+082</idno>
+                  <idno type="invNo">Inv. BE01-48-074+080+082</idno>
                </msIdentifier>
                <msContents>
                   <summary>Uncertain text</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Dating based on archaeological context.</note>
                      <note type="general">Possibly a cursive Aramaic related to Nabataean and Palmyrene Cursive and Old Syrian Cursive, cf. O.Ber. II 256 and 257.</note>
                      <textLang mainLang="sem">Semitic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraka</rs>
-               </term>
+               <term type="genre_form">Ostraka</term>
             </keywords>
          </textClass>
       </profileDesc>

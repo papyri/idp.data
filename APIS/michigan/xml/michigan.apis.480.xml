@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.480</idno>
-            <idno type="controlno">(MiU)480</idno>
+            <idno type="controlNo">(MiU)480</idno>
+            <idno type="ddbdp">o.mich..1.210</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 9031</idno>
+                  <idno type="invNo">O.Mich.inv. 9031</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for chaff of Karanis brought by Panis to an unknown harbor</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,24 +77,20 @@
                <term>Receipts (Acknowledgments)--Egypt--Karanis (Extinct city)</term>
                <term>Crop residues--Transportation--Egypt.</term>
                <term>Weights and measures, Ancient.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Mesore 2. Panis has brought, for the 12th indiction, for the village of Kainos, of Karanis, one-hundred and fifty litrai of chaff, 150 litrai. I, Ision, through me, Ammonios, have signed.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>
-               <bibl>Amundsen L, OMich I, 210, 1935 -- For the date, see P.Col. VII, p. 69. - L. 6: read Ision di&amp;apos;emou Ammoniou, instead of Ision {Amm} Ammoniou. (Unpublished note of H.C. Youtie)</bibl>
+               <bibl>Amundsen L, OMich I, 210, 1935 -- For the date, see P.Col. VII, p. 69. - L. 6: read Ision di'emou Ammoniou, instead of Ision {Amm} Ammoniou. (Unpublished note of H.C. Youtie)</bibl>
                <bibl type="ddbdp">O.Mich.:1:210</bibl>
             </listBibl>
             <p>

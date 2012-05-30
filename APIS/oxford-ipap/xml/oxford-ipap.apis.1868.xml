@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,15 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">oxford-ipap.apis.1868</idno>
-            <idno type="controlno">(EG-CaMus)1868</idno>
+            <idno type="controlNo">(EG-CaMus)1868</idno>
+            <idno type="ddbdp">p.oxy..16.1844</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">uninventoried</idno>
+                  <idno type="invNo">uninventoried</idno>
                </msIdentifier>
                <msContents>
                   <summary>The letters P.Oxy. XVI 1844 to 1861, with 1936, 1937, 1940, all belong to a single group. To the same correspondence belong also P.Oxy. I 158 and P.Oxy. VI 943. The centre of this group is Victor, who writes most of the letters. Many of the letters are addressed to a certain George, while the group also includes three other writers. Two different hands appear in the group, a large, sprawling hand, and a smaller and more regular hand. All the parties of this correspondence were in the service of, or connected with, some great family, and there is evidence for associating the present series with the Apion family.</summary>
+                  <msItemStruct>
+                     <note type="local_note">CG10099</note>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,18 +39,21 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

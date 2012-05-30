@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2794</idno>
-            <idno type="controlno">(MiU)2794</idno>
+            <idno type="controlNo">(MiU)2794</idno>
+            <idno type="ddbdp">sb..22.15818</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6300</idno>
+                  <idno type="invNo">P.Mich.inv. 6300</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account of payments of wheat, made for 3 cleruchies at Karanis</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +70,15 @@
             <keywords scheme="#apis">
                <term>13th cleruchy; 37th cleruchy; 44th cleruchy</term>
                <term>Taxation--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The 13th cleruchy: 16 1/2 (artabai) of wheat, 3 3/4 (artabai) of barley; the 37th cleruchy: 7 1/4 (artabai)of wheat, 1/2 (artaba) of barley; the 44th cleruchy: 14 1/2 (artabai)of wheat, 1 (artaba) of barley.</ab>
          </div>
          <div type="bibliography" subtype="citations">

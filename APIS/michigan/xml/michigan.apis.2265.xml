@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2265</idno>
-            <idno type="controlno">(MiU)2265</idno>
+            <idno type="controlNo">(MiU)2265</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4695</idno>
+                  <idno type="invNo">P.Mich.inv. 4695</idno>
                </msIdentifier>
                <msContents>
                   <summary>Document summarizing reports from village officials of the Herakleidou meris to Herakleides, strategos of the same meris, who had asked information about a man.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso: traces of seven lines on the back of the sheet bearing col. II only</note>
+                     <note type="related">Archive of Sokrates son of Sarapion?</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +75,15 @@
                <term>Rome--Politics and government.</term>
                <term>Service, Compulsory non -military--Egypt.</term>
                <term>Exemption (Roman law)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Col. I);To Herakleides, strategos of the Herakleides division of the Arsinoite nome, from the village secretaries of the division and in the case of those villages where there are none, from the elders, performing the duties. In accordance with the communication (epistalma) sent to us by you, of which there is a copy, and a copy of the aforesaid communication has been appended after which it continued thus: (up to this point the communication) in accordance with which we declare that the previously mentioned man has neither assets nor an abode in the nome. 12th year, Tybi 26.;;(Col. II);To Herakleides [- - -] from [- - -]</ab>
          </div>
          <div type="bibliography" subtype="citations">

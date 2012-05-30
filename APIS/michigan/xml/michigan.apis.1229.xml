@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1229</idno>
-            <idno type="controlno">(MiU)1229</idno>
+            <idno type="controlNo">(MiU)1229</idno>
+            <idno type="ddbdp">p.corn..45</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Corn. Inv. I 81</idno>
+                  <idno type="invNo">P.Corn. Inv. I 81</idno>
                </msIdentifier>
                <msContents>
-                  <summary>Acknowledgment of the receipt of a year&amp;apos;s rental and the return, in sound condition, of a ship&amp;apos;s mast.</summary>
-                  <msItem>
+                  <summary>Acknowledgment of the receipt of a year's rental and the return, in sound condition, of a ship's mast.</summary>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -66,6 +68,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -77,26 +86,22 @@
                <term>Literacy--Egypt.</term>
                <term>Receipts (Acknowledgments)--Egypt.</term>
                <term>Leases--Egypt.</term>
-               <term>Bahnas√Øa (Egypt)</term>
+               <term>Bahnasïa (Egypt)</term>
                <term>Masts and rigging.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>Consulship of our lords Emperors Augusti Diocletianus, 7th time, and Maximianus, 6th time. Aurelia Taapammon, daughter of ... her mother being Tapausiris from the village of Muchintale in the lower toparchy,  and her nephew Theodoros son of Romaios and grandson of ...both acting through me, Pausiris son of Sarapion, his mother being Soeris from the same village, to Aurelios Hierakion, also called Dionysios, son of ditto, ex-prytanis, councilman of the illustrious and most illustrius Oxyrhynchiton polis, greeting. We acknowledhe having received from you the rent in full on my ship&amp;apos;s mast which you had for the period  from the 16th of Phamenoth to the 15th of Pharmouthi of the current 15th, 14th and 7th year, and having gotten the said mast from you in sound condition and neither make nor will make any claim about absolutely anything at all. The receipt is valid and, the question being put, I have agreed to this fact. Year 15 and 14 of our lords Diocletian and Maximian Augusti and year 7 of our lords Constantius and Maximian the most renowned Caesars, Pachon 7th. (2nd hand) Aurelius Theodoros son of Pomaios and Aurelia Taapammon, through me her husband Pausiris, have received the rents of the mast and we have received the mast also in good condition, and I neither make and will make a claim about anything at all as foresaid, the question being put, I have agreed to this fact. I Aurelios Sarapammon, wrote in their behalf since they are illiterate.</ab>
+         <div type="translation">
+            <ab>Consulship of our lords Emperors Augusti Diocletianus, 7th time, and Maximianus, 6th time. Aurelia Taapammon, daughter of ... her mother being Tapausiris from the village of Muchintale in the lower toparchy,  and her nephew Theodoros son of Romaios and grandson of ...both acting through me, Pausiris son of Sarapion, his mother being Soeris from the same village, to Aurelios Hierakion, also called Dionysios, son of ditto, ex-prytanis, councilman of the illustrious and most illustrius Oxyrhynchiton polis, greeting. We acknowledhe having received from you the rent in full on my ship's mast which you had for the period  from the 16th of Phamenoth to the 15th of Pharmouthi of the current 15th, 14th and 7th year, and having gotten the said mast from you in sound condition and neither make nor will make any claim about absolutely anything at all. The receipt is valid and, the question being put, I have agreed to this fact. Year 15 and 14 of our lords Diocletian and Maximian Augusti and year 7 of our lords Constantius and Maximian the most renowned Caesars, Pachon 7th. (2nd hand) Aurelius Theodoros son of Pomaios and Aurelia Taapammon, through me her husband Pausiris, have received the rents of the mast and we have received the mast also in good condition, and I neither make and will make a claim about anything at all as foresaid, the question being put, I have agreed to this fact. I Aurelios Sarapammon, wrote in their behalf since they are illiterate.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>
-               <bibl>Westermann WL - Kraemer CJ, PCorn, 45, 1926, Pl p225 -- SB VIII 9833 -- BL II 2, 50;  III, 47; The name  is Tapammon in the reedition of papyrus by Lewis and in SB VIII 9833, but the papyrus has Taapammon (noted by Youtie?) in the margin of both these copies kept in the Library. Also note that in l. 13 the papyrus reads "eg&amp;apos;ka-", an apostrophe between the letter "g" and "k" (NL; forthcoming); BL XI, 210 (l. 4)</bibl>
+               <bibl>Westermann WL - Kraemer CJ, PCorn, 45, 1926, Pl p225 -- SB VIII 9833 -- BL II 2, 50;  III, 47; The name  is Tapammon in the reedition of papyrus by Lewis and in SB VIII 9833, but the papyrus has Taapammon (noted by Youtie?) in the margin of both these copies kept in the Library. Also note that in l. 13 the papyrus reads "eg'ka-", an apostrophe between the letter "g" and "k" (NL; forthcoming); BL XI, 210 (l. 4)</bibl>
                <bibl type="ddbdp">P.Corn.:45</bibl>
             </listBibl>
             <p>

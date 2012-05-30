@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,25 +10,25 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.7898</idno>
-            <idno type="controlno">(MiU)7898</idno>
+            <idno type="controlNo">(MiU)7898</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1660</idno>
+                  <idno type="invNo">P.Mich.inv. 1660</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>1 papyrus ; 12 x 20 cm</support>
                         <condition>
-                           <ab type="conservation">Broken off at the bottom and the right hand side. A manufacture&amp;apos;s kollesis in the left hand side of the papyrus, c. 1.5 cm briad. Upper margin is 1.5 cm and the left margin left before wriitng on it is 2 cm.</ab>
+                           <ab type="conservation">Broken off at the bottom and the right hand side. A manufacture's kollesis in the left hand side of the papyrus, c. 1.5 cm briad. Upper margin is 1.5 cm and the left margin left before wriitng on it is 2 cm.</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -54,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,12 +70,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Oxyrhynchos, Oxyrhynchite nome, Egypt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

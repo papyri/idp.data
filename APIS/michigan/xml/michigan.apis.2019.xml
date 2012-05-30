@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2019</idno>
-            <idno type="controlno">(MiU)2019</idno>
+            <idno type="controlNo">(MiU)2019</idno>
+            <idno type="ddbdp">sb..22.15381</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3625</idno>
+                  <idno type="invNo">P.Mich.inv. 3625</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for the payment of rent</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -59,6 +62,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -70,19 +80,15 @@
                <term>Wheat--Egypt-- Egypt--Oxyrhynchite Nome.</term>
                <term>Receipts (Acknowledgments)--Egypt--Oxyrhynchite Nome.</term>
                <term>Rent--Egypt--Oxyrhynchite Nome.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"Techosous, also called Eudaimonis, through Herakleides her son, to Aurelia Theodora, . . . Parit, greetings. I have received from you on the account of rents from the year before last, for the crop of  [year] seven and [5], eleven artabas of wheat by the tenth measure, 11 artabas. I the same (Herakleides) have signed. (2. hand) Hathyr 11. 9th year and 7th year, Hathyr 11. (3. hand) I have received from . . . measure . . ."</ab>
          </div>
          <div type="bibliography" subtype="citations">

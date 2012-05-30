@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.147</idno>
-            <idno type="controlno">(CU)147</idno>
+            <idno type="controlNo">(CU)147</idno>
+            <idno type="ddbdp">sb.12.10957</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0605</idno>
+                  <idno type="invNo">P.Tebt.0605</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for the payment of the ten-percent tax on sacrificial calves by the priests</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1.6 cm; left, 1.7 cm.; bottom, 2.7 cm.; in top left corner, in red ink "605"; on verso, in black ink: T 177.</note>
                      <note type="general">14th year of the Emperors Septimius Severus, Caracalla and Geta, 20th of the Egyptian month Phaophi</note>
                      <note type="general">Priests of Soknebtunis</note>
+                     <note type="local_note">2333</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +72,15 @@
             <keywords scheme="#apis">
                <term>Calves; Taxation; Sacrifice; Religion, Egyptian</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 14 of Lucius Septimius Severus Pius Pertinax and Marcus Aurelius Antoninus Pius, Augusti, and Publius Septimius Geta Caesar Augustus, Phaophi 20. Paid to Apion, nomarches of the Arsinoite nome, acting through his representative Sphyris also called Theon, for the ten-percent tax on calves, by the priests, for the village of Tebtunis, for the receipts of the same year, twenty drachmas, that is, 20 dr.</ab>
          </div>
          <div type="bibliography" subtype="citations">

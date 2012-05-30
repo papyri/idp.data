@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.628</idno>
-            <idno type="controlno">(CU)628</idno>
+            <idno type="controlNo">(CU)628</idno>
+            <idno type="ddbdp">p.tebt..2.484</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0484 Recto</idno>
+                  <idno type="invNo">P.Tebt.0484 Recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Tiberius addresses tax collectors about deficiencies (?)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso unpublished.</note>
                      <note type="general">Margins: top, 1.1 cm.; left, 1 cm.; right, 0.4 cm.; bottom, 2.4 cm.; in top right corner, in red ink: 484; on verso, in black ink: T 292.</note>
+                     <note type="local_note">1436</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -54,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,12 +72,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Tax collection</term>
-               <term>
-                  <rs type="genre_form">Business letters, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

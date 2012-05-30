@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,16 +19,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Literary text from Egypt, written on papyrus. Contains lines 289-312 from Book 1 of Homer's Odyssey. Verso has a documentary text in Greek (P.Duk.inv. 768 V)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 7.4 x 6.6 cm</note>
                      <note type="general">14 lines</note>
                      <note type="general">Written along the fibers on the recto; written across the fibers on the verso in a different hand</note>
                      <note type="general">P.Duk.inv. 768 R was formerly P.Rob.inv. 31 R</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, very incomplete ; 8 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, very incomplete ; 8 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -37,13 +42,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Literary papyri Egypt 30 B.C.-640 A.D</term>
                <term type="genre_form">Papyri</term>
             </keywords>

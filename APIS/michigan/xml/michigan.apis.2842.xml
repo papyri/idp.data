@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2842</idno>
-            <idno type="controlno">(MiU)2842</idno>
+            <idno type="controlNo">(MiU)2842</idno>
+            <idno type="ddbdp">sb..22.15838</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6458</idno>
+                  <idno type="invNo">P.Mich.inv. 6458</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for two years of rent on some land, issued by Aurelius Zoilos to Aurelius Pleein</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The fragments inv. 6458a (5 fragments) and 6458b (under the wrong inv. nr. 6584) were published as two separate texts by P.J. Sijpesteijn  (as Nos. 18a and 18b of his article), but they seem to belong to one and the same text, which is to be dated May 31, 309 A.D. (PH)</note>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto</note>
+                     <note type="related">The archive of Aurelius Isidorus</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -62,6 +65,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,19 +81,15 @@
             <keywords scheme="#apis">
                <term>horiodeiktia of Karanis</term>
                <term>Land Ownership</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Aurelius Zoilos, [assistant] to a prytanis, to Aurelius Pleein, son of Eudaimon, [greeting]. I have received from you the rent of the arourai of mine which you have cultivated in the horiodeiktia of Karanis, for the crop of the past 16th and 4th year: four artabai of wheat and my share of the - - -, four(?) artabai of wheat. [Similarly, for the] recolt(?) of the 17th and 5th year [- - - artabai of wheat and] my share of the [- - -], four(?) [artabai] of wheat(?). I, [Aurelius] Zoilos, have written [- - -]. Pauni 6.</ab>
          </div>
          <div type="bibliography" subtype="citations">

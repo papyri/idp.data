@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.6600</idno>
-            <idno type="controlno">(CU)6600</idno>
+            <idno type="controlNo">(CU)6600</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.Frag.01,101 + 01,111 + 01,112 + 01,113 + 01,114 + 01,115 Recto</idno>
+                  <idno type="invNo">P.Tebt.Frag.01,101 + 01,111 + 01,112 + 01,113 + 01,114 + 01,115 Recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Concerns the revolt of Ptolemy, Son of Thraseas, the Ptolemaic governor of Coele Syria, during the 5th Syrian War. Text mentions Jerusalem.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Five pieces have been joined to form two fragments. Frag. 1 right margin 3.2 cm.; Frag. 2 right margin 1.7 cm.</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +51,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,12 +67,8 @@
             <keywords scheme="#apis">
                <term>Syrian War, 202?-198 B.C.</term>
                <term>Coele Syria; Jerusalem</term>
-               <term>
-                  <rs type="genre_form">Varia, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Varia, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

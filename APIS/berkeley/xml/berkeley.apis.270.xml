@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.270</idno>
-            <idno type="controlno">(CU)270</idno>
+            <idno type="controlNo">(CU)270</idno>
+            <idno type="ddbdp">p.tebt..2.404</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0404</idno>
+                  <idno type="invNo">P.Tebt.0404</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account of staters and drachmas of payments for annona (annual revenues in kind for civil and military purposes) and other items.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto and verso published</note>
                      <note type="general">Margins: top, 0.8 cm.; left, 4.2 cm.; right (including back of protokollon): 15 cm.; on protokollon, in black ink: T 425.</note>
+                     <note type="related">The papyrus was found in a bundle with P.Tebt.II.282, P.Tebt.II.319, P.Tebt.II.326,P.Tebt.II.378, P.Tebt.II.406, and P.Tebt.II.588.</note>
+                     <note type="local_note">1394</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,19 +70,15 @@
             <keywords scheme="#apis">
                <term>Taxation</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Accounts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Accounts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Account of the expenditure (?) of 130 staters, on account of annona for grain and barley 16 staters, on account of grain and barley 32 staters and 2 drachmas, on account of a cow for annona 15 staters, on account of kids for annona 27 staters, on account of pigs for annona 30 staters; on account of the didrachms 67 staters, on account of the hunters (?) 30 arouras, 30 staters.</ab>
          </div>
          <div type="bibliography" subtype="citations">

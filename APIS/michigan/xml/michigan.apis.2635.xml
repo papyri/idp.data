@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2635</idno>
-            <idno type="controlno">(MiU)2635</idno>
+            <idno type="controlNo">(MiU)2635</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6060</idno>
+                  <idno type="invNo">P.Mich.inv. 6060</idno>
                </msIdentifier>
                <msContents>
                   <summary>Report of official proceedings conducted before the strategos Claudius Asklepiades, who was investigating a case of arson in which several priests of Soknopaiou Nesos and a certain Harpagathes were accusing each other</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The relation between the two texts of P.Mich. inv. 6060 is uncertain, even if both of them concern priests of Soknopaiou Nesos; the Harpagathes accused in both texts could be, but is not certainly the same person.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso: uncertain traces</note>
+                     <note type="related">B.G.U. I, 163 is another, more complete copy of these proceedings; see also note</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -65,6 +67,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -73,24 +82,20 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Neilou polis; Soknopaiou Nesos</term>
-               <term>D√Øimay (Extinct city)</term>
-               <term>Arson investigation--Egypt--D√Øimay (Extinct city)</term>
-               <term>Priests--Egypt--D√Øimay (Extinct city)</term>
-               <term>Judicial process--Egypt--D√Øimay (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term>Dïimay (Extinct city)</term>
+               <term>Arson investigation--Egypt--Dïimay (Extinct city)</term>
+               <term>Priests--Egypt--Dïimay (Extinct city)</term>
+               <term>Judicial process--Egypt--Dïimay (Extinct city)</term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>Copy of a minute (from judicial proceedings). Year 11 of Emperor Caesar Nerva Trajan Augustus Germanicus Dacicus, 15 Mecheir.;Ptolemaios, komogrammateus of Neilou polis and Soknopaiou Nesos, having produced in court Pekysis, son of Pekysis, and Tryphon, son of Panephremmis, and his associates, priests of the 5th tribe, from Soknopaiou Nesos: &amp;apos; A certain Harpagathes submitted to you an accusation of arson against them and then disappeared. Those present say that he did this rather, and, in fact, others have submitted a petition to the effect that they were beaten by him.&amp;apos;;The strategos: &amp;apos;I am investigating the charge of arson, when it happened and what was the result.&amp;apos;;Ptolemaios: &amp;apos;Nothing serious happened, for only private furnishings were burned, but they, when apprehended, kept accusing Hermaios alias ..os, son of Achaios.&amp;apos;;The strategos: &amp;apos;Did they wrong the aforementioned, or did you produce (them) in court?;Ptolemaios: &amp;apos;No.&amp;apos;;The strategos: &amp;apos;Whom did you suspect acted with him?&amp;apos;;Ptolemaios: &amp;apos;(The one) who has disappeared.&amp;apos;;The strategos: &amp;apos;Report to me concerning the things you know, and, in similar fashion, let the officials and the chief of police also report concerning what things they know.&amp;apos;;Ptolemaios: &amp;apos;Grant me time until the twentieth so that I may make my report after that.&amp;apos;;Claudius Asklepiades strategos: &amp;apos;You have five days in which see to it that he also is searched for&amp;apos;.;I read (it).</ab>
+         <div type="translation">
+            <ab>Copy of a minute (from judicial proceedings). Year 11 of Emperor Caesar Nerva Trajan Augustus Germanicus Dacicus, 15 Mecheir.;Ptolemaios, komogrammateus of Neilou polis and Soknopaiou Nesos, having produced in court Pekysis, son of Pekysis, and Tryphon, son of Panephremmis, and his associates, priests of the 5th tribe, from Soknopaiou Nesos: ' A certain Harpagathes submitted to you an accusation of arson against them and then disappeared. Those present say that he did this rather, and, in fact, others have submitted a petition to the effect that they were beaten by him.';The strategos: 'I am investigating the charge of arson, when it happened and what was the result.';Ptolemaios: 'Nothing serious happened, for only private furnishings were burned, but they, when apprehended, kept accusing Hermaios alias ..os, son of Achaios.';The strategos: 'Did they wrong the aforementioned, or did you produce (them) in court?;Ptolemaios: 'No.';The strategos: 'Whom did you suspect acted with him?';Ptolemaios: '(The one) who has disappeared.';The strategos: 'Report to me concerning the things you know, and, in similar fashion, let the officials and the chief of police also report concerning what things they know.';Ptolemaios: 'Grant me time until the twentieth so that I may make my report after that.';Claudius Asklepiades strategos: 'You have five days in which see to it that he also is searched for'.;I read (it).</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

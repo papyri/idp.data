@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p459</idno>
-            <idno type="controlno">(NNC)aaa3635</idno>
+            <idno type="controlNo">(NNC)aaa3635</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 54b recto</idno>
+                  <idno type="invNo">Col. inv. 54b recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of names giving name of mother and/or father.  One person is listed as "father unknown".  Contains the relatively rare names Marsisouchos and Sabouris</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; on the verso, an account</note>
                      <note type="general">24 lines, broken on both sides and at the bottom</note>
                      <note type="general">The hand is roughly bilinear.  Letters are separate, with occasional use of ligatures</note>
+                     <note type="local_note">Description. Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +35,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0199"/>
+                     <origDate notBefore="0100" notAfter="0199">100 CE – 199 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in July 1923; no. V.C. 61-63 in Bell's inventory</p>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

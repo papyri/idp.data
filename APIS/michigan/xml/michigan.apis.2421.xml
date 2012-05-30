@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2421</idno>
-            <idno type="controlno">(MiU)2421</idno>
+            <idno type="controlNo">(MiU)2421</idno>
+            <idno type="ddbdp">sb..22.15795</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 5275</idno>
+                  <idno type="invNo">P.Mich.inv. 5275</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipts for deliveries of wheat, meat(?) and vinegar(?) made for the annona</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -54,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +74,15 @@
                <term>Feeding</term>
                <term>Taxation</term>
                <term>Tax collection</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>[- - -].;And likewise, of meat(?), [- - - eight hundred], total 800.;And likewise, the same for vinegar, [- - -] four, total [4(?)].;(2nd hand) Aurelius Pescennius, collector of the annona. Longinia Serenilla (delivered) on account of the annona one artaba of wheat. Year 24, (3rd hand) Mesore [. . .].</ab>
          </div>
          <div type="bibliography" subtype="citations">

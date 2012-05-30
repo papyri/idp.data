@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.396</idno>
-            <idno type="controlno">(CU)396</idno>
+            <idno type="controlNo">(CU)396</idno>
+            <idno type="ddbdp">p.tebt..1.23</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0023</idno>
+                  <idno type="invNo">P.Tebt.0023</idno>
                </msIdentifier>
                <msContents>
                   <summary>Marres complains to Menches for not having given a relative of his the special treatment he deserved, and urges him to not repeat such behavior in the future.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso published</note>
                      <note type="general">Margins: top, 3 cm.; left, 3 cm.; bottom, 3 cm.; in top margin, in red ink "23"; sheet join 7.7 cm. from left (overlap 1.2 cm.)</note>
                      <note type="general">Menches archive</note>
+                     <note type="local_note">1661</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,19 +74,15 @@
             <keywords scheme="#apis">
                <term>Nepotism</term>
                <term>Kerkeosiris</term>
-               <term>
-                  <rs type="genre_form">Business letters, Ptolemaic period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Ptolemaic period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Marres to Menches, greeting. My kinsman Melas has appealed to me concerning an alleged injury from you obliging him to complain to Demetrios son of Niboitas. I am excessively vexed that he should have gained no special consideration from you on my account and should therefore have asked assistance from Demetrios; and I consider that you have acted badly in not having been careful that he should be independent of others owing to my superior rank. I shall therefore be glad if you will even now endeavor more earnestly to correct your behavior towards him, abandoning your previous state of ignorance. If you have any grievance against him apply together with him to me. Good-bye. (Addressed on the verso) To Menches, village scribe.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.5555</idno>
-            <idno type="controlno">(ICU)5555</idno>
+            <idno type="controlNo">(ICU)5555</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Kar.Goodsp. 93 (MS 1063)</idno>
+                  <idno type="invNo">P.Kar.Goodsp. 93 (MS 1063)</idno>
                </msIdentifier>
                <msContents>
                   <summary>http://www.jstor.org/view/00029475/ap010053/01a00060/0?searchUrl=http%3a//www.jstor.org/search/AdvancedResults%3fhp%3d25%26si%3d1%26All%3d%26Exact%3dpapyrus%2bfragment%2bof%2biliad%2be%26One%3d%26None%3d%26sd%3d%26ed%3d%26jt%3d&amp;frame=noframe&amp;currentResult=00029475%2bap010053%2b01a00060%2b0%2c2B&amp;userID=8087f44b@uchicago.edu/01cce440356574105c13e22ec&amp;dpi=3&amp;config=jstor</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Bar code: 46522009.</note>
                      <note type="general">Location: Regenstein</note>
                      <note type="general">Pub. status: Published: recto; verso contains a non-literary text</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,12 +75,8 @@
                <term>Epic poetry</term>
                <term>Homer</term>
                <term>Iliad</term>
-               <term>
-                  <rs type="genre_form">Literary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

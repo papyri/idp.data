@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p234</idno>
-            <idno type="controlno">(NjP)apis.p0234</idno>
+            <idno type="controlNo">(NjP)apis.p0234</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. GD 7551</idno>
+                  <idno type="invNo">Princ. inv. GD 7551</idno>
                </msIdentifier>
                <msContents>
                   <summary>Contract: content uncertain</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the verso, a docket</note>
                      <note type="general">24 lines; broken at left</note>
                      <note type="general">Many holes</note>
                      <note type="general">The hand is a large, fluent cursive</note>
                      <note type="general">Signed in a second hand; corrections/annotations in a third hand</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,10 +34,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="0500" notAfter="0899">500 CE – 899 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -44,9 +56,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

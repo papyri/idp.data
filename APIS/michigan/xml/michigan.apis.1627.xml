@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1627</idno>
-            <idno type="controlno">(MiU)1627</idno>
+            <idno type="controlNo">(MiU)1627</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 2761</idno>
+                  <idno type="invNo">P.Mich.inv. 2761</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fragments of a morning (or night) report of a military unit, perhaps the cohors I Numidarum, giving day by day the number of soldiers present, sent on a mission or assigned to various duties</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The fragments of inv. 2761 + 2758 are numbered as in Ch.L.A. XLII, 1213.</note>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso bears a similar report (Rom.Mil.Rec. 53; Ch.L.A. XLII, 1213)</note>
+                     <note type="related">+ P.Mich. inv. 2758</note>
                      <textLang mainLang="la">Latin</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -64,6 +66,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -73,19 +82,15 @@
             <keywords scheme="#apis">
                <term>Nomidae (Numidae, Noumidai)</term>
                <term>Army</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Text too fragmentary to be translated).</ab>
          </div>
          <div type="bibliography" subtype="citations">

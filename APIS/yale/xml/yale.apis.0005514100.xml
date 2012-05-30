@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,18 +9,18 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">yale.apis.0005514100</idno>
-            <idno type="controlno">(CtY)551(A)</idno>
+            <idno type="controlNo">(CtY)551(A)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.CtYBR inv.551(A)</idno>
+                  <idno type="invNo">P.CtYBR inv.551(A)</idno>
                </msIdentifier>
                <msContents>
                   <summary>Commentary on Homer, Odyssey (IV.336 and 343, or XVII.127 and 134)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -28,10 +29,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="0100" notAfter="0199">100 CE – 199 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -39,12 +51,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Literary work</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Literary work</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -53,7 +61,7 @@
       <body>
          <div type="bibliography" subtype="citations">
             <listBibl>
-               <bibl>P.Yale 128Rost. b 46 <note>Par·ssoglou 1975aLuppe 1976P.Yale II, pp. 131-33Cockle 1988: 172</note>
+               <bibl>P.Yale 128Rost. b 46 <note>Par�ssoglou 1975aLuppe 1976P.Yale II, pp. 131-33Cockle 1988: 172</note>
                </bibl>
             </listBibl>
          </div>

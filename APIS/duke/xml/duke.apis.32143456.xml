@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Account of expenses from Heracleopolis Magna, Egypt, written on papyrus. Expenses are for the repair of the bath house associated with the gymnasium of Heracleopolis Magna. Preceded by an authorization(?) of Phileas a former recorder (hypomnematographos) whose signature is written in between the lines. The authorization is dated to Phaophi 9 (late September to late October) of an unknown year of the emperor Diocletian</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 22.0 x 9.2 cm</note>
                      <note type="general">35 lines</note>
                      <note type="general">P.Duk.inv. 840 R was written along the fibers on the recto in three different hands; written across the fibers on the verso in yet another hand</note>
                      <note type="general">Small upper margin(?); lower margin of 1 cm.; small right margin</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, left part is broken off ; 22 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, left part is broken off ; 22 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -36,13 +41,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Accounting -- Egypt -- Heracleopolis Magna (Extinct city) -- 30 B.C.-640 A.D.</term>
                <term>Buildings -- Egypt -- Heracleopolis Magna (Extinct city) -- Repair and reconstruction -- 30 B.C.-640 A.D.</term>
                <term>Building -- Estimates -- Egypt -- Heracleopolis Magna (Extinct city) -- 30 B.C.-640 A.D.</term>

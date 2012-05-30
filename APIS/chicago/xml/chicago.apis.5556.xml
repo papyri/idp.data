@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.5556</idno>
-            <idno type="controlno">(ICU)5556</idno>
+            <idno type="controlNo">(ICU)5556</idno>
+            <idno type="ddbdp">http.//www.perseus.tufts.edu/cgi-bin/ptext?doc=perseus.abo.pap,p.cair.goodsp..28</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Kar.Goodsp. 94 (MS 1064) (= P.Cair.Goodsp. 28)</idno>
+                  <idno type="invNo">P.Kar.Goodsp. 94 (MS 1064) (= P.Cair.Goodsp. 28)</idno>
                </msIdentifier>
                <msContents>
                   <summary>Ticket for passenger, and perhaps cargo, transport on a canal.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Bar code: 46518207.</note>
                      <note type="general">Location: Regenstein</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +70,15 @@
                <term>Karanis</term>
                <term>Boat</term>
                <term>Receipt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>P.Kar.Goodsp. 94 (MS 1064) (= P.Cair.Goodsp. 28), recto: Ptolemy, son of Panomieus, passenger from Karanis.  Isidoros, son of Isidoros, pilot.  Even full.</ab>
          </div>
          <div type="bibliography" subtype="citations"/>

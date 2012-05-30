@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.209</idno>
-            <idno type="controlno">(ICU)209</idno>
+            <idno type="controlNo">(ICU)209</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O. MedinHabuCopt 1090</idno>
+                  <idno type="invNo">O. MedinHabuCopt 1090</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Number 80 in Stefanski&amp;apos;s and Lichtheim&amp;apos;s publication.  Undated.  Measurements not available.  All ostraca in this volume were on loan from the Egyptian government and had been returned to Egypt by the time of publication.</note>
+                  <msItemStruct>
+                     <note type="general">Number 80 in Stefanski's and Lichtheim's publication.  Undated.  Measurements not available.  All ostraca in this volume were on loan from the Egyptian government and had been returned to Egypt by the time of publication.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto and verso</note>
                      <textLang mainLang="egy-Copt">Coptic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +70,15 @@
             <keywords scheme="#apis">
                <term>Sale</term>
                <term>Receipt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 1090, recto: (1) In the name of God, (2) I, Phoebamon (3) of (the Church of) Apa Victor, (4) write to Victor, (5) son of the late (6) Simon, saying: Seeing (7) that I have sold an ass (8) to you, now, behold, (9) I have settled with you (10) concerning it, so that I shall not be able to proceed (11) against you concerning it, neither (12) I, nor any man...(13) Whosoever shall proceed [against you] (14) concerning it, that one shall have no profit (of it); (15) and he shall be a stranger to the (16) holy oath of (17) the Christians.  MH 1090, verso: (1) The Father, the Son, (2) and the Holy Ghost.</ab>
          </div>
          <div type="bibliography" subtype="citations">

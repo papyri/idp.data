@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.8207</idno>
-            <idno type="controlno">(ICU)8207</idno>
+            <idno type="controlNo">(ICU)8207</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O. OIM 19324</idno>
+                  <idno type="invNo">O. OIM 19324</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Catalogue no. 32; Nelson collection no. N291.  Senmonthis, daughter of Amenothes is Muhs&amp;apos; Taxpayer 19.  1/2 silver kite is the normal female A rate (before fiscal year 32 of Ptolemy II) for the salt tax.</note>
+                  <msItemStruct>
+                     <note type="general">Catalogue no. 32; Nelson collection no. N291.  Senmonthis, daughter of Amenothes is Muhs' Taxpayer 19.  1/2 silver kite is the normal female A rate (before fiscal year 32 of Ptolemy II) for the salt tax.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -63,19 +71,15 @@
                <term>Receipts</term>
                <term>Tax</term>
                <term>Salt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>OIM 19324, recto: (1) Senmonthis daughter of Amenothes, 1/2(?) silver (kite) (2) for the salt(?) tax of Egyptian year 26, has written Iwefaw(?) (3) on Egyptian year 27, Hathyr 6(?)</ab>
          </div>
          <div type="bibliography" subtype="citations">

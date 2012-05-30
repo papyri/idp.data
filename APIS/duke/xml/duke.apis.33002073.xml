@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Islamic religious text from Egypt, written on papyrus. Starts with a bismillah. The first phrase is repeated on the verso</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 8.3 x 21.8 cm</note>
                      <note type="general">8 lines</note>
                      <note type="general">P.Duk.inv. 921 was written across the fibers on the recto; written along the fibers on the verso</note>
                      <note type="general">Upper margin of 1 cm.; right margin of 2 cm</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, incomplete ; 9 x 22 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, incomplete ; 9 x 22 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -36,13 +41,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="ar-Arab">In Arabic</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Islam -- Egypt -- Prayer-books and devotions -- 640-1250.</term>
                <term type="genre_form">Literary papyri Egypt 640-1250</term>
                <term type="genre_form">Papyri</term>

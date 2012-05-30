@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.183</idno>
-            <idno type="controlno">(MiU)183</idno>
+            <idno type="controlNo">(MiU)183</idno>
+            <idno type="ddbdp">o.mich..1.103</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4338</idno>
+                  <idno type="invNo">O.Mich.inv. 4338</idno>
                </msIdentifier>
                <msContents>
                   <summary>Money account</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -54,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -63,21 +72,17 @@
             <keywords scheme="#apis">
                <term>Arsinoiton (polis)</term>
                <term>Accounts--Egypt--Karanis (Extinct city)</term>
-               <term>Egypt -- Arsino»Ω (Fayy√Øum : Extinct city)</term>
+               <term>Egypt -- ArsinoȽ (Fayyïum : Extinct city)</term>
                <term>650: Drachma.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Tais, daughter of Pselpos, through Leonides: 300 drachmai. Likewise, through the same: 240 drachmai. And a contribution from Amen(--)(?): 60 drachmai. And a contribution with the people of Arsinoiton polis: 76 drachmai. Likewise, for my courtyard: 100 drachmai. And through Priscus: 36 drachmai.</ab>
          </div>
          <div type="bibliography" subtype="citations">

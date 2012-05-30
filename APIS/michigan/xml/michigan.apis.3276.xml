@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3276</idno>
-            <idno type="controlno">(MiU)3276</idno>
+            <idno type="controlNo">(MiU)3276</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4172</idno>
+                  <idno type="invNo">P.Mich.inv. 4172</idno>
                </msIdentifier>
                <msContents>
                   <summary>Tax register, recording the daily collection of money taxes in the village of Karanis; the name of each tax-payer paying the poll-tax is cross-referenced with a page of another register, where taxpayers were listed geographically</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Due to the size of this tax roll (P.Mich. IV/1, 225 + IV/2, 358), its content has been divided in the present database into several cards (one for each column).</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso of col. 132 is blank</note>
+                     <note type="related">+ P.Cair. Inv. 57187; cf. also P.Mich. IV/1, 224 + IV/2, 357 (inv. 4171 + 2830 + 3159 + 4910)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -73,6 +75,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -84,19 +93,15 @@
                <term>Poll tax--Egypt--Karanis (Extinct city)</term>
                <term>Tax collection--Egypt--Karanis (Extinct city)</term>
                <term>Women--Taxation--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Col.) 132;;(Pauni 29, continued);Mysthes, son of Phaesis and Aynchis, grandson of Mysthes, for ch(--): 8 drachmai;    column 4;Achillas, son of Ptollis and Thermouthis, grandson of Hieranouphis: 4 drachmai;    column 7;Athenion, son of Naaraus and Demarous, grandson of Theabenis: 8 drachmai;    column 8;Onnophris, son of Menches and Thaseis, grandson Onnophris, for ch(--): 4 drachmai;    column 10;Ptollis, son of Akousilaos and Aphrodous, grandson of Ptollis: 8 drachmai;    column 11;Onnophris, son of Petheus and Ptolema, grandson of Petheus: 4 drachmai;    column 13;Tauris, daughter of Zenon - (through) Tiberinus the elder - for garden land of year 13: for apomoira, 17 drachmai 3 obols; for olive (transportation), 2 drachmai 2 1/2 obols 2 chalkoi; for naubion, 1 drachme 4 1/2 obols; for supplements, 4 drachmai 2 obols 2 chalkoi; for eparourion, 11 drachmai 4 obols; for supplements, 1 drachme; for kollybos, 4 obols. Total: 39 drachmai 2 1/2 obols. (In left margin:) 40 drachmai.;Maron, son of Maron and Herois, grandson of Petoraipis: 16 drachmai;    column 20;Heron, son of Petesouchos and Tasoucharion, grandson of Petesouchos: 4 [drachmai];    column 23;Heron, son of Horos and Taarpagathes, grandson of Petheus: 8 drachmai;    column 53;Ptolemaios, son of Leonides and Thermouthis, grandson of Petheus, for ch(--): 8 drachmai;    column 28;Herakles, son of Sokrates and Tapetheus, grandson of Phaseis, for ch(--): 4 drachmai;    column 29;Phanomgeus, son of Pnepheros and Thaesis, grandson of Phanomgeus, for ch(--): 4 drachmai;    column 5;Kephalas, son of Anchorimphis - (through) Nausis - for garden land of year 13: for apomoira, 1 drachme 1 1/2 obols; for olive (transportation), 1 obol 2 chalkoi; for naubion, 1/2 obol 2 chalkoi; for supplements, 2 obols; for eparourion, 5 obols; for supplements, 1/2 obol; for kollybos, 1/2 obol. Total: 2 drachmai 5 1/2 obols. (In left margin:) 26 obols.;Aunes, son of Aunes and Tapetheus, grandson of Hermas, for ch(--): 4 drachmai;    column 32;Ptolemaios, son of Petheus and Tanesneus, grandson of Petheus, for ch(--): 4 drachmai;    column 33;Apynchis, son of Pnepheros and Tasoucharion, grandson of Pakysis, for ch(--): 8 drachmai;    column 39;Sarapion, son of Heras the elder and [Thermouthis], grandson of Herakles, for ch(--): 4 drachmai;    column 72</ab>
          </div>
          <div type="bibliography" subtype="citations">

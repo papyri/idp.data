@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Document of Specie Payment</title>
-            <author>Onnophris son of Pete»Ωsis</author>
+            <author>Onnophris son of PeteȽsis</author>
          </titleStmt>
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2215</idno>
-            <idno type="controlno">(MiU)2215</idno>
+            <idno type="controlNo">(MiU)2215</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4526</idno>
+                  <idno type="invNo">P.Mich.inv. 4526</idno>
                </msIdentifier>
                <msContents>
                   <summary>Patous, the farmer, acknowledges that he is satisfied with the price of everything belongs to him or shall require (house, field, courtyard, inbuilt plot, wall, vineyard, trees, male and female servants, animals, endowment, title) that Nobwotis paid for, and he will make the confirmation that he is required to do.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">P.Mich.Inv. 4200, 4207</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -48,7 +50,7 @@
                      <persName type="asn">Themista, daughter of Hegesistratos</persName>
                      <persName type="asn">Patous the younger, son of Patous, his mother (being)Esenrenphis</persName>
                      <persName type="asn">Nobwotis, daughter of Psammatichos, her mother (being) Taarmothes</persName>
-                     <persName type="asn">Onnophris, (son of) Pete»Ωsis</persName>
+                     <persName type="asn">Onnophris, (son of) PeteȽsis</persName>
                      <persName type="asn">Pa[chrates], 9son of) Pete . . .</persName>
                      <persName type="asn">Pete[chon], (son of) . . .</persName>
                      <persName type="asn">Pete . . . . (son of) Pet[oubastis]</persName>
@@ -65,6 +67,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -73,20 +82,16 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Aphroditopolis; As a part of a Goddess name.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>Year 6, Choiak, of the Pharaoh Ptolemy, the son of Ptolemy and Arsinoe the gods who love their father, the priest of Alexander and the gods who save and the brother gods and the beneficent gods (and) the gods who love their father (being) Andromachos, son of Lysimachos, the woman Themista, daughter of [Hegesistratos], being the bearer of the gift of [victory] before Berenice the beneficent goddess, [Strates], daughter of Ptolemy, being the bearer of the golden basket before Arsinoe who loves her brother.;Has said the farmer, the servant of Hathor-mistress-of-Aphroditopolis Isis, the great goddess, Patous the younger, son of Patous, his mother (being) [Esenrenphis], to the woman Nobwotis, daughter of Psammatichos, her mother (being) Taarmothes:;[Thou] hast caused my heart [to be satisfied with the silver of] the price of everything which is mine together with that which I shall acquire: house, field, courtyard, unbuilt plot, wall, vineyard, trees, male servant, female servant, cow, she ass, every (sort of) small animal, every endowment, every title, and every matter in the world of a free man, which is mine together with that which I shall acquire; thine they are from today [onward].;I have sold them to thee.;I have received their price of 2[1] (deben) of sliver, [my] heart [is satisfied] (4) therewith; they are complete without reminder.;No person in the world shall be able to exercise authority over them except thee.;(as for) any person in the world who shall come against thee in regard to them, I shall cause him to be far from thee.;And I will cause that they be clear for thee at all times from every document, every title, and every matter in the world.;Thine is every document which has been made concerning them together with every document which has been made for me or which has been made for my father or my mother concerning them together with every document to which I am [entitled] in their name; [thine] they are together with [their law].;(5) Thine is that to which I am entitled in their name.;(As for) the oath (or) the confirmation, which shall be required from thee to cause me to do it in their name, I will make it.;I will make for thee the document of &lt;specie &gt; payment for everything, which is mine together with that which I shall acquire [aforesaid].;Thou hast claim on me in regard to the law of the document of endowment of 21 (deben) of sliver which I have made for thee, which makes two documents.;Thou hast claim on me in regard to their law [to] do for thee accordingly.;[On]nophris, (son of) Pete»Ωsis, as written (it).</ab>
+         <div type="translation">
+            <ab>Year 6, Choiak, of the Pharaoh Ptolemy, the son of Ptolemy and Arsinoe the gods who love their father, the priest of Alexander and the gods who save and the brother gods and the beneficent gods (and) the gods who love their father (being) Andromachos, son of Lysimachos, the woman Themista, daughter of [Hegesistratos], being the bearer of the gift of [victory] before Berenice the beneficent goddess, [Strates], daughter of Ptolemy, being the bearer of the golden basket before Arsinoe who loves her brother.;Has said the farmer, the servant of Hathor-mistress-of-Aphroditopolis Isis, the great goddess, Patous the younger, son of Patous, his mother (being) [Esenrenphis], to the woman Nobwotis, daughter of Psammatichos, her mother (being) Taarmothes:;[Thou] hast caused my heart [to be satisfied with the silver of] the price of everything which is mine together with that which I shall acquire: house, field, courtyard, unbuilt plot, wall, vineyard, trees, male servant, female servant, cow, she ass, every (sort of) small animal, every endowment, every title, and every matter in the world of a free man, which is mine together with that which I shall acquire; thine they are from today [onward].;I have sold them to thee.;I have received their price of 2[1] (deben) of sliver, [my] heart [is satisfied] (4) therewith; they are complete without reminder.;No person in the world shall be able to exercise authority over them except thee.;(as for) any person in the world who shall come against thee in regard to them, I shall cause him to be far from thee.;And I will cause that they be clear for thee at all times from every document, every title, and every matter in the world.;Thine is every document which has been made concerning them together with every document which has been made for me or which has been made for my father or my mother concerning them together with every document to which I am [entitled] in their name; [thine] they are together with [their law].;(5) Thine is that to which I am entitled in their name.;(As for) the oath (or) the confirmation, which shall be required from thee to cause me to do it in their name, I will make it.;I will make for thee the document of &lt;specie &gt; payment for everything, which is mine together with that which I shall acquire [aforesaid].;Thou hast claim on me in regard to the law of the document of endowment of 21 (deben) of sliver which I have made for thee, which makes two documents.;Thou hast claim on me in regard to their law [to] do for thee accordingly.;[On]nophris, (son of) PeteȽsis, as written (it).</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

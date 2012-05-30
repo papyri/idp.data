@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3119</idno>
-            <idno type="controlno">(MiU)3119</idno>
+            <idno type="controlNo">(MiU)3119</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich. inv. 764</idno>
+                  <idno type="invNo">P.Mich. inv. 764</idno>
                </msIdentifier>
                <msContents>
                   <summary>Side 1 contains a column of 21 proper names on the left side and two drawings on the right side. The first drawing represents a head with spiky hair. The second depicts a whole stick figure with large round eyes and a body covered by the same short strokes that are used to represent the hair on the head. Side 2 contains a mathematical exercise.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: side 1 and 2</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,20 +75,16 @@
                <term>Names, Greek.</term>
                <term>Names, Egyptian.</term>
                <term>Mathematics, Greek;vProblems, exercises, etc.</term>
-               <term>ChildrenÇ«÷s drawings--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Wooden Tablet</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term>Children���s drawings--Egypt.</term>
+               <term type="genre_form">Wooden Tablet</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"(Side 1) Eurip[;Georgios;Phoibammon;Mennik[;Ioanes[;Eudemon;Marios;Apollos;Viktor;Markellos;Pto[..]ei;Apakyri[;Hareus;Petros;Peteuris;Horion;Mnasi[                                  Khoiak;Pe...i                                                k;Apia;Apion;Haron;--------;Tullios;--------;(Side 2);11  1010  8080  1,000;22;33  2020 9090  2,000;44  3030  100100  3,000;55  4040  200200  4,000;66  5050  300300  5,000;77                400400  6,000;88  6060  500500  7,000;99  7070  600600  8,000;                      700700  9,000;                      800800  .            10,000;                      900900"</ab>
          </div>
          <div type="bibliography" subtype="citations">

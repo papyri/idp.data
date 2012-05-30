@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p325</idno>
-            <idno type="controlno">(NNC)aaa1249</idno>
+            <idno type="controlNo">(NNC)aaa1249</idno>
+            <idno type="ddbdp">p.col..10.292</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 50</idno>
+                  <idno type="invNo">Col.inv. 50</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter from an unknown person to Charisios on behalf of two other people: it refers to an incident in which the writer</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the back there is the address along the fibers</note>
                      <note type="general">10 lines of writing in a large Byzantine cursive hand; the last two lines, which look slightly different, were written perhaps at a different time</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0400" notAfter="0599"/>
+                     <origDate notBefore="0400" notAfter="0599">400 CE – 599 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in July 1923; no. 59 (III.30) in Bell</p>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,19 +58,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Private letter</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Praying above all for your health, [e.g., I hope that you are flourishing] and faring well. When our brother Th[..]ros was so kind as to come here, he led astray the girl named Theodora, and she took from me fourteen keratia lita. Likewise I went surety for her to the cellarkeeper for eight keratia lita. She took also a stichomaphorion and an othonion, and I am having these demanded from me as her surety. I wrote these things to you, true companion and overseer, for Sokoris the "Fourth" and Alypios the "Second". Take care how much you exert yourself. For I know that you are careful.</ab>
          </div>
          <div type="bibliography" subtype="citations">

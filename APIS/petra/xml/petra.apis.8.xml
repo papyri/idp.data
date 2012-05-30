@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">petra.apis.8</idno>
-            <idno type="controlno">(JoPe)8</idno>
+            <idno type="controlNo">(JoPe)8</idno>
+            <idno type="ddbdp">p.petra.1.8</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Petra inv. 69.5 and 69.2</idno>
+                  <idno type="invNo">Petra inv. 69.5 and 69.2</idno>
                </msIdentifier>
                <msContents>
                   <summary>Papyrus containing two separate receipts of payments made by Patrophilos, son of Bassos, one for a second and third indiction, the other for taxes of a fourth indiction</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">10 lines written transversa charta; 3 margins extant: top (2 cm), right (0.1-1 cm), and bottom (0.3 cm)</note>
                      <note type="general">For a reproduction, see Plate XXIII; hand likely the same as Petra I 7 and 10</note>
                      <note type="general">For the date, see pp. 104-105 and HGV, ad loc.</note>
                      <note type="general">Cf. receipts 7 and 9-10</note>
+                     <note type="local_note">Field no. XXXIVj</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,22 +58,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">taxation</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">receipt</rs>
-               </term>
+               <term type="genre_form">papyri</term>
+               <term type="genre_form">taxation</term>
+               <term type="genre_form">receipt</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Lines 1-6) [(chi)(rho) The most honorable Patrophilos, son of Bassos, has given] on account of his taxes of the second [and third indiction years, that is, of two years, every year] from nine, one fourth, one eighth [iugera] &lt;from Petra&gt; and from Augustopolis, [one half, one third, one tenth, one hundred and] seventy-fifth [i( )], all the exacted [and extra taxes in farm products], in oinokreon and in other products accordingly. [Written in month Loos of the 460-sixth (=466th) year,] the fourth indiction year. (chi)(rho) I, Flavius Valens, son of Alpheios, [have received in full for] the tax collectors accordingly.(chi)(rho) (Lines 7-10) [(chi)(rho) The most honorable Patrophilos, son of Bassos, has given] on account of his taxes of the fourth indicition year...[...(chi)(rho) I, Flavius Valens], son of Alpheios, have received in full for the present and future [tax collectors accordingly. Written in month Loos/Dios] of the 400-sixty-sixth (=466th) year, the [fourth/fifth] indiction year.</ab>
          </div>
          <div type="bibliography" subtype="citations">

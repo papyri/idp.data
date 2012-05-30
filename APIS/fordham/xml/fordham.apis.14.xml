@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">fordham.apis.14</idno>
-            <idno type="controlno">(NNF)14</idno>
+            <idno type="controlNo">(NNF)14</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Ford.inv.00014</idno>
+                  <idno type="invNo">P.Ford.inv.00014</idno>
                </msIdentifier>
                <msContents>
                   <summary>Marriage contract dated to the reign of Ptolemy V (but after 199) and containing the so-called "document concerning money," which serves as a security for the "document of maintenance" referred to in line 5.  Party A (the man) is probably some kind of artisan.  Party B (the woman) is lost.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">5 lines of writing along the fibers.  Back is blank.</note>
                      <note type="general">Large format contract in a nice, highly legible hand.</note>
                      <note type="general">Corresponds to type B2 in M. Depauw, A Companion to Demotic Studies (Pap.Brux. XXVIII) (Brussels 1997), p. 140.</note>
+                     <note type="local_note">Housed in Special Collections at the Walsh Library, Fordham University</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +59,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

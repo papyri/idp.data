@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -16,15 +17,19 @@
                   <idno type="invNo">P. Lund. inv. 246</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">Former shelfmark or inv. no.: Ag I 84 R a (in pencil on old glass frame)</note>
                      <note type="general">Several pieces, with text with the fibres on the recto, verso blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 246 a 1.0 x 4.3 cm; 246 b 0.5 x 2.4 cm; 246 c 2.1 x 3.3 cm; 246 d 1.6 x 1.7 cm; 246 e 1.3 x 7.8 cm; 246 f 2.2 x 10.2 cm; 246 g 11.7 x 17.0 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 246 a 1.0 x 4.3 cm; 246 b 0.5 x 2.4 cm; 246 c 2.1 x 3.3 cm; 246 d 1.6 x 1.7 cm; 246 e 1.3 x 7.8 cm; 246 f 2.2 x 10.2 cm; 246 g 11.7 x 17.0 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>

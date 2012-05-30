@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1862</idno>
-            <idno type="controlno">(MiU)1862</idno>
+            <idno type="controlNo">(MiU)1862</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3199</idno>
+                  <idno type="invNo">P.Mich.inv. 3199</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for money paid to Samous son of Amenneus for clearing away the brushwood on an aroura of land yet uncultivated (see the introd. to Pap.Lugd.Bat. XX, 2)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The clay sealing is an impression of an Egyptian seal, probably a scarab, representing Ptah squatting to left on a basket; above his knees an indistinct cartouche, perhaps Men-kheper-Re.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">archive of Panakestor (Zenon archive)</note>
                      <textLang mainLang="egy-Egyd">Greek and Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,19 +80,15 @@
                <term>Drachma.</term>
                <term>Wages--Egypt.</term>
                <term>Cities and towns--Officials and employees--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto);;(scriptura interior, originally sealed);;In the 29th year of the reign of Ptolemy, son of Ptolemy Soter, Mesore 23. Samous, son of Amenneus, acknowledges that he has received from Panakestor the agent of Apollonios, for cutting and burning the brushwood on 1 aroura, 2 drachmai, 3 obols.;;(scriptura exterior, not sealed);;In the 29th year of the reign of Ptolemy, son of Ptolemy Soter, Mesore 23. Samous, son of Amenneus, acknowledges that he has received from Panakestor tthe agent of Apollonios, fo rcutting and burning the brushwood on 1 aroura, 2 drachmai, 3 obols.;(Demotic) Year 28, 4th month of the summer season (smw), 22nd day. Samous, son of Amenneus, has said to Panakestor: "You have given to me 1 1/4 kite of silver - its half is 1/2 1/10 1/60 1/120 kite of silver, (equals) 1 1/4 kite of silver again - ;;(Demotic continued on Verso);;(for the) work of cutting the wood in a part of the land of Apollonios." Written.</ab>
          </div>
          <div type="bibliography" subtype="citations">

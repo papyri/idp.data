@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2524</idno>
-            <idno type="controlno">(MiU)2524</idno>
+            <idno type="controlNo">(MiU)2524</idno>
+            <idno type="ddbdp">sb.6.9241</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 5644</idno>
+                  <idno type="invNo">P.Mich.inv. 5644</idno>
                </msIdentifier>
                <msContents>
                   <summary>Chirograph in which Aurelius Paulos agrees to surrender certain houses to their owner, Aurelius Melas, whenever the latter returns to Karanis</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The article by A.A. Aly has been reprinted in 1952 as Ibrahim University Studies in Papyrology 1</note>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +74,15 @@
                <term>Karanis</term>
                <term>Absentee landlordism--Egypt--Karanis (Extinct city)</term>
                <term>Real estate business--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Aurelius Paulos, of the village of Karanis, to Aurelius Melas, of the same village, greeting. Since I occupy and hold your houses in the same village, whenever you come in safety to the same village, &lt;I agree&gt; to restore to you the aforementioned houses, as stated above.</ab>
          </div>
          <div type="bibliography" subtype="citations">

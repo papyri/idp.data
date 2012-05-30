@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.424</idno>
-            <idno type="controlno">(CU)424</idno>
+            <idno type="controlNo">(CU)424</idno>
+            <idno type="ddbdp">p.tebt..1.78</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0078</idno>
+                  <idno type="invNo">P.Tebt.0078</idno>
                </msIdentifier>
                <msContents>
                   <summary>Register of land the revenue of which was set aside for a special, unknown purpose. Below it is a royal oath vouching for the correctness of the statement.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: left, 2.8 cm.; bottom, 3 cm.; in bottom right corner, in red ink "78". Sheet join 2.1 cm. from left (overlap 1.2 cm.)</note>
                      <note type="general">Menches archive</note>
+                     <note type="related">Similar register is P.Tebt.I.77.</note>
+                     <note type="local_note">1691</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +73,15 @@
             <keywords scheme="#apis">
                <term>Land use</term>
                <term>Kerkeosiris</term>
-               <term>
-                  <rs type="genre_form">Registers of land, Ptolemaic period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Registers of land, Ptolemaic period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The .. year, from Petesouchos, village scribe of Kerkeosiris. List, yielded by the inquiry held by Horos the Basilikos Grammateus after the survey of the same year concerning the area sown of the land at Kerkeosiris which is in the category of the revenue which is set aside, stating also the several amounts in excess which result. The total amount reclaimed from the unprofitable land being 78 arouras, of this number 16 1/2 arouras are under cultivation ... I swear by Queen Cleopatra and King Ptolemy, gods Philometores Soteres, and their ancestors and by Sarapis and Isis and all the other gods and goddesses, that I have presented the aforesaid report and have made no false statement. If my oath is true may it be well with me, but if false the reverse.</ab>
          </div>
          <div type="bibliography" subtype="citations">

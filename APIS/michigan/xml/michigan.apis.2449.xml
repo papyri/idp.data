@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2449</idno>
-            <idno type="controlno">(MiU)2449</idno>
+            <idno type="controlNo">(MiU)2449</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 5395</idno>
+                  <idno type="invNo">P.Mich.inv. 5395</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fragment A bears the end of a letter which was probably sent by Claudius Terentianus to Claudius Tiberianus, as was P.Mich. VIII, 468; the other fragments come probably also from letters, as the other texts in the archive</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">According to R. Marichal, these fragments show three different hands (ABC, DEF, GHI) and come from at least three different documents; however, the direction of the fibres show that frg. B belonged to a different text than frgg. AC, and frg. I from frgg. GH. The nine fragments would then be remains of five different documents. (PH);Three small fragments bear no writing.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (fragments B, D, E, F, G, H) or Verso (fragments A, C, I); other side of each fragment is blank</note>
+                     <note type="related">Archive of Claudius Tiberianus; frg. A offers a text very similar to P.Mich. VIII, 468</note>
                      <textLang mainLang="la">Latin</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +77,15 @@
                <term>Clothing</term>
                <term>Fragments</term>
                <term>Letter</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Texts too fragmentary to be translated)</ab>
          </div>
          <div type="bibliography" subtype="citations">

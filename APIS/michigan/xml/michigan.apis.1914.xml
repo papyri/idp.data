@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1914</idno>
-            <idno type="controlno">(MiU)1914</idno>
+            <idno type="controlNo">(MiU)1914</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3258</idno>
+                  <idno type="invNo">P.Mich.inv. 3258</idno>
                </msIdentifier>
                <msContents>
                   <summary>Acknowledgment of a debt owed by a soldier</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (written across the fibres); Verso is blank</note>
                      <textLang mainLang="la">Latin</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,20 +75,16 @@
             <keywords scheme="#apis">
                <term>Colonia [Caesarea] (Jerusalem)</term>
                <term>Army</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>In the consulship of Publius Fuscianus, for the second time, and Marcus Silanus, for the second time [- - -] at Colonia [Caesarea in the camp - - -] of the Legio X Fretensis [Pia Fidelis. I, - - -, soldier] of the centuria of the (centurio) hastatus prior of the 6th (cohort), have written, on demand of [- - -], soldier of the [same] legion, [of the centuria - - -, because he] said that he [did not know letters, that he] has [received] from Petronius(?) [- - -, soldier] of the same [legion], of the same centuria, [- - - drachmai, which] he will give back on the day on which [he will receive his salary], either to him or to his representative [or heir]; and if he doesn&amp;apos;t give back the sum and [the interest, - - -].;(2nd hand) Antonius Petronius(?);(3rd hand) Marcus Iulius Fr[- - -];(4th hand) Fabiolus(?) Ius[- - -];(5th hand) Titus Aurelius [- - -];(6th hand) Lucius Antoninus [- - -]</ab>
+         <div type="translation">
+            <ab>In the consulship of Publius Fuscianus, for the second time, and Marcus Silanus, for the second time [- - -] at Colonia [Caesarea in the camp - - -] of the Legio X Fretensis [Pia Fidelis. I, - - -, soldier] of the centuria of the (centurio) hastatus prior of the 6th (cohort), have written, on demand of [- - -], soldier of the [same] legion, [of the centuria - - -, because he] said that he [did not know letters, that he] has [received] from Petronius(?) [- - -, soldier] of the same [legion], of the same centuria, [- - - drachmai, which] he will give back on the day on which [he will receive his salary], either to him or to his representative [or heir]; and if he doesn't give back the sum and [the interest, - - -].;(2nd hand) Antonius Petronius(?);(3rd hand) Marcus Iulius Fr[- - -];(4th hand) Fabiolus(?) Ius[- - -];(5th hand) Titus Aurelius [- - -];(6th hand) Lucius Antoninus [- - -]</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

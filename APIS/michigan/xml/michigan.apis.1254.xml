@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1254</idno>
-            <idno type="controlno">(MiU)1254</idno>
+            <idno type="controlNo">(MiU)1254</idno>
+            <idno type="ddbdp">p.nyu.1a</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Corn. Inv. II 37</idno>
+                  <idno type="invNo">P.Corn. Inv. II 37</idno>
                </msIdentifier>
                <msContents>
                   <summary>Petition to the Governor, Valerius Ziper,  by three villagers of Karanis.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +76,15 @@
                <term>Karanis, Herakleidou meris, Arsinoite nome, Middle Egypt, province of Egypt</term>
                <term>Rome--Politics and government.</term>
                <term>Karanis (Extinct city)--Politics and government.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Valerius Ziper, vir perfectissinus, praeses Aegypti Herculiae, from the Aurelii Ousenouphis son of Heras, Heras son of Atisios, and Heron son of Apion, all three from the village of Karanis of the Arsinoite nome. In appearance, lord prefect, we tender a brief in self-interest, but in actual thruth and reality for the advantage of the revenues of the imperial treasury. Now then we are -since one must not speak false before you, the lover of thruth-farmers of fifteen arouras ...</ab>
          </div>
          <div type="bibliography" subtype="citations">

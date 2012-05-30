@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">wisconsin.apis.5350</idno>
-            <idno type="controlno">(WU)5350</idno>
+            <idno type="controlNo">(WU)5350</idno>
+            <idno type="ddbdp">p.wisc..2.46</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Wisc. inv. 3</idno>
+                  <idno type="invNo">P.Wisc. inv. 3</idno>
                </msIdentifier>
                <msContents>
                   <summary>A list of names. Originally the papyrus must have been much bigger. At the left-hand side the endings of 12 names (the fifth ending is "-ites") of a preceding column are still visible. As the total number of persons listed is 127 (line 36) and only the names of 32 persons are preserved, it follows that a piece containing 95 names (and a heading?) has been lost.;If the reading in l. 34 [pol( )] is right, then we are dealing with a list of citizens from one of the three autonomous cities: Alexandria, Ptolemais or Naukratis. The purpose of this list, dating from the beginning of the Roman occupation, may have been to establish who were citizens and who were not. Not only men but also women are listed.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Department of Special Collections; Memorial Library; Madison; Wisconsin</note>
                      <note type="general">Pub. status: recto; verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -86,6 +88,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -93,19 +102,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>col. II;- - - - - - ;[..] . [;Horos, son of ......;Harpaesis son of Konon;;Pnepheros son of Harpekis;;Patmoueios son of Metochos;;Psenamounis son of Herakles;;Peteesis son of Pameinis;;Zenon son of Dikaious;;Asklas son;;Herotes brother;;Apollos .....;;Apollos son of Alistokrates;;Pasis son of Pamos;;Pasis son (of Pasis);;Epeis brother similarly;;Pnepheros son of Chesm ...os;;Pachis son of Onnophris;;Nekpheraus son of Autonomos;;Sisois son of Nekphras;;Onnophris son;;Droetes son of Harthes;;Onnophris son of .....;;Soumeis son of Atres;;Petesouchos son of Paaimis;;Horos son of Pathermouthis;;Petesouchos son of Syn[ ];;Papontos son of Pete[ ];;Petees son of Kametes;;Pason  son of Epharmostos;;NN, daughter of Onnophris;;NN, daughter of Petesiris;;NN, daughter of Apollon;;total pol( ) 122;and not aged yet 5;total 127.</ab>
          </div>
          <div type="bibliography" subtype="citations">

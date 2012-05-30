@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.8213</idno>
-            <idno type="controlno">(ICU)8213</idno>
+            <idno type="controlNo">(ICU)8213</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O. OIM 19330</idno>
+                  <idno type="invNo">O. OIM 19330</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Catalogue no. 38; Nelson collection no. N297.  The Greek name Amenoth, son of Pharat probably represents the name of Muhs&amp;apos; Taxpayer 6, Amenothes, son of Parates.  The Greek name lacks declensional endings, which is not unusual in Theban salt tax receipts before c. 250 B.C. and fits with the suggestion that the scribe of the Greek text was an Egyptian.  3/4 silver kite or 1 drachma 3 obols is the normal male A rate (before fiscal year 32 of Ptolemy II) for the salt tax, so this must be a semi-annual payment, which is well attested during the period of the A rate.  The amount "1/4 silver (kite)" written by a second scribe must be an error.  For the restoration in line 6, compare O. Ash. GO 108 (Shelton 1988), which names the same official and the same scribes and is dated 11 days later than this text.  The editor reads the last scribe&amp;apos;s name as Djed-her sa Her-pa-hert, but the element read pa-hert is in fact a repetition of the amount paid, hedj 2/3 1/12 "3/4 silver (kite)."  The same scribe may have been Witness 2 on P. Phil. dem. 18 (el-Amir 1959) and Witness 6 on P. BM 10240 (Reich 1914).  He was probably not Witness 13 on P. BM 10829 (Andrews 1990) because of the late date and different signature and certainly neither Witness 5 nor Witness 13 on P. BM 10613 (Andrews 1990) for the same reasons.</note>
+                  <msItemStruct>
+                     <note type="general">Catalogue no. 38; Nelson collection no. N297.  The Greek name Amenoth, son of Pharat probably represents the name of Muhs' Taxpayer 6, Amenothes, son of Parates.  The Greek name lacks declensional endings, which is not unusual in Theban salt tax receipts before c. 250 B.C. and fits with the suggestion that the scribe of the Greek text was an Egyptian.  3/4 silver kite or 1 drachma 3 obols is the normal male A rate (before fiscal year 32 of Ptolemy II) for the salt tax, so this must be a semi-annual payment, which is well attested during the period of the A rate.  The amount "1/4 silver (kite)" written by a second scribe must be an error.  For the restoration in line 6, compare O. Ash. GO 108 (Shelton 1988), which names the same official and the same scribes and is dated 11 days later than this text.  The editor reads the last scribe's name as Djed-her sa Her-pa-hert, but the element read pa-hert is in fact a repetition of the amount paid, hedj 2/3 1/12 "3/4 silver (kite)."  The same scribe may have been Witness 2 on P. Phil. dem. 18 (el-Amir 1959) and Witness 6 on P. BM 10240 (Reich 1914).  He was probably not Witness 13 on P. BM 10829 (Andrews 1990) because of the late date and different signature and certainly neither Witness 5 nor Witness 13 on P. BM 10613 (Andrews 1990) for the same reasons.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd" otherLangs="grc">Demotic; Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +76,15 @@
                <term>Receipts</term>
                <term>Tax</term>
                <term>Salt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>OIM 19330, recto: (1) Fiscal year 30, Epeiph 25, it has fallen (2) for the salt tax through Kleitandros, (3) Amenoth son of Pharat, 4 1/2(?) obols.  (4) Amenothes son of Parates, 1/3(?) silver (kite) 1/2 obol (for) the salt tax of Egyptian year 29, has written Thotorches (5) on Egyptian year 29, [Epeiph] 25; [Second hand:] has written Psenminis, 1/4 silver (kite); (6) [Third hand:] has written [Teos son of] Horos.</ab>
          </div>
          <div type="bibliography" subtype="citations">

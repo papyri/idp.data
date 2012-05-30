@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1719</idno>
-            <idno type="controlno">(MiU)1719</idno>
+            <idno type="controlNo">(MiU)1719</idno>
+            <idno type="ddbdp">p.mich..6.387</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 2970</idno>
+                  <idno type="invNo">P.Mich.inv. 2970</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for crown tax (stephanikon) issued to a certain Gaius Iulius Niger</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">archive of Gaius Apolinarius Niger (&amp; family)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,20 +78,16 @@
                <term>Citizenship--Rome.</term>
                <term>Taxation</term>
                <term>Veterans--Rome.</term>
-               <term>Citizenship--Egypt--Antino»µpolis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term>Citizenship--Egypt--Antinoȵpolis (Extinct city)</term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The twenty-eighth year of Marcus Aurelius Commodus Antoninus Caesar the lord, Mesore 2. Gaius Iulius Niger has paid to . . . and his associate collectors in the allotment of money taxes of Karanis, for crown tax of our lord Emperor Commodus, twelve drachmai, equals 12 drachmai; Mesore 11, four drachmai, equals 4 drachmai.</ab>
          </div>
          <div type="bibliography" subtype="citations">

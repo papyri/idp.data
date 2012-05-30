@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p595</idno>
-            <idno type="controlno">(NNC)aaa3771</idno>
+            <idno type="controlNo">(NNC)aaa3771</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 107a verso</idno>
+                  <idno type="invNo">Col. inv. 107a verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account.  Too faded to determine context</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the recto, faded traces of an account</note>
                      <note type="general">Frag. (a) 14 lines + traces of a second column; frag. (b) 8 lines; broken on all sides</note>
                      <note type="general">The hand is a compact, upright cursive</note>
+                     <note type="local_note">Frag. (b) is in two pieces which need joining.  Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +35,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0300" notAfter="0499"/>
+                     <origDate notBefore="0300" notAfter="0499">300 CE – 499 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. III.4 in Bell's inventory</p>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

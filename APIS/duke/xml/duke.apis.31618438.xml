@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,17 +18,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Petition from Egypt, written on papyrus. Written by a minor priest (pastophoros)(?) against the theft of various clothes and other objects. He requests that the police are ordered to recover the property for him and that appropriate action is taken against the thieves. Objects are enumerated at the bottom in two columns and their value is added. The stolen items include cloaks, linen clothes, part of a minor priest's outfit, and money. The total of items stolen amounts to 8,360 drachmas</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 14.6 x 19.7 cm</note>
                      <note type="general">35 lines</note>
                      <note type="general">Written along the fibers on the recto</note>
                      <note type="general">Lower margin of 1.5 cm.; left margin of 1 cm.; small right margin</note>
                      <note type="general">P.Duk.inv. 739 was formerly P.Ede inv. 34</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, top is broken off ; 15 x 20 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, top is broken off ; 15 x 20 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -37,13 +42,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Complaints (Criminal procedure) -- Egypt -- 332-30 B.C.</term>
                <term>Priests -- Egypt -- 332-30 B.C.</term>
                <term>Larceny -- Egypt -- 332-30 B.C.</term>

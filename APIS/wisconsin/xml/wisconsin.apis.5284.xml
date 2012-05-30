@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,19 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">wisconsin.apis.5284</idno>
-            <idno type="controlno">(WU)5284</idno>
+            <idno type="controlNo">(WU)5284</idno>
+            <idno type="ddbdp">p.wisc..2.41</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Wisc. inv. 35</idno>
+                  <idno type="invNo">P.Wisc. inv. 35</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Department of Special Collections; Memorial Library; Madison; Wisconsin</note>
                      <note type="general">Pub. status: recto; verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,19 +73,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Apolloniou Parembole, quarter, Arsinoe, Arsinoite nome, Egypt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>lines 7-12;Year 29 of Aurelius Commodus Antoninus Caesar the lord Mesore 13, for the account of Payni. Epeiph. Paid to Prolemios, son of Heron, grandson of Apion, his mother being Thaesis, as poll tax for the 29th year in the quarter Apolloniou Parembole, twenty drachmai, total 20, and the extra payments, ten oboloi of copper.</ab>
          </div>
          <div type="bibliography" subtype="citations">

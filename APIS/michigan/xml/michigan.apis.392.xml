@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.392</idno>
-            <idno type="controlno">(MiU)392</idno>
+            <idno type="controlNo">(MiU)392</idno>
+            <idno type="ddbdp">o.mich..1.187</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4555</idno>
+                  <idno type="invNo">O.Mich.inv. 4555</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for chaff of Karanis brought by  Panesates, son of Aunes, to the collectors of Babylon</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,19 +80,15 @@
                <term>Receipts (Acknowledgments)--Egypt.</term>
                <term>Tax collection--Egypt.</term>
                <term>Crop residues--Transportatopm--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Aurelii Apollonios and Ptolemaios, overseer of the chaff for Babylon. Has brought Panesates, son of Aunes, for the village of Karanis, one basket (sargane) of chaff, for the 19th and 18th and 11th year, on Thoth 2(?).</ab>
          </div>
          <div type="bibliography" subtype="citations">

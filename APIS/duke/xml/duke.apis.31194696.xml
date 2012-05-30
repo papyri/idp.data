@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,17 +18,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus magical(?) text from Egypt. Has magical(?) recipe or list of ingredients</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 16.5 x 7.1 cm</note>
                      <note type="general">9(?) lines</note>
                      <note type="general">Written across the fibers on the verso; written along the fibers on the recto in a different(?) hand</note>
                      <note type="general">Upper margin of 7.5 cm.; lower margin of 1.5 cm.; small right margin</note>
                      <note type="general">P.Duk.inv. 662 V was formerly P.Duk.inv. MF75 3 V</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, four joining fragments mounted in glass, text faded, left side is broken off ; 17 x 8 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, four joining fragments mounted in glass, text faded, left side is broken off ; 17 x 8 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -37,13 +42,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Magic, Ancient -- 30 B.C.-640 A.D.</term>
                <term>Magic -- Egypt -- 30 B.C.-640 A.D.</term>
                <term type="genre_form">Subliterary papyri Egypt 30 B.C.-640 A.D</term>

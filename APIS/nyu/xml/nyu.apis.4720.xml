@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.4720</idno>
-            <idno type="controlno">(NNU)4720</idno>
+            <idno type="controlNo">(NNU)4720</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv. 3</idno>
+                  <idno type="invNo">NYU inv. 3</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Bobst</note>
                      <note type="general">24 lines (recto); 1 line (verso)</note>
                      <note type="general">Small irregular hand; writing parallel to fibers</note>
                      <note type="general">Source of description: R and V</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -40,6 +41,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -47,22 +55,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Loan</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Loan</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Aurelius Pemes, son of Patas and his mother Tanouphis, from the village of Karanis, about 45 years of age, with a scar on his right shin, to Aurelius Sarapammon, (formerly?) gymnasiarch, councillor, former strategus of the city of the Arsinoites, greetings.  I acknowledge through the present document that I have received in loan from you in cash ten talents and three thousand drachmas in silver, in total 10 Tal., 3000 dr., for one month from the present day on, which I shall of necessity return on the 15th of the coming month Thoth, without interest forthwith.  And if I fail to return them on the due date, I shall be subject to the (payment of) interest for the surpassing period and on demand you, the said Sarapammon, shall have the right of execution against both me, the acknowledging party Pemes, and against all my property, as if in consequence of a court decision.  The document, written in a single copy, must be authoritative and in answer to the formal question I replied positively.  In the consulship of our lord Constantinus Augustus (consul) for the 7th time and our lord Constantius, the most noble Caesar (consul) for the 1st time, Mesore 20.  (M. 2) I Aurelius Pemes, have received the said ten talents and three thousand drachmas in silver and I shall return them on the due date in full as stated above.  I, Aurelius Serenos, son of Heron, wrote for him, since he does not know letters.  (Verso) Note of hand of Pemes from Karanis ...</ab>
          </div>
          <div type="bibliography" subtype="citations">

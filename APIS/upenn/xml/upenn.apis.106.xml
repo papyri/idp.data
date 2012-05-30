@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.106</idno>
-            <idno type="controlno">(PU) 106</idno>
+            <idno type="controlNo">(PU) 106</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv.E16258</idno>
+                  <idno type="invNo">P.Penn. Museum inv.E16258</idno>
                </msIdentifier>
                <msContents>
                   <summary>Side 1 (Recto): Prescriptions and recipes for the same. (Records payment of three, four, and seven dirhams. [S.L. Skoss]) Side 2 (Verso): Arabic Accounts on Paper. Index to a book of accounts (see DV, no. 55, p. 113-115).</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text is written on both sides, 6 lines on Side 1 (Recto), 9 lines on Side 2 (Verso).</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology, Ellen W. Harrison Collection.</note>
                      <textLang mainLang="ar-Arab">Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,25 +57,17 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">paper</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">prescription</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">account</rs>
-               </term>
+               <term type="genre_form">paper</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">prescription</term>
+               <term type="genre_form">account</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Side 1 (Recto): 1. In the name of God, the Merciful, the Compassionate. 2. Let there be taken with God's blessing and help thirty grains of sabistan and twenty grains of jujube 3. and the weight of three drams (dirhams) of lily root the weight of four drams of violet root, 4. and the whole be boiled in two quarts (ratl) of water, until it shrinks to one third, and let be soaked in it the weight of seven 5. drams of cassia ...................................... 6. so please God. God is our sufficiency and how good a custodian is He!</ab>
          </div>
          <div type="bibliography" subtype="citations">

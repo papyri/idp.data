@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berenike.apis.221</idno>
-            <idno type="controlno">(EG-Ber)221</idno>
+            <idno type="controlNo">(EG-Ber)221</idno>
+            <idno type="ddbdp">o.berenike.2.221</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Inv. BE00-33-063</idno>
+                  <idno type="invNo">Inv. BE00-33-063</idno>
                </msIdentifier>
                <msContents>
                   <summary>This document was discovered in a Roman dump at Berenike.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">3 lines of text.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,19 +57,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Memorandum</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostraka</rs>
-               </term>
+               <term type="genre_form">Memorandum</term>
+               <term type="genre_form">Ostraka</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>. . . [of Tiberi]us Claudius Caesar Imperator [? Ty]bi 22 (= January 17 or 18).</ab>
          </div>
          <div type="bibliography" subtype="citations">

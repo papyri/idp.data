@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">yale.apis.0038070000</idno>
-            <idno type="controlno">(CtY)3807 qua</idno>
+            <idno type="controlNo">(CtY)3807 qua</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.CtYBR inv.3807 qua</idno>
+                  <idno type="invNo">P.CtYBR inv.3807 qua</idno>
                </msIdentifier>
                <msContents>
                   <summary>Unrelated fragments(11) account of money</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">(2) belongs to (3), they don't join. (4) belongs to (5), they don't join. (11) three more fragments of this manuscript are set aside as 4747.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -29,10 +30,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="-0099" notAfter="0299">99 BCE – 299 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -40,12 +52,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri, fragments</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Document</rs>
-               </term>
+               <term type="genre_form">Papyri, fragments</term>
+               <term type="genre_form">Document</term>
             </keywords>
          </textClass>
       </profileDesc>

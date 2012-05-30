@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1942</idno>
-            <idno type="controlno">(MiU)1942</idno>
+            <idno type="controlNo">(MiU)1942</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 332</idno>
+                  <idno type="invNo">P.Mich.inv. 332</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fragmentary letter to Panesneous(?)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso bears only an X-sign, which must have been just under the now lost address</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -62,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -75,19 +83,15 @@
                <term>Alexandria--Egypt.</term>
                <term>Prayer--Egypt.</term>
                <term>Tax collection--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>[- - -] to his brother Panesneous(?), very many greetings. Before all else I pray for your health and make obeisance for you daily in the presence of our lord Sarapis. I wish you to know, brother, that I wrote to you about the toparch and you have written me no reply. Even if he is unwilling make him inform me about all the things that concern me. I send many salutations to my mother and to Thais your wife and to your children - may the evil eye not touch them. Heraiskos salutes you all by name, as do also his nurse and ...odoros and Kalathous.  . . .  salutes you all. I pray for your health.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,32 +18,41 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus literary(?) text from Egypt</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 4.1 x 1.0 cm</note>
                      <note type="general">1 line</note>
                      <note type="general">Written along the fibers on the recto</note>
                      <note type="general">P.Duk.inv. 571 was formerly P.Miss. 139</note>
                      <textLang mainLang="und">Language undetermined</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, very incomplete ; 5 x 1 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, very incomplete ; 5 x 1 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
-                  <origin>
-                     <origDate/>
-                  </origin>
+                  <origin/>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="und">Language undetermined</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Literary papyri Egypt</term>
                <term type="genre_form">Papyri</term>
             </keywords>

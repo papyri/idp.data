@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1055</idno>
-            <idno type="controlno">(MiU)1055</idno>
+            <idno type="controlNo">(MiU)1055</idno>
+            <idno type="ddbdp">o.mich..2.707</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 9786</idno>
+                  <idno type="invNo">O.Mich.inv. 9786</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account of money</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +78,15 @@
                <term>-</term>
                <term>Drachma.</term>
                <term>Accounts--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Apollonios son of Sotas       1000 drachmai;Serenos son of Horos           2000 drachmai;Leein son of Nikanor              1500 drachmai;Melas son of Sokrates           1800 drachmai;Ptollas son of Pa . . . [</ab>
          </div>
          <div type="bibliography" subtype="citations">

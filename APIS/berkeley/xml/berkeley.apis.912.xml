@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.912</idno>
-            <idno type="controlno">(CU)912</idno>
+            <idno type="controlNo">(CU)912</idno>
+            <idno type="ddbdp">p.tebt..1.193</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0193 Verso</idno>
+                  <idno type="invNo">P.Tebt.0193 Verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account listing landholders, mostly cleruchs, and amounts in artabas.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto unpublished.</note>
+                     <note type="local_note">1975; 1976; 3090</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -49,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -57,12 +67,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Cleruchic land taxation</term>
-               <term>
-                  <rs type="genre_form">Official accounts, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Official accounts, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

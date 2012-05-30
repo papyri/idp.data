@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1170</idno>
-            <idno type="controlno">(CU)1170</idno>
+            <idno type="controlNo">(CU)1170</idno>
+            <idno type="ddbdp">p.tebt..3.2.891</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0891</idno>
+                  <idno type="invNo">P.Tebt.0891</idno>
                </msIdentifier>
                <msContents>
                   <summary>An account, probably from the reign of Philometor, of the money spent by certain dependents or agents of a well-to-do household.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso published</note>
+                     <note type="local_note">1180</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -60,12 +70,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Household goods costs</term>
-               <term>
-                  <rs type="genre_form">Accounts, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Accounts, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

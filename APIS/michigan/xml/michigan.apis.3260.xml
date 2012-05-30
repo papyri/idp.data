@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3260</idno>
-            <idno type="controlno">(MiU)3260</idno>
+            <idno type="controlNo">(MiU)3260</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Cair. inv. JdE 57187</idno>
+                  <idno type="invNo">P.Cair. inv. JdE 57187</idno>
                </msIdentifier>
                <msContents>
                   <summary>Tax register, recording the daily collection of money taxes in the village of Karanis; the name of each tax-payer paying the poll-tax is cross-referenced with a page of another register, where taxpayers were listed geographically</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Due to the size of this tax roll (P.Mich. IV/1, 225 + IV/2, 358), its content has been divided in the present database into several cards (one for each column).</note>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto</note>
+                     <note type="related">+ P.Mich. inv. 4172; cf. also P.Mich. IV/1, 224 + IV/2, 357 (inv. 4171 + 2830 + 3159 + 4910)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -75,6 +77,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -89,19 +98,15 @@
                <term>Tax collection--Egypt--Karanis (Extinct city)</term>
                <term>Tax exemption--Egypt--Karanis (Extinct city)</term>
                <term>Karanis (Extinct city)--Defenses.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Col.) 1[73?];;(either 4th intercalary day or 4th Thoth, continued);;Kastor also called Sabinus, son of Ptolemaios and Melitous, grandson of Satabous, for ch(--): 4 drachmai;Heras, son of Petheus - (through) Beilikas - for the five-drachm tax on donkeys, for year 14,  for the maintenance work of year 12: 5 drachmai, and supplements: 2 obols. Total 5 drachmai 2 obols. (In the left margin: 4 drachmai 14 obols);Tesenouphis, son of Aiaus and Thases, grandson of Orsenouphis: 4 drachmai;Total for the day: 96 drachmai.;;On the 5th(?), similarly:;Horion, son of Heron also called Heras and Segathis, grandson of Sisois, diseased, for the guards: 5 drachmai; (and) for the guard towers: 1 drachme 4 obols. Total 6 drachmai 4 obols.;Aphrodisis, son of Petheus and Taseus, grandson of Pnepheros, for ch(--): 4 drachmai;Kanis, son of Anchophis and Taorsoraipis, grandson of Mares, over the age (of liability to the poll-tax), for the guards: 1 drachme; (and) for the guard towers: 3 drachmai. Total: 4 drachmai.;Anchophis, his son, his mother being Thermouthis, for ch(--): 4 drachmai;[Heron], son of Pekmeis also called Heuremon and Sambathion, for ch(--): 28 obols;[Maron], son of Petheus the younger and Apollonous, grandson of Anchorimphis, for ch(--): 8 drachmai;[Lucius] Longinus Gemellus, [for the third] (of the revenue) of the bath establishment, for year14: 28 drachmai including extra charges.;[Aphrodisios], son of Petheus and Stiynchis, grandson of Petesouchos, for ch(--): 8 drachmai;[Orsenouphis], son of Petheus and Tapetheus, grandson of Horion, for ch(--): 4 drachmai; (and the) remainder of ch(--);[Kastor], son of Onnophris and Tapetheus, grandson of Petheus: 12 drachmai;[Petheus], son of Kollouthos and Thaesis, grandson of Phaesis, for guards: 1 drachme; (and) for guard towers: 3 drachmai. Total: 4 drachmai.;[Heron], his son, his mother being Taorsenouphis, for ch(--): 4 drachmai;[Aunes], son of Aunes and Tapetheus, grandson of Hermas, for ch(--): 4 drachmai;[Petheus], son of Ptollis and Thases, grandson of Herakles, for ch(--): 4 drachmai;Ptolemaios, son of Petheus and Tanesneus, grandson of Petheus, for ch(--): 4 drachmai;[Phasis, son of Petheus] and Thaesis, grandson of Heras, for guards: 4 drachmai;[Pakysis, son of Phasis] and Tanomgeus, grandson of Esouris, for ch(--): 4 drachmai;[Herakles], son of Apollonios and Tapetheus, grandson of Petoraipis, for ch(--): 4 drachmai;Total for the day: 116 drachmai 10 obols.</ab>
          </div>
          <div type="bibliography" subtype="citations">

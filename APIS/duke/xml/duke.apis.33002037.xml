@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Documentary text from Egypt, written on papyrus</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 3.5 x 8.5 cm</note>
                      <note type="general">4 lines</note>
                      <note type="general">P.Duk.inv. 933 was written across the fibers on the recto</note>
                      <note type="general">Right margin of 1 cm</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, two joining fragments mounted in glass, incomplete ; 4 x 9 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, two joining fragments mounted in glass, incomplete ; 4 x 9 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -36,13 +41,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="ar-Arab">In Arabic</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Documentary papyri Egypt 640-1250</term>
                <term type="genre_form">Papyri</term>
             </keywords>

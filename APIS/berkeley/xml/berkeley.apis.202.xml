@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.202</idno>
-            <idno type="controlno">(CU)202</idno>
+            <idno type="controlNo">(CU)202</idno>
+            <idno type="ddbdp">sb.20.14141</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0628</idno>
+                  <idno type="invNo">P.Tebt.0628</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for poll tax paid by Herak( )</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1.3 cm.; left, 1.7 cm.; bottom, 4 cm.; in top left corner, in red ink, "628"; on verso, in black ink: T 568 (twice).</note>
                      <note type="general">15th year of the Emperor Antoninus Pius, 7th of the Egyptian month Mesore</note>
+                     <note type="related">written by the same hand as P.Tebt. 618, 634, and possibly P.Fay. 353</note>
+                     <note type="local_note">1483</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,19 +70,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Poll tax</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 15 of Imperator Caesar Titus Aelius Hadrianus Antoninus Augustus Pius, Mesore 7 for the account of Epeiph. Paid by Herak( ) son of Didas the son of Didas, his mother being Sarap( ), for poll-tax of the fifteenth year in the Syriake district twenty drachmas, that is, 20, with additional payments of ten bronze obols.</ab>
          </div>
          <div type="bibliography" subtype="citations">

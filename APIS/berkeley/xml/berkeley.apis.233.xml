@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.233</idno>
-            <idno type="controlno">(CU)233</idno>
+            <idno type="controlNo">(CU)233</idno>
+            <idno type="ddbdp">sb.20.15011</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.Frag.21,016</idno>
+                  <idno type="invNo">P.Tebt.Frag.21,016</idno>
                </msIdentifier>
                <msContents>
                   <summary>Conclusion of a declaration attesting the death of an unknown person.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Reign of Hadrianus</note>
+                     <note type="local_note">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -47,6 +50,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -55,20 +65,16 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Death</term>
-               <term>
-                  <rs type="genre_form">Declarations, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Declarations, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>Ö N.N., registered at the same city, died in the present month Tybi of the present year of Trajanus Hadrianus Caesar the Lord. I therefore submit the declaration so that this name may be removed and inscribed in the list of the deceased as in similar cases.</ab>
+         <div type="translation">
+            <ab>� N.N., registered at the same city, died in the present month Tybi of the present year of Trajanus Hadrianus Caesar the Lord. I therefore submit the declaration so that this name may be removed and inscribed in the list of the deceased as in similar cases.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

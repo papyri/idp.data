@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,17 +19,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Account of expenses from Panopolis (modern name: Akhmim), Egypt, written on papyrus. Includes 1,127 pounds of chaff given to Archon and various amounts of containers of wine paid to Hierax, Panodoros and Theognostos. Papyrus belongs to the archive of Ammon, the well-known scholastikos, or lawyer</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 15.4 x 10.0 cm</note>
                      <note type="general">7 lines</note>
                      <note type="general">Written along the fibers on the recto in Ammon's hand</note>
                      <note type="general">Lower margin of 8 cm.; left margin of 1 cm.; right margin of 1 cm</note>
                      <note type="general">P.Duk.inv. 197 was formerly P.Duk.inv. G 197</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, five joining fragments, mounted in glass, top is broken off ; 16 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, five joining fragments, mounted in glass, top is broken off ; 16 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Accounting -- Egypt -- Akhmim -- 30 B.C.-640 A.D.</term>
                <term>Wine and wine making -- Egypt -- Akhmim -- 30 B.C.-640 A.D.</term>
                <term type="genre_form">Documentary papyri Egypt Akhmim 30 B.C.-640 A.D</term>

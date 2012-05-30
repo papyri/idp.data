@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2282</idno>
-            <idno type="controlno">(MiU)2282</idno>
+            <idno type="controlNo">(MiU)2282</idno>
+            <idno type="ddbdp">p.mich..8.507</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4726</idno>
+                  <idno type="invNo">P.Mich.inv. 4726</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter from Artemis to Sokrates, asking him to find an ekdikos (legal representative) for her as she need to engage in a lawsuit</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">archive of the praktor Sokrates son of Sarapion</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -63,6 +66,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -72,19 +82,15 @@
             <keywords scheme="#apis">
                <term>polis (Alexandria?)</term>
                <term>Justice</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Artemis to Sokrates, greeting. Before all else I pray for your health. I arrived in the city on the 9th. I ask you, if you can, send me one of your group, since I need him to be my legal representative, for a woman is not permitted to engage in a lawsuit without a legal representative. Know that if you help me the affair will have a successful issue. In order that he may come quickly, know that if I suffer injury you are also going to be hurt, but if we win you will have the profit. We salute your mother Thatres, Achillas, Sarapion, Ptolemaios, Kastor, and Tasoucharion.  I pray for your health.;;(Verso) Deliver to . . . from Harpakysis . . . .</ab>
          </div>
          <div type="bibliography" subtype="citations">

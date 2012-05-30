@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Account of wheat from the Arsinoite Nome(?) (modern name: Fayyum), Egypt, written on papyrus. Recto has an account(?) in Greek (P.Duk.inv. 80 R (a)) that was expunged. Another account in Greek was written over the expunged text (P.Duk.inv. 80 R (b))</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 21.7 x 8.8 cm</note>
                      <note type="general">19 lines</note>
                      <note type="general">Written across the fibers on the verso; written along the fibers on the recto in different hands</note>
@@ -25,10 +26,14 @@
                      <note type="general">Extracted from mummy cartonnage</note>
                      <note type="general">P.Duk.inv. 80 V was formerly P.Duk.inv. G 80 V</note>
                      <textLang mainLang="egy">In Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, incomplete ; 22 x 9 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, incomplete ; 22 x 9 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="egy-Egyd">In Demotic</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Accounting -- Egypt -- 332-30 B.C.</term>
                <term>Wheat -- Egypt -- 332-30 B.C.</term>
                <term type="genre_form">Documentary papyri Egypt 332-30 B.C</term>

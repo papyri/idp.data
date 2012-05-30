@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1204</idno>
-            <idno type="controlno">(NNC)p1204</idno>
+            <idno type="controlNo">(NNC)p1204</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 179c (1) recto</idno>
+                  <idno type="invNo">Col. inv. 179c (1) recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>A letter or a petition; the rare word "fire-kindler" is mentioned; The text twice alludes to some kind of harassement</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; on the other side a document</note>
                      <note type="general">8 lines; broken on all sides</note>
                      <note type="general">Two interlinear addition between lines 4 and 5 and 6 and 7</note>
                      <note type="general">Dirty</note>
                      <note type="general">The hand is a sloping cursive with letters formed separately and regular interlinear spaces</note>
+                     <note type="local_note">Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

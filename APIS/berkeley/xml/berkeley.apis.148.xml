@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.148</idno>
-            <idno type="controlno">(CU)148</idno>
+            <idno type="controlNo">(CU)148</idno>
+            <idno type="ddbdp">sb.18.13118</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0598</idno>
+                  <idno type="invNo">P.Tebt.0598</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of priests of the temple of Soknebtunis, as well as an account of the corporate receipts and expenditure for taxes or religious purposes</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso unpublished</note>
                      <note type="general">Margins: top, 2.2 cm.; bottom, 2.9 cm.; in top margin, in red ink "598"; on verso, in black ink: T 188 (7 times).</note>
                      <note type="general">Priests of Soknebtunis</note>
+                     <note type="related">A similar register is P.Tebt.298</note>
+                     <note type="local_note">1472</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,12 +72,8 @@
             <keywords scheme="#apis">
                <term>Priests; Temples</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Official accounts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Official accounts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

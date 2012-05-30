@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.2569</idno>
-            <idno type="controlno">(CU)2569</idno>
+            <idno type="controlNo">(CU)2569</idno>
+            <idno type="ddbdp">o.tebt..5</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Tebt.05</idno>
+                  <idno type="invNo">O.Tebt.05</idno>
                </msIdentifier>
                <msContents>
                   <summary>Delivery of beer to Anupous, a fish-salter.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">not located 6/13/02</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -37,13 +39,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0001" notAfter="0099"/>
+                     <origDate notBefore="0001" notAfter="0099">1 CE – 99 CE</origDate>
                      <persName type="asn">Anupous</persName>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -52,19 +61,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Beer</term>
-               <term>
-                  <rs type="genre_form">Varia, Roman Period; Ostraka</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ost</rs>
-               </term>
+               <term type="genre_form">Varia, Roman Period; Ostraka</term>
+               <term type="genre_form">Ost</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Delivered to) Anupous, fish-salter, on Tubi 25, 1 jar of beer apart from those which you received which were not mine, and of which</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.143</idno>
-            <idno type="controlno">(CU)143</idno>
+            <idno type="controlNo">(CU)143</idno>
+            <idno type="ddbdp">sb.12.11041</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0586</idno>
+                  <idno type="invNo">P.Tebt.0586</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fuscus loans 84 drachmas to two persons, and agrees to accept in place of interest habitation rights in a house with courtyard</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso published.</note>
                      <note type="general">Margins: left, 2.5 cm.; bottom, 0.5 cm.; on verso, in black ink: T 192. (twice)</note>
                      <note type="general">7th year of the Emperor Tiberius</note>
-                     <textLang mainLang="egy-Egydgrcla">Greek, Demotic, Latin</textLang>
-                  </msItem>
+                     <note type="local_note">2323</note>
+                     <textLang mainLang="egy-Egyd">Greek, Demotic, Latin</textLang>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,21 +59,24 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
-            <language ident="egy-Egydgrcla">Greek, Demotic, Latin</language>
+            <language ident="egy-Egyd">Greek, Demotic, Latin</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
                <term>Loans, Personal</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Contracts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Contracts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

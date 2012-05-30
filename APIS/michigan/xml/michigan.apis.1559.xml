@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1559</idno>
-            <idno type="controlno">(MiU)1559</idno>
+            <idno type="controlNo">(MiU)1559</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1968</idno>
+                  <idno type="invNo">P.Mich.inv. 1968</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of payments made by various persons</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso bears various traces of ink, mostly on patches</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -62,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,19 +79,15 @@
             <keywords scheme="#apis">
                <term>Account</term>
                <term>Inheritance</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>From 18 golden solidi 432 keratia.;Strategios, son of Lampros: 93 1/2 keratia;Leontios, son of Lampros: 66  keratia;The heirs of Leontios, son of . . .: 44  keratia;The heirs of Philoxenos, son of Ger(--): 24 keratia;Theodoulos, stone-cutter: 22 1/2 1/4 1/8  keratia;Diogenes and Makrobios: 22 1/2 1/4 1/8  keratia;The heirs of Johannes, son of . . .: 86  keratia;Papias and Ta[- - -]: 19 1/2 1/4  keratia;The heirs of Ptoleminos: 46 1/2  keratia;Philoxenos, son of Isak: 6 1/2 1/4  keratia</ab>
          </div>
          <div type="bibliography" subtype="citations">

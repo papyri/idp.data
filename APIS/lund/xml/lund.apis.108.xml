@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,16 +19,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Holy animals in Egypt</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Source of description: Recto with parts of three columns written with the fibres; Verso blank</note>
                      <note type="general">101 a: col. I 2 lines; col. II 26 lines; col. III 26 lines; col. IV 14 lines; 101 b: col. V 13 lines; col. VI 14 lines</note>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">Mentions the holy bulls Apis, Mneuis and Bouchis and the geographical name Pesogis</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 101 a 31.6 x 20.0 cm; 101 b 22.8 x 19.9 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 101 a 31.6 x 20.0 cm; 101 b 22.8 x 19.9 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -41,13 +46,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
                <term type="genre_form">Oaths</term>
                <term type="genre_form">Holy animals</term>

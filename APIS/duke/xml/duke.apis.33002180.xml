@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,17 +19,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Census declaration from Egypt, written on papyrus. Written to Aurelios Kronion by Orsenouphis from Tanis in the Arsinoite Nome. The declaration is made in answer to an edict of a former praefectus Aegypti or prefect of Egypt and may include tenants. Verso has a literary text with Homer's Iliad, Book 1, 528-540</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 8.0 x 4.2 cm</note>
                      <note type="general">9 lines</note>
                      <note type="general">Written along the fibers on the recto; written across the fibers on the verso in a different hand</note>
                      <note type="general">Upper margin of 1 cm.; left margin of 0.5 cm</note>
                      <note type="general">P.Duk.inv. 971 R was formerly P.Duk.inv. S73 5</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, incomplete ; 8 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, incomplete ; 8 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Recording and registration -- Egypt -- 30 B.C.-640 A.D.</term>
                <term>Landlord and tenant -- Egypt -- 30 B.C.-640 A.D.</term>
                <term type="genre_form">Documentary papyri Egypt 30 B.C.-640 A.D</term>

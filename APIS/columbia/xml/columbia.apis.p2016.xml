@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p2016</idno>
-            <idno type="controlno">(NNC)p2016</idno>
+            <idno type="controlNo">(NNC)p2016</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 676</idno>
+                  <idno type="invNo">Col.inv. 676</idno>
                </msIdentifier>
                <msContents>
                   <summary>Because of the format these may be verses from Qur'an, last 5-6 words of each line only</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">On one side 8 lines of writing; the other is blank; large careful formation of each letter</note>
                      <note type="general">The left margin only and probably only the left half of page are preserved</note>
                      <note type="general">Circles with slash through at the end of every other line; fully pointed text</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,12 +58,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Koran</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

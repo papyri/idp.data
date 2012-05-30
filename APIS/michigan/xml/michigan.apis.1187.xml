@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1187</idno>
-            <idno type="controlno">(MiU)1187</idno>
+            <idno type="controlNo">(MiU)1187</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Skeat 14</idno>
+                  <idno type="invNo">O.Skeat 14</idno>
                </msIdentifier>
                <msContents>
                   <summary>This ostrakon contains the last two lines of a strophe in honor of Christ and the first five lines of a theotokion.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -63,19 +72,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">literary; Christian</rs>
-               </term>
+               <term type="genre_form">Ostracon</term>
+               <term type="genre_form">literary; Christian</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>[text is too fragmentary for a translation]</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -16,14 +17,18 @@
                   <idno type="invNo">P. Lund. inv. 2028</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Former shelfmark or inv. no.: A IV 53 R - e (in pencil on old paper wrapping)</note>
                      <note type="general">Publication status: Assigned to Kim Ryholt, Copenhagen</note>
                      <textLang mainLang="grc" otherLangs="egy-Egyd">Greek (recto); Demotic (verso)</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 3.5 x 10.6 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 3.5 x 10.6 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -37,6 +42,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -44,7 +56,7 @@
             <language ident="egy-Egyd">Demotic (verso)</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>

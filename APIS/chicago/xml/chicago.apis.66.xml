@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.66</idno>
-            <idno type="controlno">(ICU)66</idno>
+            <idno type="controlNo">(ICU)66</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 27</idno>
+                  <idno type="invNo">O.Medin.HabuDem 27</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Number 27 in Lichtheim&amp;apos;s publication.  Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 27 in Lichtheim's publication.  Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +51,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -57,19 +65,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 4516, recto: (1) Horus, son of Harsiesis, son of Horus, has paid to the bank (2) of the northern houses for (3) the silver of poll of year 29, among the men of (4) Pamonthes, son of Paeris, 4 staters. Written in year 29, (5) Epiphi 11.</ab>
          </div>
          <div type="bibliography" subtype="citations">

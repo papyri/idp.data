@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1020</idno>
-            <idno type="controlno">(CU)1020</idno>
+            <idno type="controlNo">(CU)1020</idno>
+            <idno type="ddbdp">p.tebt..3.1.795</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0795</idno>
+                  <idno type="invNo">P.Tebt.0795</idno>
                </msIdentifier>
                <msContents>
                   <summary>Athenodora informs the archiphylakites that her house had been entered in her absence.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso published.</note>
                      <note type="general">Margins: top, 3.8 cm.; left, 1.6 cm.; right, 0.4 cm.</note>
+                     <note type="local_note">2155</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +72,15 @@
             <keywords scheme="#apis">
                <term>Burglary</term>
                <term>Krokodilon polis</term>
-               <term>
-                  <rs type="genre_form">Business letters, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The .. year, Thoth 2. Notification to Dioskourides, chief of the guard of Krokodilon polis and the associated districts, from Athenodora daughter of Hestiodoros. On the 2nd of the above month, after I had shut the door of the men's apartments and the staircase and the yard-doors of my house, which is in the said city near the so-called courthouse of the laokritai, and had gone out to the bath ... (Here the papyrus breaks off.)</ab>
          </div>
          <div type="bibliography" subtype="citations">

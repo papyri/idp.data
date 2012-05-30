@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p650</idno>
-            <idno type="controlno">(NNC)aaa3826</idno>
+            <idno type="controlNo">(NNC)aaa3826</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 119a verso</idno>
+                  <idno type="invNo">Col. inv. 119a verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account including the month of Phaophi.  Mentions the names Hierax son of Isidoros, Papaios (twice), Tollas and Leonos</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the recto, a document, faded and effaced</note>
                      <note type="general">17 lines; broken except at left</note>
                      <note type="general">The hand is a clear semi-cursive</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0001" notAfter="0099"/>
+                     <origDate notBefore="0001" notAfter="0099">1 CE – 99 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. III.46 in Bell's inventory</p>
@@ -42,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +57,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

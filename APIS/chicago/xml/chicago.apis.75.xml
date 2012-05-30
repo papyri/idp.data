@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.75</idno>
-            <idno type="controlno">(ICU)75</idno>
+            <idno type="controlNo">(ICU)75</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 36</idno>
+                  <idno type="invNo">O.Medin.HabuDem 36</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Number 36 in Lichtheim&amp;apos;s publication.  Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 36 in Lichtheim's publication.  Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -49,6 +50,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -56,19 +64,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 4082, recto: (1) Psemmonthes, son of Pasemis, son of [Meswer] has paid to the bank (2) [of] the nothern houses for the bath (tax) of year 36, (3) 1 kite / 1/2 kite / 1 kite again. Written in year 37, Mechir 14.</ab>
          </div>
          <div type="bibliography" subtype="citations">

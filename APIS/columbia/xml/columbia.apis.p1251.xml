@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1251</idno>
-            <idno type="controlno">(NNC)aaa4200</idno>
+            <idno type="controlNo">(NNC)aaa4200</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 190b</idno>
+                  <idno type="invNo">Col. inv. 190b</idno>
                </msIdentifier>
                <msContents>
                   <summary>Lease of an olive yard situated around Hephaistias; it specifies the amount of the payment. One of the parties is Markos Antonios Apros</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written with the fibers; back blank</note>
                      <note type="general">8 lines; broken top and bottom</note>
                      <note type="general">Some dark staining</note>
                      <note type="general">Iota adscript marked</note>
                      <note type="general">The hand is a fluent and somewhat elegant cursive with some serifs particularly on the letter N</note>
+                     <note type="local_note">Suit advanced student but quite small Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -35,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0094" notAfter="0095"/>
+                     <origDate notBefore="0094" notAfter="0095">94 CE – 95 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. XVIII.35 in Bell's inventory</p>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -52,9 +61,7 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Lease</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

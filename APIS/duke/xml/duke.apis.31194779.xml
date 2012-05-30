@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus painting on a strip of mummy cartonnage from the Arsinoites(?) (modern name: Fayyum), Egypt. Has representations of the four sons of Horus as canopic gods</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Dimensions of fragments are 24.8 x 15.7 cm. or smaller</note>
                      <note type="general">Painted along the fibers on the recto</note>
                      <note type="general">Extracted from mummy cartonnage with P.Duk.inv. 589-597</note>
                      <note type="general">P.Duk.inv. 588 (b) was formerly P.Duk.inv. 71 0 and P.Duk.inv. 71 1</note>
                      <textLang mainLang="und"/>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, two large fragments which do not join, covered with blue, red and black paint, mounted in two frames of glass</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, two large fragments which do not join, covered with blue, red and black paint, mounted in two frames of glass</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -36,12 +41,19 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Gods, Egyptian -- Art -- 332-30 B.C.</term>
                <term>Funeral rites and ceremonies, Ancient -- Egypt -- 332-30 B.C.</term>
                <term type="genre_form">Subliterary papyri Egypt 332-30 B.C</term>

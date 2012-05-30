@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.108</idno>
-            <idno type="controlno">(ICU)108</idno>
+            <idno type="controlNo">(ICU)108</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 69</idno>
+                  <idno type="invNo">O.Medin.HabuDem 69</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued by the royal granary</summary>
-                  <msItem>
-                     <note type="general">Number 69 in Lichtheim&amp;apos;s publication. Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 69 in Lichtheim's publication. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -58,19 +66,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 4013, recto: (1) Paeris, son of Psenamounis, has paid to (2) the granary of the northern houses in year 10, (3) [3] 1/8 (artabas of) wheat / 1 1/2 1/24 (artabas of) wheat / 3 1/8 (artabas of) wheat again, (4) [by the] measure of the oipe, without [extra charge]. (5) [Written] in year 10 of Tiberius (6) [Caesar] Augustus, Payni 20.</ab>
          </div>
          <div type="bibliography" subtype="citations">

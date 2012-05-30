@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2114</idno>
-            <idno type="controlno">(MiU)2114</idno>
+            <idno type="controlNo">(MiU)2114</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3789</idno>
+                  <idno type="invNo">P.Mich.inv. 3789</idno>
                </msIdentifier>
                <msContents>
                   <summary>Medical prescriptions. Separation of the individual recipres by spaces about one line in height. The text was probably copied for the particular use of its owner.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Verso; Recto is unpublished</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -63,21 +71,17 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Medicine--Formulae, receipts, prescriptions--Egypt.</term>
-               <term>Bahnas√Øa (Egypt)</term>
+               <term>Bahnasïa (Egypt)</term>
                <term>Medicine, Greek and Roman.</term>
-               <term>
-                  <rs type="genre_form">Literary; subliterary; medical</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary; subliterary; medical</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>] of terebinth-tree [;]double, aromatic made of iris [;;] must of old (?)  Italian wine [;] Celtic nard, marjoram [;] double, of the terebinth-tree, the same [;of the sea, aromatic made with the leaf of albiflorum [;;]wild rue, crude sulfur [;bark of royal (?) cypress [;] of the terebinth-tree the same, pitch [;straining. apply as poultice;;]for the previous condition [</ab>
          </div>
          <div type="bibliography" subtype="citations">

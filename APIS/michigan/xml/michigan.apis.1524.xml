@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1524</idno>
-            <idno type="controlno">(MiU)1524</idno>
+            <idno type="controlNo">(MiU)1524</idno>
+            <idno type="ddbdp">p.mich..12.628</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 178</idno>
+                  <idno type="invNo">P.Mich.inv. 178</idno>
                </msIdentifier>
                <msContents>
                   <summary>Request made by Onesimos, son of Amerimnos, to the superintendents of the pig tax, for the right to sell and pickle meat in the villages of Theadelphia and Argias; the concession is to last one year, with the rental fixed at 600 drachmai</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -60,6 +62,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -72,19 +81,15 @@
                <term>Monopoly</term>
                <term>Profession</term>
                <term>Kharabat Ihrit (Egypt)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Heroninos, Chaireas, and the other superintendents of the pig tax, from Onesimos, son of Amerimnos and grandson of Alkimos, of the Gymnasium quarter. I wish to be granted by you the right to sell and pickle meat in the villages of Theadelphia and Argias for the present 24th year . . ., on condition that I pay as rent for the year six hundred drachmai of silver, the payment of which I will make monthly in equal instalments. It will not be permissible for me to sublease to another butcher, and, apart from paying rent (?), I will have with me one young man, if it appears advisable to grant the concession.;(2nd hand) I, Heroninos, have received a copy of this application. (3rd hand) I, Didymos, acting through Zoilos, have received a copy of this application.;(1st hand) Year 24 of Aurelius Commodus Antoninus Caesar the lord, Phaophi 15.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.812</idno>
-            <idno type="controlno">(CU)812</idno>
+            <idno type="controlNo">(CU)812</idno>
+            <idno type="ddbdp">p.tebt..2.489</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0489 Verso</idno>
+                  <idno type="invNo">P.Tebt.0489 Verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>Proceedings of a lawsuit between Onnophris and Paopis about the sale of a pastophorion.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto: unpublished</note>
                      <note type="general">Margins: top, 1.5 cm.; left, 1.8 cm.; right, 0.7 cm. In red ink in upper left corner: 489; on recto, in black ink: T106.</note>
                      <note type="general">11th year of the Emperor Hadrianus, 19th of the Egyptian month Tybi.</note>
                      <note type="general">Priests of Soknebtunis</note>
+                     <note type="local_note">1441</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,12 +74,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Trials</term>
-               <term>
-                  <rs type="genre_form">Official legal documents, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Official legal documents, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

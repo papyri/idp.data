@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.110</idno>
-            <idno type="controlno">(NNC)aaa0280</idno>
+            <idno type="controlNo">(NNC)aaa0280</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Col.inv. 110 (acc. 7.14)</idno>
+                  <idno type="invNo">O.Col.inv. 110 (acc. 7.14)</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">7 lines of writing on the front, somewhat faded; back blank</note>
                      <note type="general">incomplete on every side</note>
                      <note type="general">the hand is ligatured and fast</note>
                      <note type="general">penciled F in the back</note>
                      <textLang mainLang="grc">in Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0001" notAfter="0399"/>
+                     <origDate notBefore="0001" notAfter="0399">1 CE – 399 CE</origDate>
                   </origin>
                   <provenance>
                      <p>from Oxyrhynchus. Gift of The Egypt Exploration Fund in 1897 to the Metropolitan Museum, MMA inv. 97.4.28.  Sold to Columbia University in 1958</p>
@@ -42,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,12 +57,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraca</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Ostraca</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

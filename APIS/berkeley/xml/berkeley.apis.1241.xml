@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1241</idno>
-            <idno type="controlno">(CU)1241</idno>
+            <idno type="controlNo">(CU)1241</idno>
+            <idno type="ddbdp">sb.18.13976</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0670</idno>
+                  <idno type="invNo">P.Tebt.0670</idno>
                </msIdentifier>
                <msContents>
                   <summary>Certificate of five days labor for dike corvee.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: left, 0.6 cm.; bottom, 1 cm. In red ink lower right corner: 670. In black ink on verso: T636.</note>
+                     <note type="local_note">1488</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +71,15 @@
             <keywords scheme="#apis">
                <term>Dikes (Engineering)</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Certificates</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Certificates</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>... Of the same xxth year, from Epeiph 20 to 24 in (name of canal) (2nd hand) on behalf of Tebtunis, Kronion son of Tephorsos for Kerdon, slave of Paulinus. (3rd hand) I, Marion, have signed.</ab>
          </div>
          <div type="bibliography" subtype="citations">

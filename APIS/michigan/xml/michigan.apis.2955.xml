@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2955</idno>
-            <idno type="controlno">(MiU)2955</idno>
+            <idno type="controlNo">(MiU)2955</idno>
+            <idno type="ddbdp">sb.6.9435</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6833</idno>
+                  <idno type="invNo">P.Mich.inv. 6833</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for catoecic dues paid by Amasis son of Pasoxis</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +74,15 @@
                <term>Karanis; Kerkesoucha</term>
                <term>Agriculture--Taxation--Egypt--Karanis (Extinct city)</term>
                <term>Agriculture--Taxation--Egypt--Kerkesoucha Orous (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The ninth year of the Emperor Caesar Titus Aelius Hadrianus Antoninus Augustus Pius, Mesore 12. We, Didymos and his associates in the allotment of the sitologia of Karanis, have received from the crops of the same year by levelled public measure . . . to the account of Amasis, son of Pasoxis, for catoecic dues of Kerkesoucha, one and one-twelfth artabai of wheat, equal 1 1/12 artabai of wheat, and the extra charges.</ab>
          </div>
          <div type="bibliography" subtype="citations">

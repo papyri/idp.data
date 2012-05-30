@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,19 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.57</idno>
-            <idno type="controlno">(PU) 57</idno>
+            <idno type="controlNo">(PU) 57</idno>
+            <idno type="ddbdp">p.oxy..3.531</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv.E02805</idno>
+                  <idno type="invNo">P.Penn. Museum inv.E02805</idno>
                </msIdentifier>
                <msContents>
                   <summary>A letter from a father to his son, giving him good advice, and announcing the dispatch of clothes and money. (Grenfell &amp; Hunt)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text is written on both sides, 29 lines written with the fibers as the main text and one line written with the fibers, perpendicular to the main text, on the reverse.  All margins are intact.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology collection</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -58,22 +68,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">letter</rs>
-               </term>
+               <term type="genre_form">papyrus</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">letter</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Cornelius to his sweetest son, Hierax, greeting.  All our household warmly salutes you and all those with you.  Regarding the man about whom you write to me so often, claim nothing until I come to you auspiciously in company with Vestinus and the donkeys.  For if the gods will I shall arrive quickly  after Mecheir is over, since at present I have urgent affairs on hand.  Take care not to offend any of the persons at home, and give your undivided attention to your books, devoting yourself to learning, and then they will bring you profit.  Receive by Onnophris the white robes which are to be worn with the purple cloaks, the others you should wear with the myrtle-colored(?) ones.  I shall send you by Anoubas both the money and the monthly supplies and the other pair of scarlet cloaks.  You won me over by the dainties, and I will send you the price of these too by Anoubas; until however Anoubas arrives, you must pay for the provisions of yourself and your household out of your own money, until I send you some.  For the month of Tubi there is for yourself what you like, for Phronimus 16 drachmae, for Abascantus and his companions and Myron 9 drachmae, for Secundus 12 drachmae.  Send Phronimus to Asclepiades in my name, and let him obtain from him an answer to the letter which I wrote to him, and send it.  Let me know what you want.  Good-bye, my son.  Tubi 16. (Addressed) To my son Hierax from his father Cornelius. (Grenfell &amp; Hunt)</ab>
          </div>
          <div type="bibliography" subtype="citations">

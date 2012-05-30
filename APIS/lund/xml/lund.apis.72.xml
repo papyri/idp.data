@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Probably fragments of official documents</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto with the fibres, 65 a: 4 fragmentary lines; 65 b: 5 fragmentary lines; 65 c: 7 fragmentary lines; 65 d: first left letters of 13 lines; Verso blank</note>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">Former shelfmarks or inv. nos. (in pencil on old glass frames): 65a: A I  42 R a; 65b: A I  37 R c; 65c: A IV  65 R c; 65d: A I  41 R b</note>
                      <note type="general">4 fragments not belonging together</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 65 a 13.6 x 10. 0 cm; 65 b 6.9 x 8.4 cm; 65 c 6.2 x 14.4 cm; 65 d 6.1 x 11.3 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 65 a 13.6 x 10. 0 cm; 65 b 6.9 x 8.4 cm; 65 c 6.2 x 14.4 cm; 65 d 6.1 x 11.3 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -40,13 +45,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
                <term type="genre_form">Documentary</term>
             </keywords>

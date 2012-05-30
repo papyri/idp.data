@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.122</idno>
-            <idno type="controlno">(ICU)122</idno>
+            <idno type="controlNo">(ICU)122</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 83</idno>
+                  <idno type="invNo">O.Medin.HabuDem 83</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued by the granary of the god</summary>
-                  <msItem>
-                     <note type="general">Number 83 in Lichtheim&amp;apos;s publication. Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 83 in Lichtheim's publication. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,19 +67,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Jeme</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 2632, recto: (1) Pasemis, son of Pamonthes, son of [Meswer], has paid (2) to the granary for field of god in Jeme (3) in year 30, 3 (artabas of) wheat / 1 1/2 (artabas of) wheat / 3 (artabas of) wheat again. They are received. (4) Signed, Stotoetis, son of Petemonthes, in (5) year 30, Payni 20.</ab>
          </div>
          <div type="bibliography" subtype="citations">

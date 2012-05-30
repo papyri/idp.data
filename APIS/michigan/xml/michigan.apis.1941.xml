@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1941</idno>
-            <idno type="controlno">(MiU)1941</idno>
+            <idno type="controlNo">(MiU)1941</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3319</idno>
+                  <idno type="invNo">P.Mich.inv. 3319</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payment of money and order for payment of wine, both addressed to the same man, perhaps named Georgios; both texts were made invalid by drawing diagonal lines through them</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (written across the fibres); Verso: two lines of shorthand</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +75,15 @@
                <term>Wine and wine making--Egypt.</term>
                <term>Receipts (Acknowledgements)--Egypt.</term>
                <term>Weights and measures--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto, lines 1- 6) [- - -] the lord Georgios(?) - - - of Ales. You have given [- - -] of the current ninth indiction [four] gold [solidi minus eleven keratia], total 4 gold sol. minus 11 ker. with the scales of Antinoou (polis) and for your [security I have drawn up this declaration with] my [subscription] as stated above. Written on the 28th of Tybi [of the 9th indiction. (2nd hand) - - -] of four solidi minus [eleven] keratia [- - -] as stated above.</ab>
          </div>
          <div type="bibliography" subtype="citations">

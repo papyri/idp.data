@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.863</idno>
-            <idno type="controlno">(MiU)863</idno>
+            <idno type="controlNo">(MiU)863</idno>
+            <idno type="ddbdp">o.mich..3.1036</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 9464</idno>
+                  <idno type="invNo">O.Mich.inv. 9464</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of men, concerning work on the embankments</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">+ O. Mich. Inv. 9448 (yet unpublished); archive of Palemon son of Ptollas (&amp; family) (?)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -62,6 +65,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,24 +81,20 @@
             <keywords scheme="#apis">
                <term>(Argaitis?) phiale (canal)</term>
                <term>Irrigation engineering--Egypt..</term>
-               <term>Corv»®e;vRegisters--Egypt.</term>
+               <term>CorvȨe;vRegisters--Egypt.</term>
                <term>Fatherless families--Rome.</term>
                <term>Dikes (Engineering)--Egypt.</term>
                <term>Embankments--Egypt.</term>
                <term>Women--Taxation--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>- - - - - -;Serenus son of Dioskoros;Mimos(?) son of the same;;- - -  son of Neilos;                          On the (Argaitis?) phiale.;Pallas;;Palemon son of Tiouk ;;Anamoun;;Apalysa(?);;Isidoros son of Heras;;Padeukis son of Atisios.</ab>
          </div>
          <div type="bibliography" subtype="citations">

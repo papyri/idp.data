@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,18 +9,18 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">yale.apis.4400280000</idno>
-            <idno type="controlno">(CtY)DP 28 qua</idno>
+            <idno type="controlNo">(CtY)DP 28 qua</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.CtYBR inv.DP 28 qua</idno>
+                  <idno type="invNo">P.CtYBR inv.DP 28 qua</idno>
                </msIdentifier>
                <msContents>
                   <summary>Correspondence with other units and lower ranking civilian officials  [CBW]</summary>
-                  <msItem>
+                  <msItemStruct>
                      <textLang mainLang="la">LatinGreek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -30,26 +31,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0210" notAfter="0220"/>
+                     <origDate notBefore="0210" notAfter="0220">210 CE – 220 CE</origDate>
                      <origPlace>Dura-Europos</origPlace>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
-            <language ident="grcla">LatinGreek</language>
+            <language ident="grc">LatinGreek</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri, fragments</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Letter</rs>
-               </term>
+               <term type="genre_form">Papyri, fragments</term>
+               <term type="genre_form">Letter</term>
             </keywords>
          </textClass>
       </profileDesc>

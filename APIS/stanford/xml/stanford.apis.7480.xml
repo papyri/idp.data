@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,19 +10,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">stanford.apis.7480</idno>
-            <idno type="controlno">(CU)7480</idno>
+            <idno type="controlNo">(CU)7480</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Stan.Class.05</idno>
+                  <idno type="invNo">P.Stan.Class.05</idno>
                </msIdentifier>
                <msContents>
                   <summary>Petition to the Oikonomos</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Kollesis near right edge</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +51,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -58,12 +66,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Mouchis</term>
-               <term>
-                  <rs type="genre_form">Petitions, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Petitions, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2187</idno>
-            <idno type="controlno">(MiU)2187</idno>
+            <idno type="controlNo">(MiU)2187</idno>
+            <idno type="ddbdp">sb..16.12620</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 431</idno>
+                  <idno type="invNo">P.Mich.inv. 431</idno>
                </msIdentifier>
                <msContents>
                   <summary>This papyrus contains the ending of a letter sent by a Christian to his relatives. The content of the letter cannot be established on the basis of this surviving part, although the second line suggests that at least a section of the letter was concerned with farming tools.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +76,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto): ". . . In the matter of the iron, show courage. Give hearty salutations from me to the mother of Komon. And since there is need of it for the fields, do not neglect it. I salute repeatedly Nonna together  with her daughter the nun. I pray for your good health, my lord brother.";(Verso): " Deliver to Agathinos."</ab>
          </div>
          <div type="bibliography" subtype="citations">

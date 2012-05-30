@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.106</idno>
-            <idno type="controlno">(ICU)106</idno>
+            <idno type="controlNo">(ICU)106</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 67</idno>
+                  <idno type="invNo">O.Medin.HabuDem 67</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued by the royal granary</summary>
-                  <msItem>
-                     <note type="general">Number 67 in Lichtheim&amp;apos;s publication. Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 67 in Lichtheim's publication. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -60,19 +68,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 71, recto: (1) Senpamonthes, daughter of Harsiesis, has paid to (2) the granary in year 24, through Phthoumonthes, (3) son of Khonstefnakhte, 1 1/8 (artabas of) wheat / (4) 1/2 1/24 1/48 / 1 1/8 (artabas of) wheat again. They are received. (5) Signed, Pamonthes, son of -----, in year 24, (6) Payni 22. (7) Signed, Plenios, son of Kalasiris, in year 24, Payni 22. (8) -----.</ab>
          </div>
          <div type="bibliography" subtype="citations">

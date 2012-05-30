@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p869</idno>
-            <idno type="controlno">(NjP)apis.p0869</idno>
+            <idno type="controlNo">(NjP)apis.p0869</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. AM 13456 V C recto</idno>
+                  <idno type="invNo">Princ. inv. AM 13456 V C recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Document containing bismillahi and pious formulae; mentions a deacon</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the verso, a document</note>
                      <note type="general">2 lines</note>
+                     <note type="local_note">Arabic small flat box 1</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -30,10 +32,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="0718" notAfter="0915">718 CE – 915 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -41,9 +54,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

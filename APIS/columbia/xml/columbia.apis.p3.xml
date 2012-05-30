@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p3</idno>
-            <idno type="controlno">(NNC)aaa1315</idno>
+            <idno type="controlNo">(NNC)aaa1315</idno>
+            <idno type="ddbdp">p.col..3.4</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 212</idno>
+                  <idno type="invNo">Col.inv. 212</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account of distribution of papyrus rolls, kept for an official in the retinue of Apollonios; it covers the distribution of papyrus for 3 months, when Zenon was on tour with Apollonios; the total of rolls used is 434 in 33 days</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Incomplete on the top and bottom; left and right margins preserved</note>
                      <note type="general">2 cols. on recto, along the fibers with 34 lines of writing; 1 col. on verso, across the fibers, with 14 lines</note>
                      <note type="general">At the right side of the verso a brief col. of accountant's figures</note>
                      <note type="general">Irregular practiced hand, with deletions, corrections, and insertions</note>
                      <note type="general">On the verso, written in reverse direction by a different hand, P.Col. III 4a</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -35,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="-0258" notAfter="-0257"/>
+                     <origDate notBefore="-0258" notAfter="-0257">258 BCE – 257 BCE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman and New York dealer J. Brummer, through H.I. Bell, November 1925; no. 9 (original no. 107) in Bell's inventory</p>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -57,16 +66,14 @@
                <term>Diskos, -- Pap.Lugd.Bat. XXI, p. 320.</term>
                <term>Artemon, -- 1 in Pap.Lugd.Bat. XXI, p. 303</term>
                <term>Papyrus cost and quantity necessary for official businness</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Col. I  		 - - - - - - - - - - - - - - - - - - - - - - - -     		 (20(?) Bundles of sheets (?) 					20)   Panemos 	21 Purchased through Diskos					50 rolls  			 From these [there were issued):  	  		To Demetrios for the accounting office 			10  		 22 	To Artemon						4  			To Sotairon						4  		 24 	To Pyron, designated for the daily accounts 		1 roll  		 25 	To Demetrios, for the (accounting office) of Nikanor 	10 rolls  		 27 	To Peisikles, for wrappers for flax 			1/2 roll  			 - - - - - - - - - - - - - - - - - - - - - - -		1/2  		28 	To Pyron, (designated for the daily accounts)		1 roll  		29 	To Demetrios, for the accounting office of Nikanor	10  Loios		 3 	To Pyron, for the assignment list of olive oil 		1 roll   			To Demetrios, for the accounting office			5  			 - - - - - - - - - - - - - - - - - - - - - - -		2  			 - - - - - - - - - - - - - - - - - - - - - - - -	-- rolls      Col. II  		 - - - - - - - - - - - - - - - - - - - - - - -      			(Purchased through) Charmos 					20 rolls   			Of these Demetrios has received for the accounting   				 office 						18  			To Pyron 							2   					Total 						20  		11 	To Demetrios, for the accounting office 			10   		15 	To Demetrios							10  		16 	To Pyron 							11   			To Artemon 							10   		17 	To Demetrios, for the (accounting office)			10   		18 	To Demetrios, for 						10  		19 	To Demetrios 							10  			To Artemon 							10   					 Total 						91 rolls   		20 	To Demetrios, for the accounting office 			(20)  			To Artemon 							10  		21 	To Demetrios 							10  			To Artemon 							10  		2- 	To Demetrios							20   			To Demetrios 							20   			To Artemon 							10   					Total 						191 rolls   		[?]	60 rolls were purchased through - - - at 3 1/2 obols,  				Total 35 [drachmas]   		--	Artemon 							10     Col. III  		 ------------------------------  			 Artemon 							(10)  		30 	To Demetrios, those bought through   				Charmos, designated for Nikanor 			20  			 To Artemon 							10   Gorpiaios 	1 	To Demetrios, designated for Nikanor	 			10  			To Pyron 							1  		2	To Demetrios 							20  			To Artemon 							10  											10  		3 	To Demetrios 							20   			To Artemon 							10   		4 	To Demetrios							(10)   			To --- los 							1   			To Pyron 							2   		5 	To Artemidoros, writing memoranda(?) for Demetrios 		10</ab>
          </div>
          <div type="bibliography" subtype="citations">

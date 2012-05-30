@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,28 +9,30 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1499</idno>
-            <idno type="controlno">(CU)1499</idno>
+            <idno type="controlNo">(CU)1499</idno>
+            <idno type="ddbdp">p.tebt..3.1.815</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0815 UnId. Frags.</idno>
+                  <idno type="invNo">P.Tebt.0815 UnId. Frags.</idno>
                </msIdentifier>
                <msContents>
                   <summary>Example of a collection of abstracts of contracts, compiled at local records office, in Ptolemaic times, most apparently refering to the 125th-26th year of Euergetes I. Also included ar leases of cleruchic land in the division of Themistes, abstracts of loans, short accounts, dowries and marriage contracts, sales of fruit and grape gardens, vineyards.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso unpublished</note>
                      <note type="general">Margins: top, 1.1 cm.; bottom, 0.2 cm.</note>
+                     <note type="local_note">1030, 1031, 1032, 2030, 2031, 2032, 2034, 2035, 2036, 2037, 2038, 2039</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>33 papyri ; 32.3 x 15.4 cm. or smaller.</support>
                         <condition>
-                           <ab type="preservation">On some of the fragments the writing is much effaced.</ab>
                            <ab type="conservation">OUT TO CONSERVATION 08/17/05 PJR.</ab>
+                           <ab type="preservation">On some of the fragments the writing is much effaced.</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -54,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -63,12 +73,8 @@
             <keywords scheme="#apis">
                <term>Loans; cleruchic land; Acounting; Dowry; Marriage; Fruit; Grapes; Vineyards</term>
                <term>Themistou meris</term>
-               <term>
-                  <rs type="genre_form">Registers, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Registers, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

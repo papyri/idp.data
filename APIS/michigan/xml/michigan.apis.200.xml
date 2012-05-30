@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.200</idno>
-            <idno type="controlno">(MiU)200</idno>
+            <idno type="controlNo">(MiU)200</idno>
+            <idno type="ddbdp">o.mich..1.248</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4355</idno>
+                  <idno type="invNo">O.Mich.inv. 4355</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account of wine delivered by several people</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -70,19 +79,15 @@
                <term>650: Accounts--Egypt--Karanis (Extinct city)</term>
                <term>Quality of products--Egypt--Karanis (Extinct city)</term>
                <term>Weights and measures, Ancient.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Account of poor wine:;From Paesis, son of Pathermouthis: 10 knidia;From Heron, son of Aponieus: 20 knidia;From Isis: 13;Melas, son of Eudaimon: 1;Orsenouphis, son of Sarapion: 1;Kopres, son of Papos: 1;Moros, the priest: 1</ab>
          </div>
          <div type="bibliography" subtype="citations">

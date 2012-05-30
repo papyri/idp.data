@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,14 +18,18 @@
                </msIdentifier>
                <msContents>
                   <summary>Greek-Latin glossary of animal names</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">Former shelfmark or inv. no.: Chur 32 R a (in pencil on old glass frame)</note>
-                     <textLang mainLang="grc" otherLangs="grcla">Greek; Latin (in Greek letters)</textLang>
-                  </msItem>
+                     <textLang mainLang="grc" otherLangs="grc">Greek; Latin (in Greek letters)</textLang>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 109 a 4.3 x 8.2 cm; 109 b 5.7 x 7.6 cm; Wifstr. 5.5 x 7 &amp; 3.5 x 8 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 109 a 4.3 x 8.2 cm; 109 b 5.7 x 7.6 cm; Wifstr. 5.5 x 7 &amp; 3.5 x 8 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,14 +43,21 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
-            <language ident="grcla">Latin (in Greek letters)</language>
+            <language ident="grc">Latin (in Greek letters)</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
                <term type="genre_form">Glossary</term>
                <term type="genre_form">Bilingual</term>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.87</idno>
-            <idno type="controlno">(CU)87</idno>
+            <idno type="controlNo">(CU)87</idno>
+            <idno type="ddbdp">sb.12.10954</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0632</idno>
+                  <idno type="invNo">P.Tebt.0632</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payment of poll tax by Petermouthis</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1.7 cm.; left, 0.6 cm.; right, 1 cm.; bottom, 3.8 cm.; in lower right margin, in red ink "632"; on verso, in black ink: T 494.</note>
                      <note type="general">21st year of the Emperor Commodus, 12th of the Egyptian month Payni</note>
+                     <note type="local_note">1484</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +71,15 @@
             <keywords scheme="#apis">
                <term>Poll tax</term>
                <term>Linypheion (Arsinoe)</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 21 of Marcus Aurelius Commodus Antoninus Augustus, Payni 12, for the account of Pachon. Paid by Petermouthis son of Kronion the son of Mystharion, his mother being Eudaimonis, for poll tax of year twenty-one, for the Linypheion quarter, twenty dr., total 20, plus ten obols for supplementary fees.</ab>
          </div>
          <div type="bibliography" subtype="citations">

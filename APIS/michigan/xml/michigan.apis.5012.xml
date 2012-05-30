@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.5012</idno>
-            <idno type="controlno">(MiU)5012</idno>
+            <idno type="controlNo">(MiU)5012</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 201</idno>
+                  <idno type="invNo">P.Mich.inv. 201</idno>
                </msIdentifier>
                <msContents>
                   <summary>Two words "paideias" and "amfideksious"</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: under research; contact institution</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -40,12 +41,11 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <p>Medium to large sized letters, upright . Phi&amp;apos;s vertical is long. E is rounded. Top margin is 4 cm</p>
+                     <p>Medium to large sized letters, upright . Phi's vertical is long. E is rounded. Top margin is 4 cm</p>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     
                      <origPlace>Unknown</origPlace>
                   </origin>
                   <provenance>
@@ -55,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,12 +69,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Literary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

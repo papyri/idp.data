@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,18 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p755</idno>
-            <idno type="controlno">(NjP)apis.p0755</idno>
+            <idno type="controlNo">(NjP)apis.p0755</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. AM 22087</idno>
+                  <idno type="invNo">Princ. inv. AM 22087</idno>
                </msIdentifier>
                <msContents>
                   <summary>Saite recension of the Book of the Dead, chapters 45 to end; owner's name is Hekaemsaf, "overseer of the royal ships," and his mother is Tinetmehenet</summary>
-                  <msItem>
+                  <msItemStruct>
+                     <note type="local_note">Oversize</note>
                      <textLang mainLang="egy-Egyh">In Hieratic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -28,10 +30,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="-0663" notAfter="-0525">663 BCE – 525 BCE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -39,9 +52,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Linen</rs>
-               </term>
+               <term type="genre_form">Linen</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,27 +9,28 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">toronto.apis.38</idno>
-            <idno type="controlno">(CaOTU)38</idno>
+            <idno type="controlNo">(CaOTU)38</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Oxy. IV 753r</idno>
+                  <idno type="invNo">P.Oxy. IV 753r</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso described; recto unpublished.</note>
                      <note type="general">M10 22</note>
+                     <note type="local_note">F0828r</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>1 papyrus; 18.5 x 7 cm.</support>
                         <condition>
-                           <ab type="preservation">Several fragments joined by patches.</ab>
                            <ab type="conservation">MS collection, 175; Box 3</ab>
+                           <ab type="preservation">Several fragments joined by patches.</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -51,6 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,12 +68,8 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Oxyrhynchus</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Varia</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Varia</term>
             </keywords>
          </textClass>
       </profileDesc>

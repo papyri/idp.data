@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.265</idno>
-            <idno type="controlno">(CU)265</idno>
+            <idno type="controlNo">(CU)265</idno>
+            <idno type="ddbdp">p.tebt..3.1.763</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0763</idno>
+                  <idno type="invNo">P.Tebt.0763</idno>
                </msIdentifier>
                <msContents>
                   <summary>Ptolemaios addresses Ptollis about some unclear business concerning a certain Diphilos and silver vessels.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso published</note>
                      <note type="general">Margins: top, 1.5 cm.; left, 0.5 cm.; right, 0.5 cm.; bottom, 3.8 cm.</note>
+                     <note type="local_note">2149</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -54,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +71,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Business letters, Ptolemaic period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Ptolemaic period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Ptolemaios to Ptollis, greeting. I have detained the letters about the affair of Diphilos in case an application may have been made to you, but if an application has still not been made, find out exactly where he says that he found them and state the silver vessels in clear writing, for one should not write incoherently about that kind of thing. Good-bye. (Addressed on the verso) To Ptollis.</ab>
          </div>
          <div type="bibliography" subtype="citations">

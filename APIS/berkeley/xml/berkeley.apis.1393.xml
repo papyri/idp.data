@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,18 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1393</idno>
-            <idno type="controlno">(CU)1393</idno>
+            <idno type="controlNo">(CU)1393</idno>
+            <idno type="ddbdp">p.tebt..3.2.1057</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.1057</idno>
+                  <idno type="invNo">P.Tebt.1057</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: left, 3.2 cm.; bottom, 10.3 cm.; right, 1.7 cm.</note>
-                     <textLang mainLang="egy-Egydgrc">Greek, followed by Demotic</textLang>
-                  </msItem>
+                     <note type="local_note">1081</note>
+                     <textLang mainLang="egy-Egyd">Greek, followed by Demotic</textLang>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -46,20 +49,23 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
-            <language ident="egy-Egydgrc">Greek, followed by Demotic</language>
+            <language ident="egy-Egyd">Greek, followed by Demotic</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
                <term>Sesame</term>
-               <term>
-                  <rs type="genre_form">Accounts, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Accounts, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

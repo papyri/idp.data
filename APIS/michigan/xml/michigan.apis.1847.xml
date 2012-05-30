@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1847</idno>
-            <idno type="controlno">(MiU)1847</idno>
+            <idno type="controlNo">(MiU)1847</idno>
+            <idno type="ddbdp">p.mich..12.630</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3161</idno>
+                  <idno type="invNo">P.Mich.inv. 3161</idno>
                </msIdentifier>
                <msContents>
                   <summary>Application addressed by Maron, son of Melankomas, and Eukrates, son of Herakleides, to Herakleides, son of Pnepheros, by which they request the right to sublease from him two-thirds of the crop of a palm grove</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -59,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -69,19 +78,15 @@
                <term>Syrios</term>
                <term>Agriculture</term>
                <term>Lease</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Herakleides, son of Pnepheros, from Maron, son of Melankomas, and Eukrates, son of Herakleides. We wish to lease two-thirds of the date crop which arrived at maturity in the present third year of Gaius Caesar Augustus Germanicus and which you hold on lease. We promise to pay, for the whole, a rent of twenty-six drachmai of coined silver and . . . obols, and we will pay it in the month of Tybi of the same year, if it appears good to lease to us on the aforesaid terms.;Year 3 of Gaius Caesar Augustus, 29th of the month of Augustus.;Eukrates, son of Herakleides, 30 years old, with a scar on the lower part of the left cheek.;(2nd hand) I, Maron, son of Melankomas, have also submitted the aforesaid application. And we will pay one artaba of Syrian dates by the dromos-measure for dates.;Year 4 of Gaius Caesar Augustus, 29th of the month of Augustus.</ab>
          </div>
          <div type="bibliography" subtype="citations">

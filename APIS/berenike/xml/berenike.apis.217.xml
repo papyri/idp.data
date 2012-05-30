@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berenike.apis.217</idno>
-            <idno type="controlno">(EG-Ber)217</idno>
+            <idno type="controlNo">(EG-Ber)217</idno>
+            <idno type="ddbdp">o.berenike.2.217</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Inv. BE99-31-072</idno>
+                  <idno type="invNo">Inv. BE99-31-072</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of Names</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">4 lines of text.</note>
                      <note type="general">Perhaps a list of personal names, although Oserapis and Hygia are more commonly divine names.  Also, one may restore line 4 to read either Dionysios (as below) or Dionysus (another divine name).</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,22 +58,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">List</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Names</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostraka</rs>
-               </term>
+               <term type="genre_form">List</term>
+               <term type="genre_form">Names</term>
+               <term type="genre_form">Ostraka</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>of Oserapis, of Hygia, of Diogenes, of Dionysios.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.5260</idno>
-            <idno type="controlno">(NNU)5260</idno>
+            <idno type="controlNo">(NNU)5260</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv. 468</idno>
+                  <idno type="invNo">NYU inv. 468</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Bobst</note>
                      <note type="general">27 lines</note>
                      <note type="general">Source of description: V</note>
                      <note type="general">Recto: see Worp, K. A. - Nielsen, B. "New Papyri from the New York University Collection: III". ZPE 140 (2002) 135-6 (Nr. 27); nyu.apis.5259</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -40,6 +41,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -47,28 +55,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Account</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Expenses</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Wax</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Account</term>
+               <term type="genre_form">Expenses</term>
+               <term type="genre_form">Wax</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(ll. 10-27) ...; (for) 3.25 ounces of red lead, 3 dr., 3 obols; for .5 (dr. ?) of resin, 1 dr.; for .5 kotyle of oil, 4 ob.; for wood, 2 ob.  Headache: for 20 dr. (weight) of red lead, 1 dr., 3 ob.; for 4 dr. (weight) of rust, 1 dr.; for .25 (kotyle) of oil 2 ob.; for vinegar, 1 ob.  Fit of fever: for 8 + dr. (weight) of red lead, 1 dr.; for 1 kotyle of oil, 1 dr. 2 ob.; for 28 dr. (weight) of wax, 2 dr., total 4 dr., 1 ob..  grand total 21 dr., 2 ob.; for 3 quantities (or 1 ounce?) of white powder of arsenic sulphides of cobalt, 12 dr.</ab>
          </div>
          <div type="bibliography" subtype="citations">

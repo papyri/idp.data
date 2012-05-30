@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,17 +19,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Draft of a petition from Panopolis (modern name: Akhmim), Egypt, written on papyrus. Written by Aurelius Petechensis, priest of Panopolis to Salvius Synegorios about a priesthood(?) Mentions the high priest and Petearbeschinis. Papyrus belongs to the archive of Ammon, the well-known scholastikos, or lawyer</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Dimensions of fragments are 8.8 x 10.2 cm. or smaller</note>
                      <note type="general">12 lines</note>
                      <note type="general">Written along the fibers on the recto in Ammon's hand</note>
                      <note type="general">Upper margin of 2 cm</note>
                      <note type="general">P.Duk.inv. 211 was formerly P.Duk.inv. G 211</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, five fragments of which four join, mounted in glass, incomplete</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, five fragments of which four join, mounted in glass, incomplete</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -39,13 +44,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Salouios Synegorios, -- 3rd cent.</term>
                <term>Actions and defenses -- Egypt -- 30 B.C.-640 A.D.</term>
                <term>Priests -- Egypt -- Akhmim -- 30 B.C.-640 A.D.</term>

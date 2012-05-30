@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1789</idno>
-            <idno type="controlno">(MiU)1789</idno>
+            <idno type="controlNo">(MiU)1789</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3100</idno>
+                  <idno type="invNo">P.Mich.inv. 3100</idno>
                </msIdentifier>
                <msContents>
                   <summary>Copy (sent to Zenon?) of a complaint addressed by the scribe Pyron probably to Apollonios</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The image shows only the Michigan fragment.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">+ P.Cair. IV, 59632; Zenon archive</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -72,20 +81,16 @@
                <term>Writing--Materials and instruments--Egypt.</term>
                <term>Wages--Egypt.</term>
                <term>Finance, Public--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>In the 35th [year] of Ptolemy, son of Ptolemy Soter, Phamenoth 23. Pyron, in charge of the letters, has given us the underwritten letter. I have kept a copy of [- - -];(col. II);[- - -] having bought rolls and having hired the people to write, and (he/she) doesn&amp;apos;t want yet to pay it back, in order that (he/she) makes what (he/she) wants. Therefore I still beg you now to compel him to pay to me . . . [- - -]</ab>
+         <div type="translation">
+            <ab>In the 35th [year] of Ptolemy, son of Ptolemy Soter, Phamenoth 23. Pyron, in charge of the letters, has given us the underwritten letter. I have kept a copy of [- - -];(col. II);[- - -] having bought rolls and having hired the people to write, and (he/she) doesn't want yet to pay it back, in order that (he/she) makes what (he/she) wants. Therefore I still beg you now to compel him to pay to me . . . [- - -]</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

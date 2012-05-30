@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1272</idno>
-            <idno type="controlno">(NNC)aaa4221</idno>
+            <idno type="controlNo">(NNC)aaa4221</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 198e (1)</idno>
+                  <idno type="invNo">Col. inv. 198e (1)</idno>
                </msIdentifier>
                <msContents>
                   <summary>Document or letter. Probably has year 16 as part of a dating formula at the bottom</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written with the fibers; back blank; very large bottom margin and large top margin</note>
                      <note type="general">(a) 3 lines; broken right and bottom; (b) 3 lines; broken except at top (c) 9 lines; broken except at bottom</note>
                      <note type="general">2 tiny unplaced fragments</note>
                      <note type="general">Small proficient cursive hand; the last line is written by a different hand</note>
                      <note type="general">The papyrus is very brittle and has many holes</note>
+                     <note type="local_note">Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -35,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0299"/>
+                     <origDate notBefore="0100" notAfter="0299">100 CE – 299 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. XVIII.74 in Bell's inventory</p>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

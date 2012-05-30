@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3008</idno>
-            <idno type="controlno">(MiU)3008</idno>
+            <idno type="controlNo">(MiU)3008</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6897</idno>
+                  <idno type="invNo">P.Mich.inv. 6897</idno>
                </msIdentifier>
                <msContents>
                   <summary>Canceled acknowledgment made by a cavalryman, for a loan given to him by a fellow cavalryman</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="la" otherLangs="grc">Latin; Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -59,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -70,19 +78,15 @@
                <term>Lusitani(?); castellum Net[- - -]</term>
                <term>Army</term>
                <term>Debt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Antonius Heronianus, cavalryman of the First cohort of the Lusitani(?), centuria(?) Mariana, to Iulius Serenus [- - -], cavalryman [of the same cohort], faithful greeting. [I acknowledge that I] have received and owe (you) seventy(?) silver denarii, which I shall give back after receiving my pay, with the interests, to you or to your agent or heir. Iulius Serenus, cavalryman, exacted this promise; Antonius Heronianus has made this pledge for 70(?) silver denarii on the day written below. Made in the garrison of Net[- - -], in the detachment of the aforementioned cohort, 6 days before the Ides of August, [under the consulship of the Emperor Antoninus] Augustus Pius, for the third time, and of Aurelius Caesar, [son of] Augustus [(Antoninus) Pius].;(2nd hand, in Greek) I, Antonius Heronianus, [have received] the 70(?) [silver denarii] as a loan and shall give them back [as aforesaid].</ab>
          </div>
          <div type="bibliography" subtype="citations">

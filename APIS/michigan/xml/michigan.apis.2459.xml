@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2459</idno>
-            <idno type="controlno">(MiU)2459</idno>
+            <idno type="controlNo">(MiU)2459</idno>
+            <idno type="ddbdp">p.mich..8.481</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 5405</idno>
+                  <idno type="invNo">P.Mich.inv. 5405</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter from Claudius Terentianus to his sister Tasoucharion, inquiring whether the contents of two baskets which he has sent have reached her in safety, and signifying his intention of paying her a visit</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">archive of Claudius Tiberianus</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -61,6 +64,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -74,19 +84,15 @@
                <term>Profession</term>
                <term>Writing material</term>
                <term>Soldiers--Rome.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Terentianus to Tasoucharion, his sister, very many greetings. Before all else I pray that you be well together with your entire family. Receive a basket from the man who delivers the letter to you, and write back to me what you find in it. And I have sent you another basket by Valerius the goldsmith. Please write to me, when you receive it, both about your health and anything you may need. For I hope soon to go upcountry to you. Do everything possible to provide for us two keramia (of the largest size) of olyra and an artaba of radish oil. I sent you the marjoram that goes with the oil. And if you received from Ptolemaios what I wrote . . . write to me . . . . Our children salute you . . . . Salute . . . with all his house, and Ptolemaios the son of Arius, together with their wives and children. Salute Ptolemaios and Tiberinus and . . . . to send a fresh bundle(?) of asparagus by Melas, since we ask it of you, father, send one bundle(?). All the persons in the house . . . salute you, each by name. I sent you papyrus so that you might be able to write me concerning your health. I pray that you may always be well.;;(Verso) Deliver to Tasoucharion from Terentianus.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2164</idno>
-            <idno type="controlno">(MiU)2164</idno>
+            <idno type="controlNo">(MiU)2164</idno>
+            <idno type="ddbdp">sb..22.15265</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4220</idno>
+                  <idno type="invNo">P.Mich.inv. 4220</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt of 1.050 myriads by a certain Elias</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Published as P. Mich. inv. 4220a</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,20 +75,16 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Arsinoe, Arsinoite nome, province of Egypt</term>
-               <term>Receipts (Acknowledgments)Egypt--Arsino»Ω (Fayy√Øum : Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term>Receipts (Acknowledgments)Egypt--ArsinoȽ (Fayyïum : Extinct city)</term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"I, Elias, have received in full [- - -; of the city of Arsinoe fo[r - - -; one thousand and fift[y; of the chief townsmen of silver one thousand [- - -."</ab>
          </div>
          <div type="bibliography" subtype="citations">

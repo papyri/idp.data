@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,19 +10,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.4393</idno>
-            <idno type="controlno">(MiU)4393</idno>
+            <idno type="controlNo">(MiU)4393</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 442</idno>
+                  <idno type="invNo">P.Mich.inv. 442</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Under research; contact institution</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -39,7 +40,7 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <p>Written along the fibers in medium-sized semi cursive letters; two hands wrote the document, first hand is fast and practiced with ligatures used comparatively thin nib; second hand is rough and used thick nib with detached larger letters. First hand is characterized by V-shaped kappa with a curve descending from the right stroke; while kappa in second hand is Y-shaped with a stroke descending from center point; omega is small with two semi-circles; in second hand it is large oval; eta is H-shaped in the second hand while itÇ«÷s a vertical stroke with a central bar ends with a curved stroke facing right; lambda in first hand is formed by drawing an oblique stroke descending right with a separate reverse short slanting stroke. The interlinear space in second hand is about twice of the first. No diacritical marks or abbreviations are attested. Verso is blank</p>
+                     <p>Written along the fibers in medium-sized semi cursive letters; two hands wrote the document, first hand is fast and practiced with ligatures used comparatively thin nib; second hand is rough and used thick nib with detached larger letters. First hand is characterized by V-shaped kappa with a curve descending from the right stroke; while kappa in second hand is Y-shaped with a stroke descending from center point; omega is small with two semi-circles; in second hand it is large oval; eta is H-shaped in the second hand while it���s a vertical stroke with a central bar ends with a curved stroke facing right; lambda in first hand is formed by drawing an oblique stroke descending right with a separate reverse short slanting stroke. The interlinear space in second hand is about twice of the first. No diacritical marks or abbreviations are attested. Verso is blank</p>
                   </handDesc>
                </physDesc>
                <history>
@@ -54,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,12 +69,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.69</idno>
-            <idno type="controlno">(MiU)69</idno>
+            <idno type="controlNo">(MiU)69</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4221</idno>
+                  <idno type="invNo">O.Mich.inv. 4221</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for delivery of chaff</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Kelsey Museum</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +74,15 @@
                <term>Tax collection--Egypt--Karanis (Extinct city)</term>
                <term>Receipts (Acknowledgments)--Egypt.</term>
                <term>Crop residues--Transportation--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>He has delivered from Theadelphia, for the ninth indiction, two hundred and forty pounds of chaff, equal 240 lbs., only. Payni 22nd.;(2nd hand) I, Offellius, have signed.</ab>
          </div>
          <div type="bibliography" subtype="citations">

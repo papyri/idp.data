@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.3070</idno>
-            <idno type="controlno">(NNC)3070</idno>
+            <idno type="controlNo">(NNC)3070</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Col.inv. 3070 (acc.D354)</idno>
+                  <idno type="invNo">O.Col.inv. 3070 (acc.D354)</idno>
                </msIdentifier>
                <msContents>
                   <summary>invocation: "In the name of the Father, the Son, and the Holy Spirit"</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">6 lines of writing on the front, back blank.</note>
                      <note type="general">complete</note>
                      <note type="general">ink a little faded</note>
+                     <note type="local_note">Reserved for Celine Grassien, 01.25.12</note>
                      <textLang mainLang="grc">in Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +58,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraca</rs>
-               </term>
+               <term type="genre_form">Ostraca</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

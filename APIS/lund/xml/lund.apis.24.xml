@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,17 +18,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Petition to Cleopatra VI and Caesarion</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Missing (has been at the Lund University Library)</note>
                      <note type="general">There is an old photography of inv. nos 17 and 18, where the papyrus otherwise called inv. no 18 is called inv. no 17 and the the other one, which is called inv. no 18 on this photography, probably is an image of the missing inv. no 17.</note>
                      <note type="general">Publication status: Assigned to Todd Hickey, Berkeley</note>
                      <note type="general">This one, which is now called 17 (earlier 18) and which is lost, is a petition to Cleopatra and her son Caesarion</note>
                      <note type="general">Cf. P. Lund. 18</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.;</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.;</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -41,13 +46,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
                <term type="genre_form">Documentary</term>
             </keywords>

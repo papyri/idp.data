@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,19 +10,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.5186</idno>
-            <idno type="controlno">(MiU)5186</idno>
+            <idno type="controlNo">(MiU)5186</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.Inv. 416</idno>
+                  <idno type="invNo">P.Mich.Inv. 416</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: under research; contact institution</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -39,12 +40,11 @@
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <p>Written along the fibers after rotate the papyrus 90 degrees. Although there are some letters, little bit, are similar to those written in rectos such as pi, iota and n, different hand wrote the verso. The letters are of medium-sized cursive and linking. Fast and practiced hand; the title of the text (demotae) is written in large letters; the interlinear spaces are relatively wide and are not always equal (cf. Lines 8 Ç«Ù 9; 9 Ç«Ù 10). No other diacritical marks are attested.</p>
+                     <p>Written along the fibers after rotate the papyrus 90 degrees. Although there are some letters, little bit, are similar to those written in rectos such as pi, iota and n, different hand wrote the verso. The letters are of medium-sized cursive and linking. Fast and practiced hand; the title of the text (demotae) is written in large letters; the interlinear spaces are relatively wide and are not always equal (cf. Lines 8 ��� 9; 9 ��� 10). No other diacritical marks are attested.</p>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     
                      <origPlace>Unknown</origPlace>
                   </origin>
                   <provenance>
@@ -54,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,12 +68,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,18 +9,18 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.4771</idno>
-            <idno type="controlno">(CU)4771</idno>
+            <idno type="controlNo">(CU)4771</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.Frag.00,492</idno>
+                  <idno type="invNo">P.Tebt.Frag.00,492</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Pictographs along top, including two figures holding hands</note>
-                     <textLang mainLang="egy-Egydegy-Egyp">Demotic, Hieroglyphic</textLang>
-                  </msItem>
+                     <textLang mainLang="egy-Egyd">Demotic, Hieroglyphic</textLang>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -45,16 +46,21 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
-            <language ident="egy-Egydegy-Egyp">Demotic, Hieroglyphic</language>
+            <language ident="egy-Egyd">Demotic, Hieroglyphic</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

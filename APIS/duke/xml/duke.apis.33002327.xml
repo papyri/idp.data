@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Loan(?) of money from Egypt, written on papyrus. Signed by the debtor who can barely write. Dated under Caracalla(?). Verso has a documentary text in Greek (P.Duk.inv. 964 V)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 13.3 x 2.6 cm</note>
                      <note type="general">10 lines</note>
                      <note type="general">P.Duk.inv. 964 R was written along the fibers on the recto; written across the fibers on the verso in a different hand and inverse to the text on the recto</note>
                      <note type="general">Lower margin of 6 cm</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, incomplete ; 14 x 3 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, incomplete ; 14 x 3 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -36,13 +41,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Debtor and creditor -- Egypt -- 30 B.C.-640 A.D.</term>
                <term>Loans, Personal -- Egypt -- 30 B.C.-640 A.D.</term>
                <term type="genre_form">Documentary papyri Egypt 30 B.C.-640 A.D</term>

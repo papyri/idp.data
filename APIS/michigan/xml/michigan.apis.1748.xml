@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1748</idno>
-            <idno type="controlno">(MiU)1748</idno>
+            <idno type="controlNo">(MiU)1748</idno>
+            <idno type="ddbdp">sb..22.15329</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3030</idno>
+                  <idno type="invNo">P.Mich.inv. 3030</idno>
                </msIdentifier>
                <msContents>
                   <summary>Declaration of a 14-years old boy for selection among the privileged class of the metropolites, made by his parents</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso: uncertain fragment (unpublished)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +76,15 @@
                <term>Family</term>
                <term>Personal status: metropolite</term>
                <term>Privileges</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>[To - - -], from Aurelius Sokrates, [son of - - -], grandson of Sokrates alias Agathos [Daimon, his mother being - - -] and his wife Aurelia [- - -, daughter of - - -], both [from the metropolis, registered in] the quarter of the Sacred [Gate, Aurelia - - -] with as guardian [Sokrates] personally. Since Marcus Aurelius [- - -, the son that] has been born [to us, has reached] in the present [. . . year of Valerianus and] Gallienus Augusti the age of 14 years [and ought] to be selected by the [officers in charge of the selection, I have appended] the claims of [both] of us [in accordance with] the ordinance. [On the one hand], I, [Aurelius] Sokrates, was selected in year . . . of Severus] Alexander Caesar [the lord and] I was returned in the household census [of year 7 of Gordianus in the same] quarter [of the Sacred Gate - - -]</ab>
          </div>
          <div type="bibliography" subtype="citations">

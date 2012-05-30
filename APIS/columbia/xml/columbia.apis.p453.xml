@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p453</idno>
-            <idno type="controlno">(NNC)aaa3629</idno>
+            <idno type="controlNo">(NNC)aaa3629</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 53c</idno>
+                  <idno type="invNo">Col. inv. 53c</idno>
                </msIdentifier>
                <msContents>
                   <summary>Private letter using expressions customary in letters.  Address on back</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; address on verso</note>
                      <note type="general">8 lines; broken top, bottom and right</note>
                      <note type="general">The hand is a large, upright cursive; dieresis on iota in line 7</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0200" notAfter="0399"/>
+                     <origDate notBefore="0200" notAfter="0399">200 CE – 399 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in July 1923; no. V.A. 53 in Bell's inventory</p>
@@ -42,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,12 +57,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

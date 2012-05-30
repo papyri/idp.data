@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,17 +19,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Parchment codex leaf with a literary text from Egypt. Contains Plato's Parmenides 152 b-d. Parchment has been washed out and reused for a private letter in Coptic (P.Duk.inv. 5 (b))</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 8.0 x 7.6 cm</note>
                      <note type="general">22 lines</note>
                      <note type="general">Written in a literary hand; written on the verso in a different hand</note>
                      <note type="general">Left margin of 1 cm.; small right margin</note>
                      <note type="general">P.Duk.inv. 5 (a) was formerly P.Duk.inv. G 5 (a)</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : parchment codex leaf, mounted in glass ; 8 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : parchment codex leaf, mounted in glass ; 8 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Literary papyri Egypt 30 B.C.-640 A.D</term>
                <term type="genre_form">Parchment</term>
             </keywords>

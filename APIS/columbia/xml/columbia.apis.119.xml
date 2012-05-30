@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.119</idno>
-            <idno type="controlno">(NNC)aaa0289</idno>
+            <idno type="controlNo">(NNC)aaa0289</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Col.inv. 119 (acc. 7.23)</idno>
+                  <idno type="invNo">O.Col.inv. 119 (acc. 7.23)</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">scanty remains of 2 lines of writing on the front, back blank</note>
                      <note type="general">broken on the top and on the two sides, blank space at the bottom</note>
                      <textLang mainLang="grc">in Greek?</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -31,7 +32,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0299"/>
+                     <origDate notBefore="0100" notAfter="0299">100 CE – 299 CE</origDate>
                   </origin>
                   <provenance>
                      <p>from Oxyrhynchos. Gift of Egypt Exploration Fund in 1897 to the Metropolitan Museum, MMA inv. 97.4.9. Sold to Columbia University in 1958</p>
@@ -40,6 +41,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -47,9 +55,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraca</rs>
-               </term>
+               <term type="genre_form">Ostraca</term>
             </keywords>
          </textClass>
       </profileDesc>

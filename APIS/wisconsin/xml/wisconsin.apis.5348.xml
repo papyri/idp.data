@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">wisconsin.apis.5348</idno>
-            <idno type="controlno">(WU)5348</idno>
+            <idno type="controlNo">(WU)5348</idno>
+            <idno type="ddbdp">p.wisc..2.44</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Wisc. inv. 63</idno>
+                  <idno type="invNo">P.Wisc. inv. 63</idno>
                </msIdentifier>
                <msContents>
                   <summary>line 4 reads "Mesore 3"; line 11 "Pharmouthi 7"; line 14 "Pauni 20". In l. 9 "through Papontos"; l. 5 "chalkimos" and in l. 6 "ch]alkimou (?)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Department of Special Collections; Memorial Library; Madison; Wisconsin</note>
                      <note type="general">Pub. status: verso; recto is described</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -58,12 +67,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1194</idno>
-            <idno type="controlno">(MiU)1194</idno>
+            <idno type="controlNo">(MiU)1194</idno>
+            <idno type="ddbdp">sb..6.9115</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Skeat 6</idno>
+                  <idno type="invNo">O.Skeat 6</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued to Phaminis the Younger, a son of of Phatres, for wheat delivered to the metropolitan granary as rent or tax on arable land.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +75,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Ostracon</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"[There has been a payment] into the granary of the city in the 20th year of Antoninus Caesar Our Lord, Epeiph . . , . . . [by the name] Phaminios the Younger, son of Phratres, . . . of 1/3 of an artaba of wheat, in total 1/3 of an artaba of wheat. I, . . .ra, have signed (acknowledging the payment) of 1/3 of an artaba of wheat."</ab>
          </div>
          <div type="bibliography" subtype="citations">

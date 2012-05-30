@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.148</idno>
-            <idno type="controlno">(ICU)148</idno>
+            <idno type="controlNo">(ICU)148</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 109</idno>
+                  <idno type="invNo">O.Medin.HabuDem 109</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued by two revenue collectors</summary>
-                  <msItem>
-                     <note type="general">Number 109 in Lichtheim&amp;apos;s publication. This receipt is the exact counterpart of MH 2629 (no. 90), where the same person makes a balance payment in grain. &amp;apos;&amp;apos;Farmer&amp;apos;s profit of the temples of Jeme&amp;apos;&amp;apos; means rent from the fields of the temples of Jeme (cf. Nos. 86-90 = MH 2809, 2880, 521, 2699, and 2629). Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 109 in Lichtheim's publication. This receipt is the exact counterpart of MH 2629 (no. 90), where the same person makes a balance payment in grain. ''Farmer's profit of the temples of Jeme'' means rent from the fields of the temples of Jeme (cf. Nos. 86-90 = MH 2809, 2880, 521, 2699, and 2629). Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
+                     <note type="related">MH 2629 (number 90 in Lichtheim)</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -60,20 +69,16 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Jeme</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>MH 2645, recto: (1) Pamonthes, son of Harpaesis, (and) Hyplws, son of Pamonthes, (2) say to Pasemis, son of Pamonthes, son of [Meswer]: We are paid (3) 1 stater (and) 5 obols of the remainder of the farmer&amp;apos;s profit of (4) the temples of Jeme. Written in year 38, Phamenoth 12.</ab>
+         <div type="translation">
+            <ab>MH 2645, recto: (1) Pamonthes, son of Harpaesis, (and) Hyplws, son of Pamonthes, (2) say to Pasemis, son of Pamonthes, son of [Meswer]: We are paid (3) 1 stater (and) 5 obols of the remainder of the farmer's profit of (4) the temples of Jeme. Written in year 38, Phamenoth 12.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <p>No citations.</p>

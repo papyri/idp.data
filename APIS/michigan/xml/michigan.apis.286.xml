@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.286</idno>
-            <idno type="controlno">(MiU)286</idno>
+            <idno type="controlNo">(MiU)286</idno>
+            <idno type="ddbdp">o.mich..1.495</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4442</idno>
+                  <idno type="invNo">O.Mich.inv. 4442</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for transport of grain to an unknown harbor in the name of Melas</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">Archive of Melas, son of Horos (?)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +77,15 @@
                <term>Grain--Transportation--Egypt.</term>
                <term>Donkeys--Egypt--Karanis (Extinct city)</term>
                <term>Granaries--Taxation--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Of the granary of the horiodeiktia of Karanis, of the crop of year 17 and 16 and 9, in the name of Melas, son of Horos, on Mecheir 28, 1 donkey, (and) on the 30th, 1 donkey.</ab>
          </div>
          <div type="bibliography" subtype="citations">

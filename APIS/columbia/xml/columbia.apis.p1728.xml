@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1728</idno>
-            <idno type="controlno">(NNC)p1728</idno>
+            <idno type="controlNo">(NNC)p1728</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 525b verso</idno>
+                  <idno type="invNo">Col. inv. 525b verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>Mathematical exercise: numerals in sequence from 182 - 186.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the recto, an account?</note>
                      <note type="general">5 lines; broken at top and bottom</note>
                      <note type="general">Traces of a preceding and a following column</note>
                      <note type="general">The hand is large, letters are well formed and written with a thick pen</note>
+                     <note type="local_note">Publication rights reserved. Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +59,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

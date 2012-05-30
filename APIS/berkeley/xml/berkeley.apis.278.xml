@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.278</idno>
-            <idno type="controlno">(CU)278</idno>
+            <idno type="controlNo">(CU)278</idno>
+            <idno type="ddbdp">p.tebt..3.1.748</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0748</idno>
+                  <idno type="invNo">P.Tebt.0748</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter of Agathon to Patron (personal name) passing on to him instructions for procuring some animals for transport.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso published</note>
                      <note type="general">Margins: top, 0.4 cm.; left, 1.4 cm.</note>
                      <note type="general">Patron dossier</note>
+                     <note type="related">Patron is also on record in P.Tebt.III.1, 744-747, 749.</note>
+                     <note type="local_note">1229</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -59,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +79,15 @@
             <keywords scheme="#apis">
                <term>Domestic animals; Transportation</term>
                <term>Oxyhynchites nomos</term>
-               <term>
-                  <rs type="genre_form">Business letters, Ptolemaic period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Ptolemaic period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Agathon to Patron, greeting. Ammonios has written to us to send him at the city beasts of burden for wagons, as the king is solicitous about them. Therefore on receipt of this letter go round your neighborhood with Zenodoros and send to the city any that you find ... (Addressed on the verso) To Patron. (Endorsed on the verso) Year . [month] 24. About draught-animals.</ab>
          </div>
          <div type="bibliography" subtype="citations">

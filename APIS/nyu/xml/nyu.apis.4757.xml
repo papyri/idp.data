@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.4757</idno>
-            <idno type="controlno">(NNU)4757</idno>
+            <idno type="controlNo">(NNU)4757</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv. 34</idno>
+                  <idno type="invNo">NYU inv. 34</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Bobst</note>
                      <note type="general">19 lines</note>
                      <note type="general">Source of description: R</note>
                      <note type="general">Verso blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -40,6 +41,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -47,28 +55,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Settlement</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Dispute</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Dialysis</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Settlement</term>
+               <term type="genre_form">Dispute</term>
+               <term type="genre_form">Dialysis</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Aurelius Herakles, officially described as son of his mother Tapontos, to Aurelius Chairemon, son of Menodoros.  Since it seemed good (?) to us who have been mentioned in the meantime to settle the differences between us, i.e., between you and me, who have leased a vineyard in the neighborhood of Ision Panga, we came, together with the common mediators, to a settlement as has been written below.  It seemed good concerning the irrigatoin of the n arourae to the West of the vineyard that I would receive for the irrigation per aroura thirty-two silver drachmas, regarding the chaff --- we settled on 30 mouia -- measured the -- to be stored away -- to my satisfaction -- me Heraklios -- Harmiysis -</ab>
          </div>
          <div type="bibliography" subtype="citations">

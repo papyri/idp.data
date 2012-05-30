@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1823</idno>
-            <idno type="controlno">(MiU)1823</idno>
+            <idno type="controlNo">(MiU)1823</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3133</idno>
+                  <idno type="invNo">P.Mich.inv. 3133</idno>
                </msIdentifier>
                <msContents>
                   <summary>Statement of the sum due to the encaustic painters Artemidoros and Demetrios for their work on the exedra and two rooms of a new house (probably built for Diotimos), of the sums which they have already received through the local bank and of the value of the materials supplied to them</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The image shows only the Michigan fragment.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">+ P.Cair.Zen. IV, 59763 (inv. JdE 51617); Zenon archive</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +76,15 @@
                <term>House painters--Egypt--Philadelpheia (Extinct city)</term>
                <term>House painting--Egypt--Philadelpheia (Extinct city)--Costs</term>
                <term>Encaustic painting--Egypt--Philadelpheia (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto);;In account with Artemidoros and Demetrios, encaustic painters. You are entitled to be paid as follows in accordance with the contract given out by Hedylos the architect. (For the work) in the exedra and the first and second [...-rooms], with the doors, as you have furnished everything for this except black resin and bitumen, 28 1/2 drachmai.  You have received (the following sums). Through the bank of Artemidoros: on Pachons, 20 drachmai; on Pauni 21, 20 drachmai. Of the colors that you have, [- - -];(col. II too fragmentary to be translated);;(Verso);(deleted account in 6 lines);From Theopompos, 8 drachmai.</ab>
          </div>
          <div type="bibliography" subtype="citations">

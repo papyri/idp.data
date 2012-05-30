@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3045</idno>
-            <idno type="controlno">(MiU)3045</idno>
+            <idno type="controlNo">(MiU)3045</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6955</idno>
+                  <idno type="invNo">P.Mich.inv. 6955</idno>
                </msIdentifier>
                <msContents>
-                  <summary>Order from Lysias, an official of unspecified rank (nomarch?), to Horos, most likely a crop guard (genematophylax), bidding him guard the sesame crop on a cleruch&amp;apos;s property</summary>
-                  <msItem>
+                  <summary>Order from Lysias, an official of unspecified rank (nomarch?), to Horos, most likely a crop guard (genematophylax), bidding him guard the sesame crop on a cleruch's property</summary>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso: unpublished Demotic text (account of sesame crop)</note>
+                     <note type="related">See P.Mich. XVIII, p. 89-97, on the group of papyri coming from mummy cartonnage and bought in 1982 by the University of Michigan</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +74,15 @@
                <term>Trikomia</term>
                <term>Sesame--Harvesting--Egypt</term>
                <term>Security guardszEgypt</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Lysias to Horos, greetings. As soon as you get this letter, postpone everything and attend the shaking of the sown fall sesame on the personal allotment of Stasikrates, the holder of one hundred arourai, which he possesses near Trikomia, and see to it that you guard it energically, as you will be held accountable to us regarding these matters. Farewell. Year 6, Hathyr 6.</ab>
          </div>
          <div type="bibliography" subtype="citations">

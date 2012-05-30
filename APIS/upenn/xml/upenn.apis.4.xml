@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.4</idno>
-            <idno type="controlno">(PU) 4</idno>
+            <idno type="controlNo">(PU) 4</idno>
+            <idno type="ddbdp">p.oxy..1.35</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv. E02749</idno>
+                  <idno type="invNo">P.Penn. Museum inv. E02749</idno>
                </msIdentifier>
                <msContents>
                   <summary>Side 1 (with the fibers): Proclamation made in the reign of Severus Alexander. Side 2 (against the fibers): List of emperors and length of reign.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Side 1: 13 lines of text written with the fibers.</note>
                      <note type="general">Side 2: 20 lines of text written against the fibers.  Text is in two columns: emperor names and their lengths of rule.  Parts of at least two other lines at the lower right, probably in a different hand.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology collection</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,25 +59,17 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Side 1 (with the fibers): Declaration</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Side 2 (against the fibers): List</rs>
-               </term>
+               <term type="genre_form">papyrus</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">Side 1 (with the fibers): Declaration</term>
+               <term type="genre_form">Side 2 (against the fibers): List</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Side 2 (against the fibers): [1] Reigns of the Emperors; [2] Augustus  43 (years); [3] Tiberius 22 (years); [4] Claudius 4 (years); [5] Nero 14 (years); [6] Vespasian 10 (years); [7] Titus 3 (years); [8] Domitian 15 (years); [9] Nerva 1 (year); [10] Trajan 19 (years); [11] Hadrian 23 (years); [12] Antoninus Pius 23 (years); [13] Antoninus Comodus 32 (years); [14] Severus 25 (years); [15] Antoninus 4 (years); [16] Alexander 13 (years)	Pauni 4; [17] Maximinus 	3 (years)	(as long as a virgin rules); [18] Gordian 6 (years); [19] Philip 6 (years); [20] Decius 1 (year).  [D. Harris-McCoy]</ab>
          </div>
          <div type="bibliography" subtype="citations">

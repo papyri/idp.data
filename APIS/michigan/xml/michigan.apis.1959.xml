@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1959</idno>
-            <idno type="controlno">(MiU)1959</idno>
+            <idno type="controlNo">(MiU)1959</idno>
+            <idno type="ddbdp">sb..22.15615</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich. inv. 3366</idno>
+                  <idno type="invNo">P.Mich. inv. 3366</idno>
                </msIdentifier>
                <msContents>
                   <summary>Payments of tax for the salary of the epistrategos + beer tax</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto; Written across the fibers; scribe rotated papyrus 90 degrees to accommodate the format of the text.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is Blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +76,15 @@
                <term>-</term>
                <term>Taxation</term>
                <term>economy</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>" (Col. I) . . .; grand total; were paid; and of all expenditures; dr. 4204, 4 ob.; of credits are outstanding; dr. 26.;(Col. II) Total sums from which were paid for the hypokeimena epistrategiai :; Pharmouthi 30 dr. 100; Pachon 30 dr. 100; Pauni 30 dr. 60; Mesore intercalary 5 dr. 100; Total dr. 360; Bank interest dr. 10; - - -; paid dr. 24; grand total paid dr. 394; For the beer tax likewise; were paid (cancelled); Tubi 16 dr. 4[- - ]; Mecheir 10, dr. 2[- -]; Phamenoth 6, dr. 4[- -]; Pharmouthi 6, dr. 2[- -]; Pachon 25, dr. 4[- -]; Pauni 3, dr. 1[- -]; Epeiph 11, dr. 4[- -]; Mesore 7, 3 [- -]; Year 19 Thoth 26 [  ]; Grand total paid [  ]; Scribal fee [  ]; . . ."</ab>
          </div>
          <div type="bibliography" subtype="citations">

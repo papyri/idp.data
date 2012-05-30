@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.8256</idno>
-            <idno type="controlno">(ICU)8256</idno>
+            <idno type="controlNo">(ICU)8256</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P. OIM 19422</idno>
+                  <idno type="invNo">P. OIM 19422</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter to Thoth</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto and verso</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,19 +79,15 @@
                <term>Work</term>
                <term>Temple</term>
                <term>Complaints</term>
-               <term>
-                  <rs type="genre_form">Literary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
+               <term type="genre_form">Literary</term>
+               <term type="genre_form">papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>P. OIM 19422, recto: (1) A communication of the humble servant Iwefaaw, son of Horneferkheby unto Thoth, Twice Great, Lord of Hermopolis: "My great Lord; oh may he live as long as Pre.  From year 11, the month of Mecheir, (2) to this day I have been doing the work of The Ibis.  I left my (former) work, (and) even though I like the work for which I came to The Ibis, (3) I (now) have no human master.  If the heart be stout, one will be protected in the presence of Thoth, Twice Great, Lord of Hermopolis!  I pray because of Pashertaiht, son of (4) Mentuhotep.  He is not accustomed to do any work for The Ibis except to eat its food, nor does he even have a guard kept over it.  (5) He has been doing me violence since year 17.  He has stolen my money and my wheat.  He has had my servants slain.  He has stolen for himself everything that I possessed.  (6) His heart ... If the heart be stout, one will be protected in the presence of Thoth, Twice Great, Lord of Hermopolis!  Pashertaiht, (7) son of Mentuhotep, he has stolen from my life, (for) he has cast me out of my stipend, which he has made over to himself by law.  [Many] things (8) depart into his hand, although they come to The Ibis.  Let me be protected from Pashertaiht, son of Mentuhotep."  Written by the humble servant Iw-f-aaw, son of Horneferkheby in year 20, the month of Phamenoth.  OIM 19422, verso: (1) A communication of the servant Iw-f-aa, son of Horneferkheby un[to The I]bis, Thoth, Twice Great, Lord of Hermopolis, the great god.</ab>
          </div>
          <div type="bibliography" subtype="citations">

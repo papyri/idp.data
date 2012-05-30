@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berenike.apis.146</idno>
-            <idno type="controlno">(EG-Ber)146</idno>
+            <idno type="controlNo">(EG-Ber)146</idno>
+            <idno type="ddbdp">o.berenike.2.146</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Inv. BE99-19-035</idno>
+                  <idno type="invNo">Inv. BE99-19-035</idno>
                </msIdentifier>
                <msContents>
                   <summary>Customs Order</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">4 lines of text.</note>
                      <note type="general">For Alexandros, see O.Ber. II 145.</note>
                      <note type="general">For Peteharpochrates son of Psentphous, cf. O.Ber. II 167.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,28 +59,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Order</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Customs</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Wine</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostraka</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Quintanensis</rs>
-               </term>
+               <term type="genre_form">Order</term>
+               <term type="genre_form">Customs</term>
+               <term type="genre_form">Wine</term>
+               <term type="genre_form">Ostraka</term>
+               <term type="genre_form">Quintanensis</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Alexandros to those in charge of the customs gate.  Let pass for Peteharpoch(rates) son of Psentphous, 6 keram(ia) of Ptolemai(ti)c wine.</ab>
          </div>
          <div type="bibliography" subtype="citations">

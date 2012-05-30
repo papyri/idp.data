@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berenike.apis.234</idno>
-            <idno type="controlno">(EG-Ber)234</idno>
+            <idno type="controlNo">(EG-Ber)234</idno>
+            <idno type="ddbdp">o.berenike.2.234</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Inv. BE00-33-073</idno>
+                  <idno type="invNo">Inv. BE00-33-073</idno>
                </msIdentifier>
                <msContents>
                   <summary>Jar Tag</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">1 line of text.</note>
                      <note type="general">This is one of a number of jar inscriptions found at Berenike (O.Ber II 228-250).  The range of forms suggest that they served diverse purposes.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,22 +58,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Jar</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Tag</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostraka</rs>
-               </term>
+               <term type="genre_form">Jar</term>
+               <term type="genre_form">Tag</term>
+               <term type="genre_form">Ostraka</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>] . nonos</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1202</idno>
-            <idno type="controlno">(MiU)1202</idno>
+            <idno type="controlNo">(MiU)1202</idno>
+            <idno type="ddbdp">p.corn..52</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Corn. Inv. I 122</idno>
+                  <idno type="invNo">P.Corn. Inv. I 122</idno>
                </msIdentifier>
                <msContents>
                   <summary>A letter sent by Gerontios to his brother Ammonianos, concerning private affairs</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">P.Corn. Inv.  I 88</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,23 +75,19 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>Takona; Chrysochoou; Takeo; Ambix: all villages in the Oxyrhynchite nome, Egypt; see Pruneti, I centri abitati dell&amp;apos;Ossirinchite, svv.</term>
+               <term>Takona; Chrysochoou; Takeo; Ambix: all villages in the Oxyrhynchite nome, Egypt; see Pruneti, I centri abitati dell'Ossirinchite, svv.</term>
                <term>Letter writing, Egyptian--Egypt--Takona (Extinct city)</term>
                <term>Service, Compulsory non-military--Egypt.</term>
                <term>Tax collection--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To my lord and brother Ammonianos from Gerontios, greeting. Yesterday I came to takona and engaged in the introduction of the other liturgical officials in order that the tax collection could proceed. I wonder that no one has brought me a letter from you, and I am disturbed because of it, since I do not know either how the household is or how affairs are going with us and in the city. Hasten therefore to write back to me on all matters, since you have many persons either of the postal service or of the village who  are coming to Takona. As to the tax collections, if ... [at this point the papyrus is too fragmentary preserved to be translated]."</ab>
          </div>
          <div type="bibliography" subtype="citations">

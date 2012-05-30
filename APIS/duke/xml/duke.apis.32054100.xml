@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Register of unusable land from the Arsinoite Nome (modern name: Fayyum), Egypt, written on papyrus. Included is land that cannot be used for the cultivation of wheat, vines or garden crops. Arranged by village including Kerkesouchon, Psenaryo, Tanchoireos, Ptolemaidos Hormou and Hauereos (modern name: Hawara). The types of unusable land specified include: canals, dikes a road, rock, hills, dry land, land under water, salted land, deserted bean field, ditches, water conduits, places where bushes have taken over, tile factories, highland not reached by inundation, sand, and dry land. Verso has an account of wheat in Greek (P.Duk.inv. 100 V)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 32 x 28.5 cm</note>
                      <note type="general">39 lines</note>
                      <note type="general">Written in two columns along the fibers on the recto; written across the fibers on the verso in a different hand</note>
@@ -25,10 +26,14 @@
                      <note type="general">Extracted from mummy cartonnage with P.Duk.inv. 101-102, P.Duk.inv. 105 and P.Duk.inv. 113-114</note>
                      <note type="general">P.Duk.inv. 100 R was formerly P.Duk.inv. G 100 R and G 107 R</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, thirteen joining fragments mounted in glass, right part is broken off ; 32 x 29 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, thirteen joining fragments mounted in glass, right part is broken off ; 32 x 29 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Waste lands -- Egypt -- Fayyum -- 332-30 B.C.</term>
                <term type="genre_form">Documentary papyri Egypt Fayyum 332-30 B.C</term>
                <term type="genre_form">Registers (lists) Egypt Fayyum 332-30 B.C</term>

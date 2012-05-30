@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.502</idno>
-            <idno type="controlno">(CU)502</idno>
+            <idno type="controlNo">(CU)502</idno>
+            <idno type="ddbdp">p.tebt..1.88</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0088</idno>
+                  <idno type="invNo">P.Tebt.0088</idno>
                </msIdentifier>
                <msContents>
                   <summary>Statement of shrines at Kerkeosiris with their priesthoods and property.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Beginning of roll (protokollon preserved).</note>
                      <note type="general">3rd year of Ptolemy IX Soter II.</note>
                      <note type="general">Menches archive</note>
+                     <note type="local_note">3048</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,12 +72,8 @@
             <keywords scheme="#apis">
                <term>Temple property; Temples</term>
                <term>Kerkeosiris</term>
-               <term>
-                  <rs type="genre_form">Registers, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Registers, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

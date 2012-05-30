@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.196</idno>
-            <idno type="controlno">(CU)196</idno>
+            <idno type="controlNo">(CU)196</idno>
+            <idno type="ddbdp">sb.20.14134</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0621</idno>
+                  <idno type="invNo">P.Tebt.0621</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for poll tax paid to Herieus, Praktor of the metropolis, by Deios [or Didas]</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1.5 cm.; left, 2 cm.; bottom, 2 cm.; in bottom left corner, in red ink "621"; on verso, in black ink: T 445.</note>
                      <note type="general">15th year of the Emperor Trajanus, 3rd of the Egyptian month Thoth</note>
+                     <note type="local_note">1482</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +71,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Poll tax</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 15 of Imperator Caesar Trajanus Augustus, Thoth 3. Paid by Deios son of Deios son of Didas, his mother being Thaisas to Herieus (?), collector of the metropolitan taxes, in the district Syriake as poll-tax of the fourteenth year twenty drachmas, that is, 20 dr., with additional payments of ten bronze obols.</ab>
          </div>
          <div type="bibliography" subtype="citations">

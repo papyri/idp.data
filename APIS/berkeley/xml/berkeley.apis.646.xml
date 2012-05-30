@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.646</idno>
-            <idno type="controlno">(CU)646</idno>
+            <idno type="controlNo">(CU)646</idno>
+            <idno type="ddbdp">p.tebt..2.408</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0408</idno>
+                  <idno type="invNo">P.Tebt.0408</idno>
                </msIdentifier>
                <msContents>
                   <summary>Hippolutos urges Akousilaos, dioiketes, to restrain the generosity of the writer's sons.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 2.1 cm.; left, 1.4 cm.; right, 0.7 cm.; bottom, 4.7 cm.; on verso, in black ink: T 239.</note>
                      <note type="general">32nd year of the Emperor Augustus, 15th of the Egyptian month Epeiph.</note>
+                     <note type="related">Other letters to Akousilaos are P.Tebt. 0409 and 0462.</note>
+                     <note type="local_note">1377</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,19 +75,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Wheat; Generosity</term>
-               <term>
-                  <rs type="genre_form">Private letters, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Private letters, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Hippolitos to his dearest Akousilaos, very many greetings. Since you know how I esteem and love you, I entreat you about my sons, not to allow that, out of their regard for Soterichos and his people, wheat be given them. I have written to my beloved Lysimachos also, as well as to you, about the same persons. So do not act otherwise. And do you too write about anything you wish for, and for the rest take care of your health. Goodbye. The 32nd year of Caesar, Epeiph 15. (addressed on the verso) To Akousilaos, dioiketes.</ab>
          </div>
          <div type="bibliography" subtype="citations">

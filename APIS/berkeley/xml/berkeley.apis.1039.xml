@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1039</idno>
-            <idno type="controlno">(CU)1039</idno>
+            <idno type="controlNo">(CU)1039</idno>
+            <idno type="ddbdp">p.tebt..3.1.812</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0812 Recto</idno>
+                  <idno type="invNo">P.Tebt.0812 Recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Apollonios offers to pay to the farmers of the tax on sales a sum of money, in return for which he wishes to learn the business of the tax on sales.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso unpublished.</note>
                      <note type="general">Margins: top, 3.2 cm.; left, 3 cm.; right, 0.5 cm.; bottom, 1.1 cm.</note>
                      <note type="general">14th year of Ptolemy V Epiphanes (?)</note>
+                     <note type="local_note">1267</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -63,20 +73,16 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Tax collection; Sales tax; Egkuklion tax</term>
-               <term>
-                  <rs type="genre_form">Declarations, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Declarations, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>To N.N., Aniketos, Ptolemaios and Isidoros, contractors for the tax on sales for the 14th year, from Apollonios son of Hermogenes. I undertake to pay for the initiation of the tax on sales, on condition that, taking the proper receipts as regards the banker and agoranomos, I [rightly?] conduct with them the business of the individuals so that the contract incurs no loss, 500 drachmas a month, which makes 1 talent for the year. Ö will act with me Ö [The 14th year, Thoth ?] 15.</ab>
+         <div type="translation">
+            <ab>To N.N., Aniketos, Ptolemaios and Isidoros, contractors for the tax on sales for the 14th year, from Apollonios son of Hermogenes. I undertake to pay for the initiation of the tax on sales, on condition that, taking the proper receipts as regards the banker and agoranomos, I [rightly?] conduct with them the business of the individuals so that the contract incurs no loss, 500 drachmas a month, which makes 1 talent for the year. � will act with me � [The 14th year, Thoth ?] 15.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2703</idno>
-            <idno type="controlno">(MiU)2703</idno>
+            <idno type="controlNo">(MiU)2703</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6217</idno>
+                  <idno type="invNo">P.Mich.inv. 6217</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of ingredients for medicine purposes</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +69,15 @@
             <keywords scheme="#apis">
                <term>Medicinal plants.</term>
                <term>Medicine, Greek and Roman.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>reed: li(tra) 1, ke(ratia) 3.  root (used as a spice, Saussurea Lappa):  li(tra) 1, ke(ratia) 5.  Cassia (cinnamomum iners):  li(tra) 1, ke(ratia) 3. xylokasia (an inferior kind of cassia):  li(tra) 1, ke(ratia) 4. Cyclamen graecum:  li(tra) 1, ke(ratia) 1. ... Storax (Styrax officinalis):  li(trae) 2, ke(ratia) 3.  Saffron (crocus sativus): (unciae) 3, ke(ratia) 12 unciae 3 1/2. Storax (styrax officinallis): (unciae) 8, ke(ratia) 4.  Asphlalt (bitumen):  li(trae) 3, ke(ration) 1.  Dust:  li(trae) 3, ke(ratia) 4. onycha (an aromatic substance):  li(tra) 1, ke(ratia) 2 1/2. Mastich (pistacia lentiscus or atractylis gummifera):  li(tra) 1, ke(ration) 1. Balsam-wood:  li(tra) 1, ke(ration) 1/2. balsam: (unciae) 2, ke(ratia) 12. Sediment:  li(trae) 2, ke(ratia) 3. Francincense:  li(tra) 1, ke(ratia) 3. Hemp (cannavis sativa): ke(ratia) 4. Epithymon (a parasitic plant growing on thyme): gr(ammata) 12, ke(ration) a. [[sigkiper(is) ke(ratia) 20]]. Laserwort (ferula tingitana): gr(ammata) 12, ke(ramia) 2.;[[ajowan (carum copticum): gr(ammata)]]. Parsley (petroselinum sativum): gr(ammata) 12, ke(ration) 1/2;(here translated by NL)</ab>
          </div>
          <div type="bibliography" subtype="citations">

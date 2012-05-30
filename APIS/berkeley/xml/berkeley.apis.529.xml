@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.529</idno>
-            <idno type="controlno">(CU)529</idno>
+            <idno type="controlNo">(CU)529</idno>
+            <idno type="ddbdp">sb.18.14055</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0168 (2)</idno>
+                  <idno type="invNo">P.Tebt.0168 (2)</idno>
                </msIdentifier>
                <msContents>
                   <summary>Order to Didymos, a banker, to pay 20 bronze drachmas.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto published</note>
                      <note type="general">Margins: top (to previous text), 0.1 cm.; left, 6.1 cm.</note>
+                     <note type="related">The handwriting is the same as that of 168 (1) and 61 (a) Verso (9).</note>
+                     <note type="local_note">1573, 1574</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,20 +70,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Business letters</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>To Didymos, banker. Pay to Pa[ ] twenty bronze drachmas and do not hold him. Ö</ab>
+         <div type="translation">
+            <ab>To Didymos, banker. Pay to Pa[ ] twenty bronze drachmas and do not hold him. �</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

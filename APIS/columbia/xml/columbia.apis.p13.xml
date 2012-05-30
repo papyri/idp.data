@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p13</idno>
-            <idno type="controlno">(NNC)aaa1325</idno>
+            <idno type="controlNo">(NNC)aaa1325</idno>
+            <idno type="ddbdp">p.col..3.13</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 4</idno>
+                  <idno type="invNo">Col.inv. 4</idno>
                </msIdentifier>
                <msContents>
                   <summary>An official writes to Zenon regarding the auction of the right to collect the sixth (apomoira) on vines and fruit trees; the orchard probably was upon the estate of Apollonios in Philadelphia</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">5 lines written across the fibers; on the back, along the fibers, address and traces of the docket</note>
                      <note type="general">The papyrus is fragmentary especially on the left where the beginnings of the lines are missing</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate when="-0257"/>
+                     <origDate when="-0257">257 BCE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in July 1923; no. 50 in Bell's inventory</p>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,9 +57,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

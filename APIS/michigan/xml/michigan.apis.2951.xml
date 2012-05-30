@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2951</idno>
-            <idno type="controlno">(MiU)2951</idno>
+            <idno type="controlNo">(MiU)2951</idno>
+            <idno type="ddbdp">sb.6.9428</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6833</idno>
+                  <idno type="invNo">P.Mich.inv. 6833</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued to Pnepheros, son of Petheus, for payment of the dike tax (chomatikon)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto</note>
+                     <note type="related">P.Mich. inv. 6833b-d; 6833f(?)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -54,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +75,15 @@
                <term>Irrigation.</term>
                <term>Tax collection--Egypt--Karanis (Extinct city)</term>
                <term>Dikes (Engineering)--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The seventh year of the Emperor Caesar Titus Aelius Hadrianus Antoninus Augustus Pius, Epeiph 28. Pnepheros, son of Petheus and Thaesas, and grandson of Petesouchos, has paid to Sokrates and his associates, collectors of the money taxes of Karanis, for dike tax of the sixth year, on behalf of Karanis, six drachmai four obols, equal 6 dr. 4 ob., (and) for extra charges 1 drachme 2 chalkoi.</ab>
          </div>
          <div type="bibliography" subtype="citations">

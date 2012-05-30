@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1243</idno>
-            <idno type="controlno">(CU)1243</idno>
+            <idno type="controlNo">(CU)1243</idno>
+            <idno type="ddbdp">sb.18.13987</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0672</idno>
+                  <idno type="invNo">P.Tebt.0672</idno>
                </msIdentifier>
                <msContents>
                   <summary>Certificate of five days labor for dike corvee.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1 cm.; left, 1.1 cm.; bottom, 1 cm. In red ink lower left margin: 672. In black ink on verso: T654.</note>
                      <note type="general">16th year of Antoninus Pius, in the Egyptian month Payni.</note>
+                     <note type="local_note">1488</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +72,15 @@
             <keywords scheme="#apis">
                <term>Dikes (Engineering)</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Certificates</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Certificates</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The sixteenth year of Imperator Caesar Titus Aelius Hadrianus Antoninus Augustus Pius. Work done on the dikes for the same 16th year, Payni --, at the new sluice gate, (2nd hand) on behalf of Tebtunis, (3rd hand) Orseus son of Harpaesis son of N.N., his mother being Then---. (4th hand) I, Akousilaos, have signed.</ab>
          </div>
          <div type="bibliography" subtype="citations">

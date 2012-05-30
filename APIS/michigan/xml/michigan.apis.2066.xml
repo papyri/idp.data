@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2066</idno>
-            <idno type="controlno">(MiU)2066</idno>
+            <idno type="controlNo">(MiU)2066</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3724</idno>
+                  <idno type="invNo">P.Mich.inv. 3724</idno>
                </msIdentifier>
                <msContents>
                   <summary>Private letter in which Copres writes to his father with the request that he brings some materials and some personal goods to Copres.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso (both sides parallel with the fibers)</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -71,19 +80,15 @@
                <term>Intercessory prayer--Paganism--Egypt.</term>
                <term>Implements, utensils, etc.--Egypt.</term>
                <term>Footwear--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"To my lord Hermes, my father, Kopres, greetings. Before all things I pray for your health and I make daily obeisance for you in presence of our ancestral gods. Therefore now I wrote to you at another time about the sorrow which took hold of all because of my overseer Hermation. Therefore now come out and bring me resin and spattles to work with and the basket which he told you. I pray for your good health. In margine sinistra: Bring me sandals.";(Verso): "Copres to Hermes, his father. Deliver to Hermes from Copres."</ab>
          </div>
          <div type="bibliography" subtype="citations">

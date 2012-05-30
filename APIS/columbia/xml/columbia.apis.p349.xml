@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,16 +9,16 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p349</idno>
-            <idno type="controlno">(NNC)aaa3525</idno>
+            <idno type="controlNo">(NNC)aaa3525</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Oxy. 317</idno>
+                  <idno type="invNo">Oxy. 317</idno>
                </msIdentifier>
                <msContents>
                   <summary>Copy of a release from liability for military service on the ground of poor eyesight.  Issued by the prefect Gn. Vergilius Capito</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; back blank</note>
                      <note type="general">13 lines; complete except for 2-3 letters at the ends of lines 1-3</note>
                      <note type="general">The hand is in a clear epistolary style</note>
@@ -25,7 +26,7 @@
                      <note type="general">Duplicate of P.Oxy. I 39.  Unlike I.39 which has several abbreviations this copy has everything written in full</note>
                      <note type="general">The prefect is referred to as hegemon amphoteron</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -36,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate when="0052"/>
+                     <origDate when="0052">52 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Given to Columbia University by the Egypt Exploration Society, 1901</p>
@@ -45,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -54,9 +62,7 @@
             <keywords scheme="#apis">
                <term>Gnaius Vergilius Capito, -- prefect of Egypt</term>
                <term>Release from military service</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

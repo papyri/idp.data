@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.638</idno>
-            <idno type="controlno">(CU)638</idno>
+            <idno type="controlNo">(CU)638</idno>
+            <idno type="ddbdp">sb.12.11005</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0537</idno>
+                  <idno type="invNo">P.Tebt.0537</idno>
                </msIdentifier>
                <msContents>
                   <summary>Upper portion of an acknowledgement of the repayment of a loan of 132 drachmae.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 2.3 cm.; left, 1.6 cm.; in top right margin, in red ink: 537; on verso, in black ink: T 30.</note>
                      <note type="general">21st year of the Emperor Hadrianus, the 27th of the Egyptian month Mesore.</note>
+                     <note type="local_note">2302</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +72,15 @@
             <keywords scheme="#apis">
                <term>Loans, Personal</term>
                <term>Tebtunis; Polemonos meris; Arsinoites nomos; Theogonis</term>
-               <term>
-                  <rs type="genre_form">Contracts, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Contracts, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Twenty-first year of Imperator Caesar Trajanus Hadrianus Augustus, Mesore 27, at Tebtunis in the division of Polemon of the Arsinoite nome. Heron, son of Souchas, about thirty-two years old, with a scar on his left hand, acknowledges to Pakebkis son of Marepsemis, about twenty-eight years old, with a scar along his right shin, that he has received from him, Pakebkis, from hand to hand, one hundred thirty-two silver drachmas plus interest, which Pakebkis owed Heron according to the terms of a contract of loan drawn up by the record office of the village Theogonis in the present year on the fourteenth day of the month Phamenoth; and he has turned over this contract to Pakebkis for cancellation and invalidation. Nor shall Heron take action against Pakebkis with respect to what he has received, as stated above... (Here the papyrus breaks off.)</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.4762</idno>
-            <idno type="controlno">(NNU)4762</idno>
+            <idno type="controlNo">(NNU)4762</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv. 38</idno>
+                  <idno type="invNo">NYU inv. 38</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Bobst</note>
                      <note type="general">31 lines</note>
                      <note type="general">Source of description: R</note>
                      <note type="general">Verso blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -40,6 +41,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -47,28 +55,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Contract</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Sale</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Female Donkey</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Contract</term>
+               <term type="genre_form">Sale</term>
+               <term type="genre_form">Female Donkey</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Phallas, son of Hatres and mother N.N., from the city of Oxyrhynchus, acknowledge that he has sold to Herakleides, son of Didymus, grandson of/alias (?) N.N., his mother is Helena, from Aphrodison in the Small Oasis a female, white, full-grown donkey without a brand, for an agreed price of three hundred twenty drachmas of minuted imperial silver coinage which acknowledging party, Pallas, son of Hatres, has received on the spot in full from the said Herakleides and (Pallas acknowledges) that he will guarantee (the donkey).  And if somebody lays his hands on it saying he is the owner, the acknowledging party will remove him at his own expenses or - if he does not - he will hand back to the said Herakleides the afore-mentioned price which has been paid to him.  The (contract of) sale is authoritative.  Year 7 of Lucius Septimius Severus Pius Pertinax and Marcus Aurelius Antoninus Caesares the lords Augusti on the 2nd of the month Hadrianus.  I, Pallas, son of Hatres, have sold the said donkey and I have received the said three hundred twenty drachmas of silver as stated above.  I, Paesis, son of Ploutarchos, from the city of Oxyrhynchus, have written for him as he does not know letters.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.123</idno>
-            <idno type="controlno">(NNC)aaa0292</idno>
+            <idno type="controlNo">(NNC)aaa0292</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Col.inv. 123 (acc. 8.2)</idno>
+                  <idno type="invNo">O.Col.inv. 123 (acc. 8.2)</idno>
                </msIdentifier>
                <msContents>
                   <summary>order from a pronoetes named Kyrakos to Theon for payment of wine to participant in the chariot race</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">6 lines of writing on the front, back blank</note>
                      <note type="general">complete</note>
                      <textLang mainLang="grc">in Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -30,10 +31,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate notBefore="0300" notAfter="0399">300 CE – 399 CE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -41,9 +53,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraca</rs>
-               </term>
+               <term type="genre_form">Ostraca</term>
             </keywords>
          </textClass>
       </profileDesc>

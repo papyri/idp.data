@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Amulet consisting of papyrus fragments from Egypt. Contains Matthew 6:9-13 (the Lord's Prayer including the doxology) on the front and Psalm 90 from the Septuagint, the Greek Old Testament, on the verso, both with variants. The crosses preceding the Psalm and following the Lord's prayer show that the verso was written first</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 11.5 x 26.8 cm</note>
                      <note type="general">25 lines</note>
                      <note type="general">Originally folded five times</note>
@@ -25,10 +26,14 @@
                      <note type="general">Upper margin of 0.5 cm.; lower margin of 17.5 cm. on the recto; small lower margin on the verso; left margin of 0.5 cm.; small right margin</note>
                      <note type="general">P.Duk.inv. 778 was formerly P.Rob.inv. 41</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, reconstructed from several joining fragments, mounted in glass ; 12 x 27 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, reconstructed from several joining fragments, mounted in glass ; 12 x 27 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Amulets Egypt 30 B.C.-640 A.D</term>
                <term type="genre_form">Subliterary papyri Egypt 30 B.C.-640 A.D</term>
                <term type="genre_form">Papyri</term>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,7 +19,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Draft of two paragraphs of a petition from Panopolis (modern name: Akhmim), Egypt, written on papyrus. Petition is written by Ammon, the well-known scholastikos or lawyer, to Flavius Sisinnius katholikos, or high official in Alexandria. Drawn up between Dec. 9 and Dec. 13, 348 A.D. in Alexandria. Second frame of glass has the coarse linen cloth that was wrapped around P.Duk.inv. 18 when it was rolled up. Verso has another draft of the same petition in Greek (P.Duk.inv. 18 V)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of papyrus are 38.1 x 14.0 cm. Dimensions of the linen wrapper are 23.6 x 21.0 cm</note>
                      <note type="general">36 lines</note>
                      <note type="general">Written along the fibers on the recto; written across the fibers on the verso inverse to the text on the recto</note>
@@ -26,10 +27,14 @@
                      <note type="general">P.Duk.inv. 18 R was formerly P.Duk.inv. G 18 R</note>
                      <note type="general">Other drafts of this petition include P.Duk.inv. 18 V, P.Duk.inv. 19 V, P.Duk.inv. 187 R, P.Duk.inv. 188 R, P.Duk.inv. 189 R, P.Duk.inv. 189 V, P.Duk.inv. 217 R and P.Duk.inv. 1278</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus and linen cloth, mounted in two frames of glass, incomplete</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus and linen cloth, mounted in two frames of glass, incomplete</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -39,13 +44,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Phlaouios Sisinnios, -- Katholikos, -- fl. 348.</term>
                <term>Complaints (Civil procedure) -- Egypt -- 30 B.C.-640 A.D.</term>
                <term>Lawyers -- Egypt -- 30 B.C.-640 A.D.</term>

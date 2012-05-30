@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,7 +19,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Letter from Egypt, written on papyrus. Alkeides writes to Nesiotes about Herodes, the tax collector, and what happened during Alkeides' absence. Possibly mentions the market place</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Dimensions of fragments are at least 22.0 cm x 21.1 cm</note>
                      <note type="general">15 lines</note>
                      <note type="general">Written across the fibers on the recto in the same hand as P.Duk.inv. 25; the address written along the fibers on the verso in large letters</note>
@@ -26,10 +27,14 @@
                      <note type="general">Extracted from mummy cartonnage</note>
                      <note type="general">P.Duk.inv. 24 was formerly P.Duk.inv. G 24</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, four fragments of which three join, mounted in glass, right part is broken off</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, four fragments of which three join, mounted in glass, right part is broken off</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -39,13 +44,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Nesiotes -- (From Egypt), -- fl. 256 B.C.</term>
                <term>Tax collection -- Egypt -- 332-30 B.C.</term>
                <term type="genre_form">Documentary papyri Egypt 332-30 B.C</term>

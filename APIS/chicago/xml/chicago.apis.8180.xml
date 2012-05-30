@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.8180</idno>
-            <idno type="controlno">(ICU)8180</idno>
+            <idno type="controlNo">(ICU)8180</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O. OIM 19294</idno>
+                  <idno type="invNo">O. OIM 19294</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Catalogue no. 6; Nelson collection no. N260.  Taminis, daughter of Parates is Muhs&amp;apos; Taxpayer 26.  1/6 silver (kite) or 2 obols is the price of 1 kotule or 0.27 liter of oil.   The scribe Esminis was responsible for many other price of oil receipts from Thebes between years 30 and 38 of Ptolemy II.  (See additional OIM ostraca.)</note>
+                  <msItemStruct>
+                     <note type="general">Catalogue no. 6; Nelson collection no. N260.  Taminis, daughter of Parates is Muhs' Taxpayer 26.  1/6 silver (kite) or 2 obols is the price of 1 kotule or 0.27 liter of oil.   The scribe Esminis was responsible for many other price of oil receipts from Thebes between years 30 and 38 of Ptolemy II.  (See additional OIM ostraca.)</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +70,15 @@
             <keywords scheme="#apis">
                <term>Receipts</term>
                <term>Oil</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>OIM 19294, recto: (1) Taminis daughter of Parates, 1/6 silver (kite) for the price (2) of oil of Mecheir, has written Esminis (3) on Egyptian year 38, Pharmouthi 1.</ab>
          </div>
          <div type="bibliography" subtype="citations">

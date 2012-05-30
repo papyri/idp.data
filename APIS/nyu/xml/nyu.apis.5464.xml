@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.5464</idno>
-            <idno type="controlno">(NNU)</idno>
+            <idno type="controlNo">(NNU)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv.cairo 109v</idno>
+                  <idno type="invNo">NYU inv.cairo 109v</idno>
                </msIdentifier>
                <msContents>
                   <summary>The verso contains a fragment of a Coptic order of payment ('To the credit of our father, bishop: twenty white breads, 20. Through Apollo, the baker ...').</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso (parallel to fibres) contains 2 lines and has small blank margins at the top, left and right sides.</note>
                      <note type="general">Recto contains part of a Coptic letter. See nyu.apis.5463.</note>
+                     <note type="local_note">Held in the Special Collections Department of Bobst library of NYU and stored loose in acid-free file folders.</note>
                      <textLang mainLang="egy-Copt" otherLangs="grc">Coptic; Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +59,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus; order of payment</rs>
-               </term>
+               <term type="genre_form">papyrus; order of payment</term>
             </keywords>
          </textClass>
       </profileDesc>

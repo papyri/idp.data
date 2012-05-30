@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3186</idno>
-            <idno type="controlno">(MiU)3186</idno>
+            <idno type="controlNo">(MiU)3186</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 954</idno>
+                  <idno type="invNo">P.Mich.inv. 954</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payments for the price of wine and oil, and for hay and chaff</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">There is no apparent connection between the two receipts written on this papyrus.</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (written across the fibres); Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -68,19 +76,15 @@
                <term>Taxation--Egypt--Karanis (Extinct city)</term>
                <term>Tax collection--Egypt--Karanis (Extinct city)</term>
                <term>Real property tax--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(2nd hand) Year 9-8 of our lords Diocletian and Maximian, Augusti, Tybi 26. Aion and his brothers have paid, as the price of wine and oil of the sixth epigraphe, four hundred drachmai, equal 400 dr., through me, Kyrillos, assistant.;(3rd hand) Likewise, through me, Petros, as the price of hay and chaff, thirty-six litrai, equal 36 litrai.</ab>
          </div>
          <div type="bibliography" subtype="citations">

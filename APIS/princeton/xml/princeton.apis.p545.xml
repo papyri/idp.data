@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p545</idno>
-            <idno type="controlno">(NjP)apis.p0545</idno>
+            <idno type="controlNo">(NjP)apis.p0545</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. GD 7733 A, B</idno>
+                  <idno type="invNo">Princ. inv. GD 7733 A, B</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of names including Didymus Thomas, Theon, Mouso[nios</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; back blank</note>
                      <note type="general">Each fragment  has traces of two columns: frag. (a) col. I, 15 lines; col. II, traces, broken except at top; frag. (b) col. I, 17 lines; col. II 15 lines, broken on all sides</note>
                      <note type="general">Top is frayed on both fragments; frag. (a) has some dirt covering text; frag. (b) is damaged along a vertical line at the center</note>
                      <note type="general">The hand is a small, compressed cursive</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +35,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0200" notAfter="0299"/>
+                     <origDate notBefore="0200" notAfter="0299">200 CE – 299 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Garrett Deposit 1926, no. III 70 in H. I. Bell's inventory</p>
@@ -43,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

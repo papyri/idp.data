@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus account of taxes from the Arsinoites (modern name: Fayyum), Egypt. Payments are in money instead of in kind. Roses are grown on some of the taxed property. Verso has a tax list in Greek (P.Duk.inv. 699 V)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 15.2 x 20.3 cm</note>
                      <note type="general">28 lines</note>
                      <note type="general">Written in two columns along the fibers; written across the fibers on the verso</note>
@@ -25,10 +26,14 @@
                      <note type="general">Extracted from mummy cartonnage with P.Duk.inv. 700-704</note>
                      <note type="general">P.Duk.inv. 699 R was formerly P.Duk.inv. MF79 26 R</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass ; 16 x 21 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass ; 16 x 21 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Accounting -- Egypt -- Fayyum -- 332-30 B.C.</term>
                <term>Tax collection -- Egypt -- Fayyum -- 332-30 B.C.</term>
                <term>Taxation -- Egypt -- 332-30 B.C.</term>

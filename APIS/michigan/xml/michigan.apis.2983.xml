@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2983</idno>
-            <idno type="controlno">(MiU)2983</idno>
+            <idno type="controlNo">(MiU)2983</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6878</idno>
+                  <idno type="invNo">P.Mich.inv. 6878</idno>
                </msIdentifier>
                <msContents>
                   <summary>Duplicate deed, by which Theon, son of Petaus, acknowledges for himself and for his brother Petaus (the village secretary of Ptolemais Hormou) that he owes 100 drachmai to Heron, son of Herakleides</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is P.Petaus 34</note>
+                     <note type="related">Archive of Petaus, son of Petaus, komogrammateus of Ptolemais Hormou</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +75,15 @@
                <term>Karanis</term>
                <term>Debt</term>
                <term>Literacy--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Col. I);;Theon, son of Petaus, and Petaus, son of Petaus, both from the village of Karanis, to Heron, son of Herakleides, greetings. We acknowledge to have received from you as a loan one hundred silver drachmai as capital, at the interest of one drachme (per mina) per month, which we will pay you back on mutual security in the month of Hathyr of the coming twenty-fifth year of Commodus Antoninus Caesar our lord, without delay. Let this cheirograph, written in two copies by [- - -], be valid [- - -]. I, Theon, have written most of it, also for Petaus. Year 24 of Marcus Aurelius Commodus Antoninus Caesar our lord, [- - -].;;(Col. II - beginnings of the lines of the second copy of the text.);;(Text in top margin: too uncertain to be translated)</ab>
          </div>
          <div type="bibliography" subtype="citations">

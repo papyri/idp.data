@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3050</idno>
-            <idno type="controlno">(MiU)3050</idno>
+            <idno type="controlNo">(MiU)3050</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6961</idno>
+                  <idno type="invNo">P.Mich.inv. 6961</idno>
                </msIdentifier>
                <msContents>
                   <summary>Formal complaint filed by Peteuris against a certain Tettaphos who allegedly attacked him.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; traces of a different hand on the Verso</note>
+                     <note type="related">P. Mich. inv. 6957 and P. Mich. inv. 6979</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -61,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -69,19 +78,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Lysimachis,;Trikomia</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"To Poseidonios, the oikonomos, from Peteuris, a fuller of Lysimachis and Trikomia. I was wronged by Tettaphos, acting as a epistates of Lysimachis. Whereas, in the 6th year, on the 1st of Pauni, having proceeded to my cleaning shop, he asked me for a himation that Thasos, isionomos of the residents of Lysimachis, had given me to clean. When I asked him for the stipulated payment, he made no reply, but he attacked me with Meniskos and Xennias, whom he brought with him, and [inflicted] numerous blows upon me and scattered [- - -] and [- - -]. "</ab>
          </div>
          <div type="bibliography" subtype="citations">

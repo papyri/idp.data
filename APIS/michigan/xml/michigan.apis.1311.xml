@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1311</idno>
-            <idno type="controlno">(MiU)1311</idno>
+            <idno type="controlNo">(MiU)1311</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1051</idno>
+                  <idno type="invNo">P.Mich.inv. 1051</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payment of 8 carats for the diagraphe</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (written across the fibres) + Verso</note>
+                     <note type="related">Archive of Dioskoros of Aphrodito.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +75,15 @@
             <keywords scheme="#apis">
                <term>Tax collection--Egypt--Aphrodito (Extinct city)</term>
                <term>Receipts (Acknowledgments)--Egypt--Aphrodito (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto);;(Remnants of a preceding text);;(Cross) Apollos, son of Dioskoros, has given through Phoibammon as third installment for the public taxes of the third indiction, eight carats, total 8 carats. The most illustrious pagarchs, through me Phoibammon, tax-collector: I have issued the receipt as written above, for the diagraphe, three and a half carats in the full standard, total 3 1/2 carats. (Cross) (Tachygraphy).;;(Verso);;(Remnants of one line).</ab>
          </div>
          <div type="bibliography" subtype="citations">

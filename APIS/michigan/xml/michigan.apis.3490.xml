@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,15 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3490</idno>
-            <idno type="controlno">(MiU)3490</idno>
+            <idno type="controlNo">(MiU)3490</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 21</idno>
+                  <idno type="invNo">P.Mich.inv. 21</idno>
                </msIdentifier>
                <msContents>
                   <summary>This page of the codex contains a recipe of the "parygron" against ulcers and other conditions.</summary>
+                  <msItemStruct>
+                     <note type="general">Location: Ann Arbor</note>
+                     <note type="general">Pub. status: Recto</note>
+                     <note type="related">-</note>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -57,19 +70,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Literary; medicine</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary; medicine</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>". . . and, (when wanted) for use, apply the medication to a piece of finest linen. It works wonderfully for ulcers and other conditions. For the affected parts of the body are healed by the application of the so-called "parygron", a medication not to be despised. 44 drachmas of fresh swine fat, that which they call "axunge", 24 drachmas of white wax, 6 drachmas of white lead, 6 drachmas of litharge. The melted soluble ingredients are combined with the powdered dry ingredients; and, in time, the medication will take on consistency. This plaster heals the affected parts of the body just as other similar medications . . ."</ab>
          </div>
          <div type="bibliography" subtype="citations">

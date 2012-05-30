@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1502</idno>
-            <idno type="controlno">(CU)1502</idno>
+            <idno type="controlNo">(CU)1502</idno>
+            <idno type="ddbdp">sb.12.10953</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0617</idno>
+                  <idno type="invNo">P.Tebt.0617</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for poll tax.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">12th year of Antoninus Pius, 16th of the Egyptian month Pachon.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -58,19 +67,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Poll tax</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The 12th year of Aurelius Antoninus Caesar the lord Armeniacus Medicus Parthicus Germanicus Maximus, Pachon 16th for the account of Pharmouthi. Aretion, apator, his mother being Thermouth() has paid for poll tax of the eleventh year, Treasuries' quarter, twenty drachmas, that is 20 (dr.), extra ten obols.</ab>
          </div>
          <div type="bibliography" subtype="citations">

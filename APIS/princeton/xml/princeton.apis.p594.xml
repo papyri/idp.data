@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p594</idno>
-            <idno type="controlno">(NjP)apis.p0594</idno>
+            <idno type="controlNo">(NjP)apis.p0594</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. AM 87-55</idno>
+                  <idno type="invNo">Princ. inv. AM 87-55</idno>
                </msIdentifier>
                <msContents>
                   <summary>Petition from Olympios, son of Antipatros to Theogenes, the dioketes concerning tax on vineyards.  Olympios claims exemption from the tax, which amounts to 1,500 drachmas.  A subscription orders Horos, the royal scribe of the Arsinoite, to look into the matter</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; docket on back</note>
                      <note type="general">28 lines; complete but with several large holes in the top left corner</note>
                      <note type="general">The hand is a good-sized cursive</note>
                      <note type="general">The subscription is written in a rapid cursive</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -32,10 +33,21 @@
                      </supportDesc>
                   </objectDesc>
                </physDesc>
-               
+               <history>
+                  <origin>
+                     <origDate when="-0217">217 BCE</origDate>
+                  </origin>
+               </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -43,9 +55,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

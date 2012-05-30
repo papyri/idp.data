@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.52</idno>
-            <idno type="controlno">(MiU)52</idno>
+            <idno type="controlNo">(MiU)52</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4204</idno>
+                  <idno type="invNo">O.Mich.inv. 4204</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for transport of 4 donkey-loads of tax grain, made on behalf of Gemellus</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Kelsey Museum</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,25 +69,21 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Theadelphia; Arsinoiton polis(?)</term>
-               <term>Donkeys-- Egypt -- Arsino»Ω (Fayy√Øum : Extinct city)</term>
+               <term>Donkeys-- Egypt -- ArsinoȽ (Fayyïum : Extinct city)</term>
                <term>Service, Compulsory non-military--Egypt--Kharabat Ihrit.</term>
                <term>Tax collection--Egypt--Kharabat Ihrit.</term>
                <term>Kharabat Ihrit (Egypt)</term>
                <term>Granaries--Taxation--Egypt--Kharabat Ihrit.</term>
                <term>Grain--Transoprtation--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>For the granary of the village of Theadelphia, for the crop of the ninth, 8th, and 1st year, in the name of Gemellus, by the bears of burden of the city of the Arsinoites(?), through Melas, four donkey-loads, equal 4 donkey-loads. In the 10th, 9th, and 2nd year.</ab>
          </div>
          <div type="bibliography" subtype="citations">

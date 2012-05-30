@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1250</idno>
-            <idno type="controlno">(NNC)aaa4199</idno>
+            <idno type="controlNo">(NNC)aaa4199</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 190a</idno>
+                  <idno type="invNo">Col. inv. 190a</idno>
                </msIdentifier>
                <msContents>
                   <summary>Ending portion of a lease - as the docket confirms - of an olive grove dated to the 16 of Athyr</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written with the fibers; on the verso, a 2-line docket</note>
                      <note type="general">7 lines; broken at top</note>
                      <note type="general">Space of 7 cm. blank beneath text</note>
                      <note type="general">The hand is a tiny rapid cursive; the lines go slightly upward</note>
+                     <note type="local_note">Suit advanced student Not glassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +36,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0001" notAfter="0099"/>
+                     <origDate notBefore="0001" notAfter="0099">1 CE – 99 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. XVIII.35 in Bell's inventory</p>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Lease</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

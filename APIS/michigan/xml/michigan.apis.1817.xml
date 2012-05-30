@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1817</idno>
-            <idno type="controlno">(MiU)1817</idno>
+            <idno type="controlNo">(MiU)1817</idno>
+            <idno type="ddbdp">p.mich..1.24</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3128</idno>
+                  <idno type="invNo">P.Mich.inv. 3128</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter from Apollonides to Apollonios, informing the dioiketes that he has sent him a consignment of two hundred pear-shoots, after Apollonios himself had made a similar gift to the king</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (written across the fibres) + Verso</note>
+                     <note type="related">Zenon archive</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -72,19 +82,15 @@
                <term>Gifts--Egypt.</term>
                <term>Pear--Egypt.</term>
                <term>Orchards--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto);;Apollonides to Apollonios greeting. Seeing that the peer-trees grown by us have been [. . .] through you to the king, I have sent, as a gift to yourself, two hundred pear-shoots from another orchard. Farewell. [- - -];;(Verso);;To Apollonios the dioiketes.;(Docket, 2nd hand) Apollonides controller of accounts about 200 pear-trees. (Received) year 29, Panemos, in Arsinoe of Dion.</ab>
          </div>
          <div type="bibliography" subtype="citations">

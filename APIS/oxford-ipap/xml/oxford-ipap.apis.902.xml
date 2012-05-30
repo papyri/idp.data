@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,15 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">oxford-ipap.apis.902</idno>
-            <idno type="controlno">(EG-CaMus)902</idno>
+            <idno type="controlNo">(EG-CaMus)902</idno>
+            <idno type="ddbdp">p.cair.zen..3.59423</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">JE51529</idno>
+                  <idno type="invNo">JE51529</idno>
                </msIdentifier>
                <msContents>
                   <summary>Dionysios informs Artemidoros that he is sending down two carpets by Kriton's boat, one of them weighing fifty and the other forty minae and both of them purple-bordered.  He is also sending the old carpet which he has unloosed and partly rewoven.</summary>
+                  <msItemStruct>
+                     <note type="local_note">CG59423</note>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,18 +39,21 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

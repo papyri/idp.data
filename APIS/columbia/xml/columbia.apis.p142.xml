@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p142</idno>
-            <idno type="controlno">(NNC)aaa1454</idno>
+            <idno type="controlNo">(NNC)aaa1454</idno>
+            <idno type="ddbdp">p.col..4.115s</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 373g</idno>
+                  <idno type="invNo">Col.inv. 373g</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fragment from the beginning of a letter to Zenon</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">2 lines written across the fibers; the back is blank</note>
                      <note type="general">Small, irregular hand; there are ink blottings above the address</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="-0261" notAfter="-0229"/>
+                     <origDate notBefore="-0261" notAfter="-0229">261 BCE – 229 BCE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from Dr. Kondilios through H.I. Bell in December 1926; no. 108 in Bell's inventory</p>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,9 +57,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

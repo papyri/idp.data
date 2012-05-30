@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.470</idno>
-            <idno type="controlno">(MiU)470</idno>
+            <idno type="controlNo">(MiU)470</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 9021</idno>
+                  <idno type="invNo">O.Mich.inv. 9021</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of six men who have transported wood to a rest-house</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -61,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -75,19 +84,15 @@
                <term>Taverns (Inns)--Egypt--Karanis (Extinct city)</term>
                <term>Supervisors--Egypt--Karanis (Extinct)</term>
                <term>Farm management--Egypt--Karanis (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The (men) who have gone to the rest-house (mone) with wood:;Foreman: Saras                                               1 load (gomarion);                       Horion, son of Leonides     1;                       Leonides, son of Papeeis  1;                       Ouales, son of Sarapion      1;                       Sotas, son of Apollonios     1;                                 through Isidoros, pediophylax</ab>
          </div>
          <div type="bibliography" subtype="citations">

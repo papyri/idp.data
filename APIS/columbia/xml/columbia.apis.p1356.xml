@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1356</idno>
-            <idno type="controlno">(NNC)aaa4617</idno>
+            <idno type="controlNo">(NNC)aaa4617</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 255</idno>
+                  <idno type="invNo">Col. inv. 255</idno>
                </msIdentifier>
                <msContents>
                   <summary>Tax receipt</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; back blank;</note>
                      <note type="general">5 lines; complete; all margins are preserved</note>
                      <note type="general">Small practiced hand with first letter greatly enlarged</note>
                      <note type="general">Some parts are faded</note>
+                     <note type="local_note">Suit advanced student</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +36,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0199"/>
+                     <origDate notBefore="0100" notAfter="0199">100 CE – 199 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman/Brummer through H.I. Bell, in 1925; no. 52 in Bell's inventory</p>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Tax receipt</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

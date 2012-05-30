@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.416</idno>
-            <idno type="controlno">(CU)416</idno>
+            <idno type="controlNo">(CU)416</idno>
+            <idno type="ddbdp">p.tebt..2.304</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0304</idno>
+                  <idno type="invNo">P.Tebt.0304</idno>
                </msIdentifier>
                <msContents>
                   <summary>Pakebkis petitions Longinus, Decurion of the Arsinoite Nome, about an attack upon him and his brother by a certain Satornilus.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1 cm.; left, 1.5 cm.; bottom, 0.4 cm.; on verso, in black ink: T 101.</note>
                      <note type="general">8th year of the Emperors Marcus Aurelius and Verus.</note>
                      <note type="general">Priests of Soknebtunis</note>
+                     <note type="local_note">2229</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,19 +74,15 @@
             <keywords scheme="#apis">
                <term>Assault and battery</term>
                <term>Arsinoites nomos; Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Petitions, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Petitions, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Longinus, decurion of the Arsinoite nome, from Pakebkis son of Onnophris from the village of Tebtunis, exempted priest of the famous temple in the village. On the 30th of the month Epeiph, when the hour was late, one Satorneilos, with a great many others, I know not why, having no complaint against us, picked a quarrel, going so far as to rush in with staves, and seizing my brother Onnophris they wounded him, so that his life is endangered in consequence. Wherefore, sir, being careful for the danger to his life, I submit this statement and beg you to order him (the perpetrator) to be brought before you so that he may take the consequences, and that I may obtain the requisite satisfaction. The 8th year of Antoninus and Verus the Lords Augusti Armeniaci Medici Parthici Maximi.</ab>
          </div>
          <div type="bibliography" subtype="citations">

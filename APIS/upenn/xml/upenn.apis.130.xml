@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.130</idno>
-            <idno type="controlno">(PU) 130</idno>
+            <idno type="controlNo">(PU) 130</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv.E16305C</idno>
+                  <idno type="invNo">P.Penn. Museum inv.E16305C</idno>
                </msIdentifier>
                <msContents>
                   <summary>A list or account of names.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text is on one side only, 11 lines written with the fibers.  The end of one column, with a margin separating it from the beginning of another column, remnants of which are visible on the right edge.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology, Ellen W. Harrison Collection.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -31,7 +33,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="-0030" notAfter="0286">30 BCE ‚Äì 286 CE</origDate>
+                     <origDate notBefore="-0030" notAfter="0286">30 BCE – 286 CE</origDate>
                      <origPlace>Egypt</origPlace>
                   </origin>
                   <provenance>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,15 +57,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">list</rs>
-               </term>
+               <term type="genre_form">papyrus</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">list</term>
             </keywords>
          </textClass>
       </profileDesc>

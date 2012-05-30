@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1855</idno>
-            <idno type="controlno">(MiU)1855</idno>
+            <idno type="controlNo">(MiU)1855</idno>
+            <idno type="ddbdp">sb..16.12594</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3173</idno>
+                  <idno type="invNo">P.Mich.inv. 3173</idno>
                </msIdentifier>
                <msContents>
                   <summary>Certain words in this letters suggest that the letter was dealing with persons within a Roman military circle. Ignatios writes to Apolinarios and Alammon, and the letter appears to be concerned with shipment of some objects.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso contains the address written paralllel to the fibers.</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -67,6 +70,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -75,19 +85,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"Ignatios to Apolinarios and Alammon, my dearest lords, many greetings. Before everything else I make your obeisance before Sarapis. We have received everything that you sent through the wife of Marcus and through Sarapion, the bird-cage and the bird-container (?), and we have paid their freight charges, 2 drachmas and 2 obols. . . . and you say that he will send through Sarapion the dalmatica of Iulianos and the monthly rations . . . and you will send in haste the coins . . . us and I see many unfortunate things. You, on the other hand, my dear father and lord, will send to us the breads and the present . . . breads and the oil and the wood. And . . . send to us the monthly rations, and I will send to you the money for the shipment, and . . . boys and the amictoriato them, for we have ruined the purple ones . . . , and I have nothing to send . . . My mother sends many greetings . . . and Kyrillous and Pakkis and . . . also many greetings to the little Apolinarios . . . and Plousis and Ignatios and Ny. . .";Verso:"To Apolinarios X from Ignatios the son"</ab>
          </div>
          <div type="bibliography" subtype="citations">

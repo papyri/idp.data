@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus letter from the Herakleopolites(?) (Heracleopolite Nome), Egypt in which a person informs another person of some official business relating to gypsum(?). Krateros phrourarchos the commander of a fort in charge of royal goods, is mentioned</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 18.9 x 9.6 cm</note>
                      <note type="general">19 lines</note>
                      <note type="general">Written along the fibers on the recto; written along the fibers on the verso</note>
@@ -25,10 +26,14 @@
                      <note type="general">Extracted from mummy cartonnage with P.Duk.inv. 324-333 and P.Duk.inv. 335-434</note>
                      <note type="general">P.Duk.inv. 334 was formerly P.Duk.inv. AF74 11</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, four joining fragments mounted in glass, top broken  off ; 19 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, four joining fragments mounted in glass, top broken  off ; 19 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Krateros -- (Fort commander from Egypt), -- 2nd cent. B.C.</term>
                <term>Gypsum -- Egypt -- 332-30 B.C.</term>
                <term type="genre_form">Documentary papyri Egypt 332-30 B.C</term>

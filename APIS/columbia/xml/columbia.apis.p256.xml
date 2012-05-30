@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,22 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p256</idno>
-            <idno type="controlno">(NNC)p256</idno>
+            <idno type="controlNo">(NNC)p256</idno>
+            <idno type="ddbdp">p.col..8.221</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 325</idno>
+                  <idno type="invNo">Col.inv. 325</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt given by the mother of Ammonios, a deceased soldier; it covers "deposita" of various kind; on the back there are the signatures of the witnesses; the receipt appears in duplicate copy and is described as a "diploma"</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers on the front and across the fibers on the back, rotating the papyrus 90 degrees</note>
                      <note type="general">34 lines of writing on the front and 14 on the back</note>
                      <note type="general">The upper and the lower text are written in different hands, the first being more regular and vertical; 6 more hands appear on the front and on the back</note>
                      <note type="general">Two seals remain: they were attached on the verso on the names of the third and fourth witnesses</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -35,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate when="0143"/>
+                     <origDate when="0143">143 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from Dr. Kondilios through H.I. Bell in July 1925; no. 175 in Bell</p>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,12 +60,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.168</idno>
-            <idno type="controlno">(ICU)168</idno>
+            <idno type="controlNo">(ICU)168</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 153</idno>
+                  <idno type="invNo">O.Medin.HabuDem 153</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Number 153 in Lichtheim&amp;apos;s publication. Undated. Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 153 in Lichtheim's publication. Undated. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +70,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 2834, recto: (1) [Inaros], son of -----, greets Imouthes, son of Petemestous, (2) [before] Amun. Haryothes, son of Nebonychos, has brought me this sherd at your bidding. I hearkened (3) ... I went [to] Sesonchis, son of Paos. He related the matter thus: There belong to me 7 (measures of) wine. (4) [Bring] the six (measures of) wine, if the 7 (measures of) wine are not given to me. It has not been the custom of the prophet of Horus (5) to remove his hand from the remunerations on account of the great goddess. And, furthermore, there is no (6) price ----. What is the proper thing in the matter ------ (7) the matter? Write me what the prophet of Horus wishes. (8) May one inquire after the health of Petemestous, son of Imouthes, (9) the prophet of Horus. Whatever you wish, write me (10) about it. Written in Pachons 25.</ab>
          </div>
          <div type="bibliography" subtype="citations">

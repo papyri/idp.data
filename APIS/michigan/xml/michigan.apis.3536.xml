@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3536</idno>
-            <idno type="controlno">(MiU)3536</idno>
+            <idno type="controlNo">(MiU)3536</idno>
+            <idno type="ddbdp">sb..16.12565</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1347</idno>
+                  <idno type="invNo">P.Mich.inv. 1347</idno>
                </msIdentifier>
                <msContents>
                   <summary>This side contains an account prepared by the supervisor of an oil-press, perhaps as part of the routine business of an estate. He acknowledges receipt of safflower, doubtless in the form of seed, to be converted to oil in conformity with a standard conversion rate, 9 artabas = 1 metretes. He then specifies the quantities of oil returned in five shipments by donkey-convoy.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Verso</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -59,6 +62,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +77,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Eleusis.</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">documentary</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"I received from Theogiton 164 1/2 art. of safflower, and through Euthyches from Eleusis 31 1/5 art. Total 195 1/2 1/5 art., at the rate of 9 art. per metretes, i. e. 21 1/2 1/4 metretai. Of these I supplied on the 1st shipment, through Melas the donkey-driver, 5 metr. 5 metr.; 2nd shipment, through Didymos, 8 metr.; 3rd shipment, through Alexandros the donkey-driver, 4 metr.; 4th shipment, through the same likewise, 2 1/4 metr.; 5 shipment, through the same likewise, 2 1/2 1/4 metr. Total 22 metr. Of these I provided 1 keramion for Panos."</ab>
          </div>
          <div type="bibliography" subtype="citations">

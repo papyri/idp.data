@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.46</idno>
-            <idno type="controlno">(CU)46</idno>
+            <idno type="controlNo">(CU)46</idno>
+            <idno type="ddbdp">p.tebt..3.1.736</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0736</idno>
+                  <idno type="invNo">P.Tebt.0736</idno>
                </msIdentifier>
                <msContents>
                   <summary>Official letter reporting certain events relating to security problems in a certain part of the Arsinoite nome.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: Fr. 1: left (or intercolumnal space?), 3 cm.; bottom, 3.2 cm.; Fr. 2: top, 3.5 cm., bottom, 2 cm.</note>
                      <note type="general">Twenty-eighth year of Ptolemy VIII Euergetes II, 24th of the Egyptian month Hathyr</note>
+                     <note type="local_note">1224</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,12 +72,8 @@
             <keywords scheme="#apis">
                <term>Guards</term>
                <term>Ptolemais Arabon; Arsinoites nomos</term>
-               <term>
-                  <rs type="genre_form">Business letters, Ptolemaic period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Ptolemaic period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

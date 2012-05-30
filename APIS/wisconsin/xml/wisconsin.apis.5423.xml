@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">wisconsin.apis.5423</idno>
-            <idno type="controlno">(WU)5423</idno>
+            <idno type="controlNo">(WU)5423</idno>
+            <idno type="ddbdp">p.wisc..2.63</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Wisc. inv. 75</idno>
+                  <idno type="invNo">P.Wisc. inv. 75</idno>
                </msIdentifier>
                <msContents>
                   <summary>An ordinary instruction for payment of which many have come down to us. Phoibammon asks his "brother" Theodoros to give for his account 200 myriads of silver to a certain Olympios who is assistant to the "e commentariis"</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Department of Special Collections; Memorial Library; Madison; Wisconsin</note>
                      <note type="general">Pub. status: recto; verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +74,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To my lord brother Theodoros, administrator, Phoibammon very good health and very many greetings. Give to Olympios, adiutor e commentariis for my account two hundred myriads of silver (denarii). total 200 myr. den. only. I pray for your health througth many years. Year 86 = 55, Mesore 16.</ab>
          </div>
          <div type="bibliography" subtype="citations">

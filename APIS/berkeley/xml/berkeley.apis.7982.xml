@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,27 +9,27 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.7982</idno>
-            <idno type="controlno">(CU)7982</idno>
+            <idno type="controlNo">(CU)7982</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.Frag.01,961</idno>
+                  <idno type="invNo">P.Tebt.Frag.01,961</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">unpublished</note>
                      <note type="general">Several fragments. Larger fragments appear to belong in the upper right hand corner.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>1 papyrus ; 8 x 14.5 cm.</support>
                         <condition>
-                           <ab type="preservation">Some of the writing is faded.</ab>
                            <ab type="conservation">One large piece with additional fragments. Larger fragments appear to belong in the upper right hand corner. A bit dirty. A little bit of plaster.</ab>
+                           <ab type="preservation">Some of the writing is faded.</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,6 +48,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -54,9 +62,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

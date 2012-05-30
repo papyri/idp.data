@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.173</idno>
-            <idno type="controlno">(ICU)173</idno>
+            <idno type="controlNo">(ICU)173</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 158</idno>
+                  <idno type="invNo">O.Medin.HabuDem 158</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Number 158 in Lichtheim&amp;apos;s publication. Year 3 indicated, but it is difficult to assign a date. Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 158 in Lichtheim's publication. Year 3 indicated, but it is difficult to assign a date. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,19 +69,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Jeme; Medamut</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 115, recto: (1) Text of the oath which Taybeleh, (2) daughter of Psenosiris, shall swear at the gate of the (3) temple of Jeme, the temple of Month, lord of Medamut, in year 3, (4) Tybi 11, to Tayher, daughter of Totoes, and (5) Hereres, daughter of Totoes, saying: By (6) The Bull of Medamut who dwells here and every god who dwells (7) with him - the property upon which he established me, together with Totoes, your father, (namely) this house - I have paid him in full for it, (9) him and his agents. If she swears the oath, she shall (10) take the half of the house, and Hereres and (11) her sister shall take the other half which she got from Pekysis, (12) son of Paylw. If she refuses to take it, she shall abandon the other half (13) to them, completing the whole house.</ab>
          </div>
          <div type="bibliography" subtype="citations">

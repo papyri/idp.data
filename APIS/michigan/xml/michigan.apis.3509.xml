@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,15 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3509</idno>
-            <idno type="controlno">(MiU)3509</idno>
+            <idno type="controlNo">(MiU)3509</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 21</idno>
+                  <idno type="invNo">P.Mich.inv. 21</idno>
                </msIdentifier>
                <msContents>
                   <summary>The first part written by the scribe (ll. 1-5) contains the uses of a foregoing recipe, which were continued at the top of the following page. They are reminiscent of those given for the phoinikine-plaster of Galen (XIII 380; Aet. XV, p. 45; 21F 10 ff.). The second hand added in the lower margins (ll. 6-9) a recipe for the plaster with zinc oxide.</summary>
+                  <msItemStruct>
+                     <note type="general">Location: Ann Arbor</note>
+                     <note type="general">Pub. status: Verso</note>
+                     <note type="related">-</note>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -57,19 +70,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>-</term>
-               <term>
-                  <rs type="genre_form">Literary; medicine</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Literary; medicine</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>" . . .  It is good for new fistulous ulcers, for ulcers needing to be completely cicatrized, and for those that are hard to cicatrize; it is also good for chilblains and . . .  .;(Hd 2) The plaster with zinc oxide: 2 ounces of zinc oxide, 3 oz. of litharge, 2 oz. of poultry-fat, 4 oz. of wax, juice of linseed, 5 oz. of chamomile. Add the melted solubles to the triturated litharge and zinc oxide."</ab>
          </div>
          <div type="bibliography" subtype="citations">

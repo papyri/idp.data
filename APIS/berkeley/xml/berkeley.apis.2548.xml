@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.2548</idno>
-            <idno type="controlno">(CU)2548</idno>
+            <idno type="controlNo">(CU)2548</idno>
+            <idno type="ddbdp">o.tebt..1</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Tebt.01</idno>
+                  <idno type="invNo">O.Tebt.01</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payment of beer-tax</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Year 10, Month of Phamenoth</note>
                      <note type="general">Gren. 1; BART A5O88 No. 24</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -48,6 +50,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -56,19 +65,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Beer tax</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman Period; Ostraka</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ost</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman Period; Ostraka</term>
+               <term type="genre_form">Ost</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 10: Pharion, son of Patronos, paid in the month of Phamenoth for individual beer tax an additional 8 drachmai. It is 8 drachmai.</ab>
          </div>
          <div type="bibliography" subtype="citations">

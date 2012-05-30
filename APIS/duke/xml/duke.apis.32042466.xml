@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Lease of a palm grove from Bakchias (Bacchias), Egypt, written on papyrus. The palm grove has dates on the trees that are ready to ripen. The rent amounts to more than 700 drachmai plus 3 artabai (a measure) of choice Syrian dates and 100 smaller sized baskets of green dates. The measure used is the six-choinikes measure of the interpreter of Bakchias. The lessee stipulates access to a drying place as well as a storage facility free of rent. He will pay the rent in year 44 of Augustus (who actually died in year 43 when the lease was drawn up)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 14.8 x 15.3 cm</note>
                      <note type="general">19 lines</note>
                      <note type="general">Written along the fibers on the recto</note>
@@ -25,10 +26,14 @@
                      <note type="general">Extracted from mummy cartonnage</note>
                      <note type="general">P.Duk.inv. 85 was formerly P.Duk.inv. G 85</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, incomplete ; 15 x 16 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, incomplete ; 15 x 16 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Date palm -- Egypt -- Bacchias (Extinct city) -- 30 B.C.-640 A.D.</term>
                <term>Rent -- Egypt -- Bacchias (Extinct city) -- 30 B.C.-640 A.D.</term>
                <term>Rent charges -- Egypt -- Bacchias (Extinct city) -- 30 B.C.-640 A.D.</term>

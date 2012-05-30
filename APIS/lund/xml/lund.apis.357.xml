@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -16,16 +17,20 @@
                   <idno type="invNo">P. Lund. inv. 2019</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">Former shelfmark or inv. no.: Oxyrhynchus - A III 67 R - c (in pencil on old paper wrapping)</note>
                      <note type="general">Recto: 7 partial lines with the fibres; Verso: 8 partial lines against the fibres</note>
                      <note type="general">Mentions Oxyrhynchus on the verso</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 6.7 x 9.3 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 6.7 x 9.3 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -39,13 +44,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
                <term type="genre_form">Documentary</term>
             </keywords>

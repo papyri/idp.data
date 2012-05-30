@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,15 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">oxford-ipap.apis.1873</idno>
-            <idno type="controlno">(EG-CaMus)1873</idno>
+            <idno type="controlNo">(EG-CaMus)1873</idno>
+            <idno type="ddbdp">p.oxy..16.1849</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">uninventoried</idno>
+                  <idno type="invNo">uninventoried</idno>
                </msIdentifier>
                <msContents>
                   <summary>Cf. P.Oxy. XVI 1844. The letter is addressed to Theodore, who is described in their address as meizoteros. The contents suggest that Theodore was in charge of stores, and that the meizoteros of a person or family as opposed to the meizoteros of a village may be regarded as a sort of steward or majordomo. Only the verso is illustrated here.</summary>
+                  <msItemStruct>
+                     <note type="local_note">CG10067</note>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,18 +39,21 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

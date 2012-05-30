@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.300</idno>
-            <idno type="controlno">(MiU)300</idno>
+            <idno type="controlNo">(MiU)300</idno>
+            <idno type="ddbdp">o.mich..1.1</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4457</idno>
+                  <idno type="invNo">O.Mich.inv. 4457</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account of expenses and of repayment of a debt</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Kelsey Museum</note>
                      <note type="general">Pub. status: Recto and Verso</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,20 +74,16 @@
                <term>Debtor and creditor--Egypt--Philadelphia (Extinct city)</term>
                <term>Talentum (The Latin word)</term>
                <term>Wages--Skilled labor--Egypt--Philadelphia (Extinct city)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>(Recto);;Concerning(?) Genes.;From Epeiph 21 to Phaophi 21, Genes brought for the house an expense of 3 talents 4450 dr.;And for the sand, from the 10th of Mesore of year 12 until the 25th, 23 workers: 460 dr.;And as mender&amp;apos;s wages for the bandage: 240 (dr.);And what I . . . to Glaukias, son of Asklepiades(?): 22[. .] (dr.);For the roof [of the] building: [- - -];;(Verso);;I have, in Pachon, what is owed to me: 1000 dr.;i have, in Thoth of year 14, another 4000 dr. Remainder: he owes 150 dr. I have received them.</ab>
+         <div type="translation">
+            <ab>(Recto);;Concerning(?) Genes.;From Epeiph 21 to Phaophi 21, Genes brought for the house an expense of 3 talents 4450 dr.;And for the sand, from the 10th of Mesore of year 12 until the 25th, 23 workers: 460 dr.;And as mender's wages for the bandage: 240 (dr.);And what I . . . to Glaukias, son of Asklepiades(?): 22[. .] (dr.);For the roof [of the] building: [- - -];;(Verso);;I have, in Pachon, what is owed to me: 1000 dr.;i have, in Thoth of year 14, another 4000 dr. Remainder: he owes 150 dr. I have received them.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

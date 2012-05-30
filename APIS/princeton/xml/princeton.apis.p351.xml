@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,24 +9,25 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p351</idno>
-            <idno type="controlno">(NjP)apis.p0351</idno>
+            <idno type="controlNo">(NjP)apis.p0351</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. GD 1227 B, F</idno>
+                  <idno type="invNo">Princ. inv. GD 1227 B, F</idno>
                </msIdentifier>
                <msContents>
                   <summary>Document.  Two fragments from the same document, Content uncertain</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; on the verso of both fragments is a text, possibly an account</note>
                      <note type="general">Frag. B col. I, 12 lines, col. II, 12 lines; frag. F 13 lines; both fragments broken except at top</note>
                      <note type="general">Fragment B preserves two columns of text, each in a different hand</note>
                      <note type="general">Fragment F has text in the same hand as B col. I</note>
                      <note type="general">The hand is a small, fluent cursive</note>
                      <note type="general">On fragment B a kollesis 1.5 cm. from the left</note>
+                     <note type="local_note">Mounted with P.Princeton III, 110</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -36,7 +38,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0299"/>
+                     <origDate notBefore="0100" notAfter="0299">100 CE – 299 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Garrett Deposit 1924, no.  in H. I. Bell's inventory</p>
@@ -45,6 +47,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -52,9 +61,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

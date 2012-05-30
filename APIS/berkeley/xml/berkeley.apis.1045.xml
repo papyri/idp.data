@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1045</idno>
-            <idno type="controlno">(CU)1045</idno>
+            <idno type="controlNo">(CU)1045</idno>
+            <idno type="ddbdp">p.tebt..3.821</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0821</idno>
+                  <idno type="invNo">P.Tebt.0821</idno>
                </msIdentifier>
                <msContents>
                   <summary>Histieia acknowledges she will make no more accusations against Taouthes; the document is a cheirographon.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 3.3 cm.; left, 1.2 cm.</note>
                      <note type="general">13th year of Ptolemy V Epiphanes (?), 7th of the Egyptian month Pachon.</note>
+                     <note type="local_note">1274</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,19 +69,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Contracts, Ptolemaic Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Contracts, Ptolemaic Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Histieia daughter of Histieios, Macedonian, to Taouthes daughter of Marres, greeting. In regard to the accusation which I have made against you before the tribunal of Aristoboulos, I am reconciled to you and make no accusation in regard to the matters whereon I have accused you and your assessors decided against you. And if I proceed against you for the outrage, or any agent of mine, I will forfeit to you 3000 drachmas. Goodbye. The 13th year, Pachon 7. Menekles wrote this on behalf of Histieia, since she affirmed that she was illiterate.</ab>
          </div>
          <div type="bibliography" subtype="citations">

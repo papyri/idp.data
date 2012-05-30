@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1114</idno>
-            <idno type="controlno">(CU)1114</idno>
+            <idno type="controlNo">(CU)1114</idno>
+            <idno type="ddbdp">p.tebt..2.585</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0585 Verso</idno>
+                  <idno type="invNo">P.Tebt.0585 Verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>List of names for an unknown purpose.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto unpublished</note>
                      <note type="general">Margins: top, 0.7 cm.; left, 2.2 cm.; bottom, 2 cm. In black ink in left margin, upside down: T503.</note>
                      <note type="general">One of the items had a line drawn around it, possibly as sign of deletion.</note>
+                     <note type="local_note">1467</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -54,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -61,12 +71,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Accounts, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Accounts, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

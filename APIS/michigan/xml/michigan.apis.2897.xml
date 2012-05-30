@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2897</idno>
-            <idno type="controlno">(MiU)2897</idno>
+            <idno type="controlNo">(MiU)2897</idno>
+            <idno type="ddbdp">p.mich..5.354</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 663</idno>
+                  <idno type="invNo">P.Mich.inv. 663</idno>
                </msIdentifier>
                <msContents>
                   <summary>Guarantee of immunity given by Ptolemaios the younger, son of Akousilaos, to Kronion, son of Apion, the notary of Tebtynis, in return for his cooperation in preparing for the sale of a half share of a house, which had previously belonged to the heirs of Tisenxis, who disappeared from the village because they were very heavily indebted to the fiscus</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">Archive of Kronion son of Apion, nomographos of the grapheion of Tebtynis</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -61,6 +64,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -76,19 +86,15 @@
                <term>Notary</term>
                <term>Sale</term>
                <term>Taxation</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Personal.;;(2nd hand) Ptolemaios the younger, son of Akousilaos, to Kronion, son of Apion, nomographos of Tebtynis, greeting.;Since you prepared the documents for me in my sale to Pausis, son of Peteuris, of a half share and court and entrance and exit in Tebtynis, as I have already declared, formerly the property of the sons of Tisenxis, the son of Petesouchos (son of/alias?) Apoulas, (and) because you, Kronion, have prepared for me the documents for the correction of the public records, in order that no loss may ensue to the treasury I shall pay to the treasury the price which I received from Pausis. And I shall render you, both Kronion and Pausis, free from constraint and execution and annoyance in every way, since the sons of Tisenxis havedisappeared, where I do not know, because they were heavily indebted to the fiscus. And if anyone shall summon you or proceed against you in respect to these things, I myself will oppose his claim at my personal expense and cost. Let this handwriting be valid wherever produced. The thirteenth year of Tiberius Claudius Caesar Augustus Germanicus Imperator, the twenty-first of the month Sebastos.</ab>
          </div>
          <div type="bibliography" subtype="citations">

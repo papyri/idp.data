@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.2178</idno>
-            <idno type="controlno">(NNC)aaa2724</idno>
+            <idno type="controlNo">(NNC)aaa2724</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Col.inv. 2178 (acc. 65.2.114)</idno>
+                  <idno type="invNo">O.Col.inv. 2178 (acc. 65.2.114)</idno>
                </msIdentifier>
                <msContents>
                   <summary>liturgical text</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">21 plus 3 crosswise lines of writing on the front, back blank</note>
                      <note type="general">incomplete on the top and probably on the bottom</note>
                      <note type="general">labelled in the back as "Series DelB 1930 no. 2"</note>
                      <note type="general">written in a neat regular hand</note>
                      <textLang mainLang="egy-Copt">in Coptic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -37,7 +38,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0500" notAfter="0690"/>
+                     <origDate notBefore="0500" notAfter="0690">500 CE – 690 CE</origDate>
                   </origin>
                   <provenance>
                      <p>from Thebes, Deir el Bahri, escavated in 1930. Property of the Metropolitan Museum, sold to Columbia University in 1958</p>
@@ -46,6 +47,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -53,9 +61,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraca</rs>
-               </term>
+               <term type="genre_form">Ostraca</term>
             </keywords>
          </textClass>
       </profileDesc>

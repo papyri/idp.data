@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,25 +10,25 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.4954</idno>
-            <idno type="controlno">(MiU)4954</idno>
+            <idno type="controlNo">(MiU)4954</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 397</idno>
+                  <idno type="invNo">P.Mich.inv. 397</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>2 papyri ; 17.1 x 21.7; 4 x 20.7 cm</support>
                         <condition>
-                           <ab type="conservation">These two pieces are badly damaged in many parts; they obviously have been sliced by a sharp tool; there is a small mark of slice attempting can be seen over the letter epsilon in Ç«£meÇ«• at the end of line 5 from down. Broken off at left top and right sides. The lower margin is preserved in both of them; some small tiny fragments are attached to recto and verso of the two pieces. The area after the 5th line from the top at the first piece is totally frayed. A kollesis can be seen at the verso of the big piece.</ab>
+                           <ab type="conservation">These two pieces are badly damaged in many parts; they obviously have been sliced by a sharp tool; there is a small mark of slice attempting can be seen over the letter epsilon in �ǣme�ǥ at the end of line 5 from down. Broken off at left top and right sides. The lower margin is preserved in both of them; some small tiny fragments are attached to recto and verso of the two pieces. The area after the 5th line from the top at the first piece is totally frayed. A kollesis can be seen at the verso of the big piece.</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -53,6 +54,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -60,12 +68,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>

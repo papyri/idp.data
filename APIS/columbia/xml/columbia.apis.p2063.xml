@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,16 +9,16 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p2063</idno>
-            <idno type="controlno">(NNC)p2063</idno>
+            <idno type="controlNo">(NNC)p2063</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 720</idno>
+                  <idno type="invNo">Col.inv. 720</idno>
                </msIdentifier>
                <msContents>
                   <summary>Possibly an official permit, or specific instruction; the text is nearly complete</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">On one side 12 lines of writing; in the other 6 lines</note>
                      <note type="general">Broken on the bottom; there are some worm holes</note>
                      <note type="general">Professional hand but hastily written and smudged; the text is faded</note>
@@ -25,7 +26,7 @@
                      <note type="general">On the other side wide top, right, and bottom margins and 2-3 cm. space between the lines.</note>
                      <note type="general">Glassed</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -45,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -52,9 +60,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

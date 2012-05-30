@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.201</idno>
-            <idno type="controlno">(CU)201</idno>
+            <idno type="controlNo">(CU)201</idno>
+            <idno type="ddbdp">sb.20.14152</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0627</idno>
+                  <idno type="invNo">P.Tebt.0627</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for poll tax paid to the collectors of money taxes by Herodes (son of AK[)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 2.4 cm.; left, 3.8 cm.; bottom, 0.9 cm.; in top left margin, in red ink "627", in black ink: T 560.</note>
                      <note type="general">21st year of the Emperor Commodus</note>
+                     <note type="local_note">1483</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -52,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -60,19 +70,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Poll tax</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Twenty-first year of Marcus Aurelius Commodus Antoninus Augustus (month, day). Herodes son of N.N. [paid to N.N.] and his colleagues, collectors of money taxes, for the poll-tax of the same year at Tebtunis twelve silver drachmas, that is, 12; [Month, Day?] eight [silver] drachmas, that is, 8.</ab>
          </div>
          <div type="bibliography" subtype="citations">

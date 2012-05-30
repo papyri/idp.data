@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.370</idno>
-            <idno type="controlno">(CU)370</idno>
+            <idno type="controlNo">(CU)370</idno>
+            <idno type="ddbdp">p.tebt..2.343</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0343 Recto</idno>
+                  <idno type="invNo">P.Tebt.0343 Recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Details concerning the owners and cultivators of land in the Fayyum, Egypt.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Verso unpublished</note>
                      <note type="general">Originally the three documents which thus make up the recto were pasted together to form one roll; now the Land survey list has become separated.</note>
+                     <note type="local_note">1381, 1382, 1383, 2257</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -50,6 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -59,12 +69,8 @@
             <keywords scheme="#apis">
                <term>Land titles; Land tenure</term>
                <term>Arsinoites nomos</term>
-               <term>
-                  <rs type="genre_form">Registers of land, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Registers of land, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

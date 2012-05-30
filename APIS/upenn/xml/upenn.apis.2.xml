@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,22 +10,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.2</idno>
-            <idno type="controlno">(PU) 2</idno>
+            <idno type="controlNo">(PU) 2</idno>
+            <idno type="ddbdp">p.oxy..1.16</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv. E02747</idno>
+                  <idno type="invNo">P.Penn. Museum inv. E02747</idno>
                </msIdentifier>
                <msContents>
                   <summary>Thucydides, book 4.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text is written on one side only, along the fibers.  There are three columns of text in two hands; the second added corrections and marks in the margin, but the two hands are very similar and not easily distinguishable. This material includes some marginal marks and horizontal strokes between some lines.</note>
                      <note type="general">Col. 1 is 52 lines</note>
                      <note type="general">Col. 2 is 50 lines</note>
                      <note type="general">Col. 3 is 49 lines but 10 (28-37) are lost.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology, Shelf B-37-A-1.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -45,6 +48,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -52,15 +62,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">literary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">historical</rs>
-               </term>
+               <term type="genre_form">papyrus</term>
+               <term type="genre_form">literary</term>
+               <term type="genre_form">historical</term>
             </keywords>
          </textClass>
       </profileDesc>

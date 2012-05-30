@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p359</idno>
-            <idno type="controlno">(NNC)aaa3535</idno>
+            <idno type="controlNo">(NNC)aaa3535</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Oxy. 486 verso</idno>
+                  <idno type="invNo">Oxy. 486 verso</idno>
                </msIdentifier>
                <msContents>
                   <summary>Rough draft of another petition of Dionysia on the same subject as the petition on the recto</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; on the recto, a petition</note>
                      <note type="general">ca. 19 lines; complete except for upper left corner</note>
                      <note type="general">The hand is a small, rapid cursive</note>
                      <note type="general">The papyrus has several large holes and the text is severely abraded, so that it is not possible to obtain continuous text</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +35,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate when="0131"/>
+                     <origDate when="0131">131 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Given to Columbia University by the Egypt Exploration Society, 1907</p>
@@ -43,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +59,7 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Petition</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

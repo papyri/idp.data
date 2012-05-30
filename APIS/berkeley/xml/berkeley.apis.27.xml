@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.27</idno>
-            <idno type="controlno">(CU)27</idno>
+            <idno type="controlNo">(CU)27</idno>
+            <idno type="ddbdp">sb.18.13365</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0645</idno>
+                  <idno type="invNo">P.Tebt.0645</idno>
                </msIdentifier>
                <msContents>
                   <summary>Certificate that Horos, son of Horos, has performed five days of dike corvee.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: left, 0.6 cm.; bottom, 1.2 cm.; in bottom right corner, in red ink "645"; on verso, in black ink: T 454. (twice)</note>
                      <note type="general">4th year of the Emperor Trajanus</note>
+                     <note type="local_note">1485</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,19 +75,15 @@
             <keywords scheme="#apis">
                <term>Dikes (Engineering)</term>
                <term>Tebtunis; Desert Canal of Polemon</term>
-               <term>
-                  <rs type="genre_form">Certificates</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Certificates</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year four of Imperator Caesar Nerva Trajanus Augustus Germanicus. Has performed for five days for work on dikes for the same fourth year in the desert canal of Polemon, (2nd h.) on behalf of Tebtunis, Horos, son of Horos, grandson of N.N. (3rd h.) for Hermodoros, son of Isidoros, son of Herakles, his mother is Tap[- -]. (4th h.) I, Isidoros, have signed. (5th h.) I, Aphrodeitos, have signed. (6th h.) I, Dionysios, have signed.</ab>
          </div>
          <div type="bibliography" subtype="citations">

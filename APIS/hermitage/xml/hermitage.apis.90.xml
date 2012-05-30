@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">hermitage.apis.90</idno>
-            <idno type="controlno">(RU-SPGE)90</idno>
+            <idno type="controlNo">(RU-SPGE)90</idno>
+            <idno type="ddbdp">p.ross.georg..5.31</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Hermitage inv. 8432</idno>
+                  <idno type="invNo">Hermitage inv. 8432</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">14 lines along the fibers; on the back is 1 line written along the fibers</note>
                      <note type="general">German translation on p. 98 of ed. pr.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,19 +57,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyri</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">contract</rs>
-               </term>
+               <term type="genre_form">papyri</term>
+               <term type="genre_form">contract</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Following the consulate of the viri clarissimi, Flavius Probus and Flavius Abienus, on the 12th of Phamenoth of the 11th indiction, in Arsinoe.  Aurelius Pamun, son of Aion, a farmer from the city of the Arsinoites, from the district of Ecclesia Kainon, to Aurelius Heracleides, son of (name omitted), also a farmer from the same city, greetings.  I acknowledge personally to have received from you for my own necessary use half a gold solidus, as principal in accordance with convention, and to have received in full the price of 3 1/2 artabs of wheat of highest quality.</ab>
          </div>
          <div type="bibliography" subtype="citations">

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,23 +10,26 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.216</idno>
-            <idno type="controlno">(CU)216</idno>
+            <idno type="controlNo">(CU)216</idno>
+            <idno type="ddbdp">p.tebt..1.154</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0154 Recto</idno>
+                  <idno type="invNo">P.Tebt.0154 Recto</idno>
                </msIdentifier>
                <msContents>
                   <summary>Register of the various crops grown on crown lands at Kerkeosiris.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto and verso unpublished.</note>
                      <note type="general">Top margin: 5 cm.</note>
                      <note type="general">6th year of Ptolemy IX Soter II</note>
                      <note type="general">Menches archive</note>
                      <note type="general">The margin above column II has been used to draw up two columns of an account of expenditures. Dated to the Egyptian month Mecheir (15 March).</note>
+                     <note type="related">Similar registers are P.Tebt. 66, 67, 68, 70, 75 cols. I-III; 153 and 155</note>
+                     <note type="local_note">1749, 1750</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -65,12 +76,8 @@
             <keywords scheme="#apis">
                <term>Crown land; Crops</term>
                <term>Kerkeosiris</term>
-               <term>
-                  <rs type="genre_form">Registers of land, Ptolemaic period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Registers of land, Ptolemaic period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

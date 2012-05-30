@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,17 +19,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Private letter from the Arsinoite Nome (modern name: Fayyum), Egypt. Sarapion asks Diodoros to use his brother Sarapion as a go-between</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 8.4 x 12.8 cm</note>
                      <note type="general">9 lines</note>
                      <note type="general">Written along the fibers on the recto; the address written along the fibers on the verso in large letters</note>
                      <note type="general">Upper margin of 1.5 cm.; left margin of 1.5 cm.; right margin of 0.5 cm</note>
                      <note type="general">P.Duk.inv. 98 was formerly P.Rob.inv. 3</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, lower part is broken off ; 9 x 13 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, lower part is broken off ; 9 x 13 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Diodoros -- (From the Arsinoite Nome, Egypt), -- 1st cent.</term>
                <term type="genre_form">Documentary papyri Egypt Fayyum 30 B.C.-640 A.D</term>
                <term type="genre_form">Personal correspondence Egypt Fayyum 30 B.C.-640 A.D</term>

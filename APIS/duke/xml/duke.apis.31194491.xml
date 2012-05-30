@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,17 +18,21 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus accounts of expenses from Egypt. Various accounts of expenses, one for a construction project, which mentions someone who saws, a plasterer, beams and wages. Dates on the others are year 22 (of Tiberius?) and year 8 (if Claudius, the year would be A.D. 47/48). Recto has an account of expenses in Greek (P.Duk.inv. 736 R)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Dimensions of fragments are 34.3 x 11.3 cm. or smaller</note>
                      <note type="general">51 lines</note>
                      <note type="general">Written across the fibers on the verso in three different hands; written along the fibers on the recto in yet another hand</note>
                      <note type="general">Upper margin of 2 cm.; lower margin of 5.5 cm.; no margins on the smaller piece</note>
                      <note type="general">P.Duk.inv. 736 V was formerly P.Duk.inv. LK76 9 V</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, three fragments of which two join</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, three fragments of which two join</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -37,13 +42,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Accounting -- Egypt -- 30 B.C.-640 A.D.</term>
                <term>Building -- Estimates -- Egypt -- 30 B.C.-640 A.D.</term>
                <term>Carpenters -- Egypt -- 30 B.C.-640 A.D.</term>

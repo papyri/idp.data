@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,16 +18,20 @@
                </msIdentifier>
                <msContents>
                   <summary>Byzantine homologia</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">Addressed to an army veteran</note>
                      <note type="general">Publication status: Assigned to Todd Hickey, Berkeley</note>
                      <note type="general">Former shelfmark or inv. no.: +A IV  57 R  Nahm II  8 R a (in pencil on old glass frame)</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Pap.; 215 a 0.7 x 0.6 cm; 215 b 1.1 x 0.7 cm; 215 c 2.0 x 4.5 cm; 215 d 8.0 x 6.1 cm; 215 e 3.4 x 3.6 cm; 215 f 1.7 x 4.3 cm; 215 g 2.1 x 4.6 cm; 215 h 1.6 x 3.3 cm; 215 i 1.5 x 1.7 cm; 215 j 1.5 x 1.1 cm; 215 k 5.6 x 7.3m cm; 215 l 8.1 x 9.0 cm; 215 m 5.5 x 7.5 cm; 215 n 1.1 x 0.8 cm, 215 o 1.1 x 2.1 cm, 215 p 0.4 x 2.0 cm; 215 q 3.0 x 2.8 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Pap.; 215 a 0.7 x 0.6 cm; 215 b 1.1 x 0.7 cm; 215 c 2.0 x 4.5 cm; 215 d 8.0 x 6.1 cm; 215 e 3.4 x 3.6 cm; 215 f 1.7 x 4.3 cm; 215 g 2.1 x 4.6 cm; 215 h 1.6 x 3.3 cm; 215 i 1.5 x 1.7 cm; 215 j 1.5 x 1.1 cm; 215 k 5.6 x 7.3m cm; 215 l 8.1 x 9.0 cm; 215 m 5.5 x 7.5 cm; 215 n 1.1 x 0.8 cm, 215 o 1.1 x 2.1 cm, 215 p 0.4 x 2.0 cm; 215 q 3.0 x 2.8 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -40,13 +45,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Papyri</term>
                <term type="genre_form">Documentary</term>
             </keywords>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2218</idno>
-            <idno type="controlno">(MiU)2218</idno>
+            <idno type="controlNo">(MiU)2218</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 4526</idno>
+                  <idno type="invNo">P.Mich.inv. 4526</idno>
                </msIdentifier>
                <msContents>
                   <summary>C1, 2 Is a sale of a half part of a house by Patous the younger to his daughter-in-law, Tikas.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto</note>
+                     <note type="related">P.Mich.Inv. 4200, 4207</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -56,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,19 +73,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Philadelphia; T;-nhy; division of Heraklides; Aphroditopolis; As a part of a Goddess name.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>[Year 20, [Hathur], . . . . of Pharaoh Ptolemy, son of Ptolemy] and Arsinoe the gods who love their father, the priest of [Alexander] and the brother gods [and the beneficent gods] and the [gods] who love their father and the gods who appear (2) [(being) Timothes, (son of) Timotheos, Praxinike, daughter of Philinos, (being) the bear]er of [the gift of] victory [before Berenike the beneficent goddess, [Hedula, daughter of Ptol]emy, (being) the bearer of [the basket of] (3) [gold before Arsinoe the brother loving, the woman Birene, daughter Ptolemy, (being) the priestess of Arsinoe who loves] her [father].;Has said [the farmer, the servant of] Hathor-mistress-of- Aphroditopolis Isis, [the great goddess, Patous the younger,] (son of) Patous, (his) mother (being) [Esenrenphis], [to] (4) [the woman Tikas, daughter Teos, her mother (being) Tanas];[Thou hast paid me in full; thou hast caused to be satisfied] my heart with the money of the price [of my half part of the] house which is built, being [covered with [roof] and beam, being complete with] door, together with the half part of [its] (5) [courtyard which is south of it, which [pertains to] it, and its eastern wall; measuring 25 divine-cubits south the north by ] 6 . . . . divine-cubits [east to west, which is in the] southeastern [quarter] of the [Sobk] town of [Philadelphia . . . . . . . . ] . . . . T;-nhy, which is in [the division of]] (6) [Heraklides . . . . . . . . ]</ab>
          </div>
          <div type="bibliography" subtype="citations">

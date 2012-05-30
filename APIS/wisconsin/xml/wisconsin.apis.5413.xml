@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">wisconsin.apis.5413</idno>
-            <idno type="controlno">(WU)5413</idno>
+            <idno type="controlNo">(WU)5413</idno>
+            <idno type="ddbdp">p.wisc..1.37</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Wisc. inv. 43</idno>
+                  <idno type="invNo">P.Wisc. inv. 43</idno>
                </msIdentifier>
                <msContents>
                   <summary>The papyrus contains the account of the revenues from fishing over a period of five days, submitted by the inspectors charged with the superintendence of the pasture-lands and the brushwood. Every five days these inspectors has been submitted an account of the revenues from fishing to the strategus, the basilikos grammateus and probably also to the komogrammateus.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Department of Special Collections; Memorial Library; Madison; Wisconsin</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -61,6 +63,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -78,19 +87,15 @@
                <term>Strategus</term>
                <term>Basilikos grammateus</term>
                <term>komogrammateus.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Theon, strategus of the Arsinoites of the division of Themistes and Polemon, from Ptolemaios, son of Diodoros, alias Dioskoros, and Philippos, son of Aphrodisios and Lucius, son of Apolinarios, and Philippos, son of Heraklides, and Leontas, son Leontis, and fellow-inspectors of the pastures and the brushwood of Theadelphia and Polydeukia. Account of revenues over the inspection period in question concerning fishing from the 6th up to and including the 10th of the month of Thoth of the present 12th year of Antoninus Caesar, the lord. [        .] I, Ptolemaios, son of Diodoros have submitted it. Year 12 of Antoninus Caesar, the lord, the 11th Thoth.</ab>
          </div>
          <div type="bibliography" subtype="citations">

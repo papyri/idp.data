@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,27 +9,27 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.7997</idno>
-            <idno type="controlno">(CU)7997</idno>
+            <idno type="controlNo">(CU)7997</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.Frag.01,963 Recto.</idno>
+                  <idno type="invNo">P.Tebt.Frag.01,963 Recto.</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">verso unpublished</note>
                      <note type="general">There might be a stamp on the Verso; it looks like two straight lines of ink across the top of the papyrus.</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>1 papyrus ; 14.5 x 4.5 cm</support>
                         <condition>
-                           <ab type="preservation">Writing mostly erased or faded on Recto. On Verso, writing is covered by plaster. Papyrus dirty on verso.</ab>
                            <ab type="conservation">remains of plaster used in the mummificatin block most of the writing on Verso. Papyri seems to cover the writing on the Recto.</ab>
+                           <ab type="preservation">Writing mostly erased or faded on Recto. On Verso, writing is covered by plaster. Papyrus dirty on verso.</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -47,6 +48,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -54,9 +62,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

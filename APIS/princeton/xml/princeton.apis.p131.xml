@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,24 +9,25 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">princeton.apis.p131</idno>
-            <idno type="controlno">(NjP)apis.p0131</idno>
+            <idno type="controlNo">(NjP)apis.p0131</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Princ. inv. GD 7936 A, 7936 B</idno>
+                  <idno type="invNo">Princ. inv. GD 7936 A, 7936 B</idno>
                </msIdentifier>
                <msContents>
                   <summary>Account. List of receipts and expenses</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along the fibers; back blank</note>
                      <note type="general">Two fragments from the same roll</note>
                      <note type="general">Frag. (A) one column, written in two hands; frag. (B) two columns each in a different hand</note>
                      <note type="general">Frag. (A) 17 lines, broken at top and bottom?; frag. (B) col. I, 20 lines, col. II, 16 lines, broken except at right</note>
                      <note type="general">Several holes in each fragment</note>
                      <note type="general">The hands are all cursive</note>
+                     <note type="local_note">= GD 7936 Pt.I, Pt.II</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -36,7 +38,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0300" notAfter="0325"/>
+                     <origDate notBefore="0300" notAfter="0325">300 CE – 325 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Garrett Deposit 1924, no. II 78 in H. I. Bell's inventory</p>
@@ -45,6 +47,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -52,9 +61,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

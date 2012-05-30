@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,19 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.42</idno>
-            <idno type="controlno">(PU) 42</idno>
+            <idno type="controlNo">(PU) 42</idno>
+            <idno type="ddbdp">p.fay..81</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv. E02790</idno>
+                  <idno type="invNo">P.Penn. Museum inv. E02790</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payment in kind.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text on one side only, 14 lines with the fibers, written by apparently 3 separate hands.  Top and bottom margins intact, right margin visible.  Text mentions Theadelphia.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology collection</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -43,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,22 +60,16 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">receipt</rs>
-               </term>
+               <term type="genre_form">papyrus</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">receipt</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>''The eighteenth year of the Emperor Caesar Nerva Trajanus Optimus Augustus Germanicus, the 12th of the month Caesareus. We, Didymus and partners, sitologi of the toparchy of Theadelphia and other villages, have had measured to us from the produce of the present eighteenth year by Athenarion...for the catoeci of Theadelphia twenty-two and a half artabae of wheat by smoothed public measure, for the extra charge two and two-thirds artabae of wheat for...five-sixths of an artaba of wheat, total 26 1/6 artabae of wheat and the additional payments.'' Signatures of the two sitologi. (Grenfell, Hunt &amp; Hogarth)</ab>
          </div>
          <div type="bibliography" subtype="citations">

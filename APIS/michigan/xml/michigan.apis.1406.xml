@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,21 +10,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1406</idno>
-            <idno type="controlno">(MiU)1406</idno>
+            <idno type="controlNo">(MiU)1406</idno>
+            <idno type="ddbdp">p.mich..3.216</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 1365</idno>
+                  <idno type="invNo">P.Mich.inv. 1365</idno>
                </msIdentifier>
                <msContents>
                   <summary>Letter sent by Paniskos to his wife Ploutogenia, probably written by a Christian scribe</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">The provenance of the archive is confirmed by P.Mich. inv. 1368a + 1371. (PH)</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">Archive of Ploutogenia, Paniskos's wife</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -64,6 +67,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -80,19 +90,15 @@
                <term>Travel, Ancient.</term>
                <term>Intercessory prayer.</term>
                <term>Weapons, Ancient--Egypt;Qift.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Paniskos to his wife and his daughter, many greetings. Before all else I pray before the lord god that I may receive you and my daughter in good health. Already I have written you a second letter that you might come to me, and you have not come. If, then, you do not wish to come, write me a reply. Bring my shield, the new one, and my helmet and five lances and the fittings of the tent. And you wrote to me: "I sent to Heraiskos(?) . . ." and I gave [a talent] to Antoninus, in order that he may pay it to you: so do not neglect . . . So if you have the materials for clothing bring and cut them here. I send many salutations to my daughter and to your mother and those who love us, by name. I pray for your welfare. Pauni 22.;(Postscript:) And you wrote to me that you took twenty[-three?] shields; Tammon, none of them. Temnas has stayed below. I salute you.;;(Verso);;Deliver to my wife, from Paniskos in the house of Par---.</ab>
          </div>
          <div type="bibliography" subtype="citations">

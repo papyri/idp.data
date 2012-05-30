@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.1228</idno>
-            <idno type="controlno">(CU)1228</idno>
+            <idno type="controlNo">(CU)1228</idno>
+            <idno type="ddbdp">sb.10.10541</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0646</idno>
+                  <idno type="invNo">P.Tebt.0646</idno>
                </msIdentifier>
                <msContents>
                   <summary>Certificate of five days labor for dike corvee.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 0.5 cm.; left, 1 cm.; right, 0.3 cm.; bottom, 2.5 cm.; in bottom margin, in red ink: 646; on verso, in black ink: T111.</note>
                      <note type="general">16th year of the Emperor Trajan, 19th-23rd in the month Payni.</note>
+                     <note type="local_note">1485</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +72,15 @@
             <keywords scheme="#apis">
                <term>Dikes (Engineering)</term>
                <term>Tebtunis</term>
-               <term>
-                  <rs type="genre_form">Receipts, Roman Period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Receipts, Roman Period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Year 16 of Imperator Caesar Nerva Traianus Augustus Germanicus Dacicus. Work done for five days on the dike works for the same 16th year (2nd hand) at the desert canal, Payni 19-23, on behalf of Tebtunis, by Zoilos son of Zoilos son of Harmiysis, his mother being Taorsenouphis. (3rd hand) I, Sokr(), katasporeus, have signed.</ab>
          </div>
          <div type="bibliography" subtype="citations">

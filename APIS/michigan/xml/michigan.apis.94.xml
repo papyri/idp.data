@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.94</idno>
-            <idno type="controlno">(MiU)94</idno>
+            <idno type="controlNo">(MiU)94</idno>
+            <idno type="ddbdp">o.mich..1.17</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 4246</idno>
+                  <idno type="invNo">O.Mich.inv. 4246</idno>
                </msIdentifier>
                <msContents>
                   <summary>Order for payment of 3 copper talents</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Kelsey Museum</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +55,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +71,15 @@
             <keywords scheme="#apis">
                <term>Payment--Egypt.</term>
                <term>Talentum (The Latin word)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Petechois the younger to Petechois, son of Ph . . ., greetings. Pay to Petear(--), son of Po(--), three copper talents, equal 3 copper tal. Year 26, Phamenoth 1.</ab>
          </div>
          <div type="bibliography" subtype="citations">

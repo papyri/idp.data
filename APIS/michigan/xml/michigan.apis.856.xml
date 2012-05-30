@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.856</idno>
-            <idno type="controlno">(MiU)856</idno>
+            <idno type="controlNo">(MiU)856</idno>
+            <idno type="ddbdp">o.mich..2.911</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv. 9452</idno>
+                  <idno type="invNo">O.Mich.inv. 9452</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for delivery of grain brought to an unknown harbor by a Palemon in the name of a Ptolemaios</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">Archive of Palemon son of Ptollas; cf. also PMich. inv. 9454</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -58,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -75,19 +85,15 @@
                <term>Drovers--Egypt.</term>
                <term>Donkeys--Egypt.</term>
                <term>Grain--Transportation--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Of the granary of the horiodeiktia of Karanis, of the crops of the 13th and 12th and 5th year, in the name of Ptolemaios son of Demetrous, through Satabous, through Kastor, through Palemon, donkey-driver, one donkey, equals 1. In the 14th and 13th and 6th year, on Pauni 23.</ab>
          </div>
          <div type="bibliography" subtype="citations">

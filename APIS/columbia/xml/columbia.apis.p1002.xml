@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,22 +9,23 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1002</idno>
-            <idno type="controlno">(NNC)aaa4413</idno>
+            <idno type="controlNo">(NNC)aaa4413</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 176</idno>
+                  <idno type="invNo">Col. inv. 176</idno>
                </msIdentifier>
                <msContents>
                   <summary>Contract of sale concerning land that uses formulaic  terms for instance to define the limits of the property;  it seems to involve 728 drachmas</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written along  the fibers; back blank</note>
                      <note type="general">21 lines; broken at both sides</note>
                      <note type="general">The papyrus is rather dirty</note>
                      <note type="general">Parts of  top and bottom margins are preserved;  the last line is separated from the rest by a large space</note>
+                     <note type="local_note">Assigned to Uri Yiftach, 7/1/2006; needs conservation work</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -34,7 +36,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0200" notAfter="0299"/>
+                     <origDate notBefore="0200" notAfter="0299">200 CE – 299 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. XIVc.65 in Bell's inventory</p>
@@ -43,6 +45,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Contract; sale of land</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

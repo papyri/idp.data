@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -16,15 +17,19 @@
                   <idno type="invNo">P. Lund. inv. 4004</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Lund University Library</note>
                      <note type="general">The image of this seal is called Lersigill.tif</note>
                      <note type="general">This seal was donated to Lund University Library (where it had been kept since 1941) in 2009 by Lund University Historical Museum where it had the inventory no 241, with the fake "papyrus roll" with this inv. no. It was donated to the Historical Museum in 1853.</note>
                      <textLang mainLang="">-----</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>Clay seal</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Clay seal</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="">-----</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term type="genre_form">Clay seal</term>
             </keywords>
          </textClass>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,7 +18,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus inventory from Egypt. Has property listing pieces of wood, gear for two donkeys, and housekeys. Verso has an account of expenses in Greek (P.Duk.inv. 697 V)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 25.7 x 10.4 cm</note>
                      <note type="general">24 lines</note>
                      <note type="general">Written in two columns along the fibers on the recto; written across the fibers on the verso in a different hand</note>
@@ -25,10 +26,14 @@
                      <note type="general">Extracted from mummy cartonnage with P.Duk.inv. 691-696</note>
                      <note type="general">P.Duk.inv. 697 R was formerly P.Duk.inv. MF79 24 R</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, mounted in glass, incomplete ; 26 x 11 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, mounted in glass, incomplete ; 26 x 11 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -38,13 +43,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Wood -- Egypt -- 332-30 B.C.</term>
                <term>Locks and keys -- Egypt -- 332-30 B.C.</term>
                <term>Donkeys -- Egypt -- 332-30 B.C.</term>

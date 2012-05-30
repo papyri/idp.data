@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">chicago.apis.116</idno>
-            <idno type="controlno">(ICU)116</idno>
+            <idno type="controlNo">(ICU)116</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Medin.HabuDem 77</idno>
+                  <idno type="invNo">O.Medin.HabuDem 77</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt issued by the granary of the god</summary>
-                  <msItem>
-                     <note type="general">Number 77 in Lichtheim&amp;apos;s publication. Measurements not available.</note>
+                  <msItemStruct>
+                     <note type="general">Number 77 in Lichtheim's publication. Measurements not available.</note>
                      <note type="general">Location: Oriental Institute</note>
                      <note type="general">Pub. status: Published: recto</note>
                      <textLang mainLang="egy-Egyd">Demotic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -51,6 +52,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -58,19 +66,15 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>MH 2639, recto: (1) Pasemis, son of Pamonthes, son of [Meswer], has paid to the granary of the god of the northern houses in year 39, (3) 3 1/2 (artabas of) wheat / 1 1/2 1/24 (artabas of) wheat / 3 1/2 (artabas of) wheat again, by the measure (4) of the oipe, without extra charge. Written in year 39, Epiphi 17. (5) Likewise in year 40, Thoth 9, 3 1/2 1/4 (artabas of) wheat / 1 5/6 1/24 (artabas of) wheat / (6) 3 1/2 1/4 (artabas of) wheat again, by the measure of the oipe, without extra charge. (7) Signed, Wdjaf, son of Pimenes, in year 40, thoth 9.</ab>
          </div>
          <div type="bibliography" subtype="citations">

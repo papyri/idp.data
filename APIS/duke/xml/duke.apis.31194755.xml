@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,7 +19,7 @@
                </msIdentifier>
                <msContents>
                   <summary>Papyrus official letter from Egypt in which Philammon writes to Mikion about correspondence from Neikias, an assistant of Polemon and someone whose name begins with "Di"</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Actual dimensions of item are 13.6 x 11.0 cm</note>
                      <note type="general">10 lines</note>
                      <note type="general">Written along the fibers on the recto; the address written along the fibers on the verso. The name "Mikioni" written in large letters</note>
@@ -26,10 +27,14 @@
                      <note type="general">Extracted from mummy cartonnage with P.Duk.inv. 691-693 and P.Duk.inv. 695-697</note>
                      <note type="general">P.Duk.inv. 694 was formerly P.Duk.inv. MF79 21</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
-                  <p>1 item : papyrus, two joining fragments mounted in glass, incomplete ; 14 cm</p>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>1 item : papyrus, two joining fragments mounted in glass, incomplete ; 14 cm</support>
+                     </supportDesc>
+                  </objectDesc>
                </physDesc>
                <history>
                   <origin>
@@ -39,13 +44,20 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">In Greek</language>
          </langUsage>
          <textClass>
-            <keywords scheme="apis">
+            <keywords scheme="#apis">
                <term>Mikion -- (From Egypt), -- 2nd cent. B.C.</term>
                <term type="genre_form">Documentary papyri Egypt 332-30 B.C</term>
                <term type="genre_form">Correspondence Egypt 332-30 B.C</term>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,23 +9,24 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p562</idno>
-            <idno type="controlno">(NNC)aaa3738</idno>
+            <idno type="controlNo">(NNC)aaa3738</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col. inv. 104(3)c</idno>
+                  <idno type="invNo">Col. inv. 104(3)c</idno>
                </msIdentifier>
                <msContents>
                   <summary>Document, probably a contract, which contains reference to (not?) making a claim on something and part of the formula, ' from past times to the present', used in contracts and agreements.  May contain a reference to sheep.  Dated in the reign of an unknown emperor.  Signed in a second hand by Philod..[</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Written across the fibers; back blank</note>
                      <note type="general">9 lines; broken except for bottom</note>
                      <note type="general">The hand is a fluent cursive</note>
                      <note type="general">Signed in a second, slow hand</note>
                      <note type="general">Dated in the reign of an unknown emperor</note>
+                     <note type="local_note">Unglassed</note>
                      <textLang mainLang="grc">In Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -35,7 +37,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0100" notAfter="0199"/>
+                     <origDate notBefore="0100" notAfter="0199">100 CE – 199 CE</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University from M. Nahman through H.I. Bell, in 1924; no. II.215 in Bell's inventory</p>
@@ -44,6 +46,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -51,9 +60,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

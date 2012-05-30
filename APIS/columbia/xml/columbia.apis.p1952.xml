@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,21 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.p1952</idno>
-            <idno type="controlno">(NNC)p1952</idno>
+            <idno type="controlNo">(NNC)p1952</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">Col.inv. 618</idno>
+                  <idno type="invNo">Col.inv. 618</idno>
                </msIdentifier>
                <msContents>
                   <summary>A) recto: bottom right corner of a letter, verso: end of legal document; b) recto: 2nd line is opening bismillahi, 1st line unintelligible; verso: from right side, mid document, in different hand</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">On the recto of the first fragment 6 lines of writing and 2 more on the verso</note>
                      <note type="general">Remains of 3 lines on the recto of the second fragment and traces on the verso</note>
                      <note type="general">The 2 fragments are not part of the same document and they are of a slightly different color</note>
                      <textLang mainLang="ar-Arab">In Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -33,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     
+                     <origDate>[dated 2(5?)7]</origDate>
                   </origin>
                   <provenance>
                      <p>Purchased by Columbia University ca. 1932</p>
@@ -42,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -50,9 +58,7 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Legal document</term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

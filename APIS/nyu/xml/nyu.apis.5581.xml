@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">nyu.apis.5581</idno>
-            <idno type="controlno">(NNU)</idno>
+            <idno type="controlNo">(NNU)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">NYU inv.cairo 205r</idno>
+                  <idno type="invNo">NYU inv.cairo 205r</idno>
                </msIdentifier>
                <msContents>
                   <summary>The recto contains the middle part of a letter in which the sender expresses his wish about something in two different expressions ('[if you ....] Saturday, then do so' and 'God willing').</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Recto (parallel to fibres) contains 5 lines and is broken off on all four sides.</note>
                      <note type="general">Verso contains writing exercises. See nyu.apis.5582.</note>
+                     <note type="local_note">Held in the Special Collections Department of Bobst library of NYU and stored loose in acid-free file folders.</note>
                      <textLang mainLang="ar-Arab">Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -42,6 +44,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,9 +58,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus; letter</rs>
-               </term>
+               <term type="genre_form">papyrus; letter</term>
             </keywords>
          </textClass>
       </profileDesc>

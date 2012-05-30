@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.174</idno>
-            <idno type="controlno">(CU)174</idno>
+            <idno type="controlNo">(CU)174</idno>
+            <idno type="ddbdp">p.tebt..2.341</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0341</idno>
+                  <idno type="invNo">P.Tebt.0341</idno>
                </msIdentifier>
                <msContents>
                   <summary>Kapiton notifies Artemidoros of the amount of seed-grain required at his village.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1.8 cm.; left, 1.5 cm.; bottom, 3 cm. On verso, in black ink: T 592.</note>
                      <note type="general">4th year of the Emperor Antoninus Pius</note>
+                     <note type="local_note">2248</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -53,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,19 +72,15 @@
             <keywords scheme="#apis">
                <term>Seeds; Grain</term>
                <term>Themistou meris; Arsinoites nomos; Theogonis</term>
-               <term>
-                  <rs type="genre_form">Business letters, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Business letters, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>To Artemidoros, Basilikos Grammateus of the division of Themistos in the Arsinoite nome, from Kapiton, village scribe of Theogonis. It will be necessary to send on account of loans of seed-grain for the sowing of the present 4th year of Antoninus Caesar the Lord from the produce of the past 3rd year to the inhabitants of the said village for the land which they cultivate in the fields belonging to the village of Argias, namely 3 57/64 arouras of Crown land paying a rent of 5 151/375 artabas of sifted wheat and 2353/45000 artaba of beans, 5 25/48 artabas of wheat for seed including the "hypolepsis", and for 2 arouras of confiscated land paying a rent of 9 7/120 artabas of sifted wheat, 2 43/84 artabas of wheat for seed including the "hypolepsis". (2nd h.) I, Kapiton, village scribe, presented this notice, as aforesaid.</ab>
          </div>
          <div type="bibliography" subtype="citations">

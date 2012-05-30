@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.3046</idno>
-            <idno type="controlno">(MiU)3046</idno>
+            <idno type="controlNo">(MiU)3046</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 6957</idno>
+                  <idno type="invNo">P.Mich.inv. 6957</idno>
                </msIdentifier>
                <msContents>
                   <summary>Offical letter from Poseidonios(?), oikonomos, ordering an official whose name is lost to summon Tettaphos in order to investigate accusations of violence which have been put forth against him by Peteuris (cf. P. Mich. inv. 6961 and P. Mich. inv. 6979)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
+                     <note type="related">P. Mich. inv. 6961 = P. Mich. 6979</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -59,6 +61,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +76,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Lysimachis</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Verso:"Poseidonios to ?]  greetings. As soon as you read my [letter, order] Tettaphos, of the residents of Lysimachis, [to appear before] us, so that we may investigate the matters on which [he has been accused by Peteur]is, the fuller, if [you please].";Farewell. Year 5, Audnaios 4, Pauni 4.;Recto: [To . . .]ros</ab>
          </div>
          <div type="bibliography" subtype="citations">

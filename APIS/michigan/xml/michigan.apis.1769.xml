@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1769</idno>
-            <idno type="controlno">(MiU)1769</idno>
+            <idno type="controlNo">(MiU)1769</idno>
+            <idno type="ddbdp">p.mich..1.78</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 3088</idno>
+                  <idno type="invNo">P.Mich.inv. 3088</idno>
                </msIdentifier>
                <msContents>
                   <summary>Fragment of a letter from Ariston to Zenon, asking him to assist someone sent by him to bring down goods</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto (written across the fibres) + Verso</note>
+                     <note type="related">Zenon archive</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -57,6 +60,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +76,15 @@
             <keywords scheme="#apis">
                <term>Commercial correspondence--Egypt.</term>
                <term>Commercial products--Purchasing--Egypt.</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>(Recto);;Ariston to Zenon greeting. We have sent [you - - -] to bring down the goods which we purchased in the [interior(?); if then . . .] for this purpose, please assist him. [And write to us] if there is anything you wish to be got for you here, [as we will do it for you both willingly] and carefully.;;(Verso);;To Zenon.</ab>
          </div>
          <div type="bibliography" subtype="citations">

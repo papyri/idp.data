@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,22 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.918</idno>
-            <idno type="controlno">(MiU)918</idno>
+            <idno type="controlNo">(MiU)918</idno>
+            <idno type="ddbdp">o.mich..2.761</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Mich.inv.  9529</idno>
+                  <idno type="invNo">O.Mich.inv.  9529</idno>
                </msIdentifier>
                <msContents>
                   <summary>Receipt for payment of syntaxis by a Hera(--)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Cairo</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +58,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,20 +74,16 @@
             <keywords scheme="#apis">
                <term>-</term>
                <term>Taxation (persons)</term>
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Ostracon</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Ostracon</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
-            <ab>In the 22nd year, (has paid) Hera(  ) son of Horos, for syntaxis, on Epeiph 28, 170&amp;apos;&amp;apos;; on Mesore 2, 40.</ab>
+         <div type="translation">
+            <ab>In the 22nd year, (has paid) Hera(  ) son of Horos, for syntaxis, on Epeiph 28, 170''; on Mesore 2, 40.</ab>
          </div>
          <div type="bibliography" subtype="citations">
             <listBibl>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.103</idno>
-            <idno type="controlno">(PU) 103</idno>
+            <idno type="controlNo">(PU) 103</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv.E16255</idno>
+                  <idno type="invNo">P.Penn. Museum inv.E16255</idno>
                </msIdentifier>
                <msContents>
                   <summary>Side 1: Accounts referring to farm produce. Some words remain unknown or unclear as to meaning. Side 2: Remnants of a private letter about which little sense can be made. (Della Vida)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text is on both sides. Side 1 is in two columns, the first (at right) is three lines; the second (at the left) is five lines.  Side 2, which was cut through its length, has the beginnings of 14 lines of a private letter, written perpendicular to the shorter side. Only a few letters remain from each line so no sense can be derived.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology, Ellen W. Harrison Collection.</note>
                      <textLang mainLang="ar-Arab">Arabic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,25 +57,17 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">paper</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">account</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">letter</rs>
-               </term>
+               <term type="genre_form">paper</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">account</term>
+               <term type="genre_form">letter</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Side 1: Column 1: 1. The first (time) barley, forty ardabbs. 2. And a second time, barley, eight ardabbs less two thirds. 3. And on his debt . . . twenty ardabbs of wheat. What the tenant received: thirty-two ardabbs, a third time, wheat. Column 2: 1. Beans, the first time to . . . . . and . . . . .; wheat for the rented field. 2. nineteen ardabbs of beans 3. A second time, eleven ardabbs of beans, on the third(?) thirty-one 4. A second time, eleven ardabbs of beans. 5. Fifty-two ardabbs on the fourth. Sixty-one ardabbs and a half.  (Della Vida)</ab>
          </div>
          <div type="bibliography" subtype="citations">

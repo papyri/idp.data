@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">upenn.apis.92</idno>
-            <idno type="controlno">(PU) 92</idno>
+            <idno type="controlNo">(PU) 92</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Penn. Museum inv.E16239</idno>
+                  <idno type="invNo">P.Penn. Museum inv.E16239</idno>
                </msIdentifier>
                <msContents>
                   <summary>Side 1: Fragment of a private letter. Side 2: Coptic papyrus of unknown specific content</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Text is on both sides. Side 1: 9 lines written against the fibers. Side 2: 13 lines written with the fibers.</note>
+                     <note type="local_note">Museum of Archaeology and Anthropology, Ellen W. Harrison Collection.</note>
                      <textLang mainLang="ar-Arab" otherLangs="egy-Copt">Side 1: Arabic; Side 2: Coptic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -49,15 +58,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">letter</rs>
-               </term>
+               <term type="genre_form">papyrus</term>
+               <term type="genre_form">documentary</term>
+               <term type="genre_form">letter</term>
             </keywords>
          </textClass>
       </profileDesc>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,28 +10,30 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">berkeley.apis.417</idno>
-            <idno type="controlno">(CU)417</idno>
+            <idno type="controlNo">(CU)417</idno>
+            <idno type="ddbdp">p.tebt..2.387</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Tebt.0387</idno>
+                  <idno type="invNo">P.Tebt.0387</idno>
                </msIdentifier>
                <msContents>
                   <summary>Panesis acknowledges having received 120 drachmas from Dioskoros, to be repaid on demand.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Margins: top, 1.6 cm.; left, 1.5 cm.; bottom, 6.5 cm.; on verso, in black ink: T 7.</note>
                      <note type="general">5th year of the Emperor Vespasianus, 4th of the Egyptian month Epeiph.</note>
+                     <note type="local_note">1400</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>1 papyrus ; 20.9 x 9.7 cm.</support>
                         <condition>
-                           <ab type="preservation">Very light papyrus</ab>
                            <ab type="conservation">On verso papyrus restored with blotting paper ?</ab>
+                           <ab type="preservation">Very light papyrus</ab>
                         </condition>
                      </supportDesc>
                      <layoutDesc>
@@ -56,6 +59,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -64,19 +74,15 @@
          <textClass>
             <keywords scheme="#apis">
                <term>Money</term>
-               <term>
-                  <rs type="genre_form">Contracts, Roman period</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Contracts, Roman period</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>Panesis son of Pakebkis to Dioskoros son of Maron, greeting. I have from you on deposit from hand to hand out of the house, from the public moneys which you administer, 120 drachmas, which I will repay whenever you choose, without any delay or excuse. The fifth year of Imperator Caesar Vespasianus Augustus, Epeiph 4.</ab>
          </div>
          <div type="bibliography" subtype="citations">

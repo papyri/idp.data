@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.2602</idno>
-            <idno type="controlno">(MiU)2602</idno>
+            <idno type="controlNo">(MiU)2602</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 593</idno>
+                  <idno type="invNo">P.Mich.inv. 593</idno>
                </msIdentifier>
                <msContents>
                   <summary>The content is both magical and medical. Loss of context makes connected translation impossible.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto; Verso is blank</note>
+                     <note type="related">-</note>
                      <textLang mainLang="egy-Copt">Coptic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +57,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -66,19 +75,15 @@
                <term>Magic, Egyptian.</term>
                <term>Christian art and symbolism--Egypt.</term>
                <term>Medicine--Egyptian</term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">subliterary; medical and magical</rs>
-               </term>
+               <term type="genre_form">Papyrus</term>
+               <term type="genre_form">subliterary; medical and magical</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>"(Christian sign) Concerning the Three, Three:;Take a sheet (of papyrus) and write upon it (the signs?) and the names. He will recover. In the name of Jesus Christ. Amen.;;Blessed art thou, O Lord, that sittest above the Cherubin ...... that stand in his presence. Blessed art thou ..... to judge the quick and and the dead ..... and seven archangels ...... Suruel and Trimuel ..... mayest thou bring bring out of every room (?)...... Run! Straightway! Straightway! Quickly! Quickly!;;For you to ......:;..... finely powdered dung, 1/2 oz.....;Arsenic, 1 dr.;Take a bundle of ..... with one another, and remove their liquid from them...... and add (?) them to the ......., and put them upon ......;;For a man whose spleen is diseased:;Take .... of pepper and a sextarius of asplinium ...... malobathrum and a steere ..... of genuine oil, and rub them with ......"</ab>
          </div>
          <div type="bibliography" subtype="citations">

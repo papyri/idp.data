@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.1928</idno>
-            <idno type="controlno">(MiU)1928</idno>
+            <idno type="controlNo">(MiU)1928</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich. inv. 33</idno>
+                  <idno type="invNo">P.Mich. inv. 33</idno>
                </msIdentifier>
                <msContents>
                   <summary>McMillan in ed. princ.: Although the text preserves only a dating formula, the fact that it is written in a literary hand strongly suggests that the text is from a martyrology, where formulas of this type are common. They may occur at the beginning or end of a martyrology. Since the text does not continue on the verso, we may assume that the piece is the last page of the codex. The mention of Diocletian in l 1 and Clodius Culcianus in l. 4 gives further evidence to support the supposition that this fragment is from a martyrology. Both of these men are mentioned by name in several martyrologies. The date mentioned in the text is: December 18, 307 A.D.;PJS in BASP 31, 1994, pp. 121-124: There is writing on the other side of the papyrus, which seems to be unrelated to the text siscussed here. The writing on the back stands upside down in relation to the main text, Coptic?;Finally, PJS proposes that it is the end of a parchment codex which once contained the Passion of Saint Dioskorus.</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: Recto + Verso</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -67,19 +75,15 @@
                <term>Martyrology</term>
                <term>Saint Dioskorus</term>
                <term>Diocletianic era</term>
-               <term>
-                  <rs type="genre_form">Literary; christian</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Parchment</rs>
-               </term>
+               <term type="genre_form">Literary; christian</term>
+               <term type="genre_form">Parchment</term>
             </keywords>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="en" type="translation">
+         <div type="translation">
             <ab>The twenty-fourth year of Diocletian, fifteen days before the Calens of January, the twenty-first day of the month Choiak, when Culcianus was prefect and ...</ab>
          </div>
          <div type="bibliography" subtype="citations">

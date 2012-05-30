@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,19 +9,19 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">yale.apis.4400314100</idno>
-            <idno type="controlno">(CtY)DP 31(A)</idno>
+            <idno type="controlNo">(CtY)DP 31(A)</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.CtYBR inv.DP 31(A)</idno>
+                  <idno type="invNo">P.CtYBR inv.DP 31(A)</idno>
                </msIdentifier>
                <msContents>
                   <summary>Morning report (?)</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">(e) matched with DP 9(B), P.Dura 107</note>
                      <textLang mainLang="la">Latin</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate when="0230"/>
+                     <origDate when="0230">230 CE</origDate>
                      <origPlace>Dura-Europos</origPlace>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -45,12 +53,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Papyri, fragments</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Document</rs>
-               </term>
+               <term type="genre_form">Papyri, fragments</term>
+               <term type="genre_form">Document</term>
             </keywords>
          </textClass>
       </profileDesc>

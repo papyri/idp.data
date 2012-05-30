@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -8,20 +9,21 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">columbia.apis.938</idno>
-            <idno type="controlno">(NNC)aaa1106</idno>
+            <idno type="controlNo">(NNC)aaa1106</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">O.Col.inv. 938 (acc. 64.11.270)</idno>
+                  <idno type="invNo">O.Col.inv. 938 (acc. 64.11.270)</idno>
                </msIdentifier>
                <msContents>
                   <summary>on the front the name Sabine repeated; on the back perhaps the name Boutros</summary>
-                  <msItem>
+                  <msItemStruct>
                      <note type="general">2 lines of writing on the front and traces of letters on the back</note>
                      <note type="general">complete</note>
+                     <note type="local_note">Reserved for publication to Cribiore and Hickey, 7/1/06</note>
                      <textLang mainLang="egy-Copt">in Coptic</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origDate notBefore="0500" notAfter="0690"/>
+                     <origDate notBefore="0500" notAfter="0690">500 CE – 690 CE</origDate>
                   </origin>
                   <provenance>
                      <p>from Thebes, Deir el Bahri, excavated by the Metropolitan Museum in 1926-29, Burton photo M10C 24. Formerly property of the Metropolitan Museum, sold to Columbia University in 1958</p>
@@ -41,6 +43,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -48,12 +57,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Ostraca</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyri</rs>
-               </term>
+               <term type="genre_form">Ostraca</term>
+               <term type="genre_form">Papyri</term>
             </keywords>
          </textClass>
       </profileDesc>

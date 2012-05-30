@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -9,20 +10,20 @@
          <publicationStmt>
             <authority>APIS</authority>
             <idno type="apisid">michigan.apis.4606</idno>
-            <idno type="controlno">(MiU)4606</idno>
+            <idno type="controlNo">(MiU)4606</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invno">P.Mich.inv. 166</idno>
+                  <idno type="invNo">P.Mich.inv. 166</idno>
                </msIdentifier>
                <msContents>
-                  <msItem>
-                     <note type="general">Was in the main database (and in the list of published papyri) as Ç«£PMich XI  ????Ç«• and the note Ç«£A mystery that needs solvingÇ«• -  Described in the inventory as: Lease of land, 161-168; 9 x 5 7/8" (= ca. 23 x 15 cm). Note that in the index of P.Mich. XI, M.Aur. and L.Ver and their year 7 appear as "p. 000" - Could not be found (Oct. 98). (PH)</note>
+                  <msItemStruct>
+                     <note type="general">Was in the main database (and in the list of published papyri) as �ǣPMich XI  ????�ǥ and the note �ǣA mystery that needs solving�ǥ -  Described in the inventory as: Lease of land, 161-168; 9 x 5 7/8" (= ca. 23 x 15 cm). Note that in the index of P.Mich. XI, M.Aur. and L.Ver and their year 7 appear as "p. 000" - Could not be found (Oct. 98). (PH)</note>
                      <note type="general">Location: Ann Arbor</note>
                      <note type="general">Pub. status: under research; contact institution</note>
                      <textLang mainLang="grc">Greek</textLang>
-                  </msItem>
+                  </msItemStruct>
                </msContents>
                <physDesc>
                   <objectDesc>
@@ -55,6 +56,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="apis">
+               <desc>APIS keywords are controlled locally at the institution level. They are not necessarily consistent.</desc>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
@@ -62,12 +70,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="#apis">
-               <term>
-                  <rs type="genre_form">Documentary</rs>
-               </term>
-               <term>
-                  <rs type="genre_form">Papyrus</rs>
-               </term>
+               <term type="genre_form">Documentary</term>
+               <term type="genre_form">Papyrus</term>
             </keywords>
          </textClass>
       </profileDesc>
