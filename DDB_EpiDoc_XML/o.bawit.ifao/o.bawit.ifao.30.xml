@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0273;;30" xml:id="o.bawit.ifao.30" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0273;;30" xml:id="o.bawit.ifao.30"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -24,12 +25,19 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
-          <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
+          <change when="2012-08-05T12:21:44.856-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+          <change when="2012-08-05T12:21:44.835-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - AcceptText - See Delattre's comments.</change>
+          <change when="2012-08-05T12:21:44.815-04:00"
+                 who="http://papyri.info/editor/users/Alain%20D.">Vote - AcceptText - Accept text. Perhaps define language as Coptic and use ~||~grc for Greek parts. Line 2: ϣⲟⲙⲧⲉ is a number -&gt; &lt;#ϣⲟⲙⲧⲉ=3#&gt;. Line-2-3: the word is ⲛⲗⲁⲕⲟⲟⲧⲉ -&gt; ⲛⲗⲁⲕⲟⲟ 3.- [ⲧⲉ]. Line 3: for ⲃⲓⲕⲧ̣[.?], since the translation says Vict[or, I suggest ⲃⲓⲕⲧ̣[ⲱⲣ] [.?]. Line 4: put the ⲡ (Coptic article) outside de grc|reg| -&gt; [.ⲡ]&lt;:καμηλίτης=grc|reg|([ⲕ]ⲁⲙ(ⲏ)ⲗ[ⲓⲧⲏⲥ]) [.?]:&gt;.</change>
+          <change when="2011-08-30T12:03:56.324-04:00"
+                 who="http://papyri.info/editor/users/Georg">Coptic in lines 1-4 added</change>
           <change when="2010-05-05" who="http://papyri.info/editor/users/gabrielbodard">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
           <change when="2009-11-12" who="http://papyri.info/editor/users/gabrielbodard">Added language la-Grek</change>
           <change when="2009-06-27" who="http://papyri.info/editor/users/gabrielbodard">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
@@ -42,10 +50,14 @@
             <date>VII/VIII spc</date>
             <placeName>Bawit</placeName>
          </head>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
-    <lb n="1"/><g type="stauros"/> <num value="8">η</num> <expan>φορ<ex>ά</ex></expan> <note xml:lang="en">coptic</note>
+         <div xml:lang="cop" type="edition" xml:space="preserve"><ab>
+    <lb n="1"/><g type="stauros"/> <foreign xml:lang="grc"><num value="8">η</num> <expan>φορ<ex>ά</ex></expan></foreign> ϣⲓⲛⲉ ⲛⲥⲁ
 
-    <lb n="2"/><note xml:lang="en">coptic 3lin</note></ab></div>
+    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <num value="3">ϣⲟⲙⲧⲉ</num> ⲛⲗⲁⲕⲟⲟ <lb n="3" break="no"/><supplied reason="lost">ⲧⲉ ⲛⲏⲣⲡ ϩⲓⲧ</supplied><unclear>ⲟ</unclear>ⲟⲧϥ ⲛⲃⲓⲕ<unclear>ⲧ</unclear><supplied reason="lost">ⲱⲣ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="4"/><supplied reason="lost">ⲡ</supplied><choice><reg xml:lang="grc">καμηλίτης</reg><orig><expan><supplied reason="lost">ⲕ</supplied>ⲁⲙ<ex>ⲏ</ex>ⲗ<supplied reason="lost">ⲓⲧⲏⲥ</supplied></expan> <gap reason="lost" extent="unknown" unit="character"/></orig></choice>
+
+</ab></div>
       </body>
    </text>
 </TEI>
