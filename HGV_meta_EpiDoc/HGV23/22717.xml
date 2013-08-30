@@ -3,21 +3,19 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>A Census Return from Hermopolis from AD 189</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22717</idno>
             <idno type="TM">22717</idno>
-            <idno type="ddb-perseus-style">0154;3;923</idno>
-            <idno type="ddb-filename">p.lond.3.923</idno>
-            <idno type="ddb-hybrid">p.lond;3;923</idno>
+            <idno type="ddb-perseus-style">;;56</idno>
+            <idno type="ddb-filename">p.bagnall.56</idno>
+            <idno type="ddb-hybrid">p.bagnall;;56</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <placeName>
-                     <settlement>unbekannt</settlement>
-                  </placeName>
+                  <idno type="invNo">P.Lond. 923 (6)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -30,17 +28,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0180" notAfter="0181">
-                        <offset type="after" n="1">nach</offset> 180 - 181</origDate>
+                     <origPlace>Hermopolis</origPlace>
+                     <origDate xml:id="dateAlternativeX" notBefore="0189-01-26" notAfter="0189-02-24">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>26. Jan. - 24. Febr. 189 (Monat und Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY" notBefore="0189-07-25" notAfter="0189-08-23">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>25. Juli - 23. Aug. 189 (Monat und Tag unsicher)</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p>
+                        <placeName type="ancient"
+                                   ref="http://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Hermopolis</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,9 +63,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Namen</term>
-               <term>Daten</term>
+               <term>Deklaration (Zensus)</term>
+               <term>an Amphodogrammateis</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -65,36 +72,35 @@
          <change who="HGV" when="1995-07-19">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2013-08-30" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Descr.</p>
+            <p>Alternativdatierung: 25. Juli - 23. Aug. 189. Gehört zum Theognostos - Archiv.</p>
          </div>
-         <div type="commentary" subtype="mentionedDates">
-            <head>Erwähnte Daten</head>
-            <note type="original">verschiedene Daten zwischen 58 - 181</note>
-            <note type="source">HGV.fp7</note>
-            <list>
-               <item>
-                  <note type="comment">verschiedene Daten zwischen</note>
-                  <date type="mentioned" notBefore="0058" notAfter="0181">58 - 181</date>
-               </item>
-            </list>
+         <div type="edition">
+            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">923</biblScope>
-                  <biblScope type="pages">(S. XLVI)</biblScope>
+                  <title level="s" type="abbreviated">P.Bagnall</title>
+                  <biblScope type="numbers">56</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+               <bibl type="illustration">S. 324</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. III 923 (6)</bibl>
+            </listBibl>
          </div>
       </body>
    </text>
