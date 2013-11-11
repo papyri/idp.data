@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0240;10;64" xml:id="stud.pal.10.64" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0240;10;64" xml:id="stud.pal.10.64"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,6 +32,9 @@
          </handNotes>
       </profileDesc>
       <revisionDesc>
+          <change when="2013-11-07T09:59:49.954-05:00"
+                 who="http://papyri.info/editor/users/berkes.lajos">I've added commentary and a new reading to l4-5 from ZPE 169 (2009) 208. I've also changed Τμούει.1 to Τμούει *middot*. This is clear on the digital image and also in SPP X, it must have been a data entry error. Data Entry Error&#xD;
+</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
           <change when="2011-10-04" who="http://papyri.info/editor/users/Faith">Automatically updated revision description</change>
@@ -48,14 +52,14 @@
             <date>VII-VIIIspc</date>
             <placeName>Arsinoite</placeName>
          </head>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="A" type="textpart"><!--milestone unit="4"--><ab>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="A" type="textpart"><ab>
 
     <lb n="1"/><g type="stauros"/> <expan>χωρ<ex>ίον</ex></expan> Ἀμμο<unclear>ῦ</unclear> <expan>δ<ex>ιὰ</ex></expan> Φλα<supplied reason="lost">ουίου </supplied><gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="2"/><expan>χωρ<ex>ίον</ex></expan> <abbr>Ἀφρωδ<unclear>ειτ</unclear></abbr> <expan>δ<ex>ιὰ</ex></expan> <unclear>Ἄπα</unclear> Ἰ<supplied reason="lost">ουλίου </supplied><gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="3"/><g type="stauros"/> σὺν <expan>θ<ex>εῷ</ex></expan> <expan>κώδικ<ex>ες</ex></expan> <choice><reg>ἡμερολογίων</reg><orig>ὑμερωλω<supplied reason="lost">γίων</supplied></orig></choice> 
-</ab></div><div n="B" type="textpart"><!--milestone unit="4"--><ab>
+</ab></div><div n="B" type="textpart"><ab>
 
     <lb n="1"/><gap reason="lost" quantity="1" unit="character"/>κιρ Ἑν<supplied reason="lost">ω</supplied>χ 
 
@@ -63,9 +67,15 @@
 
     <lb n="3"/>Χαῆλ Ἑνωχ 
 
-    <lb n="4"/><handShift new="m2"/> <g type="stauros"/> σὺν <expan>θ<ex>εῷ</ex></expan> Μαιμουν <expan>υἱό<ex>ς</ex></expan> 
+    <lb n="4" xml:id="div2-lb4"/><handShift new="m2"/> <g type="stauros"/> σὺν <expan>θ<ex>εῷ</ex></expan> Μαιμουν <expan>υἱό<ex>ς</ex></expan>
 
-    <lb n="5"/>ἀπὸ <expan>χ<ex>ωρίου</ex></expan> Τμούει<gap reason="illegible" quantity="1" unit="character"/> <abbr>ε</abbr><gap reason="lost" extent="unknown" unit="character"/> </ab></div></div>
+    <lb n="5"/>ἀπὸ <expan>χ<ex>ωρίου</ex></expan> Τμούει <g type="middot"/> <app type="editorial"><lem resp="N. Gonis ZPE 169 (2009) 208"> ἔλ<supplied reason="lost">αχε</supplied> <gap reason="lost" extent="unknown" unit="character"/></lem><rdg><abbr>ε</abbr><gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div2-lb4" xml:space="preserve"><ref>4</ref> <p>The official mentioned might have been Μαιμουν υἱὸς Χααμ, cf. N. Gonis ZPE 169 (2009) 208.</p></item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
