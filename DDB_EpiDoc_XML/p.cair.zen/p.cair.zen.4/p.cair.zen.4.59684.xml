@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0092;4;59684" xml:id="p.cair.zen.4.59684" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0092;4;59684" xml:id="p.cair.zen.4.59684"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -28,6 +29,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+          <change when="2013-08-20T08:56:59.171-04:00"
+                 who="http://papyri.info/editor/users/berkes.lajos">Finalized - I have followed Sosin's third suggestion.</change>
+          <change when="2013-08-20T08:56:59.105-04:00"
+                 who="http://papyri.info/editor/users/joshuad.sosin">Vote - AcceptApp - Accept. The restoration is reasonable, although presumably the ed. had same in mind (hence βι[κ rather than βι[). I see three options (1) If we accept to text, render syntax: &lt;:&lt;:βι[κίον]|alt|βι[κία]:&gt;=PN I. Bonati (P.Cair.Zen. 1 59012.81; P.Lond. 7 2141.37)|βι[κ]:&gt; [.?] . I would then delete the commentary. (2) Or, this could be displayed in the commentary alone. (3) Or in the app alone, in which case syntax would be: &lt;:βι[κ]|alt|&lt;:&lt;:βι[κίον]|alt|βι[κία]:&gt;=PN I. Bonati (P.Cair.Zen. 1 59012.81; P.Lond. 7 2141.37)|ed|βι[κ]:&gt;:&gt; [.?] . Let the finalizer decide.</change>
+          <change when="2013-08-20T08:56:59.063-04:00"
+                 who="http://papyri.info/editor/users/toniasarri">Vote - AcceptText - Preferably to insert it as a PN correction &lt;:βι[κίον]=PN I. Bonati|ed|βι[κ][.?]:&gt;</change>
+          <change when="2012-03-21T07:48:10.24-04:00"
+                 who="http://papyri.info/editor/users/isa.bonati">An integration is proposed (l. 8)</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
           <change when="2010-05-05" who="http://papyri.info/editor/users/gabrielbodard">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
@@ -57,7 +66,12 @@
 
     <lb n="7"/>φοινίκων <gap reason="lost" extent="unknown" unit="character"/> 
 
-    <lb n="8"/>ταρίχου βι<supplied reason="lost">κ </supplied><gap reason="lost" extent="unknown" unit="character"/> </ab></div>
+    <lb n="8" xml:id="lb8"/>ταρίχου <app type="alternative"><lem>βι<supplied reason="lost">κ</supplied></lem><rdg><app type="editorial"><lem resp="PN I. Bonati (P.Cair.Zen. 1 59012.81; P.Lond. 7 2141.37)"><app type="alternative"><lem>βι<supplied reason="lost">κίον</supplied></lem><rdg>βι<supplied reason="lost">κία</supplied></rdg></app></lem><rdg>βι<supplied reason="lost">κ</supplied></rdg></app></rdg></app> <gap reason="lost" extent="unknown" unit="character"/></ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb8" xml:space="preserve"><ref>8</ref> <p>βι[κ] → βι[κίον] or βι[κία], ’small container’, cf. P.Cair.Zen. 1 59012,81 and P.Lond. 7 2141,37.</p></item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
