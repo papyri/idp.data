@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;16;12569" xml:id="sb.16.12569" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;16;12569" xml:id="sb.16.12569"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -25,10 +26,17 @@
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
-            <language ident="la">Latin</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+          <change when="2014-10-31T08:02:57.643-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+          <change when="2014-10-31T08:02:57.636-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - AcceptText - I accept the arguments.</change>
+          <change when="2014-10-31T08:02:57.624-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Vote - AcceptText - Claytor's argument for removing the place name in ln 1 is compelling.  @ next voter: as far as the "lang" markup is concerned, should &lt;language ident="la"&gt;Latin&lt;/language&gt; also be removed from &lt;langUsage&gt; in the XML?  </change>
+          <change when="2014-07-02T20:36:24.791-04:00"
+                 who="http://papyri.info/editor/users/gclaytor">I propose removing an unnecessary supplement in l. 1, which is justified in a commentary note.  The supplement had been marked as Latin for some reason, so I removed this.  I have not succeeded in making the square brackets continuous in l. 1.</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
           <change when="2011-10-31" who="http://papyri.info/editor/users/gabrielbodard">changed type=inWord to break=no</change>
@@ -49,7 +57,7 @@
             <ref n="p.ifao;3;35" type="reprint-from">PIFAO3,35</ref>
          </head>
          <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
-    <lb n="1"/><supplied reason="lost"><expan><ex>ἔτους</ex></expan> </supplied><gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">, Παῦνι <num value="21">κα</num>, ἐν <expan>Τεβτ<ex>ύνι</ex></expan> <foreign xml:lang="la">?.</foreign> </supplied><expan><supplied reason="lost">ἐμί</supplied>σθω<ex>σαν</ex></expan> Ὧρος <choice><reg>κωμογραμματεὺς</reg><orig>κομογραμματεὺς</orig></choice> Κερκεσούχ<supplied reason="lost">ων Ὄρους καὶ </supplied><gap reason="lost" quantity="13" unit="character"/> 
+    <lb n="1" xml:id="lb1"/><supplied reason="lost"><expan><ex>ἔτους</ex></expan> </supplied><gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">, Παῦνι <num value="21">κα</num><app type="editorial"><lem resp="PN W.G. Claytor"/><rdg>ἐν <expan>Τεβτ<ex>ύνι</ex></expan> <certainty match=".." locus="value"/></rdg></app></supplied>, <expan><supplied reason="lost">ἐμί</supplied>σθω<ex>σαν</ex></expan> Ὧρος <choice><reg>κωμογραμματεὺς</reg><orig>κομογραμματεὺς</orig></choice> Κερκεσούχ<supplied reason="lost">ων Ὄρους καὶ </supplied><gap reason="lost" quantity="13" unit="character"/> 
 
     <lb n="2"/><gap reason="lost" quantity="15" unit="character"/><supplied reason="lost"> υἱ</supplied><unclear>ο</unclear>ὶ Δημητρίου Πτολεμαίωι <unclear>Πτ</unclear>ο<supplied reason="lost">λεμαίου Μακεδόνι </supplied><gap reason="lost" quantity="8" unit="character"/> 
 
@@ -100,6 +108,11 @@
     <lb n="25"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
 
     <lb n="26"/><gap reason="lost" extent="unknown" unit="line"/> </ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb1" xml:space="preserve"><ref>1</ref> <p>The editor explains his supplement ἐν Τεβτ(ύνι) (?) as follows: "I presume that this line, like 1.8, projected about five letters farther to the left than the following lines. Otherwise there would not be space for the name of the town in which the contract was drawn up, and that information is expected from about 273 B.C. on" (<listBibl><bibl><ref target="http://papyri.info/biblio/53382">Shelton 1979</ref></bibl></listBibl>, p. 220, l. 1 note).  The supplement is unnecessary, however, because the location is regularly omitted in the inner script of first-century BCE double documents.  The last example of its occurrence is <ref target="http://papyri.info/ddbdp/p.tebt;1;106">P.Tebt. I 106.1</ref> (101 BCE).  Cf., e.g., the roughly-contemporaneous <ref target="http://papyri.info/ddbdp/bgu;14;2389">BGU XIV 2389</ref> (Herakleopolite, 72 BCE), whose inner script has only the date before the main verb of the contract.  Sometimes even the date is missing: e.g., <ref target="http://papyri.info/ddbdp/p.ryl;4;587">P.Ryl. IV 587.1</ref> (Tebtunis, 87 BCE) and <ref target="http://papyri.info/ddbdp/p.mert;1;6">P.Mert. I 6.1</ref> (Nestou Epoikion, 77 BCE).  For a list of late-Ptolemaic double documents, see <listBibl><bibl><ref target="http://papyri.info/biblio/77513">Yiftach-Firanko 2008</ref></bibl></listBibl>, p. 210, n. 24, to which the present contract should be added under the category "extensive account of the contract."</p></item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
