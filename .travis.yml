@@ -13,7 +13,9 @@ script:
   - java -jar jing-20081028/bin/jing.jar rdfxml.rng RDF/collection.rdf
   - ls
   - which parallel
-  - parallel --version
-  - bash -c 'find HGV_trans_EpiDoc -name "*.xml" | parallel -X -j8 -u "java -jar jing-20081028/bin/jing.jar epidoc/8.13/tei-epidoc.rng {}"'
-  - bash -c 'find HGV_meta_EpiDoc -name "*.xml" | parallel -X -j8 -u "java -jar jing-20081028/bin/jing.jar epidoc/8.13/tei-epidoc.rng {}"'
-  - bash -c 'find DDB_EpiDoc_XML -name "*.xml" | parallel -X -j16 -u "java -jar jing-20081028/bin/jing.jar epidoc/8.16/tei-epidoc.rng {}"'
+  - parallel --gnu --version
+  - bash -c 'find HGV_trans_EpiDoc -name "*.xml" | wc -l'
+  - bash -c 'find HGV_trans_EpiDoc -name "*.xml" | tail'
+  - bash -c 'find HGV_trans_EpiDoc -name "*.xml" | parallel --gnu -X -j8 -u "java -jar jing-20081028/bin/jing.jar epidoc/8.13/tei-epidoc.rng {}"'
+  - bash -c 'find HGV_meta_EpiDoc -name "*.xml" | parallel --gnu -X -j8 -u "java -jar jing-20081028/bin/jing.jar epidoc/8.13/tei-epidoc.rng {}"'
+  - bash -c 'find DDB_EpiDoc_XML -name "*.xml" | parallel --gnu -X -j16 -u "java -jar jing-20081028/bin/jing.jar epidoc/8.16/tei-epidoc.rng {}"'
