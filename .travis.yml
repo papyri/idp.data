@@ -1,0 +1,16 @@
+language: java
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y parallel
+install:
+  - wget 'http://jing-trang.googlecode.com/files/jing-20081028.zip'
+  - unzip jing-20081028.zip
+  - mkdir -p epidoc/8.13 epidoc/8.16
+  - wget -O epidoc/8.13/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng'
+  - wget -O epidoc/8.16/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng'
+  - wget 'http://www.w3.org/TR/REC-rdf-syntax/rdfxml.rng'
+script:
+  - java -jar jing-20081028/bin/jing.jar rdfxml.rng RDF/collection.rdf
+  - find HGV_trans_EpiDoc -name '*.xml' | parallel -X -j8 -u 'java -jar jing-20081028/bin/jing.jar epidoc/8.13/tei-epidoc.rng {}'
+  - find HGV_meta_EpiDoc -name '*.xml' | parallel -X -j8 -u 'java -jar jing-20081028/bin/jing.jar epidoc/8.13/tei-epidoc.rng {}'
+  - find DDB_EpiDoc_XML -name '*.xml' | parallel -X -j8 -u 'java -jar jing-20081028/bin/jing.jar epidoc/8.16/tei-epidoc.rng {}'
