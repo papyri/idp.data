@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     n="0239;5;8002"
-     xml:id="sb.5.8002"
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;5;8002" xml:id="sb.5.8002"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -31,6 +29,8 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+          <change when="2015-07-18T12:11:30.105-04:00"
+                 who="http://papyri.info/editor/users/LuciaConsueloColella">I have corrected αὐτωὶ (l. 24) into αὐτῶι; I have added alternate readings (ll.6, 7 and 30), regularizations (ll. 8 and 27), one BL correction (l. 11) and commentaries (ll. 6-7; 8; 30).</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
           <change when="2011-10-31" who="http://papyri.info/editor/users/gabrielbodard">changed type=inWord to break=no</change>
@@ -60,17 +60,17 @@
 
     <lb n="5" break="no"/><supplied reason="lost">δόντος σ</supplied>οι τὸ ἐπι<supplied reason="lost">σ</supplied>τόλιον Πωλίωνος 
 
-    <lb n="6"/><supplied reason="lost">κεράμ</supplied><unclear>ι</unclear>α ἐσφ<supplied reason="lost">ρ</supplied>αγισμένα <num value="2">β</num> <unclear>ὀλ</unclear>ύ
+    <lb n="6" xml:id="lb6"/><app type="alternative"><lem><supplied reason="lost">κεράμ</supplied><unclear>ι</unclear>α</lem><rdg><supplied reason="lost">σφυρίδ</supplied><unclear>ι</unclear>α</rdg></app> ἐσφ<supplied reason="lost">ρ</supplied>αγισμένα <num value="2">β</num> <unclear>ὀλ</unclear>ύ
 
-    <lb n="7" break="no"/><supplied reason="lost">ρας σφρ</supplied><unclear>α</unclear>γῖδα ἔχουσα γλύμματι 
+    <lb n="7" break="no"/><supplied reason="lost">ρας σφρ</supplied><unclear>α</unclear>γῖδα <app type="alternative"><lem>ἔχουσα</lem><rdg>ἔχοντα</rdg></app> γλύμματι 
 
-    <lb n="8"/><supplied reason="lost">Σαχ</supplied>ύ<supplied reason="lost">ψ</supplied>εως Καλοῦς Μεγιστοῦς. 
+    <lb n="8" xml:id="lb8"/><supplied reason="lost">Σαχ</supplied>ύ<supplied reason="lost">ψ</supplied>εως <choice><reg cert="low">Καλῆς</reg><orig>Καλοῦς</orig></choice> Μεγιστοῦς. 
 
     <lb n="9"/>καὶ <expan>ἔσχο<ex>ν</ex></expan> παρʼ αὐτοῦ <expan><ex>δραχμὰς</ex></expan> <num value="8">η</num>, <choice><reg>ἵν<supplied reason="omitted">α</supplied></reg><orig>ἱν</orig></choice> δώσεις 
 
     <lb n="10"/>αὐτῷ <unclear>τὰ</unclear>ς ἴσας. κα<supplied reason="lost">λ</supplied>ῶς οὖν ποιή
 
-    <lb n="11" break="no"/><supplied reason="lost">σ</supplied>ε<unclear>ις</unclear> <supplied reason="lost">προσ</supplied><unclear>φ</unclear>ωνή<unclear>σ</unclear><supplied reason="lost">ας μ</supplied>οι περί τε τῆς 
+    <lb n="11" break="no"/><supplied reason="lost">σ</supplied>ε<unclear>ις</unclear> <app type="editorial"><lem resp="BL7.107"><supplied reason="lost">ἀντι</supplied><unclear>φ</unclear>ωνή<unclear>σ</unclear><supplied reason="lost">ας μ</supplied>οι</lem><rdg><supplied reason="lost">προσ</supplied><unclear>φ</unclear>ωνή<unclear>σ</unclear><supplied reason="lost">ας μ</supplied>οι</rdg></app> περί τε τῆς 
 
     <lb n="12"/><choice><reg>ὑγιεία<supplied reason="lost">ς</supplied></reg><orig>ὑγία<supplied reason="lost">ς</supplied></orig></choice> <supplied reason="lost">σ</supplied>ου καὶ περὶ ὧν χρῄσῃ καὶ πε
 
@@ -96,23 +96,30 @@
 
     <lb n="23"/>οὖν Ἑ<supplied reason="lost">ρμ</supplied>οκράτῃ, ἵνα ἐκβάλῃ 
 
-    <lb n="24"/><choice><reg>αὐτὸ</reg><orig>αὐτωὶ</orig></choice> <unclear>ἐπ</unclear>άνω τοῦ τοίχου, <choice><reg>ἐπεὶ</reg><orig>ἐπὶ</orig></choice> ἔλε
+    <lb n="24"/><choice><reg>αὐτὸ</reg><orig>αὐτῶι</orig></choice> <unclear>ἐπ</unclear>άνω τοῦ τοίχου, <choice><reg>ἐπεὶ</reg><orig>ἐπὶ</orig></choice> ἔλε
 
     <lb n="25" break="no"/>γεν, ὅτι χωρὶς τῆς γνώμης σου 
 
     <lb n="26"/>οὐ ποιῶ, <choice><reg>ἐπεὶ</reg><orig>ἐπὶ</orig></choice> καὶ <choice><reg>ἕνεκα</reg><orig>ἕνεκε</orig></choice> τοῦ τοί
 
-    <lb n="27" break="no"/>χου ποιοῦμεν. <choice><reg>ἀσπάζεταί</reg><orig>ἀσπάζετέ</orig></choice> σοι 
+    <lb n="27" break="no"/>χου ποιοῦμεν. <choice><reg>ἀσπάζεταί</reg><orig>ἀσπάζετέ</orig></choice> <choice><reg>σε</reg><orig>σοι</orig></choice> 
 
     <lb n="28"/>Ἑρμοκράτης καὶ Ἑλένη καὶ 
 
     <lb n="29"/>Χρῆστος μεγάλως καὶ Ἀχιλ
 
-    <lb n="30" break="no"/>λεὺς καὶ τοὺς <choice><reg cert="low">ὑμῶν</reg><orig>ἡμῶν</orig></choice> πάντας. 
+    <lb n="30" break="no" xml:id="lb30"/>λεὺς καὶ <app type="alternative"><lem>τοὺς <choice><reg cert="low">ὑμῶν</reg><orig>ἡμῶν</orig></choice> πάντας</lem><rdg>οἱ ἡμῶν πάντες</rdg></app>. 
 
     <lb n="31"/>ἐρρῶσθ<supplied reason="lost">αί</supplied> σε εὔχομαι. 
 
     <lb n="32"/>Π<supplied reason="lost">αῦ</supplied><unclear>νι</unclear> <num value="1">α</num>. </ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb6" xml:space="preserve"><ref>6-7</ref> <p>The reading ὀ̣λ̣ύ[ρας has been questioned by H. Cadell, Proceed. 12th Congr.Pap., p. 72, n. 26 (cf. BL 6.138).</p></item>
+               <item corresp="#lb8" xml:space="preserve"><ref>8</ref> <p>Καλοῦς is unattested as genitive form in the papyri and could be an error for Καλῆς ("the great beautiful Sachypsis" = "la grandissima e bella Sachypsis"). Sachypsis is an epithet for Isis.</p></item>
+               <item corresp="#lb30" xml:space="preserve"><ref>30</ref> <p>According to the ed. pr. is also possible to understand the expression as an error for the nominative οἱ ἡμῶν πάντες ("… Achilleus and all of ours greet you" = "… Achilleus e tutti i nostril ti salutano"). </p></item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
