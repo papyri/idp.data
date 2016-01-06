@@ -21,7 +21,7 @@ Automated XML validation for this repository is available at <https://travis-ci.
 
 As the [Papyrological Editor on Papyri.info](http://papyri.info/editor/) uses Git for its data backend, data in this repository is updated frequently via that user interface. The Papyrological Editor uses its own Git repository which is synchronized bidirectionally on an hourly basis with this public-facing repository.
 
-As a result of this, it is suggested that you use the [Papyrological Editor](http://papyri.info/editor/) for changes which are primarily to text, metadata, or translations at the level of individual documents. The reason for this is that the Papyrological Editor already incorporates workflows for editorial review by the editorial boards which oversee each individual component.
+As a result of this, it is suggested that you use the [Papyrological Editor](http://papyri.info/editor/) for changes which are primarily to text, metadata, or translations at the level of individual documents. The reason for this is that the Papyrological Editor already incorporates workflows for editorial review by the editorial boards which oversee each individual project component.
 
 For advanced users familiar with Git and XML wishing to make batch changes which affect a large number of files, it may be preferable to use a [Pull Request](https://github.com/papyri/idp.data/pulls) instead. We will review these on a case-by-case basis. You can also contact us at [dcthree@duke.edu](mailto:dcthree@duke.edu) in order to coordinate this sort of work if you are unsure if we are likely to be able to incorporate your changes or submissions.
 
