@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0046-07-24">
-                        <certainty locus="value" match="../month-from-date(@when)"/>24. Juli 46 (Monat unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0046-01-25">
-                        <certainty locus="value" match="../month-from-date(@when)"/>25. Jan. 46 (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0046-07-24"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>24. Juli 46 (Monat unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0046-01-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>25. Jan. 46 (Monat unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,18 +98,18 @@
             <list>
                <item>
                   <ref>Z. 7-8</ref>
-                  <date type="mentioned" when="0045-11-02">2. Nov. 45<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0045-11-02" datingMethod="#julian">2. Nov. 45<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                   <note type="annotation">Bearbeitungsvermerk</note>
                </item>
                <item>
                   <ref>Z. 1a</ref>
-                  <date type="mentioned" when="0046-01-25">25. Jan. 46<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0046-01-25" datingMethod="#julian">25. Jan. 46<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 1a</ref>
-                  <date type="mentioned" when="0046-07-24">24. Juli 46<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0046-07-24" datingMethod="#julian">24. Juli 46<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

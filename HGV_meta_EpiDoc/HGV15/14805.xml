@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0012-05-29">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="-0012-05-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 29. Mai 12 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0032-05-29">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0032-05-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 29. Mai 32 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -94,22 +98,22 @@
             <list>
                <item>
                   <ref>Kol. II, Z. 2</ref>
-                  <date type="mentioned" when="-0012-05-29">29. Mai 12 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0012-05-29" datingMethod="#julian">29. Mai 12 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 2</ref>
-                  <date type="mentioned" when="0032-05-29">29. Mai 32<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0032-05-29" datingMethod="#julian">29. Mai 32<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 4</ref>
-                  <date type="mentioned" when="-0012-03-13">13. März 12 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0012-03-13" datingMethod="#julian">13. März 12 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 4</ref>
-                  <date type="mentioned" when="0032-03-13">13. März 32<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0032-03-13" datingMethod="#julian">13. März 32<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

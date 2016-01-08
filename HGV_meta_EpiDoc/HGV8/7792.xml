@@ -37,13 +37,15 @@
                   <origin>
                      <origPlace>Theogonis (Arsinoites)</origPlace>
                      <origDate xml:id="dateAlternativeX"
-                               notBefore="-0231-05-18"
-                               notAfter="-0231-06-16">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>18. Mai - 16. Juni 231 v.Chr. (Jahr unsicher)</origDate>
+                               notBefore-custom="-0231-05-18"
+                               notAfter-custom="-0231-06-16"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>18. Mai - 16. Juni 231 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY"
-                               notBefore="-0206-05-12"
-                               notAfter="-0206-06-10">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>12. Mai - 10. Juni 206 v.Chr. (Jahr unsicher)</origDate>
+                               notBefore-custom="-0206-05-12"
+                               notAfter-custom="-0206-06-10"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>12. Mai - 10. Juni 206 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -100,12 +102,18 @@
             <list>
                <item>
                   <ref/>
-                  <date type="mentioned" notBefore="-0231-03-18" notAfter="-0231-04-16">18. März  - 16. Apr. 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0231-03-18"
+                        notAfter-custom="-0231-04-16"
+                        datingMethod="#julian">18. März  - 16. Apr. 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref/>
-                  <date type="mentioned" notBefore="-0206-05-12" notAfter="-0206-06-10">12. Mai  - 10. Juni 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0206-05-12"
+                        notAfter-custom="-0206-06-10"
+                        datingMethod="#julian">12. Mai  - 10. Juni 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

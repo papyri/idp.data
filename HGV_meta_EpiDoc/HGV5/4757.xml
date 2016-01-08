@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Philadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0205-09-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Sept. 205 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0188-09-24">
-                        <certainty locus="value" match="../year-from-date(@when)"/>24. Sept. 188 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0205-09-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>28. Sept. 205 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0188-09-24"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>24. Sept. 188 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -97,12 +101,18 @@
             <list>
                <item>
                   <ref>Z. 5-11</ref>
-                  <date type="mentioned" notBefore="-0205-09-08" notAfter="-0205-09-27">8. - 27. Sept. 205 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0205-09-08"
+                        notAfter-custom="-0205-09-27"
+                        datingMethod="#julian">8. - 27. Sept. 205 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 5-11</ref>
-                  <date type="mentioned" notBefore="-0188-09-04" notAfter="-0188-09-23">4. - 23. Sept. 188 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0188-09-04"
+                        notAfter-custom="-0188-09-23"
+                        datingMethod="#julian">4. - 23. Sept. 188 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

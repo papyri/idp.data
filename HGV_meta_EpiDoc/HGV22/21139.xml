@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Hermopolites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0553-10-22">
-                        <certainty locus="value" match="../year-from-date(@when)"/>22. Okt. 553 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0554-10-22">
-                        <certainty locus="value" match="../year-from-date(@when)"/>22. Okt. 554 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0553-10-22"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>22. Okt. 553 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0554-10-22"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>22. Okt. 554 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -91,7 +95,10 @@
             <list>
                <item>
                   <ref>Z. 10</ref>
-                  <date type="mentioned" notBefore="0545" notAfter="0546">545 - 546<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0545"
+                        notAfter-custom="0546"
+                        datingMethod="#julian">545 - 546<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

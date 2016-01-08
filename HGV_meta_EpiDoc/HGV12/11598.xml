@@ -36,8 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites (?)</origPlace>
-                     <origDate notBefore="0249" notAfter="0250" cert="low">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 249 - 250 (?)</origDate>
+                     <origDate notBefore-custom="0249"
+                               notAfter-custom="0250"
+                               cert="low"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>ca. 249 - 250 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -89,8 +92,11 @@
             <list>
                <item>
                   <ref>Z. 26</ref>
-                  <date type="mentioned" notBefore="0246" notAfter="0247">246 - 247 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notBefore-custom="0246"
+                        notAfter-custom="0247"
+                        datingMethod="#julian">246 - 247 (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@notBefore-custom)"/>
+                     <certainty locus="value" certainty="../date/year-from-date(@notAfter-custom)"/>
                   </date>
                </item>
             </list>

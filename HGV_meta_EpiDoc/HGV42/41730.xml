@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Bakchias (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0094-10-01">
-                        <certainty locus="value" match="../year-from-date(@when)"/>1. Okt. 94 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0061-09-22">
-                        <certainty locus="value" match="../year-from-date(@when)"/>22. Sept. 61 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0094-10-01"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>1. Okt. 94 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0061-09-22"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>22. Sept. 61 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -95,12 +99,12 @@
             <list>
                <item>
                   <ref>Z. 5.7</ref>
-                  <date type="mentioned" when="-0094-09-30">30. Sept. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0094-09-30" datingMethod="#julian">30. Sept. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 5.7</ref>
-                  <date type="mentioned" when="-0061-09-21">21. Sept. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0061-09-21" datingMethod="#julian">21. Sept. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

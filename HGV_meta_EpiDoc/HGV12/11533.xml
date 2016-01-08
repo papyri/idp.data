@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Tebtynis (Arsinoites)</origPlace>
-                     <origDate notBefore="0137-05-26" notAfter="0137-06-24">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>26. Mai - 24. Juni 137 (Monat und Tag unsicher)</origDate>
+                     <origDate notBefore-custom="0137-05-26"
+                               notAfter-custom="0137-06-24"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>26. Mai - 24. Juni 137 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -93,7 +95,10 @@
             <list>
                <item>
                   <ref>Z. 16</ref>
-                  <date type="mentioned" notBefore="0136-11-17" notAfter="0136-11-25">17. - 25. Nov. 136</date>
+                  <date type="mentioned"
+                        notBefore-custom="0136-11-17"
+                        notAfter-custom="0136-11-25"
+                        datingMethod="#julian">17. - 25. Nov. 136</date>
                </item>
             </list>
          </div>

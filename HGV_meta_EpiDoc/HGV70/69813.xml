@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Herakleopolites</origPlace>
-                     <origDate when="-0086-08-01">
-                        <certainty locus="value" match="../year-from-date(@when)"/>1. Aug. 86 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate when-custom="-0086-08-01" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>1. Aug. 86 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,7 +94,9 @@
                <item>
                   <ref>Z. 3-21</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" notAfter="-0086-08-01">vor 1. Aug. 86 v.Chr. (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notAfter-custom="-0086-08-01"
+                        datingMethod="#julian">vor 1. Aug. 86 v.Chr. (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@notAfter-custom)"/>
                   </date>
                </item>
             </list>

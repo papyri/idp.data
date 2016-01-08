@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0256-08-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Aug. 256 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0255-08-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Aug. 255 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0256-08-18"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>18. Aug. 256 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0255-08-18"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>18. Aug. 255 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,12 +98,12 @@
             <list>
                <item>
                   <ref>(4), Z. 5 - 12</ref>
-                  <date type="mentioned" when="-0256-08-17">17. Aug. 256 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0256-08-17" datingMethod="#julian">17. Aug. 256 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>(4), Z. 5 -12</ref>
-                  <date type="mentioned" when="-0255-08-17">17. Aug. 255 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0255-08-17" datingMethod="#julian">17. Aug. 255 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Theadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0252-10-27">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0252-10-27"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 27. Okt. 252 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0255-10-28">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0255-10-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 28. Okt. 255 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -99,12 +103,12 @@
             <list>
                <item>
                   <ref>Z. 6-7</ref>
-                  <date type="mentioned" when="0252-10-27">27. Okt. 252<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0252-10-27" datingMethod="#julian">27. Okt. 252<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 6-7</ref>
-                  <date type="mentioned" when="0255-10-28">28. Okt. 255<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0255-10-28" datingMethod="#julian">28. Okt. 255<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

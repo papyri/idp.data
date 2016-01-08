@@ -36,8 +36,10 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0066-07-25" notAfter="0066-08-23">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate notBefore-custom="0066-07-25"
+                               notAfter-custom="0066-08-23"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 25. Juli - 23. Aug. 66 (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -83,7 +85,10 @@
             <list>
                <item>
                   <ref/>
-                  <date type="mentioned" notBefore="0065" notAfter="0066">65 - 66</date>
+                  <date type="mentioned"
+                        notBefore-custom="0065"
+                        notAfter-custom="0066"
+                        datingMethod="#julian">65 - 66</date>
                </item>
             </list>
          </div>

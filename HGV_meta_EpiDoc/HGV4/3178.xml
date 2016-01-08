@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Memphis</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0212-06-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. Juni 212 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0195-06-25">
-                        <certainty locus="value" match="../year-from-date(@when)"/>25. Juni 195 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0212-06-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. Juni 212 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0195-06-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>25. Juni 195 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -95,22 +99,28 @@
             <list>
                <item>
                   <ref>Z.  1</ref>
-                  <date type="mentioned" when="-0212-06-29">29. Juni 212 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0212-06-29" datingMethod="#julian">29. Juni 212 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z.  1</ref>
-                  <date type="mentioned" when="-0195-06-25">25. Juni 195 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0195-06-25" datingMethod="#julian">25. Juni 195 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 4-10</ref>
-                  <date type="mentioned" notBefore="-0212-06-17" notAfter="-0212-06-20">17. - 20. Juni 212 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0212-06-17"
+                        notAfter-custom="-0212-06-20"
+                        datingMethod="#julian">17. - 20. Juni 212 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 4-10</ref>
-                  <date type="mentioned" notBefore="-0195-06-13" notAfter="-0195-06-16">13. - 16. Juni 195 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0195-06-13"
+                        notAfter-custom="-0195-06-16"
+                        datingMethod="#julian">13. - 16. Juni 195 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

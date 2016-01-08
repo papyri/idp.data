@@ -36,7 +36,10 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="-0200" notAfter="-0151" precision="low">1. Hälfte II v.Chr.</origDate>
+                     <origDate notBefore-custom="-0200"
+                               notAfter-custom="-0151"
+                               precision="low"
+                               datingMethod="#julian">1. Hälfte II v.Chr.</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -80,13 +83,16 @@
             <list>
                <item>
                   <ref>Z. 2.5</ref>
-                  <date type="mentioned" when="-0180">180 v.Chr. (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
+                  <date type="mentioned" when-custom="-0180" datingMethod="#julian">180 v.Chr. (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@when-custom)"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2.5</ref>
-                  <date type="mentioned" notBefore="-0170" notAfter="-0169">170 - 169 v.Chr. (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0170"
+                        notAfter-custom="-0169"
+                        datingMethod="#julian">170 - 169 v.Chr. (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@notBefore-custom)"/>
+                     <certainty locus="value" certainty="../date/year-from-date(@notAfter-custom)"/>
                   </date>
                </item>
             </list>

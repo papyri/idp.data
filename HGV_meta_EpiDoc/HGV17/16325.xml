@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0207-01-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Jan. 207 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0268-01-17">
-                        <certainty locus="value" match="../year-from-date(@when)"/>17. Jan. 268 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0207-01-16"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>16. Jan. 207 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0268-01-17"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>17. Jan. 268 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -100,7 +104,10 @@
                <item>
                   <ref>Z. 1-30</ref>
                   <note type="comment">Abschrift eines Dokuments von</note>
-                  <date type="mentioned" notBefore="0200" notAfter="0203">200 - 203<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0200"
+                        notAfter-custom="0203"
+                        datingMethod="#julian">200 - 203<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

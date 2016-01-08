@@ -36,12 +36,16 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0253-04-12">
-                        <certainty locus="value" match="../month-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>12. Apr. 253 v.Chr. (Monat und Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0254-09-19">
-                        <certainty locus="value" match="../month-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>19. Sept. 254 v.Chr. (Monat und Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0253-04-12"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>12. Apr. 253 v.Chr. (Monat und Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0254-09-19"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>19. Sept. 254 v.Chr. (Monat und Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>

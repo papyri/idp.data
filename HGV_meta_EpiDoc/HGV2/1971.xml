@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="-0251-06-22" notAfter="-0251-08-20">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>22. Juni - 20. Aug. 251 v.Chr. (Monat und Jahr unsicher)</origDate>
+                     <origDate notBefore-custom="-0251-06-22"
+                               notAfter-custom="-0251-08-20"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>22. Juni - 20. Aug. 251 v.Chr. (Monat und Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>

@@ -36,12 +36,18 @@
                <history>
                   <origin>
                      <origPlace>Theadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0260-11-04">
-                        <certainty locus="value" match="../year-from-date(@when)"/>4. Nov. 260 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0243-11-05">
-                        <certainty locus="value" match="../year-from-date(@when)"/>5. Nov. 243 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0249-11-04">
-                        <certainty locus="value" match="../year-from-date(@when)"/>4. Nov. 249 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0260-11-04"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>4. Nov. 260 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0243-11-05"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>5. Nov. 243 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ"
+                               when-custom="0249-11-04"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>4. Nov. 249 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -98,17 +104,26 @@
             <list>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" notBefore="0242" notAfter="0243">242 - 243<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0242"
+                        notAfter-custom="0243"
+                        datingMethod="#julian">242 - 243<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" notBefore="0248" notAfter="0249">248 - 249<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0248"
+                        notAfter-custom="0249"
+                        datingMethod="#julian">248 - 249<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" notBefore="0258" notAfter="0259">258 - 259<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0258"
+                        notAfter-custom="0259"
+                        datingMethod="#julian">258 - 259<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

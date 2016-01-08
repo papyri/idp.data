@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notAfter="-0252-07-06">
-                        <certainty locus="value" match="../year-from-date(@notAfter)"/>
+                     <origDate notAfter-custom="-0252-07-06" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notAfter-custom)"/>
                         <offset type="before" n="1">vor</offset> 6. Juli 252 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
@@ -84,7 +84,10 @@
             <list>
                <item>
                   <ref/>
-                  <date type="mentioned" cert="low" when="-0252-07-06">6. Juli 252 v.Chr. (?)</date>
+                  <date type="mentioned"
+                        cert="low"
+                        when-custom="-0252-07-06"
+                        datingMethod="#julian">6. Juli 252 v.Chr. (?)</date>
                </item>
             </list>
          </div>

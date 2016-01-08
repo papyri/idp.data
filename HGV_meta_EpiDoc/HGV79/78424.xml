@@ -37,13 +37,15 @@
                   <origin>
                      <origPlace>unbekannt</origPlace>
                      <origDate xml:id="dateAlternativeX"
-                               notBefore="-0177-03-15"
-                               notAfter="-0177-04-03">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>15. März - 3. Apr. 177 v.Chr. (Jahr unsicher)</origDate>
+                               notBefore-custom="-0177-03-15"
+                               notAfter-custom="-0177-04-03"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>15. März - 3. Apr. 177 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY"
-                               notBefore="-0166-03-13"
-                               notAfter="-0166-04-02">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>13. März - 2. Apr. 166 v.Chr. (Jahr unsicher)</origDate>
+                               notBefore-custom="-0166-03-13"
+                               notAfter-custom="-0166-04-02"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>13. März - 2. Apr. 166 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -90,12 +92,12 @@
             <list>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="-0177-03-11">11. März 177 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0177-03-11" datingMethod="#julian">11. März 177 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="-0166-03-09">9. März 166 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0166-03-09" datingMethod="#julian">9. März 166 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

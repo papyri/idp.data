@@ -34,9 +34,11 @@
                <history>
                   <origin>
                      <origPlace>Theben (Notos)</origPlace>
-                     <origDate notBefore="0131-02" notAfter="0131-06">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>ca. Febr. - Juni 131 (Jahr unsicher)</origDate>
+                     <origDate notBefore-custom="0131-02"
+                               notAfter-custom="0131-06"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>ca. Febr. - Juni 131 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>

@@ -36,12 +36,18 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhyncha (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0150" notAfter="-0149">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>ca. 150 - 149 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0139" notAfter="-0138">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>ca. 139 - 138 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="-0150"
+                               notAfter-custom="-0149"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>ca. 150 - 149 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="-0139"
+                               notAfter-custom="-0138"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>ca. 139 - 138 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -98,7 +104,10 @@
             <list>
                <item>
                   <ref>Z. 47</ref>
-                  <date type="mentioned" notBefore="-0150" notAfter="-0149">150 - 149 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0150"
+                        notAfter-custom="-0149"
+                        datingMethod="#julian">150 - 149 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

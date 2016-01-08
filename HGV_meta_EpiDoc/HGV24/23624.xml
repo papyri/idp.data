@@ -36,9 +36,9 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate when="0035-05-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>10. Mai 35 (Jahr und Tag unsicher)</origDate>
+                     <origDate when-custom="0035-05-10" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>10. Mai 35 (Jahr und Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -86,7 +86,10 @@
             <list>
                <item>
                   <ref>Z. 6</ref>
-                  <date type="mentioned" notBefore="0016" notAfter="0017">16 - 17</date>
+                  <date type="mentioned"
+                        notBefore-custom="0016"
+                        notAfter-custom="0017"
+                        datingMethod="#julian">16 - 17</date>
                </item>
             </list>
          </div>

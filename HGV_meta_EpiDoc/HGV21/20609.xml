@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0216-12-16">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0216-12-16"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 16. Dez. 216 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0184-12-16">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0184-12-16"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 16. Dez. 184 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -96,35 +100,47 @@
                <item>
                   <ref>Z. 10-30</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" when="0184-12-16">16. Dez. 184<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0184-12-16" datingMethod="#julian">16. Dez. 184<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 10-30</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" when="0216-12-16">16. Dez. 216<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0216-12-16" datingMethod="#julian">16. Dez. 216<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 19</ref>
-                  <date type="mentioned" notBefore="0183" notAfter="0184">183 - 184<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0183"
+                        notAfter-custom="0184"
+                        datingMethod="#julian">183 - 184<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 19</ref>
-                  <date type="mentioned" notBefore="0215" notAfter="0216">215 - 216<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0215"
+                        notAfter-custom="0216"
+                        datingMethod="#julian">215 - 216<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 31-41</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" cert="low" when="0184-12-16">16. Dez. 184 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        cert="low"
+                        when-custom="0184-12-16"
+                        datingMethod="#julian">16. Dez. 184 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 31-41</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" cert="low" when="0216-12-16">16. Dez. 216 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        cert="low"
+                        when-custom="0216-12-16"
+                        datingMethod="#julian">16. Dez. 216 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

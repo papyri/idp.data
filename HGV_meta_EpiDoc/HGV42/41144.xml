@@ -36,11 +36,18 @@
                <history>
                   <origin>
                      <origPlace>Arsinoiton Polis</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0628-10-07" cert="low">7. Okt. 628 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0643-10-08">
-                        <certainty locus="value" match="../year-from-date(@when)"/>8. Okt. 643 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0658-10-07">
-                        <certainty locus="value" match="../year-from-date(@when)"/>7. Okt. 658 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0628-10-07"
+                               cert="low"
+                               datingMethod="#julian">7. Okt. 628 (?)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0643-10-08"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>8. Okt. 643 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ"
+                               when-custom="0658-10-07"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>7. Okt. 658 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>

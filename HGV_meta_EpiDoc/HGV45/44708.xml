@@ -34,11 +34,15 @@
                <history>
                   <origin>
                      <origPlace>Phnebieus (Herakleopolites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0147-08-24">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="-0147-08-24"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 24. Aug. 147 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0136-08-21">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="-0136-08-21"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 21. Aug. 136 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -96,12 +100,18 @@
             <list>
                <item>
                   <ref>Z. 12-13</ref>
-                  <date type="mentioned" notBefore="-0147-06-26" notAfter="-0147-07-25">
+                  <date type="mentioned"
+                        notBefore-custom="-0147-06-26"
+                        notAfter-custom="-0147-07-25"
+                        datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeX" degree="1"/>26. Juni - 25. Juli 147 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 12-13</ref>
-                  <date type="mentioned" notBefore="-0136-06-23" notAfter="-0136-07-22">
+                  <date type="mentioned"
+                        notBefore-custom="-0136-06-23"
+                        notAfter-custom="-0136-07-22"
+                        datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeY" degree="1"/>23. Juni - 22. Juli 136 v.Chr.</date>
                </item>
             </list>

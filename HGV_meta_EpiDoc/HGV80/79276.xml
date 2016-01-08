@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Ta Memnoneia (Theben)</origPlace>
-                     <origDate notBefore="0179-08-24" notAfter="0179-08-29">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>24. - 29. Aug. 179 (Monat und Tag unsicher)</origDate>
+                     <origDate notBefore-custom="0179-08-24"
+                               notAfter-custom="0179-08-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>24. - 29. Aug. 179 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -88,11 +90,11 @@
             <list>
                <item>
                   <ref>Z. 5</ref>
-                  <date type="mentioned" when="0178-08-11">11. Aug. 178</date>
+                  <date type="mentioned" when-custom="0178-08-11" datingMethod="#julian">11. Aug. 178</date>
                </item>
                <item>
                   <ref>Z. 6</ref>
-                  <date type="mentioned" when="0178-09-27">27. Sept. 178</date>
+                  <date type="mentioned" when-custom="0178-09-27" datingMethod="#julian">27. Sept. 178</date>
                </item>
             </list>
          </div>

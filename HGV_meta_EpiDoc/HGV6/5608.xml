@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Elephantine oder Syene Syene</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0037-10-07">
-                        <certainty locus="value" match="../year-from-date(@when)"/>7. Okt. 37 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0066-10-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. Okt. 66 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0037-10-07"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>7. Okt. 37 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0066-10-15"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>15. Okt. 66 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p xml:id="geog_1" exclude="#geog_2">
@@ -97,7 +101,10 @@
             <list>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="-0038" notAfter="-0037">38 - 37 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0038"
+                        notAfter-custom="-0037"
+                        datingMethod="#julian">38 - 37 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

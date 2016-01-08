@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0169-09-17">
-                        <certainty locus="value" match="../year-from-date(@when)"/>17. Sept. 169 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0170-09-17">
-                        <certainty locus="value" match="../year-from-date(@when)"/>17. Sept. 170 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0169-09-17"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>17. Sept. 169 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0170-09-17"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>17. Sept. 170 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -97,12 +101,12 @@
             <list>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" when="0169-09-16">16. Sept. 169<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0169-09-16" datingMethod="#julian">16. Sept. 169<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" when="0170-09-16">16. Sept. 170<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0170-09-16" datingMethod="#julian">16. Sept. 170<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

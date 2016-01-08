@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Euhemeria (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0206-09-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 206 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0235-09-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 235 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0206-09-10"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>10. Sept. 206 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0235-09-10"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>10. Sept. 235 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -96,13 +100,19 @@
                <item>
                   <ref/>
                   <note type="comment">Wiederholte Einzeldaten im Zeitraum</note>
-                  <date type="mentioned" notBefore="0205-05-26" notAfter="0206-08-10">26. Mai 205 - 10. Aug. 206<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0205-05-26"
+                        notAfter-custom="0206-08-10"
+                        datingMethod="#julian">26. Mai 205 - 10. Aug. 206<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref/>
                   <note type="comment">Wiederholte Einzeldaten im Zeitraum</note>
-                  <date type="mentioned" notBefore="0234-05-26" notAfter="0235-08-10">26. Mai 234 - 10. Aug. 235<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0234-05-26"
+                        notAfter-custom="0235-08-10"
+                        datingMethod="#julian">26. Mai 234 - 10. Aug. 235<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

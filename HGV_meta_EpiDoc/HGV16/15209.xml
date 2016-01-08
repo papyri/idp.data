@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0307-02-25" notAfter="0307-03-26">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>25. Febr. - 26. März 307 (Monat und Tag unsicher)</origDate>
+                     <origDate notBefore-custom="0307-02-25"
+                               notAfter-custom="0307-03-26"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>25. Febr. - 26. März 307 (Monat und Tag unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>

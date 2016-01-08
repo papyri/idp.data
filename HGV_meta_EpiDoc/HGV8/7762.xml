@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Theogonis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0232-10-21">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="-0232-10-21"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 21. Okt. 232 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0206-01-12">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="-0206-01-12"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 12. Jan. 206 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -97,12 +101,18 @@
             <list>
                <item>
                   <ref/>
-                  <date type="mentioned" notBefore="-0232" notAfter="-0231">232 - 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0232"
+                        notAfter-custom="-0231"
+                        datingMethod="#julian">232 - 231 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref/>
-                  <date type="mentioned" notBefore="-0207" notAfter="-0206">207 - 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0207"
+                        notAfter-custom="-0206"
+                        datingMethod="#julian">207 - 206 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

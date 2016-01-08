@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate when="0321-04-21">
-                        <certainty locus="value" match="../year-from-date(@when)"/>21. Apr. 321 (Jahr unsicher)</origDate>
+                     <origDate when-custom="0321-04-21" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>21. Apr. 321 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -83,11 +83,17 @@
             <list>
                <item>
                   <ref>Z. 2-3</ref>
-                  <date type="mentioned" notBefore="0319-11-28" notAfter="0321-04-25">28. Nov. 319 - 25. Apr. 321</date>
+                  <date type="mentioned"
+                        notBefore-custom="0319-11-28"
+                        notAfter-custom="0321-04-25"
+                        datingMethod="#julian">28. Nov. 319 - 25. Apr. 321</date>
                </item>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" notBefore="0318" notAfter="0319">318 - 319</date>
+                  <date type="mentioned"
+                        notBefore-custom="0318"
+                        notAfter-custom="0319"
+                        datingMethod="#julian">318 - 319</date>
                </item>
             </list>
          </div>

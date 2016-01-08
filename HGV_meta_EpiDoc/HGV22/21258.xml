@@ -36,9 +36,9 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate when="0257-08-03">
-                        <certainty locus="value" match="../month-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>3. Aug. 257 (Monat und Tag unsicher)</origDate>
+                     <origDate when-custom="0257-08-03" datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>3. Aug. 257 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -91,7 +91,10 @@
             <list>
                <item>
                   <ref>Z. 10</ref>
-                  <date type="mentioned" notBefore="0257-03-27" notAfter="0257-04-25">27. März  - 25. Apr. 257</date>
+                  <date type="mentioned"
+                        notBefore-custom="0257-03-27"
+                        notAfter-custom="0257-04-25"
+                        datingMethod="#julian">27. März  - 25. Apr. 257</date>
                </item>
             </list>
          </div>

@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Philadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0132-06-21">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="-0132-06-21"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 21. Juni 132 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0009-05-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0009-05-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 25. Mai 9 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -96,12 +100,18 @@
             <list>
                <item>
                   <note type="comment">Einzeldaten vom</note>
-                  <date type="mentioned" notBefore="-0132-05-23" notAfter="-0132-06-21">
+                  <date type="mentioned"
+                        notBefore-custom="-0132-05-23"
+                        notAfter-custom="-0132-06-21"
+                        datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeX" degree="1"/>23. Mai - 21. Juni 132 v.Chr.</date>
                </item>
                <item>
                   <note type="comment">Einzeldaten vom</note>
-                  <date type="mentioned" notBefore="0009-05-26" notAfter="0009-05-25">
+                  <date type="mentioned"
+                        notBefore-custom="0009-05-26"
+                        notAfter-custom="0009-05-25"
+                        datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeY" degree="1"/>26. April - 25. Mai 9</date>
                </item>
             </list>

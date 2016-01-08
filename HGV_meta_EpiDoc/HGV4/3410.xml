@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Memphis</origPlace>
-                     <origDate notBefore="-0163-04-01" notAfter="-0163-10-08">
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notAfter)"/>1. Apr. - 8. Okt. 163 v.Chr. (Tage unsicher)</origDate>
+                     <origDate notBefore-custom="-0163-04-01"
+                               notAfter-custom="-0163-10-08"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notAfter-custom)"/>1. Apr. - 8. Okt. 163 v.Chr. (Tage unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>

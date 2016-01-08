@@ -36,12 +36,18 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites (?)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0169-10" notAfter="0169-12">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>ca. Okt. - Dez. 169 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0170-10" notAfter="0170-12">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>ca. Okt. - Dez. 170 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0169-10"
+                               notAfter-custom="0169-12"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>ca. Okt. - Dez. 169 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0170-10"
+                               notAfter-custom="0170-12"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>ca. Okt. - Dez. 170 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>

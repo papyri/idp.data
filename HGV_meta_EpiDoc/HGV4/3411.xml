@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Memphis</origPlace>
-                     <origDate notBefore="-0163-04-01" notAfter="-0163-10-08">
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notAfter)"/>1. Apr. - 8. Okt. 163 v.Chr. (Tage unsicher)</origDate>
+                     <origDate notBefore-custom="-0163-04-01"
+                               notAfter-custom="-0163-10-08"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notAfter-custom)"/>1. Apr. - 8. Okt. 163 v.Chr. (Tage unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -93,27 +95,36 @@
             <list>
                <item>
                   <ref>Z. 24</ref>
-                  <date type="mentioned" notBefore="-0163" notAfter="-0162">163 - 162 v.Chr.</date>
+                  <date type="mentioned"
+                        notBefore-custom="-0163"
+                        notAfter-custom="-0162"
+                        datingMethod="#julian">163 - 162 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 33.37</ref>
-                  <date type="mentioned" notBefore="-0164" notAfter="-0163">164 - 163 v.Chr.</date>
+                  <date type="mentioned"
+                        notBefore-custom="-0164"
+                        notAfter-custom="-0163"
+                        datingMethod="#julian">164 - 163 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 39</ref>
-                  <date type="mentioned" notBefore="-0163-03-08" notAfter="-0163-09-27">8. März  - 27. Sept. 163 v.Chr.</date>
+                  <date type="mentioned"
+                        notBefore-custom="-0163-03-08"
+                        notAfter-custom="-0163-09-27"
+                        datingMethod="#julian">8. März  - 27. Sept. 163 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 75</ref>
-                  <date type="mentioned" when="-0163-10-08">8. Okt. 163 v.Chr.</date>
+                  <date type="mentioned" when-custom="-0163-10-08" datingMethod="#julian">8. Okt. 163 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 76</ref>
-                  <date type="mentioned" when="-0163-11-21">21. Nov. 163 v.Chr.</date>
+                  <date type="mentioned" when-custom="-0163-11-21" datingMethod="#julian">21. Nov. 163 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 78</ref>
-                  <date type="mentioned" when="-0162-09-19">19. Sept. 162 v.Chr.</date>
+                  <date type="mentioned" when-custom="-0162-09-19" datingMethod="#julian">19. Sept. 162 v.Chr.</date>
                </item>
             </list>
          </div>

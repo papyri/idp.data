@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0274-02-27">
-                        <certainty locus="value" match="../year-from-date(@when)"/>27. Febr. 274 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0280-02-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Febr. 280 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0274-02-27"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>27. Febr. 274 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0280-02-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>28. Febr. 280 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -96,14 +100,18 @@
                   <ref>Z. 6</ref>
                   <date type="mentioned"
                         cert="low"
-                        notBefore="0274-01-26"
-                        notAfter="0274-02-24">26. Jan.  - 24. Febr. 274 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                        notBefore-custom="0274-01-26"
+                        notAfter-custom="0274-02-24"
+                        datingMethod="#julian">26. Jan.  - 24. Febr. 274 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 6</ref>
-                  <date type="mentioned" notBefore="0280-01-27" notAfter="0280-02-25">27. Jan.  - 25. Febr. 280 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notBefore-custom="0280-01-27"
+                        notAfter-custom="0280-02-25"
+                        datingMethod="#julian">27. Jan.  - 25. Febr. 280 (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@notBefore-custom)"/>
+                     <certainty locus="value" certainty="../date/year-from-date(@notAfter-custom)"/>
                      <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>

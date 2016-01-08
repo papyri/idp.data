@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0215-09-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Sept. 215 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0183-09-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Sept. 183 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0215-09-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>28. Sept. 215 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0183-09-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>28. Sept. 183 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -93,22 +97,34 @@
             <list>
                <item>
                   <ref>Kol. I, Z. 1 - Kol. II, Z. 8</ref>
-                  <date type="mentioned" notBefore="0183-08-30" notAfter="0183-09-24">30. Aug.  - 24. Sept. 183<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0183-08-30"
+                        notAfter-custom="0183-09-24"
+                        datingMethod="#julian">30. Aug.  - 24. Sept. 183<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. I, Z. 1 - Kol. II, Z. 8</ref>
-                  <date type="mentioned" notBefore="0215-08-30" notAfter="0215-09-24">30. Aug.  - 24. Sept. 215<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0215-08-30"
+                        notAfter-custom="0215-09-24"
+                        datingMethod="#julian">30. Aug.  - 24. Sept. 215<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 12 - 20</ref>
-                  <date type="mentioned" notBefore="0183-08-11" notAfter="0183-08-26">11. - 26. Aug. 183<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0183-08-11"
+                        notAfter-custom="0183-08-26"
+                        datingMethod="#julian">11. - 26. Aug. 183<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 12 - 20</ref>
-                  <date type="mentioned" notBefore="0215-08-11" notAfter="0215-08-26">11. - 26. Aug. 215<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0215-08-11"
+                        notAfter-custom="0215-08-26"
+                        datingMethod="#julian">11. - 26. Aug. 215<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

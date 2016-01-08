@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0311-06-15">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0311-06-15"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 15. Juni 311 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0310-06-15">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0310-06-15"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 15. Juni 310 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -98,12 +102,12 @@
             <list>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" when="0310-05-25">25. Mai 310<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0310-05-25" datingMethod="#julian">25. Mai 310<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" when="0311-05-25">25. Mai 311<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0311-05-25" datingMethod="#julian">25. Mai 311<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

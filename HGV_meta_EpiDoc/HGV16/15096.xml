@@ -36,8 +36,10 @@
                <history>
                   <origin>
                      <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
-                     <origDate notBefore="0138-08-14" notAfter="0138-08-22">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate notBefore-custom="0138-08-14"
+                               notAfter-custom="0138-08-22"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach (?)</offset>
                         <certainty locus="value" match="../offset[@type='after']"/> 14. - 22. Aug. 138 (Jahr unsicher)</origDate>
                   </origin>
@@ -94,7 +96,10 @@
             <list>
                <item>
                   <ref>Z. 137</ref>
-                  <date type="mentioned" notBefore="0116" notAfter="0117">116 - 117</date>
+                  <date type="mentioned"
+                        notBefore-custom="0116"
+                        notAfter-custom="0117"
+                        datingMethod="#julian">116 - 117</date>
                </item>
             </list>
          </div>

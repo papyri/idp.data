@@ -36,8 +36,10 @@
                <history>
                   <origin>
                      <origPlace>Petra (Tertia Palaestina Salutaris)</origPlace>
-                     <origDate notBefore="0571-07-20" notAfter="0571-08-18">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>20. Juli - 18. Aug. 571 (Monat unsicher)</origDate>
+                     <origDate notBefore-custom="0571-07-20"
+                               notAfter-custom="0571-08-18"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>20. Juli - 18. Aug. 571 (Monat unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -90,11 +92,17 @@
             <list>
                <item>
                   <ref>Z. 1</ref>
-                  <date type="mentioned" notBefore="0568" notAfter="0569">568 - 569</date>
+                  <date type="mentioned"
+                        notBefore-custom="0568"
+                        notAfter-custom="0569"
+                        datingMethod="#julian">568 - 569</date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" notBefore="0569" notAfter="0570">569 - 570</date>
+                  <date type="mentioned"
+                        notBefore-custom="0569"
+                        notAfter-custom="0570"
+                        datingMethod="#julian">569 - 570</date>
                </item>
             </list>
          </div>

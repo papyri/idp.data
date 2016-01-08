@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0158-08-31">
-                        <certainty locus="value" match="../year-from-date(@when)"/>31. Aug. 158 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0155-08-30">
-                        <certainty locus="value" match="../year-from-date(@when)"/>30. Aug. 155 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0158-08-31"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>31. Aug. 158 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0155-08-30"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>30. Aug. 155 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -88,13 +92,13 @@
             <list>
                <item>
                   <ref>Z. 33</ref>
-                  <date type="mentioned" when="-0158-09-12">12. Sept. 158 v.Chr. (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
+                  <date type="mentioned" when-custom="-0158-09-12" datingMethod="#julian">12. Sept. 158 v.Chr. (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@when-custom)"/>
                      <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 33</ref>
-                  <date type="mentioned" when="-0155-09-11">11. Sept. 155 v.Chr. (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
+                  <date type="mentioned" when-custom="-0155-09-11" datingMethod="#julian">11. Sept. 155 v.Chr. (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@when-custom)"/>
                      <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>

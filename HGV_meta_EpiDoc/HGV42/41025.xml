@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoiton Polis</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0612-04-02">
-                        <certainty locus="value" match="../year-from-date(@when)"/>2. Apr. 612 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0627-04-02">
-                        <certainty locus="value" match="../year-from-date(@when)"/>2. Apr. 627 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0612-04-02"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>2. Apr. 612 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0627-04-02"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>2. Apr. 627 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -93,12 +97,12 @@
             <list>
                <item>
                   <ref>6 a, S. 212 Z. 17</ref>
-                  <date type="mentioned" when="0612-03-27">27. März 612<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0612-03-27" datingMethod="#julian">27. März 612<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>6 a, S. 212 Z. 17</ref>
-                  <date type="mentioned" when="0627-03-27">27. März 627<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0627-03-27" datingMethod="#julian">27. März 627<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

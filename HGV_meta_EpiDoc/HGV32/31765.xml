@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Tholthis (Oxyrhynchites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0220-12-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Dez. 220 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0224-12-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Dez. 224 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0220-12-16"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>16. Dez. 220 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0224-12-16"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>16. Dez. 224 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -99,12 +103,12 @@
             <list>
                <item>
                   <ref>Kol. II, Z. 14</ref>
-                  <date type="mentioned" when="0220-11-23">23. Nov. 220<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0220-11-23" datingMethod="#julian">23. Nov. 220<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 14</ref>
-                  <date type="mentioned" when="0224-11-23">23. Nov. 224<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0224-11-23" datingMethod="#julian">23. Nov. 224<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

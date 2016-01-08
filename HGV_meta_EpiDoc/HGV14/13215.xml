@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Euhemeria (Arsinoites)</origPlace>
-                     <origDate when="0158-06-26">
-                        <certainty locus="value" match="../day-from-date(@when)"/>26. Juni 158 (Tag unsicher)</origDate>
+                     <origDate when-custom="0158-06-26" datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>26. Juni 158 (Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -93,8 +93,11 @@
             <list>
                <item>
                   <ref>Z. 4</ref>
-                  <date type="mentioned" notBefore="0158-06-20" notAfter="0158-06-25">20. - 25. Juni 158 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/day-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notBefore-custom="0158-06-20"
+                        notAfter-custom="0158-06-25"
+                        datingMethod="#julian">20. - 25. Juni 158 (Tag unsicher)<certainty locus="value" certainty="../date/day-from-date(@notBefore-custom)"/>
+                     <certainty locus="value" certainty="../date/day-from-date(@notAfter-custom)"/>
                   </date>
                </item>
             </list>

@@ -37,11 +37,14 @@
                   <origin>
                      <origPlace>Arsinoites</origPlace>
                      <origDate xml:id="dateAlternativeX"
-                               notBefore="0184-03-24"
-                               notAfter="0184-05-04">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>24. März - 4. Mai 184 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0185-03-28">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                               notBefore-custom="0184-03-24"
+                               notAfter-custom="0184-05-04"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>24. März - 4. Mai 184 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0185-03-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 28. März 185 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">

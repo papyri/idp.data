@@ -34,8 +34,8 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos (?)</origPlace>
-                     <origDate notBefore="0193-12-13">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate notBefore-custom="0193-12-13" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach (?)</offset>
                         <certainty locus="value" match="../offset[@type='after']"/> 13. Dez. 193 (Jahr unsicher)</origDate>
                   </origin>
@@ -93,11 +93,14 @@
                <item>
                   <ref>Z. 1-8</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" when="0193-12-09" cert="low">9. Dez. 193 (?)</date>
+                  <date type="mentioned"
+                        when-custom="0193-12-09"
+                        cert="low"
+                        datingMethod="#julian">9. Dez. 193 (?)</date>
                </item>
                <item>
                   <ref>Z. 18-19</ref>
-                  <date type="mentioned" when="0193-11-30">30. Nov. 193</date>
+                  <date type="mentioned" when-custom="0193-11-30" datingMethod="#julian">30. Nov. 193</date>
                </item>
             </list>
          </div>

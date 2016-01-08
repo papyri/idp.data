@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Karanis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0147-06-07">
-                        <certainty locus="value" match="../day-from-date(@when)"/>7. Juni 147 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0147-06-10">
-                        <certainty locus="value" match="../day-from-date(@when)"/>10. Juni 147 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0147-06-07"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>7. Juni 147 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0147-06-10"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>10. Juni 147 (Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -95,7 +99,10 @@
             <list>
                <item>
                   <ref>Z. 36</ref>
-                  <date type="mentioned" notBefore="0145" notAfter="0146">145 - 146<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0145"
+                        notAfter-custom="0146"
+                        datingMethod="#julian">145 - 146<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

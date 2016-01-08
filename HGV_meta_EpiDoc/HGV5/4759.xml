@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Philadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0205-07-04">
-                        <certainty locus="value" match="../year-from-date(@when)"/>4. Juli 205 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0188-06-30">
-                        <certainty locus="value" match="../year-from-date(@when)"/>30. Juni 188 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0205-07-04"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>4. Juli 205 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0188-06-30"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>30. Juni 188 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,12 +98,18 @@
             <list>
                <item>
                   <ref>Z. 2-5</ref>
-                  <date type="mentioned" notBefore="-0205-06-09" notAfter="-0205-06-29">9. - 29. Juni 205 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0205-06-09"
+                        notAfter-custom="-0205-06-29"
+                        datingMethod="#julian">9. - 29. Juni 205 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2-5</ref>
-                  <date type="mentioned" notBefore="-0205-06-13" notAfter="-0205-07-03">13. Juni  - 3. Juli 205 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0205-06-13"
+                        notAfter-custom="-0205-07-03"
+                        datingMethod="#julian">13. Juni  - 3. Juli 205 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

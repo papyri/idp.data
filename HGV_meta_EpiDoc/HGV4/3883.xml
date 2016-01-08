@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites Tebtynis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0096-07-20">
-                        <certainty locus="value" match="../year-from-date(@when)"/>20. Juli 96 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0063-07-12">
-                        <certainty locus="value" match="../year-from-date(@when)"/>12. Juli 63 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0096-07-20"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>20. Juli 96 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0063-07-12"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>12. Juli 63 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -91,12 +95,12 @@
             <list>
                <item>
                   <ref/>
-                  <date type="mentioned" when="-0096-07-20">20. Juli 96 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0096-07-20" datingMethod="#julian">20. Juli 96 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref/>
-                  <date type="mentioned" when="-0064-07-12">12. Juli 64 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0064-07-12" datingMethod="#julian">12. Juli 64 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

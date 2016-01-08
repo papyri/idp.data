@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Bubastos (Arsinoites)</origPlace>
-                     <origDate notBefore="-0204-12-11" notAfter="-0204-12-12">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>11. - 12. Dez. 204 v.Chr. (Monat und Tag unsicher)</origDate>
+                     <origDate notBefore-custom="-0204-12-11"
+                               notAfter-custom="-0204-12-12"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>11. - 12. Dez. 204 v.Chr. (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -90,7 +92,7 @@
             <list>
                <item>
                   <ref>Z. 8</ref>
-                  <date type="mentioned" when="-0205">205 v.Chr.</date>
+                  <date type="mentioned" when-custom="-0205" datingMethod="#julian">205 v.Chr.</date>
                </item>
             </list>
          </div>

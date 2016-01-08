@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0059-07-03">
-                        <certainty locus="value" match="../day-from-date(@when)"/>3. Juli 59 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0059-07-13">
-                        <certainty locus="value" match="../day-from-date(@when)"/>13. Juli 59 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0059-07-03"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>3. Juli 59 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0059-07-13"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>13. Juli 59 (Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -96,7 +100,10 @@
             <list>
                <item>
                   <ref>Z. 12-13</ref>
-                  <date type="mentioned" notBefore="0059-05-26" notAfter="0059-06-24">26. Mai  - 24. Juni 59<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0059-05-26"
+                        notAfter-custom="0059-06-24"
+                        datingMethod="#julian">26. Mai  - 24. Juni 59<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0152-01-31">
-                        <certainty locus="value" match="../year-from-date(@when)"/>31. Jan. 152 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0141-01-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. Jan. 141 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0152-01-31"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>31. Jan. 152 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0141-01-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. Jan. 141 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -86,12 +90,18 @@
             <list>
                <item>
                   <ref>Z. 14</ref>
-                  <date type="mentioned" notBefore="-0153-01-29" notAfter="-0153-02-27">29. Jan.  - 27. Febr. 153 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0153-01-29"
+                        notAfter-custom="-0153-02-27"
+                        datingMethod="#julian">29. Jan.  - 27. Febr. 153 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 14</ref>
-                  <date type="mentioned" notBefore="-0142-01-26" notAfter="-0142-02-24">26. Jan.  - 24. Febr. 142 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="-0142-01-26"
+                        notAfter-custom="-0142-02-24"
+                        datingMethod="#julian">26. Jan.  - 24. Febr. 142 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

@@ -36,12 +36,16 @@
                <history>
                   <origin>
                      <origPlace>Theben</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0101-03-26">
-                        <certainty locus="value" match="../month-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>26. März 101 (Monat und Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0101-04-14">
-                        <certainty locus="value" match="../month-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>14. Apr. 101 (Monat und Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0101-03-26"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>26. März 101 (Monat und Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0101-04-14"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@when-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>14. Apr. 101 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>

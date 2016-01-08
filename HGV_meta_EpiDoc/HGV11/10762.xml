@@ -36,12 +36,18 @@
                <history>
                   <origin>
                      <origPlace>Tebtynis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0224-10-28">
-                        <certainty locus="value" match="../day-from-date(@when)"/>28. Okt. 224 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0224-11-07">
-                        <certainty locus="value" match="../day-from-date(@when)"/>7. Nov. 224 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0224-11-17">
-                        <certainty locus="value" match="../day-from-date(@when)"/>17. Nov. 224 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0224-10-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>28. Okt. 224 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0224-11-07"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>7. Nov. 224 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ"
+                               when-custom="0224-11-17"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>17. Nov. 224 (Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -98,7 +104,10 @@
             <list>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" notBefore="0223" notAfter="0224">223 - 224<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0223"
+                        notAfter-custom="0224"
+                        datingMethod="#julian">223 - 224<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

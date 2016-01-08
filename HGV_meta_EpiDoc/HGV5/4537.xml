@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0257-12-14">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="-0257-12-14"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 14. Dez. 257 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0239-12-10">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="-0239-12-10"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 10. Dez. 239 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -94,12 +98,12 @@
             <list>
                <item>
                   <ref>Z. 11</ref>
-                  <date type="mentioned" when="-0257-12-14">14. Dez. 257 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0257-12-14" datingMethod="#julian">14. Dez. 257 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 11</ref>
-                  <date type="mentioned" when="-0239-12-10">10. Dez. 239 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0239-12-10" datingMethod="#julian">10. Dez. 239 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

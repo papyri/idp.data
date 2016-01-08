@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Philadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0250-04-24">
-                        <certainty locus="value" match="../year-from-date(@when)"/>24. Apr. 250 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0249-04-23">
-                        <certainty locus="value" match="../year-from-date(@when)"/>23. Apr. 249 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0250-04-24"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>24. Apr. 250 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0249-04-23"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>23. Apr. 249 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,12 +98,18 @@
             <list>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="-0252" notAfter="-0251">
+                  <date type="mentioned"
+                        notBefore-custom="-0252"
+                        notAfter-custom="-0251"
+                        datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeX" degree="1"/>252-251 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="-0252" notAfter="-0251">
+                  <date type="mentioned"
+                        notBefore-custom="-0252"
+                        notAfter-custom="-0251"
+                        datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeY" degree="1"/>252-251 v.Chr.</date>
                </item>
             </list>

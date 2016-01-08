@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Alabanthis? (Arsinoites)</origPlace>
-                     <origDate notBefore="0161-01" notAfter="0161-02">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>Jan. - Febr. 161 (Monat und Tag unsicher)</origDate>
+                     <origDate notBefore-custom="0161-01"
+                               notAfter-custom="0161-02"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>Jan. - Febr. 161 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -92,11 +94,17 @@
             <list>
                <item>
                   <ref>Z. 5</ref>
-                  <date type="mentioned" notBefore="0159" notAfter="0160">159 - 160</date>
+                  <date type="mentioned"
+                        notBefore-custom="0159"
+                        notAfter-custom="0160"
+                        datingMethod="#julian">159 - 160</date>
                </item>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" notBefore="0159" notAfter="0160">159 - 160</date>
+                  <date type="mentioned"
+                        notBefore-custom="0159"
+                        notAfter-custom="0160"
+                        datingMethod="#julian">159 - 160</date>
                </item>
             </list>
          </div>

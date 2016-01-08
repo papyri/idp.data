@@ -36,10 +36,12 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0245-06" notAfter="0245-08">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../month-from-date(@notAfter)"/>ca. Juni - Aug. 245 (Monate unsicher)</origDate>
+                     <origDate notBefore-custom="0245-06"
+                               notAfter-custom="0245-08"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../month-from-date(@notAfter-custom)"/>ca. Juni - Aug. 245 (Monate unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -91,7 +93,10 @@
             <list>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" notBefore="0243" notAfter="0244">243 - 244</date>
+                  <date type="mentioned"
+                        notBefore-custom="0243"
+                        notAfter-custom="0244"
+                        datingMethod="#julian">243 - 244</date>
                </item>
             </list>
          </div>

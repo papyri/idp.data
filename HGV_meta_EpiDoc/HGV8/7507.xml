@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Krokodilopolis (Arsinoites)</origPlace>
-                     <origDate when="-0244-05-19">
-                        <certainty locus="value" match="../year-from-date(@when)"/>19. Mai 244 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate when-custom="-0244-05-19" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>19. Mai 244 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -93,9 +93,12 @@
                <item>
                   <ref>passim</ref>
                   <note type="comment">mehrere Einzeldaten zwischen</note>
-                  <date type="mentioned" notBefore="-0244-04-21" notAfter="-0244-05-19">
-                     <certainty match="../year-from-date(@notBefore)" locus="value"/>
-                     <certainty match="../year-from-date(@notAfter)" locus="value"/>21. Apr. - 19. Mai 244 v. Chr. (Jahr unsicher)</date>
+                  <date type="mentioned"
+                        notBefore-custom="-0244-04-21"
+                        notAfter-custom="-0244-05-19"
+                        datingMethod="#julian">
+                     <certainty certainty="../year-from-date(@notBefore-custom)" locus="value"/>
+                     <certainty certainty="../year-from-date(@notAfter-custom)" locus="value"/>21. Apr. - 19. Mai 244 v. Chr. (Jahr unsicher)</date>
                </item>
             </list>
          </div>

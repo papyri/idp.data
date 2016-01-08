@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0176-08-28">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0176-08-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 28. Aug. 176 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0208-08-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Aug. 208 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0208-08-28"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>28. Aug. 208 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -95,13 +99,19 @@
                <item>
                   <ref>Kol. II, Z. 1 - 24</ref>
                   <note type="comment">Wiederholte Einzeldaten im Zeitraum</note>
-                  <date type="mentioned" notBefore="0175-12-14" notAfter="0176-08-28">14. Dez. 175 - 28. Aug. 176<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0175-12-14"
+                        notAfter-custom="0176-08-28"
+                        datingMethod="#julian">14. Dez. 175 - 28. Aug. 176<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Kol. II, Z. 1 - 24</ref>
                   <note type="comment">Wiederholte Einzeldaten im Zeitraum</note>
-                  <date type="mentioned" notBefore="0207-12-14" notAfter="0208-08-28">14. Dez. 207 - 28. Aug. 208<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0207-12-14"
+                        notAfter-custom="0208-08-28"
+                        datingMethod="#julian">14. Dez. 207 - 28. Aug. 208<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0238-04-25">
-                        <certainty locus="value" match="../year-from-date(@when)"/>25. Apr. 238 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0244-04-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0238-04-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>25. Apr. 238 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0244-04-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 25. Apr. 244 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">

@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0099-01-31">
-                        <certainty locus="value" match="../year-from-date(@when)"/>31. Jan. 99 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0100-02-01">
-                        <certainty locus="value" match="../year-from-date(@when)"/>1. Febr. 100 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0099-01-31"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>31. Jan. 99 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0100-02-01"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>1. Febr. 100 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>

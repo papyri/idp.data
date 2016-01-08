@@ -37,13 +37,15 @@
                   <origin>
                      <origPlace>Philopator Apiados (Arsinoites)</origPlace>
                      <origDate xml:id="dateAlternativeX"
-                               notBefore="-0179-07-26"
-                               notAfter="-0179-08-02">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>26. Juli - 2. Aug. 179 v.Chr. (Jahr unsicher)</origDate>
+                               notBefore-custom="-0179-07-26"
+                               notAfter-custom="-0179-08-02"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>26. Juli - 2. Aug. 179 v.Chr. (Jahr unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY"
-                               notBefore="-0168-07-23"
-                               notAfter="-0168-07-30">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>23. - 30. Juli 168 v.Chr. (Jahr unsicher)</origDate>
+                               notBefore-custom="-0168-07-23"
+                               notAfter-custom="-0168-07-30"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>23. - 30. Juli 168 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -98,12 +100,12 @@
             <list>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" when="-0179-07-26">26. Juli 179 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0179-07-26" datingMethod="#julian">26. Juli 179 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" when="-0168-07-23">23. Juli 168 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0168-07-23" datingMethod="#julian">23. Juli 168 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

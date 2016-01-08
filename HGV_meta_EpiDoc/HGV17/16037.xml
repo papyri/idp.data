@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Herakleopolis</origPlace>
-                     <origDate when="0538-04-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. Apr. 538 (Jahr unsicher)</origDate>
+                     <origDate when-custom="0538-04-15" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>15. Apr. 538 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -86,13 +86,16 @@
             <list>
                <item>
                   <ref>Z. 11</ref>
-                  <date type="mentioned" when="0537-09-04">4. Sept. 537 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
+                  <date type="mentioned" when-custom="0537-09-04" datingMethod="#julian">4. Sept. 537 (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@when-custom)"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" notBefore="0536" notAfter="0537">536 - 537 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notBefore-custom="0536"
+                        notAfter-custom="0537"
+                        datingMethod="#julian">536 - 537 (Jahr unsicher)<certainty locus="value" certainty="../date/year-from-date(@notBefore-custom)"/>
+                     <certainty locus="value" certainty="../date/year-from-date(@notAfter-custom)"/>
                   </date>
                </item>
             </list>

@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Memphis</origPlace>
-                     <origDate notBefore="-0163-04-01" notAfter="-0163-10-03">
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notAfter)"/>1. Apr. - 3. Okt. 163 v.Chr. (Tage unsicher)</origDate>
+                     <origDate notBefore-custom="-0163-04-01"
+                               notAfter-custom="-0163-10-03"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notAfter-custom)"/>1. Apr. - 3. Okt. 163 v.Chr. (Tage unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,7 +96,10 @@
             <list>
                <item>
                   <ref>Z. 17</ref>
-                  <date type="mentioned" notBefore="-0163-03-02" notAfter="-0163-03-31">2. - 31. März 163 v.Chr.</date>
+                  <date type="mentioned"
+                        notBefore-custom="-0163-03-02"
+                        notAfter-custom="-0163-03-31"
+                        datingMethod="#julian">2. - 31. März 163 v.Chr.</date>
                </item>
             </list>
          </div>

@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Herakleopolites oder Oxyrhynchites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0029-08-25">
-                        <certainty locus="value" match="../year-from-date(@when)"/>25. Aug. 29 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0015-08-25">
-                        <certainty locus="value" match="../year-from-date(@when)"/>25. Aug. 15 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0029-08-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>25. Aug. 29 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0015-08-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>25. Aug. 15 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p xml:id="geog_1" exclude="#geog_2">

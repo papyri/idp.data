@@ -34,10 +34,14 @@
                <history>
                   <origin>
                      <origPlace>Herakleopolites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0200-07-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. Juli 200 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0176-07-23">
-                        <certainty locus="value" match="../year-from-date(@when)"/>23. Juli 176 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0200-07-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. Juli 200 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0176-07-23"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>23. Juli 176 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -91,12 +95,12 @@
             <list>
                <item>
                   <ref>Z. 18</ref>
-                  <date type="mentioned" when="-0200-07-19">
+                  <date type="mentioned" when-custom="-0200-07-19" datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeX" degree="1"/>19. Juli 200 v.Chr.</date>
                </item>
                <item>
                   <ref>Z. 18</ref>
-                  <date type="mentioned" when="-0200-07-13">
+                  <date type="mentioned" when-custom="-0200-07-13" datingMethod="#julian">
                      <certainty locus="value" given="#dateAlternativeY" degree="1"/>13. Juli 200 v.Chr.</date>
                </item>
             </list>

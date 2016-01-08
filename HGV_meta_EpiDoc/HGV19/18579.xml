@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Alexandria</origPlace>
-                     <origDate when="-0010-04-11">
-                        <certainty locus="value" match="../year-from-date(@when)"/>11. Apr. 10 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate when-custom="-0010-04-11" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>11. Apr. 10 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -87,7 +87,10 @@
             <list>
                <item>
                   <ref>Z. 7</ref>
-                  <date type="mentioned" notBefore="-0012" notAfter="-0011">12 - 11 v.Chr.</date>
+                  <date type="mentioned"
+                        notBefore-custom="-0012"
+                        notAfter-custom="-0011"
+                        datingMethod="#julian">12 - 11 v.Chr.</date>
                </item>
             </list>
          </div>

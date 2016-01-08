@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0255-03-26">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate notBefore-custom="0255-03-26" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 26. März 255 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -88,7 +88,10 @@
             <list>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="0254-04-27" notAfter="0254-09-29">27. Apr.  - 29. Sept. 254</date>
+                  <date type="mentioned"
+                        notBefore-custom="0254-04-27"
+                        notAfter-custom="0254-09-29"
+                        datingMethod="#julian">27. Apr.  - 29. Sept. 254</date>
                </item>
             </list>
          </div>

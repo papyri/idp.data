@@ -36,12 +36,18 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0247-11-30">
-                        <certainty locus="value" match="../year-from-date(@when)"/>30. Nov. 247 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0257-11-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. Nov. 257 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0242-11-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. Nov. 242 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0247-11-30"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>30. Nov. 247 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0257-11-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. Nov. 257 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeZ"
+                               when-custom="0242-11-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. Nov. 242 (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>
@@ -91,17 +97,17 @@
             <list>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="0242-11-28">28. Nov. 242<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  <date type="mentioned" when-custom="0242-11-28" datingMethod="#julian">28. Nov. 242<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="0247-11-29">29. Nov. 247<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0247-11-29" datingMethod="#julian">29. Nov. 247<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="0257-11-28">28. Nov. 257<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0257-11-28" datingMethod="#julian">28. Nov. 257<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

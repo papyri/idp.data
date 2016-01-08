@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0265-06-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. Juni 265 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0227-06-06">
-                        <certainty locus="value" match="../year-from-date(@when)"/>6. Juni 227 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0265-06-15"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>15. Juni 265 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0227-06-06"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>6. Juni 227 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                </history>
             </msDesc>

@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Elephantine oder Syene</origPlace>
-                     <origDate when="0134-10-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Okt. 134 (Jahr unsicher)</origDate>
+                     <origDate when-custom="0134-10-16" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>16. Okt. 134 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p xml:id="geog_1" exclude="#geog_2">
@@ -90,7 +90,11 @@
             <list>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" cert="low" notBefore="0133" notAfter="0134">133 - 134 (?)</date>
+                  <date type="mentioned"
+                        cert="low"
+                        notBefore-custom="0133"
+                        notAfter-custom="0134"
+                        datingMethod="#julian">133 - 134 (?)</date>
                </item>
             </list>
          </div>

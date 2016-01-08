@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0256-10-13">
-                        <certainty locus="value" match="../year-from-date(@when)"/>13. Okt. 256 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0255-10-13">
-                        <certainty locus="value" match="../year-from-date(@when)"/>13. Okt. 255 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0256-10-13"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>13. Okt. 256 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0255-10-13"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>13. Okt. 255 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,12 +98,12 @@
                <item>
                   <ref>B (S. 266) Z. 6</ref>
                   <note type="comment">Empfangsvermerk</note>
-                  <date type="mentioned" when="-0256-10-15">15. Okt. 256 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0256-10-15" datingMethod="#julian">15. Okt. 256 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>B (S. 266) Z. 6</ref>
-                  <date type="mentioned" when="-0255-10-15">15. Okt. 255 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0255-10-15" datingMethod="#julian">15. Okt. 255 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

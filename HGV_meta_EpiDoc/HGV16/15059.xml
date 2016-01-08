@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Herakleia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0146-08-22">
-                        <certainty locus="value" match="../year-from-date(@when)"/>22. Aug. 146 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0169-08-22">
-                        <certainty locus="value" match="../year-from-date(@when)"/>22. Aug. 169 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0146-08-22"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>22. Aug. 146 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0169-08-22"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>22. Aug. 169 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -95,12 +99,18 @@
             <list>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="0146-05-26" notAfter="0146-06-24">26. Mai  - 24. Juni 146<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0146-05-26"
+                        notAfter-custom="0146-06-24"
+                        datingMethod="#julian">26. Mai  - 24. Juni 146<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="0169-05-26" notAfter="0169-06-24">26. Mai  - 24. Juni 169<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0169-05-26"
+                        notAfter-custom="0169-06-24"
+                        datingMethod="#julian">26. Mai  - 24. Juni 169<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

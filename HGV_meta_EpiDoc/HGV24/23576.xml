@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Hermopolites</origPlace>
-                     <origDate notBefore="0172-12-13">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate notBefore-custom="0172-12-13" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 13. Dez. 172 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -96,15 +96,19 @@
                <item>
                   <ref>Z. 3-4</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" cert="low" when="0172-12-13">13. Dez. 172 (?)</date>
+                  <date type="mentioned"
+                        cert="low"
+                        when-custom="0172-12-13"
+                        datingMethod="#julian">13. Dez. 172 (?)</date>
                </item>
                <item>
                   <ref>Z. 5-13</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
                   <date type="mentioned"
                         cert="low"
-                        notBefore="0172-11-27"
-                        notAfter="0172-12-13">27. Nov.  - 13. Dez. 172 (?)</date>
+                        notBefore-custom="0172-11-27"
+                        notAfter-custom="0172-12-13"
+                        datingMethod="#julian">27. Nov.  - 13. Dez. 172 (?)</date>
                </item>
             </list>
          </div>

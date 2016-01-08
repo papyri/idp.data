@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Herakleopolites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0197-01-12">
-                        <certainty locus="value" match="../year-from-date(@when)"/>12. Jan. 197 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0173-01-06">
-                        <certainty locus="value" match="../year-from-date(@when)"/>6. Jan. 173 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0197-01-12"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>12. Jan. 197 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0173-01-06"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>6. Jan. 173 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,12 +98,12 @@
             <list>
                <item>
                   <ref/>
-                  <date type="mentioned" when="-0197-01-27">27. Jan. 197 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0197-01-27" datingMethod="#julian">27. Jan. 197 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref/>
-                  <date type="mentioned" when="-0173-01-21">21. Jan. 173 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0173-01-21" datingMethod="#julian">21. Jan. 173 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

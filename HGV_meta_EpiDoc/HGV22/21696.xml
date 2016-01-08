@@ -36,8 +36,10 @@
                <history>
                   <origin>
                      <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0185-08-29" notAfter="0185-11-26">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>29. Aug. - 26. Nov. 185 (Monat unsicher)</origDate>
+                     <origDate notBefore-custom="0185-08-29"
+                               notAfter-custom="0185-11-26"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>29. Aug. - 26. Nov. 185 (Monat unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -90,7 +92,10 @@
             <list>
                <item>
                   <ref>Z. 12</ref>
-                  <date type="mentioned" notBefore="0184" notAfter="0185">184 - 185</date>
+                  <date type="mentioned"
+                        notBefore-custom="0184"
+                        notAfter-custom="0185"
+                        datingMethod="#julian">184 - 185</date>
                </item>
             </list>
          </div>

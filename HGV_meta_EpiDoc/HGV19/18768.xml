@@ -36,8 +36,8 @@
                <history>
                   <origin>
                      <origPlace>Hermopolites</origPlace>
-                     <origDate when="0321-01-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>10. Jan. 321 (Jahr unsicher)</origDate>
+                     <origDate when-custom="0321-01-10" datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>10. Jan. 321 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -90,7 +90,11 @@
             <list>
                <item>
                   <ref>Z. 4</ref>
-                  <date type="mentioned" cert="low" notBefore="0320" notAfter="0321">320 - 321 (?)</date>
+                  <date type="mentioned"
+                        cert="low"
+                        notBefore-custom="0320"
+                        notAfter-custom="0321"
+                        datingMethod="#julian">320 - 321 (?)</date>
                </item>
             </list>
          </div>

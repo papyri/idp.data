@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Narmuthis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0157-05-14">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0157-05-14"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 14. Mai 157 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0180-05-14">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0180-05-14"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 14. Mai 180 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -96,22 +100,28 @@
             <list>
                <item>
                   <ref>Z. 1</ref>
-                  <date type="mentioned" when="0157-05-14">14. Mai 157<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="0157-05-14" datingMethod="#julian">14. Mai 157<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 1</ref>
-                  <date type="mentioned" when="0180-05-14">14. Mai 180<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="0180-05-14" datingMethod="#julian">14. Mai 180<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 3 - 4</ref>
-                  <date type="mentioned" notBefore="0155-07-25" notAfter="0155-08-23">25. Juli  - 23. Aug. 155<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0155-07-25"
+                        notAfter-custom="0155-08-23"
+                        datingMethod="#julian">25. Juli  - 23. Aug. 155<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 3 - 4</ref>
-                  <date type="mentioned" notBefore="0178-07-25" notAfter="0178-08-23">25. Juli  - 23. Aug. 178<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0178-07-25"
+                        notAfter-custom="0178-08-23"
+                        datingMethod="#julian">25. Juli  - 23. Aug. 178<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

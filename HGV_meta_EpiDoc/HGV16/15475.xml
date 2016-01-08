@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Elephantine oder Syene</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0139-03-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. März 139 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0140-03-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. März 140 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0139-03-15"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>15. März 139 (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0140-03-15"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>15. März 140 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p xml:id="geog_1" exclude="#geog_2">
@@ -97,7 +101,10 @@
             <list>
                <item>
                   <ref>Z. 4</ref>
-                  <date type="mentioned" notBefore="0135" notAfter="0136">135 - 136<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0135"
+                        notAfter-custom="0136"
+                        datingMethod="#julian">135 - 136<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

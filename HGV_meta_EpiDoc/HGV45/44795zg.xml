@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Dura - Europos</origPlace>
-                     <origDate notBefore="0216-07-23" notAfter="0216-08-01">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>23. Juli - 1. Aug. 216 (Monat und Tag unsicher)</origDate>
+                     <origDate notBefore-custom="0216-07-23"
+                               notAfter-custom="0216-08-01"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>23. Juli - 1. Aug. 216 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -90,7 +92,7 @@
             <list>
                <item>
                   <ref>Q Z. 13 - 14</ref>
-                  <date type="mentioned" when="0216">216</date>
+                  <date type="mentioned" when-custom="0216" datingMethod="#julian">216</date>
                </item>
             </list>
          </div>

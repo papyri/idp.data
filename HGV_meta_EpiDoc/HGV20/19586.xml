@@ -36,10 +36,12 @@
                <history>
                   <origin>
                      <origPlace>Hermopolis (?)</origPlace>
-                     <origDate notBefore="0115-12-01" notAfter="0115-12-31">
-                        <precision match="../@notBefore" degree="0.5"/>
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>ca. 1. - 31. Dez. 115 (Monat und Jahr unsicher)</origDate>
+                     <origDate notBefore-custom="0115-12-01"
+                               notAfter-custom="0115-12-31"
+                               datingMethod="#julian">
+                        <precision certainty="../@notBefore-custom" degree="0.5"/>
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../month-from-date(@notBefore-custom)"/>ca. 1. - 31. Dez. 115 (Monat und Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>

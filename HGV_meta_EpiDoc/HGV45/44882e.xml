@@ -36,9 +36,11 @@
                <history>
                   <origin>
                      <origPlace>Panopolis</origPlace>
-                     <origDate notBefore="0300-01-16" notAfter="0300-01-25">
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notAfter)"/>16. - 25. Jan. 300 (Tage unsicher)</origDate>
+                     <origDate notBefore-custom="0300-01-16"
+                               notAfter-custom="0300-01-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@notBefore-custom)"/>
+                        <certainty locus="value" certainty="../day-from-date(@notAfter-custom)"/>16. - 25. Jan. 300 (Tage unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -96,7 +98,7 @@
             <list>
                <item>
                   <ref>Z. 27</ref>
-                  <date type="mentioned" when="0300-02-04">4. Febr. 300</date>
+                  <date type="mentioned" when-custom="0300-02-04" datingMethod="#julian">4. Febr. 300</date>
                </item>
             </list>
          </div>

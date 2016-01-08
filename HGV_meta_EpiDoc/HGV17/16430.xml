@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0219-04-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0219-04-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 25. Apr. 219 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0223-04-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0223-04-25"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 25. Apr. 223 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -93,12 +97,18 @@
             <list>
                <item>
                   <ref>Z. 6-7</ref>
-                  <date type="mentioned" notBefore="0218-12-27" notAfter="0219-04-25">27. Dez. 218 - 25. Apr. 219<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0218-12-27"
+                        notAfter-custom="0219-04-25"
+                        datingMethod="#julian">27. Dez. 218 - 25. Apr. 219<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 6-7</ref>
-                  <date type="mentioned" notBefore="0222-12-27" notAfter="0223-04-25">27. Dez. 222 - 25. Apr. 223<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0222-12-27"
+                        notAfter-custom="0223-04-25"
+                        datingMethod="#julian">27. Dez. 222 - 25. Apr. 223<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

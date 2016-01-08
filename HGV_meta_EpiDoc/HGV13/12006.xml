@@ -36,7 +36,7 @@
                <history>
                   <origin>
                      <origPlace>Karanis (Arsinoites)</origPlace>
-                     <origDate notBefore="0175-03-26">
+                     <origDate notBefore-custom="0175-03-26" datingMethod="#julian">
                         <offset type="after" n="1">nach</offset> 26. März 175</origDate>
                   </origin>
                   <provenance type="located">
@@ -92,13 +92,16 @@
             <list>
                <item>
                   <ref>D Z. 1-30</ref>
-                  <date type="mentioned" when="0174-08-28">28. Aug. 174 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when-custom="0174-08-28" datingMethod="#julian">28. Aug. 174 (Tag unsicher)<certainty locus="value" certainty="../date/day-from-date(@when-custom)"/>
                   </date>
                </item>
                <item>
                   <ref>D Z. 1-30</ref>
-                  <date type="mentioned" notBefore="0174-08-28" notAfter="0174-09-02">28. Aug.  - 2. Sept. 174 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/day-from-date(@notAfter)"/>
+                  <date type="mentioned"
+                        notBefore-custom="0174-08-28"
+                        notAfter-custom="0174-09-02"
+                        datingMethod="#julian">28. Aug.  - 2. Sept. 174 (Tag unsicher)<certainty locus="value" certainty="../date/day-from-date(@notBefore-custom)"/>
+                     <certainty locus="value" certainty="../date/day-from-date(@notAfter-custom)"/>
                   </date>
                </item>
             </list>

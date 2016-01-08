@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Philadelphia? (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0240-03-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. März 240 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0239-03-29">
-                        <certainty locus="value" match="../year-from-date(@when)"/>29. März 239 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="-0240-03-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. März 240 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="-0239-03-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@when-custom)"/>29. März 239 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -99,12 +103,12 @@
             <list>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="-0240-03-28">28. März 240 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when-custom="-0240-03-28" datingMethod="#julian">28. März 240 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" when="-0239-03-28">28. März 239 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when-custom="-0239-03-28" datingMethod="#julian">28. März 239 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>

@@ -36,10 +36,14 @@
                <history>
                   <origin>
                      <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0175-08-26">
-                        <certainty locus="value" match="../day-from-date(@when)"/>26. Aug. 175 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0175-08-29">
-                        <certainty locus="value" match="../day-from-date(@when)"/>29. Aug. 175 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeX"
+                               when-custom="0175-08-26"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>26. Aug. 175 (Tag unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               when-custom="0175-08-29"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../day-from-date(@when-custom)"/>29. Aug. 175 (Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -94,7 +98,10 @@
             <list>
                <item>
                   <ref>Z. 8</ref>
-                  <date type="mentioned" notBefore="0173" notAfter="0174">173 - 174<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        notBefore-custom="0173"
+                        notAfter-custom="0174"
+                        datingMethod="#julian">173 - 174<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>

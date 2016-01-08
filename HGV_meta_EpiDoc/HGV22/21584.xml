@@ -36,11 +36,15 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0275-11-27">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore-custom="0275-11-27"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 27. Nov. 275 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0281-11-26">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore-custom="0281-11-26"
+                               datingMethod="#julian">
+                        <certainty locus="value" certainty="../year-from-date(@notBefore-custom)"/>
                         <offset type="after" n="1">nach</offset> 26. Nov. 281 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
@@ -95,26 +99,34 @@
                   <ref>Z. 20</ref>
                   <date type="mentioned"
                         cert="low"
-                        notBefore="0275-10-30"
-                        notAfter="0275-11-27">30. Okt.  - 27. Nov. 275 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                        notBefore-custom="0275-10-30"
+                        notAfter-custom="0275-11-27"
+                        datingMethod="#julian">30. Okt.  - 27. Nov. 275 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 20</ref>
                   <date type="mentioned"
                         cert="low"
-                        notBefore="0281-10-29"
-                        notAfter="0281-11-26">29. Okt.  - 26. Nov. 281 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                        notBefore-custom="0281-10-29"
+                        notAfter-custom="0281-11-26"
+                        datingMethod="#julian">29. Okt.  - 26. Nov. 281 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" cert="low" when="0275-10-30">30. Okt. 275 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned"
+                        cert="low"
+                        when-custom="0275-10-30"
+                        datingMethod="#julian">30. Okt. 275 (?)<certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
                <item>
                   <ref>Z. 9</ref>
-                  <date type="mentioned" cert="low" when="0281-10-29">29. Okt. 281 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned"
+                        cert="low"
+                        when-custom="0281-10-29"
+                        datingMethod="#julian">29. Okt. 281 (?)<certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>
