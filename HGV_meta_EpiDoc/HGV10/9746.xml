@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv9746">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv9746">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Sale of Part of a House</title>
@@ -30,13 +31,18 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0081" notAfter="0096">81 - 96</origDate>
+                     <origPlace>Karanis (Arsinoites)</origPlace>
+                     <origDate notBefore="0090" notAfter="0096">
+                ca. 90 - 96
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
-                     <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p xml:id="geoDCFIE8">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/736932 http://trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,26 +67,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Verkauf</term>
-               <term>Haus (Teil)</term>
-               <term>Preis</term>
+               <term n="1">Verkauf</term>
+               <term n="2">Haus (Teil)</term>
+               <term n="3">Preis</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2016-01-14T11:44:39-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2016-01-14T11:20:31-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2015-10-31T16:47:57-04:00"
+                 who="http://papyri.info/users/gclaytor">Submit - Narrowed date range and added supplement to l. 1 based on ZPE 190 (2014), 199.  Additionally, new readings are proposed in l. 3 based on the digital image.  Editor's supplements in ll. 5 and 6 are subjectively framed as if this were a subscription, but we're in the body contract; they have thus been removed.</change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">15</biblScope>
-                  <biblScope type="numbers">2478</biblScope>
+                  <biblScope n="1" type="volume">15</biblScope>
+                  <biblScope n="2" type="numbers">2478</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -88,14 +101,16 @@
                <bibl type="illustration">Microfiche im Band</bibl>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung und zum Ort vgl. ZPE 190, 2014, S. 199.</p>
+         </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://ww2.smb.museum/berlpap/index.php/04630/"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
