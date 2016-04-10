@@ -14,4 +14,4 @@ script:
   - java -jar jing.jar rdfxml.rng RDF/collection.rdf
   - find HGV_trans_EpiDoc -name "*.xml" | parallel --gnu -X -j8 -u "java -jar jing.jar epidoc/8.13/tei-epidoc.rng {}"
   - find HGV_meta_EpiDoc -name "*.xml" | parallel --gnu -X -j8 -u "java -jar jing.jar epidoc/8.13/tei-epidoc.rng {}"
-  - find DDB_EpiDoc_XML -name "*.xml" | parallel --gnu -X -j16 -u "java -jar jing.jar epidoc/8.16/tei-epidoc.rng {}"
+  - find DDB_EpiDoc_XML -name "*.xml" | parallel --gnu -X -j8 -u "java -jar jing.jar epidoc/8.16/tei-epidoc.rng {}"
