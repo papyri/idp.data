@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10361">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Receipt for Wheat</title>
@@ -31,24 +31,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Nea (Arsinoites)</origPlace>
+                     <origPlace>Ptolemais Nea (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0279-08-30" notAfter="0279-09-28">30. Aug. - 28. Sept. 279</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741586 http://www.trismegistos.org/place/2027">Ptolemais Nea</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="78121"/>
+                  <biblScope type="pp">173-174</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,10 +71,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
-               <term>Getreide</term>
-               <term>Speculator</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuern</term>
+               <term n="3">Getreide</term>
+               <term n="4">Speculator</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,8 +83,8 @@
          <change who="HGV" when="2010-04-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Neuedition: ZPE 172, 2010, S. 173f.</p>
@@ -107,10 +115,14 @@
             <p>
                <figure>
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Cair.Isid.&amp;vVol=&amp;vNum=32"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl/>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
