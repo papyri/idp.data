@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv140202">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Fragment of a Comedy</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">140202</idno>
             <idno type="TM">140202</idno>
+            <idno type="ddb-perseus-style">0198;3;484r</idno>
             <idno type="ddb-filename">p.ryl.3.484r</idno>
             <idno type="ddb-hybrid">p.ryl;3;484r</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <placeName>
-                     <settlement>unbekannt</settlement>
-                  </placeName>
+                  <idno type="invNo">P.Ryl. 484r</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -37,7 +36,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8</p>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
+                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         </p>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -49,47 +50,50 @@
             <language ident="la">Latein</language>
             <language ident="el">Griechisch</language>
          </langUsage>
+         <textClass>
+            <keywords scheme="hgv">
+               <term>Abrechnung</term>
+               <term>Namen</term>
+               <term>Geld</term>
+            </keywords>
+         </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2015-12-10T04:13:27-05:00"
-                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
-         <change when="2015-12-10T04:00:55-05:00"
-                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
-         <change when="2015-12-10T03:50:19-05:00"
-                 who="http://papyri.info/users/james.cowey">Submit - Adding missing metadata for 140202</change>
+         <change when="2015-12-10T04:13:27-05:00" who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2015-12-10T04:00:55-05:00" who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2015-12-10T03:50:19-05:00" who="http://papyri.info/users/james.cowey">Submit - Adding missing metadata for 140202</change>
          <change when="2015-12-10T03:37:49-05:00" who="http://papyri.info/editor">Automated creation from template</change>
+         <change when="2016-05-06" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
+         <div type="commentary" subtype="general">
+            <p>Rückseite: Literarisch (Pack [1965] 1689; LDAB 4474; TM 63269)</p>
+         </div>
+         <div type="commentary" subtype="mentionedDates">
+            <head>Erwähnte Daten</head>
+            <note type="original">Z. 2: 95 - 96 (?)</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 2</ref>
+                  <date type="mentioned" notBefore="0095" notAfter="0096" cert="low">95 - 96 (?)</date>
+               </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope n="1" type="volume">3</biblScope>
-                  <biblScope n="2" type="numbers">484</biblScope>
-                  <biblScope n="3" type="side">R</biblScope>
+                  <biblScope type="volume">3</biblScope>
+                  <biblScope type="numbers">484</biblScope>
+                  <biblScope type="side">R</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="commentary" subtype="mentionedDates">
-            <list>
-               <item>
-                  <ref>Z. 2</ref>
-                  <date type="mentioned" notBefore="0095" notAfter="0096" cert="low">
-              95 - 96 (?)
-              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
-                  </date>
-               </item>
-            </list>
-         </div>
-         <div type="commentary" subtype="general">
-            <p>Rückseite: Literarisch (Pack [1965] 1689; LDAB 4474; TM 63269)</p>
-         </div>
          <div type="bibliography" subtype="illustrations">
-            <p>
-               <bibl type="illustration">keine</bibl>
-            </p>
+            <p>keine</p>
          </div>
          <div type="figure">
             <p>
@@ -100,5 +104,5 @@
             </p>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
