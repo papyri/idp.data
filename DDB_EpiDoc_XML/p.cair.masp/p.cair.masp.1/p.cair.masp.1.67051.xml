@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0089;1;67051" xml:id="p.cair.masp.1.67051" xml:lang="en">
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     n="0089;1;67051"
+     xml:id="p.cair.masp.1.67051"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -26,8 +29,17 @@
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
+          <change when="2016-04-22T11:27:10-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+          <change when="2016-04-12T06:30:26-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2016-04-08T08:24:17-04:00"
+                 who="http://papyri.info/users/IsabelleMarthot">Submit - added BL 12</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
           <change when="2011-10-04" who="http://papyri.info/editor/users/Faith">Automatically updated revision description</change>
@@ -42,33 +54,38 @@
    <text>
       <body>
          <head n="19007" xml:lang="en">
-            <date>VIspc</date>
+            <date>VI spc</date>
             <placeName>Aphrodito&lt;Antae</placeName>
          </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Les trois premières lignes ont été restituées selon BL 12.45. Les lignes suivantes ont été renumérotées en conséquent.</p></div>
          <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
-    <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/> 
+    <lb n="1"/><supplied reason="lost"><expan>Π<ex>αρὰ</ex></expan> <expan>Φλ<ex>αουίου</ex></expan> Ψάτου <expan>ἀκτουαρ<ex>ίου</ex></expan> ἀριθμοῦ Ἀνταίου <expan>δ<ex>ιʼ</ex></expan> ἐμοῦ Ἰωάννου Ψάτου</supplied>
 
-    <lb n="1"/><gap reason="lost" quantity="7" unit="character"/><supplied reason="lost"> ὀ</supplied>γδόης <expan>ἰνδι<unclear>κ</unclear><ex>τίονος</ex></expan> πρὸς τὴν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="18" unit="character"/> 
+    <lb n="2"/><supplied reason="lost"><expan>διαδόχ<ex>ου</ex></expan> αὐτοῦ τοῖς <expan>θαυμασ<ex>ιωτάτοις</ex></expan> πρωτοκωμήταις κώμης Ἀφροδίτης· ἐδεξάμην</supplied>
 
-    <lb n="2"/>προστάγματος, τοῦτʼ ἔστιν <expan>σίτο<ex>υ</ex></expan> ἐ<unclear>ν</unclear> χρυσῷ <expan>ἀρτάβ<ex>αι</ex></expan> ἑκ<supplied reason="lost">ατὸν</supplied> 
+    <lb n="3"/><supplied reason="lost">καὶ ἐπληρώθην παρʼ ὑμῶν ὑ</supplied><unclear>πὲρ</unclear> <supplied reason="lost">ἀννῶννων στρατιωτῶν Ἀνταίου</supplied> 
 
-    <lb n="3"/><supplied reason="lost">ἑ</supplied>βδομήκοντα, καὶ <expan>οἰνοκρ<ex>έου</ex></expan> <choice><reg>ὀκτακισχιλίας</reg><orig>ὀκτακισχειλείας</orig></choice> ἑπτ<supplied reason="lost">ακοσίας</supplied> 
+    <lb n="4"/><app type="editorial"><lem resp="BL 12.45"><supplied reason="lost">κανόνος ὀ</supplied>γδόης <expan>ἰνδικ<ex>τίονος</ex></expan> πρὸς τὴν <unclear>δ</unclear><supplied reason="lost">ύναμιν τοῦ δικαστικοῦ</supplied></lem><rdg><gap reason="lost" quantity="7" unit="character"/> <supplied reason="lost">ὀ</supplied>γδόης <expan>ἰνδι<unclear>κ</unclear><ex>τίονος</ex></expan> πρὸς τὴν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="18" unit="character"/></rdg></app>
 
-    <lb n="4"/>πεντήκοντα, ἐξ ὧν ἐν χρυσῷ <choice><reg>πεντακισχιλίας</reg><orig>πεντακισχειλίας</orig></choice>· <expan>γ<unclear>ί</unclear><ex>νονται</ex></expan> <supplied reason="lost"><expan>σίτ<ex>ου</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan></supplied> 
+    <lb n="5"/>προστάγματος, τοῦτʼ ἔστιν <expan>σίτο<ex>υ</ex></expan> ἐ<unclear>ν</unclear> χρυσῷ <expan>ἀρτάβ<ex>αι</ex></expan> ἑκ<supplied reason="lost">ατὸν</supplied> 
 
-    <lb n="5"/><num value="170">ρο</num> <expan>οἰνοκρ<ex>έου</ex></expan> <num value="8750">Ηψν</num> ἐξ <expan><ex>ὧν</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan> <num value="5000">Ε</num>. καὶ εἰς ὑμῶν ἀσφ<supplied reason="lost">άλειαν</supplied> 
+    <lb n="6"/><supplied reason="lost">ἑ</supplied>βδομήκοντα, καὶ <expan>οἰνοκρ<ex>έου</ex></expan> <choice><reg>ὀκτακισχιλίας</reg><orig>ὀκτακισχειλείας</orig></choice> ἑπτ<supplied reason="lost">ακοσίας</supplied> 
 
-    <lb n="6"/>καὶ τοῦ <expan>δημ<supplied reason="lost">ο</supplied>σίο<ex>υ</ex></expan> πεποίημαι ταύτην τὴν ἀπόδειξιν ἤτοι φ<supplied reason="lost">ορμάριαν</supplied> 
+    <lb n="7"/>πεντήκοντα, ἐξ ὧν ἐν χρυσῷ <choice><reg>πεντακισχιλίας</reg><orig>πεντακισχειλίας</orig></choice>· <expan>γ<unclear>ί</unclear><ex>νονται</ex></expan> <supplied reason="lost"><expan>σίτ<ex>ου</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan></supplied> 
 
-    <lb n="7"/>ὡς <expan>πρόκ<ex cert="low">ειται</ex></expan>. Φλάυ<hi rend="diaeresis">ι</hi>ος Ψά<supplied reason="lost">τ</supplied>ης <expan>ἀκτο<ex>υ</ex>άρ<ex>ιος</ex></expan> σὺν <expan>Θ<ex>εῷ</ex></expan> <expan>Ἀνταίο<ex>υ</ex></expan>, κανόνος <unclear>ἐ</unclear><supplied reason="lost">νάτης <expan>ἰνδ<ex>ικτίονος</ex></expan></supplied> 
+    <lb n="8"/><num value="170">ρο</num> <expan>οἰνοκρ<ex>έου</ex></expan> <num value="8750">Ηψν</num> <app type="editorial"><lem resp="BL 12.45">ἐξ ὧν</lem><rdg>ἐξ <expan><ex>ὧν</ex></expan></rdg></app> ἐν <expan>χρ<ex>υσῷ</ex></expan> <num value="5000">Ε</num>. καὶ εἰς ὑμῶν ἀσφ<supplied reason="lost">άλειαν</supplied> 
 
-    <lb n="8"/><expan>δ<ex>ιʼ</ex></expan> <expan>ἐμο<ex>ῦ</ex></expan> <expan>Ἰωάννο<ex>υ</ex></expan> <expan>Ψάτο<ex>υ</ex></expan> <expan>διαδόχ<ex>ου</ex></expan> <expan>αὐτο<ex>ῦ</ex></expan>· <unclear>στο</unclear>ιχεῖ μοι ταύτην τ<unclear>ὴ</unclear><supplied reason="lost">ν ἀπόδειξιν</supplied> 
+    <lb n="9"/>καὶ τοῦ <expan>δημ<supplied reason="lost">ο</supplied>σίο<ex>υ</ex></expan> πεποίημαι ταύτην τὴν ἀπόδειξιν ἤτοι <app type="editorial"><lem resp="BL 12.45">φ<supplied reason="lost">ωρμάλιαν</supplied></lem><rdg>φ<supplied reason="lost">ορμάριαν</supplied></rdg></app> 
 
-    <lb n="9"/><expan>το<ex>ῦ</ex>τʼ</expan> ἔστιν <expan>σίτ<ex>ου</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan> ἑκατὸν ἑβδομήκοντα καὶ <expan>οἰνοκρ<ex>έου</ex></expan> <supplied reason="lost">ὀκτακισχιλίας</supplied> 
+    <lb n="10"/>ὡς <expan>πρόκ<ex cert="low">ειται</ex></expan>. <handShift new="m2"/> Φλάυ<hi rend="diaeresis">ι</hi>ος Ψά<supplied reason="lost">τ</supplied>ης <expan>ἀκτο<ex>υ</ex>άρ<ex>ιος</ex></expan> <app type="editorial"><lem resp="BL 12.45"><expan><unclear>ἀρι</unclear>θ<ex>μοῦ</ex></expan></lem><rdg>σὺν <expan>Θ<ex>εῷ</ex></expan></rdg></app> <expan>Ἀνταίο<ex>υ</ex></expan>, κανόνος <app type="editorial"><lem resp="BL 12.45"><unclear>ὀ</unclear><supplied reason="lost">γδόης</supplied></lem><rdg><unclear>ἐ</unclear><supplied reason="lost">νάτης</supplied></rdg></app> <supplied reason="lost"><expan>ἰνδ<ex>ικτίονος</ex></expan></supplied> 
 
-    <lb n="10"/>ἑπτακοσίας πεντήκ<supplied reason="lost">ο</supplied>ντα, ἐξ ὧν ἐ<unclear>ν</unclear> χρυσῷ <choice><reg>πεντακισχιλίας</reg><orig>πεντακεισχ<supplied reason="lost">ειλίας</supplied></orig></choice>· 
+    <lb n="11"/><expan>δ<ex>ιʼ</ex></expan> <expan>ἐμο<ex>ῦ</ex></expan> <expan>Ἰωάννο<ex>υ</ex></expan> <expan>Ψάτο<ex>υ</ex></expan> <expan>διαδόχ<ex>ου</ex></expan> <expan>αὐτο<ex>ῦ</ex></expan>· <unclear>στο</unclear>ιχεῖ μοι ταύτην τ<unclear>ὴ</unclear><supplied reason="lost">ν ἀπόδειξιν</supplied> 
 
-    <lb n="11"/><expan>γί<ex>νονται</ex></expan> <expan>σίτ<ex>ου</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan> <num value="170">ρο</num> <expan><ex>καὶ</ex></expan> <expan>οἰνοκρ<ex>έου</ex></expan> <num value="8750">Ηψν</num> ἐξ ὧν ἐν <expan>χρ<ex>υσῷ</ex></expan> <num value="5000">Ε</num>, ὡς <expan>πρόκ<ex>ειται</ex></expan>. </ab></div>
+    <lb n="12"/><expan>το<ex>ῦ</ex>τʼ</expan> ἔστιν <expan>σίτ<ex>ου</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan> ἑκατὸν ἑβδομήκοντα καὶ <expan>οἰνοκρ<ex>έου</ex></expan> <supplied reason="lost">ὀκτακισχιλίας</supplied> 
+
+    <lb n="13"/>ἑπτακοσίας πεντήκ<supplied reason="lost">ο</supplied>ντα, ἐξ ὧν ἐ<unclear>ν</unclear> χρυσῷ <choice><reg>πεντακισχιλίας</reg><orig>πεντακεισχ<supplied reason="lost">ειλίας</supplied></orig></choice>· 
+
+    <lb n="14"/><expan>γί<ex>νονται</ex></expan> <expan>σίτ<ex>ου</ex></expan> ἐν <expan>χρ<ex>υσῷ</ex></expan> <num value="170">ρο</num> <expan><ex>καὶ</ex></expan> <expan>οἰνοκρ<ex>έου</ex></expan> <num value="8750">Ηψν</num> ἐξ ὧν ἐν <expan>χρ<ex>υσῷ</ex></expan> <num value="5000">Ε</num>, ὡς <expan>πρόκ<ex>ειται</ex></expan>. </ab></div>
       </body>
    </text>
 </TEI>

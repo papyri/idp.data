@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0254;;33" xml:id="p.bingen.33" xml:lang="en">
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     n="0254;;33"
+     xml:id="p.bingen.33"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -28,6 +31,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+          <change when="2016-06-23T12:23:21-04:00" who="http://papyri.info/users/simoeis">Finalized - Ready</change>
+          <change when="2016-06-23T12:10:33-04:00"
+                 who="http://papyri.info/users/james.cowey">General - &lt;:&lt;:[ποδ]αγρικοῦ|alt|&lt;:[.?].1τρικοῦ|alt|[.?] [π]α̣τρικοῦ:&gt;:&gt;=BL 12.33|ed|[ποδ]αγριδοῦ:&gt;</change>
+          <change when="2016-06-23T08:44:50-04:00"
+                 who="http://papyri.info/users/berkes.lajos">Vote - AcceptText - See Ast's and add:&#xD;
+=&gt; &lt;:&lt;:[ποδ]αγρικοῦ|alt|[.?]&lt;:.1τρικοῦ|alt|[π]α̣τρικοῦ:&gt;:&gt;=BL 12.33|ed|[ποδ]αγριδοῦ:&gt;</change>
+          <change when="2016-06-23T05:24:40-04:00" who="http://papyri.info/users/simoeis">Vote - AcceptText - This does not entirely represent what is reported in BL 12.33, where, in addition to fixing the typo in line 1, Kramer suggests the alternative reading ]  ̣τρικου, perhaps for  [π]α̣τρικοῦ. Next voter: should we change markup to 1. &lt;:&lt;:[ποδ]αγρικοῦ|alt|[.?].1τρικοῦ (for [π]α̣τρικοῦ?):&gt;=BL 12.33|ed|[ποδ]αγριδοῦ:&gt;? Concerning line 2, Kramer also points out the presence of the symbol for πυροῦ ἀρτ.; --&gt; &lt;:((πυροῦ ἀρτάβαι)=BL 12.33|ed|:&gt;. In line 3, it is clear from Plate 19 that the papyrus has διὰ after after (|ἁλωνοφυλ|) and before Θοτορταίο[υ].  I therefore propose reading &lt;:διὰ Θοτορταίο[υ]=R. Ast (from photo)|ed|[.?] Θοτορται-:&gt;. Note, however, that [.?] was introduced in the DDbDP text; it's not in the ed.pr.  Finally, in line 1 change 00. lost.?lin --&gt; 1. lost.?lin</change>
+          <change when="2016-03-31T04:42:32-04:00" who="http://papyri.info/users/geni">Submit - Corrected line 1 according to BL 12.33</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
           <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
           <change when="2010-05-05" who="http://papyri.info/editor/users/gabrielbodard">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
@@ -43,13 +54,15 @@
             <placeName>?</placeName>
          </head>
          <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
-    <lb n="00"/><gap reason="lost" extent="unknown" unit="line"/>
+    
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><app type="editorial"><lem resp="BL 12.33"><app type="alternative"><lem><supplied reason="lost">ποδ</supplied>αγρικοῦ</lem><rdg><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>τρικοῦ</lem><rdg><supplied reason="lost">π</supplied><unclear>α</unclear>τρικοῦ</rdg></app></rdg></app></lem><rdg><supplied reason="lost">ποδ</supplied>αγριδοῦ</rdg></app>
 
-    <lb n="1"/><supplied reason="lost">ποδ</supplied>αγριδοῦ
+    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>εννιος <app type="editorial"><lem resp="BL 12.33"><expan><ex>πυροῦ ἀρτάβαι</ex></expan></lem><rdg/></app>
 
-    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>εννιος
+    <lb n="3"/><abbr>ἁλωνοφυλ</abbr> <app type="editorial"><lem resp="PN R. Ast (from photo)">διὰ Θοτορταίο<supplied reason="lost">υ</supplied></lem><rdg>Θοτορται-</rdg></app>
 
-    <lb n="3"/><abbr>ἁλωνοφυλ</abbr> <gap reason="lost" extent="unknown" unit="character"/> Θοτορται-</ab></div>
+</ab></div>
       </body>
    </text>
 </TEI>
