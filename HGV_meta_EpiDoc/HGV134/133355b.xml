@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv133355b">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv133355b">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">133355b</idno>
-            <idno type="TM">133355</idno>
+            <idno type="TM">133356</idno>
             <idno type="ddb-perseus-style">;28;16838</idno>
             <idno type="ddb-filename">sb.28.16838v</idno>
             <idno type="ddb-hybrid">sb;28;16838v</idno>
@@ -28,20 +29,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0251-05-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Mai 251 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0252-05-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Mai 252 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="0255-05-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Mai 255 (Jahr unsicher)</origDate>
+                     <origPlace>Ptolemais Euergetis (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0251-05-18">
+                18. Mai 251 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0252-05-18">
+                18. Mai 252 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="3" xml:id="dateAlternativeZ" when="0255-05-18">
+                18. Mai 255 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +57,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,8 +74,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Ninnos an Heroninos</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Ninnos an Heroninos</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +83,8 @@
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierungen: 18. Mai 252 und 18. Mai 255. Gehört zum Heroninos - Archiv.</p>
@@ -87,9 +96,9 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">28</biblScope>
-                  <biblScope type="numbers">16838</biblScope>
-                  <biblScope type="side">V</biblScope>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="numbers">16838</biblScope>
+                  <biblScope n="3" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,5 +106,5 @@
             <p>keine</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
