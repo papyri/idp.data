@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23876">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23876">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Landkauf</title>
+            <title>Vendita di terreno</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">23876</idno>
             <idno type="TM">23876</idno>
-            <idno type="ddb-perseus-style">0239;20;15096</idno>
-            <idno type="ddb-filename">sb.20.15096</idno>
-            <idno type="ddb-hybrid">sb;20;15096</idno>
+            <idno type="ddb-perseus-style">;;27</idno>
+            <idno type="ddb-filename">p.daris.27</idno>
+            <idno type="ddb-hybrid">p.daris;;27</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <placeName>
-                     <settlement>unbekannt</settlement>
-                  </placeName>
+                  <idno type="invNo">P.Daris inv. 188</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,9 +30,11 @@
                   <origin>
                      <origPlace>Oxyrhynchites</origPlace>
                      <origDate xml:id="dateAlternativeX" when="0363-03-16">
-                        <certainty locus="value" match="../day-from-date(@when)"/>16. März 363 (Tag unsicher)</origDate>
+                        <certainty locus="value" match="../month-from-date(@when)"/>
+                        <certainty locus="value" match="../day-from-date(@when)"/>16. März 363 (Monat und Tag unsicher)</origDate>
                      <origDate xml:id="dateAlternativeY" when="0363-09-18">
-                        <certainty locus="value" match="../day-from-date(@when)"/>18. Sept. 363 (Tag unsicher)</origDate>
+                        <certainty locus="value" match="../month-from-date(@when)"/>
+                        <certainty locus="value" match="../day-from-date(@when)"/>18. Sept. 363 (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -49,7 +48,7 @@
       </fileDesc>
       <encodingDesc>
          <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -74,6 +73,7 @@
          <change who="HGV" when="1998-03-05">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2016-10-19" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -84,25 +84,22 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">15096</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
-                  <biblScope type="pages">233</biblScope>
+                  <title level="s" type="abbreviated">P.Daris</title>
+                  <biblScope type="numbers">27</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
+               <bibl type="illustration">Tav. 27</bibl>
                <bibl type="illustration">ZPE 90, 1992, Tafel X a (nicht b)</bibl>
             </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">SB XX 15096</bibl>
+            </listBibl>
          </div>
       </body>
    </text>
