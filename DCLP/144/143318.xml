@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m143318">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 143318</title>
@@ -14,7 +14,11 @@
             <idno type="filename">143318</idno>
             <idno type="dclp-hybrid">na;;143318</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,21 +42,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Xeron Pelagos (Eastern desert, Egypt); written: Xeron Pelagos (Eastern desert, Egypt)</origPlace>
+                     <origPlace>Fundort: Xeron Pelagos (Eastern desert, Egypt); Schreibort: Xeron Pelagos (Eastern desert, Egypt)</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Eastern desert</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/8665">Xeron Pelagos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Eastern desert</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/8665">Xeron Pelagos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Eastern desert</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/8665">Xeron Pelagos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Eastern desert</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/8665">Xeron Pelagos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -61,18 +65,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">dactylic octameters on Pallas Athena</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">dactylic octameters on Pallas Athena</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -83,8 +87,8 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
@@ -102,7 +106,6 @@
 <lb n="11"/><gap reason="lost" extent="unknown" unit="line"/>
 </ab>
       </div>
-         
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
@@ -110,6 +113,22 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="m" type="main">Den syngende korporal. [Le caporal chantant.]</title>
+                  <author n="1">
+                     <surname>Bülow-Jacobsen</surname>
+                     <forename>Adam</forename>
+                  </author>
+                  <pubPlace>København</pubPlace>
+                  <date>2011</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/80609"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
