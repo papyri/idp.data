@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m140285">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 76 5081</title>
+            <title>Plato; Charmides 166c, 167a</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">140285</idno>
             <idno type="dclp-hybrid">p.oxy;76;5081</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,21 +47,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrynchos (U, Egypt); written: Oxyrynchos (U, Egypt)</origPlace>
+                     <origPlace>Fundort: Oxyrynchos (U, Egypt); Schreibort: Oxyrynchos (U, Egypt)</origPlace>
                      <origDate notBefore="0150" notAfter="0250">150 - 250</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">U</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/1524">Oxyrynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1524">Oxyrynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">U</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/1524">Oxyrynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1524">Oxyrynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -66,48 +70,98 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term>dialogue</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Plato; Charmides 166c, 167a</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
+               <term n="5">dialogue</term>
+               <term n="6" type="overview"/>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">76</biblScope>
-                  <biblScope unit="numbers">5081</biblScope>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Oxy. 76</title>
+                  <pubPlace n="1">London</pubPlace>
+                  <date>2011</date>
+                  <editor n="1">
+                     <forename>R.</forename>
+                     <surname>Colomo</surname>
+                  </editor>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/79329"/>
+                  <biblScope n="1" unit="volume">76</biblScope>
+                  <biblScope n="2" unit="numbers">5081</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato philosophus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato philosophus</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/1412">Charmides</title>
+                  <biblScope n="1" unit="generic">166c</biblScope>
+                  <biblScope n="2" unit="generic">167a</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">αὐτῆς τ</supplied><unclear>αῖς</unclear> <supplied reason="lost">ἄλλαις τὸ δ'</supplied>
+<lb n="2"/><supplied reason="lost">οὐκ ἔστιν</supplied> <unclear>ο</unclear>ὔτως ἀ<supplied reason="lost">λλ' αἱ μὲν</supplied>
+<lb n="3"/><supplied reason="lost">ἄλλαι π</supplied><unclear>ᾶ</unclear>σαι·<hi rend="acute">ἄ</hi><unclear>λ</unclear>λ<supplied reason="lost">ου εἰσὶν ἐ</supplied>
+<lb n="4" break="no"/><supplied reason="lost">πιστῆμ</supplied><unclear>α</unclear>ι <unclear>ἑ</unclear>αυτῶν δ<hi rend="acute">ὲ</hi> οὔ ἡ
+<lb n="5"/><supplied reason="lost">δὲ μόνη</supplied> τῶν τε ἄλλω<hi rend="lenis">ν</hi> ἐ 
+<lb n="6" break="no"/><supplied reason="lost">πιστημ</supplied>ῶν ἐπισ<supplied reason="lost">τ</supplied>ήμη· ἐ<g rend="extension" type="filler"/>
+<lb n="7" break="no"/><supplied reason="lost">στὶ</supplied> καὶ αὐτὴ αὑτῆ<unclear>ς</unclear> καὶ
+<lb n="8"/><supplied reason="lost">ταῦτά</supplied> σε πολλοῦ δεῖ λεληθέ
+<lb n="9" break="no"/><supplied reason="lost">ναι ἀλ</supplied>λὰ γὰρ οἷμαι ὃ ἄρτι
+<lb n="10"/> <supplied reason="lost">οὐκ ἔφ</supplied>εσθα ποιεῖν. τοῦτο
+<lb n="11"/><supplied reason="lost">ποιεῖς· ἐ</supplied><unclear>μὲ</unclear> <unclear>γ</unclear>ὰρ ἐπιχειρεῖς
+<lb n="12"/><supplied reason="lost">ἐλέγχειν</supplied>, <unclear>ἐ</unclear>άσας περὶ ο<hi rend="circumflex"><hi rend="asper">ὗ</hi></hi>  ὁ λό
+<lb n="13" break="no"/><supplied reason="lost">γος ἐστὶν</supplied>. <unclear>οἷον</unclear> <unclear>ἦν</unclear> <unclear>δ</unclear>' ἐ<unclear>γ</unclear>ώ, <unclear>π</unclear>οι
+<lb n="14" break="no"/><supplied reason="lost">εῖς</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> 
+
+<div n="ii" subtype="column" type="textpart">
+<ab>
+<lb n="4"/><gap reason="lost" quantity="4" unit="line"/>
+<lb n="5"/><unclear>κ</unclear><supplied reason="lost">αὶ οἴεται, εἴπερ οἶδεν, καὶ</supplied>
+<lb n="6"/>τ<supplied reason="lost">ί αὐτὸς οἴεται μὲν εἰδέναι,</supplied>
+<lb n="7"/><unclear>οἶ</unclear><supplied reason="lost">δεν δ' οὔ, τῶν δ' ἄλλων</supplied>
+<lb n="8"/>οὐ<unclear>δ</unclear><supplied reason="lost">είς·  καὶ ἔστιν δὴ τοῦτο τὸ</supplied>
+<lb n="9"/>σω<unclear>φ</unclear><supplied reason="lost">ρονεῖν τε καὶ σωφροϲύ</supplied>
+<lb n="10" break="no"/>νη <unclear>κ</unclear><supplied reason="lost">αὶ τὸ ἑαυτὸν γιγνώ</supplied>
+<lb n="11" break="no"/>σκει<unclear>ν</unclear>, <supplied reason="lost">τὸ εἰδέναι ἅ τε οἶδεν.</supplied>
+<lb n="12"/>ἆρα τ<unclear>α</unclear><supplied reason="lost">ῦτά ἐστιν ἃ λέγεις;</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="13"/>ἔγωγ', ἔ<unclear>φ</unclear><supplied reason="lost">η. πὰλιν τοίνυν</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="14"/><unclear>ἦν</unclear> <unclear>δὲ</unclear> ἐ<supplied reason="lost">γώ</supplied>
+</ab></div> 
+  </div>
       </body>
-   </text>
+  </text>
 </TEI>
