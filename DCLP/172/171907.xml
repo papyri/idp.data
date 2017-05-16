@@ -92,10 +92,11 @@
          </textClass>
          <langUsage>
             <language ident="grc">Greek</language>
+            <language ident="la-Grek">Latin in Greek script</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
   </teiHeader>
   <text>
@@ -106,7 +107,7 @@
 <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
 <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α
 <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ξ
-<lb n="5"/><foreign xml:lang="la-Grek"><supplied reason="lost">κονκο</supplied>ρδ<del rend="erasure">ε</del>ια</foreign>
+<lb n="5" xml:id="div1-lb5"/><foreign xml:lang="la-Grek"><supplied reason="lost">κονκο</supplied>ρδ<del rend="erasure">ε</del>ια</foreign>
 <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>
 <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ω</unclear>ραι
 <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/>
@@ -144,7 +145,7 @@
 <lb n="2"/><supplied reason="lost">ἔαρ</supplied> <foreign xml:lang="la-Grek">ο<unclear>υ</unclear><supplied reason="lost">ηρ</supplied></foreign>
 <lb n="3"/><supplied reason="lost">θέρος</supplied> <foreign xml:lang="la-Grek"><app type="alternative"><lem><unclear>α</unclear><supplied reason="lost">ι</supplied>στ<supplied reason="lost">ας</supplied></lem><rdg><unclear>α</unclear><supplied reason="lost">ι</supplied>στ<supplied reason="lost">ους</supplied></rdg></app></foreign>
 <lb n="4"/><app type="alternative"><lem><supplied reason="lost">φθινόπωρον</supplied></lem><rdg>μετόπωρον</rdg></app> <foreign xml:lang="la-Grek">αυτ<unclear>ο</unclear><supplied reason="lost">υμνους</supplied></foreign>
-<lb n="5"/>χειμών <foreign xml:lang="la-Grek"><unclear>ἱ</unclear>εμ<unclear>ψ</unclear><gap reason="lost" extent="unknown" unit="character"/></foreign>
+<lb n="5" xml:id="div2-lb5"/>χειμών <foreign xml:lang="la-Grek"><unclear>ἱ</unclear>εμ<unclear>ψ</unclear><gap reason="lost" extent="unknown" unit="character"/></foreign>
 <lb n="6"/>περὶ ἄστρω<supplied reason="lost">ν</supplied> δη <foreign xml:lang="la-Grek"><app type="alternative"><lem>σε<supplied reason="lost">ιδεριβους</supplied></lem><rdg>σε<supplied reason="lost">ιγνεις</supplied></rdg></app></foreign>
 <lb n="7"/>ἄστρα <foreign xml:lang="la-Grek">σειδ<supplied reason="lost">ερα</supplied></foreign>
 <lb n="8"/>ἀστέρες <foreign xml:lang="la-Grek">στηλ<supplied reason="lost">λαι</supplied></foreign>
@@ -183,17 +184,26 @@
 <lb n="41"/><supplied reason="lost">χ</supplied>ῶρος <foreign xml:lang="la-Grek">τερεστρις</foreign>
 <lb n="42"/><supplied reason="lost">κ</supplied>αικίας <foreign xml:lang="la-Grek">καικιας</foreign>
 </ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb5" xml:space="preserve">
+            <ref>5</ref>
+            <p>The ε is deleted by dots above and below.</p>
+          </item>
+               <item corresp="#div2-lb5" xml:space="preserve"><ref>5</ref> <p>The scribe indicates the aspirated 'h' sound by placing a spiritus asper next to the iota.   </p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            
                   <title level="s" type="short-Checklist" n="1">P.Oxy. 78</title>
                   <date>2012</date>
                   <editor n="1">
                      <forename>R.-L.</forename>
                      <surname>Chang</surname>
                   </editor>
-                  <!-- ignore - stop -->
+                  
                   <ptr target="http://papyri.info/biblio/95258"/>
                   <biblScope unit="numbers">5162</biblScope>
                </bibl>
@@ -214,14 +224,6 @@
                   <title type="main" level="m" xml:lang="grc"/>
                </bibl>
             </listBibl>
-         </div>
-         <div type="commentary" subtype="linebyline">
-            <list>
-               <item corresp="#div1-lb5" xml:space="preserve">
-            <ref>5</ref>
-            <p>The ε is deleted by dots above and below.</p>
-          </item>
-            </list>
          </div>
       </body>
   </text>
