@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64874">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Suppl. Mag. 1 33</title>
+            <title>A Spell Against Illnesses of Any Kind</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6113</idno>
             <idno type="filename">64874</idno>
             <idno type="dclp-hybrid">suppl.mag;1;33</idno>
+            <idno type="MP3">6055</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +32,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">4 cm</width>
+                              <height unit="cm">3.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout writtenLines="4">
                            <p>papyrus sheet (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -38,15 +47,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,61 +66,113 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term>magic</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">spell against illnesses of any kind</term>
+               <term n="1" type="description">magic</term>
+               <term n="2" type="religion">christian</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">prayer</term>
+               <term n="5">magic</term>
+               <term n="6" type="overview"/>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>εἷς <expan><hi rend="supraline">θ</hi><ex>εὸ</ex><hi rend="supraline">ς</hi></expan> ὁ θερα
+<lb n="3" break="no"/>πεύων πᾶ
+<lb n="4" break="no"/>σαν νόσον
+</ab></div>
+
+<div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1" xml:id="div2-lb2"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<lb n="2"/><figure><figDesc>symbol</figDesc></figure>
+</ab></div>
+</div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/12016"/>
-                  <biblScope unit="numbers">33</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">Suppl.Mag.</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/12016"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="m" type="main">Supplementum Magicum. Vol. I (Suppl. Mag. I).</title>
-                  <author n="1">
-                     <surname>DANIEL</surname>
-                     <forename>Robert W.</forename>
-                  </author>
+               <bibl n="1" type="publication" subtype="principal">
+            
+                  <title level="s" type="short-Checklist" n="1">Suppl.Mag. 1</title>
+                  <pubPlace n="1">Opladen</pubPlace>
                   <date>1990</date>
-                  <!-- ignore - stop -->
+                  <editor n="1">
+                     <forename>Robert W.</forename>
+                     <surname>Daniel</surname>
+                  </editor>
+                  
+                  <ptr target="http://papyri.info/biblio/12016"/>
+                  <biblScope unit="no">33</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            
+                  <title level="s" type="short-Checklist" n="1">Suppl.Mag. 1</title>
+                  <pubPlace n="1">Opladen</pubPlace>
+                  <date>1990</date>
+                  <editor n="1">
+                     <forename>Robert W.</forename>
+                     <surname>Daniel</surname>
+                  </editor>
+                  
+                  <ptr target="http://papyri.info/biblio/12016"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="translation" xml:lang="en">
+            
+                  <title level="m" type="main">The Greek Magical Papyri in Translation, Including the Demotic Spells. I: Texts.</title>
+                  <author n="1">
+                     <surname>Betz</surname>
+                     <forename>Hans Dieter</forename>
+                  </author>
+                  <pubPlace>Chicago</pubPlace>
+                  <date>1986</date>
+                  
+                  <ptr target="http://papyri.info/biblio/10954"/>
+                  <biblScope unit="pp">307</biblScope>
                </bibl>
             </listBibl>
          </div>
-         
-         
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. pr., pl. 13</bibl>
+               <bibl type="printed">D. Wortmann, "Neue magische Texte. Nr. 7: Heilamulett," Bonner Jahrb. 168 (1968), pl. 13</bibl>
                <bibl type="online">
                   <ptr target="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/Magie/magie_07.html"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="ancientEdition">
+            <listBibl>
+               <bibl type="publication" subtype="ancient">
+                  <author/>
+                  <title type="main" level="m"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>On the verso are traces of letters as well as the Egyptian life-sign, which was either drawn twice or is in mirror image.</p>
+         </div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div2-lb2" xml:space="preserve"><ref>1</ref> <p>Possibly a mirror image of text or traces of a palimpsest.</p></item>
+            </list>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
