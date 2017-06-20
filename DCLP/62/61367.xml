@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61367">
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Koeln. 7 309</title>
+            <title>Demosthenes; In Aristocratem</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">61367</idno>
             <idno type="dclp-hybrid">p.koeln;7;309</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,15 +47,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -82,10 +86,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose oratory</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Demosthenes; In Aristocratem</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose oratory</term>
+               <term n="4" type="overview"/>
             </keywords>
          </textClass>
          <langUsage>
@@ -102,28 +106,44 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Köln 7</title>
+                  <author n="1">
+                     <forename>Michael</forename>
+                     <surname>Gronewald</surname>
+                  </author>
+                  <pubPlace n="1">Opladen</pubPlace>
+                  <date>1991</date>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/12431"/>
-                  <biblScope unit="numbers">309</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Köln Gr.</title>
-                  <biblScope unit="volume">7</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="numbers">309</biblScope>
+                  <biblScope n="2" unit="volume">7</biblScope>
                </bibl>
             </listBibl>
          </div>
-         
-         
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0014">Demosthenes</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0014">Demosthenes</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/829">In Aristocratem</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/>μων <supplied reason="lost">ὄντων πα</supplied>
+<lb n="2" break="no"/>ρ’ οὓς <unclear>ε</unclear><supplied reason="lost">ἴρηται τὸ</supplied>
+<lb n="3"/>ψήφισ<supplied reason="lost">μα, παρ’ οὐ</supplied>
+<lb n="4" break="no"/>δέν<add place="above">α</add> μ<supplied reason="lost">ᾶλλον ἢ πα</supplied>
+<lb n="5" break="no"/>ρὰ τοῦτ<supplied reason="lost">ον τὸν</supplied>
+<lb n="6"/>ἀν<unclear>ε</unclear><supplied reason="lost">γ</supplied>ν<supplied reason="lost">ωσμένον</supplied>
+<lb n="7"/>νῦν εἴ<unclear>ρ</unclear><supplied reason="lost">ηται. διδόν</supplied>
+<lb n="7"/><milestone rend="paragraphos" unit="undefined"/>
+<lb n="8" break="no"/>τος γὰρ <supplied reason="lost">τοῦ νόμου</supplied>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P.Köln 6, pl.XIa</bibl>
