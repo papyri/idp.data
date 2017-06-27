@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60497">
   <teiHeader>
       <fileDesc>
@@ -14,7 +14,11 @@
             <idno type="filename">60497</idno>
             <idno type="dclp-hybrid">p.koeln;1;31</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -77,11 +81,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 010.32-40</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Ilias 010.32-40</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -97,28 +101,44 @@
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Köln 1</title>
+                  <author n="1">
+                     <forename>Bärbel</forename>
+                     <surname>Kramer</surname>
+                  </author>
+                  <pubPlace n="1">Opladen</pubPlace>
+                  <date>1976</date>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/8842"/>
-                  <biblScope unit="numbers">31</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Köln Gr.</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="numbers">31</biblScope>
+                  <biblScope n="2" unit="volume">1</biblScope>
                </bibl>
             </listBibl>
          </div>
-         
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><supplied reason="lost">βῆ δ᾽ἴμεν ἀνστήσων ὃν ἀδελφε</supplied>όν, ὃ<supplied reason="lost">ς μέγα πάντων</supplied>
+<lb n="2"/><supplied reason="lost">Ἀργείων ἤνασσε, θεὸς δ᾽ὣς τίε</supplied><unclear>τ</unclear>ο δή<supplied reason="lost">μωι</supplied>.
+<lb n="3"/><supplied reason="lost">τὸν δ᾽ εὗρ ἀμφ᾽ ὤμοισι τιθ</supplied>ήμε<supplied reason="lost">νο</supplied><unclear>ν</unclear> <choice><reg>ἔντεα</reg><orig>ἔνδεα</orig></choice> καλὰ
+<lb n="4"/><supplied reason="lost">νη¨ὶ πάρα πρυμνῆι· τῶι δ᾽ἀσπ</supplied><unclear>ά</unclear>σιος <supplied reason="lost">γέν</supplied><unclear>ε</unclear>τ᾽ ἐλθών.
+<lb n="5"/><supplied reason="lost">τὸν πρότερος προσέειπε βο</supplied>ὴν ἀ<unclear>γ</unclear>α<unclear>θὸς</unclear> Μενέλαος·
+<lb n="6"/><supplied reason="lost">τίΦθ᾽οὕτως, ἠθεῖε, κορύσσεαι</supplied>; ἦ τιν᾽ἑταίρων
+<lb n="7"/><supplied reason="lost">ὀτρυνέις Τρώεσσιν ἐπισκοπ</supplied>όν; ἀλλὰ μάλ᾽αἰνῶς
+<lb n="8"/><supplied reason="lost">δείδω μὴ οὔ τίς τοι ὑπόσχητ</supplied><unclear>α</unclear>ι τόδε ἔργον,
+<lb n="9"/><supplied reason="lost">ἄνδρας δυσμενέας σκοπιαζ</supplied><unclear>έ</unclear>μεν οἶος ἐπελθών
+</ab></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
