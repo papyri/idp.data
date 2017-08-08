@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61329">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Amst. 1 12</title>
+            <title>Isoc., Bus. 2-3</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2473</idno>
             <idno type="filename">61329</idno>
             <idno type="dclp-hybrid">p.amst;1;12</idno>
+            <idno type="MP3">1276.1</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +32,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">3.8</width>
+                              <height unit="cm">8.7</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="17">
                            <p>papyrus roll (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -43,15 +52,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,18 +71,19 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Isocrates; Busiris 2-3</term>
+               <term n="1" type="description">oratory</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose</term>
+               <term n="5">oratory</term>
+               <term n="6" type="overview">Isocrates; Busiris 2-3</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,40 +92,79 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2017-08-08T18:13:57+02:00"
+                 who="http://papyri.info/users/MarcelKeller">Finalized - fine</change>
+         <change when="2017-08-07T19:03:21+02:00"
+                 who="http://papyri.info/users/RogerBagnall">Vote - Accept-Straight-to-Finalization - metadata checked</change>
+         <change when="2017-08-07T18:31:15+02:00"
+                 who="http://papyri.info/users/TODDHICKEY">Submit - Added metadata, NYC workshop.</change>
+         <change when="2017-08-07T18:30:39+02:00"
+                 who="http://papyri.info/users/TODDHICKEY">Commit - added metadata, NYC workshop</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Amst. 1</title>
+                  <author n="1">
+                     <forename>Robert Paul</forename>
+                     <surname>Salomons</surname>
+                  </author>
+                  <pubPlace n="1">Zutphen</pubPlace>
+                  <date>1980</date>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/9528"/>
-                  <biblScope unit="numbers">12</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Amst.</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="numbers">12</biblScope>
+                  <biblScope n="2" unit="volume">1</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short">C.P.F.</title>
+                  <date>2008</date>
+                  <editor/>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/76983"/>
+                  <biblScope n="1" unit="no" corresp="39">21</biblScope>
+                  <biblScope n="2" unit="pages" from="517" to="521">517-521</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="j" type="short-BP">ZPE</title>
+                  <author n="1">
+                     <surname>Sijpesteijn</surname>
+                     <forename>P.J.</forename>
+                  </author>
+                  <date>1970</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/48050"/>
+                  <biblScope unit="pp" from="119" to="120">119-120</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0010">Isocrates</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0010 http://cwkb.org/author/id/939/rdf">Isocrates</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/823">Busiris</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/823 http://cwkb.org/work/id/2877/rdf http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0010.tlg010">Busiris</title>
+                  <biblScope unit="chapter" from="2" to="3">2-3</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">P.Amst. 01 pl.VI</bibl>
-               <bibl type="printed">CPF pl. 7</bibl>
+               <bibl type="printed" n="1">P.Amst. 01 pl.VI</bibl>
+               <bibl type="printed" n="2">CPF pl. 7</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
