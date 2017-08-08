@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61362">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Chic. 1</title>
+            <title>Isoc., Ad Nic. 9-11</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,20 +13,32 @@
             <idno type="LDAB">2506</idno>
             <idno type="filename">61362</idno>
             <idno type="dclp-hybrid">p.chic;;1</idno>
+            <idno type="MP3">1256</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Chicago, University Library 1068</idno>
+                  <idno>
+                     <idno type="invNo" n="1">Chicago, University Library 1068</idno>
+                     <idno type="invNo" n="2">formerly private collection Goodspeed 103</idno>
+                  </idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="roll">
+                  <objectDesc form="roll?">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">4.2</width>
+                              <height unit="cm">16</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -43,17 +55,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Karanis (Arsinoites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Karanis (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1008">Karanis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -64,19 +76,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term>wisdom</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Isocrates; Ad Nicoclem 9-11</term>
+               <term n="1" type="description">oratory</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose</term>
+               <term n="5">oratory</term>
+               <term n="6">wisdom</term>
+               <term n="7" type="overview">Isocrates; Ad Nicoclem 9-11</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -87,27 +100,46 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Chic.</title>
+                  <author n="1">
+                     <forename>Edgar J.</forename>
+                     <surname>Goodspeed</surname>
+                  </author>
+                  <pubPlace n="1">Chicago</pubPlace>
+                  <date>1908</date>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95124"/>
                   <biblScope unit="numbers">1</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Chic.</title>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short">C.P.F.</title>
+                  <date>2008</date>
+                  <editor/>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/76983"/>
+                  <biblScope n="1" unit="no" corresp="23">21</biblScope>
+                  <biblScope n="2" unit="pages" from="459" to="462">459-462</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0010">Isocrates</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0010 http://cwkb.org/author/id/939/rdf">Isocrates</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/831">Ad Nicoclem</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/831 http://cwkb.org/work/id/2870/rdf http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0010.tlg013">Ad Nicoclem</title>
+                  <biblScope unit="chapter" from="9" to="11">9-11</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -118,5 +150,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
