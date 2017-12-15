@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63417">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>O. Claud. 2 409</title>
+            <title>Choral lyrics to a (reluctant?) bridegroom</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">4625</idno>
             <idno type="filename">63417</idno>
             <idno type="dclp-hybrid">o.claud;2;409</idno>
+            <idno type="MP3">01982.020</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,32 +32,41 @@
                      <supportDesc>
                         <support>
                            <material>pottery</material>
+                           <dimensions>
+                              <width unit="cm">10.4</width>
+                              <height unit="cm">9.9</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>pottery sheet, palimpsest (columns: 0, pagination: 0)</p>
+                        <layout columns="1" writtenLines="13">
+                           <p>pottery sheet, palimpsest (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>Informal bookhand</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Claudianus Mons (Eastern desert, Egypt); written: Claudianus Mons (Eastern desert, Egypt)</origPlace>
+                     <origPlace>Fundort: Claudianus Mons (Eastern desert, Egypt); Schreibort: Claudianus Mons (Eastern desert, Egypt)</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Eastern desert</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/2783">Claudianus Mons</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Eastern desert</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/2783">Claudianus Mons</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Eastern desert</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/2783">Claudianus Mons</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Eastern desert</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/2783">Claudianus Mons</placeName>
                      </p>
                   </provenance>
                </history>
@@ -61,47 +75,74 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>lyric</term>
-               <term>choral</term>
-               <term/>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">lyric verses to a reluctant bridegroom</term>
+               <term n="1" type="description">lyric</term>
+               <term n="2" type="description">choral</term>
+               <term n="3" type="religion">classical</term>
+               <term n="4" type="culture">literature</term>
+               <term n="5" type="culture">mythology</term>
+               <term n="6">poetry</term>
+               <term n="7">lyric</term>
+               <term n="8">choral</term>
+               <term n="9">adespota</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">O.Claud. 2</title>
+                  <pubPlace n="1">Le Caire</pubPlace>
+                  <date>1997</date>
+                  <editor n="1">
+                     <forename>Jean</forename>
+                     <surname>Bingen</surname>
+                  </editor>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/14684"/>
-                  <biblScope unit="number">409</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">O. Claud.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="numbers">409</biblScope>
+                  <biblScope n="2" unit="volume">2</biblScope>
+                  <biblScope n="3" unit="pp" from="249" to="253">249-253</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><supplied reason="lost">Θα</supplied><unclear>υ</unclear>μάσιον κεκράτηκέ σε φιλέφηβον σθε
+<lb n="2" break="no"/><supplied reason="lost">ν</supplied> <gap reason="lost" atLeast="2" atMost="3" unit="character"/>ῶν Ἀλκείδης καὶ ταχὺς Ἑρμῆς
+<lb n="3"/><gap reason="lost" atLeast="2" atMost="3" unit="character"/> στάδιον κεκόπωκέ σε φιλάεθλ' ὡς
+<lb n="4"/><gap reason="lost" atLeast="2" atMost="3" unit="character"/><unclear>ε</unclear>νος Πολυδεύκης ποτε καὶ <choice><corr>Πηλεὺς</corr><sic>Πευσευς</sic></choice>
+<lb n="5"/><gap reason="lost" atLeast="2" atMost="3" unit="character"/><app type="editorial"><lem><gap reason="illegible" quantity="1" unit="character"/>εσιαις</lem><rdg resp="Cockle in O. Claud. 2.409"><unclear>ν</unclear>εσιαις <certainty match=".." locus="value"/></rdg></app> πεπλά<unclear>ν</unclear>ηκέ σε τοῖϲ Ἀγρίοις
+<lb n="6"/><gap reason="lost" atLeast="2" atMost="3" unit="character"/>θαι Μελέαγρος <unclear>σ</unclear>οβαρός, Ἄδωνις
+<lb n="7"/><gap reason="lost" atLeast="3" atMost="4" unit="character"/> <unclear>π</unclear>εποθημένε <choice><reg>σύγγαμε</reg><orig>σύνγαμε</orig></choice>, κῦμα λάβρον
+<lb n="8"/><supplied reason="lost">πόντ</supplied><unclear>ο</unclear>υ πεφοβήσαι, μένε, λίτομαι κινδ<hi rend="superscript">υ</hi>
+<lb n="9" break="no"/><supplied reason="lost">ν</supplied> <gap reason="lost" atLeast="3" atMost="4" unit="character"/><unclear>σ</unclear>αι <space atLeast="2" atMost="3" unit="character"/> καὶ <choice><corr>στεῖξον</corr><sic>στέξον</sic></choice> βραχὺ <add place="above">λι</add>τανεύω παρά
+<lb n="10"/><gap reason="lost" atLeast="4" atMost="5" unit="character"/><unclear>μ</unclear>ολως σοι, φίλτατε, λύπην ἔκβαλε σῆς
+<lb n="11"/><supplied reason="lost" cert="low">ψυχῆς </supplied> και<unclear>ρ</unclear>ὸς γὰρ καλὸς αὔριον ἔσται τὰ καλὰ πρ<hi rend="superscript">ο</hi>
+<lb n="12" break="no"/><gap reason="lost" atLeast="4" atMost="5" unit="character"/>τας, ἆ γαμέτα <space extent="unknown" unit="character"/>
+<lb n="13"/><gap reason="lost" atLeast="5" atMost="6" unit="character"/><unclear>μ</unclear>η δοῦναι βραχεῖαν συνφοραῖς εὐψυχίαν<del rend="erasure">παρὰ ψυχήν</del>
+</ab></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">O.Claud. 02, pl.57</bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>This ostracon is a palimpsest, with four trochaic verses (O. Claud. 2.410) surviving below the current text. The left-hand side is broken with several letters missing, but the right-hand side appear to be complete.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
