@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61394">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 61394</title>
+            <title>Isocrates; Ad Nicoclem 4-7</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2538</idno>
             <idno type="filename">61394</idno>
             <idno type="dclp-hybrid">na;;61394</idno>
+            <idno type="MP3">1255.01</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,26 +32,33 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">3.9</width>
+                              <height unit="cm">5.6</height>
+                           </dimensions>
                         </support>
+                        <foliation>
+                           <dim type="pagination">2</dim>
+                        </foliation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout writtenLines="17">
-                           <p>papyrus codex (columns: 0, written lines: [17], pagination: 0)</p>
+                        <layout writtenLines="17" columns="1">
+                           <p>papyrus codex (columns: 1, written lines: [17], pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0350" notAfter="0449">350 - 449</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,19 +69,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term>wisdom</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Isocrates; Ad Nicoclem 4-7</term>
+               <term n="1" type="description">oratory</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose</term>
+               <term n="5">oratory</term>
+               <term n="6">wisdom</term>
+               <term n="7" type="overview">Isocrates; Ad Nicoclem 4-7</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -80,26 +93,88 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0010">Isocrates</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0010 http://data.perseus.org/catalog/urn:cts:greekLit:tlg0013 http://cwkb.org/author/id/939/rdf">Isocrates</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/831">Ad Nicoclem</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/831 http://cwkb.org/work/id/2870/rdf http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0013.tlg028 http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0010.tlg028">Ad Nicoclem</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/> <unclear>π</unclear>ρ<unclear>αττ</unclear>ό<supplied reason="lost">ν</supplied>
+<lb n="2" break="no"/><supplied reason="lost">των <gap reason="illegible" quantity="11" unit="character"/> ὅταν μ</supplied><unclear>ὲν</unclear> <unclear>γ</unclear>ὰρ ἀποβλέ
+<lb n="3" break="no"/><supplied reason="lost">ψωσιν εἰς τὰς τιμὰς κα</supplied>ὶ τοὺς πλούτους
+<lb n="4"/><supplied reason="lost">καὶ τὰς δυναστείας, ἰσοθ</supplied>έους ἅπαντες
+<lb n="5"/><supplied reason="lost">νομίζουσι τοὺς ἐν ταῖς μο</supplied>ναρχίαις ὄν
+<lb n="6" break="no"/><supplied reason="lost">τας· ἐπειδὰν δ ̓ἐνθυμη</supplied><unclear>θ</unclear>ῶσι τοὺς φο
+<lb n="7" break="no"/><supplied reason="lost">βους καὶ τοὺς κινδύνους, καὶ</supplied> διεξιόντες
+<lb n="8"/><supplied reason="lost">ὁρῶσιν τοὺς μὲν ὑφ ̓ ὧν ἥκισ</supplied><unclear>τα</unclear> ἐ<unclear>χρῆ</unclear>ν
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+<div n="v" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="ellipsis" quantity="1" unit="line"><desc>non transcribed</desc></gap>
+<lb n="2"/><unclear>χ</unclear>ρὴ στοχάσα<supplied reason="lost">σθαι καὶ περὶ ἃ δεῖ διατρίβειν</supplied>,
+<lb n="3"/><unclear>ἐ</unclear>γὼ πειράσομ<supplied reason="lost">αι διελθεῖν. εἰ μὲν οὖν</supplied>
+<lb n="4"/>ἔσται τὸ δῶρο<supplied reason="lost">ν ἐξεργασθὲν ἄξιον</supplied>
+<lb n="5"/>τῆς <hi rend="diaeresis">ὑ</hi>ποθέσε<unclear>ω</unclear><supplied reason="lost">ς, χαλεπὸν ἀπὸ τῆς ἀρχῆς</supplied>
+<lb n="6"/><supplied reason="lost">σ</supplied>υν<hi rend="diaeresis">ι</hi>δεῖν· πο<supplied reason="lost">λλὰ γὰρ καὶ τῶν μετὰ μέτρου</supplied>
+<lb n="7"/><supplied reason="lost">π</supplied>οιημάτων <supplied reason="lost">καὶ τῶν καταλογάδην</supplied>
+<lb n="8"/><choice><reg><supplied reason="lost">σ</supplied><unclear>υγγ</unclear>ραμμ<unclear>ά</unclear><supplied reason="lost">των</supplied></reg><orig><supplied reason="lost">σ</supplied><unclear>υν</unclear>ραμμ<unclear>ά</unclear><supplied reason="lost">των</supplied></orig></choice> <supplied reason="lost">ἔτι μὲν ἐν ταῖς δια</supplied>
+<lb n="9" break="no"/><supplied reason="lost">νο</supplied><unclear>ί</unclear><supplied reason="lost">α</supplied><unclear>ι</unclear><supplied reason="lost">ς</supplied> <unclear>ὄ</unclear>ν<unclear>τ</unclear><supplied reason="lost">α τῶν συντιθέντων</supplied>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Pap. Flor. 19, pl.39</bibl>
-               <bibl type="printed">CPF pl. 70</bibl>
+               <bibl type="printed" n="1">Pap. Flor. 19, pl.39</bibl>
+               <bibl type="printed" n="2">CPF pl. 70</bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="m" type="main">Miscellanea Papyrologica in occasione del bicentenario dell'edizione della Charta Borgiana. I</title>
+                  <pubPlace>Firenze</pubPlace>
+                  <date>1990</date>
+                  <editor n="1">
+                     <forename>Mario</forename>
+                     <surname>CAPASSO</surname>
+                  </editor>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/11965"/>
+                  <biblScope n="1" unit="volume">1</biblScope>
+                  <biblScope n="2" unit="pp">367</biblScope>
+                  <biblScope n="3" unit="numbers">1</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short">C.P.F.</title>
+                  <date>2008</date>
+                  <editor/>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/76983"/>
+                  <biblScope n="1" unit="parts">21</biblScope>
+                  <biblScope n="2" unit="no">22</biblScope>
+                  <biblScope n="3" unit="pp" from="456" to="459">456-459</biblScope>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
