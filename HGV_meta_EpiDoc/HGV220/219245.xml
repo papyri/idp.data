@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv219245">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Remains of a Legal Dossier: (A) Accounts &amp; (B) Report of Proceedings</title>
@@ -29,10 +29,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria (?)</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0378" notAfter="0379">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 378 - 379</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0378">378</origDate>
+                     <origPlace>Alexandria ?</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0378"
+                               notAfter="0379">
+                ca. 378 - 379
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0378">378</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,10 +68,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aufstellung</term>
-               <term>Namen</term>
-               <term>Getreide (?)</term>
-               <term>modii</term>
+               <term n="1">Aufstellung</term>
+               <term n="2">Namen</term>
+               <term n="3">Getreide (?)</term>
+               <term n="4">modii</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,16 +80,16 @@
          <change who="HGV" when="2014-12-23">Record last modified</change>
          <change when="2015-02-12" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Monts. Roca</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">70</biblScope>
-                  <biblScope type="generic">Document 1</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">70</biblScope>
+                  <biblScope n="3" type="generic">Document 1</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,6 +98,12 @@
                <bibl type="illustration">Tafelanhang, Nr. 70</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations" n="1">Document 1: “---- (son) of --nus 400 modii on behalf of Nikantinoos -- 2900 modii as follows: on behalf of Anysios -- (son) of (or: through?) Euangelos 600 modii and on behalf of Kous- -- and Kyros and ---- (son) of (or: through?) Harpokration [--] modii and on behalf of N.N. 1985 modii as follows; on behalf of --- (son of) --is 2900 modii as follows: on behalf of N.N. son of N.N. through Soter his successor (?) 2100 modii ; [on behalf of / through N.N.] son of --tion, villager, 700 modii and on behalf of --us son of Eulogios through the same (person) 500 modii and on behalf of N.N. son of Heron through N.N. his successor on behalf of ----.”</bibl>
+               <bibl type="translations" n="2">Document 2: “Copy. After the consulate of our Lords Valens VI and Valentinianus Iunior II, perpetual Augusti, --- nth indiction. In defence of Theodore the nauclerus --- the advocate Soterichus said: “Theodore --- having delivered in full --- the guaranty (?) ---.” Flavius Cratinus, vir clarissimus, prefect of the Annona of Alexandria said: “---”; and he replied: “To the court --- I receive from the granaries of Alexandria ---” (in / after the consulate) of Valens Augustus for the sixth time and Valentinianus Iunior for the second time --- Flavius Cratinus, vir clarissimus, prefect of the Annona of Alexandria said: “By --- Theodore ---”.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
