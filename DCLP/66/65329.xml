@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65329" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Lond. Lit. 231</title>
@@ -14,7 +14,11 @@
             <idno type="filename">65329</idno>
             <idno type="dclp-hybrid">p.lond.lit;;231</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,26 +31,35 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">17.5 cm</width>
+                              <height unit="cm">21.6 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="5">
                            <p>papyrus sheet (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>uncial</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,38 +70,123 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term>amulet</term>
-               <term>phylakterion</term>
-               <term>magic</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">amulet with doxology and prayer</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
+               <term n="4">amulet</term>
+               <term n="5">phylakterion</term>
+               <term n="6">magic</term>
+               <term n="7" type="overview">amulet with doxology and prayer</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1" xml:id="lb1"/>τῷ πατρὶ <unclear>καὶ</unclear> <unclear>τῷ</unclear> <unclear>υἱῳ</unclear> <supplied reason="lost">κα</supplied>ὶ τῷ ἁ<supplied reason="lost">γίῳ πνεύματι</supplied>
+<lb n="2"/>νῦν κα<supplied reason="omitted">ὶ</supplied> <supplied reason="omitted">ἀ</supplied>εὶ καὶ <supplied reason="omitted">εἰς</supplied> τοὺς αἰῶνας τ<supplied reason="lost">ῶν αἰώνων, τὸν</supplied>
+<lb n="3"/><unclear>υἱ</unclear>ὸν μονογενῆ περβέβλημ<unclear>α</unclear><supplied reason="lost">ι·</supplied>
+<lb n="4"/><choice><reg>φεῦγε</reg><orig>φύγε</orig></choice> ἀπ’ ἐμοῦ, πᾶν κακόν, πᾶν πο<supplied reason="lost">νηρόν,</supplied>
+<lb n="5" xml:id="lb5"/>τὸ αἷμα τοῦ <expan>Χ<ex>ριστο</ex>ῦ</expan>, φεῖσαι τῷ φοροῦντ<supplied reason="lost">ι.</supplied>
+<lb n="5"/><space quantity="9" unit="line" precision="low"/>
+</ab>
+</div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb1" xml:space="preserve"><ref>1</ref> <p>δόχα τῷ... e.g., <emph rend="italics">PSI</emph> 6.719.5: Preisendanz</p></item>
+               <item corresp="#lb5" xml:space="preserve"><ref>5</ref> <p>χ̅υ̅ pap.</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P. Lond. Lit.</title>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Lond.Lit.</title>
+                  <author n="1">
+                     <forename>H.G.M.</forename>
+                     <surname>Milne</surname>
+                  </author>
+                  <date>1927</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95347"/>
                   <biblScope unit="number">231</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">Pap.Graec.Mag. 2</title>
+                  <author n="1">
+                     <forename>Karl</forename>
+                     <surname>Preisendanz</surname>
+                  </author>
+                  <pubPlace n="1">Stuttgart</pubPlace>
+                  <date>1974</date>
+                  <editor n="1">
+                     <forename>Albert</forename>
+                     <surname>Henrichs</surname>
+                  </editor>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8361"/>
+                  <biblScope n="1" unit="number">5d</biblScope>
+                  <biblScope n="2" unit="page">194</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Lond. 3</title>
+                  <author n="1">
+                     <forename>Frederic Georges</forename>
+                     <surname>Kenyon</surname>
+                  </author>
+                  <pubPlace n="1">London</pubPlace>
+                  <date>1907</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95198"/>
+                  <biblScope n="1" unit="fragment">1176</biblScope>
+                  <biblScope n="2" unit="page">LXII</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="m" type="main">Catalogue des papyrus littéraires juifs et chrétiens.</title>
+                  <author n="1">
+                     <surname>van Haelst</surname>
+                     <forename>Joseph</forename>
+                  </author>
+                  <pubPlace>Paris</pubPlace>
+                  <date>1976</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope n="1" unit="fragment">933</biblScope>
+                  <biblScope n="2" unit="page">936</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="j" type="short">BASP</title>
+                  <author n="1">
+                     <surname>DE BRUYN</surname>
+                     <forename>Theodore S.</forename>
+                  </author>
+                  <date>2011</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/79961"/>
+                  <biblScope n="1" unit="number">23</biblScope>
+                  <biblScope n="2" unit="page" from="186" to="187">186-187</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
       </body>
-   </text>
+  </text>
 </TEI>
