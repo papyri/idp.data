@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m154286" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>O. Petr. Mus. 59</title>
+            <title>writing exercise: hexameter with all letters of alphabet (abrochiton etc.)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">154286</idno>
             <idno type="dclp-hybrid">o.petr.mus;;59</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>pottery</material>
+                           <dimensions>
+                              <width unit="cm">6.5 cm</width>
+                              <height unit="cm">6.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -35,24 +43,29 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>Biblical majuscule</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Memnoneia - Djeme (U, Egypt); written: Memnoneia - Djeme (U, Egypt)</origPlace>
+                     <origPlace>Fundort: Memnoneia - Djeme (U, Egypt); Schreibort: Memnoneia - Djeme (U, Egypt)</origPlace>
                      <origDate notBefore="0500" notAfter="0699">500 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">U</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">U</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="http://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
                      </p>
                   </provenance>
                </history>
@@ -61,39 +74,56 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>writing exercice</term>
-               <term>poetry (hexameter)</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="overview">writing exercise: hexameter with all letters of alphabet (abrochiton etc.)</term>
+               <term n="1" type="culture">literature</term>
+               <term n="2" type="culture">science</term>
+               <term n="3">writing exercice</term>
+               <term n="4">poetry (hexameter)</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/>ἁβροχίτ
+<lb n="2" break="no"/>ων δ’ <supplied reason="omitted">ὁ</supplied> φύ<supplied reason="omitted">λ</supplied>α<supplied reason="lost">ξ</supplied>
+<lb n="3"/><supplied reason="lost">θ</supplied>ηροζυ<supplied reason="lost">γο</supplied>
+<lb n="4" break="no"/><supplied reason="lost">καμ</supplied>ψιμ<supplied reason="lost">ετ</supplied>
+<lb n="5" break="no"/><supplied reason="lost">ωπο</supplied><unclear>ς</unclear>
+</ab>
+      </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">O.Petr.Mus.</title>
+                  <pubPlace n="1">Firenze</pubPlace>
+                  <date>2012</date>
+                  <editor n="1">
+                     <forename>Maria Serena</forename>
+                     <surname>Funghi</surname>
+                  </editor>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/82190"/>
                   <biblScope unit="number">59</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">O. Petrie Mus.</title>
-                  <!--ignore - stop-->
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
       </body>
-   </text>
+  </text>
 </TEI>
