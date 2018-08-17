@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv121883">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Reçu</title>
@@ -29,16 +29,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Muchis (?) (Arsinoites)</origPlace>
+                     <origPlace>Muchis ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0220" precision="medium">ca. 220 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/736970 http://www.trismegistos.org/place/1396">Muchis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +64,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Cheirographon</term>
-               <term>Stasô und Antipatros gegenüber Kalliphôn</term>
-               <term>Bestätigung des Verkaufs einer Eselin und ihres Fohlens</term>
-               <term>Quittung des Empfangs des Kaufpreises; die Eselin war Gegenstand einer Enteuxis; Gewährleistungsklausel</term>
+               <term n="1">Cheirographon</term>
+               <term n="2">Stasô und Antipatros gegenüber Kalliphôn</term>
+               <term n="3">Bestätigung des Verkaufs einer Eselin und ihres Fohlens</term>
+               <term n="4">Quittung des Empfangs des Kaufpreises; die Eselin war Gegenstand einer Enteuxis; Gewährleistungsklausel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-16T12:00:59-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-16T11:35:03-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T06:50:04-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image(s) (online)</change>
+         <change when="2018-08-16T06:49:54-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image(s) (online)</change>
          <change who="HGV" when="2011-04-26">Record created</change>
          <change who="HGV" when="2011-11-23">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Epistates Demetrios. Tag: 19. Mecheir.</p>
@@ -84,8 +94,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">140</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">140</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,6 +104,13 @@
                <bibl type="illustration">Beiliegende CD</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb140.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv17693">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Übereignung einer verfallenen Hypothek</title>
@@ -31,26 +31,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Memphis oder Delta (?)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origPlace>Memphis oder Delta ?</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0151"
                                notAfter="0152"
                                cert="low">151 - 152 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0174"
                                notAfter="0175"
                                cert="low">174 - 175 (?)</origDate>
-                     <origDate xml:id="dateAlternativeZ"
+                     <origDate n="3"
+                               xml:id="dateAlternativeZ"
                                notBefore="0130"
                                notAfter="0131"
                                cert="low">130 - 131 (?)</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
                         <placeName type="ancient"
                                    ref="http://pleiades.stoa.org/places/736963 http://www.trismegistos.org/place/1343 http://www.trismegistos.org/place/1344">Memphis</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
                         <placeName type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/730105 http://www.trismegistos.org/place/544">Delta</placeName>
@@ -61,8 +64,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -77,18 +81,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Abtretung (Grundstück mit Hypothek)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Abtretung (Grundstück mit Hypothek)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-07-17T09:52:00-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-07-17T08:22:05-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-07-17T03:27:42-04:00"
+                 who="http://papyri.info/users/elenachepel">Submit - added link to the digital image</change>
+         <change when="2018-07-17T03:27:33-04:00"
+                 who="http://papyri.info/users/elenachepel">Commit - added link to the digital image</change>
          <change who="HGV" when="1993-08-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierungen: 130 - 131 und 174 - 175.</p>
@@ -97,14 +109,21 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ross. Georg.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">30</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">30</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://goskatalog.ru/portal/#/collections?id=6987006"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

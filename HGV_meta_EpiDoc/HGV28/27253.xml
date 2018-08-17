@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv27253">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Rechnung von Ausgaben für Feste</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0176" notAfter="0300" precision="low">spätes II - III</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="0176" notAfter="0300" precision="low">Ende II - III</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,19 +62,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Rechnung</term>
-               <term>Ausgaben</term>
-               <term>Feste</term>
+               <term n="1">Rechnung</term>
+               <term n="2">Ausgaben</term>
+               <term n="3">Feste</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-07-17T08:03:38-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-07-17T06:02:28-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-07-17T03:37:24-04:00"
+                 who="http://papyri.info/users/elenachepel">Submit - added link to the digital image</change>
+         <change when="2018-07-17T03:37:11-04:00"
+                 who="http://papyri.info/users/elenachepel">Commit - added link to the digital image</change>
          <change who="HGV" when="1993-08-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zum Ort vgl. BL VII, S. 170. Zur Datierung vgl. BL XI, S. 186. Zu Z. 43 vgl. APF 46, 2000, S. 117, Anm. 126; zu Z. 47 vgl. ebenda, S. 104; zu Z. 55 vgl. ebenda, S. 123.</p>
@@ -82,24 +91,24 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ross. Georg.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">41</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">41</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">167</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">186</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">166</biblScope>
                </bibl>
             </listBibl>
@@ -107,6 +116,13 @@
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://goskatalog.ru/portal/#/collections?id=6987056"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
