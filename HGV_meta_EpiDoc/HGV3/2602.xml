@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2602">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Plainte et réclamation d'objets</title>
@@ -29,18 +29,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Muchis (?) (Arsinoites)</origPlace>
+                     <origPlace>Muchis ? (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0219-08-13" notAfter="-0219-09-11">
-                        <offset type="after" n="1">nach (?)</offset>
-                        <certainty locus="value" match="../offset[@type='after']"/> 13. Aug. - 11. Sept. 219 v.Chr.</origDate>
+                        <certainty locus="value" match="../offset[@type='after']"/>
+                        <offset n="1" type="after">nach (?)</offset>
+                13. Aug. -
+                11. Sept. 219 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/736970 http://www.trismegistos.org/place/1396">Muchis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,21 +69,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe (Enteuxis)</term>
-               <term>Tautôs an den König</term>
-               <term>Klage gegen Demetrios</term>
-               <term>Entwendung (?) von Wertgegenständen</term>
+               <term n="1">Eingabe (Enteuxis)</term>
+               <term n="2">Tautôs an den König</term>
+               <term n="3">Klage gegen Demetrios</term>
+               <term n="4">Entwendung (?) von Wertgegenständen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-19T10:12:18-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-19T09:38:09-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T05:13:38-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image(s) (online)</change>
+         <change when="2018-08-16T05:13:27-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image(s) (online)</change>
          <change who="HGV" when="1994-07-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Epistates Demetrios.</p>
@@ -98,8 +111,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">110</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">110</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -114,6 +127,16 @@
                <bibl type="publication" subtype="other">SB XVIII 13839</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb110.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb110v.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
