@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv121856">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettre de Pabeis et de Hôros à Aristarchos</title>
@@ -29,17 +29,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ghoran (Arsinoites) (?)</origPlace>
+                     <origPlace>Ghoran ? (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0250" notAfter="-0238">
                         <precision match="../@notBefore" degree="0.5"/>
-                        <offset type="before" n="1">vor (?)</offset>
-                        <certainty locus="value" match="../offset[@type='before']"/> ca. 250 - 238 v.Chr.</origDate>
+                        <certainty locus="value" match="../offset[@type='before']"/>
+                        <offset n="1" type="before">vor (?)</offset>
+                ca. 250 -
+                238 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" cert="low">Ghoran</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" cert="low">Ghoran</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,19 +67,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat?)</term>
-               <term>Pabeis und Horos an Aristarchos</term>
-               <term>Fragment</term>
+               <term n="1">Brief (privat?)</term>
+               <term n="2">Pabeis und Horos an Aristarchos</term>
+               <term n="3">Fragment</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-20T08:39:37-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-20T06:03:00-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T04:57:41-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image(s) (online)</change>
+         <change when="2018-08-16T04:57:35-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image(s) (online)</change>
          <change who="HGV" when="2011-04-15">Record created</change>
          <change who="HGV" when="2011-11-23">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Nomarchen Aristarchos.</p>
@@ -84,8 +96,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">102</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">102</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,6 +106,13 @@
                <bibl type="illustration">Beiliegende CD</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb102.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
