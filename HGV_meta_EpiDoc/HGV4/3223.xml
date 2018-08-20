@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3223">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettre du père d'Aristarchos à son fils</title>
@@ -29,17 +29,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ghoran (Arsinoites)</origPlace>
+                     <origPlace>Ghoran (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0250" notAfter="-0238" cert="low">
                         <precision match="../@notBefore" degree="0.5"/>
-                        <offset type="before" n="1">vor (?)</offset>
-                        <certainty locus="value" match="../offset[@type='before']"/> ca. 250 - 238 v.Chr. (?)</origDate>
+                        <certainty locus="value" match="../offset[@type='before']"/>
+                        <offset n="1" type="before">vor (?)</offset>
+                ca. 250 -
+                238 v.Chr. (?)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Ghoran</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Ghoran</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,21 +67,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>N.N. (Vater) an Aristarchos und Mikkale (seine Kinder)</term>
-               <term>Geschäftliches</term>
-               <term>Weizen</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">N.N. (Vater) an Aristarchos und Mikkale (seine Kinder)</term>
+               <term n="3">Geschäftliches</term>
+               <term n="4">Weizen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-20T08:54:49-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-20T06:47:36-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T04:55:37-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image (online)</change>
+         <change when="2018-08-16T04:55:28-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image (online)</change>
          <change who="HGV" when="1993-10-28">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört vermutlich zum Archiv des Nomarchen Aristarchos.</p>
@@ -86,25 +98,35 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">100</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">100</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Beiliegende CD</bibl>
-               <bibl type="illustration">P.Lille I, Planche VI</bibl>
-               <bibl type="illustration">Cavallo - Maehler, Hellenistic Bookhands, S. 31, 5</bibl>
+               <bibl type="illustration" n="1">Beiliegende CD</bibl>
+               <bibl type="illustration" n="2">P.Lille I, Planche VI</bibl>
+               <bibl type="illustration" n="3">Cavallo - Maehler, Hellenistic Bookhands, S. 31, 5</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lille I 17</bibl>
-               <bibl type="publication" subtype="other">Witkowski, Epistulae privatae 16</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lille I 17</bibl>
+               <bibl type="publication" subtype="other" n="2">Witkowski, Epistulae privatae 16</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb100.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb100v.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
