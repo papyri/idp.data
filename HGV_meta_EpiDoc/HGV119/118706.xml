@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv118706">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Reçu sous serment de Harmais à Aristarchos</title>
@@ -29,15 +29,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ghoran (Arsinoites)</origPlace>
+                     <origPlace>Ghoran (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0248-08-12">
-                        <certainty locus="value" match="../day-from-date(@when)"/>12. Aug. 248 v.Chr. (Tag unsicher)</origDate>
+                12. Aug. 248 v.Chr. (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Ghoran</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Ghoran</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,20 +64,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Harmais gegenüber Aristarchos</term>
-               <term>Empfang des Lohnes (?) für Arbeiter</term>
-               <term>die beim beim staatlichen Wegebau eingesetzt werden</term>
+               <term n="1">Quittung</term>
+               <term n="2">Harmais gegenüber Aristarchos</term>
+               <term n="3">Empfang des Lohnes (?) für Arbeiter</term>
+               <term n="4">die beim beim staatlichen Wegebau eingesetzt werden</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-21T09:47:16-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-21T09:22:45-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T02:57:07-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link to digital image (online)</change>
+         <change when="2018-08-16T02:57:00-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link to digital image (online)</change>
          <change who="HGV" when="2011-04-12">Record created</change>
          <change who="HGV" when="2011-11-23">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Demotisch - griechisch. Gehört zum Archiv des Nomarchen Aristarchos.</p>
@@ -83,8 +94,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">81</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">81</biblScope>
                </bibl>
                <bibl>
                   <title>DAHT</title>
@@ -97,6 +108,13 @@
                <bibl type="illustration">Planche II und beiliegende CD</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb081.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
