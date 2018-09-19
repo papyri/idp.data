@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2487">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2487">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -9,16 +8,14 @@
          <publicationStmt>
             <idno type="filename">2487</idno>
             <idno type="TM">2487</idno>
-            <idno type="ddb-perseus-style">0144;6;262</idno>
-            <idno type="ddb-filename">p.koeln.6.262</idno>
-            <idno type="ddb-hybrid">p.koeln;6;262</idno>
+            <idno type="ddb-perseus-style">;15;603</idno>
+            <idno type="ddb-filename">p.koeln.15.603</idno>
+            <idno type="ddb-hybrid">p.koeln;15;603</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <placeName>
-                     <settlement>unbekannt</settlement>
-                  </placeName>
+                  <idno type="invNo">Cologne, Papyrussammlung P. 20350 - 1 + Cologne, Papyrussammlung P. 20765</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,12 +29,12 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate notAfter="-0213-03-11">
-                        <offset type="before" n="1">vor</offset> 11. März 213 v.Chr.</origDate>
+                     <origDate when="-0213-03-05">5. März 213 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName type="ancient" subtype="nome"
+                                   ref="http://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
@@ -47,7 +44,7 @@
       </fileDesc>
       <encodingDesc>
          <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -74,34 +71,47 @@
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2018-08-23" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört zum Archiv des Oikonomos Apollonios. Zum Verso vgl. P.Köln XI, S. 91, Anm. 28.</p>
+            <p>Gehört zum Apollonios - Archiv (P.Köln XV 602–604; 605?); Datierung nach dem Finanzjahr.</p>
+         </div>
+         <div type="commentary" subtype="mentionedDates">
+            <head>Erwähnte Daten</head>
+            <note type="original">Empfangsvermerk, Rückseite Z. 1: 11. März 213 v. Chr.</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Empfangsvermerk, Rückseite Z. 1</ref>
+                  <date type="mentioned" when="-0213-03-11">11. März 213 v. Chr.</date>
+               </item>
+            </list>
+         </div>
+         <div type="edition">
+            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">262</biblScope>
+                  <biblScope type="volume">15</biblScope>
+                  <biblScope type="numbers">603</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel XXXV</bibl>
+               <bibl type="illustration">Tafel XXXIX</bibl>
             </p>
          </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/Karte/VI_262.html"/>
-                  <head>Abbildung im Internet</head>
-               </figure>
-            </p>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">Linke Hälfte: P.Köln VI 262</bibl>
+            </listBibl>
          </div>
       </body>
    </text>

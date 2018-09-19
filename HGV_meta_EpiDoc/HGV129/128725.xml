@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv128725">
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv128725">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragmente einer Quittung</title>
+            <title>Eparurionquittung</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">128725</idno>
             <idno type="TM">128725</idno>
-            <idno type="ddb-perseus-style">0144;12;473</idno>
-            <idno type="ddb-filename">p.koeln.12.473</idno>
-            <idno type="ddb-hybrid">p.koeln;12;473</idno>
+            <idno type="ddb-perseus-style">;15;597</idno>
+            <idno type="ddb-filename">p.koeln.15.597</idno>
+            <idno type="ddb-hybrid">p.koeln;15;597</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Köln inv. 21104-1</idno>
+                  <idno type="invNo">Cologne, Papyrussammlung P. 21104 - 1 + Cologne, Papyrussammlung P. 21843</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -30,11 +29,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites (?)</origPlace>
-                     <origDate notBefore="-0256" notAfter="-0255">256 - 255 v.Chr.</origDate>
+                     <origDate notBefore="-0256-07-07" notAfter="-0256-10-05">
+                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>7. Juli - 5. Okt. 256 v.Chr. (Monat und Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
+                        <placeName type="ancient" subtype="nome" cert="low"
+                                   ref="http://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
@@ -44,7 +46,7 @@
       </fileDesc>
       <encodingDesc>
          <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,8 +62,9 @@
          <textClass>
             <keywords scheme="hgv">
                <term>Quittung</term>
-               <term>Steuern (Geld)</term>
-               <term>zwei Fragmente</term>
+               <term>Eparurion</term>
+               <term>Garten</term>
+               <term>Isokrates</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -69,32 +72,37 @@
          <change who="HGV" when="2010-08-01">Record created</change>
          <change who="HGV" when="2011-04-06">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2018-08-23" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
+         <div type="commentary" subtype="general">
+            <p>Gehört zum Pasis - Archiv.</p>
+         </div>
+         <div type="edition">
+            <p>Kein Text: not yet entered</p>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">473</biblScope>
+                  <biblScope type="volume">15</biblScope>
+                  <biblScope type="numbers">597</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel XVb</bibl>
+               <bibl type="illustration">Tafel III</bibl>
             </p>
          </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="http://papyri-koeln.dl.uni-leipzig.de/receive/KlnPapyri_schrift_00001020"/>
-                  <head>Abbildung im Internet</head>
-               </figure>
-            </p>
-        </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">Z. 1–8: P.Köln XII 473</bibl>
+            </listBibl>
+         </div>
       </body>
    </text>
 </TEI>

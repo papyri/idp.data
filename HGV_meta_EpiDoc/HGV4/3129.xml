@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3129">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittance de loyer d'un klèros</title>
@@ -29,13 +29,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites bzw. Ghoran (Arsinoites)</origPlace>
+                     <origPlace>Fundort: Ghoran (Arsinoites, Ägypten); Schreibort: Oxyrhynchites (Ägypten)</origPlace>
                      <origDate notBefore="-0266-04-07">
-                        <offset type="after" n="1">nach</offset> 7. Apr. 266 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                7. Apr. 266 v.Chr.
+              </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient">Oxyrhynchites bzw. Ghoran (Arsinoites)</placeName>
+                        <placeName n="1" type="modern">Ghoran</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoEAJ49B">
+                        <placeName n="1" type="ancient">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -43,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,21 +70,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Timokrates gegenüber Zenodoros</term>
-               <term>Restzahlung von Pachtzins</term>
-               <term>Getreide</term>
+               <term n="1">Quittung</term>
+               <term n="2">Timokrates gegenüber Zenodoros</term>
+               <term n="3">Restzahlung von Pachtzins</term>
+               <term n="4">Getreide</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-22T05:29:47-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-22T04:23:17-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T02:42:36-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link to digital image (online)</change>
+         <change when="2018-08-16T02:42:30-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link to digital image (online)</change>
          <change who="HGV" when="1991-12-05">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Dossier des Lochagos Zenodoros. Zu Z. 10 vgl. BASP 51, 2014, S. 104, Anm. 13.</p>
@@ -82,18 +101,18 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">72</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">72</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Recto: Beiliegende CD</bibl>
-               <bibl type="illustration">P.Sorb. I, Planche IX</bibl>
-               <bibl type="illustration">GMAW, S. 92, 53</bibl>
-               <bibl type="illustration">Verso: Beiliegende CD</bibl>
-               <bibl type="illustration">P.Sorb. III, S. 38</bibl>
+               <bibl type="illustration" n="1">Recto: Beiliegende CD</bibl>
+               <bibl type="illustration" n="2">P.Sorb. I, Planche IX</bibl>
+               <bibl type="illustration" n="3">GMAW, S. 92, 53</bibl>
+               <bibl type="illustration" n="4">Verso: Beiliegende CD</bibl>
+               <bibl type="illustration" n="5">P.Sorb. III, S. 38</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -102,6 +121,16 @@
                <bibl type="publication" subtype="other">P.Sorb. I 14</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb072.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb072v.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

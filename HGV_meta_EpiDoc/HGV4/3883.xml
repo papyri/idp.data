@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3883">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,16 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites Tebtynis (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0096-07-20">
-                        <certainty locus="value" match="../year-from-date(@when)"/>20. Juli 96 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0063-07-12">
-                        <certainty locus="value" match="../year-from-date(@when)"/>12. Juli 63 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0096-07-20">
+                20. Juli 96 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0063-07-12">
+                12. Juli 63 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -69,12 +74,18 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-27T09:49:52-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-27T09:42:07-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-27T09:41:16-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated image link</change>
          <change who="HGV" when="1997-02-27">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Descr. Alternativdatierung: 12. Juli 63 v. Chr.</p>
@@ -85,14 +96,16 @@
             <note type="original" subtype="Y">12. Juli 64 v. Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
-                  <ref/>
-                  <date type="mentioned" when="-0096-07-20">20. Juli 96 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+               <item n="1">
+                  <date type="mentioned" when="-0096-07-20">
+              20. Juli 96 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
-                  <ref/>
-                  <date type="mentioned" when="-0064-07-12">12. Juli 64 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item n="2">
+                  <date type="mentioned" when="-0064-07-12">
+              12. Juli 64 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>
@@ -101,8 +114,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">253</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">253</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -112,11 +125,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://wwwapp.cc.columbia.edu/ldpd/app/apis/item?mode=item&amp;key=berkeley.apis.155"/>
-                  <head>Abbildung im Internet</head>
+                  <graphic url="http://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=155&amp;item=1"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

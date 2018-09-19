@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv121877">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Plainte à l'archiphylacite</title>
@@ -29,16 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Muchis (Arsinoites)</origPlace>
+                     <origPlace>Muchis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0226-10-19">
-                        <certainty locus="value" match="../year-from-date(@when)"/>19. Okt. 226 v.Chr. (Jahr unsicher)</origDate>
+                19. Okt. 226 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736970 http://www.trismegistos.org/place/1396">Muchis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +66,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>N.N. an einen Archiphylakiten</term>
-               <term>Anzeige eines Überfalls</term>
-               <term>Raub einer Eselin mit ihrem Fohlen und verschiedener Gegenstände</term>
+               <term n="1">Eingabe</term>
+               <term n="2">N.N. an einen Archiphylakiten</term>
+               <term n="3">Anzeige eines Überfalls</term>
+               <term n="4">Raub einer Eselin mit ihrem Fohlen und verschiedener Gegenstände</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-18T10:41:17-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-18T10:00:29-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T06:41:18-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image(s) (online)</change>
+         <change when="2018-08-16T06:41:13-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image(s) (online)</change>
          <change who="HGV" when="2011-04-25">Record created</change>
          <change who="HGV" when="2011-11-23">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Epistates Demetrios.</p>
@@ -88,7 +100,9 @@
                <item>
                   <ref>Fr. 1, Z. 1</ref>
                   <date type="mentioned" when="0226-10-18">
-                     <certainty match="../year-from-date(@when)" locus="value"/>18. Okt. 226 (Jahr unsicher)</date>
+              18. Okt. 226 (Jahr unsicher)
+              <certainty locus="value" match="../date/year-from-date(@when)"/>
+                  </date>
                </item>
             </list>
          </div>
@@ -96,8 +110,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">133</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">133</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,6 +120,13 @@
                <bibl type="illustration">Planche XI und beiliegende CD</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb133.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

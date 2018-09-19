@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2637">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Bordereau d'envoi de témoignages (garantis par serment)</title>
@@ -29,16 +29,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Muchis (?) (Arsinoites)</origPlace>
+                     <origPlace>Muchis ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0220" precision="medium">ca. 220 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/736970 http://www.trismegistos.org/place/1396">Muchis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,23 +64,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich) oder Notiz (?)</term>
-               <term>N.N. an N.N.</term>
-               <term>Entwurf (?)</term>
-               <term>Begleittext zur Übersendung beeideter Zeugenaussagen für einen Prozeß</term>
-               <term>Siegelung</term>
-               <term>Liste der Zeugen</term>
+               <term n="1">Brief (amtlich) oder Notiz (?)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Entwurf (?)</term>
+               <term n="4">Begleittext zur Übersendung beeideter Zeugenaussagen für einen Prozeß</term>
+               <term n="5">Siegelung</term>
+               <term n="6">Liste der Zeugen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-18T11:08:21-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-18T10:45:36-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T06:40:33-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image(s) (online)</change>
+         <change when="2018-08-16T06:40:28-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image(s) (online)</change>
          <change who="HGV" when="1990-11-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Epistates Demetrios.</p>
@@ -87,15 +97,15 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">132</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">132</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Planche XI und beiliegende CD</bibl>
-               <bibl type="illustration">P.Turner, Plate VII</bibl>
+               <bibl type="illustration" n="1">Planche XI und beiliegende CD</bibl>
+               <bibl type="illustration" n="2">P.Turner, Plate VII</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -104,6 +114,16 @@
                <bibl type="publication" subtype="other">P.Turner 16</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb132.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb132v.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

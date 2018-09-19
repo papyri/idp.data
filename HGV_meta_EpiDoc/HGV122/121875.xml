@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv121875">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Plainte au sujet d'un empurismos</title>
@@ -29,16 +29,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Muchis (?) (Arsinoites)</origPlace>
+                     <origPlace>Muchis ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0219-06-09">9. Juni 219 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/736970 http://www.trismegistos.org/place/1396">Muchis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,21 +64,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe (Enteuxis)</term>
-               <term>Epistratos an den König</term>
-               <term>Klage gegen Dorfbewohner von Muchis</term>
-               <term>Erneuerung einer älteren Enteuxis</term>
-               <term>Schaden durch Verlust von Saatgut in einem Feuer infolge von unachtsamem Abbrennen der Felder oder Brandstiftung</term>
+               <term n="1">Eingabe (Enteuxis)</term>
+               <term n="2">Epistratos an den König</term>
+               <term n="3">Klage gegen Dorfbewohner von Muchis</term>
+               <term n="4">Erneuerung einer älteren Enteuxis</term>
+               <term n="5">Schaden durch Verlust von Saatgut in einem Feuer infolge von unachtsamem Abbrennen der Felder oder Brandstiftung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-08-18T16:06:21-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-08-18T11:20:10-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-08-16T05:33:14-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Submit - added link(s) to digital image(s) (online)</change>
+         <change when="2018-08-16T05:33:09-04:00"
+                 who="http://papyri.info/users/ThomasBackhuys">Commit - added link(s) to digital image(s) (online)</change>
          <change who="HGV" when="2011-04-24">Record created</change>
          <change who="HGV" when="2011-11-23">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Epistates Demetrios. P.Sorb. III 129 ist die Reaktion des Demetrios auf die Enteuxis. Zu Z. 14 vgl. BASP 50, 2013, S. 318.</p>
@@ -88,7 +98,7 @@
             <list>
                <item>
                   <ref>Z. 4</ref>
-                  <date type="mentioned" when="-8220-07" cert="low">8 Juli 220 v.Chr. (?)</date>
+                  <date type="mentioned" when="-8220-07" cert="low">Juli 8220 v.Chr. (?)</date>
                </item>
             </list>
          </div>
@@ -96,8 +106,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sorb.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">128</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">128</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,6 +116,16 @@
                <bibl type="illustration">Planche IX und beiliegende CD</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb128.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PSorbiii/Sorb128v.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
