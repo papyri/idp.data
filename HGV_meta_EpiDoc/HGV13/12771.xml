@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12771">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Omologia</title>
@@ -31,16 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bubastos  (Arsinoites)</origPlace>
+                     <origPlace>Bubastos (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0639-10-05">
-                        <certainty locus="value" match="../day-from-date(@when)"/>5. Okt. 639 (Tag unsicher)</origDate>
+                5. Okt. 639 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736899 http://www.trismegistos.org/place/463">Bubastos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,9 +68,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Erbschaft (?)</term>
-               <term>Teilung (?)</term>
-               <term>Notarunterschrift</term>
+               <term n="1">Erbschaft (?)</term>
+               <term n="2">Teilung (?)</term>
+               <term n="3">Notarunterschrift</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,8 +79,8 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL X, S. 163.</p>
@@ -85,30 +89,37 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Prag.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">43</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">43</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">214</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">163</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tav. XLVI</bibl>
-               <bibl type="illustration">XLVII</bibl>
+               <bibl type="illustration" n="1">Tav. XLVI</bibl>
+               <bibl type="illustration" n="2">XLVII</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.psi-online.it/documents/pprag;1;43"/>
+               </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
