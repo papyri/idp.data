@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv15299">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Frammento di registro di tasse</title>
@@ -31,17 +31,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Thinites (?) oder Arsinoites (?)</origPlace>
+                     <origPlace>Thinites, Ägypten oder Arsinoites ?, Ägypten</origPlace>
                      <origDate when="0741-04-29">29. Apr. 741</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
-                        <placeName type="ancient" subtype="nome">Thinites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
+                        <placeName n="1" type="ancient" subtype="nome">Thinites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1" type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,20 +66,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Steuer</term>
-               <term>Pagarchos (Iulianos)</term>
-               <term>arabische Datierung</term>
+               <term n="1">Register</term>
+               <term n="2">Steuer</term>
+               <term n="3">Pagarchos (Iulianos)</term>
+               <term n="4">arabische Datierung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2018-12-03T16:28:42-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-12-03T09:03:08-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-11-13T08:57:04-05:00" who="http://papyri.info/users/NinaS">Submit - added link to the digital image</change>
+         <change when="2018-11-13T08:56:51-05:00" who="http://papyri.info/users/NinaS">Commit - added digital image</change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zu Z. 5 vgl. ZPE 136, 2001, S. 122. Neuedition: ZPE 169, 2009, S.202f. Zum Ort und zur Datierung vgl. ebenda. Vgl. ZPE 186, 2013, S. 273f.</p>
@@ -87,30 +94,37 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Prag.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">27</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">27</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">212</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">161</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tav. XXIX</bibl>
-               <bibl type="illustration">Pap.Flor. XXXI, S. 53, Tav 9 e</bibl>
+               <bibl type="illustration" n="1">Tav. XXIX</bibl>
+               <bibl type="illustration" n="2">Pap.Flor. XXXI, S. 53, Tav 9 e</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.psi-online.it/documents/pprag;1;27"/>
+               </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
