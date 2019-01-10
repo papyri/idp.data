@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35824">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ricevuta di versamento di grano</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kynon (Arsinoites)</origPlace>
+                     <origPlace>Kynon (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741502 http://www.trismegistos.org/place/1195 http://www.trismegistos.org/place/5392">Kynon</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,22 +65,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Getreide</term>
-               <term>Hypodektes</term>
-               <term>Maße</term>
-               <term>Schreiner</term>
-               <term>Diakon</term>
+               <term n="1">Quittung</term>
+               <term n="2">Getreide</term>
+               <term n="3">Hypodektes</term>
+               <term n="4">Maße</term>
+               <term n="5">Schreiner</term>
+               <term n="6">Diakon</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-01-10T08:36:44-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-01-10T07:14:17-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-01-10T06:43:54-05:00" who="http://papyri.info/users/NinaS">Submit - added link to the digital image </change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Datierung: 19. Juli, 9. Indiktion. Gehört zum Dossier des Einnehmers Timotheos. Zur Datierung und zu Z. 2-4 vgl. SPP III2.5, S. 193.</p>
@@ -87,8 +94,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Prag.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">83</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">83</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,6 +104,13 @@
                <bibl type="illustration">Tav. LXXIII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.psi-online.it/documents/pprag;1;83"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
