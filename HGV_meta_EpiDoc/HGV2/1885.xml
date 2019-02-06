@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv1885">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Nikaios to Eukles</title>
@@ -31,16 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0246-05-07">
-                        <certainty locus="value" match="../year-from-date(@when)"/>7. Mai 246 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0245-05-06">
-                        <certainty locus="value" match="../year-from-date(@when)"/>6. Mai 245 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0246-05-07">
+                7. Mai 246 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0245-05-06">
+                6. Mai 245 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,24 +69,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (Geschäfts-)</term>
-               <term>Nikaios an Eukles</term>
-               <term>Transport</term>
-               <term>verschiedene Gegenstände</term>
-               <term>Getreide</term>
-               <term>Nüsse</term>
-               <term>Gemüse</term>
-               <term>Esel</term>
+               <term n="1">Brief (Geschäfts-)</term>
+               <term n="2">Nikaios an Eukles</term>
+               <term n="3">Transport</term>
+               <term n="4">verschiedene Gegenstände</term>
+               <term n="5">Getreide</term>
+               <term n="6">Nüsse</term>
+               <term n="7">Gemüse</term>
+               <term n="8">Esel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-06T04:35:14-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-06T04:29:00-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-06T04:16:49-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - images ajoutées</change>
          <change who="HGV" when="1991-02-04">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Datierung nach dem makedonischen Regierungsjahr. Alternativdatierung: 6. Mai 245 v.Chr. Rückseite: P.Zen. Pestm. 61.</p>
@@ -112,6 +123,16 @@
                <bibl type="translations">P. Jouguet, Cinquantenaire de l`école practique 230 (1921), S. 230 (Z. 1-5)</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2010283.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2020283.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
