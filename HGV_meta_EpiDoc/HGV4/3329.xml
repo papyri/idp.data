@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3329">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Validité d’un contrat non scellé</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bakchias (Arsinoites)</origPlace>
+                     <origPlace>Bakchias (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0218-05-11">11. Mai 218 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736896 http://www.trismegistos.org/place/392">Bakchias</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,21 +65,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Petoys an den König</term>
-               <term>Gültigkeit eines Vertrages (Pacht</term>
-               <term>Land) trotz unterbliebener Siegelung</term>
-               <term>die auch später von den Verpächtern verweigert wurde</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Petoys an den König</term>
+               <term n="3">Gültigkeit eines Vertrages (Pacht</term>
+               <term n="4">Land) trotz unterbliebener Siegelung</term>
+               <term n="5">die auch später von den Verpächtern verweigert wurde</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-10T09:25:15-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready</change>
+         <change when="2019-02-09T15:25:11-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - FIne</change>
+         <change when="2019-02-08T03:55:22-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - images ajoutées</change>
          <change who="HGV" when="1992-11-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -86,7 +94,7 @@
             <list>
                <item>
                   <ref>Z. 3</ref>
-                  <date type="mentioned" notBefore="-0218-01-15" notAfter="-0218-02-13">15. Jan.  - 13. Febr. 218 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0218-01-15" notAfter="-0218-02-13">15. Jan. 218 - 13. Feb. 218 v.Chr.</date>
                </item>
             </list>
          </div>
@@ -104,18 +112,23 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lille II 12</bibl>
-               <bibl type="publication" subtype="other">M.Chr. 130</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lille II 12</bibl>
+               <bibl type="publication" subtype="other" n="2">M.Chr. 130</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Enteux.&amp;vVol=&amp;vNum=54"/>
-                  <head>Abbildung im Internet</head>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Enteuxeis-bw/300dpi/P.Enteux.54r.jpg"/>
+               </figure>
+               <figure n="3">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Enteuxeis-bw/300dpi/P.Enteux.54v.jpg"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
