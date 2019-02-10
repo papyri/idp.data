@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3309">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Livraison incomplète d’une commande de vin</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kerkesucha Orus (Arsinoites)</origPlace>
+                     <origPlace>Kerkesucha Orus (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0218-05-11">11. Mai 218 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741494 http://www.trismegistos.org/place/1070">Kerkesucha Orus</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,20 +65,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Sopatros</term>
-               <term>Dionysios und Ptolemaios an den König</term>
-               <term>unvollständige Lieferung (Wein)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Sopatros</term>
+               <term n="3">Dionysios und Ptolemaios an den König</term>
+               <term n="4">unvollständige Lieferung (Wein)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-10T09:46:26-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-10T09:29:55-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-08T03:49:15-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - images ajoutées</change>
          <change who="HGV" when="1992-11-26">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -85,7 +93,7 @@
             <list>
                <item>
                   <ref>Z. 2</ref>
-                  <date type="mentioned" notBefore="-0218-03-16" notAfter="-0218-04-14">16. März  - 14. Apr. 218 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0218-03-16" notAfter="-0218-04-14">16. März 218 - 14. Apr. 218 v.Chr.</date>
                </item>
             </list>
          </div>
@@ -108,12 +116,17 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Enteux.&amp;vVol=&amp;vNum=34"/>
-                  <head>Abbildung im Internet</head>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Enteuxeis-bw/300dpi/P.Enteux.34r.jpg"/>
+               </figure>
+               <figure n="3">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Enteuxeis-bw/300dpi/P.Enteux.34v.jpg"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
