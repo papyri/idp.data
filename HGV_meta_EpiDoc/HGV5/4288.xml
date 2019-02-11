@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4288">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Abrechnung wegen der Aufzucht von fünf Kälbern</title>
@@ -31,15 +31,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ghoran (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0232" cert="low">232 v.Chr. (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0231" cert="low">231 v.Chr. (?)</origDate>
+                     <origPlace>Ghoran (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0232" cert="low">232 v.Chr. (?)</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0231" cert="low">231 v.Chr. (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Ghoran</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Ghoran</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,25 +64,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Kälber</term>
-               <term>Aufzucht</term>
-               <term>Moschotrophos</term>
-               <term>Hirte</term>
-               <term>Gegenstände</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Kälber</term>
+               <term n="3">Aufzucht</term>
+               <term n="4">Moschotrophos</term>
+               <term n="5">Hirte</term>
+               <term n="6">Gegenstände</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-11T15:50:14-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-11T09:48:07-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-06T06:43:45-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - image ajoutée</change>
          <change who="HGV" when="1990-09-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 231 v. Chr. </p>
+            <p>Alternativdatierung: 231 v. Chr.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -93,8 +100,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">11965</biblScope>
+                  <biblScope n="1" type="volume">14</biblScope>
+                  <biblScope n="2" type="numbers">11965</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -110,6 +117,13 @@
                <bibl type="translations">J. Scherer, Festschrift C. Preaux (1975) S. 582</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2012393.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
