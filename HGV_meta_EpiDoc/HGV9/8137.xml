@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv8137">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Schluß einer Quittung für Schiffsfracht</title>
@@ -31,22 +31,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Hormu (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origPlace>Ptolemais Hormu (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="-0156"
                                notAfter="-0155"
                                cert="low">156 - 155 v.Chr. (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="-0145"
                                notAfter="-0144"
                                cert="low">145 - 144 v.Chr. (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737029 http://www.trismegistos.org/place/2024">Ptolemais Hormu</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -54,8 +57,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -70,20 +74,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Fracht</term>
-               <term>Schiff</term>
-               <term>Weizen</term>
+               <term n="1">Quittung</term>
+               <term n="2">Fracht</term>
+               <term n="3">Schiff</term>
+               <term n="4">Weizen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-13T08:26:13-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-12T17:01:11-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-06T06:39:14-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - image ajoutée</change>
          <change who="HGV" when="1990-09-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Neuedition: ZPE 89, 1991, S. 64-65. Alternativdatierung: 145 - 144 v.Chr. Zur Datierung vgl. BL X, S. 210.</p>
@@ -92,8 +102,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">11868</biblScope>
+                  <biblScope n="1" type="volume">14</biblScope>
+                  <biblScope n="2" type="numbers">11868</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,7 +111,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">210</biblScope>
                </bibl>
             </listBibl>
@@ -115,10 +125,17 @@
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">W. Clarysse, CE 51, 1976, S. 159</bibl>
-               <bibl type="translations">W. Clarysse - H. Hauben, ZPE 89, 1991, S. 64</bibl>
+               <bibl type="translations" n="1">W. Clarysse, CE 51, 1976, S. 159</bibl>
+               <bibl type="translations" n="2">W. Clarysse - H. Hauben, ZPE 89, 1991, S. 64</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2010111.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
