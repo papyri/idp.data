@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv8131">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Nauklerosquittung</title>
@@ -31,18 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Pyrrhia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0155-03-24">
-                        <certainty locus="value" match="../year-from-date(@when)"/>24. März 155 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0144-03-21">
-                        <certainty locus="value" match="../year-from-date(@when)"/>21. März 144 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Pyrrhia (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0155-03-24">
+                24. März 155 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0144-03-21">
+                21. März 144 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741589 http://www.trismegistos.org/place/2036">Pyrrhia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,19 +72,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Ladung</term>
-               <term>Getreide</term>
+               <term n="1">Quittung</term>
+               <term n="2">Ladung</term>
+               <term n="3">Getreide</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-13T08:44:30-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-11T06:42:55-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-08T03:38:34-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - image ajoutée</change>
          <change who="HGV" when="1998-03-06">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 21. März 144 v. Chr.</p>
@@ -87,8 +99,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">15151</biblScope>
+                  <biblScope n="1" type="volume">20</biblScope>
+                  <biblScope n="2" type="numbers">15151</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -96,7 +108,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">235</biblScope>
                </bibl>
             </listBibl>
@@ -106,6 +118,13 @@
                <bibl type="illustration">ZPE 89, 1991, Tafel III</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2010112.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
