@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m66749" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Bingen. 19</title>
+            <title>Anthologia Palatina 09. 538 (pangramma) + amulet</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">66749</idno>
             <idno type="dclp-hybrid">p.bingen;;19</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">5 cm</width>
+                              <height unit="cm">4.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -43,15 +51,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0450" notAfter="0459">450 - 459</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,21 +70,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>amulet</term>
-               <term>phylakterion</term>
-               <term>magic</term>
-               <term type="culture">literature</term>
-               <term type="culture">religion</term>
-               <term type="religion">classical</term>
-               <term type="overview">Anthologia Palatina 09. 538 (pangramma) + amulet</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">poetry</term>
+               <term n="5">amulet</term>
+               <term n="6">phylakterion</term>
+               <term n="7">magic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -87,36 +94,59 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="1" unit="character"/> <unclear>υαυ</unclear> <unclear> </unclear> <unclear> </unclear> <gap reason="lost" quantity="1" unit="character"/>
+<lb n="2"/><expan>ἁβροχίτω<supplied reason="lost"><ex cert="low">ν</ex></supplied></expan>
+<lb n="3"/>δ’ ὁ φύλαξ
+<lb n="4"/>θηροζυγο
+<lb n="5" break="no"/>καμψιμέ
+<lb n="6" break="no"/>τωποϲ
+<lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+ <div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>πετρο<supplied reason="lost">ϲ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><space extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Bingen</title>
+                  <author n="1">
+                     <forename>Henri</forename>
+                     <surname>Melaerts</surname>
+                  </author>
+                  <pubPlace n="1">Leuven</pubPlace>
+                  <date>2000</date>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16093"/>
                   <biblScope unit="number">19</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Bingen</title>
-                  <!--ignore - stop-->
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg7000">Anthologia Palatina</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg7000">Anthologia Palatina</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/2180">Anthologia Palatina</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P.Bingen pl.12</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
