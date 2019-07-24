@@ -19,9 +19,9 @@ install:
   - wget 'https://github.com/papyri/jing-trang/releases/download/xsd_bce_leap_years-1.0/jing.jar'
   - mkdir -p epidoc/8.13 epidoc/8.16 epidoc/8.23
   - find epidoc -type f
-  - wget -nc -O epidoc/8.13/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng' && sleep 3 || :
-  - wget -nc -O epidoc/8.16/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng' && sleep 3 || :
-  - wget -nc -O epidoc/8.23/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng' || :
+  - wget -nc -O epidoc/8.13/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng' && sleep 3 || echo "file already exists"
+  - wget -nc -O epidoc/8.16/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng' && sleep 3 || echo "file already exists"
+  - wget -nc -O epidoc/8.23/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng' || echo "file already exists"
   - find epidoc -type f
   - wget 'http://www.w3.org/TR/REC-rdf-syntax/rdfxml.rng'
 script:
