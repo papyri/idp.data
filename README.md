@@ -11,6 +11,7 @@ As Integrating Digital Papyrology implies, this repository brings together sever
 * `APD` - Texts from the Arabic Papyrology Database in [EpiDoc XML](http://epidoc.sf.net/)
 * `APIS` - Metadata for the [Advanced Papyrological Information System (APIS)](http://papyri.info/docs/apis) in EpiDoc XML
 * `Biblio` - Bibliographic data for the [Bibliographie Papyrologique (BP)](http://www.ulb.ac.be/philo/cpeg/bp.htm)
+* `DCLP` - Texts from the Digital Corpus of Literary Papyri in EpiDoc XML
 * `DDB_EpiDoc_XML` - Texts from the [Duke Data Bank of Documentary Papyri (DDbDP)](http://papyri.info/docs/ddbdp) in EpiDoc XML
 * `HGV_meta_EpiDoc` - Metadata from the [Heidelberger Gesamtverzeichnis der Griechischen Papyrusurkunden Ägyptens (HGV)](http://www.rzuser.uni-heidelberg.de/~gv0/) in EpiDoc XML
 * `HGV_metadata` - Upstream HGV FileMaker data
