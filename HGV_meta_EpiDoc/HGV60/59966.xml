@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv59966">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter of the Emperor Hadrian</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bakchias (Arsinoites)</origPlace>
+                     <origPlace>Bakchias (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736896 http://www.trismegistos.org/place/392">Bakchias</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,19 +65,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Übung (Schule)</term>
-               <term>Brief des Kaisers Hadrian an Antoninus</term>
-               <term>Tod</term>
+               <term n="1">Übung (Schule)</term>
+               <term n="2">Brief des Kaisers Hadrian an Antoninus</term>
+               <term n="3">Tod</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-10-31T13:14:55-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-10-31T12:54:15-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-10-31T12:34:41-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Added image link</change>
          <change who="HGV" when="1996-10-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Pack (1965) 2116 = LDAB 1078.</p>
@@ -95,24 +103,24 @@
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">81</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">67</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">77</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Cribiore, Writing,Teachers, and Students, XV</bibl>
-               <bibl type="illustration">Pernigotti - Capasso, Bakchias, 57</bibl>
+               <bibl type="illustration" n="1">Cribiore, Writing,Teachers, and Students, XV</bibl>
+               <bibl type="illustration" n="2">Pernigotti - Capasso, Bakchias, 57</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="translations">
@@ -122,6 +130,13 @@
                <bibl type="translations">Winter, Life and Letters (1933), S. 19</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://oi-idb.uchicago.edu/id/f8a71fbe-8e14-4bea-9732-b5a750c345cd"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
