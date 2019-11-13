@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23174">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Grundstückskauf</title>
+            <title>Verkauf eines Grundstücks durch Pesate u.a. an Aaron</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">23174</idno>
             <idno type="TM">23174</idno>
             <idno type="ddb-perseus-style">0239;1;5555</idno>
-            <idno type="ddb-filename">sb.1.5555</idno>
-            <idno type="ddb-hybrid">sb;1;5555</idno>
+            <idno type="ddb-filename">p.kru.1</idno>
+            <idno type="ddb-hybrid">p.kru;;1</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Or 4867</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
+                     <origPlace>Theben (Ägypten)</origPlace>
                      <origDate when="0750-02-25">25. Febr. 750</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/991398 http://www.trismegistos.org/place/2983 http://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +66,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>Land</term>
-               <term>Protokoll (griechisch)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Land</term>
+               <term n="4">Protokoll (griechisch)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-10-26T07:08:03-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-10-26T07:04:08-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-10-26T07:02:17-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Renamed from SB 1 5555 to P.KRU 1</change>
          <change who="HGV" when="1995-06-23">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL V, S. 96. Koptisch - griechisch.</p>
@@ -83,35 +93,37 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">5555</biblScope>
+                  <title level="s" type="abbreviated">P.KRU</title>
+                  <biblScope type="numbers">1</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">321</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">184</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">keine</bibl>
+            </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">KRU 1</bibl>
-               <bibl type="publication" subtype="other">P.Lond. Copt. 404 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">SB 1 5555</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Lond. Copt. 404 descr.</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
