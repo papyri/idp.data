@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv70083">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Documento</title>
+            <title>Acknowledgement of debt</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">70083</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Papyrussammlung</collection>
+                  <idno type="invNo">P.Vindob. L 70</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,39 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate>unbekannt</origDate>
+                     <origPlace>Arsinoites, Ägypten oder Herakleopolites, Ägypten</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="http://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/95503"/>
+                  <biblScope type="pp">46</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,7 +80,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>unbestimmbar</term>
+               <term n="1">Bestätigung</term>
+               <term n="2">Schuld</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -64,24 +90,25 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Lateinisch - griechisch. Descr.</p>
+            <p>Lateinisch - griechisch.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">ChLA</title>
-                  <biblScope type="volume">44</biblScope>
-                  <biblScope type="numbers">1296</biblScope>
+                  <title level="s" type="abbreviated">Tyche</title>
+                  <biblScope n="1" type="volume">32</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 46</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 42</bibl>
+               <bibl type="illustration">ChLA XLIV, S. 42</bibl>
             </p>
          </div>
          <div type="figure">
@@ -91,6 +118,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">ChLA XLIV 1296</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
