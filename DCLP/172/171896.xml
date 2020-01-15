@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m171896" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 78 5150</title>
@@ -14,15 +14,19 @@
             <idno type="filename">171896</idno>
             <idno type="dclp-hybrid">p.oxy;78;5150</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Oxford, Sackler Library, Papyrology Rooms 34 4B 78/D(4-7)a</idno>
-                     <idno type="invNo">Oxford, Sackler Library, Papyrology Rooms 33 4B 79/G(1-2)a</idno>
+                     <idno type="invNo" n="1">Oxford, Sackler Library, Papyrology Rooms 34 4B 78/D(4-7)a</idno>
+                     <idno type="invNo" n="2">Oxford, Sackler Library, Papyrology Rooms 33 4B 79/G(1-2)a</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -41,17 +45,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0001" notAfter="0099">1 - 99</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,18 +69,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Demosthenes; In Aristogeitonem 26, 31-32</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">oratory</term>
+               <term n="5" type="overview">Demosthenes; In Aristogeitonem 26, 31-32</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,24 +89,33 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-01-15T17:11:04-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-01-12T09:11:14-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+         <change when="2020-01-11T17:44:00-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Add link to Oxy.Online</change>
+         <change when="2020-01-11T17:43:53-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Add link to Oxy.Online</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">78</biblScope>
-                  <biblScope unit="number">5150</biblScope>
+                  <biblScope n="1" unit="volume">78</biblScope>
+                  <biblScope n="2" unit="number">5150</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0014">Demosthenes</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0014">Demosthenes</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/698">In Aristogitonem</title>
@@ -107,6 +123,13 @@
             </listBibl>
          </div>
          <div type="edition" xml:space="preserve" xml:lang="grc"/>
+         <div type="bibliography" subtype="illustrations">
+            <listBibl>
+               <bibl type="online">
+                  <ptr target="http://163.1.169.40/cgi-bin/library?e=q-000-00---0POxy--00-0-0--0prompt-10---4----ded--0-1l--1-en-50---20-about-5150--00031-001-0-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=search&amp;d=HASH013144f26122ad61ee6b03aa"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
