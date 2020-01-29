@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60639" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 4 779</title>
+            <title>Homer, Odyssey 10.124-130</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,24 +13,33 @@
             <idno type="LDAB">1764</idno>
             <idno type="filename">60639</idno>
             <idno type="dclp-hybrid">p.oxy;4;779</idno>
+            <idno type="MP3">1085</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Cairo, Egyptian Museum JdE 43433</idno>
+                  <idno type="invNo">Cairo, Egyptian Museum JdE 43433 Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="fragment">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">9.6 cm</width>
+                              <height unit="cm">6.2 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout columns="1" writtenLines="7">
                            <p>papyrus fragment (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -43,17 +52,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0175" notAfter="0225">175 - 225</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -84,11 +96,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Odyssea 010.124-130 (with reading signs)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -97,35 +108,90 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2019-11-27T11:12:33-05:00"
+                 who="http://papyri.info/users/j.lougovaya.ast">Finalized - Implemented most suggestions, looks fine.</change>
+          <change when="2019-11-27T11:12:32-05:00"
+                 who="http://papyri.info/users/j.lougovaya.ast">Finalized - Implemented most suggestions, looks fine.</change>
+          <change when="2019-10-25T05:13:03-04:00"
+                 who="http://papyri.info/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Delete Volume under the first biblio; in the text, implement changes of the reviewer; fine otherwise.</change>
+          <change when="2019-10-25T05:13:03-04:00"
+                 who="http://papyri.info/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Delete Volume under the first biblio; in the text, implement changes of the reviewer; fine otherwise.</change>
+          <change when="2019-10-09T13:42:26-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Some tidying required: in l.1 the scribal circumflex should be over alpha (not iota) of δαιτα; add markup for φ[έροντο] indicating that it is in F and T; the mss. note in l.3 is incorrect, as the pap. has the more common reading (while ἐγὼν ἄορ is attested in H,U,K, and W); in l.4, if iota is subscript on τῷ it should also be subscript on κυανοπρῴροιο; in l.5 the scribal circumflex should be over omicron (not iota) of εμοις; in l.6 the trema is over iota, not upsilon; in l.7 ἅμα is the most common reading; ἅλα is attested in Rhianos and Callistratos; other textual notes involving mss. (re: νεός l.4; ὑπέκ l.6) should be encoded or added to commentary. Metadata: delete vol. # from 95234; note in physical description that 1 column and 7 lines survive. Note also that the rival edition of Mironczuk is more conservative (re: dots) and has a few differences of opinion regarding readings and ancient diacriticals: both editors worked from photographs instead of autopsy.</change>
+          <change when="2019-10-09T13:42:26-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Some tidying required: in l.1 the scribal circumflex should be over alpha (not iota) of δαιτα; add markup for φ[έροντο] indicating that it is in F and T; the mss. note in l.3 is incorrect, as the pap. has the more common reading (while ἐγὼν ἄορ is attested in H,U,K, and W); in l.4, if iota is subscript on τῷ it should also be subscript on κυανοπρῴροιο; in l.5 the scribal circumflex should be over omicron (not iota) of εμοις; in l.6 the trema is over iota, not upsilon; in l.7 ἅμα is the most common reading; ἅλα is attested in Rhianos and Callistratos; other textual notes involving mss. (re: νεός l.4; ὑπέκ l.6) should be encoded or added to commentary. Metadata: delete vol. # from 95234; note in physical description that 1 column and 7 lines survive. Note also that the rival edition of Mironczuk is more conservative (re: dots) and has a few differences of opinion regarding readings and ancient diacriticals: both editors worked from photographs instead of autopsy.</change>
+          <change when="2019-07-25T11:12:52-04:00"
+                 who="http://papyri.info/users/KarinaCooper">Submit - Entered edition from Lenaerts, (CdE) 87 (2012).</change>
+          <change when="2019-07-25T11:12:52-04:00"
+                 who="http://papyri.info/users/KarinaCooper">Submit - Entered edition from Lenaerts, (CdE) 87 (2012).</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Reading marks and some diacriticals appear to be added by a 2nd hand.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/>ἰχθ<hi rend="circumflex">ῦ</hi>ς δʼ<g type="apostrophe"/> <hi rend="asper">ὣ</hi>ς<g type="hypodiastole"/> πε<hi rend="acute">ί</hi>ροντες ἀτερπ<supplied reason="lost">έα</supplied> <app type="editorial"><lem>δ<hi rend="circumflex">α</hi>ιτα</lem><rdg resp="Mirończuk, Aegyptus (2011) 91">δα<hi rend="circumflex">ῖ</hi>τα</rdg></app> <app type="editorial"><lem resp="also some mss">φ<supplied reason="lost">εροντο</supplied></lem><rdg resp="Mirończuk, Aegyptus (2011) 91, most mss"><unclear>π</unclear><supplied reason="lost">ένοντο</supplied></rdg></app>.
+<lb n="2"/><hi rend="acute">ὄ</hi>φρʼ<g type="apostrophe"/> ο<hi rend="asper">ἱ</hi> τοὺς <hi rend="acute">ὄ</hi>λεκον <supplied reason="lost">λ</supplied>ιμ<hi rend="acute">έ</hi>νος πολυβενθ<supplied reason="lost">έος ἐντός,</supplied>
+<lb n="3"/>τ<hi rend="grave">ό</hi>φρα δʼ ἐγὼ, ξίφος ὀξὺ <supplied reason="lost">ἐρ</supplied>υσσάμενος π<supplied reason="lost">αρὰ μηροῦ</supplied>
+<lb n="4"/>τῷ ἀπὸ πείσματʼ<g type="apostrophe"/> <hi rend="acute">ἔ</hi>κοψα <supplied reason="lost">νε</supplied>ὸς κυανοπρ<supplied reason="lost">ῴροιο.</supplied>
+<lb n="5"/>αἶψα δʼ<g type="apostrophe"/> ἐμ<hi rend="circumflex">ο</hi>ῖς ἑτάροισιν ἐποτρύνας ἐ<supplied reason="lost">κέλευσα</supplied>
+<lb n="6" xml:id="lb6"/>ἐμβαλέειν κώπῃς, <del rend="erasure">υ</del> <hi rend="asper"><hi rend="diaeresis">ἵ</hi></hi>νʼʼ<g type="apostrophe"/> ὑπὲκ κακότητα φύ<supplied reason="lost">γοιμεν·</supplied>
+<lb n="7"/>οἱ δʼ <hi rend="asper"><hi rend="acute">α</hi></hi>μα π<supplied reason="lost">ά</supplied>ντες <choice><reg>ἀνέρριψαν</reg><orig>ἀνέρρει<supplied reason="lost">ψ</supplied>αν</orig></choice>, δείσαντε<supplied reason="lost">ς ὄλεθρον.</supplied>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb6" xml:space="preserve">
+            <ref>6</ref>
+            <p>upsilon was changed into iota by insertion above.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95234"/>
-                  <biblScope unit="number">779</biblScope>
-                  <biblScope unit="generic">descr.</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">4</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">779</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/82263"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95468"/>
+                  <biblScope n="1" unit="number">12</biblScope>
+                  <biblScope n="2" unit="page" from="39" to="41">39-41</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95463"/>
+                  <biblScope unit="number">073</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/512">Odyssea</title>
+                         ref="http://www.trismegistos.org/authorwork/512 http://cwkb.org/work/id/2816/rdf">Odyssea</title>
+                  <biblScope n="1" unit="book">10</biblScope>
+                  <biblScope n="2" unit="line" from="124" to="130">124-130</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
@@ -134,6 +200,9 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Upper margin of 1.86 cm and lower margin of 1.7 cm are preserved. Verso is blank.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

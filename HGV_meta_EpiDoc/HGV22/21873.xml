@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21873">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Application concerning Deposits</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 2459</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,33 +64,41 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Antrag an Strategen</term>
-               <term>Rückzahlung deponierten Getreides überfällig</term>
-               <term>Bitte um Anweisungen für Erben des Schuldners</term>
-               <term>Archidikastes als Vermittler</term>
+               <term n="1">Antrag an Strategen</term>
+               <term n="2">Rückzahlung deponierten Getreides überfällig</term>
+               <term n="3">Bitte um Anweisungen für Erben des Schuldners</term>
+               <term n="4">Archidikastes als Vermittler</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-20T10:07:40-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-19T04:56:33-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-18T23:27:33-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - added link to BL image.</change>
+         <change when="2019-12-18T23:27:22-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - added link to BL image.</change>
          <change who="HGV" when="1994-08-10">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 17 - 18: 30. Aug. - 28. Sept. 127; Z. 20 - 21: 26. Febr. - 26. März 128</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 17-18</ref>
-                  <date type="mentioned" notBefore="0127-08-30" notAfter="0127-09-28">30. Aug.  - 28. Sept. 127</date>
+                  <date type="mentioned" notBefore="0127-08-30" notAfter="0127-09-28">30. Aug. 127 - 28. Sept. 127</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 20-21</ref>
-                  <date type="mentioned" notBefore="0128-02-26" notAfter="0128-03-26">26. Febr.  - 26. März 128</date>
+                  <date type="mentioned" notBefore="0128-02-26" notAfter="0128-03-26">26. Febr. 128 - 26. März 128</date>
                </item>
             </list>
          </div>
@@ -95,14 +106,21 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">1472</biblScope>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">1472</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_2459"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

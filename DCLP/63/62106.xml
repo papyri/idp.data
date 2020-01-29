@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62106" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Bkt. 8 15</title>
@@ -14,7 +14,11 @@
             <idno type="filename">62106</idno>
             <idno type="dclp-hybrid">bkt;8;15</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,18 +42,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Arsinoites, Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -87,11 +92,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>bible</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">Old Testament; Psalm 105.38-45, 106.2-10</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">bible</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -100,42 +104,67 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-01-22T09:18:40-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+         <change when="2020-01-22T09:13:52-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Delete volume # from biblio 3904; add 18263 (pp. 18-19 descr.); 8932 (catalogue #218 descr.); add passage details and delete legacy display; add Pleiades georef for Arsinoites (https://pleiades.stoa.org/places/736893) </change>
+         <change when="2019-12-29T21:40:37-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added ref to Rahlfs / Fraenkel  Verzeichnis.</change>
+         <change when="2019-12-29T21:40:28-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added ref to Rahlfs / Fraenkel  Verzeichnis</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/3904"/>
                   <biblScope unit="number">15</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">BKT</title>
-                  <biblScope unit="volume">8</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/18263"/>
+                  <biblScope unit="page" from="18" to="19">18-19</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope unit="number">218</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/545">Psalmi</title>
+                  <biblScope n="1" unit="chapter">105</biblScope>
+                  <biblScope n="2" unit="part" from="38" to="45">38-45</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="chapter">106</biblScope>
+                  <biblScope n="5" unit="part" from="2" to="10">2-10</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">G. Cavallo, Ricerche sulla maiuscola biblica (1967), pl.44</bibl>
+               <bibl type="printed" n="1">G. Cavallo, Ricerche sulla maiuscola biblica (1967), pl.44</bibl>
+               <bibl type="printed" n="2">A. Rahlfs / D. Fraenkel, Verzeichnis der griechischen Handschriften des Alten Testaments 2002 (p. 18-19) descr.</bibl>
                <bibl type="online">
                   <ptr target="http://smb.museum/berlpap/index.php/01579/"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

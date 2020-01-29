@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63275" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Mich. 7 456</title>
+            <title>Latin legal treatise with rubrics in red ink</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,54 +13,56 @@
             <idno type="LDAB">4481</idno>
             <idno type="filename">63275</idno>
             <idno type="dclp-hybrid">p.mich;7;456</idno>
+            <idno type="MP3">2987</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Ann Arbor, Michigan University, Library P. 5604 b Ro</idno>
-                     <idno type="invNo">New Haven, Yale University, Beinecke Library P. CtYBR 1158 Ro</idno>
+                     <idno type="invNo" n="1">Ann Arbor, Michigan University, Library P. 5604 b Ro</idno>
+                     <idno type="invNo" n="2">New Haven, Yale University, Beinecke Library P. CtYBR 1158 Ro</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="fragment">
+                  <objectDesc form="roll">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">8.5</width>
+                              <height unit="cm">13</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>papyrus fragment (columns: 0, pagination: 0)</p>
-                        </layout>
+                        <layout columns="1" writtenLines="15"/>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
                      <p>
-                        <term>ancient cursive</term>
+                        <term>ancient Latin cursive</term>
                      </p>
                   </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Tebtynis (Arsinoites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
+                     <origPlace>Schreibort: Egypt oder ; Fundort:</origPlace>
+                     <origDate notBefore="0001" notAfter="0099">1 - 99</origDate>
                   </origin>
-                  <provenance type="composed">
-                     <p>
+                  <provenance n="1" type="composed">
+                     <p n="1" xml:id="geoGB1I88" exclude="#geoIHBJ">
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
+                     <p n="2" xml:id="geoIHBJ" exclude="#geoGB1I88"/>
                   </provenance>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                     </p>
-                  </provenance>
+                  <provenance n="2" type="found"/>
                </history>
                <additional>
                   <adminInfo>
@@ -87,41 +89,166 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>law</term>
-               <term type="culture">science</term>
-               <term type="overview">juridical fragment</term>
+               <term n="1" type="description">roman law</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">law</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="la">Latin</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-01-12T03:54:11-05:00"
+                 who="http://papyri.info/users/SerenaAmmirati">Finalized - ok</change>
+          <change when="2020-01-12T03:54:10-05:00"
+                 who="http://papyri.info/users/SerenaAmmirati">Finalized - ok</change>
+          <change when="2020-01-11T15:31:34-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2020-01-11T15:31:34-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <head xml:lang="en">
+            <date>I/II spc</date>
+            <placeName>?</placeName>
+            <ref type="reprint-from">C.Pap.Lat. 231</ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This is a preliminary re-edition by S. Ammirati and E. Nicosia produced in the context of the ERC project
+          <ref target="http://redhis.unipv.it/">REDHIS</ref>
+          (Adv.Gr. nr. 341102, P.I. D. Mantovani). The full edition with commentaries and apparatus will appear in the forthcoming Corpus of Latin and Greek juristic papyri edited by Dario Mantovani, Serena Ammirati, Marco Fressura, Luigi Pellecchi.
+In the spirit of amicitia papyrologorum and in respect of intellectual property rights
+          <ref target="http://redhis.unipv.it/">REDHIS</ref>
+          asks that the preliminary editions of
+          <ref target="http://redhis.unipv.it/">REDHIS</ref>
+          are not used to produce new editions that anticipate the printed Corpus. Suggestions and remarks communicated to the
+          <ref target="http://redhis.unipv.it/">REDHIS</ref>
+          staff and leading to an improvement of the texts will be most welcome and fully acknowledged: please contact D. Mantovani (email:dario.mantovani@college-de-france.fr).
+        </p>
+      </div>
+         <div xml:lang="la" type="edition" xml:space="preserve"><ab>
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><app type="alternative"><lem><gap reason="illegible" quantity="1" unit="character"/></lem><rdg><unclear>c</unclear></rdg><rdg><unclear>t</unclear></rdg></app> deductiones <g type="middot"/> ad<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><unclear>b</unclear>eamus <g type="middot"/> quam is <g type="middot"/> no<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>eamus <g type="middot"/> <choice><reg>ab</reg><orig>aps</orig></choice>tuler<unclear>it</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><unclear>s</unclear>ere <g type="middot"/> sub <g type="middot"/> exception<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> edicto <g type="middot"/> <expan>pr<ex>aetor </ex></expan> act<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><app type="alternative"><lem><gap reason="illegible" quantity="1" unit="character"/></lem><rdg><unclear>h</unclear></rdg><rdg><unclear>n</unclear></rdg><rdg><unclear>u</unclear></rdg></app>is <g type="middot"/> a bonor<unclear>u</unclear><supplied reason="lost">m</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+    <lb n="7"/><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/></lem><rdg><supplied reason="lost">a</supplied></rdg><rdg><supplied reason="lost">cond</supplied></rdg></app>uctoris <g type="middot"/> sti<unclear>p</unclear>ulam<unclear>u</unclear><supplied reason="lost" cert="low">r </supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <g type="middot"/> e<unclear>t</unclear> <g type="middot"/> eum <g type="middot"/> in iure <g type="middot"/> auc<supplied reason="lost" cert="low">tor- </supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>m <g type="middot"/> <expan>d<ex>are</ex></expan> <expan>f<ex>acere</ex></expan> <expan>o<ex>porte- </ex></expan>  ibi <g type="middot"/> hoc <g type="middot"/> adi<unclear>c</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">v</supplied><unclear>e</unclear>nierunt <g type="middot"/> e<unclear>o</unclear> <g type="middot"/> ni <g type="middot"/> t<subst><add place="inline">e</add><del rend="corrected">i</del></subst>n<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/>cuius <g type="middot"/> bona <g type="middot"/> venier<unclear>u</unclear><supplied reason="lost">nt</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>s</unclear>erit <g type="middot"/> nobis <g type="middot"/> <app type="alternative"><lem>adicie<unclear>m</unclear></lem><rdg>adici em</rdg></app><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="13" break="no"/><gap reason="lost" extent="unknown" unit="character"/>ri postea <g type="middot"/> quam <g type="middot"/> is <g type="middot"/> sci<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>io <g type="middot"/> acceperit <g type="middot"/> dari <g type="middot"/> <expan>fi<ex> </ex></expan> <g type="middot"/> <unclear>e</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><unclear>r</unclear>e <g type="middot"/> iudex <g type="middot"/> datus <space extent="unknown" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+</ab>
+</div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/4316"/>
                   <biblScope unit="number">456</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Mich.</title>
-                  <biblScope unit="volume">7</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/83061"/>
+                  <biblScope unit="page" from="56" to="58">56-58</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/39703"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/63013"/>
+               </bibl>
+               <bibl n="5" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/59395"/>
+               </bibl>
+               <bibl n="6" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/50214"/>
+               </bibl>
+               <bibl n="7" type="reference" subtype="palaeo">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/4316"/>
+               </bibl>
+               <bibl n="8" type="reference" subtype="palaeo">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/9794"/>
+               </bibl>
+               <bibl n="9" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95546"/>
+                  <biblScope n="1" unit="page">28</biblScope>
+                  <biblScope n="2" unit="page" from="39" to="40">39-40</biblScope>
+                  <biblScope n="3" unit="page">83, 114</biblScope>
+               </bibl>
+               <bibl n="10" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95547"/>
+                  <biblScope unit="page">256</biblScope>
+               </bibl>
+               <bibl n="11" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95560"/>
+               </bibl>
+               <bibl n="12" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95547"/>
+                  <biblScope unit="page">256</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">CLA Suppl. 1779</bibl>
-               <bibl type="printed">Seider, Pal. lat. Pap. II.2, pl. 4</bibl>
-               <bibl type="printed">Stud. Pal. 13, p. 34</bibl>
+               <bibl type="printed" n="1">CLA Suppl. 1779</bibl>
+               <bibl type="printed" n="2">Seider, PLP I, nr. 10</bibl>
+               <bibl type="printed" n="3">Seider, PLP II, 2, nr. 4</bibl>
                <bibl type="online">
-                  <ptr target="http://www.papyri.info/apis/yale.apis.0011584100"/>
+                  <ptr target="http://quod.lib.umich.edu/a/apis/x-2516/5604br_a.tif"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Lines: 15+.
+The dimensions of the two fragments are: P.Mich.: 5 × 13 cm; P.Yale: 3,5 × 13 cm. They are perfectly contiguous. Lines 6 and 15 are in red ink.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
