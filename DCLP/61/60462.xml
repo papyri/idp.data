@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60462" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Gen. 2 83</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1584</idno>
             <idno type="filename">60462</idno>
             <idno type="dclp-hybrid">p.gen;2;83</idno>
+            <idno type="MP3">800</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,18 +62,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 07.63-124</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Ilias 07.63-124</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,36 +84,32 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/11181"/>
-                  <biblScope unit="number">83</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Gen.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Gen. 2</title>
+                  <author n="1">
+                     <forename>Claude</forename>
+                     <surname>Wehrli</surname>
                   </author>
+                  <pubPlace n="1">Genève</pubPlace>
+                  <date>1986</date>
                   <!-- ignore - stop -->
-                  <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">483</biblScope>
+                  <ptr target="http://papyri.info/biblio/11181"/>
+                  <biblScope n="1" unit="number">83</biblScope>
+                  <biblScope n="2" unit="volume">2</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
@@ -118,13 +119,13 @@
          <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ., p.2</bibl>
-               <bibl type="printed">P.Gen. , pl.2</bibl>
+               <bibl type="printed" n="1">ed. princ., p.2</bibl>
+               <bibl type="printed" n="2">P.Gen. , pl.2</bibl>
                <bibl type="online">
-                  <ptr target="http://www.ville-ge.ch/fcgi-bin/fcgi-axn?launchpad&amp;/home/minfo/bge/papyrus/pgen85-ri.axs&amp;550&amp;550"/>
+                  <ptr target="http://www.ville-ge.ch/musinfo/imageZoom/?iip=bgeiip/papyrus/pgen85-ri.ptif"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
