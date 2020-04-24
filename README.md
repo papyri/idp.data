@@ -17,6 +17,7 @@ As Integrating Digital Papyrology implies, this repository brings together sever
 * `HGV_metadata` - Upstream HGV FileMaker data
 * `HGV_trans_EpiDoc` - Translations from the HGV in EpiDoc XML
 * `RDF` - Collection metadata from Papyri.info in RDF XML
+* `Validation` - Dependencies for XML validation (see `.travis.yml`)
 
 Automated XML validation for this repository is available at <https://travis-ci.org/papyri/idp.data/>.
 
