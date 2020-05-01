@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv77994">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Privatbrief</title>
@@ -10,15 +10,17 @@
             <idno type="filename">77994</idno>
             <idno type="TM">77994</idno>
             <idno type="ddb-perseus-style">0070;;18</idno>
-            <idno type="ddb-filename">p.bas.18</idno>
-            <idno type="ddb-hybrid">p.bas;;18</idno>
+            <idno type="ddb-filename">p.bas.2.15</idno>
+            <idno type="ddb-hybrid">p.bas;2;15</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Basel</settlement>
                   </placeName>
+                  <collection>Unviersitätsbibliothek</collection>
+                  <idno type="invNo">P.Bas. inv. 18</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="-0025" notAfter="0100" precision="low">spätes I v.Chr. - I n.Chr.</origDate>
+                     <origPlace>Zielort: Prosopites ?; Zielort: Letopolites ?; Fundort: Arsinoites ?</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low">I</origDate>
                   </origin>
+                  <provenance n="1" type="sent">
+                     <p xml:id="geoB1D3J">
+                        <placeName type="ancient" subtype="nome" cert="low">Prosopites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="sent">
+                     <p xml:id="geoFHBAGD">
+                        <placeName type="ancient" subtype="nome" cert="low">Letopolites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="found">
+                     <p xml:id="geoDAFE40">
+                        <placeName type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,30 +73,46 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Pasis an Orsenuphis</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Pasis an Orsenuphis</term>
+               <term n="3">Ankunft um zu arbeiten</term>
+               <term n="4">Familie</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-05-01T11:27:53-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-30T06:20:34-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-06-19T10:44:59-04:00" who="http://papyri.info/users/dareia">Submit - Updated text and metadata according to the new edition of P.Bas.</change>
          <change who="HGV" when="1994-01-24">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">18</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">15</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 79</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bas. I 18</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
