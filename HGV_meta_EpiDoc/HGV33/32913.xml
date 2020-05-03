@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32913">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Rechnung eines Susceptor</title>
+            <title>List of Money Payments Drawn by a Hypodektes</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">32913</idno>
@@ -24,23 +24,29 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <material>Papyrus</material>
+                           <material>papyrus</material>
                         </support>
                      </supportDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0301" notAfter="0500" precision="low">IV - V</origDate>
+                     <origPlace>Empfangsort: Hermopolites ?</origPlace>
+                     <origDate notBefore="0301" notAfter="0400" cert="low" precision="low">IV (?)</origDate>
                   </origin>
+                  <provenance type="received">
+                     <p xml:id="geoHGA7BF">
+                        <placeName type="ancient" subtype="nome" cert="low">Hermopolites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,9 +61,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Rechnung</term>
-               <term>Steuereinnehmer</term>
-               <term>Geld</term>
+               <term n="1">list of money payments</term>
+               <term n="2">hypodektes</term>
+               <term n="3">money</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -66,20 +72,26 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">14</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">51</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bas. I 14</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
