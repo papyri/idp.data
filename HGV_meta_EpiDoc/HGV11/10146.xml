@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10146">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Kauf eines Esels. Selbständige Bankdiagraphe</title>
+            <title>Sale of a donkey</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10146</idno>
             <idno type="TM">10146</idno>
             <idno type="ddb-perseus-style">0070;;4</idno>
-            <idno type="ddb-filename">p.bas.4</idno>
-            <idno type="ddb-hybrid">p.bas;;4</idno>
+            <idno type="ddb-filename">p.bas.2.19</idno>
+            <idno type="ddb-hybrid">p.bas;2;19</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Basel</settlement>
                   </placeName>
+                  <collection>Universtitätsbibliothek</collection>
+                  <idno type="invNo">P.Bas. inv. 4</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
+                     <origPlace>Ptolemais Euergetis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0141-02-26">26. Febr. 141</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/327 http://pleiades.stoa.org/places/736948">Ptolemais Euergetis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,33 +70,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Überweisung</term>
-               <term>Geld</term>
-               <term>Kauf</term>
-               <term>Esel</term>
+               <term n="1">Quittung</term>
+               <term n="2">Überweisung</term>
+               <term n="3">Geld</term>
+               <term n="4">Kauf</term>
+               <term n="5">Esel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-05-10T06:15:23-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-05-10T06:06:32-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-05-10T06:04:08-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated the metadata for P.Bas. II 19</change>
          <change who="HGV" when="1994-01-24">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">4</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">19</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 94</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bas. I 4</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,27 +1,17 @@
+os: linux
 dist: xenial
 language: java
-sudo: false
 env:
   - XML_DIRECTORY="HGV_trans_EpiDoc" EPIDOC_VERSION="8.13"
   - XML_DIRECTORY="HGV_meta_EpiDoc" EPIDOC_VERSION="8.13"
   - XML_DIRECTORY="DDB_EpiDoc_XML" EPIDOC_VERSION="8.16"
   - XML_DIRECTORY="APIS" EPIDOC_VERSION="8.13"
   - XML_DIRECTORY="DCLP" EPIDOC_VERSION="8.23"
-cache:
-  directories:
-    - epidoc
 addons:
   apt:
     packages:
     - moreutils
     - parallel
-install:
-  - wget 'https://github.com/papyri/jing-trang/releases/download/xsd_bce_leap_years-1.0/jing.jar'
-  - mkdir -p epidoc/8.13 epidoc/8.16 epidoc/8.23
-  - wget -nc -O epidoc/8.13/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng' && sleep 3 || echo "file already exists"
-  - wget -nc -O epidoc/8.16/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng' && sleep 3 || echo "file already exists"
-  - wget -nc -O epidoc/8.23/tei-epidoc.rng 'http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng' || echo "file already exists"
-  - wget 'http://www.w3.org/TR/REC-rdf-syntax/rdfxml.rng'
 script:
-  - java -jar jing.jar rdfxml.rng RDF/collection.rdf
-  - find $XML_DIRECTORY -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar jing.jar epidoc/${EPIDOC_VERSION}/tei-epidoc.rng {}"
+  - java -jar Validation/jing.jar Validation/rdfxml.rng RDF/collection.rdf
+  - find $XML_DIRECTORY -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/${EPIDOC_VERSION}/tei-epidoc.rng {}"
