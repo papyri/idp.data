@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv27382">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Hausliste mit Bewohnern</title>
+            <title>List of names with maternal and paternal papponymics</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">27382</idno>
             <idno type="TM">27382</idno>
             <idno type="ddb-perseus-style">0070;;22</idno>
-            <idno type="ddb-filename">p.bas.22</idno>
-            <idno type="ddb-hybrid">p.bas;;22</idno>
+            <idno type="ddb-filename">p.bas.2.30</idno>
+            <idno type="ddb-hybrid">p.bas;2;30</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Basel</settlement>
                   </placeName>
+                  <collection>Universitätsbibliothek</collection>
+                  <idno type="invNo">P.Bas. inv. 22</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites ?, Ägypten</origPlace>
                      <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,34 +68,47 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
-               <term>Hausbewohner</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-05-05T17:09:00-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-05-05T05:15:59-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-06-20T07:26:55-04:00"
+                 who="http://papyri.info/users/sabine.r.huebner">Submit - P.Bas. 22 was reedited as P.Bas. 2.30</change>
+         <change when="2019-06-20T07:25:31-04:00"
+                 who="http://papyri.info/users/sabine.r.huebner">Commit - New edition of P.Bas. 22 as P.Bas. 2.30</change>
          <change who="HGV" when="1994-01-24">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">22</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">30</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 145</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bas. I 22</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
