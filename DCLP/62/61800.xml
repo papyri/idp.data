@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61800" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 61800</title>
+            <title>o.moen inv. 631</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2954</idno>
             <idno type="filename">61800</idno>
             <idno type="dclp-hybrid">tm;;61800</idno>
+            <idno type="MP3">2699.5</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -23,30 +28,34 @@
                   <idno type="invNo">unknown</idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="sheet">
+                  <objectDesc form="sherd">
                      <supportDesc>
                         <support>
                            <material>pottery</material>
+                           <dimensions>
+                              <width unit="cm">10,4</width>
+                              <height unit="cm">11,5</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
                         <layout>
-                           <p>pottery sheet (columns: 0, pagination: 0)</p>
+                           <p>pottery sherd (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,19 +66,22 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>bible</term>
-               <term>gospel</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">New Testament, Mattheus; gospel Mt 1.19-20, with drawings</term>
+               <term n="1" type="description">prose</term>
+               <term n="2" type="religion">christian</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose</term>
+               <term n="5">bible</term>
+               <term n="6">gospel</term>
+               <term n="7">matthew</term>
+               <term n="8">drawings</term>
+               <term n="9" type="overview">New Testament, Mattheus; gospel Mt 1.19-20, with drawings</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -80,25 +92,48 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+
+1.<supplied reason="lost">Ἀνὴρ αὐτῆς</supplied> δ<supplied reason="lost">ίκαιος ὢν καὶ μὴ θέλων αὐ</supplied>
+<lb n="2" break="no"/><supplied reason="lost">τὴν</supplied> παραδε<hi rend="diaeresis">ι</hi>γμ<supplied reason="lost">ατίσαι ἐβουλήθη λάθρᾳ</supplied>
+3.<supplied reason="lost">ἀ</supplied>πολῦσαι <surplus>τ</surplus> αὐτήν. Τ<supplied reason="lost">α</supplied>ῦτα <supplied reason="lost">δὲ αὐτοῦ ἐνθυ</supplied>
+<lb n="4" break="no"/>μηθέντος, <hi rend="diaeresis">ι</hi>δοὺ ἂγγελος <gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author>Testamentum Novum, Matthaeus (Greek)</author>
+               <bibl type="publication" subtype="ancientQuote">
+                  <author xml:lang="grc">Testamentum Novum, Matthaeus (Greek)</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/3059">Evangelium secundum Matthaeum</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ.</bibl>
+               <bibl type="printed">Sijpesteijn (1984) ZPE 55, Pl. II K</bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/56829"/>
+                  <biblScope unit="page">145</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/82132"/>
+                  <biblScope unit="page">383</biblScope>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
