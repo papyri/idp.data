@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59131" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 3 427</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">226</idno>
             <idno type="filename">59131</idno>
             <idno type="dclp-hybrid">p.oxy;3;427</idno>
+            <idno type="MP3">00090.00</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,28 +32,37 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">9.9 cm</width>
+                              <height unit="cm">6.8 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout columns="1" writtenLines="3">
                            <p>papyrus roll? (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>Square sloping uncial</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrynchos (U, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1524">Oxyrynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,17 +73,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Antiphanes; Anthropogonia, last three verses, with end title</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4" type="overview">Antiphanes; Anthropogonia, last three verses, with end title</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -78,39 +92,117 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> ἄνδρεϲ οἱ γεγενημέμοι
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>π</unclear>άντεϲ εὐρώϲτωϲ ἅμα
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> βίον διάξετε.
+<lb n="4"/><milestone rend="paragraphos" unit="undefined"/>-
+<lb n="5"/><supplied reason="lost">Ἀντιφ</supplied>άνουϲ
+<lb n="6"/><milestone rend="paragraphos" unit="undefined"/>-
+<lb n="7"/><supplied reason="lost">Ἀνθρω</supplied>πογονία
+<lb n="8"/><milestone rend="paragraphos" unit="undefined"/>-
+
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Oxy. 3</title>
+                  <author n="1">
+                     <forename>B. P.</forename>
+                     <surname>Grenfell</surname>
+                  </author>
+                  <pubPlace n="1">London</pubPlace>
+                  <date>1903</date>
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95233"/>
-                  <biblScope unit="number">427</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">3</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">427</biblScope>
+                  <biblScope n="2" unit="volume">3</biblScope>
                </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="m" type="main">Comicorum Graecorum Fragmenta in papyris reperta.</title>
+                  <author n="1">
+                     <surname>Austin</surname>
+                     <forename>Colinus</forename>
+                  </author>
+                  <pubPlace>Berlin</pubPlace>
+                  <date>1973</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/7983"/>
+                  <biblScope n="1" unit="page">2</biblScope>
+                  <biblScope n="2" unit="fragment">*3</biblScope>
+               </bibl>
+               <bibl n="3" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="m" type="main">Poetae comici Graeci (PCG). Vol. II. Agathenor - Aristonymus.</title>
+                  <author n="1">
+                     <surname>KASSEL</surname>
+                     <forename>Rudolf</forename>
+                  </author>
+                  <pubPlace>Berlin</pubPlace>
+                  <date>1991</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/12468"/>
+                  <biblScope n="1" unit="volume">II</biblScope>
+                  <biblScope n="2" unit="page">327</biblScope>
+                  <biblScope n="3" unit="fragment">34</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="m" type="main">The Fragments of Attic Comedy, after Meineke, Bergk, and Kock, augmented, newly edited with their contexts, annotated and completely translated into English verse. Volume II. Middle Comedy.</title>
+                  <author n="1">
+                     <surname>Edmonds</surname>
+                     <forename>John Maxwell</forename>
+                  </author>
+                  <pubPlace>Leiden</pubPlace>
+                  <date>1959</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5789"/>
+                  <biblScope n="1" unit="volume">II</biblScope>
+                  <biblScope n="2" unit="page" from="175" to="177">175-177</biblScope>
+                  <biblScope n="3" unit="fragment">32A</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Lond.Lit.</title>
+                  <author n="1">
+                     <forename>H.G.M.</forename>
+                     <surname>Milne</surname>
+                  </author>
+                  <date>1927</date>
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95347"/>
+                  <biblScope n="1" unit="page">62</biblScope>
+                  <biblScope n="2" unit="fragment">87</biblScope>
+               </bibl>
+               <bibl n="6" type="publication" subtype="principal"/>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0410">Antiphanes</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0410">Antiphanes</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/609">Anthropogonia</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Fragment of a papyrus roll, torn at the top and bottom, with writing on both recto and verso. On verso: Antiphanes, ends of three lines in iambic trimeter or trochaic tetrameter at the conclusion of a drama. The sentiment is along the lines of, 'if you applaud my play, you will all prosper.' A brief subscription follows identifying author as [Anti]phanes and title [Anthro]pogonia. On recto: two unrelated documentary lines in another hand, with possible obliterated third line at the bottom.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
