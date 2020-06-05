@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61837" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 61837</title>
@@ -14,7 +14,11 @@
             <idno type="filename">61837</idno>
             <idno type="dclp-hybrid">tm;;61837</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,23 +42,34 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Upper Egypt (Egypt); written: Upper Egypt (Egypt)</origPlace>
-                     <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
+                     <origPlace>Fundort: Upper Egypt ?; Schreibort: Upper Egypt ?</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0400"
+                               notAfter="0599">400 - 599</origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notBefore="0600"
+                               notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="region"
+                                   cert="low"
                                    ref="https://www.trismegistos.org/place/2766">Upper Egypt</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region" cert="low">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="region"
+                                   cert="low"
                                    ref="https://www.trismegistos.org/place/2766">Upper Egypt</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region" cert="low">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -63,19 +78,19 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>bible</term>
-               <term>gospel</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">New Testament, Mattheus, Marcus, Lucas, Johannes evang.; gospel Mt 27; Mc 5, 9, 15; Lc 22.40-71; Joh 1, 18-19</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">bible</term>
+               <term n="5">gospel</term>
+               <term n="6" type="overview">New Testament, Mattheus, Marcus, Lucas, Johannes evang.; gospel Mt 27, 31-32; Mc 5,40-41; Mc 9, 17-18.22; Mc 15, 21; Lc 12, 13-16; Lc 22.40-42.45-71; Joh 1, 1-9.14-16; Joh 18, 19-25; Joh, 19, 15-17</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -86,43 +101,629 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>καὶ ἀπήγαγον αὐτὸν
+<lb n="2"/>εἰς <choice><reg>τὸν</reg><orig>τὸ</orig></choice> <choice><reg>σταυρῶσαι</reg><orig>σταυρῶσεν</orig></choice>.
+<lb n="3"/>Ἐξερχόμενοι δὲ εὗρον
+<lb n="4"/><expan><hi rend="supraline">ἄν</hi><ex>θρωπ</ex><hi rend="supraline">ον</hi></expan> <choice><reg>Κυρηναῖον</reg><orig>Κυρηνε͂ον</orig></choice> <choice><corr>ὀνόμα
+<lb n="5" break="no"/>τι</corr><sic><app type="alternative"><lem>ο<unclear>μμι</unclear>
+<lb n="5" break="no"/><unclear>τ</unclear>ι</lem><rdg>ο<unclear>μμα</unclear>
+<lb n="5" break="no"/><unclear>τ</unclear>ι</rdg></app></sic></choice> Σίμωνα· τοῦτον
+<lb n="6"/><choice><reg>ἠγγάρευσαν</reg><orig>ἠγάρευσαν</orig></choice> <hi rend="diaeresis">ἵ</hi>να ἄρῃ
+<lb n="7" xml:id="div1-lb9"/>τὸν <choice><reg><expan>στ<ex>αυ</ex>ρόν</expan></reg><orig><expan><ex>σ</ex>τ<ex>αυ</ex>ρόν</expan></orig></choice> αὐτοῦ.
+<lb n="8" rend="inverse" xml:id="div1-lb10"/> <app type="alternative"><lem>μθ<certainty match=".." locus="value"/></lem><rdg><expan>Μ<ex>ατ</ex>θ<ex>αῖος</ex></expan><certainty match=".." locus="value"/></rdg></app> 
+</ab></div> 
+
+<div n="2" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Ἡ θυγάτηρ <choice><reg><hi rend="diaeresis">Ἰ</hi>αείρ<supplied reason="lost">ου</supplied></reg><orig>Ἰα<hi rend="diaeresis">ί</hi>ρ<supplied reason="lost">ου</supplied></orig></choice>.
+<lb n="2"/><choice><reg>Παραλαβάνει</reg><orig>Παραλαβάνι</orig></choice> τὸ<supplied reason="lost">ν πατέρα</supplied>
+<lb n="3"/>τοῦ <choice><reg>παιδίου</reg><orig><app type="alternative"><lem>πεδ<unclear>ή</unclear>ου</lem><rdg>πεδιίου</rdg></app></orig></choice> κα<supplied reason="lost">ὶ τὴν μητὲρα</supplied>
+<lb n="4"/>καὶ τοὺς μετ' αὐτοῦ, κα<supplied reason="lost">ὶ</supplied> <choice><reg><supplied reason="lost">εἰσπορεύε</supplied>
+<lb n="5" break="no"/>ται</reg><orig><supplied reason="lost">εἰσπορεύε</supplied>
+<lb n="5" break="no"/>τε</orig></choice> ὅπου ἦν το <choice><reg>παι<supplied reason="lost">δίον</supplied></reg><orig>πε<supplied reason="lost">δίον</supplied></orig></choice>
+<lb n="6"/>καὶ· κρατήσας <supplied reason="lost">τῆς</supplied>
+<lb n="7"/><choice><reg>χειρὸς</reg><orig>χερὸς</orig></choice> τοῦ <choice><reg>παιδίου</reg><orig>πεδίου</orig></choice>
+<lb n="8"/><choice><reg><supplied reason="lost">λέ</supplied>γι</reg><orig><supplied reason="lost">λέ</supplied>γει</orig></choice> αὐτῇ ταλε<supplied reason="lost">ιθα</supplied>
+<lb n="9" rend="perpendicular" xml:id="div2-lb10"/> <num value="1">α</num> <g type="dipunct"/> Μάρκος
+</ab></div>
+
+<div n="3" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Διδ<supplied reason="lost">άσκ</supplied>αλε, <choice><reg><supplied reason="lost">ἤ</supplied>νεγκα</reg><orig><supplied reason="lost">ἤ</supplied>νεκα</orig></choice>
+<lb n="2"/>τ<supplied reason="lost">ὸν ὑιό</supplied>ν μου
+<lb n="3"/><unclear>α</unclear><gap reason="lost" quantity="3" unit="character"/><choice><reg>ρήσσει</reg><orig>ρήσι</orig></choice> αὐτόν,
+<lb n="4"/>ἀφρίζει καὶ τρίζει <choice><reg>τοὺς</reg><orig>τοὺ</orig></choice>
+<lb n="5"/><choice><reg>ὀδόντας</reg><orig>ὀδότας</orig></choice> καὶ <choice><reg>ξηρaαίνεται</reg><orig>ξηρήνετε</orig></choice>·
+<lb n="6"/>καὶ εἰς πῦρ καὶ εἰς ὕδωρ
+<lb n="7"/>γεγονός π<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>χη καὶ νησ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9" xml:id="div3-lb9"/>Μάρκ<supplied reason="lost">ος <gap reason="illegible" extent="unknown" unit="character"/></supplied>
+</ab></div>
+
+<div n="4" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>α <choice><reg>Κυρηναῖον</reg><orig>Κυρηνε͂ον</orig></choice> ἐρχὸ
+<lb n="2" break="no"/>μενον ἀπ' ἀγροῦ, <choice><reg>τὸ</reg><orig>τὸν</orig></choice>
+<lb n="3"/>πατέρα Ἀλεξάνδρου
+<lb n="4"/>καὶ <choice><reg>Ῥούφου</reg><orig>Ῥούφι</orig></choice>, <hi rend="diaeresis">ἵ</hi>να ἄρῃ
+<lb n="5" xml:id="div4-lb5"/><expan>στ<ex>αυ</ex>ρόν</expan> αὐτοῦ.
+</ab></div>
+
+<div n="5" subtype="fragment" type="textpart">
+     <div n="r" type="textpart"><ab>
+     <lb n="1"/>Δ<supplied reason="lost">.</supplied> διδά
+     <lb n="2" break="no"/>σκαλε <choice><reg>εἰπέ</reg><orig><hi rend="diaeresis">ἰ</hi>πέν</orig></choice> 
+     <lb n="3"/>τῷ ἀδελφῷ μου
+     <lb n="4"/><choice><reg>μερίσασθαι</reg><orig>μερίσασθε</orig></choice> με
+     <lb n="5" break="no"/>τ' ἐμοῦ τὴν κλη
+     <lb n="6" break="no"/>ρονομίαν. Ὁ δ' ε<hi rend="diaeresis">ἴ</hi>
+     <lb n="7" break="no"/>πεν αὐτῷ, <expan><hi rend="supraline">ἄν</hi><ex>θρωπ</ex><hi rend="supraline">ε</hi></expan>, τίς
+     <lb n="8"/>με κατέστησεν 
+     <lb n="9"/><choice><reg>κριτὴν</reg><orig>κρητὴν</orig></choice> ἢ <choice><reg>μεριστὴν</reg><orig>μεριστὴ</orig></choice>
+     <lb n="10"/>ἔφ' ὑμᾶς; <choice><reg>Εἶπεν</reg><orig>Ἶπεν</orig></choice> δὲ
+     <lb n="11"/>πρὸς αὐτοὺς, Ὀρᾶτε
+     <lb n="12"/>καὶ <choice><reg>φυλάσσεσθε</reg><orig>φυλάσεστε</orig></choice> ἀ
+     <lb n="13" break="no"/>πὸ πάσης <choice><reg>πλεο
+     <lb n="14" break="no"/>νεξίας</reg><orig>πλαιο
+     <lb n="14" break="no"/>νεξίας</orig></choice>, ὅτι οὐ
+     <lb n="15" break="no"/>κ <choice><reg>ἐν</reg><orig>ἐ</orig></choice> τῷ <choice><reg>πε
+     <lb n="16" break="no"/>ρισσεύει<supplied reason="lost">ν</supplied></reg><orig>πε
+     <lb n="16" break="no"/>ρισεύ<unclear>ι</unclear><supplied reason="lost">ν</supplied></orig></choice>
+     </ab></div>
+     <div n="v" type="textpart"><ab> 
+     <lb n="17"/>Λουκάς <g type="dipunct"/> <num value="1">α</num>
+     <lb n="18"/><app type="alternative"><lem>στίλβοντ<gap reason="lost" quantity="2" unit="character"/></lem><rdg>Στίλβοντ<supplied reason="lost">ος</supplied></rdg></app>
+     <lb n="19"/>ο<unclear>ι</unclear><gap reason="lost" quantity="2" unit="character"/>ναφ<unclear>ε</unclear>
+     </ab></div>
+</div>
+
+<div n="6" subtype="fragment" type="textpart">
+<div n="r" type="textpart"><ab>
+<lb n="1"/>τινι 
+<lb n="2"/>ἡ ζω
+<lb n="3" break="no"/>ὴ αὐτοῦ
+<lb n="4"/>ἐστιν <choice><reg>ἐκ</reg><orig>ἐν</orig></choice> τῶν
+<lb n="5"/>ὑπαρχόντων
+<lb n="6"/>αὐτῷ. <choice><reg>Εἶπεν</reg><orig><hi rend="diaeresis">Ἶ</hi>πεν</orig></choice> δὲ
+<lb n="7"/>παραβολὴν
+<lb n="8"/>πρὸς <choice><corr>αὐτοὺ<supplied reason="omitted">ς</supplied></corr><sic>αὐτοὺ</sic></choice> λέ
+<lb n="9" break="no"/>γων, <expan><hi rend="supraline">Ἀν</hi><ex>θρώπ</ex><hi rend="supraline">ου</hi></expan>
+<lb n="10"/>τινὸς εὐ
+<lb n="11" break="no"/>φόρη
+<lb n="12" break="no"/>σεν
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="13"/>Λουκάς <num value="2"><hi rend="supraline">β</hi></num>
+</ab></div>
+</div>
+
+<div n="7" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Γενόμενος δ<supplied reason="lost">ὲ ἐπὶ τοῦ τόπου</supplied>
+<lb n="2"/>εἶπεν αὐτοῖς, <supplied reason="lost">Προσεύχεσθε μὴ</supplied>
+<lb n="3"/>εἰσελθεῖν εἰς <supplied reason="lost">πειρασμὸν. Καὶ αὐτὸς</supplied>
+<lb n="4"/>ἀπεσπάσθ<supplied reason="lost">η ἀπ' αὐτῶν ὡσεὶ λίθου</supplied>
+<lb n="5"/>βολήν, καὶ θ<supplied reason="lost">εὶς τὰ γόνατα προ</supplied>
+<lb n="6" break="no"/>σηύξατο λέ<supplied reason="lost">γων, Πάτερ, εἰ βού</supplied>
+<lb n="7" break="no"/>λει παρένε<supplied reason="lost">γκε τοῦτο τὸ</supplied>
+<lb n="8"/>ποτήριον <supplied reason="lost">ἀπ' ἐμοῦ·</supplied>
+<lb n="9"/>πλὴν μὴ <supplied reason="lost">τὸ θέλημά</supplied>
+<lb n="10"/>μου ἀλλὰ <supplied reason="lost">τὸ σὸν γινέ</supplied>
+<lb n="11" break="no"/>σθω.  Καὶ ἀν<supplied reason="lost">αστὰς ἀ</supplied>
+<lb n="12" break="no"/>πὸ τῆς π<supplied reason="lost">ροσευχῆς</supplied>
+<lb n="13"/>ἐλθὼν <supplied reason="lost">πρὸς <gap reason="illegible" quantity="5" unit="character" precision="low"/></supplied>
+<lb n="14" rend="perpendicular" xml:id="div11-lb14"/> Λουκάς <g type="dipunct"/> <num value="1">α</num>
+</ab></div>
+
+<div n="8" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Λουκάς : <num value="2">β</num><supplied reason="lost"><hi rend="diaeresis">ο</hi></supplied>
+<lb n="2"/><supplied reason="lost">τ</supplied>οὺς μαθητὰς εὗρεν κοιμωμένους αὐτοὺς
+<lb n="3,ms" rend="perpendicular"/> β
+<lb n="3"/>ἀπὸ τῆς λύπης, καὶ εἶπεν αὐτοῖς, Τί καθεύδε
+<lb n="4" break="no" xml:id="div12-lb5"/>τε; Ἀναστάντες προσεύχεσθε, <hi rend="diaeresis">ἵ</hi>να μὴ εἰσέλθητε
+<lb n="5" xml:id="div12-lb6"/>εἰς πειρασμόν. Ἔτι αὐτοῦ λαλοῦντος <hi rend="diaeresis">ἰ</hi>δοὺ ὄχλος, καὶ ὁ λε
+<lb n="6" break="no" xml:id="div12-lb7"/>γόμενος <hi rend="diaeresis">Ἰ</hi>ούδας εἷς τῶν δώδεκα προήρχετο αὐτο ῖς,
+<lb n="7"/>καὶ ἤγγισεν τῷ <expan><hi rend="supraline">Ἰ</hi><ex>ησο</ex><hi rend="supraline">ῦ</hi></expan> φιλῆσαι αὐτόν. Ὁ δὲ <expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ς</hi></expan> δὲ εἶπεν αὐτῷ,
+<lb n="8" xml:id="div12-lb9"/>Ἰούδα, φιλήματι τὸν <expan><hi rend="supraline">υ</hi><ex>ἱὸ</ex><hi rend="supraline">ν</hi></expan> τοῦ <expan><hi rend="supraline">ἀν</hi><ex>θρώπ</ex><hi rend="supraline">ου</hi></expan> παραδίδως;<hi rend="diaeresis">Ἰ</hi>δόντες
+<lb n="9"/>δὲ οἱ περὶ αὐτὸν τὸ ἐσόμενον
+</ab></div>
+
+<div n="9" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>εἶπ<unclear>α</unclear><supplied reason="lost">ν,</supplied>
+<lb n="2"/><supplied reason="lost">Κύριε, εἰ πατάξομ</supplied>εν ἐν μαχαί
+<lb n="3" break="no"/><supplied reason="lost">ρῃ; Καὶ</supplied> ἐπάταξεν εἷς 
+<lb n="4"/><supplied reason="lost">τις</supplied> ἐξ αὐτῶν τὸν τοῦ 
+<lb n="5"/>ἀρχιερέως δοῦλον καὶ 
+<lb n="6"/>ἀφεῖλεν τὸ οὖς αὐτοῦ 
+<lb n="7"/>τὸ δεξιόν. Ἀποκριθεὶς 
+<lb n="8"/>δὲ <hi rend="supraline">ὁ</hi> <expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ς</hi></expan> εἶπεν, Ἐᾶτε ἕως τούτου· 
+<lb n="9"/>καὶ ἁψάμενος τοῦ ὠτίου <hi rend="diaeresis">ἰ</hi>άσατο 
+<lb n="10"/>αὐτόν. Εἶπεν δὲ <hi rend="supraline">ὁ</hi> <expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ς</hi></expan> πρὸς τοὺς παρα
+<lb n="11" break="no"/>γενομένους ἐπ' αὐτὸν ἀρχιερεῖς 
+<lb n="12"/>καὶ στρατηγοὺς τοῦ  <hi rend="supraline">ἱ</hi>εροῦ καὶ πρε
+<lb n="12" break="no"/>σβυτέρους, Ὡς <choice><reg>ἐπὶ</reg><orig>ἐπεὶ</orig></choice> λῃστὴν
+<lb n="13"/>ἐξήλθετε μετὰ μα
+<lb n="14" break="no"/>χαιρῶν καὶ ξύλων;
+<lb n="15"/>Καθ' ἡμέραν ὄντος
+<lb n="16"/>ἐμοῦ ἐν τῷ
+<lb n="17" rend="inverse"/> <hi rend="diaeresis">Γ</hi>
+<lb n="18" rend="inverse"/> Λουκάς
+<lb n="14" rend="perpendicular" xml:id="div13-lb20"/> <num>γ</num>ο
+</ab></div>
+
+<div n="10" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/><hi rend="diaeresis">ἱ</hi>ερῷ οὐκ ἐξετείνα
+<lb n="2" break="no"/>τε τὰς χεῖρας ἐπ' <choice><corr>ἐ
+3.-μέ</corr><sic>ἐ
+<lb n="3" break="no"/>μέ<surplus>ν</surplus></sic></choice> ἀλλ' αὕτη 
+<lb n="4"/>ἐστὶν ὑμῶν ἡ ὥ<supplied reason="lost">ρα</supplied> 
+<lb n="5"/>καὶ ἡ ἐξουσία τοῦ 
+<lb n="6"/>σκότους. <expan>Συλλαβό<ex>ν</ex>
+7- τες</expan> δὲ αὐτὸν ἤγα
+<lb n="8" break="no"/>γον κ<supplied reason="lost">α</supplied>ὶ <expan>εἰσήγαγο<ex>ν</ex></expan> 
+<lb n="9"/>εἰς τὴν οἰκίαν τοῦ 
+<lb n="10"/>ἀρχιερέως· ὁ δὲ 
+<lb n="11"/>Πέτρος ἠκολού
+<lb n="12" break="no"/>θει μακρόθεν.
+<lb n="13" rend="perpendicular" xml:id="div14-lb12"/> <num value="4">δ</num>ο
+</ab></div>
+
+<div n="11" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Λουκάς <num value="5"><hi rend="supraline">ε</hi></num>
+<lb n="2"/>Περιαψάντων δὲ πῦρ <choice><reg>ἐν</reg><orig>ἐμ</orig></choice> μέ
+<lb n="3" break="no"/>σῳ τῆς αὐλῆς καὶ <supplied reason="lost">συγ</supplied>καθισάντων αὐτῶν 
+<lb n="4"/>ἐκάθητο ὁ Πέτρος μέσος αὐτῶ<supplied reason="lost">ν</supplied>.
+<lb n="5"/>Καθ<supplied reason="lost">ήμ</supplied>ε<supplied reason="lost">ν</supplied>ο<supplied reason="lost">ν</supplied> πρὸς τὸ φῶς καὶ ἀτε
+<lb n="6" break="no"/><supplied reason="lost">νίσασα αὐτῷ εἶπεν,</supplied> Οὗτος σὺν 
+<lb n="7"/><supplied reason="lost">αὐ</supplied>τῷ ἦν· ὁ δ<supplied reason="lost">ὲ ἠρν</supplied>ήσατο αὐτὸν
+<lb n="8"/><supplied reason="lost">λέγων, Οὐκ οἶδα αὐτόν,</supplied> γύν<supplied reason="lost">αι. Καὶ μετὰ</supplied>
+<lb n="9"/>βρ<supplied reason="lost">α</supplied>χ<supplied reason="lost">ὺ</supplied> ἕτερος <hi rend="diaeresis">ἰ</hi>δ<supplied reason="lost">ὼν αὐτὸν ἔ</supplied>φη, Κ<supplied reason="lost">αὶ</supplied> σὺ <supplied reason="lost">ἐξ αὐ</supplied>
+<lb n="10" break="no"/>τῶν εἶ· Ὁ δὲ Πέτρος ἔφη, Ἄ<supplied reason="lost">νθρωπε,</supplied>
+<lb n="11"/>οὐκ εἰμί. Καὶ διαστάσης <supplied reason="lost">ὡ</supplied>σε<supplied reason="lost">ὶ</supplied> 
+<lb n="12"/>ὥρας μιᾶς 
+</ab></div>
+
+<div n="12" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>ἄλλος τις δι<hi rend="diaeresis">ϊ</hi>σχυρί
+<lb n="2" break="no"/>ζετο λέγων, Ἐπ' ἀ
+<lb n="3" break="no"/>ληθείας καὶ <choice><corr>οὗτο<supplied reason="omitted">ς</supplied></corr><sic>οὗτο</sic></choice>
+<lb n="4"/>μετ' αὐτοῦ ἦν, καὶ 
+<lb n="5"/>γὰρ Γαλιλαῖός 
+<lb n="6"/>ἐστιν· εἶπεν δὲ 
+<lb n="7"/>ὁ Πέτρος Ἄν
+<lb n="8" break="no"/>θρωπε, οὐκ οἶ
+<lb n="9" break="no"/>δα ὃ λέγεις. 
+<lb n="10"/>Καὶ παραχρῆ
+<lb n="11" break="no"/>μα ἔτι λα
+<lb n="12" break="no"/>λοῦντος 
+<lb n="13"/>αὐτοῦ
+<lb n="14" rend="perpendicular"/> <num value="6">ϛ</num>O <g type="dipunct"/>
+</ab></div>
+
+<div n="13" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/><app type="alternative"><lem><supplied reason="lost">καὶ στρα</supplied>φεὶς <supplied reason="lost">ὁ κύριος</supplied></lem><rdg><supplied reason="lost">στρα</supplied>φεὶς <supplied reason="lost">δὲ ὁ <expan><hi rend="supraline">Ἰη</hi><ex>σού</ex><hi rend="supraline">ς</hi></expan></supplied></rdg></app>
+<lb n="2"/><supplied reason="lost">ἐν</supplied>έβλεψεν 
+<lb n="3"/><supplied reason="lost">τῷ</supplied> Πέτρῳ, καὶ ὑπε
+<lb n="4" break="no"/>μνήσθη ὁ Πέτρος 
+<lb n="5"/>τοῦ ῥήματος 
+<lb n="6"/>τοῦ <expan><hi rend="supraline">Κ</hi><ex>υρίο</ex><hi rend="supraline">υ</hi></expan> ὡς εἶπεν 
+<lb n="7"/>αὐτῷ ὅτι πρὶν 
+<lb n="8"/>ἀλέκτορα
+<lb n="9" rend="inverse" xml:id="div17-lb9"/> <app type="alternative"><lem>κ α<certainty match=".." locus="value"/></lem><rdg><expan><ex>Λου</ex>κά<ex>ς</ex></expan><certainty match=".." locus="value"/></rdg></app>
+<lb n="10" rend="perpendicular" xml:id="div17-lb10"/> <num value="7">ζ</num>Ο <g type="dipunct"/>
+</ab></div>
+
+<div n="14" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Λουκ<supplied reason="lost">ὰς</supplied> <num value="8">η</num>
+<lb n="2"/><choice><reg>φωνῆσαι</reg><orig>φωνῆσεν</orig></choice> σήμερον ἀπαρνήσῃ με τρίς. Καὶ ἐξε<supplied reason="lost">λθὼν</supplied>
+<lb n="3"/>ἔκλαυσε πικρῶς. Καὶ οἱ ἄνδρες οἱ συνέχοντο αὐτὸ<supplied reason="lost">ν</supplied> 
+<lb n="4"/><choice><reg>ἐνέπαιζον</reg><orig>ἐνέπεζον</orig></choice> <choice><reg>αὐτῷ</reg><orig>αὐτῶι</orig></choice> δέροντες, καὶ περικαλύ
+<lb n="5" break="no"/>ψαντες αὐτὸν ἐπηρώτων <expan>λέγο<ex>ν</ex>τες</expan>, 
+<lb n="6"/>Προφήτευσον, τίς ἐστιν ὁ παίσας σε;
+</ab></div>
+
+<div n="15" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Καὶ ἕτερα <choice><reg>πολλὰ</reg><orig>πολὰ</orig></choice> βλασ
+<lb n="2" break="no"/>φημοῦντες ἔλεγον εἰς 
+<lb n="3" xml:id="div19-lb3"/>αὐτόν. Καὶ ὡς ἐγένετο ἡ
+<lb n="4"/>ἡμέρα, συνήχθη τὸ πρεσ
+<lb n="5" break="no"/>βυτέριον τοῦ λαοῦ ἀρχι
+<lb n="6"/> <hi rend="diaeresis">ι</hi>ερεῖς τε καὶ <choice><reg>γραμματεῖς</reg><orig>γραματεῖς</orig></choice>, 
+<lb n="7"/>καὶ ἀπήγαγον αὐτὸν εἰς 
+<lb n="8"/>τὸ συνέδριον αὐτῶν,
+<lb n="9"/> λέγοντες, Εἰ σὺ εἶ <hi rend="diaeresis">ὁ</hi> <expan><hi rend="supraline">Χ</hi><ex>ριστό</ex><hi rend="supraline">ς</hi></expan>, εἰπέ
+<lb n="10"/>ἡμῖν. <choice><corr>Εἶπεν</corr><sic>Eἶπει</sic></choice> δὲ αὐτοῖς, Ἐ<supplied reason="lost">ὰν</supplied> 
+<lb n="11" xml:id="div19-lb11"/>ὑμῖν εἴπω οὐ μὴ πιστ
+<lb n="12" break="no"/>εύσητε· ἐὰν δὲ ἐρωτήσ<supplied reason="lost">ω</supplied> 
+<lb n="13"/>οὐ μὴ ἀποκριθῆτε. Ἀπὸ 
+<lb n="14" xml:id="div19-lb14"/>τοῦ νῦν <choice><reg>ἔσται</reg><orig>ἔστε</orig></choice> ὁ <expan><hi rend="supraline">υ</hi><ex>ἱὸ</ex><hi rend="supraline">ς</hi></expan> τοῦ <expan>ἀν<ex>θρώπ</ex>ου</expan> 
+<lb n="15"/>καθήμενος ἐκ δεξιῶν 
+<lb n="16"/>τῆς δυνάμεως τοῦ <expan><hi rend="supraline">Θ</hi><ex>εο</ex><hi rend="supraline">ῦ</hi></expan>.
+<lb n="17" rend="inverse" xml:id="div19-lb17"/> <num value="9">θ</num> Ο
+<lb n="18" rend="inverse" xml:id="div19-lb18"/> Λουκὰς <num value="9">θ</num>
+</ab></div>
+
+<div n="16" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Εἶπαν δὲ πάντες, 
+<lb n="2"/>Σὺ οὖν εἶ ὁ <expan><hi rend="supraline">υ</hi><ex>ἱὸ</ex><hi rend="supraline">ς</hi></expan> τοῦ <expan><hi rend="supraline">Θ</hi><ex>εο</ex><hi rend="supraline">ῦ</hi></expan>; 
+<lb n="3"/>Ὁ δὲ πρὸς αὐτοὺς 
+<lb n="4" xml:id="div20-lb4"/>ἔφη, Ὑμεῖς λέγετε 
+<lb n="5"/>ὅτι ἐγώ εἰμι. Οἱ δὲ 
+<lb n="6"/>εἶπαν, Τί ἔτι χρείαν 
+<lb n="7"/>ἔχομεν μαρτυρίαν;
+<lb n="8" xml:id="div20-lb8"/>Αὐτοὶ γὰρ <choice><reg>ἠκούσαμεν</reg><orig>ἠκούσαμε</orig></choice> 
+<lb n="9"/>ἀπὸ τοῦ στόματος 
+<lb n="10" rend="perpendicular" xml:id="div20-lb10"/> <num value="10">ι</num> <g type="high-punctus"/> O
+</ab></div>
+
+<div n="17" subtype="fragment" type="textpart"><ab> 
+<lb n="1"/>Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς 
+<lb n="2"/>τὸν <expan><hi rend="supraline">Θ</hi><ex>εό</ex><hi rend="supraline">ν</hi></expan>, καὶ <expan><hi rend="supraline">Θ</hi><ex>εὸ</ex><hi rend="supraline">ς</hi></expan> <hi rend="diaeresis">ἦ</hi>ν ὁ λόγος. Οὗτος ἦν ἐν ἀρχῇ 
+<lb n="3"/>πρὸς τὸν <expan><hi rend="supraline">Θ</hi><ex>εό</ex><hi rend="supraline">ν</hi></expan>. <choice><corr>Πά<supplied reason="omitted">ν</supplied>τα</corr><sic>Πάτα</sic></choice> δι' αὐτοῦ ἐγένετο, καὶ χω
+<lb n="4" break="no"/>ρὶς αὐτοῦ ἐγένετο οὐδὲ ἕν. Ὃ γέγονεν αὐτῷ 
+<lb n="5"/>ζωὴ ἦν, καὶ ἡ ζωὴ ἦν τὸ φῶς τῷ <expan><hi rend="supraline">ἀν</hi><ex>θρώπ</ex><hi rend="supraline">ω</hi>ͅ</expan>· καὶ τὸ 
+<lb n="6"/>φῶς ἐν τῇ σκοτίᾳ <choice><reg>φαίνει</reg><orig>φένι</orig></choice>, καὶ ἡ σκοτία <choice><corr>αὐτο<supplied reason="omitted">ῦ</supplied></corr><sic>αὐτο͂</sic></choice>
+<lb n="7"/>οὐ κατέλαβεν. Ἐγένετο <expan><hi rend="supraline">ἄν</hi><ex>θρωπ</ex><hi rend="supraline">ος</hi></expan> <choice><corr>ἀ<supplied reason="omitted">πε</supplied>σταλμένος</corr><sic>ἀσταλμένος</sic></choice>
+<lb n="8"/>παρὰ <expan><hi rend="supraline">Θ</hi><ex>εο</ex><hi rend="supraline">ῦ</hi></expan>, ὄνομα αὐτῷ Ἰωάννης· οὗτος ἦλ
+<lb n="9" break="no"/>θεν εἰς <choice><corr>μαρτυρ<supplied reason="omitted">ί</supplied>αν</corr><sic>μαρτυράν</sic></choice> <hi rend="diaeresis">ἵ</hi>να μαρτυρήσῃ
+<lb n="10"/>περὶ τοῦ φωτός, <hi rend="diaeresis">ἵ</hi>να <choice><corr>πάντες</corr><sic>πάνται</sic></choice> <choice><reg>πιστεύσωσιν</reg><orig>πειστεύσωσιν</orig></choice>
+<lb n="11"/>αὐτοῦ. Οὐκ ἦν ἐκεῖνος τὸ φῶς, ἀλλ' ἵ
+<lb n="12" break="no"/>να μαρτυρήσῃ περὶ τοῦ 
+<lb n="13"/>φωτός. Ἦν τὸ φῶς τὸ 
+<lb n="14"/><choice><reg>ἀληθινὸν</reg><orig>ἀληθεινὸν</orig></choice>, ὃ <choice><reg>φωτί
+<lb n="15" break="no"/>ζει</reg><orig>φωτί
+<lb n="15" break="no"/>ζι</orig></choice> πάντα <expan><hi rend="supraline">ἄν</hi><ex>θρωπ</ex><hi rend="supraline">ον</hi></expan>
+<lb n="16" rend="inverse"/> <hi rend="diaeresis">Ἰ</hi>ωάννης <g type="tripunct"/> <num value="1">α</num>
+</ab></div>
+
+<div n="18" subtype="fragment" type="textpart"><ab>
+<lb n="1"/>Καὶ ὁ λόγος σὰρξ ἐγένετο 
+<lb n="2"/>καὶ ἐσκήνωσεν ἐν ἡμῖ<supplied reason="lost">ν.</supplied>
+<lb n="3"/><hi rend="diaeresis">Ἰ</hi>ωάννης <choice><reg>μαρτυρεῖ</reg><orig>μαρτυρῖ</orig></choice> περὶ <supplied reason="lost">αὐτοῦ</supplied> 
+<lb n="4"/><choice><reg>καὶ</reg><orig>κὲ</orig></choice> κέκραγε λέγων, Οὗ<supplied reason="lost">τος ἦν</supplied>
+<lb n="5"/>ὃν <choice><reg>εἶπον</reg><orig>ἶπον</orig></choice>, Ὁ ὀπί<supplied reason="lost">σω μου ἐρχό</supplied>
+<lb n="6" break="no"/>μενος ἔμ<supplied reason="lost">προσθέν μου</supplied> 
+<lb n="7" xml:id="div22-lb7"/><add place="left">γέ</add>γονε, ὅτ<supplied reason="lost">ι πρῶτός μου ἦν.</supplied>
+<lb n="8"/>Ὅτι ἐκ τ<supplied reason="lost">οῦ πληρώματος</supplied> 
+<lb n="9"/>αὐτο<supplied reason="lost">ῦ ἡμεῖς πάντες ἐλά</supplied>
+<lb n="10" break="no" xml:id="div22-lb10"/>βομ<supplied reason="lost" cert="low">εν καὶ χάριν ἀντὶ χάριτος ὅτι ὁ νό</supplied>
+<lb n="11" break="no"/>μ<supplied reason="lost">ος <gap reason="illegible" extent="unknown" unit="character"/></supplied>
+</ab></div>
+
+
+<div n="19" subtype="fragment" type="textpart">
+<div n="r" type="textpart"><ab>
+<lb n="1"/>Ὁ <choice><corr>οὖ<supplied reason="omitted">ν</supplied></corr><sic>οὖ</sic></choice> ἀρχιερεὺς ἠρώτησεν <choice><corr><expan><hi rend="supraline">Ἰ</hi><ex>ησο</ex><hi rend="supraline">ῦ</hi></expan><supplied reason="omitted">ν</supplied></corr><sic><expan><hi rend="supraline">Ἰ</hi><ex>ησο</ex><hi rend="supraline">ῦ</hi></expan></sic></choice> περὶ τῶν μα
+<lb n="2" break="no"/>θητῶν αὐτοῦ καὶ περὶ τῆς διδαχῆς 
+<lb n="3"/>αὐτοῦ. Ἀπεκρίθη αὐτῷ <expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ς</hi></expan>, Έγὼ <choice><reg>παρ
+<lb n="4" break="no"/>ρησίᾳ</reg><orig>πα<supplied reason="omitted">ρ</supplied>
+<lb n="4" break="no"/>ρησία</orig></choice> ἐλάλησα τῷ κόσμῳ· ἐγὼ 
+<lb n="5"/>πάντοτε ἐδίδαξα ἐν τῇ συναγωγῇ 
+<lb n="6"/>καὶ <choice><corr>ἐ<supplied reason="omitted">ν</supplied></corr><sic>ἐ</sic></choice> τῷ <hi rend="diaeresis">ἱ</hi>ερῷ, ὅπου <choice><corr>πάντε<supplied reason="omitted">ς</supplied></corr><sic>πάντε</sic></choice> οἱ <choice><reg>Ἰουδαῖοι</reg><orig><hi rend="diaeresis">Ἰ</hi>ουδε͂οι</orig></choice> 
+<lb n="7"/><choice><reg>συνέρχονται</reg><orig>συνέρχοντε</orig></choice>, <choice><corr>ἐ<supplied reason="omitted">ν</supplied></corr><sic>ἐ</sic></choice> κρυπτῷ ἐλάλησα 
+<lb n="8"/>οὐδέν. Τί με ἐρωτᾷς; Ἐρώτησον τοὺς 
+<lb n="9"/><choice><corr>ἀκηκοότας</corr><sic>ἀκηκοάτας</sic></choice> τί ἐλάλησα αὐτοῖς·
+<lb n="10"/><hi rend="diaeresis">ἴ</hi>δε οὗτοι <choice><reg>οἴσασιν</reg><orig><hi rend="diaeresis">ἴ</hi>σασιν</orig></choice> ἃ εἶπον ἐγώ. Ταῦ
+<lb n="11" break="no"/>τα δὲ αὐτοῦ εἰπόντος εἷς <choice><reg>παρεστη
+<lb n="12" break="no" xml:id="div23-div23-lb13"/>κὼς</reg><orig>παρηστη
+<lb n="12" break="no"/>κὼς</orig></choice> τῶν ὑπηρετῶν <choice><reg>ἔδωκεν</reg><orig>ἔδωκαιν</orig></choice> ῥά
+<lb n="13" break="no"/>πισμα τῷ <expan><hi rend="supraline">Ἰ</hi><ex>ησο</ex><hi rend="supraline">ῦ</hi></expan> εἰπών, Οὕτως ἀ
+<lb n="14" break="no"/>ποκρίνῃ τῷ <choice><reg>ἀρχιερεῖ</reg><orig>ἀρχιερῖ</orig></choice>; Ὁ δὲ <expan><supplied reason="lost">'Ι</supplied><ex>ησού</ex><hi rend="supraline">ς</hi></expan>
+<lb n="15"/>εἶπεν, Εἰ κακῶς ἐλάλησ<supplied reason="lost">α,</supplied> μ<supplied reason="lost">α</supplied>
+<lb n="16"/>ρτύρησον περὶ τοῦ κακοῦ·
+<lb n="17"/>εἰ δὲ <choice><corr>καλῶ<supplied reason="omitted">ς</supplied></corr><sic>καλῶ</sic></choice>, τί με δέρεις;
+<lb n="18"/><choice><reg>Ἀπέστειλεν</reg><orig>Ἀπέστιλεν</orig></choice> οὖν αὐτὸν 
+<lb n="19"/>ὁ Ἅννας δεδεμένον 
+20 πρὸς <choice><reg>Καϊάφαν</reg><orig>Κά<hi rend="diaeresis">ι</hi>φαν</orig></choice> τὸν 
+<lb n="21"/><choice><reg>ἀρχιερέα</reg><orig>ἀρχιερίαν</orig></choice>. Ἦν 
+<lb n="22"/>δὲ Σίμων 
+<lb n="23"/>Πέτρος
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/><hi rend="diaeresis">Ἰ</hi>ωάννης
+</ab></div>
+</div>
+
+<div n="20" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><supplied reason="lost">Οὐκ</supplied> <choice><reg>ἔχoμεν</reg><orig>ἔχωμεν</orig></choice> 
+<lb n="2"/><supplied reason="lost">βασι</supplied>λέα εἰ μὴ <choice><corr>Καί
+<lb n="3" break="no"/>σαρα</corr><sic><choice><reg>Και
+<lb n="3" break="no"/>σαρα<surplus>ν</surplus></reg><orig>Κέ
+<lb n="3" break="no"/>σαρα<surplus>ν</surplus></orig></choice></sic></choice>. Τότε οὖν 
+<lb n="4" xml:id="div26-lb6"/><supplied reason="lost">π</supplied>αρέδωκεν αὐ
+<lb n="5" break="no"/>τὸν αὐτοῖς <hi rend="diaeresis">ἵ</hi>να <expan>στ<ex>αυ</ex>ρωθῇ</expan>. Οἱ δὲ <choice><corr>πα
+<lb n="6" break="no"/>ραλαβόντε<supplied reason="omitted">ς</supplied></corr><sic>πα
+<lb n="6" break="no"/>ραλαβόντε</sic></choice> τὸν 
+<lb n="7" xml:id="div26-lb10"/><expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ν</hi></expan> ἀπήγαγον
+<lb n="8"/>καὶ ἦν βαστά<supplied reason="lost">ζων</supplied>
+<lb n="9" rend="inverse"/> <num value="1">α</num> <expan><unclear>Ἰ</unclear><ex cert="low">ωάννης</ex></expan>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb9" xml:space="preserve">
+            <ref>1.7</ref>
+            <p>
+              The
+              <emph rend="italics">nomen sacrum</emph>
+              for σταυρός is written with a staurogram.
+            </p>
+          </item>
+               <item corresp="#div1-lb10" xml:space="preserve">
+            <ref>1.8</ref>
+            <p>According to the editor, the two letters surely stand for Μ(ατ)θ(αιος).</p>
+          </item>
+               <item corresp="#div2-lb10" xml:space="preserve">
+            <ref>2.9</ref>
+            <p>
+              One dot above and one below the number
+              <emph rend="italics">alpha</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div3-lb9" xml:space="preserve">
+            <ref>3.9</ref>
+            <p>According to the editor, the indication of the chapter of Mark is missing.</p>
+          </item>
+               <item corresp="#div4-lb5" xml:space="preserve">
+            <ref>4.5</ref>
+            <p>
+              The
+              <emph rend="italics">nomen sacrum</emph>
+              for σταυρός is written with a staurogram.
+            </p>
+          </item>
+               <item corresp="#div11-lb14" xml:space="preserve">
+            <ref>7.14</ref>
+            <p>
+              Three dots around the number
+              <emph rend="italics">alpha</emph>
+              (one above, one below and one on the right).
+            </p>
+          </item>
+               <item corresp="#div12-lb5" xml:space="preserve">
+            <ref>8.4</ref>
+            <p>
+              In ἵνα, three dots above
+              <emph rend="italics">iota</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div12-lb6" xml:space="preserve">
+            <ref>8.5</ref>
+            <p>
+              In ἰδοὺ, three dots above
+              <emph rend="italics">iota</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div12-lb7" xml:space="preserve">
+            <ref>8.6</ref>
+            <p>
+              In Ἰούδας and αὐτοῖς, three dots above
+              <emph rend="italics">iota</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div12-lb9" xml:space="preserve">
+            <ref>8.8</ref>
+            <p>
+              In ἰδόντες, three dots above
+              <emph rend="italics">iota</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div13-lb20" xml:space="preserve">
+            <ref>9.14</ref>
+            <p>
+              Two dots below
+              <emph rend="italics">omicron</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div14-lb12" xml:space="preserve">
+            <ref>10.13</ref>
+            <p>
+              Two dots below
+              <emph rend="italics">omicron</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div17-lb9" xml:space="preserve">
+            <ref>13.9</ref>
+            <p>The two letters refer to the name of the evangelist (Λου)κὰ(ς).</p>
+          </item>
+               <item corresp="#div17-lb10" xml:space="preserve">
+            <ref>13.10</ref>
+            <p>
+              Two dots on the right side of
+              <emph rend="italics">omicron</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div19-lb3" xml:space="preserve">
+            <ref>15.3</ref>
+            <p>
+              A dot above
+              <emph rend="italics">eta</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div19-lb11" xml:space="preserve">
+            <ref>15.11</ref>
+            <p>
+              In ἡμῖν, a dot above
+              <emph rend="italics">ypsilon</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div19-lb14" xml:space="preserve">
+            <ref>15.14</ref>
+            <p>
+              In νῦν, a dot above
+              <emph rend="italics">ypsilon</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div19-lb17" xml:space="preserve">
+            <ref>15.17</ref>
+            <p>
+              Two dots below
+              <emph rend="italics">omicron</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div19-lb18" xml:space="preserve">
+            <ref>15.18</ref>
+            <p>
+              Six dots around
+              <emph rend="italics">theta</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div20-lb4" xml:space="preserve">
+            <ref>16.4</ref>
+            <p>
+              In ὑμεῖς, a dot above
+              <emph rend="italics">ypsilon</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div20-lb8" xml:space="preserve">
+            <ref>16.8</ref>
+            <p>
+              In ἠκούσαμε, a dot above
+              <emph rend="italics">eta</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div20-lb10" xml:space="preserve">
+            <ref>16.10</ref>
+            <p>
+              A dot above
+              <emph rend="italics">omicron</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div22-lb7" xml:space="preserve">
+            <ref>18.7</ref>
+            <p>The scribe omitted the first syllable of γέγονε, so added γε in the left margin.</p>
+          </item>
+               <item corresp="#div22-lb10" xml:space="preserve">
+            <ref>18.10</ref>
+            <p>The editor noted that the lacuna is too short for the text supplied.</p>
+          </item>
+               <item corresp="#div23-div23-lb13" xml:space="preserve">
+            <ref>19.12</ref>
+            <p>
+              In ὑπηρετῶν, one dot above
+              <emph rend="italics">ypsilon</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div26-lb6" xml:space="preserve">
+            <ref>20.5</ref>
+            <p>
+              The
+              <emph rend="italics">nomen sacrum</emph>
+              for σταυρωθῇ is written with a staurogram.
+In ἵνα, three dots above
+              <emph rend="italics">iota</emph>
+              .
+            </p>
+          </item>
+               <item corresp="#div26-lb10" xml:space="preserve">
+            <ref>20.9</ref>
+            <p>
+              One dot above
+              <emph rend="italics">alpha</emph>
+              .
+            </p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author>Testamentum Novum, Matthaeus (Greek)</author>
+               <bibl type="publication" n="1" subtype="ancient">
+                  <author xml:lang="grc">Testamentum Novum, Matthaeus (Greek)</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/3059">Evangelium secundum Matthaeum</title>
                </bibl>
-               <bibl type="publication" subtype="ancient">
-                  <author>Testamentum Novum, Marcus (Greek)</author>
+               <bibl type="publication" n="2" subtype="ancient">
+                  <author xml:lang="grc">Testamentum Novum, Marcus (Greek)</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/3060">Evangelium secundum Marcum</title>
                </bibl>
-               <bibl type="publication" subtype="ancient">
-                  <author>Testamentum Novum, Lucas (Greek)</author>
+               <bibl type="publication" n="3" subtype="ancient">
+                  <author xml:lang="grc">Testamentum Novum, Lucas (Greek)</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/3061">Evangelium secundum Lucam</title>
                </bibl>
-               <bibl type="publication" subtype="ancient">
-                  <author>Testamentum Novum, Iohannes (Greek)</author>
+               <bibl type="publication" n="4" subtype="ancient">
+                  <author xml:lang="grc">Testamentum Novum, Iohannes (Greek)</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/3062">Evangelium secundum Iohannem</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">ed. princ.</bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95658"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope unit="inventory">384</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/72202"/>
+                  <biblScope unit="page" from="186" to="187">186-187</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>20 ostraca belonging together.
+Dimensions of the ostraca (W x H):
+fr. 1 7 x 15 cm;
+fr. 2 13 x 17 cm;
+fr. 3 14 x 17 cm;
+fr. 4 8, 5 x 10, 5 cm;
+fr. 5 16 x 12 cm;
+fr. 6 15 x 12 cm;
+fr. 7 13 x 17 cm;
+fr. 8 10 x 29 cm;
+fr. 9 15 x 18 cm;
+fr. 10 20 x 14 cm;
+fr. 11 24 x 24 cm;
+fr. 12 12 x 11 cm;
+fr. 13 8 x 13 cm;
+fr. 14 12 x 23 cm;
+fr. 15 23, 5 x 18 cm;
+fr. 16 11 x 14, 5 cm;
+fr. 17 17 x 25 cm;
+fr. 18 12 x 13, 5 cm;
+fr. 19 22 x 25 cm;
+fr. 20 8 x 7, 5 cm;</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
