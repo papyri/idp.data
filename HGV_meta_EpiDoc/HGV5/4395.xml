@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4395">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Namenliste</title>
@@ -9,16 +9,17 @@
          <publicationStmt>
             <idno type="filename">4395</idno>
             <idno type="TM">4395</idno>
-            <idno type="ddb-perseus-style">0239;12;11160</idno>
-            <idno type="ddb-filename">sb.12.11160</idno>
-            <idno type="ddb-hybrid">sb;12;11160</idno>
+            <idno type="ddb-filename">zpe.199.128</idno>
+            <idno type="ddb-hybrid">zpe;199;128</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Barcelona</settlement>
                   </placeName>
+                  <collection>Palau-Ribes</collection>
+                  <idno type="invNo">O. 29</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,23 +32,31 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
+                     <origPlace>Theben (Ägypten)</origPlace>
                      <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/991398 http://www.trismegistos.org/place/2983 http://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/86984"/>
+                  <biblScope type="pp">128</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,33 +71,54 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-06-16T14:25:46-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go. In addition to the SB reference, I also updated the ddb idnos as well as both print and digital illustrations.</change>
+         <change when="2020-05-30T07:05:43-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Add biblio reference for SB</change>
+         <change when="2020-05-30T06:48:13-04:00"
+                 who="http://papyri.info/users/ALBADEFRUTOS">Submit - (1)Added to the existing DDbDP file new readings suggested in A. de Frutos ZPE 199 (2016) 128 concerning ll. 1 and 4.&#xD;
+(2)HGV file updated accordingly: ZPE's reedition is now under 'publication', SB 12 11160 is listed under 'other publications'. The 'collection' data have been updated as well.   </change>
          <change who="HGV" when="1991-05-28">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">11160</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">199</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="generic">S. 19</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">StudPap 12, 1973, nach S. 36</bibl>
+               <bibl type="illustration" n="1">StudPap 12, 1973, nach S. 36</bibl>
+               <bibl type="illustration" n="2">ZPE 199, 2016, S. 128</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB 12 11160</bibl>
+            </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://dvctvs.upf.edu/catalogo/ductus.php?operacion=introduce&amp;ver=1&amp;nume=1023"/>
+               </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
