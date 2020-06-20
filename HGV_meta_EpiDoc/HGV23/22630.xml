@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22630">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">714</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kysis (Oasis Magna)</origPlace>
+                     <origPlace>Fundort: Kysis (Oasis Magna) oder ; Ort der Ausführung: Tentyris;</origPlace>
                      <origDate when="0302-04-25">25. Apr. 302</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="found">
+                     <p n="1" xml:id="geoGBH6AE" exclude="#geoFBJCE">
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/776191 http://www.trismegistos.org/place/2761">Kysis</placeName>
-                        <placeName type="ancient" subtype="region">Oasis Magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Oasis Magna</placeName>
+                     </p>
+                     <p n="2" xml:id="geoFBJCE" exclude="#geoGBH6AE"/>
+                  </provenance>
+                  <provenance n="2" type="executed">
+                     <p xml:id="geoI8ADG8">
+                        <placeName type="ancient">Tentyris</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,9 +72,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>Kamel</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Kamel</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -73,8 +83,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL I, S. 191.</p>
@@ -82,9 +92,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">74</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">32</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,9 +103,10 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 714 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lond. III 714 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Grenf. 2. 74</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
