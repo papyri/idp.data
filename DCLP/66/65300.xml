@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65300" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 65300</title>
@@ -14,7 +14,11 @@
             <idno type="filename">65300</idno>
             <idno type="dclp-hybrid">tm;;65300</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -84,10 +88,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">prayer to Mary</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
+               <term n="4" type="overview">prayer to Mary</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -96,10 +100,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
@@ -131,22 +135,30 @@
 </note></div></div>
          <div type="commentary" subtype="linebyline">
             <list>
-               <item corresp="#div1-lb4" xml:space="preserve"><ref>3</ref> <p>At the end of the line, there is a colon followed by a sign similar to a capital letter L turned 90 degrees to the left.</p></item>
-               <item corresp="#div1-lb8" xml:space="preserve"><ref>7</ref> <p>The acute on the Y consists of two parallel strokes.</p></item>
+               <item corresp="#div1-lb4" xml:space="preserve">
+            <ref>3</ref>
+            <p>At the end of the line, there is a colon followed by a sign similar to a capital letter L turned 90 degrees to the left.</p>
+          </item>
+               <item corresp="#div1-lb8" xml:space="preserve">
+            <ref>7</ref>
+            <p>The acute on the Y consists of two parallel strokes.</p>
+          </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/45719"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="a" type="main">Mithratates' March from Pergamum to Alexandria in 48 B.C.</title>
-                  <author n="1">
-                     <surname>Sijpesteijn</surname>
-                     <forename>P.J.</forename>
-                  </author>
-                  <date>1965</date>
-                  <!-- ignore - stop -->
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/51729"/>
+                  <biblScope n="1" unit="number">8</biblScope>
+                  <biblScope n="2" unit="page" from="126" to="127">126-127</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope unit="number">137</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -154,10 +166,10 @@
             <listBibl>
                <bibl type="printed">BKT 9, pl.61</bibl>
                <bibl type="online">
-                  <ptr target="http://smb.museum/berlpap/index.php/04429/"/>
+                  <ptr target="https://berlpap.smb.museum/04429/"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
