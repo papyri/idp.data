@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64623" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Rain. Unterricht. 145</title>
+            <title>school exercise</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5854</idno>
             <idno type="filename">64623</idno>
             <idno type="dclp-hybrid">p.rain.unterricht;;145</idno>
+            <idno type="MP3">02336.130</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">5cm</width>
+                              <height unit="cm">4.2cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -35,18 +44,23 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>cursive</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0300" notAfter="0499">300 - 499</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,40 +71,71 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>philology</term>
-               <term>grammar (?) mathematics (?)</term>
-               <term type="culture">science</term>
-               <term type="overview">writing exercise?</term>
+               <term n="1" type="description">mathematics (?)</term>
+               <term n="2" type="description">grammar (?)</term>
+               <term n="3" type="culture">science</term>
+               <term n="4" type="culture">education</term>
+               <term n="5">philology</term>
+               <term n="6">grammar (?)</term>
+               <term n="7">mathematics (?)</term>
+               <term n="8">school exercise</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-06-23T03:34:29-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata.</change>
+          <change when="2020-06-23T03:34:28-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata.</change>
+          <change when="2020-06-22T12:16:30-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add possible diacritics.</change>
+          <change when="2020-06-22T12:16:30-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add possible diacritics.</change>
+          <change when="2020-06-20T11:03:36-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Submit - Added text and metadata of TM 64623 according to PRainUnterricht 145 within the scope of an exercise for the course 'Griechische Quellen zum antiken Unterricht' at the university of Würzburg. </change>
+          <change when="2020-06-20T11:03:36-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Submit - Added text and metadata of TM 64623 according to PRainUnterricht 145 within the scope of an exercise for the course 'Griechische Quellen zum antiken Unterricht' at the university of Würzburg. </change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Marcel Moser and revised by Holger Essler as part of the teaching in papyrology at Würzburg.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><app type="alternative"><lem>εξ</lem><rdg>ἕξ</rdg><rdg>ἐξ</rdg></app> εξ εξ
+<lb n="2"/><unclear>εξ</unclear> εξ εξ <unclear>εξ</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P. Rainer Unterricht (MPER N.S. 15)</title>
+               <bibl type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/10813"/>
                   <biblScope unit="number">145</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">MPER 15, pl. 67</bibl>
+               <bibl type="online">
+                  <ptr target="http://data.onb.ac.at/rec/RZ00004135"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
