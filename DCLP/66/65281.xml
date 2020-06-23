@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65281" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Rain. Unterricht. 148</title>
+            <title>school text (figures?)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">65281</idno>
             <idno type="dclp-hybrid">p.rain.unterricht;;148</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0500" notAfter="0699">500 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,39 +61,53 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>mathematics</term>
-               <term type="culture">science</term>
-               <term type="overview">figures?</term>
+               <term n="1" type="culture">science</term>
+               <term n="2">mathematics</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/>ξε ξε ξε <unclear>ξ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>οε οω <gap reason="illegible" quantity="1" unit="character"/><unclear>ξ</unclear> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>π<unclear>ς</unclear> π<unclear>ε</unclear> π οε π<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/>οω ογ οε οε π<gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+<div n="v" type="textpart"><ab>
+<gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P. Rainer Unterricht (MPER N.S. 15)</title>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/10813"/>
                   <biblScope unit="number">148</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">MPER 15, pl. 67</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
