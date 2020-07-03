@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64241" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Rain. Unterricht. 140</title>
+            <title>School text: conjugation paradigms?</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5460</idno>
             <idno type="filename">64241</idno>
             <idno type="dclp-hybrid">p.rain.unterricht;;140</idno>
+            <idno type="MP3">02167.010</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,37 +32,53 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">12.5cm</width>
+                              <height unit="cm">12.5cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>papyrus sheet (columns: 0, pagination: 0)</p>
+                        <layout columns="3">
+                           <p>papyrus sheet (columns: 3, pagination: 0); frg. b 12cmx8cm</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>cursive</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Hermopolis (Hermopolites, Egypt)</origPlace>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Hermopolis (Hermopolites, Egypt); , oder</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoFHBJIE">
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
+                  </provenance>
+                  <provenance n="3">
+                     <p n="1" xml:id="geoDHEC24" exclude="#geoDAG6F #geoDF5C35"/>
+                     <p n="2" xml:id="geoDAG6F" exclude="#geoDHEC24  #geoDF5C35"/>
+                     <p n="3" xml:id="geoDF5C35" exclude="#geoDHEC24 #geoDAG6F"/>
                   </provenance>
                </history>
             </msDesc>
@@ -65,41 +86,107 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>philology</term>
-               <term>grammar</term>
-               <term>with tables</term>
-               <term type="culture">science</term>
-               <term type="overview">conjugation paradigm?</term>
+               <term n="1" type="description">philology</term>
+               <term n="2" type="description">grammar</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">philology</term>
+               <term n="5">grammar</term>
+               <term n="6">school text</term>
+               <term n="7">exercise</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-06-15T09:56:31-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata.</change>
+          <change when="2020-06-15T09:56:30-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata.</change>
+          <change when="2020-06-15T09:03:53-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Continuous numeration as in editon. L. 19-20: dot sigma (as suggested by apparatus in edition).</change>
+          <change when="2020-06-15T09:03:53-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Continuous numeration as in editon. L. 19-20: dot sigma (as suggested by apparatus in edition).</change>
+          <change when="2020-06-14T20:45:41-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Submit - Added text and metadata of TM 64241 according to PRainUnterricht 140 within the scope of an exercise for the course 'Griechische Quellen zum antiken Unterricht' at the university of Würzburg. </change>
+          <change when="2020-06-14T20:45:41-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Submit - Added text and metadata of TM 64241 according to PRainUnterricht 140 within the scope of an exercise for the course 'Griechische Quellen zum antiken Unterricht' at the university of Würzburg. </change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Marcel Moser and revised by Holger Essler as part of the teaching in papyrology at Würzburg.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> 
+<div n="r" type="textpart">
+<div n="a" subtype="fragment" type="textpart">
+<div n="1" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> δίδωμι
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><choice><corr cert="low">δίδου </corr><sic>διδω</sic></choice>
+<lb n="3"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/>ν</lem><rdg resp="Harrauer-Sijpesteijn"><supplied reason="lost">καὶ τὸ τρίτο</supplied>ν</rdg></app> διδότω
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><subst><add place="inline"><unclear>ε</unclear>θηκην</add><del rend="corrected"><unclear>ε</unclear>θηκηα</del></subst>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem>τεθη
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Harrauer-Sijpesteijn"><app type="alternative"><lem>τέθη <lb n="6" break="no"/><supplied reason="lost">τι</supplied></lem><rdg>τεθή <lb n="6" break="no"/><supplied reason="lost">τω</supplied></rdg><rdg>τέθη <lb n="6" break="no"/><supplied reason="lost">τε</supplied></rdg></app></rdg></app> <supplied reason="lost">ε</supplied>ρυξεν
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>ται
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><subst><add place="inline">ν<unclear>α</unclear>ς</add><del rend="corrected">ν<unclear>α</unclear>σ</del></subst>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><unclear>α</unclear>δια
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ο</unclear>
+</ab></div>
+<div n="2" subtype="column" type="textpart"><ab>
+<lb n="11"/><add place="left">γ <g type="slanting-stroke"/></add>  αστα<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/>καὶ απ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/>ἀρξαντ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/>καὶ σ<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/>τὸ φα<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/>οικ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/><app type="alternative"><lem>θ</lem><rdg>α</rdg></app> <g type="slanting-stroke"/> <unclear>ει</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="18"/><gap reason="lost" quantity="1" unit="character"/><unclear>ε</unclear>ρυξεν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+</div>
+<div n="b" subtype="fragment" type="textpart"><ab>
+19.<gap reason="lost" extent="unknown" unit="character"/><unclear>ς</unclear>
+<lb n="20"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ς</unclear>
+<lb n="21"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ου
+<lb n="22"/><gap reason="lost" extent="unknown" unit="character"/>αιρ<supplied reason="lost">ο</supplied>υ
+<lb n="23"/><gap reason="lost" extent="unknown" unit="character"/>ην
+<lb n="24"/><gap reason="lost" extent="unknown" unit="character"/>ης
+</ab></div>
+</div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap> ἀπὸ Ψινθεώ <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P. Rainer Unterricht (MPER N.S. 15)</title>
+               <bibl type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/10813"/>
                   <biblScope unit="number">140</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">MPER 15, pl. 65</bibl>
+               <bibl type="online">
+                  <ptr target="http://data.onb.ac.at/rec/RZ00004130"/>
+               </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>On the verso: Faint traces of a documentary text.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

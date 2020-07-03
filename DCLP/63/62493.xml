@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62493" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P.Herc. Stub</title>
+            <title>Philodemus, De dis ?</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,13 +14,20 @@
             <idno type="filename">62493</idno>
             <idno type="dclp-hybrid">p.herc;;1638</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Naples, Biblioteca Nazionale 109064/1614</idno>
+                  <idno>
+                     <idno type="invNo">Naples, Biblioteca Nazionale 109064/1614</idno>
+                     <idno type="invNo" xml:id="FR9217">P.Herc. 1638 fr. 1</idno>
+                  </idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
@@ -38,17 +45,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Herculaneum (Campania, Italy); written: Italy</origPlace>
-                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v. Chr.</origDate>
+                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy</origPlace>
+                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Campania</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Italy</placeName>
                      </p>
@@ -57,11 +64,7 @@
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="MSI"
-                                   corresp="#FR11683"
-                                   xml:id="GR11683.01"
-                                   from="1999"
-                                   to="2015">
+                        <custEvent type="MSI" corresp="#FR9217" from="1999" to="2015">
                            <graphic url="http://www.chartes.it/images/photo/PHerc 1638-CR01-FIL8-FS8-17091.jpg"/>
                            <orgName>CPART, Brigham Young University</orgName>
                         </custEvent>
@@ -80,46 +83,110 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Philodemus; peri theon? (Bassi)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-11-26" who="IDP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-06-26T16:59:18-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Checked text, updated metadata.</change>
+          <change when="2020-06-26T16:59:17-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Checked text, updated metadata.</change>
+          <change when="2020-06-26T16:35:13-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2020-06-26T16:35:13-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2020-06-26T06:08:24-04:00"
+                 who="http://papyri.info/users/ClaudioVergara">Submit - Text entered from ref. ed. by D. Bassi in RFIC XXXVIII (1910).</change>
+          <change when="2020-06-26T06:08:24-04:00"
+                 who="http://papyri.info/users/ClaudioVergara">Submit - Text entered from ref. ed. by D. Bassi in RFIC XXXVIII (1910).</change>
+          <change when="2014-11-26" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Claudio Vergara (CISPE) and revised by Holger Essler as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>. </p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> γίνεται <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> λέγεται <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="3" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> τοὐναντί<supplied reason="lost">ον</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="4" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> κακῶν <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="5" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> ἀγαθοί <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="6" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> πλῆθος <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="7" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> πολιτῶ<supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="8" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/>ποικίλων καὶ
+<lb n="2"/><gap reason="illegible" quantity="2" unit="character"/>ς τῆς φυσ<supplied reason="lost">ιο</supplied>λο<supplied reason="lost">γίας</supplied>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="9" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">προ</supplied>σηκούσης <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="10" subtype="fragment" type="textpart" corresp="#FR9217"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">κ</supplied>αὶ τοῦ Διός <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83722"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Frammenti inediti di opere di Filodemo (Περὶ μουσικῆς-Περὶ θεῶν-Περὶ ῥητορικῆς) in Papiri Ercolanesi</title>
-                  <author n="1">
-                     <surname>Bassi</surname>
-                     <forename>Domenico</forename>
-                  </author>
-                  <date>1910</date>
-                  <!--ignore - stop-->
+                  <biblScope unit="page">327</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1595">Philodemus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1595">Philodemus</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/906">De dis</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
@@ -128,5 +195,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
