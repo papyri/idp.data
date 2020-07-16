@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59895" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Wuerzb. 1</title>
+            <title>P.Würzb. 1</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1002</idno>
             <idno type="filename">59895</idno>
             <idno type="dclp-hybrid">p.wuerzb;;1</idno>
+            <idno type="MP3">00419.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">17.1cm</width>
+                              <height unit="cm">31.1cm</height>
+                           </dimensions>
                         </support>
                         <foliation>
                            <dim type="pagination">9</dim>
@@ -46,45 +55,61 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0500" notAfter="0599">500 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
+               <additional>
+                  <adminInfo>
+                     <custodialHist>
+                        <custEvent type="imaged" corresp="#FR16018" when="2009">
+                           <orgName>Universitätsbibliothek Würzburg</orgName>
+                           <graphic url="https://papyri.uni-leipzig.de/rsc/viewer/WrzPapyri_derivate_00000040/PWuerz.Inv.0018R300.jpg"/>
+                        </custEvent>
+                        <custEvent type="imaged" corresp="#FR16019" when="2009">
+                           <orgName>Universitätsbibliothek Würzburg</orgName>
+                           <graphic url="https://papyri.uni-leipzig.de/rsc/viewer/WrzPapyri_derivate_00000044/PWuerz.Inv.0018V300.jpg"/>
+                        </custEvent>
+                     </custodialHist>
+                  </adminInfo>
+               </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>tragedy</term>
-               <term>philology</term>
-               <term>scholia</term>
-               <term>commentary</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Euripides; Phoenissae 344-1108 scholia, private copy of schoolteacher?</term>
+               <term type="overview">Scholia on Euripides, Phoenissae 344-1108 (private copy of schoolteacher?)</term>
+               <term n="1" type="description">scholia</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4" type="culture">science</term>
+               <term n="5">poetry</term>
+               <term n="6">tragedy</term>
+               <term n="7">philology</term>
+               <term n="8">scholia</term>
+               <term n="9">commentary</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -93,42 +118,179 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-07-15T10:23:08-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata. For Leiden+ restrictions underdots were not encoded for the letters with ancient diacritics in lines 4, 30, 52, 59, 64, 85.</change>
+          <change when="2020-07-15T10:23:07-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata. For Leiden+ restrictions underdots were not encoded for the letters with ancient diacritics in lines 4, 30, 52, 59, 64, 85.</change>
+          <change when="2020-07-15T06:40:38-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - change to middle and final sigma, *diple* instead of *angle-mark*, L.2 beginning [.1], L.6 \ἦλθ/[εν -&gt; \ἦλθ[εν]/. L.24 beginning [.1-2].1[.4], L.29 first traces .12, α̣υ̣.2[, add. L.35, L.36,45 add &gt;&gt; to supplements, L.55 \τῆϲ/ insertion is in L.56, l.58 τὸ\ν/ὑ add space. L.75 αὐτὸ]ϲ̣ ny?, L.81 \  ̣  ̣/η̣ -&gt; \  ̣  ̣/.4η̣. Add ancient diacritics: L.4 οἱ̣, L.18 γ̣’̣ -&gt; apostrophe, L.21 δ’ -&gt; apostrophe, L. 30 ὃ̣ϲ̣ breathing, L.39 ἡ̣[, L.52 ὃ̣ breathing, L.59 ὑ̣π̣ὲρ breathing, L.60 δ’ apostrope, L.64 δά̣ϊ̣ο̣ν̣ trema, L.85 ὁ̣ </change>
+          <change when="2020-07-15T06:40:38-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - change to middle and final sigma, *diple* instead of *angle-mark*, L.2 beginning [.1], L.6 \ἦλθ/[εν -&gt; \ἦλθ[εν]/. L.24 beginning [.1-2].1[.4], L.29 first traces .12, α̣υ̣.2[, add. L.35, L.36,45 add &gt;&gt; to supplements, L.55 \τῆϲ/ insertion is in L.56, l.58 τὸ\ν/ὑ add space. L.75 αὐτὸ]ϲ̣ ny?, L.81 \  ̣  ̣/η̣ -&gt; \  ̣  ̣/.4η̣. Add ancient diacritics: L.4 οἱ̣, L.18 γ̣’̣ -&gt; apostrophe, L.21 δ’ -&gt; apostrophe, L. 30 ὃ̣ϲ̣ breathing, L.39 ἡ̣[, L.52 ὃ̣ breathing, L.59 ὑ̣π̣ὲρ breathing, L.60 δ’ apostrope, L.64 δά̣ϊ̣ο̣ν̣ trema, L.85 ὁ̣ </change>
+          <change when="2020-07-14T12:53:41-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Submit - Added text and metadata of TM 59895 according to the edition in WJA 37, pp. 31-77 (not including the whole apparatus, but only subjectively important readings with new readings from the forthcoming edition by McNamee) within the scope of an exercise for the course 'Griechische Quellen zum antiken Unterricht' at the university of Würzburg. NB: 1. As of now I have not added the ancient diacriticals for underdotted characters (in ll. 4,30,39,52,59,64,85), since it results in errors when saving with Leiden+ (it works in xml, but reverts to an error when switching back to Leiden+). 2. The centered line 35 is not displayed in the preview. 3. For ll. 49, 69, 75 slanting-strokes might be supplied which is not done in the editions (since the delimitations for quotations and explanations in this papyrus are rather regularly inserted where preserved).</change>
+          <change when="2020-07-14T12:53:41-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Submit - Added text and metadata of TM 59895 according to the edition in WJA 37, pp. 31-77 (not including the whole apparatus, but only subjectively important readings with new readings from the forthcoming edition by McNamee) within the scope of an exercise for the course 'Griechische Quellen zum antiken Unterricht' at the university of Würzburg. NB: 1. As of now I have not added the ancient diacriticals for underdotted characters (in ll. 4,30,39,52,59,64,85), since it results in errors when saving with Leiden+ (it works in xml, but reverts to an error when switching back to Leiden+). 2. The centered line 35 is not displayed in the preview. 3. For ll. 49, 69, 75 slanting-strokes might be supplied which is not done in the editions (since the delimitations for quotations and explanations in this papyrus are rather regularly inserted where preserved).</change>
+          <change when="2020-07-14T07:10:53-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Commit - ίί</change>
+          <change when="2020-07-14T07:10:53-04:00"
+                 who="http://papyri.info/users/Marcel%20Moser">Commit - ίί</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Marcel Moser and revised by Holger Essler as part of the teaching in papyrology at Würzburg. Thanks to the generosity of Kathleen McNamee we could include further readings by herself and M. Haslam from her forthcoming edition for 'Commentaria et lexica Graeca in papyris reperta' (CLGP).</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="v" subtype="column" type="textpart" corresp="#FR16018"><ab>
+<lb n="1,msup"/> <space extent="unknown" unit="character"/> <unclear>λα</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear><g type="diple"/><unclear><g type="diple"/></unclear> οὐδέ σοι πυρὸς ἀνῆψα φῶς <g type="slanting-stroke"/><g type="slanting-stroke"/> <app type="editorial"><lem><unclear>εἰω</unclear><supplied reason="lost">θ-</supplied><gap reason="lost" atLeast="21" atMost="24" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="1" unit="character"/></lem><rdg resp="Essler"><unclear>εἰώ</unclear><supplied reason="lost">θασιν</supplied></rdg><rdg resp="McNamee"><unclear>εἴω</unclear><supplied reason="lost">θεν ἡ μήτηρ τοῦ ἀνδρὸς τὴν νύμ</supplied> <lb n="2" break="no"/><supplied reason="lost">φην</supplied></rdg></app> ἐ<supplied reason="lost">ξ</supplied><unclear>ά</unclear>ξαι καὶ <unclear>προ</unclear>η<unclear>γ</unclear>εῖσ<unclear>θαι</unclear> <app type="editorial"><lem resp="Henry"><unclear>τοῦ</unclear> νυμφί<unclear>ου</unclear> <gap reason="lost" atLeast="19" atMost="22" unit="character"/></lem><rdg resp="McNamee"><unclear>καὶ</unclear> <add place="above"><unclear>τῶι</unclear></add> νυμφί<unclear>ωι</unclear> <supplied reason="lost">δοῦναι</supplied></rdg></app>
+<lb n="3"/><gap reason="lost" atLeast="4" atMost="6" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>υ<gap reason="illegible" quantity="2" unit="character"/> .<g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><unclear><g type="diple"/></unclear> <unclear>ἀ</unclear>νυμέν<unclear>α</unclear>ια <unclear>δ</unclear>᾿ ἐκ<supplied reason="lost">η</supplied>δεύθ<unclear>η</unclear> <hi rend="diaeresis">Ἰ</hi>σμηνὸς <supplied reason="lost">λουτροφόρου</supplied>
+<lb n="4"/><supplied reason="lost">χλιδᾶς <g type="slanting-stroke"/><g type="slanting-stroke"/></supplied> <unclear>εἰ</unclear>ώθ<unclear>α</unclear><supplied reason="lost">σ</supplied>ιν ο<hi rend="asper">ἱ</hi> ἀρχαῖοι π<unclear>ρο</unclear>β<supplied reason="lost">α</supplied>λ<unclear>εῖν</unclear> ἀπὸ τῶν ἐπι<unclear>χ</unclear><supplied reason="lost">ωρίων ποταμῶν</supplied> 
+<lb n="5"/><supplied reason="lost">ἢ ἀπὸ πη</supplied><unclear>γῆς</unclear> ὕδατα καὶ λοῦσαι τὸ<supplied reason="lost">ν</supplied> νυμφίον καὶ <unclear>π</unclear>αι<unclear>δ</unclear><supplied reason="lost">οποιίαν εὔ</supplied>
+<lb n="6" break="no"/><supplied reason="lost">χεσθαι</supplied> <app type="editorial"><lem resp="Schwartz"><supplied reason="lost">ἐκ τῶν</supplied> <unclear>γά</unclear>μων</lem><rdg resp="Essler"><supplied reason="lost">ἐκ τῶν πο</supplied><unclear>τα</unclear>μῶν</rdg></app>. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/> κᾆτα δ<supplied reason="lost">ὲ</supplied> <unclear>ἦ</unclear>λθεν αὖ φυγάς <g type="slanting-stroke"/><g type="slanting-stroke"/> <add place="above">ἦλθ<supplied reason="lost">εν</supplied></add> <supplied reason="lost">ὁ Τ</supplied><unclear>υ</unclear><supplied reason="lost">δεὺς ποι</supplied>
+<lb n="7" break="no"/><supplied reason="lost">ήσας φό</supplied>νον <unclear>ἐ</unclear>ν τῆι πατρίδι αὐτοῦ κ<unclear>α</unclear>ὶ τούτου χάριν φυγὰς γε<supplied reason="lost">νόμε</supplied>   
+<lb n="8" break="no"/><supplied reason="lost">νος</supplied> <app type="editorial"><lem><gap reason="lost" atLeast="4" atMost="6" unit="character"/></lem><rdg resp="Essler"><supplied reason="lost">ᾤχετο</supplied></rdg></app><supplied reason="lost"><g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/></supplied> καὶ σκῦλα <supplied reason="lost">γ</supplied><unclear>ρ</unclear>άψεις <g type="slanting-stroke"/><g type="slanting-stroke"/> εἰώθασιν ο<hi rend="asper">ἱ</hi> ἀρχαῖοι  <app type="editorial"><lem resp="Haslam"><hi rend="asper">ὅ</hi>τε πορ<unclear>ί</unclear>ζ<supplied reason="lost">ουσι</supplied>
+<lb n="9"/><supplied reason="lost">νίκην</supplied></lem><rdg resp="Schwartz">ὅτ’ ἔποι<unclear>ο</unclear><supplied reason="lost">υν</supplied> <lb n="9"/><supplied reason="lost">σκύλευσιν</supplied></rdg><rdg resp="Essler">ὅτ’ ἐπ<unclear>όρι</unclear>ζ<supplied reason="lost">ον</supplied> <lb n="9"/><supplied reason="lost">νίκην</supplied></rdg></app> <app type="editorial"><lem resp="Essler"><supplied reason="lost">ἐπιγρ</supplied><unclear>άφε</unclear><supplied reason="lost">ι</supplied><unclear>ν</unclear></lem><rdg resp="Schwartz"><supplied reason="lost">καταγράψ</supplied>αι ἐ<supplied reason="lost">ν</supplied></rdg><rdg resp="McNamee"><supplied reason="lost">γρ</supplied><unclear>ά</unclear>φ<unclear>ε</unclear><supplied reason="lost">ι</supplied><unclear>ν</unclear></rdg></app> ἱματίοις ὅτι <hi rend="asper">ὁ</hi> <unclear>δε</unclear>ῖνα ἐπόρ<unclear>ι</unclear><supplied reason="lost">σ</supplied><unclear>ε</unclear>ν <app type="editorial"><lem>τ<gap reason="illegible" quantity="5" unit="character"/><gap reason="lost" atLeast="3" atMost="5" unit="character"/>
+<lb n="10"/><gap reason="lost" atLeast="7" atMost="9" unit="character"/></lem><rdg resp="Wilcken">τὴν <unclear>ν</unclear>ε<unclear>ίκ</unclear><supplied reason="lost">ην ἀπο</supplied> <lb n="10" break="no"/><supplied reason="lost">λαβων καὶ</supplied></rdg><rdg resp="McNamee">τ<unclear>ὸ</unclear>ν <unclear>ἆθλ</unclear><supplied reason="lost">ον καὶ ἐν</supplied> <lb n="10"/><supplied reason="lost">ἱεροῖς</supplied></rdg></app><supplied reason="lost">τὰ ἱμ</supplied><unclear>ά</unclear>τια τοῖς θεοῖς ἀνατιθέναι. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/><g type="diple"/> καὶ σὺ Φοῖβε ἄ<unclear>ν</unclear><supplied reason="lost">αξ</supplied>
+<lb n="11"/><supplied reason="lost">Ἀγυιεῦ</supplied><app type="editorial"><lem><gap reason="lost" atLeast="3" atMost="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><unclear>α</unclear>ν</lem><rdg resp="Schwartz"><supplied reason="lost"><g type="slanting-stroke"/><g type="slanting-stroke"/> στήλην ὀξ</supplied><unclear>ε</unclear><supplied reason="lost">ῖ</supplied><unclear>α</unclear>ν</rdg><rdg resp="McNamee"><supplied reason="lost">κίονα ἵστ</supplied><unclear>α</unclear><supplied reason="lost">σ</supplied>αν</rdg><rdg resp="Mastronarde"><supplied reason="lost">εἰώθ</supplied><unclear>ε</unclear><supplied reason="lost">σ</supplied>αν</rdg></app> ο<hi rend="asper">ἱ</hi> ἀρχαῖοι βαλόντες ἐν τοῖς προθύρ<unclear>ο</unclear><supplied reason="lost">ις</supplied> αὐτ<supplied reason="lost">ῶν</supplied><app type="editorial"><lem><gap reason="lost" atLeast="0" atMost="1" unit="character"/>
+<lb n="12"/><gap reason="lost" atLeast="10" atMost="12" unit="character"/></lem><rdg resp="Essler"><supplied reason="lost">ἵσ</supplied> <lb n="12" break="no"/><supplied reason="lost">ταντες κίονα</supplied><certainty match=".." locus="value"/></rdg><rdg resp="Mastronarde"><supplied reason="lost">κί</supplied> <lb n="12" break="no"/><supplied reason="lost">ονα στῆσαι ὡς</supplied></rdg></app> <supplied reason="lost">τ</supplied>οῦ Ἀπόλλ<supplied reason="lost">ω</supplied>νος ἐκάλουν αὐτὸν Φοῖβον <app type="editorial"><lem resp="Mastronarde">Ἀγυ<supplied reason="lost">ιέα. οὗ</supplied>
+<lb n="13" break="no"/><supplied reason="lost">τος γὰρ ἦν φύλα</supplied><unclear>ξ</unclear></lem><rdg resp="Schwartz">ἀγυ<supplied reason="lost">ιέα· ἀγυιὰ δὲ</supplied> <lb n="13"/><supplied reason="lost">ὄνομα ἀρχαῖο</supplied><unclear>ν</unclear></rdg><rdg resp="Essler">Ἀγυ<supplied reason="lost">ιέα,</supplied> <lb n="13"/><supplied reason="lost">ὅτι ἦν καὶ φύλα</supplied><unclear>ξ</unclear><certainty match=".." locus="value"/></rdg></app> τῆς <hi rend="asper">ὁ</hi>δοῦ. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/><g type="diple"/> Κάδμος ἔμολε τά<unclear>ν</unclear>δ<unclear>ε</unclear> <supplied reason="lost">γ</supplied>ᾶν <unclear>Τύ</unclear><supplied reason="lost">ριος ὧι τε</supplied>
+<lb n="14" break="no"/><supplied reason="lost">τρασκελὴς μόσ</supplied><unclear>χοσ</unclear> ἀδ<unclear>ά</unclear><supplied reason="lost">μ</supplied><unclear>αστ</unclear>ον πέσημα <g type="slanting-stroke"/><g type="slanting-stroke"/> Κάδμος βουλόμενος κτίσα<supplied reason="lost">ι πό</supplied> 
+<lb n="15" break="no"/><supplied reason="lost">λιν ἠρώτησ</supplied><unclear>ε</unclear>ν κ<unclear>α</unclear>ὶ <unclear>ἔ</unclear><supplied reason="lost">λ</supplied><unclear>α</unclear>βεν χρησμὸν ἐκ τοῦ Ἀπόλλωνος ποῦ <unclear>ἂ</unclear>ν <unclear>κ</unclear><supplied reason="lost">τί</supplied>  
+<lb n="16" break="no"/><supplied reason="lost">σαι πόλι</supplied><unclear>ν</unclear> καὶ ἔχρησεν αὐτῶι <hi rend="asper">ὁ</hi> Ἀπόλλων χρησμὸν τοιοῦτον· <app type="editorial"><lem><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" atLeast="2" atMost="3" unit="character"/>
+<lb n="17"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/></lem><rdg resp="Schwartz"><unclear>ἄ</unclear><supplied reason="lost">π</supplied><unclear>ι</unclear><supplied reason="lost">θι ἐν</supplied> <lb n="17" break="no"/><supplied reason="lost">θένδε</supplied></rdg></app><supplied reason="lost">π</supplied>ρ<unclear>ὸσ</unclear> β<supplied reason="lost">ο</supplied><unclear>υκ</unclear>ό<unclear>λ</unclear>ον Πελάγοντα καὶ ἐξ αὐτοῦ βοῦν α<unclear>ἴ</unclear><supplied reason="lost">τησαι φακοὺς</supplied>
+<lb n="18"/><supplied reason="lost">ἔχ</supplied><unclear>ου</unclear><supplied reason="lost">σαν ἐ</supplied>ν τῷ <unclear>ν</unclear>ώτω<supplied reason="lost">ι σ</supplied>τρογγύλο<supplied reason="lost">υ</supplied><unclear>ς</unclear>. καὶ ὅπου <unclear>γ</unclear>’<unclear><g type="apostrophe"/></unclear> ἂν πέ<unclear>ση</unclear><supplied reason="lost">ι</supplied> <app type="editorial"><lem><unclear>η</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" atLeast="4" atMost="5" unit="character"/></lem><rdg resp="Schwartz"><unclear>ἡγ</unclear><supplied reason="lost">ησαμένη σοι</supplied></rdg><rdg resp="McNamee"><unclear>αὐ</unclear><supplied reason="lost">τομάτως</supplied></rdg><rdg resp="Essler"><unclear>ἢ</unclear> <unclear>κα</unclear><supplied reason="lost">θίζηι</supplied></rdg><rdg resp="Haslam"><unclear>ἢ</unclear> <unclear>κλ</unclear><supplied reason="lost">ίθηι</supplied></rdg></app>
+<lb n="19"/><hi rend="asper">ἡ</hi> βους ἀφ᾿ ἑαυτῆς, ἀπαν<unclear>ιστ</unclear>ὰς ἐκεῖ κτίσον πόλιν. εἶ<unclear>τα</unclear> <unclear>λα</unclear>βὼν <unclear>τὸν</unclear> <unclear>χρ</unclear><supplied reason="lost">ησμὸν</supplied>
+<lb n="20"/><unclear>ἦ</unclear>λθεν <unclear>ε</unclear><supplied reason="lost">ἰ</supplied>ς τὰς Θήβας τῆς Β<unclear>ο</unclear>ιωτίας καὶ ἐκεῖ ἔπεσεν <hi rend="asper">ἡ</hi> βοῦς καὶ ἔκ<unclear>τ</unclear><supplied reason="lost">ισεν</supplied>
+<lb n="21"/><supplied reason="lost">ἐκ</supplied>εῖ τ<unclear>ὰ</unclear>ς Θήβας. Βοιωτία δ’<g type="apostrophe"/> ἐκλ<unclear>ήθ</unclear>η <hi rend="asper">ὁ</hi> τόπος ἐκεῖνος διὰ τὸ ἐκεῖ <app type="editorial"><lem>π<supplied reason="lost">εσεῖν</supplied> 
+<lb n="22"/><gap reason="lost" atLeast="3" atMost="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/></lem><rdg resp="McNamee">π<supplied reason="lost">εσεῖν</supplied> <lb n="22"/><supplied reason="lost">αὐτὴ</supplied><unclear>ν</unclear></rdg><rdg resp="M. Haslam">π<supplied reason="lost">ρῶτον</supplied> <lb n="22"/><supplied reason="lost">πεσεῖ</supplied>ν</rdg></app> τὴν βοῦ<supplied reason="lost">ν</supplied>. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/> ἀδάμαστον πέσημα <g type="slanting-stroke"/><g type="slanting-stroke"/> οἷον <app type="editorial"><lem resp="McNamee"><app type="alternative"><lem><supplied reason="lost">ἄ</supplied>δ<unclear>μη</unclear>τον</lem><rdg><supplied reason="lost">ἀ</supplied>δ<unclear>άμη</unclear>τον</rdg></app><certainty match=".." locus="value"/></lem><rdg resp="Wilcken"><supplied reason="lost">ἄ</supplied>δραστον</rdg><rdg resp="Athanassiou"><unclear>ἄδρα</unclear>στος</rdg></app> <gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="23"/><app type="editorial"><lem><supplied reason="lost">αὐ</supplied>τομ<unclear>άτως</unclear> <gap reason="illegible" quantity="3" unit="character"/>ν<gap reason="illegible" quantity="2" unit="character"/>π<gap reason="illegible" quantity="3" unit="character"/>ου</lem><rdg resp="McNamee"><supplied reason="lost">αὐ</supplied>τομάτ<unclear>ως</unclear> <gap reason="illegible" quantity="3" unit="character"/> <unclear>αὐ</unclear>τοῦ</rdg><rdg resp="Athanassiou"><supplied reason="lost">αὐ</supplied>τόμα<unclear>τον</unclear><certainty match=".." locus="value"/></rdg><rdg resp="Haslam"><app type="alternative"><lem><supplied reason="lost">αὐ</supplied>τομάτ<unclear>ως</unclear> γὰρ πίπτει</lem><rdg><supplied reason="lost">αὐ</supplied>τομάτ<unclear>ως</unclear> πεσούσης</rdg></app></rdg></app>. <unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear><g type="diple"/><unclear><g type="diple"/></unclear> κι<unclear>σσὸ</unclear>ς ὃν περιστεφ<unclear>ή</unclear><supplied reason="lost">ς</supplied> <g type="slanting-stroke"/><g type="slanting-stroke"/> <gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="24"/><gap reason="lost" atLeast="1" atMost="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="4" unit="character"/><unclear>ην</unclear><gap reason="lost" atLeast="0" atMost="1" unit="character"/>ερ<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ν<gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>κηρ</unclear>ομε<gap reason="illegible" quantity="8" unit="character"/><gap reason="lost" atLeast="10" atMost="12" unit="character"/>
+<lb n="25"/><gap reason="lost" atLeast="1" atMost="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ο<unclear>σ</unclear><gap reason="illegible" quantity="9" unit="character"/><unclear>σ</unclear>α<unclear>π</unclear><gap reason="illegible" quantity="2" unit="character"/> <unclear>κισσὸς</unclear> καὶ σκε<unclear>πάσαι</unclear> <unclear>τὸν</unclear> Δ<unclear>ι</unclear><supplied reason="lost">όνυσον</supplied> <gap reason="lost" atLeast="4" atMost="6" unit="character"/>
+<lb n="26"/><gap reason="lost" atLeast="7" atMost="9" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>δ</unclear>α<gap reason="illegible" quantity="14" unit="character"/> . <unclear><g type="diple"/></unclear><g type="diple"/> <unclear>καὶ</unclear> <unclear>γυναιξὶν</unclear> <unclear>εὐίο</unclear><supplied reason="lost">ις Βάκχαις.</supplied>
+<lb n="27"/><supplied reason="lost">αἱ μαινάδε</supplied><unclear>ς</unclear> ἐκαλο<unclear>ῦντο</unclear> <unclear>Βά</unclear>κχ<unclear>α</unclear>ι, ἐπειδὴ <unclear>ἐχ</unclear>ό<unclear>ρευον</unclear> <unclear>ὑπ</unclear><supplied reason="lost">ὲρ τοῦ Διο</supplied>
+<lb n="28" break="no"/><supplied reason="lost">νύσου. εὐο</supplied><unclear>ῖ</unclear> <unclear>ε</unclear>ὐ<unclear>ὰν</unclear> <unclear>ἦ</unclear>ν <unclear>ὁ</unclear> <unclear>ὕμ</unclear>νος <unclear>αὐτῶν</unclear>. <unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear><unclear><g type="diple"/></unclear><g type="diple"/> <unclear>Ἄρεο</unclear><supplied reason="lost">ς</supplied> <app type="editorial"><lem><gap reason="lost" atLeast="7" atMost="9" unit="character"/>
+<lb n="29"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/><gap reason="illegible" quantity="6" unit="character"/></lem><rdg resp="McNamee"><supplied reason="lost">φύλαξ <g type="slanting-stroke"/><g type="slanting-stroke"/> τῆς</supplied> <lb n="29"/><supplied reason="lost">Δ<unclear>ί</unclear>ρκης· τῶι</supplied> <unclear>Κ</unclear>ά<unclear>δμωι</unclear><certainty match=".." locus="value"/></rdg></app> <app type="editorial"><lem><gap reason="illegible" quantity="6" unit="character"/>ον</lem><rdg resp="Haslam"><unclear>σύμβολ</unclear>ον</rdg><rdg resp="Mastronarde"><unclear>ἐμπόδι</unclear>ον<certainty match=".." locus="value"/></rdg></app> <add place="above">τοῦ</add> κτί<unclear>σα</unclear>ι τ<unclear>ὰς</unclear> Θήβ<unclear>ας</unclear>  <app type="editorial"><lem><unclear>αυ</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="McNamee"><unclear>α</unclear>ὐ<unclear>τό</unclear><supplied reason="lost">θι</supplied></rdg></app> <app type="editorial"><lem><gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="30"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/>ν <unclear>δρ</unclear>ά<unclear>κων</unclear>. <add place="above"><g type="slanting-stroke"/><g type="slanting-stroke"/></add></lem><rdg resp="Wilcken"><supplied reason="lost"><g type="diple"/><g type="diple"/> φόνιος ἦν δρά</supplied> <lb n="30" break="no"/><supplied reason="lost">κων Ἄρε</supplied><unclear>ος</unclear> υἱ<unclear>ός</unclear> <g type="slanting-stroke"/><g type="slanting-stroke"/></rdg></app> ἦν δὲ ἐκεῖ δράκων <hi rend="asper">ὃ</hi><unclear>ς</unclear> <add place="above"><unclear>ἐ</unclear></add><unclear>φύλασσε</unclear> τὴ<unclear>ν</unclear> <app type="editorial"><lem><gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="31"/><gap reason="lost" atLeast="5" atMost="7" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>α</unclear><gap reason="illegible" quantity="2" unit="character"/><unclear>αυτ</unclear><gap reason="illegible" quantity="14" unit="character"/><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="McNamee"><supplied reason="lost">κρήνην πρὸς</supplied> <lb n="31"/><supplied reason="lost">τὸ μηδέ</supplied><unclear>να</unclear> <unclear>ἀπ</unclear>’ <unclear>αὐτῆς</unclear> <unclear>ὑδρεύσασθαι</unclear><certainty match=".." locus="value"/></rdg></app>. <unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear><g type="diple"/><unclear><g type="diple"/></unclear> <gap reason="illegible" quantity="1" unit="character"/>α<gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="32"/><gap reason="lost" atLeast="5" atMost="7" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>δ<unclear>ε</unclear> <unclear>τ</unclear><supplied reason="lost">ο</supplied>ῦ<unclear>το</unclear> <unclear>ἀ</unclear>λλ<unclear>ὰ</unclear> <unclear>κα</unclear>ὶ Κά<unclear>δμ</unclear><gap reason="illegible" quantity="6" unit="character"/><unclear>ο</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>δ</unclear><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="33"/><gap reason="lost" atLeast="1" atMost="2" unit="character"/> <unclear>Καδμ</unclear><gap reason="illegible" quantity="8" unit="character"/> <unclear>ἀπὸ</unclear>  <unclear>τ</unclear><supplied reason="lost">ο</supplied><unclear>ῦ</unclear>  <unclear>δρ</unclear>άκ<supplied reason="lost">ο</supplied><unclear>ντος</unclear> το<unclear>ν</unclear><gap reason="illegible" quantity="14" unit="character"/><gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="34"/><supplied reason="lost">ἀ</supplied><unclear>πο</unclear>λ<unclear>α</unclear>β<unclear>ὼν</unclear> τ<unclear>οὺ</unclear>ς <unclear>ὀδ</unclear><supplied reason="lost">ό</supplied><unclear>ντας</unclear> <g type="slanting-stroke"/><unclear><g type="slanting-stroke"/></unclear> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<lb n="35"/>δρά<unclear>κων</unclear>
+</ab></div>
+<div n="r" subtype="column" type="textpart" corresp="#FR16019"><ab>
+<lb n="1,msup"/> <gap reason="lost" extent="unknown" unit="character"/>ζ<gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="2,msup"/> <gap reason="lost" extent="unknown" unit="character"/> <g type="cross"/> <gap reason="illegible" quantity="1" unit="character"/><unclear>ι</unclear><gap reason="lost" atLeast="3" atMost="5" unit="character"/>εχ<gap reason="illegible" quantity="6" unit="character"/><unclear>ι</unclear>
+<lb n="36"/><gap reason="lost" atLeast="5" atMost="9" unit="character"/><supplied reason="lost"><g type="diple"/><g type="diple"/> αἱ διώνυμοι θεαὶ Πε</supplied><unclear>ρ</unclear>σέφασσ<unclear>α</unclear> καὶ φίλα Δαμάτηρ θεά <g type="slanting-stroke"/><g type="slanting-stroke"/>
+<lb n="37"/><supplied reason="lost">διώνυμοι λέγονται, ὅτι ἡ Δημήτηρ</supplied> ἐκλήθη <hi rend="supraline">Γῆ</hi> καὶ Δημήτηρ καὶ <hi rend="asper">ἡ</hi> <unclear>Π</unclear><supplied reason="lost">ερ</supplied>
+<lb n="38" break="no"/><supplied reason="lost">σεφόνη ἐκλή</supplied><unclear>θη</unclear> <unclear>Κόρη</unclear> <unclear>καὶ</unclear> <unclear>Περσε</unclear>φόν<unclear>η</unclear>. <unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear><g type="diple"/><g type="diple"/><g type="diple"/> α<hi rend="asper">ἱ</hi> διώνυμοι θ<unclear>ε</unclear><supplied reason="lost">αί</supplied>
+<lb n="39"/><supplied reason="lost">ὅτι οὕτως ἐν</supplied> <unclear>ταῖς</unclear> <unclear>Θή</unclear>βαις ἐτιμῶντο <hi rend="asper">ἡ</hi> Δημήτηρ καὶ <hi rend="asper">ἡ</hi> <supplied reason="lost">Πε</supplied><unclear>ρσ</unclear><supplied reason="lost">εφόνη.</supplied>
+<lb n="40"/><app type="editorial"><lem><gap reason="lost" atLeast="2" atMost="4" unit="character"/></lem><rdg resp="McNamee"><supplied reason="lost"><g type="diple"/><g type="diple"/></supplied></rdg></app><supplied reason="lost">πέμπε</supplied> <unclear>πυρφόρους</unclear> θεὰς <g type="slanting-stroke"/><g type="slanting-stroke"/> τὴν <unclear>Περσε</unclear>φόνην καὶ Δ<unclear>ήμη</unclear>τ<unclear>ρα</unclear>. <unclear>πυ</unclear><gap reason="lost" atLeast="6" atMost="8" unit="character"/>
+<lb n="41"/><gap reason="lost" atLeast="8" atMost="10" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ιν<gap reason="illegible" quantity="4" unit="character"/><supplied reason="lost"> <gap reason="illegible" quantity="1" unit="character"/></supplied><gap reason="illegible" quantity="3" unit="character"/> ἵνα συνεκδοχικ<unclear>ὸν</unclear> <unclear>ἦ</unclear>ι τὸ σχῆμα· <unclear>θηλ</unclear>υκ<unclear>ὸν</unclear> <gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" atLeast="7" atMost="9" unit="character"/>
+<lb n="42"/><gap reason="lost" atLeast="7" atMost="9" unit="character"/><gap reason="illegible" quantity="9" unit="character"/> <unclear>ἐξ</unclear> <unclear>ἑ</unclear>τ<unclear>έρ</unclear>ο<unclear>υ</unclear> <unclear>μὲν</unclear> <unclear>ο</unclear>ἷο<unclear>ν</unclear> <hi rend="asper">ἡ</hi> Δημήτηρ <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/>
+<lb n="43"/><gap reason="lost" atLeast="8" atMost="10" unit="character"/><gap reason="illegible" quantity="5" unit="character"/> <unclear>πυρφορουσ</unclear><gap reason="illegible" quantity="10" unit="character"/>α <unclear>λαμπα</unclear>δ<unclear>ηφόροι</unclear> <unclear>λάμπαδ</unclear><supplied reason="lost">ας</supplied> <gap reason="lost" atLeast="6" atMost="8" unit="character"/>
+<lb n="43"/><add place="interlinear"> <unclear>ἄλλα</unclear>ι <unclear>λ</unclear>αμπαδηφοροῦσι</add>
+<lb n="44"/><supplied reason="lost"><g type="diple"/><g type="diple"/> βαθύς γέ τοι</supplied> <unclear>Δ</unclear><supplied reason="lost">ι</supplied><unclear>ρ</unclear>καῖ<unclear>ος</unclear> <unclear>ἀναχωρ</unclear>εῖ<unclear>ν</unclear> πόρος <g type="slanting-stroke"/><g type="slanting-stroke"/> Δίρκη κρ<supplied reason="lost">ή</supplied><unclear>νη</unclear> ἐσ<supplied reason="lost">τίν,</supplied> <gap reason="lost" atLeast="5" atMost="7" unit="character"/>
+<lb n="45"/><supplied reason="lost">ἔστι δ</supplied>ὲ καὶ ποταμὸς <unclear>Δίρκη</unclear> <unclear>ἐ</unclear>κεῖ <add place="above"><unclear>καὶ</unclear> <unclear>ο</unclear><supplied reason="lost">ὗ</supplied><unclear>τ</unclear><supplied reason="lost">ος ὁ</supplied></add> <supplied reason="lost">π</supplied><unclear>όρ</unclear>ος καλεῖται Διρκαῖος. <unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear> <supplied reason="lost"><g type="diple"/><g type="diple"/> ἀμουσοτά</supplied>
+<lb n="46" break="no"/><supplied reason="lost">ταισ</supplied>ι σὺν ᾠδαῖς <g type="slanting-stroke"/><g type="slanting-stroke"/> ταῖς αἰνιγματώδεσιν ᾠδαῖς· ἔλεγεν <supplied reason="lost">ἐμμέτρως ἐ</supplied> 
+<lb n="47" break="no"/><supplied reason="lost">ρωτῶ</supplied><unclear>σα</unclear> <hi rend="asper">ἡ</hi> Σφίγξ· τίς δίπους, τίς τρ<supplied reason="lost">ίπ</supplied>ους, <unclear>τίς</unclear> τετράπ<supplied reason="lost">ους.</supplied> <app type="editorial"><lem resp="Essler"><supplied reason="lost">ἀμουσοτάταισι</supplied> 
+<lb n="48"/><supplied reason="lost">ὡσ</supplied><unclear>αν</unclear>εὶ</lem><rdg resp="Wilcken"><supplied reason="lost">ἀμουσοτά</supplied> <lb n="48" break="no"/><supplied reason="lost">ταισι σημ</supplied><unclear>α</unclear>ίνει</rdg><rdg resp="McNamee"><supplied reason="lost">ἀμουσοτάταισι</supplied> <lb n="48"/><supplied reason="lost">ἰσοδυν</supplied><unclear>αμ</unclear>εῖ<certainty match=".." locus="value"/></rdg></app> ταῖς κακομούσοις. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/><g type="diple"/> καὶ θεῶν τῶν λευ<unclear>κ</unclear><supplied reason="lost">οπώλων δώμα</supplied>
+<lb n="49" break="no"/><supplied reason="lost">τα</supplied> τοῦ Ζήθου καὶ τοῦ Ἀμφίονος, οὗτοι <unclear>δ</unclear>ὲ ἐτιμῶ<unclear>ν</unclear><supplied reason="lost">το ἐν Θήβαις</supplied>
+<lb n="50"/><supplied reason="lost">ἢ κα</supplied>ὶ τοῦ Κάστορος καὶ τοῦ Πολυδεύκους, <unclear>ο</unclear>ὗτοι δὲ ἐτιμῶντ<supplied reason="lost">ο ἐν Λακεδαίμο</supplied>
+<lb n="51" break="no"/><supplied reason="lost">νι <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/></supplied><unclear><g type="diple"/></unclear> λειμῶνα <unclear>ἐς</unclear> <unclear>Ἥ</unclear>ρας <g type="slanting-stroke"/><g type="slanting-stroke"/> τόπος ἐστὶν ἐν <unclear>τῶι</unclear> Κιθαιρῶ<supplied reason="lost">ν</supplied><unclear>ι</unclear> <supplied reason="lost">ἀλσώδης τῆι Ἥραι</supplied>
+<lb n="52"/><supplied reason="lost">ἀν</supplied><unclear>α</unclear>κείμενος. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/> <hi rend="asper">ὅ</hi>θεν <unclear>τί</unclear> <unclear>τ</unclear>ἀκτός <g type="slanting-stroke"/><g type="slanting-stroke"/> τὰ περιττά, <app type="editorial"><lem resp="Henry"><unclear>θυρ</unclear>αῖα</lem><rdg resp="Wilcken"><unclear>σ</unclear><supplied reason="lost">ο</supplied><unclear>β</unclear>αρά</rdg></app>. πῶς <hi rend="asper">ὃ</hi> <unclear>π</unclear><supplied reason="lost">εριττόν ἐστι</supplied>
+<lb n="53"/><supplied reason="lost">λέ</supplied><unclear>γω</unclear>; <add place="above"><unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear></add><g type="diple"/><g type="diple"/> σεμνὰ Δωδώνης βάθρα <g type="slanting-stroke"/><g type="slanting-stroke"/> ἐν τῆι Δωδώνηι. ἔστι <unclear>δὲ</unclear> <unclear>τό</unclear><supplied reason="lost">πος τις τῆς Ἠ</supplied> 
+<lb n="54" break="no"/><supplied reason="lost">πεί</supplied><unclear>ρου</unclear> χώρας <hi rend="asper">ἡ</hi> Δωδώνη. ἔστιν ἐ<unclear>κεῖ</unclear> <unclear>ἱ</unclear>ερόν, <supplied reason="lost">ἔ</supplied>νθα <hi rend="lenis">ἦ</hi>σαν τρε<unclear>ῖ</unclear><supplied reason="lost">ς πελειά</supplied> 
+<lb n="55" break="no"/><supplied reason="lost">δες μα</supplied><unclear>ν</unclear>τε<unclear>υ</unclear>όμεναι <unclear>ἐπ</unclear>άνω τῆς δρυός· ο<hi rend="asper">ἱ</hi> δὲ λέγουσιν ὅτι τρ<supplied reason="lost">ε</supplied>ῖ<supplied reason="lost">ς γρ</supplied><unclear>αί</unclear><supplied reason="lost">ας</supplied>
+<lb n="56"/><supplied reason="lost">ἐκάλουν π</supplied><unclear>ερ</unclear><supplied reason="lost">ι</supplied>στερὰς <unclear>τῆ</unclear>ς προφήτιδος <add place="above">τῆς</add> Πελείας ὀνόματ<unclear>ι</unclear>· α<hi rend="asper">ἵ</hi>τινες <app type="editorial"><lem>επ<gap reason="lost" atLeast="4" atMost="5" unit="character"/>
+<lb n="57"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ο<gap reason="illegible" quantity="1" unit="character"/><unclear>ω</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/></lem><rdg resp="Wilcken">ἀπ<supplied reason="lost">ὸ τῆς</supplied> <lb n="57"/><supplied reason="lost">δρυὸς ἔσ</supplied><unclear>χ</unclear>ο<unclear>ν</unclear> <unclear>τ</unclear><supplied reason="lost">ὰ</supplied>ς</rdg></app> μαντείας. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="filler"/> <space extent="unknown" unit="character"/>
+<lb n="58"/><supplied reason="lost">ἐς δ</supplied><unclear>ι</unclear>ῆ<unclear>ρες</unclear> <unclear>ἔσ</unclear>χατον <g type="slanting-stroke"/><g type="slanting-stroke"/> εἰς τὸ<add place="above">ν</add> <hi rend="asper">ὑ</hi>ψηλὸν τόπον καὶ ἀπὸ <supplied reason="lost">τ</supplied>ῶν ἄλλων <unclear>δ</unclear><supplied reason="lost">ιηιρη</supplied>
+<lb n="59" break="no"/><supplied reason="lost">μένον ἢ τ</supplied><unclear>ὸ</unclear> <unclear>δ</unclear><supplied reason="lost">ί</supplied><add place="above">σ</add>τεγον, τὸ <hi rend="asper">ὑ</hi><unclear>π</unclear>ὲρ <unclear>τοῦ</unclear>τον ἐν τῆι δευτέραι στέγηι. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="slanting-stroke"/><g type="filler"/>
+<lb n="60"/><supplied reason="lost"><g type="diple"/><g type="diple"/> ἔ</supplied><unclear>βας</unclear> ἔβας, ὦ πτερ<supplied reason="lost">ο</supplied>ῦσα, γᾶς λόχευμα νερτέρου δ’<g type="apostrophe"/> Ἐχίδνης <g type="slanting-stroke"/><g type="slanting-stroke"/>
+<lb n="61"/><supplied reason="lost">τινὲ</supplied>ς λέγουσιν ὅτι <hi rend="asper">ἡ</hi> Σφίγξ γέγονεν ἐκ τοῦ αἵματος τοῦ Λα<hi rend="diaeresis">ΐ</hi>ου, ἄλλοι 
+<lb n="62"/><supplied reason="lost">δὲ ὅ</supplied><unclear>τι</unclear> ἐκ τ<supplied reason="lost">ῆ</supplied>ς Γῆς ἐγεννήθη, ἄλλοι ὅτι ἐκ τοῦ Τυφῶνος καὶ τῆς Ἐχίδνης. <g type="slanting-stroke"/><g type="slanting-stroke"/>
+<lb n="63"/><supplied reason="lost"><g type="diple"/><g type="diple"/> μ</supplied><unclear>ιξοπ</unclear>άρθενος, δά<hi rend="diaeresis">ϊ</hi>ον τέρας <g type="slanting-stroke"/><g type="slanting-stroke"/> ὅτι <hi rend="asper">ἡ</hi> Σφίγξ εἶχεν τὸ ἥμισυ αὐτῆς 
+<lb n="64"/><supplied reason="lost">ἀπὸ παρθ</supplied>ένου καὶ <supplied reason="lost">τ</supplied>ὸ ἄλ<supplied reason="lost">λ</supplied>ο ἥμισυ ἀπὸ λέοντος· <unclear>λέ</unclear>γετ<unclear>α</unclear>ι δ<unclear>ά</unclear><hi rend="diaeresis">ϊ</hi><unclear>ον</unclear> τέρας <app type="editorial"><lem><unclear>δ</unclear><gap reason="lost" atLeast="2" atMost="4" unit="character"/>
+<lb n="65"/><gap reason="lost" atLeast="6" atMost="8" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" quantity="2" unit="character"/><unclear>αι</unclear></lem><rdg resp="Henry"><unclear>δ</unclear><supplied reason="lost">άϊον</supplied> <lb n="65"/><supplied reason="lost">γὰρ</supplied></rdg><rdg resp="Haslam"><unclear>δ</unclear><supplied reason="lost">ιὰ τὸ</supplied> <lb n="65"/><supplied reason="lost">πολλοὺς ἀ</supplied><unclear>πολ</unclear><supplied reason="lost">έσ</supplied><unclear>αι</unclear></rdg></app>. <unclear><g type="slanting-stroke"/></unclear><unclear><g type="slanting-stroke"/></unclear><g type="diple"/><g type="diple"/> ἄλυρο<unclear>ν</unclear> <supplied reason="lost">ἀ</supplied>μφὶ μοῦσ<supplied reason="lost">α</supplied><unclear>ν</unclear> <g type="slanting-stroke"/><g type="slanting-stroke"/> τὸ αἴνιγμα λέγει. <g type="slanting-stroke"/><g type="slanting-stroke"/>
+<lb n="66"/><supplied reason="lost"><g type="diple"/><g type="diple"/> ἰάλεμοι δὲ ματ</supplied><unclear>έρων</unclear> <g type="slanting-stroke"/><g type="slanting-stroke"/> Ἰάλεμος λέγεται <hi rend="asper">ὁ</hi> θρῆνος ἐντεῦθεν· Ἰα
+<lb n="67" break="no"/><supplied reason="lost">λέμου πρὸ τοῦ</supplied> <unclear>ἱε</unclear>ροῦ γάμους ἀποτελοῦντος ἔπεσε<supplied reason="lost">ν</supplied> ἐπάνω αὐτ<unclear>οῦ</unclear> 
+<lb n="68"/><app type="editorial"><lem><gap reason="lost" atLeast="8" atMost="10" unit="character"/></lem><rdg resp="Schwartz"><supplied reason="lost">μέρος ὀροφῆς</supplied></rdg></app><supplied reason="lost">καὶ</supplied> <unclear>ἐ</unclear>τελεύτησεν καὶ ἐντεῦθεν ἰάλεμος ἐκαλεῖ<unclear>τ</unclear><supplied reason="lost">ο ὁ θρ</supplied><unclear>ῆ</unclear>νο<supplied reason="lost">ς.</supplied>
+<lb n="69"/><supplied reason="lost"><g type="diple"/><g type="diple"/> χρόνωι δ᾿ ἔ</supplied><unclear>β</unclear>α <unclear>Πυ</unclear>θίαις ἀποστολαῖς Οἰδίπους <hi rend="asper">ὁ</hi> τλάμων <supplied reason="lost">ὁ Οἰδίπους</supplied> 
+<lb n="70"/><app type="editorial"><lem><supplied reason="lost">πευσόμενος</supplied></lem><rdg resp="Haslam"><supplied reason="lost">οὐκ εἰδὼς</supplied></rdg></app> <unclear>ε</unclear>ἰ ζῆ<unclear>ι</unclear> ὁ πατὴρ αὐτοῦ ἀπῆλθεν εἰς τὸ <unclear>μα</unclear>ντεῖον, <app type="editorial"><lem><unclear>τ</unclear><supplied reason="lost">ὸ δ᾿ εἶπεν</supplied></lem><rdg resp="Haslam"><unclear>τ</unclear><supplied reason="lost">οῦτο ἔφη <expan><ex>δ’</ex></expan></supplied><certainty match=".." locus="value"/></rdg></app> 
+<lb n="71"/><supplied reason="lost">ὅτι κτανεῖ</supplied> <subst><add place="inline"><supplied reason="lost">αὐ</supplied>τόν</add><del rend="corrected"><supplied reason="lost">αὐ</supplied>του</del></subst>. εἶτα ἐρχ<unclear>ό</unclear>μενος ἀπὸ τοῦ μαντ<unclear>είο</unclear>υ <hi rend="asper">ὁ</hi> Οἰδ<supplied reason="lost">ίπους ὑπήν</supplied> 
+<lb n="72" break="no"/><supplied reason="lost">τησε τῶι Λαΐ</supplied><unclear>ωι</unclear> ἀπερχομένωι καὶ <supplied reason="lost">α</supplied><unclear>ὐ</unclear>τῶι ἐπὶ τὸ μαν<unclear>τεῖ</unclear>ον τοῦ <app type="editorial"><lem><supplied reason="lost">θεοῦ</supplied></lem><rdg resp="Essler"><supplied reason="lost">θεοῦ καὶ</supplied></rdg><rdg resp="McNamee"><supplied reason="lost">Ἀπόλλωνος</supplied></rdg></app> 
+<lb n="73"/><supplied reason="lost">πευσομένω</supplied><unclear>ι</unclear> <unclear>ε</unclear>ἰ ζῆι <hi rend="asper">ὁ</hi> υἱὸς αὐτοῦ Οἰδίπους <hi rend="lenis">ἢ</hi> ο<hi rend="lenis">ὔ</hi>. εἶτα ἀπαντῶ<unclear>ν</unclear> <supplied reason="lost">κατὰ τὴν</supplied> 
+<lb n="74" break="no"/><supplied reason="lost">σχιστὴν ὁ</supplied>δὸν <hi rend="asper">ὁ</hi> Οἰδίπους ἀναιρεῖ Λά<hi rend="diaeresis">ϊ</hi>ον τὸ<unclear>ν</unclear> <unclear>αὑ</unclear><supplied reason="lost">τ</supplied><unclear>ο</unclear>ῦ πατέρα δι<supplied reason="lost">ὰ τὸ τετύ</supplied> 
+<lb n="75" break="no"/><supplied reason="lost">φθαι αὐτὸ</supplied><unclear>ν</unclear> ὑπὸ τοῦ ἀνδρὸς τοῦ Λα<hi rend="diaeresis">ΐ</hi>ου. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/> τότε μὲν ἀσμένοις <supplied reason="lost">ὅτι αὐ</supplied>
+<lb n="76" break="no"/><supplied reason="lost">τοῖς τὸ αἴν</supplied>ιγμα ἔλυσεν τῆς Σφιγγὸς τότε. <g type="slanting-stroke"/><g type="slanting-stroke"/><g type="diple"/><g type="diple"/> ἑκηβόλοις τ<unclear>όξ</unclear>οισι<unclear>ν</unclear> Ἀτα 
+<lb n="77" break="no"/><supplied reason="lost">λάντην κάπ</supplied><unclear>ρ</unclear>ον χειρουμένην Αἰτωλόν <g type="slanting-stroke"/><g type="slanting-stroke"/> τοῦ Οἰνέως θύσαντος <app type="editorial"><lem>πᾶ 
+<lb n="78" break="no"/><supplied reason="lost">σι τοῖς θεοῖς  <add place="above">καὶ</add></supplied></lem><rdg resp="Henry">πᾶ <lb n="78" break="no"/><supplied reason="lost">σι θεοῖς ἀλλὰ</supplied></rdg><rdg resp="Wilcken">πᾶ <lb n="78" break="no"/><supplied reason="lost">σιν τοῖς θεοῖς</supplied></rdg></app> <del rend="erasure"><unclear>ε</unclear>ι</del><add place="above">ἐ</add>άσ<del rend="erasure"><unclear>ε</unclear></del><add place="above">α</add>ν<add place="above">τος</add> τὴν Ἄρτεμιν χωρὶς θυμάτων <del rend="erasure">καὶ</del> ὀργι<unclear>σθεῖσα</unclear> <hi rend="asper">ἡ</hi> Ἄρτε
+<lb n="79" break="no"/><supplied reason="lost">μις</supplied> <app type="editorial"><lem resp="McNamee"><supplied reason="lost">ἀφῆκεν</supplied></lem><rdg resp="Haslam"><supplied reason="lost">ἐφῆκεν</supplied></rdg><rdg resp="Wilcken"><supplied reason="lost">ἔπεμψεν</supplied></rdg></app> ὡς κυνη<unclear>γέτ</unclear>ις οὖσα κάπρον κατὰ τῆς Αἰτωλίας. <app type="editorial"><lem>Κ<unclear>α</unclear>λυδώνι
+<lb n="80" break="no"/><supplied reason="lost">ος δ᾿ οὗτος ἐ</supplied>κλήθη</lem><rdg resp="Essler">Κ<unclear>α</unclear>λυδώνι <lb n="80" break="no"/><supplied reason="lost">ος δὲ ὁ σῦς ἐ</supplied>κλήθη</rdg><rdg resp="Wilcken">Κ<unclear>α</unclear>λυδώνι <lb n="80" break="no"/><supplied reason="lost">ον, οὕτως δ᾿ ἐκ</supplied>λήθη</rdg></app> ὅτι <space atLeast="14" atMost="17" unit="character"/> εἶτα τοῦ κάπρου ἐλθό<unclear>ντ</unclear>ος εἰς 
+<lb n="81"/><gap reason="lost" atLeast="7" atMost="9" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>τ</unclear>α <add place="above"><gap reason="illegible" quantity="2" unit="character"/></add> <gap reason="illegible" quantity="4" unit="character"/> <unclear>η</unclear> καὶ λυμηναμένου τὴν γῆν <unclear>σ</unclear>υνήγοντο ο<hi rend="asper">ἱ</hi> κυ
+<lb n="82" break="no"/><supplied reason="lost">νηγετοῦντε</supplied>ς καὶ <hi rend="asper">ὁ</hi> Μελέαγρο<del rend="erasure">υ</del><add place="above">ς</add> υἱὸς τοῦ Οἰνέως καὐτὸς κυνηγέτης 
+<lb n="83"/><supplied reason="lost">ὤν. καὶ ἡ Ἀταλ</supplied>άντη κυνηγέτις οὖσα συνή<surplus>γ</surplus>χθη καὶ συνέβαλεν τ<unclear>ὸ</unclear>ν κάπρον 
+<lb n="84"/><app type="editorial"><lem><gap reason="lost" atLeast="6" atMost="9" unit="character"/></lem><rdg resp="Henry"><supplied reason="lost">τοῖς ἄλλοις</supplied></rdg><rdg resp="Schwartz"><app type="alternative"><lem><supplied reason="lost">ἐν τοῖς ὁρίοις</supplied></lem><rdg><supplied reason="lost">ἐν τοῖς ἀγροῖς</supplied></rdg></app></rdg><rdg resp="Mastronarde"><app type="alternative"><lem><supplied reason="lost">ἐφεῖσα τοῖς</supplied></lem><rdg><supplied reason="lost">ἀφεῖσα τοῖς</supplied></rdg></app></rdg><rdg resp="Essler"><supplied reason="lost">ἡ θεὰ τοῖς</supplied></rdg></app> <supplied reason="lost">Α</supplied>ἰτωλίοις, καί τινες μὲν λέγουσιν ὅτι αὐτὴ ἐφόν<unclear>ε</unclear><supplied reason="lost">υ</supplied><unclear>σ</unclear>εν τὸν κά 
+<lb n="85" break="no"/><supplied reason="lost">προν οἱ δ’ ὅτι</supplied> <hi rend="asper">ὁ</hi> Μελέαγρος ἢν ὁ φονεύσας αὐτὸν καὶ ἐρασθεὶς τῆς Ἀ<unclear>τ</unclear>α<unclear>λ</unclear>ά<unclear>ν</unclear>της 
+<lb n="86"/><app type="editorial"><lem resp="Mastronarde"><app type="alternative"><lem><supplied reason="lost">αὐτῆι ἆθλα</supplied></lem><rdg><supplied reason="lost">αὐτῆι ἀπὸ</supplied></rdg></app></lem><rdg resp="Wilcken"><supplied reason="lost">ἔδωκεν ἀριστεῖα</supplied></rdg><rdg resp="Schwartz"><supplied reason="lost">τὰ ἀριστεῖα</supplied></rdg><rdg resp="McNamee"><app type="alternative"><lem><supplied reason="lost">αὐτῆι γέρας</supplied></lem><rdg><supplied reason="lost">αὐτῆι ἇθλον</supplied></rdg></app></rdg></app> <unclear>τῆ</unclear>ς νίκης τὴν κεφαλὴν καὶ τὸ δέρμα τοῦ κά<unclear>π</unclear>ρου <app type="editorial"><lem resp="Haslam"><unclear>ἔ</unclear><supplied reason="lost">δωκε</supplied></lem><rdg resp="Essler"><unclear>ἐ</unclear><supplied reason="lost">φῆκε</supplied></rdg></app>. <g type="slanting-stroke"/><g type="slanting-stroke"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/3180"/>
                   <biblScope unit="number">1</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Würzb.</title>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/494"/>
+                  <biblScope n="1" unit="volume">37</biblScope>
+                  <biblScope n="2" unit="page" from="31" to="97">31-97</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/86168"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/21231"/>
+                  <biblScope unit="page">584</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/69305"/>
+                  <biblScope unit="page" from="32" to="36">32-36</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0006">Euripides</author>
+               <bibl type="publication" subtype="ancientQuote">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0006">Euripides</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/744">Phoenissae</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">U. Wilcken, Academieschrifte</bibl>
-               <bibl type="printed">Anal. Pap. 18-20 (2006-2008), p. 260</bibl>
+               <bibl type="printed" n="1">P.Würzb. 1</bibl>
+               <bibl type="printed" n="2">Anal. Pap. 18-20 (2006-2008), p. 260</bibl>
+               <bibl type="printed" n="3">WJA, pl. 1-2</bibl>
                <bibl type="online">
                   <ptr target="http://papyri-wuerzburg.dl.uni-leipzig.de/receive/WrzPapyri_schrift_00000040"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
