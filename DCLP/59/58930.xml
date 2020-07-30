@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m58930" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 20 2264</title>
+            <title>Verteidigung eines Verbannten vor dem Kaiser</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">25</idno>
             <idno type="filename">58930</idno>
             <idno type="dclp-hybrid">p.oxy;20;2264</idno>
+            <idno type="MP3">02222.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">40,3</width>
+                              <height unit="cm">14,3</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,17 +47,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,19 +71,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term>acta</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Acta Alexandrinorum; Acta Diogenis?</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">history</term>
+               <term n="5">acta</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,34 +93,125 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart"><ab> 
+<lb n="1"/><gap reason="lost" quantity="12" unit="character" precision="low"/> <unclear>ἡ</unclear>µῶν ἐπὶ τῶν
+<lb n="2"/><gap reason="lost" quantity="11" unit="character" precision="low"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear> <unclear>ἐ</unclear>τῶν</lem><rdg resp="ed.pr."><gap reason="illegible" quantity="1" unit="character"/><unclear>γε</unclear>τῶν</rdg></app> Νέρωνος
+<lb n="3"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><gap reason="lost" quantity="11" unit="character" precision="low"/><supplied reason="lost">γ</supplied>έγονεν</lem><rdg resp="Musurillo"><supplied reason="lost">ταῦτα γ</supplied>έγονεν</rdg></app>· ζῶντος
+<lb n="4"/><gap reason="lost" quantity="11" unit="character" precision="low"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><supplied reason="lost">Ν</supplied>έρωνος</lem><rdg resp="M">αὐτοκράτορος</rdg></app> προσγυ
+<lb n="5" break="no"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><supplied reason="lost">µναζοµένων<gap reason="illegible" quantity="2" unit="character"/></supplied><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear></lem><rdg resp="ed.pr.">προσγυµναζοµένων ἔνδοθεν</rdg></app> ἀθλητῶν
+<lb n="6"/><gap reason="lost" quantity="13" unit="character" precision="low"/> <unclear>ἄ</unclear>νδ<unclear>ρ</unclear>ας <gap reason="lost" quantity="2" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="12" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/> <unclear>ἄ</unclear>λλαι<unclear>ς</unclear> παρα
+<lb n="8" break="no"/><app type="editorial"><lem><gap reason="lost" quantity="11" unit="character" precision="low"/></lem><rdg resp="Musurillo"><supplied reason="lost">γεγονὼς ἔτη</supplied></rdg></app> <unclear>ε</unclear>ἴκοσι, οὐκ ἐ
+<lb n="9" break="no"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><gap reason="lost" quantity="12" unit="character" precision="low"/>ωνι.</lem><rdg resp="ed.pr."><supplied reason="lost">Νερ</supplied>ῶνι</rdg><rdg><supplied reason="lost">ἀγ</supplied>ῶνι</rdg><rdg>alt</rdg><rdg resp="Musurillo"><supplied reason="lost">σὺν Νερ</supplied>ῶνι</rdg></app> <app type="editorial"><lem resp="P.Oxy. XX 2264">καταβαι
+<lb n="10" break="no"/><supplied reason="lost">ν-</supplied></lem><rdg>καταβαί</rdg><rdg resp="ed.pr."><supplied reason="lost">νειν</supplied></rdg></app><gap reason="lost" quantity="11" unit="character" precision="low"/>ς εἰς τὸ γυµνά
+<lb n="11" break="no"/><supplied reason="lost">σιον τὸν ἐπι</supplied><app type="editorial"><lem resp="P.Oxy. XX 2264"><unclear>σ</unclear>τάτην</lem><rdg resp="ed.pr."><unclear>εσ</unclear>τάτην</rdg></app> <app type="editorial"><lem resp="P.Oxy. XX 2264">ἐρευ</lem><rdg>ἐρευ</rdg><rdg resp="Musurillo"><supplied reason="lost">νᾷ</supplied></rdg></app>
+<lb n="12" break="no"/><gap reason="lost" quantity="12" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ην</unclear> οὕτως <unclear>τι</unclear>
+<lb n="13"/><gap reason="lost" quantity="15" unit="character" precision="low"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Musurillo"><unclear>Nε</unclear><supplied reason="lost">ρών</supplied></rdg></app>
+<lb n="14"/><gap reason="lost" quantity="12" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div> 
+<div n="ii" subtype="column" type="textpart"><ab> 
+<lb n="15"/><app type="editorial"><lem resp="P.Oxy. XX 2264">Διο<unclear>γ</unclear>ένης</lem><rdg resp="ed.pr.">Διο<unclear>γ</unclear>ένη<surplus>ς</surplus></rdg></app>, µήτε τότε µεµψά
+<lb n="16" break="no"/>µενον µήτ’ ἄρτι µεµφόµενον.
+<lb n="17"/>ἔδει µὲν γὰρ <unclear>ἴ</unclear>σως ἐκδικηθῆναι
+<lb n="18"/>φθαρέντα καὶ τοῦτον. ἀλλὰ πίστευ
+<lb n="19" break="no"/>σον αὐτοῦ τῇ νῦν σιωπῇ. Πρὸ
+<lb n="20"/><app type="editorial"><lem resp="P.Oxy. XX 2264">δωδεκαετία<unclear>ς</unclear></lem><rdg resp="ed.pr.">δώδεκα ἐτ<supplied reason="omitted">ῶν</supplied> γὰρ</rdg><rdg resp="Musurillo">δώδεκα ἐτ<supplied reason="omitted">ῶν</supplied> ἆρ’</rdg></app> οὐκ ἐµέµψατο,
+<lb n="21"/>Καίσαρα ἔχων δικαστὴν ὀργιζό
+<lb n="22" break="no"/>µενον <app type="editorial"><lem resp="P.Oxy. XX 2264">ἡδέως</lem><rdg resp="ed.pr."><supplied reason="omitted">ἀ</supplied>δεῶς</rdg></app>, εὐφυῆ κατὰ
+<lb n="23"/>πλουσίων, εὐπαρόξυντον
+<lb n="24"/>ἐπὶ τοὺς ὁπωσδήποτε εὐσχή
+<lb n="25" break="no"/>µο<supplied reason="lost">νας</supplied>· <app type="editorial"><lem resp="Hammerstaedt">οὐκ ἐµέµψατο, Καῖσαρ,</lem><rdg resp="ed.pr.">Καίσαρ<supplied reason="lost">α</supplied></rdg></app>
+<lb n="26"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><unclear>ε</unclear><gap reason="lost" quantity="4" unit="character"/></lem><rdg resp="ed.pr."><unclear>ἔχ</unclear><supplied reason="lost">ων</supplied></rdg><rdg>ε</rdg><rdg>alt</rdg><rdg>ο</rdg><rdg>alt</rdg><rdg resp="Hammerstaedt">σ<gap reason="lost" quantity="3" unit="character"/></rdg></app> εἰπεῖν. <app type="editorial"><lem resp="P.Oxy. XX 2264">Πρ<unclear>ὸ</unclear> <supplied reason="lost">δωδ</supplied>εκαετί</lem><rdg resp="Hammerstaedt">πρ<unclear>ο</unclear><supplied reason="lost"><gap reason="illegible" quantity="3" unit="character"/>δ</supplied>ι<unclear>κ</unclear>α<unclear>σ</unclear>τι</rdg><rdg>πρ<unclear>ο</unclear><supplied reason="lost"> </supplied><unclear>ε</unclear>κα ἔτι ed.pr.</rdg><rdg resp="Musurillo">πρ<unclear>ο</unclear> <gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ε</unclear>κα<unclear>ς</unclear> τί</rdg></app>
+<lb n="27" break="no"/><supplied reason="lost">ας οὐ</supplied><unclear>δ</unclear>ὲν ἐλάλ<unclear>ει</unclear>ς<gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="9" unit="character" precision="low"/>
+<lb n="28"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="3" unit="character"/> <unclear>µεµ</unclear>φ<gap reason="lost" quantity="10" unit="character" precision="low"/>
+</ab></div>
+<div n="iii" subtype="column" type="textpart"><ab> 
+<lb n="29"/>οὐκ ἔχων, πάντα ταῦτα παθών,
+<lb n="30"/>οὐ πάρεστιν, οὐ πέπλευκεν,
+<lb n="31"/>ἵν’ ἐκεῖθεν ἔξωθεν µακρό
+<lb n="32" break="no"/>θεν ἀ<unclear>π</unclear>εστραµµένος κλαύσῃ.
+<lb n="33"/>εἰ γὰρ ἔδει µόνον ἐκδικήσαν
+<lb n="34" break="no"/>τα τὴν ὕβριν εὐθὺς ἀπολέσθαι,
+<lb n="35"/>µόνον ἀκολουθῆσαι µέχρι
+<lb n="36"/>τῆϲ κολάσεωϲ, ἰδεῖν, ἀποπνε
+<lb n="37" break="no"/>ῖν, <app type="editorial"><lem resp="P.Oxy. XX 2264">εἰ</lem><rdg>εἰ <supplied reason="omitted">γὰρ</supplied> ed.pr.</rdg></app> δύνατον ἦν µισθῶσαι
+<lb n="38"/><unclear>δ</unclear>ή<unclear>µ</unclear><supplied reason="lost">ι</supplied>ον <app type="editorial"><lem resp="ed.pr.">αὑτόν</lem><rdg resp="Zuck">αὑτόν</rdg><rdg resp="Musurillo">αὐτο<supplied reason="omitted">ῦ</supplied></rdg></app>, ἀλλὰ σοὶ µένει
+<lb n="39"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><unclear>κ</unclear>αὶ <unclear>τ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/></lem><rdg resp="Musurillo"><unclear>κ</unclear>αὶ <unclear>τ</unclear>ό<supplied reason="lost">τ</supplied>ε</rdg></app> ἐκεῖνος αὐτός<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>
+<lb n="40"/><app type="editorial"><lem resp="P.Oxy. XX 2264"><supplied reason="lost"><gap reason="illegible" quantity="6" unit="character"/>π</supplied>επονθέ<unclear>ν</unclear>αι <unclear>π</unclear><gap reason="lost" quantity="4" unit="character"/></lem><rdg resp="Hammerstaedt"><supplied reason="lost">διὰ τὸ π</supplied>επονθέ<unclear>ν</unclear>αι <unclear>π</unclear><supplied reason="lost">ολλὰ</supplied></rdg></app>
+</ab></div>
+<div n="iv" subtype="column" type="textpart"><ab> 
+<lb n="41"/><app type="editorial"><lem resp="P.Oxy. XX 2264">ἡρωΐδα ψυχήν</lem><rdg><supplied reason="lost">νὴ τὴν σὴν</supplied> </rdg><rdg resp="Hammerstaedt"> ἡρωΐδα ψυχήν</rdg><rdg><supplied reason="lost">κύριε, τὴν σὴν</supplied> </rdg><rdg resp="Musurillo"> ἡρωΐδα ψυχήν</rdg></app>, εὐκαίρησον
+<lb n="42"/>εἰς ταύτην τὴν διάγνωσιν·
+<lb n="43"/>ὁ σὸς λοιδορεῖται βίος, ὁ σὸς
+<lb n="44"/>ἐνκαλεῖται <app type="editorial"><lem resp="P.Oxy. XX 2264"><supplied reason="lost">θ</supplied>ρόνος</lem><rdg resp="ed.pr."><unclear>χ</unclear>ρόνος</rdg></app> οὐ δεῖ ζ<unclear>ῆ</unclear>ν
+<lb n="45"/>τὸν ἐπὶ σοῦ ταῦτα ψευδόµε
+<lb n="46" break="no"/>νον. οὐκέτι σου τιµῶµεν
+<lb n="47"/>τὰς ἀκοάς, <app type="editorial"><lem resp="P.Oxy. XX 2264">οὐδ’</lem><rdg resp="Hammerstaedt">οὐδὲ<surplus>ι</surplus></rdg></app>  εἰ φειδόµεθά
+<lb n="48"/>σου τῆς τῶν ἠθῶν ἀρχαιότη
+<lb n="49" break="no"/>τοϲ. ἀλλ’ εἰ µὲν ἐκείνοις τοῖς
+<lb n="50"/>ἀνωτέρω <app type="editorial"><lem resp="Hammerstaedt">προ<unclear>εν</unclear>ετεύχθης</lem><rdg resp="ed.pr.">προς<del rend="erasure">.</del>ετεύχθης</rdg></app>
+<lb n="51"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> ον <app type="editorial"><lem resp="P.Oxy. XX 2264"><gap reason="lost" quantity="1" unit="character"/>ονδ</lem><rdg resp="Musurillo"><supplied reason="lost">τ</supplied>όνδ<supplied reason="lost"><unclear>ε</unclear></supplied><gap reason="lost" extent="unknown" unit="character"/></rdg></app> <gap reason="lost" quantity="4" unit="character"/><unclear>ν</unclear>οϲαν<gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="52"/><gap reason="lost" quantity="14" unit="character" precision="low"/><app type="editorial"><lem><gap reason="illegible" quantity="1" unit="character"/> εψ<unclear>ω</unclear></lem><rdg resp="Musurillo"><gap reason="lost" extent="unknown" unit="character"/><unclear>µ</unclear>εψω</rdg></app> <gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="53"/><gap reason="lost" quantity="14" unit="character" precision="low"/><app type="editorial"><lem resp="P.Oxy. XX 2264">ηθο<gap reason="illegible" quantity="1" unit="character"/></lem><rdg resp="Musurillo"><gap reason="lost" extent="unknown" unit="character"/>ἤθο<unclear>υ</unclear><supplied reason="lost">ϲ</supplied></rdg></app> <gap reason="lost" quantity="3" unit="character"/> 
+</ab></div>
+<div n="v" subtype="column" type="textpart"><ab> 
+<lb n="54"/>ἀργύριον ἀπολελύ<unclear>σ</unclear>θ<unclear>αι</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="55"/>ἔνκληµα διπ<unclear>λο</unclear><supplied reason="lost">ῦν</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="56"/><app type="editorial"><lem resp="P.Oxy. XX 2264">τῶν ὁπ<unclear>ο</unclear>ι<gap reason="lost" quantity="3" unit="character"/></lem><rdg resp="ed.pr.">τῶν <unclear>εἰ</unclear>πό<unclear>ν</unclear><supplied reason="lost">των</supplied></rdg></app> <gap reason="lost" quantity="1" unit="character"/><unclear>χ </unclear> ε<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="57"/><unclear>θ</unclear>ε<supplied reason="lost"><gap reason="illegible" quantity="7" unit="character"/><unclear> </unclear></supplied><gap reason="illegible" quantity="1" unit="character"/><unclear>εν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="58"/>δὲ <app type="editorial"><lem resp="P.Oxy. XX 2264">τῶν ἐ<unclear>λυ</unclear><gap reason="lost" quantity="3" unit="character"/></lem><rdg resp="Musurillo">τῶν ἐ<unclear>τυ</unclear><supplied reason="lost">µ</supplied></rdg></app><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="59"/>µεῖζον ἀκόλο<supplied reason="lost">υ</supplied><unclear>θ</unclear>ον <gap reason="lost" quantity="1" unit="character"/><unclear>µ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="60"/><app type="editorial"><lem resp="P.Oxy. XX 2264">πρῶτου</lem><rdg resp="ed.pr.">πρῶτον</rdg></app> καὶ α<unclear>ιν</unclear><gap reason="lost" quantity="2" unit="character"/><unclear>α</unclear>σει<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="61"/>τὸ πρῶτον ἵνα τύχῃ καὶ <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="62"/><app type="editorial"><lem resp="P.Oxy. XX 2264">τῆς ἀκολουθείας ε</lem><rdg resp="ed.pr."> της ἀκολουθεῖ α<unclear>νε</unclear><gap reason="lost" extent="unknown" unit="character"/></rdg><rdg resp="Μusurillo">της ἀκολουθεια <gap reason="illegible" quantity="1" unit="character"/> ε </rdg></app><gap reason="lost" quantity="2" unit="character"/>ρ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="63"/>δὲ µὲν ζῆν <unclear>µα</unclear><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="64"/><unclear>ε</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>σ<gap reason="lost" quantity="9" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div> </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/4847"/>
                   <biblScope unit="number">2264</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">20</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95669"/>
+                  <biblScope unit="number">4.1.1</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/20481"/>
+                  <biblScope unit="page">201</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/6143"/>
+                  <biblScope unit="number">5 A</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0300">Acta Alexandrinorum</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0300">Acta Alexandrinorum</author>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
