@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv78716">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Letter about irrigation</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">78716</idno>
             <idno type="TM">78716</idno>
             <idno type="ddb-perseus-style">0187;2;pg31</idno>
-            <idno type="ddb-filename">p.petr.2.pg31</idno>
-            <idno type="ddb-hybrid">p.petr;2;pg31</idno>
+            <idno type="ddb-filename">p.petr.kleon.45</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;45</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Dublin</settlement>
                   </placeName>
+                  <collection>Trinity College</collection>
+                  <idno type="invNo">Pap. FF 70 [cah. 3231.108]</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
+                     <origPlace>Fundort: Gurob; Schreibort: Arsinoites</origPlace>
+                     <origDate notBefore="-0260" notAfter="-0236">
+                ca. 260 - 236 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoIEDFBC">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +56,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,32 +73,43 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Kanal</term>
-               <term>Arbeit</term>
-               <term>Ladung (?)</term>
+               <term n="1">Brief</term>
+               <term n="2">Arbeit</term>
+               <term n="3">Kanal</term>
+               <term n="4">Ladung (?)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-08-19T08:43:29-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-08-19T05:44:50-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-08-19T05:11:56-04:00"
+                 who="http://papyri.info/users/LisaVanoppr%C3%A9">Submit - Entering translation and changes in metadata and text for P.Petr. Kleon 45.</change>
          <change who="HGV" when="1998-03-02">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="pages">S. 31 unterer Text</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">45</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P. Petrie 2 p. 31 unterer Text</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
