@@ -1,6 +1,6 @@
 # Papyri.info IDP (Integrating Digital Papyrology) Data
 
-[![Build Status](https://travis-ci.org/papyri/idp.data.svg?branch=master)](https://travis-ci.org/papyri/idp.data) ![GitHub contributors](https://img.shields.io/github/contributors-anon/papyri/idp.data) ![GitHub repo size](https://img.shields.io/github/repo-size/papyri/idp.data)
+[![Build Status](https://travis-ci.com/papyri/idp.data.svg?branch=master)](https://travis-ci.com/papyri/idp.data) ![GitHub contributors](https://img.shields.io/github/contributors-anon/papyri/idp.data) ![GitHub repo size](https://img.shields.io/github/repo-size/papyri/idp.data)
 
 This repository contains data produced by and used to run the [Papyri.info](http://papyri.info/) website. For the code which runs Papyri.info, see the [`papyri/navigator` repository](https://github.com/papyri/navigator) and the [`sosol/sosol` repository](https://github.com/sosol/sosol) (used for the Papyrological Editor). For some more project background, see [the Papyri.info about page](http://papyri.info/docs/about), [the DDbDP background page](http://papyri.info/docs/ddbdp), or [_The Son of Suda On-Line_](http://ryanfb.github.io/papers-BICS/sosol-bics-draft.pdf) (2013). Papyri.info is maintained by the [Duke Collaboratory for Classics Computing](http://dcthree.github.io/) (DC3).
 
