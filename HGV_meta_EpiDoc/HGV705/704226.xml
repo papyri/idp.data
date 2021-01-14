@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv704226">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv704226">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Inizio di contratto</title>
@@ -28,7 +29,10 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0501" notAfter="0700" precision="low">VI - VII</origDate>
+                     <origDate notBefore="0539" notAfter="0591" precision="medium">
+                ca. 539 - 591
+                <precision match="../@notAfter" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -41,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -57,8 +62,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Anfang</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Anfang</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -66,15 +71,15 @@
          <change who="HGV" when="2021-01-07">Record last modified</change>
          <change when="2021-01-07" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Eirene</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">35</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">35</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -83,6 +88,9 @@
                <bibl type="illustration">S. 182</bibl>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>S. APF 65, 2019, 353–355 (354f. zur Datierung).</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
