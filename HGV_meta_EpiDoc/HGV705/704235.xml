@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv704235">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv704235">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Lettre</title>
+            <title>Letter</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">704235</idno>
@@ -15,8 +16,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">PL I/63</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,14 +32,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="0601" notAfter="0650" precision="low">1. Hälfte VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,7 +66,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief</term>
+               <term n="1">Brief</term>
+               <term n="2">Seife</term>
+               <term n="3">Natron</term>
+               <term n="4">Truppe</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -68,15 +77,16 @@
          <change who="HGV" when="2021-01-07">Record last modified</change>
          <change when="2021-01-07" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Eirene</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">44</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">64</biblScope>
+                  <biblScope n="2" type="fascicle">(2018)</biblScope>
+                  <biblScope n="3" type="pages">S. 94</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -85,6 +95,11 @@
                <bibl type="illustration">S. 229</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Eirene IV 44</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
