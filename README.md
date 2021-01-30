@@ -19,7 +19,7 @@ As Integrating Digital Papyrology implies, this repository brings together sever
 * `RDF` - Collection metadata from Papyri.info in RDF XML
 * `Validation` - Dependencies for XML validation (see `.travis.yml`)
 
-Automated XML validation for this repository is available at <https://travis-ci.org/papyri/idp.data/>.
+Automated XML validation for this repository is available at <https://travis-ci.com/papyri/idp.data/>.
 
 ## Updates
 
