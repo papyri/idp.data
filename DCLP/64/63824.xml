@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63824" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Hamb. 2 167</title>
+            <title>Fragment of Roman Comedy</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">63824</idno>
             <idno type="dclp-hybrid">p.hamb;2;167</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,15 +47,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0001" notAfter="0099">1 - 99</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,48 +66,63 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term>dialogue</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">declamation (?) in dialogue form</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">oratory</term>
+               <term n="5">dialogue</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-11T07:32:22-05:00" who="http://papyri.info/users/simoeis">Finalized - Ready</change>
+         <change when="2021-01-11T07:21:51-05:00" who="http://papyri.info/users/simoeis">Vote - Accept-Straight-to-Finalization - To the biblio add no. 49210 pp. 270-276 and no. 49333 pp. 29-44.</change>
+         <change when="2021-01-11T07:15:44-05:00" who="http://papyri.info/users/simoeis">Submit - Added an image link.</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/5168"/>
                   <biblScope unit="number">167</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Hamb.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/49210"/>
+                  <biblScope unit="page" from="270" to="276">270-276</biblScope>
+               </bibl>
+               <bibl n="3" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/49333"/>
+                  <biblScope unit="page" from="29" to="44">29-44</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">CLA 08 1214</bibl>
-               <bibl type="printed">P.Hamb. 2 Tafel 10</bibl>
-               <bibl type="printed">Seider, Pal. lat. Papyri II.1, pl. IV no. 6a</bibl>
+               <bibl type="printed" n="1">CLA 08 1214</bibl>
+               <bibl type="printed" n="2">P.Hamb. 2 Tafel 10</bibl>
+               <bibl type="printed" n="3">Seider, Pal. lat. Papyri II.1, pl. IV no. 6a</bibl>
+               <bibl type="online">
+                  <ptr target="https://papyri.uni-leipzig.de/receive/HamPapyri_schrift_00000840"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
