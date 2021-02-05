@@ -6,3 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: java -jar Validation/jing.jar Validation/rdfxml.rng RDF/collection.rdf
+  validate-ddb_epidoc_xml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install -y moreutils parallel
+      - run: find DDB_EpiDoc_XML -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.16/tei-epidoc.rng {}"
