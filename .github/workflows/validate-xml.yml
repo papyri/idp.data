@@ -1,0 +1,8 @@
+name: validate-xml
+on: [push]
+jobs:
+  validate-collection-rdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: java -jar Validation/jing.jar Validation/rdfxml.rng RDF/collection.rdf
