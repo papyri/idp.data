@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7667">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Polykrates to his Father</title>
+            <title>Letter from Polykrates to his father Kleon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7667</idno>
             <idno type="TM">7667</idno>
             <idno type="ddb-perseus-style">0187;2;11</idno>
-            <idno type="ddb-filename">p.petr.2.11</idno>
-            <idno type="ddb-hybrid">p.petr;2;11</idno>
+            <idno type="ddb-filename">p.petr.kleon.13</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;13</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Dublin</settlement>
                   </placeName>
+                  <collection>Trinity College</collection>
+                  <idno type="invNo">Pap. F 47</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria</origPlace>
-                     <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
+                     <origPlace>Zielort: Arsinoites; Fundort: Gurob; Schreibort: Alexandria</origPlace>
+                     <origDate notBefore="-0260" notAfter="-0249">
+                ca. 260 - 249 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="sent">
                      <p>
                         <placeName type="ancient"
-                                   ref="http://pleiades.stoa.org/places/727070 http://www.trismegistos.org/place/100">Alexandria</placeName>
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoEFCHB5">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="composed">
+                     <p xml:id="geoEH77FI">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/100 https://pleiades.stoa.org/places/727070">Alexandria</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +63,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,22 +80,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Polykrates an seinen Vater (Kleon)</term>
-               <term>Anwesenheit gewünscht</term>
-               <term>Fest (Arsinoeia)</term>
-               <term>Vorhaben mit König</term>
-               <term>Geld</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Polykrates an seinen Vater (Kleon)</term>
+               <term n="3">Anwesenheit gewünscht</term>
+               <term n="4">Fest (Arsinoeia)</term>
+               <term n="5">Vorhaben mit König</term>
+               <term n="6">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-17T09:29:51-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-12-14T08:50:53-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-12-14T03:22:51-05:00"
+                 who="http://papyri.info/editor/users/LisaVanoppr%C3%A9">Submit - Entering translation and changing metadata and text for P. Petr. Kleon 13.</change>
          <change who="HGV" when="1998-03-02">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Kleon - Archiv. Datierung nach dem Rahmen des Kleon - Archivs. Zum Ort vgl. Lewis, Greeks in Ptolemaic Egypt, S. 38.</p>
@@ -84,26 +109,26 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">11</biblScope>
-                  <biblScope type="generic">(1)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">13</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">II, (2)</bibl>
-               <bibl type="illustration">Witkowski, Epistulae privatae, Tabula (nach S. 194)</bibl>
-               <bibl type="illustration">Linke Hälfte: Schubart, Griechische Paläographie, Abb. 2, S. 26</bibl>
-               <bibl type="illustration">Evans - Obbink, Language of the Papyri, S. 37 (versehentlich als P.Petr. I 30 bezeichnet)</bibl>
+               <bibl type="illustration" n="1">P.Petr. II (2)</bibl>
+               <bibl type="illustration" n="2">Witkowski, Epistulae privatae, Tabula (nach S. 194)</bibl>
+               <bibl type="illustration" n="3">Linke Hälfte: Schubart, Griechische Paläographie, Abb. 2, S. 26</bibl>
+               <bibl type="illustration" n="4">Evans - Obbink, Language of the Papyri, S. 37 (versehentlich als P.Petr. I 30 bezeichnet)</bibl>
+               <bibl type="illustration" n="5">Clarysse, Linguistic diversity, S. 37</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 H (1)</bibl>
-               <bibl type="publication" subtype="other">Witkowski, Epistulae privatae 3</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. II 11 (1)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. III 42 H (1)</bibl>
+               <bibl type="publication" subtype="other" n="3">Witkowski, Epistulae privatae 3</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -116,7 +141,10 @@
                <head xml:lang="de">Englisch:</head>
                <bibl type="translations">Lewis, Greeks in Ptolemaic Egypt (1986), S. 38</bibl>
             </listBibl>
+            <listBibl xml:lang="fr">
+               <bibl type="translations">Bouché-Leclercq, REG 21 (1908), p. 138</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

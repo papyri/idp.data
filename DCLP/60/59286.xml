@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59286" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 11 1372</title>
+            <title>Codex fragments of Frogs</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">383</idno>
             <idno type="filename">59286</idno>
             <idno type="dclp-hybrid">p.oxy;11;1372</idno>
+            <idno type="MP3">00153.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">10.8 cm</width>
+                              <height unit="cm">9.4 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,17 +47,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,18 +73,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>comedy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Aristophanes com.; Ranae 44-50, 85-91, 840-861, 879-902</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">comedy</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,39 +92,158 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-02-10T21:15:34-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-02-10T21:15:34-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-02-10T20:45:13-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: change *high-punctus* to *middot* in fr.1 r.1; add modern apostrophe in fr. 1 r.7, fr. 1 v.5, fr. 2-4 v.12, fr. 2-4 v.13 (before the scribal one); in fr. 1 v.1 use ἐς not εἰς (as in ed.pr.); lost.1lin for fr.2-4 v.6, fr. 2-4 v.21, fr. 2-4 r.5; add *low-punctus* at end of fr. 2-4 v.12; πόνηρ’ in fr. 2-4 v.13; reverse order of elements in the |corr| tags of fr. 2-4 v.8; in fr. 2-4 v.9 add ἐπίθες to start of line and put καλῶς in square brackets at end of line; in fr. 2-4 r.8 the |reg| is &lt;:&lt;:σοι|reg|οι:&gt;=P.Oxy 11.1372||ed||σου=R|σου=cett.:&gt;; add underdot to the first iota in ἰδιώταις on frag. 2-4, recto, line 12; in fr.2-4 r.13 ed.pr. has γλώσσης (cf. r.19); in fr. 2-4 r.18 ed.pr. has εμμελείας; delete [.?] at end of fr. 2-4 r.19. META: add digital image (http://arks.princeton.edu/ark:/88435/2n49t4283); Aristophanes is CWKB 765 and Frogs is 1617; add passage details (lines 44-50, 85-91, 840-861, 879-902): &#xD;
+&#xD;
+</change>
+          <change when="2021-02-10T20:45:13-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: change *high-punctus* to *middot* in fr.1 r.1; add modern apostrophe in fr. 1 r.7, fr. 1 v.5, fr. 2-4 v.12, fr. 2-4 v.13 (before the scribal one); in fr. 1 v.1 use ἐς not εἰς (as in ed.pr.); lost.1lin for fr.2-4 v.6, fr. 2-4 v.21, fr. 2-4 r.5; add *low-punctus* at end of fr. 2-4 v.12; πόνηρ’ in fr. 2-4 v.13; reverse order of elements in the |corr| tags of fr. 2-4 v.8; in fr. 2-4 v.9 add ἐπίθες to start of line and put καλῶς in square brackets at end of line; in fr. 2-4 r.8 the |reg| is &lt;:&lt;:σοι|reg|οι:&gt;=P.Oxy 11.1372||ed||σου=R|σου=cett.:&gt;; add underdot to the first iota in ἰδιώταις on frag. 2-4, recto, line 12; in fr.2-4 r.13 ed.pr. has γλώσσης (cf. r.19); in fr. 2-4 r.18 ed.pr. has εμμελείας; delete [.?] at end of fr. 2-4 r.19. META: add digital image (http://arks.princeton.edu/ark:/88435/2n49t4283); Aristophanes is CWKB 765 and Frogs is 1617; add passage details (lines 44-50, 85-91, 840-861, 879-902): &#xD;
+&#xD;
+</change>
+          <change when="2021-02-09T11:57:10-05:00"
+                 who="http://papyri.info/editor/users/LaurenTisdale">Submit - Part of a research project with Professor Mike Sampson at the University of Manitoba. There is one error that needs to be fixed in the XML - frag. 2-4, recto, line 12, the first iota in ἰδιώταις needs an underdot.</change>
+          <change when="2021-02-09T11:57:10-05:00"
+                 who="http://papyri.info/editor/users/LaurenTisdale">Submit - Part of a research project with Professor Mike Sampson at the University of Manitoba. There is one error that needs to be fixed in the XML - frag. 2-4, recto, line 12, the first iota in ἰδιώταις needs an underdot.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">ὦ δαιμόνιε πρόσελθε· δέομαι γάρ τί</supplied> σου<g type="middot"/>
+<lb n="2"/><supplied reason="lost">ἀλλ’ οὐχ οἷός τ’ εἴμ’ ἀποσοβ</supplied><unclear>ῆσ</unclear>αι τὸν γ<unclear>έλ</unclear><supplied reason="lost">ων,</supplied>
+<lb n="3"/><supplied reason="lost">ὁρῶν λεοντῆν ἐπὶ κροκω</supplied>τ<hi rend="circumflex">ῶ</hi>ι κειμ<supplied reason="lost">ένην.</supplied>
+<lb n="4"/><supplied reason="lost">τίς ὁ νοῦς τί κόθορνος καὶ</supplied> ῥ<hi rend="acute">ό</hi>παλον <supplied reason="lost">ξυνηλθέτην;</supplied>
+<lb n="5"/><supplied reason="lost">ποῖ γῆς ἀπεδήμεις; ἐπε</supplied>βάτευον Κλεισ<supplied reason="lost">θένει.</supplied>
+<lb n="6"/><supplied reason="lost">κἀναυμάχησας καὶ κα</supplied>τεδύσ<supplied reason="lost">α</supplied>μέν γε <supplied reason="lost">ναῦς</supplied>
+<lb n="7"/><supplied reason="lost">τῶν πολεμίων ἢ δώδε</supplied><unclear>κ</unclear>'<g type="apostrophe"/> <hi rend="lenis">ἢ</hi> <supplied reason="lost">τρι</supplied><unclear>σ</unclear>κα<hi rend="acute">ί</hi>δ<supplied reason="lost">εκα</supplied>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">ποῖ γῆ</supplied><unclear>ς</unclear> <unclear>ὁ</unclear> <unclear>τλήμ</unclear><supplied reason="lost">ων ἐς μακάρων εὐωχίαν.</supplied>
+<lb n="2"/><supplied reason="lost">ὁ δὲ Ξε</supplied>νοκλέης <supplied reason="lost">ἐξόλοιτο νὴ Δία.</supplied>
+<lb n="3"/><supplied reason="lost">Πυθάγ</supplied><g type="diastole"/>γελος δέ; <unclear>π</unclear><supplied reason="lost">ερὶ ἐμοῦ δ’ οὐδεὶς λόγος</supplied>
+<lb n="4"/><supplied reason="lost">ἐπιτρ</supplied>ιβομένου <unclear>τ</unclear><supplied reason="lost">ὸν ὦμον οὑτωσὶ σφόδρα.</supplied>
+<lb n="5"/><supplied reason="lost">οὔκο</supplied>υν ἕτερ'<g type="apostrophe"/> ἔστ’ ἐν<supplied reason="lost">ταῦθα μειρακύλλια</supplied>
+<lb n="6"/><supplied reason="lost">τραγ</supplied><unclear>ῳ</unclear>δ<hi rend="acute">ί</hi>ας ποιο<hi rend="circumflex">ῦ</hi>ν<supplied reason="lost">τα πλεῖν ἢ μύρια,</supplied>
+<lb n="7"/><supplied reason="lost">Εὐριπί</supplied><unclear>δου</unclear> <supplied reason="lost">π</supplied><unclear>λεῖν</unclear> <unclear>ἢ</unclear> <supplied reason="lost">σταδίῳ λαλίστερα;</supplied>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2-4" subtype="fragment" type="textpart">
+<div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="2"/><supplied reason="lost">σὺ δή με ταῦτ’ ὦ</supplied> <app type="alternative"><lem><supplied reason="lost">στρωμυλιοσυλλεκτά</supplied>δη</lem><rdg><supplied reason="lost">στωμυλιοσυλλεκτά</supplied>δη</rdg></app>
+<lb n="3"/><supplied reason="lost">καὶ πτωχοποιὲ καὶ ῥακιοσυρραπτά</supplied>δη
+<lb n="4"/><supplied reason="lost">ἀλλ’ οὔ τι χαίρων αὔτ’ ἐρεῖς παῦ’ Αἰσ</supplied>χύλε
+<lb n="5"/><supplied reason="lost">καὶ μὴ πρὸς ὀργὴν σπλάγχνα θερμήνης κότ</supplied><unclear>ῳ</unclear>.
+<lb n="6"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="7"/><supplied reason="lost">τὸν χωλοποιὸν οἷος ὢν θρασύνετ</supplied>α<unclear>ι</unclear>
+<lb n="8"/><supplied reason="lost">ἄρν’ ἄρνα μέλανα</supplied> <unclear>παῖ</unclear><supplied reason="lost">δε</supplied><unclear>ς</unclear>, <unclear>ἐ</unclear><supplied reason="lost">ξενέγκατ</supplied>ε·
+<lb n="9"/><supplied reason="lost">τυφὼς γὰρ ἐκβαί</supplied>νειν <unclear>πα</unclear><supplied reason="lost">ρασκευάζετ</supplied><unclear>αι</unclear>
+<lb n="10"/><supplied reason="lost">ὦ Κρητικὰς μὲν σ</supplied>υλλέγων μονῳδίας,
+<lb n="11"/><supplied reason="lost">γάμους δ’ ἀνοσίους</supplied> εἰσφέρων εἰς τὴν τέχνη<supplied reason="lost">ν</supplied>
+<lb n="12"/><supplied reason="lost">ἐπίσχες οὗτος, ὦ πολυ</supplied>τίμη<supplied reason="lost">τ</supplied>'<g type="apostrophe"/> Αἰ<supplied reason="lost">σχ</supplied>ύλε.<g type="low-punctus"/>
+<lb n="13"/><supplied reason="lost">ἀπὸ τῶν χαλαζῶν δ’</supplied> <unclear>ὦ</unclear> πόνηρ’<g type="apostrophe"/> Εὐριπίδη
+<lb n="14"/>ἄναγ<supplied reason="lost">ε σεαυτὸν ἐκπο</supplied>δών, εἰ σωφρονεῖς,
+<lb n="15"/><hi rend="diaeresis">ἵ</hi>να μ<supplied reason="lost">ὴ κεφαλαίῳ τ</supplied>ὸν κρόταφόν σου ῥήματι
+<lb n="16" xml:id="div4-div4-lb16"/>θεν<unclear>ὼ</unclear><supplied reason="lost">ν ὑπ’ ὀργῆς ἐκχέῃ τὸ</supplied><unclear>ν</unclear> <subst><add place="inline"><unclear>Τή</unclear>λεφον</add><del rend="corrected"><unclear>Τή</unclear>λεφων</del></subst><g type="high-punctus"/>
+<lb n="17"/><supplied reason="lost">σὺ δὲ μὴ πρὸς ὀργήν Αἰσχύλ’, ἀλλὰ</supplied> πραόνως
+<lb n="18"/><supplied reason="lost">ἔλεγχ’, ἐλέγχου· λ</supplied><unclear>ο</unclear>ιδορεῖσθαι <supplied reason="lost">δ’ οὐ πρέ</supplied><unclear>πε</unclear>ι
+<lb n="19"/><supplied reason="lost">ἄνδρας ποιητὰς</supplied> ὥσπερ ἀρτοπώλιδας<g type="high-punctus"/>
+<lb n="20"/><supplied reason="lost">σὺ δ’ εὐθὺς ὥσπερ πρῖ</supplied>νος ἐμ<supplied reason="lost">π</supplied>ρ<unclear>η</unclear><supplied reason="lost">σ</supplied><unclear>θε</unclear>ὶς β<supplied reason="lost">ο</supplied>ᾶις.
+<lb n="21"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="22"/><supplied reason="lost">δάκνειν, δάκνεσθαι πρότερος, εἰ τούτ</supplied><unclear>ωι</unclear> δοκεῖ<g type="low-punctus"/>
+<lb n="22"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="r" type="textpart"><ab>
+<lb n="1" rend="indent"/> ἔλθετ’ ἐπ<unclear>η</unclear><gap reason="lost" quantity="7" unit="character"/> <supplied reason="lost">δύναμιν</supplied>
+<lb n="2" rend="indent"/> δεινοτάτ<unclear>ο</unclear><supplied reason="lost">ιν στομάτοιν πορίσασθαι</supplied>
+<lb n="3" rend="indent"/> ῥήματα κα<supplied reason="lost">ὶ παραπρίσματ’ ἐπῶν.</supplied>
+<lb n="4" rend="indent"/> νῦν γ<supplied reason="lost">ὰρ ἀγὼν σοφίας ὁ μέγας</supplied>
+<lb n="5"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="6"/><supplied reason="lost">εὔχεσθε δ</supplied>ὴ καὶ <supplied reason="lost">σφώ τι πρὶν τἄπη λέγειν</supplied>
+<lb n="7"/><supplied reason="lost">Δήμ</supplied>ητερ ἡ θρ<supplied reason="lost">έψασα τὴν ἐμὴν φρένα,</supplied>
+<lb n="8"/><supplied reason="lost">εἶνα</supplied>ί με τῶν <supplied reason="lost">σῶν ἄξιον</supplied> <choice><corr>μυστηρί<supplied reason="lost">ων</supplied></corr><sic><unclear>μ</unclear>αρτη<unclear>ρί</unclear><supplied reason="lost">ων</supplied></sic></choice>
+<lb n="9"/>ἐπίθες <app type="editorial"><lem resp="P.Oxy. 11.1372">καὶ σὺ δὴ λιβαν<supplied reason="lost">ωτὸ</supplied>ν λαβώ<supplied reason="lost">ν</supplied></lem><rdg resp="VAKL">λαβὼν δὴ καὶ σὺ λιβανωτόν</rdg><rdg resp="R">καὶ δὴ σὺ λιβανωτὸν λαβών</rdg><rdg resp="Md1, post corr.">λιβανωτὸν καὶ σὺ δὴ λαβών</rdg></app> <supplied reason="lost">καλῶς</supplied>.
+<lb n="10"/><supplied reason="lost">ἕτεροι</supplied> γάρ εἰσιν οἷσιν εὔχομα<supplied reason="lost">ι θεοῖς</supplied>
+<lb n="11"/><supplied reason="lost">ἴδιοί τι</supplied>νές <app type="editorial"><lem resp="P.Oxy 11.1372"><choice><reg>σοι</reg><orig>οι</orig></choice></lem><rdg resp="R">σου</rdg><rdg resp="cett.">σοι</rdg></app> κόμμα κ<supplied reason="lost">α</supplied>ινόν; <unclear>κ</unclear><supplied reason="lost">αὶ μάλα.</supplied>
+<lb n="12"/><supplied reason="lost">ἴθι</supplied> δὴ προσεύχου <unclear>τ</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <unclear>το</unclear>ῖσιν <hi rend="diaeresis"><unclear>ἰ</unclear></hi><supplied reason="lost">διώταις θεοῖς.</supplied>
+<lb n="13"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/> <unclear>αἰ</unclear>θὴρ <subst><add place="inline">ἐμὸν</add><del rend="corrected">αιμον</del></subst> βόσκημα, <unclear>κ</unclear><supplied reason="lost">αὶ γλώσσης στρόφιγξ,</supplied>
+<lb n="14"/>καὶ ξύνεσι καὶ μυκτῆρες ὀσφρ<supplied reason="lost">αντήριοι,</supplied>
+<lb n="15"/>ὀρθῶς μ’ ἐλέγχειν ὧν ἂν ἅπτ<supplied reason="lost">ωμαι λόγων.</supplied>
+<lb n="16" rend="indent"/> καὶ μὴν ἡ<supplied reason="lost">μεῖς ἐπιθυμοῦμεν</supplied>
+<lb n="17" rend="indent"/> παρὰ σοφ<supplied reason="lost">οῖν ἀνδροῖν ἀκοῦσαι τίνα λόγων,</supplied>
+<lb n="18" rend="indent"/> ἐμμ<supplied reason="lost">ε</supplied><unclear>λ</unclear><supplied reason="lost">είαν</supplied> <choice><reg>ἔπιτε</reg><orig><unclear>ἔ</unclear>πιε</orig></choice> δ<unclear>αΐ</unclear><supplied reason="lost">α</supplied><unclear>ν</unclear> <supplied reason="lost">ὁδόν.</supplied>
+<lb n="19" rend="indent"/> γλῶσσα μὲν γὰρ ἠγρίωται,
+<lb n="20" rend="indent"/> λῆμα δ’ οὐκ ἄτολμον ἀμφ<supplied reason="lost">οῖν οὐδ’ ἀκίνητοι φρένες.</supplied>
+<lb n="21" rend="indent"/> προσ<supplied reason="lost">δοκᾶν οὖν ε</supplied>ἰκός ἐ<supplied reason="lost">στι</supplied>
+<lb n="22" rend="indent"/> τὸν <unclear>μ</unclear><supplied reason="lost">ὲν ἀστεῖόν τι λέξειν καὶ κατερρινημένον</supplied>
+<lb n="23" rend="indent"/> τὸ<unclear>ν</unclear> <supplied reason="lost">δ’ ἀνασπῶντ’ αὐτοπρέμνοις</supplied>
+<lb n="23"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div4-div4-lb16" xml:space="preserve">
+            <ref>16</ref>
+            <p>A correction in line 855 is by a different hand which used black ink.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95225"/>
                   <biblScope unit="number">1372</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">11</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/9039"/>
+                  <biblScope unit="page">102</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0019">Aristophanes com.</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0019 http://cwkb.org/author/id/765/rdf">Aristophanes com.</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/1083">Ranae</title>
+                         ref="http://www.trismegistos.org/authorwork/1083 http://cwkb.org/work/id/1617/rdf">Ranae</title>
+                  <biblScope n="1" unit="line" from="44" to="50">44-50</biblScope>
+                  <biblScope n="2" unit="generic">and</biblScope>
+                  <biblScope n="3" unit="line" from="85" to="91">85-91</biblScope>
+                  <biblScope n="4" unit="generic">and</biblScope>
+                  <biblScope n="5" unit="line" from="840" to="861">840-861</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
+                  <biblScope n="7" unit="line" from="879" to="902">879-902</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
+               <bibl type="online" n="1">
+                  <ptr target="http://www.columbia.edu/cgi-bin/dlo?obj=princeton.apis.p14"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://arks.princeton.edu/ark:/88435/2n49t4283"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
