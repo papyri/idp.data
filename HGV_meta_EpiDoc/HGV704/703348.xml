@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703348">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703348">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Notiz des stellvertretenden Dorfschreibers</title>
@@ -27,16 +28,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhyncha (Arsinoites)</origPlace>
+                     <origPlace>Oxyrhyncha (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0142">142 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741540 http://www.trismegistos.org/place/1523">Oxyrhyncha</placeName>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Notiz</term>
-               <term>Eseltreiber</term>
-               <term>Diebstahl von Säcken</term>
+               <term n="1">Notiz</term>
+               <term n="2">Eseltreiber</term>
+               <term n="3">Diebstahl von Säcken</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,15 +76,15 @@
          <change who="HGV" when="2020-06-24">Record last modified</change>
          <change when="2020-06-25" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxyrhyncha</title>
-                  <biblScope type="numbers">9</biblScope>
-                  <biblScope type="side">R</biblScope>
+                  <biblScope n="1" type="numbers">9</biblScope>
+                  <biblScope n="2" type="side">R</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -88,6 +93,13 @@
                <bibl type="illustration">Tafel VIII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703348"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
