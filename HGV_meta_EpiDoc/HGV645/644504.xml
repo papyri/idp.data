@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv644504">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv644504">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe wegen Einbruchdiebstahls</title>
@@ -27,19 +28,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0147-07-29">
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" notBefore="-0147-07-29">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 29. Juli 147 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0136-07-26">
+                        <offset n="1" type="after">nach</offset>
+                29. Juli 147 v.Chr. (Jahr unsicher)
+              </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" notBefore="-0136-07-26">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 26. Juli 136 v.Chr. (Jahr unsicher)</origDate>
+                        <offset n="1" type="after">nach</offset>
+                26. Juli 136 v.Chr. (Jahr unsicher)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,19 +71,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Einbruch in Hoff</term>
-               <term>Diebstahl von Bienenkörben</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Einbruch in Hoff</term>
+               <term n="3">Diebstahl von Bienenkörben</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-28T10:23:19-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-28T07:18:06-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Ok</change>
+         <change when="2021-02-28T05:59:24-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital images. The two parts of this document still have two different entries on the Kölner papyri database, but were joint by the P.Oxyrhynca  editor.</change>
          <change who="HGV" when="2020-06-24">Record created</change>
          <change who="HGV" when="2020-06-25">Record last modified</change>
          <change when="2020-06-25" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 26. Juli 136 v.Chr.</p>
@@ -86,15 +100,19 @@
             <note type="original" subtype="Y">Z. 2-3: 26. Juli 136 v.Chr.</note>
             <note type="source">HGV.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 2-3</ref>
                   <date type="mentioned" when="-0147-07-29">
-                     <certainty locus="value" given="#dateAlternativeX" degree="1"/>29. Juli 147 v.Chr.</date>
+              29. Juli 147 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 2-3</ref>
                   <date type="mentioned" when="-0136-07-26">
-                     <certainty locus="value" given="#dateAlternativeY" degree="1"/>26. Juli 136 v.Chr.</date>
+              26. Juli 136 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  </date>
                </item>
             </list>
          </div>
@@ -111,6 +129,16 @@
                <bibl type="illustration">Tafel XXII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm644504"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm644524"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
