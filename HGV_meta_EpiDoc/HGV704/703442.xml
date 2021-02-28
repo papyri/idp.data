@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703442">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703442">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe wegen Einbruchs</title>
@@ -27,16 +28,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhyncha (Arsinoites)</origPlace>
+                     <origPlace>Oxyrhyncha (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0175" notAfter="-0126" precision="low">Mitte II v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741540 http://www.trismegistos.org/place/1523">Oxyrhyncha</placeName>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Einbruch</term>
-               <term>Nacht</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Einbruch</term>
+               <term n="3">Nacht</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,8 +76,8 @@
          <change who="HGV" when="2020-06-24">Record last modified</change>
          <change when="2020-06-25" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Tag: 24. Mesore.</p>
@@ -90,6 +95,13 @@
                <bibl type="illustration">Tafel X</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703442"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
