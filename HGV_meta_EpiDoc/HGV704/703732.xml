@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703732">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703732">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Anzeige wegen Ölschmuggels</title>
@@ -27,19 +28,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhyncha (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0147-10-31">
-                        <certainty locus="value" match="../year-from-date(@when)"/>31. Okt. 147 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0136-10-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Okt. 136 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Oxyrhyncha (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0147-10-31">
+                31. Okt. 147 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0136-10-28">
+                28. Okt. 136 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741540 http://www.trismegistos.org/place/1523">Oxyrhyncha</placeName>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,20 +72,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Ölschmuggel</term>
-               <term>Schaden</term>
-               <term>unverkauftes Öl</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Ölschmuggel</term>
+               <term n="3">Schaden</term>
+               <term n="4">unverkauftes Öl</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-28T11:19:15-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-02-28T07:21:39-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Ok</change>
+         <change when="2021-02-28T06:00:29-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2020-06-24">Record created</change>
          <change who="HGV" when="2020-06-25">Record last modified</change>
          <change when="2020-06-25" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativedatierung: 28. Okt. 136 v.Chr.</p>
@@ -94,6 +109,13 @@
                <bibl type="illustration">Tafel XXIII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703732"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
