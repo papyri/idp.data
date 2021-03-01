@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61008" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Bkt. 9 11</title>
@@ -14,7 +14,11 @@
             <idno type="filename">61008</idno>
             <idno type="dclp-hybrid">bkt;9;11</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -41,19 +45,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0300" notAfter="0499">300 - 499</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -91,11 +96,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Odyssea 04.161-165, 190-194, 356-359, 393-395, 455-467, 482-496, 685-688, 698-701</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Odyssea 04.161-165, 190-194, 356-359, 393-395, 455-467, 482-496, 685-688, 698-701</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -104,10 +109,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="1" subtype="fragment" type="textpart">
@@ -214,20 +219,25 @@
 </ab></div></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/14433"/>
                   <biblScope unit="number">11</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">BKT</title>
-                  <biblScope unit="volume">9</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95463"/>
+                  <biblScope unit="number">169</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/512">Odyssea</title>
@@ -243,5 +253,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
