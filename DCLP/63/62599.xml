@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62599" xml:lang="en">
-   <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62599">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 52 3671, P. Oxy. 76 5087</title>
+            <title>Plato, Laches: P. Oxy. 52 3671 (179 B–C) + P. Oxy. 76 5087 (180 E, 182 B–C)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -12,17 +12,23 @@
             <idno type="TM">62599</idno>
             <idno type="LDAB">3784</idno>
             <idno type="filename">62599</idno>
-            <idno type="dclp-hybrid">tm;;62599</idno>
+            <idno type="dclp-hybrid">p.oxy;52;3671</idno>
+            <idno type="dclp-hybrid">p.oxy;76;5087</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
+            <idno type="MP3">1407.4</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Oxford, Sackler Library, Papyrology Rooms P. Oxy. 3671</idno>
-                     <idno type="invNo">Oxford, Sackler Library, Papyrology Rooms 51 4B 18/G(1-3)c</idno>
+                     <idno type="invNo" n="1">Oxford, Sackler Library, Papyrology Rooms P. Oxy. 3671</idno>
+                     <idno type="invNo" n="2">Oxford, Sackler Library, Papyrology Rooms 51 4B 18/G(1-3)c</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -46,17 +52,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrynchos (U, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0150" notAfter="0199">150 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="http://www.trismegistos.org/place/1524">Oxyrynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -87,55 +93,131 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose philosophy dialogue</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Plato philosophus; Laches 179 b3-c2; 180 e; 182 b-c</term>
+               <term n="1" type="description">philosophy</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose philosophy dialogue</term>
+               <term n="5" type="overview"/>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>P.Oxy. 52.3671 and 76.5087 are transcribed together below. Fragment a corresponds to 52.3671 (= Laches 179 B-C); fragment b to 76.5087 fr. 1 (= 180E); fragment c to 76.5087 fr. 2. (= 180 B-C).  The dimensions of fr. a are 7 cm wide x 8 cm high, of fr. c, 3 cm w. x 2.7 cm h.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> <div n="a" subtype="fragment" type="textpart"><ab>
+<lb n="1a"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ὑπομνήσον</supplied>
+<lb n="1" break="no"/><unclear>τε</unclear><supplied reason="lost">ς</supplied> <unclear>ὅ</unclear>τι οὐ χρὴ αὐτο<unclear>ῦ</unclear> <unclear>ἀ</unclear><supplied reason="lost">με</supplied>
+<lb n="2" break="no"/>λεῖν, καὶ παρακα<unclear>λοῦν</unclear><supplied reason="lost">τες</supplied> 
+<lb n="3"/><unclear>ὑ</unclear>μᾶς ἐπὶ τὸ ἐπιμέ<unclear>λ</unclear><supplied reason="lost">ειάν</supplied> 
+<lb n="4"/>τινα ποιήσασθαι τ<supplied reason="lost">ῶν</supplied>
+<lb n="5"/><hi rend="diaeresis">ὑ</hi>έων κοινῇ μεθ᾽ ἡ<unclear>μ</unclear><supplied reason="lost">ῶν.</supplied> 
+<lb n="6"/>ὅθεν δὲ <hi rend="asper">ἡ</hi>μῖν ταῦτ᾽ <supplied reason="lost">ἔδο</supplied>
+<lb n="7" break="no"/><unclear>ξ</unclear>εν, ὦ Νικία τε καὶ <unclear>Λάχ</unclear><supplied reason="lost">ης,</supplied> 
+<lb n="8"/>χρὴ ἀκοῦσαι, κἂν <unclear>ᾖ</unclear> <unclear>ὀ</unclear><supplied reason="lost">λί</supplied>
+<lb n="9" break="no"/>γωι μακρότερα<g type="high-punctus"/>. συσ<unclear>σ</unclear><supplied reason="lost">ιτοῦ</supplied>
+<lb n="10" break="no"/>μεν γὰρ δὴ ἐγώ τε κα<supplied reason="lost">ὶ</supplied> <unclear>Μ</unclear><supplied reason="lost">ε</supplied>
+<lb n="11" break="no"/><supplied reason="lost">λ</supplied>η<supplied reason="lost">σ</supplied>ίας ὅδε<g type="high-punctus"/>, καὶ ἡμ<supplied reason="lost">ῖν τὰ</supplied>
+<lb n="12"/>μειράκια παρασιτεῖ<g type="low-punctus"/>. ὅ<unclear>περ</unclear>
+<lb n="13"/><supplied reason="lost">ο</supplied><unclear>ὖ</unclear>ν καὶ ἀ<supplied reason="lost">ρ</supplied>χόμενος εἶπον 
+<lb n="14"/>τοῦ λόγου, παρρησιασόμε
+<lb n="15" break="no"/><supplied reason="lost">θα πρ</supplied>ὸς <hi rend="diaeresis">ὑ</hi>μᾶς<g type="high-punctus"/>. ἡμῶν γ<unclear>ὰ</unclear>ρ 
+<lb n="16"/>ἑκάτερος περὶ <unclear>τοῦ</unclear> ἑα<unclear>υ</unclear><supplied reason="lost">τοῦ</supplied>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="b" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">λε</supplied><unclear>γ</unclear>όντω<unclear>ν</unclear>
+<lb n="3"/><gap reason="lost" quantity="12" unit="character" precision="low"/> <supplied reason="lost">πρ</supplied><unclear>ὸς</unclear> <unclear>ἀ</unclear>λλ<unclear>ή</unclear>
+<lb n="4" break="no"/><supplied reason="lost">λους</supplied> <gap reason="lost" quantity="10" unit="character" precision="low"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="c" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><unclear>π</unclear>ε<unclear>ρ</unclear><supplied reason="lost">ὶ τὰς τάξεις καὶ ταῦτα</supplied>
+<lb n="2"/>λαβ<supplied reason="lost">ὼν καὶ φιλοτιμηθεὶς</supplied>
+<lb n="3"/>ἐν αὐτ<unclear>οῖ</unclear><supplied reason="lost">ς ἐπὶ πᾶν ἂν τὸ πε</supplied>
+<lb n="4" break="no"/>ρὶ τὰς στ<unclear>ρ</unclear>α<unclear>τ</unclear><supplied reason="lost">ηγίας ὁρμήσειε·</supplied>
+<lb n="5"/><unclear>κ</unclear>αὶ ἤδη δῆλο<unclear>ν</unclear> <supplied reason="lost">ὅτι τὰ τού</supplied>
+<lb n="6" break="no"/>των ἐχόμε<unclear>να</unclear> <supplied reason="lost">καὶ μαθή</supplied>
+<lb n="7" break="no"/>ματα πάντα <supplied reason="lost">καὶ</supplied> <app type="editorial"><lem resp="with T"><supplied reason="lost">ἐπιτη</supplied>
+<lb n="8" break="no"/>δεύματα</lem><rdg resp="BWQ"><supplied reason="lost">ἐπιτη</supplied>
+<lb n="8" break="no"/>δεύματα πάντα</rdg></app> <unclear>κα</unclear>ὶ κ<supplied reason="lost">αλὰ καὶ</supplied>
+<lb n="9"/>πολλοῦ ἄ<unclear>ξια</unclear> <unclear>ἀνδ</unclear><supplied reason="lost">ρὶ μαθεῖν</supplied>
+<lb n="10"/><del rend="erasure">τ</del>ε καὶ <unclear>ἐπιτηδε</unclear>υ<supplied reason="lost">σαι, ὧν</supplied>
+<lb n="11"/><supplied reason="lost">καθηγή</supplied><unclear>σ</unclear><supplied reason="lost">αιτ᾿ ἂν τοῦτο</supplied>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb6" xml:space="preserve"><ref>5</ref> <p>There may be a middot before the kappa in κοινῇ.</p></item>
+               <item corresp="#div1-lb12" xml:space="preserve"><ref>11</ref> <p>The high dot in this line and l. 15 appear to have been inserted later.</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="partial">
+               <bibl n="1" type="publication" subtype="principal">
+            
+                  <title level="s" type="short-Checklist" n="1">P.Oxy. 52</title>
+                  <author n="1">
+                     <forename>Helen M.</forename>
+                     <surname>Cockle</surname>
+                  </author>
+                  <pubPlace n="1">London</pubPlace>
+                  <date>1984</date>
+                  
                   <ptr target="http://papyri.info/biblio/10432"/>
-                  <biblScope unit="number">3671</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">52</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="numbers">3671</biblScope>
+                  <biblScope n="2" unit="volume">52</biblScope>
                </bibl>
-               <bibl type="reference" subtype="partial">
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">76</biblScope>
-                  <biblScope unit="number">5087</biblScope>
+               <bibl n="2" type="publication" subtype="principal">
+            
+                  <title level="s" type="short-Checklist" n="1">P.Oxy. 76</title>
+                  <pubPlace n="1">London</pubPlace>
+                  <date>2011</date>
+                  <editor n="1">
+                     <forename>R.</forename>
+                     <surname>Colomo</surname>
+                  </editor>
+                  
+                  <ptr target="http://papyri.info/biblio/79329"/>
+                  <biblScope n="1" unit="volume">76</biblScope>
+                  <biblScope n="2" unit="numbers">5087</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato philosophus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato philosophus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/963">Laches</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">CPF IV.2, pl.215</bibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol52/pages/3671.htm"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://163.1.169.40/cgi-bin/library?e=d-000-00---0POxy--00-0-0--0prompt-10---4------0-1l--1-en-50---20-about---00031-001-1-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=CL5.1.76&amp;d=HASH01211546c282f5b09fcff191"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
