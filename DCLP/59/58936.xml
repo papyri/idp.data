@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m58936" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 58936</title>
@@ -14,7 +14,11 @@
             <idno type="filename">58936</idno>
             <idno type="dclp-hybrid">bgu;2;588</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,18 +42,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Arsinoites, Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0150" notAfter="0299">150 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -87,12 +92,12 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term>acta</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Acta Alexandrinorum; Reception of Alexandrian envoys by a Roman emperor</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">history</term>
+               <term n="5">acta</term>
+               <term n="6" type="overview">Acta Alexandrinorum; Reception of Alexandrian envoys by a Roman emperor</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -101,10 +106,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
@@ -133,7 +138,8 @@
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0300">Acta Alexandrinorum</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0300">Acta Alexandrinorum</author>
                </bibl>
             </listBibl>
          </div>
@@ -143,13 +149,25 @@
             <!-- ignore - start, i.e. SoSOL users may not edit this -->
             <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/20481"/>
-                  <biblScope unit="page">181</biblScope>
+                  <biblScope n="1" unit="page">181</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
                <bibl n="2" type="publication" subtype="principal">
             <!-- ignore - start, i.e. SoSOL users may not edit this -->
             <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/6143"/>
-                  <biblScope unit="number">12</biblScope>
+                  <biblScope n="1" unit="number">12</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95043"/>
+                  <biblScope n="1" unit="number">588</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
@@ -162,5 +180,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
