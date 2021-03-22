@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv851642">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv851642">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe des stellvertretenden Dorfschreibers</title>
@@ -27,17 +28,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhyncha (Arsinoites)</origPlace>
+                     <origPlace>Oxyrhyncha (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0142-10-27">
-                        <offset type="after" n="1">nach</offset> 27. Okt. 142 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                27. Okt. 142 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741540 http://www.trismegistos.org/place/1523">Oxyrhyncha</placeName>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,20 +68,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Stellvertretender Dorfschreiber</term>
-               <term>Einbruch</term>
-               <term>Missbrauch der Tochter</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Stellvertretender Dorfschreiber</term>
+               <term n="3">Einbruch</term>
+               <term n="4">Missbrauch der Tochter</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-28T10:58:12-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-02-28T06:46:26-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Ok</change>
+         <change when="2021-02-28T05:21:14-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2020-06-23">Record created</change>
          <change who="HGV" when="2020-06-24">Record last modified</change>
          <change when="2020-06-25" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -91,8 +104,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxyrhyncha</title>
-                  <biblScope type="numbers">9</biblScope>
-                  <biblScope type="side">V</biblScope>
+                  <biblScope n="1" type="numbers">9</biblScope>
+                  <biblScope n="2" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,6 +114,13 @@
                <bibl type="illustration">Tafel IX</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703348"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
