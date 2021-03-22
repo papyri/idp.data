@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703449">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703449">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Anzeige eines Komarchen</title>
@@ -27,17 +28,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhyncha (Arsinoites)</origPlace>
+                     <origPlace>Oxyrhyncha (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0150" notAfter="-0149">
-                        <offset type="after" n="1">nach</offset> 150 - 149 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                150 -
+                149 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741540 http://www.trismegistos.org/place/1523">Oxyrhyncha</placeName>
-                        <placeName type="ancient" subtype="nome"
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,19 +69,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Komarches</term>
-               <term>Überflutung des Landes</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Komarches</term>
+               <term n="3">Überflutung des Landes</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-28T11:13:21-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-02-28T06:57:59-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Ok</change>
+         <change when="2021-02-28T05:25:32-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2020-06-23">Record created</change>
          <change who="HGV" when="2020-06-24">Record last modified</change>
          <change when="2020-06-25" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -88,6 +102,13 @@
                <bibl type="illustration">Tafel XIII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703449"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
