@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv316242">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an Drimylos</title>
@@ -29,16 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tanis (Arsinoites)</origPlace>
+                     <origPlace>Tanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0189-09-25">
-                        <offset type="after" n="1">nach</offset> 25. Sept. 189 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                25. Sept. 189 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737069 http://www.trismegistos.org/place/2251 http://www.trismegistos.org/place/7586 http://www.trismegistos.org/place/2616">Tanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +66,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Amenneus</term>
-               <term>Onnophris und Psenesis (Bestatter) an Drimylos (Vollstreckungsbeamter, πρὸς τῷ παρασφραγισμῷ)</term>
-               <term>Bitte um Entlassung aus der von Drimylos angeordneten Einkerkerung</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Amenneus</term>
+               <term n="3">Onnophris und Psenesis (Bestatter) an Drimylos (Vollstreckungsbeamter, πρὸς τῷ παρασφραγισμῷ)</term>
+               <term n="4">Bitte um Entlassung aus der von Drimylos angeordneten Einkerkerung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-17T12:25:20-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-04-16T08:49:56-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - The link is correct</change>
+         <change when="2021-04-16T08:10:36-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2014-02-10">Record created</change>
          <change who="HGV" when="2014-08-27">Record last modified</change>
          <change when="2014-08-29" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -90,6 +100,13 @@
                <bibl type="illustration">Tafel II</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm316242"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
