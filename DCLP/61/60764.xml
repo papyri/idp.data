@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60764" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 60764</title>
@@ -14,16 +14,20 @@
             <idno type="filename">60764</idno>
             <idno type="dclp-hybrid">tm;;60764</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Oxford, Bodleian Library MS. Gr. class. f. 24 (P)</idno>
-                     <idno type="invNo">Berlin, Ägyptisches Museum P. 7499</idno>
-                     <idno type="invNo">Berlin, Ägyptisches Museum P. 7502</idno>
+                     <idno type="invNo" n="1">Oxford, Bodleian Library MS. Gr. class. f. 24 (P)</idno>
+                     <idno type="invNo" n="2">Berlin, Ägyptisches Museum P. 7499</idno>
+                     <idno type="invNo" n="3">Berlin, Ägyptisches Museum P. 7502</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -47,18 +51,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Arsinoites, Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0150" notAfter="0250">150 - 250</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -89,18 +94,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 08.169-177, 198-213, 306-324</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Ilias 08.169-177, 198-213, 306-324</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -109,17 +114,21 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="Ch. Sailer">Entered Greek text from reference edition</change>
-         <change who="dclp" when="2016-08-12">set date for change log</change>
+          <change when="2016-08-12" who="dclp">set date for change log</change>
+          <change who="Ch. Sailer">Entered Greek text from reference edition</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="frontmatter" xml:space="preserve">
-            <p>This papyrus has been digitally edited by Christian Sailerand and Vincenzo Damiani and revised by Vincenzo Damiani as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref></p>
-         </div>
+        <p>
+          This papyrus has been digitally edited by Christian Sailerand and Vincenzo Damiani and revised by Vincenzo Damiani as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
-<div n="PBerol_7502" type="textpart">
 <div n="1a" subtype="fragment" type="textpart" corresp="#FR6677"><ab>
 <lb n="168"/><gap reason="illegible" quantity="6" unit="line"><desc>vestiges</desc></gap>
 <lb n="169"/><supplied evidence="parallel" reason="lost">τρὶς μὲν μερμήριξε κατὰ φρένα καὶ κατ</supplied>ὰ <unclear>θυμ</unclear>όν,
@@ -131,33 +140,178 @@
 <lb n="175"/><supplied evidence="parallel" reason="lost">γιγνώσκω δ’ ὅτι μοι π</supplied>ρόφρων κατένευ<unclear>σε</unclear> <unclear>Κρ</unclear>ονίων
 <lb n="176"/><supplied evidence="parallel" reason="lost">νίκην καὶ μέγα κῦδο</supplied><unclear>ς</unclear>, ἀτὰρ Δαναοῖσί γε πῆμα·
 <lb n="177"/><supplied evidence="parallel" reason="lost">νήπιοι, οἳ ἄρα δὴ τάδε</supplied> <unclear>τ</unclear>είχεα μηχανόωντο
+</ab></div>
+<div n="1b" subtype="fragment" type="textpart"><ab>
+<lb n="198"/><gap reason="lost" quantity="21" unit="line"/>
+<lb n="198"/><supplied evidence="parallel" reason="lost">῝Ως ἔφατ' εὐχόμενος, </supplied><unclear>νε</unclear><supplied evidence="parallel" reason="lost">μέ</supplied><unclear>ση</unclear><supplied evidence="parallel" reason="lost">σε δὲ πότνια ῞Ηρη,</supplied> 
+<lb n="199"/><supplied evidence="parallel" reason="lost">σείσατο δ' εἰνὶ θρόν</supplied>ῳ, <supplied evidence="parallel" reason="lost">ἐλ</supplied>έλ<supplied evidence="parallel" reason="lost">ιξε δὲ μακρὸν ῎Ολυμπον,</supplied> 
+<lb n="200"/><supplied evidence="parallel" reason="lost">καί ῥα Ποσειδάω</supplied><unclear>να</unclear> <supplied evidence="parallel" reason="lost">μέγα</supplied><unclear>ν</unclear> <supplied evidence="parallel" reason="lost">θεὸν ἀντίον ηὔδα·</supplied> 
+<lb n="201"/><supplied evidence="parallel" reason="lost">ὢ πόποι ἐννοσί</supplied>γα<supplied evidence="parallel" reason="lost">ι</supplied>' <unclear>ε</unclear>ὐ<supplied evidence="parallel" reason="lost">ρ</supplied><unclear>υσ</unclear><supplied evidence="parallel" reason="lost">θενές, οὐδέ νυ σοί περ</supplied> 
+<lb n="202"/><supplied evidence="parallel" reason="lost">ὀλλυμένων</supplied> <app type="alternative"><lem>Δαναῶν</lem><rdg>Αργειων</rdg></app> <unclear>ὀλ</unclear>οφ<supplied evidence="parallel" reason="lost">ύρεται ἐν φρεσὶ θυμός.</supplied> 
+<lb n="203"/><supplied evidence="parallel" reason="lost">οἳ δέ τοι εἰς ῾Ε</supplied><unclear>λ</unclear>ίκη<unclear>ν</unclear> <unclear>τε</unclear> <unclear>κ</unclear>αὶ Αἰγὰς <supplied evidence="parallel" reason="lost">δῶρ' ἀνάγουσι</supplied> 
+<lb n="204"/><supplied evidence="parallel" reason="lost">πολλά τε καὶ χα</supplied><unclear>ρίεντ</unclear>α· σ<unclear>ὺ</unclear> <unclear>δ</unclear>έ σφι<unclear>σ</unclear>ι <supplied evidence="parallel" reason="lost">βούλεο νίκην.</supplied> 
+<lb n="205"/><supplied evidence="parallel" reason="lost">εἴ περ γάρ κ' ἐθέ</supplied><unclear>λ</unclear>οιμεν, ὅσ<unclear>ο</unclear>ι <unclear>Δ</unclear>α<unclear>ν</unclear><supplied evidence="parallel" reason="lost">αοῖσιν ἀρωγοί,</supplied> 
+<lb n="206"/><supplied evidence="parallel" reason="lost">Τρῶας ἀπώσασ</supplied>θαι καὶ ἐρυκ<unclear>έ</unclear><supplied evidence="parallel" reason="lost">μ</supplied><unclear>ε</unclear><supplied evidence="parallel" reason="lost">ν εὐρύοπα Ζῆν,</supplied>
+<lb n="207"/><supplied evidence="parallel" reason="lost">αὐτοῦ κ' ἔνθ'</supplied> <app type="editorial"><lem resp="Ar p596 pl 102 tt Z Ω"><supplied evidence="parallel" reason="lost">ἀ</supplied>κάχοιτο κα<unclear>θ</unclear><supplied evidence="parallel" reason="lost">ήμενος</supplied></lem><rdg resp="Zenodotus">καθοιτ' ακαχήμενος</rdg></app><supplied evidence="parallel" reason="lost">οἶος ἐν ῎Ιδῃ.</supplied>  
+<lb n="208"/><supplied evidence="parallel" reason="lost">Τὴν δὲ μέ</supplied>γ' <unclear>ὀχθησας</unclear> <unclear>π</unclear><supplied evidence="parallel" reason="lost">ρ</supplied><unclear>ο</unclear><supplied evidence="parallel" reason="lost">σέφη κρείων ἐνοσίχθων·</supplied> 
+<lb n="209"/><supplied evidence="parallel" reason="lost">῞Ηρη ἀπτοεπὲς</supplied> <unclear>π</unclear>ο<unclear>ῖον</unclear> <supplied evidence="parallel" reason="lost">τ</supplied><unclear>ὸν</unclear> <supplied evidence="parallel" reason="lost">μῦθον ἔειπες.</supplied> 
+<lb n="210"/><supplied evidence="parallel" reason="lost">οὐκ ἂν ἔγωγ'</supplied> <unclear>ἐ</unclear>θέ<unclear>λ</unclear>οιμι Δι<hi rend="diaeresis">ὶ</hi> <unclear>Κρ</unclear><supplied evidence="parallel" reason="lost">ονίωνι μάχεσθαι</supplied> 
+<lb n="211"/><supplied evidence="parallel" reason="lost">ἡμέας τοὺς</supplied> <unclear>ἄ</unclear>λλους, ἐπεὶ ἦ πο<unclear>λὺ</unclear> <supplied evidence="parallel" reason="lost">φέρτερός ἐστιν.</supplied> 
+<lb n="212"/><supplied evidence="parallel" reason="lost">῝Ως οἳ μὲν τ</supplied><unclear>ο</unclear><supplied evidence="parallel" reason="lost">ι</supplied>αῦτα π<unclear>ρ</unclear>ὸς ἀλλή<unclear>λ</unclear><supplied evidence="parallel" reason="lost">ους ἀγόρευον·</supplied> 
+<lb n="213"/><supplied evidence="parallel" reason="lost">τῶν δ' ὅσον</supplied> ἐκ νη<unclear>ῶν</unclear> <app type="editorial"><lem resp="Ar p965 p1102 Z Ω">ἀπ<unclear>ὸ</unclear></lem><rdg resp="Zenodotus">καὶ</rdg></app> πύ<unclear>ργ</unclear><supplied evidence="parallel" reason="lost">ου τάφρος ἔεργε</supplied>
 </ab></div></div>
-
-<div n="PBerol_7499" type="textpart">
-<div n="1b" subtype="fragment" type="textpart" corresp="#FR6678"><ab>
-<lb n="306"/><supplied evidence="parallel" reason="lost">μ</supplied><unclear>ήκ</unclear><supplied evidence="parallel" reason="lost">ων δ’ ὡς ἑτέρωσε κά</supplied><unclear>ρη</unclear> β<unclear>ά</unclear><supplied evidence="parallel" reason="lost">λεν, ἥ τ’ ἐνὶ κήπωι,</supplied>
-<lb n="307"/><supplied evidence="parallel" reason="lost">καρ</supplied><unclear>πῶ</unclear><supplied evidence="parallel" reason="lost">ι βριθομένη</supplied> <unclear>ν</unclear>οτίηισ<supplied evidence="parallel" reason="lost">ί τε εἰαρινῆισιν</supplied>
-<lb n="308"/><supplied evidence="parallel" reason="lost">ὣς ἑτέ</supplied><unclear>ρω</unclear><supplied evidence="parallel" reason="lost">σ’ ἤμυσε κάρ</supplied><unclear>η</unclear> πήλ<unclear>η</unclear><supplied evidence="parallel" reason="lost">κι βαρυνθέν.</supplied>
-<lb n="309"/><unclear>Τ</unclear><supplied evidence="parallel" reason="lost">ε</supplied><unclear>ῦκρ</unclear><supplied evidence="parallel" reason="lost">ο</supplied><unclear>ς</unclear> δ’ <unclear>ἄλλ</unclear><supplied evidence="parallel" reason="lost">ον ὀϊστὸ</supplied><unclear>ν</unclear> ἀπὸ ν<unclear>ε</unclear><supplied evidence="parallel" reason="lost">υρῆφιν ἴαλλεν</supplied>
-<lb n="310"/><unclear>Ἕ</unclear><supplied evidence="parallel" reason="lost">κ</supplied>τ<unclear>ο</unclear>ρ<unclear>ο</unclear>ς ἀ<unclear>ντ</unclear>ι<unclear>κ</unclear><supplied evidence="parallel" reason="lost">ρύ, βαλέ</supplied>ειν δέ ἑ <unclear>ἵ</unclear><supplied evidence="parallel" reason="lost">ετο</supplied> <unclear>θυμό</unclear><supplied evidence="parallel" reason="lost">ς.</supplied>
-<lb n="311"/>ἀλλ’ ὅ γε καὶ <unclear>τ</unclear>ό<supplied evidence="parallel" reason="lost">θ’ ἅμαρτ</supplied><unclear>ε</unclear>· παρέσφηλεν γὰ<unclear>ρ</unclear> <supplied evidence="parallel" reason="lost">Ἀπόλλων·</supplied>
-<lb n="312"/>ἀλλ’ Ἀρχεπτόλ<supplied evidence="parallel" reason="lost">εμον, θρ</supplied>ασὺν Ἕκτορος <unclear>ἡ</unclear><supplied evidence="parallel" reason="lost">νιοχῆα,</supplied>
-<lb n="313"/>ἱέμενον πόλεμον δὲ βάλε στῆθος παρ<supplied evidence="parallel" reason="lost">ὰ μαζόν·</supplied>
-<lb n="314"/>ἤριπε δ’ ἐ<unclear>ξ</unclear> ὀχέων, ὑπερώησαν δέ οἱ ἵ<unclear>π</unclear><supplied evidence="parallel" reason="lost">ποι</supplied>
-<lb n="316"/>Ἕκτορα <unclear>δ</unclear>’ αἰνὸν ἄχ<unclear>ο</unclear>ς πύκασε φρένας <supplied evidence="parallel" reason="lost">ἡνιόχοιο·</supplied>
-<lb n="317"/>τὸν μὲν ἔπειτ’ εἴ<unclear>ασ</unclear>ε καὶ ἀχνύμενός <unclear>π</unclear><supplied evidence="parallel" reason="lost">ερ ἑταίρου,</supplied>
-<lb n="318"/>Κεβριόνην δ’ ἐκ<unclear>έ</unclear>λ<unclear>ε</unclear>υσεν ἀδελφεὸν ἐγ<supplied evidence="parallel" reason="lost">γὺς ἐόντα</supplied>
-<lb n="319"/>ἵππων ἡνί’ ἑλεῖν· ὃ δ’ ἄρ’ οὐκ ἀπίθησε<unclear>ν</unclear> <supplied evidence="parallel" reason="lost">ἀκούσας.</supplied>
-<lb n="320"/>αὐτὸς δ’ ἐκ δίφ<unclear>ρο</unclear>ιο χ<supplied evidence="parallel" reason="lost">α</supplied>μαὶ θόρε παμφα<unclear>ν</unclear><supplied evidence="parallel" reason="lost">όωντος</supplied>
-<lb n="321"/>σμερδαλέα ἰάχ<unclear>ω</unclear>ν·<supplied evidence="parallel" reason="lost">ὃ δὲ</supplied> <unclear>χ</unclear>ερμάδιον βά<unclear>λ</unclear><supplied evidence="parallel" reason="lost">ε χειρί,</supplied>
-<lb n="322"/>βῆ δ’ ἰθὺς <unclear>Τ</unclear>εύκρο<unclear>υ</unclear>, <supplied evidence="parallel" reason="lost">βαλέε</supplied>ιν δέ ἑ θυμὸς ἀ<supplied evidence="parallel" reason="lost">νώγει.</supplied>
-<lb n="323"/>ἤτοι ὃ μὲν φα<unclear>ρ</unclear><supplied evidence="parallel" reason="lost">έτρης ἐξε</supplied><unclear>ί</unclear><supplied evidence="parallel" reason="lost">λε</supplied><unclear>το</unclear> <unclear>πικρὸν</unclear> ὀϊστόν,
-<lb n="324"/><unclear>θ</unclear>ῆκε δ’ ἐ<unclear>π</unclear><supplied evidence="parallel" reason="lost">ὶ νευρῇ· τὸν δ’ αὖ κορυθαίολος</supplied> <unclear>Ἕ</unclear><supplied evidence="parallel" reason="lost">κτωρ</supplied>
-</ab></div></div></div>
+         <div n="1c" subtype="fragment" type="textpart" corresp="#FR6678">
+            <ab>
+               <lb n="306"/>
+               <supplied evidence="parallel" reason="lost">μ</supplied>
+               <unclear>ήκ</unclear>
+               <supplied evidence="parallel" reason="lost">ων δ’ ὡς ἑτέρωσε κά</supplied>
+               <unclear>ρη</unclear>
+          β
+          <unclear>ά</unclear>
+               <supplied evidence="parallel" reason="lost">λεν, ἥ τ’ ἐνὶ κήπωι,</supplied>
+               <lb n="307"/>
+               <supplied evidence="parallel" reason="lost">καρ</supplied>
+               <unclear>πῶ</unclear>
+               <supplied evidence="parallel" reason="lost">ι βριθομένη</supplied>
+               <unclear>ν</unclear>
+          οτίηισ
+          <supplied evidence="parallel" reason="lost">ί τε εἰαρινῆισιν</supplied>
+               <lb n="308"/>
+               <supplied evidence="parallel" reason="lost">ὣς ἑτέ</supplied>
+               <unclear>ρω</unclear>
+               <supplied evidence="parallel" reason="lost">σ’ ἤμυσε κάρ</supplied>
+               <unclear>η</unclear>
+          πήλ
+          <unclear>η</unclear>
+               <supplied evidence="parallel" reason="lost">κι βαρυνθέν.</supplied>
+               <lb n="309"/>
+               <unclear>Τ</unclear>
+               <supplied evidence="parallel" reason="lost">ε</supplied>
+               <unclear>ῦκρ</unclear>
+               <supplied evidence="parallel" reason="lost">ο</supplied>
+               <unclear>ς</unclear>
+          δ’
+          <unclear>ἄλλ</unclear>
+               <supplied evidence="parallel" reason="lost">ον ὀϊστὸ</supplied>
+               <unclear>ν</unclear>
+          ἀπὸ ν
+          <unclear>ε</unclear>
+               <supplied evidence="parallel" reason="lost">υρῆφιν ἴαλλεν</supplied>
+               <lb n="310"/>
+               <unclear>Ἕ</unclear>
+               <supplied evidence="parallel" reason="lost">κ</supplied>
+          τ
+          <unclear>ο</unclear>
+          ρ
+          <unclear>ο</unclear>
+          ς ἀ
+          <unclear>ντ</unclear>
+          ι
+          <unclear>κ</unclear>
+               <supplied evidence="parallel" reason="lost">ρύ, βαλέ</supplied>
+          ειν δέ ἑ
+          <unclear>ἵ</unclear>
+               <supplied evidence="parallel" reason="lost">ετο</supplied>
+               <unclear>θυμό</unclear>
+               <supplied evidence="parallel" reason="lost">ς.</supplied>
+               <lb n="311"/>
+          ἀλλ’ ὅ γε καὶ
+          <unclear>τ</unclear>
+          ό
+          <supplied evidence="parallel" reason="lost">θ’ ἅμαρτ</supplied>
+               <unclear>ε</unclear>
+          · παρέσφηλεν γὰ
+          <unclear>ρ</unclear>
+               <supplied evidence="parallel" reason="lost">Ἀπόλλων·</supplied>
+               <lb n="312"/>
+          ἀλλ’ Ἀρχεπτόλ
+          <supplied evidence="parallel" reason="lost">εμον, θρ</supplied>
+          ασὺν Ἕκτορος
+          <unclear>ἡ</unclear>
+               <supplied evidence="parallel" reason="lost">νιοχῆα,</supplied>
+               <lb n="313"/>
+          ἱέμενον πόλεμον δὲ βάλε στῆθος παρ
+          <supplied evidence="parallel" reason="lost">ὰ μαζόν·</supplied>
+               <lb n="314"/>
+          ἤριπε δ’ ἐ
+          <unclear>ξ</unclear>
+          ὀχέων, ὑπερώησαν δέ οἱ ἵ
+          <unclear>π</unclear>
+               <supplied evidence="parallel" reason="lost">ποι</supplied>
+               <lb n="316"/>
+          Ἕκτορα
+          <unclear>δ</unclear>
+          ’ αἰνὸν ἄχ
+          <unclear>ο</unclear>
+          ς πύκασε φρένας
+          <supplied evidence="parallel" reason="lost">ἡνιόχοιο·</supplied>
+               <lb n="317"/>
+          τὸν μὲν ἔπειτ’ εἴ
+          <unclear>ασ</unclear>
+          ε καὶ ἀχνύμενός
+          <unclear>π</unclear>
+               <supplied evidence="parallel" reason="lost">ερ ἑταίρου,</supplied>
+               <lb n="318"/>
+          Κεβριόνην δ’ ἐκ
+          <unclear>έ</unclear>
+          λ
+          <unclear>ε</unclear>
+          υσεν ἀδελφεὸν ἐγ
+          <supplied evidence="parallel" reason="lost">γὺς ἐόντα</supplied>
+               <lb n="319"/>
+          ἵππων ἡνί’ ἑλεῖν· ὃ δ’ ἄρ’ οὐκ ἀπίθησε
+          <unclear>ν</unclear>
+               <supplied evidence="parallel" reason="lost">ἀκούσας.</supplied>
+               <lb n="320"/>
+          αὐτὸς δ’ ἐκ δίφ
+          <unclear>ρο</unclear>
+          ιο χ
+          <supplied evidence="parallel" reason="lost">α</supplied>
+          μαὶ θόρε παμφα
+          <unclear>ν</unclear>
+               <supplied evidence="parallel" reason="lost">όωντος</supplied>
+               <lb n="321"/>
+          σμερδαλέα ἰάχ
+          <unclear>ω</unclear>
+          ν·
+          <supplied evidence="parallel" reason="lost">ὃ δὲ</supplied>
+               <unclear>χ</unclear>
+          ερμάδιον βά
+          <unclear>λ</unclear>
+               <supplied evidence="parallel" reason="lost">ε χειρί,</supplied>
+               <lb n="322"/>
+          βῆ δ’ ἰθὺς
+          <unclear>Τ</unclear>
+          εύκρο
+          <unclear>υ</unclear>
+          ,
+          <supplied evidence="parallel" reason="lost">βαλέε</supplied>
+          ιν δέ ἑ θυμὸς ἀ
+          <supplied evidence="parallel" reason="lost">νώγει.</supplied>
+               <lb n="323"/>
+          ἤτοι ὃ μὲν φα
+          <unclear>ρ</unclear>
+               <supplied evidence="parallel" reason="lost">έτρης ἐξε</supplied>
+               <unclear>ί</unclear>
+               <supplied evidence="parallel" reason="lost">λε</supplied>
+               <unclear>το</unclear>
+               <unclear>πικρὸν</unclear>
+          ὀϊστόν,
+          <lb n="324"/>
+               <unclear>θ</unclear>
+          ῆκε δ’ ἐ
+          <unclear>π</unclear>
+               <supplied evidence="parallel" reason="lost">ὶ νευρῇ· τὸν δ’ αὖ κορυθαίολος</supplied>
+               <unclear>Ἕ</unclear>
+               <supplied evidence="parallel" reason="lost">κτωρ</supplied>
+            </ab>
+         </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
@@ -166,10 +320,10 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Schubart, Griech. Pal., pl.93</bibl>
-               <bibl type="printed">G. Cavallo, Ricerche sulla maiuscola biblica (1967), pl.19a</bibl>
-               <bibl type="printed">Archiv 4 (1995), Abb. 9 + 10</bibl>
-               <bibl type="printed">N.Gonis, Archiv 49 (2003), pl.21</bibl>
+               <bibl type="printed" n="1">Schubart, Griech. Pal., pl.93</bibl>
+               <bibl type="printed" n="2">G. Cavallo, Ricerche sulla maiuscola biblica (1967), pl.19a</bibl>
+               <bibl type="printed" n="3">Archiv 4 (1995), Abb. 9 + 10</bibl>
+               <bibl type="printed" n="4">N.Gonis, Archiv 49 (2003), pl.21</bibl>
                <bibl type="online">
                   <ptr target="http://berlpap.smb.museum/02241"/>
                </bibl>
@@ -177,41 +331,35 @@
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">200</biblScope>
+                  <biblScope n="1" unit="number">200</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="2" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">201</biblScope>
+                  <biblScope n="1" unit="number">201</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="3" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">487</biblScope>
+                  <biblScope n="1" unit="number">487</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
