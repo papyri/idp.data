@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv19310">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Frammento di prestito di grano</title>
+            <title>Contratto di prestito di grano</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">19310</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">18017</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,7 @@
                <history>
                   <origin>
                      <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0102" notAfter="0103">102 - 103</origDate>
+                     <origDate when="0103-01-10">10. Jan. 103</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,9 +64,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Fragment</term>
-               <term>Darlehen (Weizen)</term>
-               <term>Rückzahlung</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen (Weizen)</term>
+               <term n="3">Rückzahlung</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -72,26 +75,27 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">470</biblScope>
+                  <title level="s" type="abbreviated">AnalPap</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="fascicle">(2018)</biblScope>
+                  <biblScope n="3" type="pages">S. 41</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">398</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">240</biblScope>
                </bibl>
@@ -106,7 +110,12 @@
                   <graphic url="http://www.psi-online.it/documents/psi;5;470"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI V 470</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
