@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7458">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Contracts for Supply and Carriage of Bricks</title>
+            <title>Official correspondence</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7458</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">Ms. Gr. class d. 25 (P) recto</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate when="-0253" cert="low" precision="medium">ca. 253 v.Chr. (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,10 +67,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Ziegel</term>
-               <term>Lieferung</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Ziegel</term>
+               <term n="4">Lieferung</term>
+               <term n="5">Register</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -73,16 +80,14 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">14</biblScope>
-                  <biblScope type="generic">(2)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr.Kleon</title>
+                  <biblScope type="numbers">122</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,9 +97,13 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 46 (2)</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. III 46 (2)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. II 14 (2)</bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>On the other side, P.Petr.Kleon 123</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
