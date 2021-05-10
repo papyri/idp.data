@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv16371">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittung für Schiffsfracht</title>
@@ -10,15 +10,17 @@
             <idno type="filename">16371</idno>
             <idno type="TM">16371</idno>
             <idno type="ddb-perseus-style">0239;12;11023</idno>
-            <idno type="ddb-filename">sb.12.11023</idno>
-            <idno type="ddb-hybrid">sb;12;11023</idno>
+            <idno type="ddb-filename">zpe.191.257</idno>
+            <idno type="ddb-hybrid">zpe;191;257</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Milan</settlement>
                   </placeName>
+                  <collection>Università Cattolica</collection>
+                  <idno type="invNo">P. Med. 69.07</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Oxyrhynchos</origPlace>
                      <origDate when="0424">424</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoIAHGDE">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="86851"/>
+                  <biblScope type="pp">257</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,41 +70,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Transport</term>
-               <term>Naukleros</term>
-               <term>Weizen</term>
+               <term n="1">Quittung</term>
+               <term n="2">Transport</term>
+               <term n="3">Naukleros</term>
+               <term n="4">Weizen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-05-10T10:10:41-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-05-10T08:00:45-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-05-10T05:42:52-04:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - DDbDP Text: Updatded text from the re-edition in  ZPE 191 (2014) 257. || HGV Meta: Changed Title, Volume, Fascicle, Number. - Added SB 12 11023 after Other publications. - Provenance is ‘Oxyrhynchos’ (not added because of  the usual problem).</change>
          <change who="HGV" when="1991-05-10">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL VII, S. 224 und P.Oxy. LXXII 4908,1-2 Anm. Vgl. ZPE 89, 1991, S. 101. Neuedition: ZPE 191, 2014, S. 256-258.</p>
+            <p>Zur Datierung vgl. BL VII, S. 224 und P.Oxy. LXXII 4908,1-2 Anm. Vgl. ZPE 89, 1991, S. 101.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">11023</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">191</biblScope>
+                  <biblScope n="2" type="fascicle">(2014)</biblScope>
+                  <biblScope n="3" type="pages">S. 257</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">272</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">212</biblScope>
                </bibl>
@@ -97,10 +119,15 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Aegyptus 50, 1970, nach S. 48</bibl>
-               <bibl type="illustration">Montevecchi, Papirologia, Tav. 94</bibl>
+               <bibl type="illustration" n="1">Aegyptus 50, 1970, nach S. 48</bibl>
+               <bibl type="illustration" n="2">Montevecchi, Papirologia, Tav. 94</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB XII 11023</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
