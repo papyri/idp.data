@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22579">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Stellvertretung</title>
+            <title>Mandate for Representation at a Hearing</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22579</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. c. 282 (P) (c)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,28 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
-                     <origDate notBefore="0300" precision="medium">
-                        <offset type="after" n="1">nach (?)</offset>
-                        <certainty locus="value" match="../offset[@type='after']"/> ca. 300</origDate>
+                     <origPlace>Fundort: Kysis (= Dush) (Oasis Magna, Egypt); Schreibort: Hibis (= El-Hiba) (Oasis Magna, Egypt)</origPlace>
+                     <origDate when="0300" precision="medium">ca. 300</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2761 https://pleiades.stoa.org/places/776191">Kysis</placeName>
+                        <placeName n="4" type="modern">Dush</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoFJHDG5">
+                        <placeName n="1" type="ancient">Hibis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="4" type="modern">El-Hiba</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +62,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,10 +79,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Einsetzung eines Stellvertreters einer Frau</term>
-               <term>Reise</term>
-               <term>Auslosung eines Schiedsrichters</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Einsetzung eines Stellvertreters einer Frau</term>
+               <term n="3">Reise</term>
+               <term n="4">Auslosung eines Schiedsrichters</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,15 +91,14 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">24</biblScope>
-                  <biblScope type="numbers">16286</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">25</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,9 +110,10 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Bodl. I 33</bibl>
+               <bibl type="publication" subtype="other" n="1">SB XXIV 16286</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Bodl. I 33</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
