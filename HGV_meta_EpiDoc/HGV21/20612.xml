@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20612">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Report of Mummifiers</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
                      <origDate notBefore="0159" notAfter="0161">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 159 - 161</origDate>
+                ca. 159 - 161
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,35 +65,60 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Bestatter an den Strategen Phobion</term>
-               <term>Begutachtung eines Toten</term>
+               <term n="1">Bericht</term>
+               <term n="2">Bestatter an den Strategen Phobion</term>
+               <term n="3">Begutachtung eines Toten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-10-31T12:58:59-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-10-31T12:49:10-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-10-31T12:02:09-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Added image link</change>
          <change who="HGV" when="1996-07-22">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. Bastianini - Whitehorne, Strategi, S. 93 und P.Oxy. LX  4060, Komm zu Z. 40. Zu Z. 16 vgl. Tyche 21, 2006, S. 201.</p>
+            <p>Zur Datierung vgl. Bastianini - Whitehorne, Strategi, S. 93 und P.Oxy. LX 4060, Komm zu Z. 40. Zu Z. 16 vgl. Tyche 21, 2006, S. 201.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">476</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">476</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/20612"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">147</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://oi-idb.uchicago.edu/id/877bcdf0-2b67-42e5-b8b2-89d47c16267e"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

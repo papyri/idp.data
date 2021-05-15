@@ -31,29 +31,42 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theadelphia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origPlace>Theadelphia (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0168-02-26"
-                               notAfter="0168-03-26">
+                               notAfter="0168-03">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 26. Febr. - 26. März 168 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                        <offset n="1" type="after">nach</offset>
+                26. Febr. -
+                März 168 (Jahr unsicher)
+              </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0200-02-26"
-                               notAfter="0200-03-26">
+                               notAfter="0200-03">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 26. Febr. - 26. März 200 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ"
+                        <offset n="1" type="after">nach</offset>
+                26. Febr. -
+                März 200 (Jahr unsicher)
+              </origDate>
+                     <origDate n="3"
+                               xml:id="dateAlternativeZ"
                                notBefore="0229-02-25"
                                notAfter="0229-03-26">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 25. Febr. - 26. März 229 (Jahr unsicher)</origDate>
+                        <offset n="1" type="after">nach</offset>
+                25. Febr. -
+                26. März 229 (Jahr unsicher)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737081 http://www.trismegistos.org/place/2349">Theadelphia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -61,8 +74,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -77,13 +91,19 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Steuern</term>
-               <term>Rückstände</term>
+               <term n="1">Bericht</term>
+               <term n="2">Steuern</term>
+               <term n="3">Rückstände</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-09T06:44:58-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-08T14:10:57-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T14:03:01-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1996-10-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
@@ -92,14 +112,26 @@
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierungen: nach 26. Febr. -  26. März 200; nach 25. Febr. - 26. März 229. Zu Kol. III 1 vgl. Reiter, Nomarchen, S. 127, Anm. 78.</p>
+            <p>Alternativdatierungen: nach 26. Febr. - 26. März 200; nach 25. Febr. - 26. März 229. Zu Kol. III 1 vgl. Reiter, Nomarchen, S. 127, Anm. 78. Zu Kol. I 16 s. A. Benaissa, ZPE 200 (2016) 384–385.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Fay.</title>
-                  <biblScope type="numbers">42</biblScope>
-                  <biblScope type="generic">a</biblScope>
+                  <biblScope n="1" type="numbers">42</biblScope>
+                  <biblScope n="2" type="generic">a</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/10890"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">93</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -111,6 +143,13 @@
             <listBibl>
                <bibl type="publication" subtype="other">P.Lond. III 1195 descr.</bibl>
             </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_1195"/>
+               </figure>
+            </p>
          </div>
       </body>
    </text>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21460">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Contract</title>
@@ -33,12 +33,14 @@
                   <origin>
                      <origPlace>Elusa (Palästina)</origPlace>
                      <origDate notAfter="0505">
-                        <offset type="before" n="1">vor</offset> 505</origDate>
+                        <offset n="1" type="before">vor</offset>
+                505
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Elusa</placeName>
-                        <placeName type="ancient" subtype="region">Palästina</placeName>
+                        <placeName n="1" type="ancient">Elusa</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Palästina</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,19 +65,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Datierung</term>
-               <term>Namen</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Datierung</term>
+               <term n="3">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-07-01T11:39:49-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-07-01T11:34:34-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-07-01T11:18:17-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Put the link in the correct box</change>
+         <change when="2019-07-01T10:48:36-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-07-01T10:20:28-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-06-24T12:08:48-04:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to The Morgan Library website with digital image</change>
          <change who="HGV" when="1992-03-19">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -85,8 +100,17 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+               <bibl type="illustration">keine</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.themorgan.org/manuscript/350665"/>
+               </figure>
+            </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

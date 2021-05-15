@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59496" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P.Herc. 1061</title>
+            <title>Demetrius Laco, De geometria</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,6 +13,9 @@
             <idno type="LDAB">596</idno>
             <idno type="filename">59496</idno>
             <idno type="dclp-hybrid">p.herc;;1061</idno>
+            <idno type="herc-fr">8713</idno>
+            <idno type="herc-fr">8714</idno>
+            <idno type="herc-fr">8715</idno>
             <idno type="herc-fr">498</idno>
             <idno type="herc-fr">499</idno>
             <idno type="herc-fr">500</idno>
@@ -21,20 +24,27 @@
             <idno type="herc-fr">503</idno>
             <idno type="herc-fr">504</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo" xml:id="FR504">P.Herc. 1061 Subscriptio</idno>
-                     <idno type="invNo" xml:id="FR502">P.Herc. 1061 col. 8</idno>
-                     <idno type="invNo" xml:id="FR503">P.Herc. 1061 col. 9</idno>
+                     <idno type="invNo" xml:id="FR8713">P.Herc. 1061 col. 14</idno>
+                     <idno type="invNo" xml:id="FR8714">P.Herc. 1061 col. 15</idno>
+                     <idno type="invNo" xml:id="FR8715">P.Herc. 1061 col. 16</idno>
                      <idno type="invNo" xml:id="FR498">P.Herc. 1061 col. 10</idno>
                      <idno type="invNo" xml:id="FR499">P.Herc. 1061 col. 11</idno>
                      <idno type="invNo" xml:id="FR500">P.Herc. 1061 col. 12</idno>
                      <idno type="invNo" xml:id="FR501">P.Herc. 1061 col. 13</idno>
+                     <idno type="invNo" xml:id="FR502">P.Herc. 1061 col. 8</idno>
+                     <idno type="invNo" xml:id="FR503">P.Herc. 1061 col. 9</idno>
+                     <idno type="invNo" xml:id="FR504">P.Herc. 1061 subscriptio</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -53,31 +63,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herculaneum (Campania, Italy) oder Italy (?)</origPlace>
-                     <origDate notBefore="-0150" notAfter="-0051" precision="low">2. Hälfte II - 1. Hälfte I v. Chr.</origDate>
+                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy ?; Pisones (Italy)</origPlace>
+                     <origDate notBefore="-0150" notAfter="-0051" precision="low">2. Hälfte II - 1. Hälfte I v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/481">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient"
                                    subtype="region"
-                                   ref="https://www.trismegistos.org/place/932"
-                                   cert="low">Italy</placeName>
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/932">Italy</placeName>
                      </p>
                   </provenance>
-                  <provenance type="stored">
-                     <p>
-                        <placeName type="ancient">Pisones</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                  <provenance n="3">
+                     <p xml:id="geoDE4B1H">
+                        <placeName n="1" type="ancient">Pisones</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
                </history>
@@ -92,83 +103,51 @@
                            <graphic url="http://www.chartes.it/images/photo/PHerc 1061-CR04-09836-FS8-FIL8.jpg"/>
                            <orgName>CPART, Brigham Young University</orgName>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR498"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR498.01">
+                        <custEvent type="unrolled"
+                                   corresp="#FR498 #FR499 #FR500 #FR501 #FR502 #FR503 #FR504 #FR8713 #FR8714 #FR8715"
+                                   when="1805">
+                           <forename>Camillo</forename>
+                           <surname>Paderni</surname>
+                        </custEvent>
+                        <custEvent type="sketched" corresp="#FR498" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASHa44e/492d6d75.dir/herc.v0004.n0913.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR499"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR499.01">
+                        <custEvent type="sketched" corresp="#FR499" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0104/0e496d6d.dir/herc.v0004.n0911.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR499"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR499.02">
+                        <custEvent type="sketched" corresp="#FR499" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0114/2e49ad6d.dir/herc.v0004.n0912.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR500"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR500.01">
+                        <custEvent type="sketched" corresp="#FR500" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0104/0e496d6d.dir/herc.v0004.n0911.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR501"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR501.01">
+                        <custEvent type="sketched" corresp="#FR501" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0114/2e49ad6d.dir/herc.v0004.n0912.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR502"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR502.01">
+                        <custEvent type="sketched" corresp="#FR502" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH246b/bfb5db8e.dir/herc.v0004.n0915.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR503"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR503.01">
+                        <custEvent type="sketched" corresp="#FR503" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH01b6/aaa910c0.dir/herc.v0004.n0914.a.01.hires.jpg"/>
                         </custEvent>
-                        <custEvent type="sketched"
-                                   corresp="#FR504"
-                                   from="1787"
-                                   to="1806"
-                                   xml:id="GR504.01">
+                        <custEvent type="sketched" corresp="#FR504" from="1787" to="1806">
                            <forename>Giuseppe</forename>
                            <surname>Casanova</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0197/53b1c0d0.dir/herc.v0004.n0916.a.01.hires.jpg"/>
-                        </custEvent>
-                        <custEvent type="unrolled"
-                                   corresp="#FR498 #FR499 #FR500 #FR501 #FR502 #FR503 #FR504"
-                                   when="1805">
-                           <forename>Camillo</forename>
-                           <surname>Paderni</surname>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -185,12 +164,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term>mathematics</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Demetrius Laco; peri geometrias (Comparetti) with title and drawing</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
+               <term n="5">mathematics</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -199,74 +177,221 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-03-06" who="IDP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-05-16T20:02:24-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised @corresp.</change>
+          <change when="2020-05-16T20:02:22-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised @corresp.</change>
+          <change when="2020-05-16T19:51:37-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add @corresp in header.</change>
+          <change when="2020-05-16T19:51:37-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add @corresp in header.</change>
+          <change when="2020-05-16T19:38:51-04:00"
+                 who="http://papyri.info/users/HolgerEssler">Submit - Corrected xml, updated bibliography.</change>
+          <change when="2020-05-16T19:38:51-04:00"
+                 who="http://papyri.info/users/HolgerEssler">Submit - Corrected xml, updated bibliography.</change>
+          <change when="2019-08-05" who="M. Moser">Entered Greek text from reference edition</change>
+          <change when="2014-03-06" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve">
-            <p>This papyrus has been digitally edited by Marcel Moser and revised by Vincenzo Damiani as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref></p>
-         </div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Marcel Moser and revised by Vincenzo Damiani and Holger Essler as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>.
+        </p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="8" subtype="column" type="textpart" corresp="#FR502">
+<ab>
+<lb n="1"/><gap reason="illegible" quantity="1" unit="character"/><unclear>α</unclear>σησ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost">ε</supplied>στιν <unclear>ο</unclear>ὕτ<supplied reason="lost">ως</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="3" unit="character"/>σ<gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> τ<supplied reason="lost">ὴν δοθεῖσαν</supplied>
+<lb n="4"/><supplied reason="lost">εὐ</supplied>θή<unclear>αν</unclear> κ<unclear>α</unclear>ὶ τ<supplied reason="lost">ὸ ἥμισυ</supplied>
+<lb n="5"/>ταύτη<supplied reason="lost">ς</supplied> τεμοῦ<supplied reason="lost">μεν</supplied> κα<supplied reason="lost">ὶ</supplied>
+<lb n="6"/>πάλιν τὸ τῆς <supplied reason="lost">ἡμ</supplied>ισή
+<lb n="7" break="no"/>ας ἥμ<supplied reason="lost">ισ</supplied>υ καὶ το<supplied reason="lost">ῦτο</supplied> μέ
+<lb n="8" break="no"/><supplied reason="lost">χ</supplied>ρι <unclear>τ</unclear><supplied reason="lost">οῦ ἀπείρ</supplied>ο<supplied reason="lost">υ</supplied>, λύσιν
+<lb n="9"/><supplied reason="lost">ἂν ἔσ</supplied><unclear>χ</unclear>ε· τῆ<supplied reason="lost">ς γὰρ</supplied> ἐ<unclear>λ</unclear><supplied reason="lost">α</supplied>
+<lb n="10" break="no"/>ττώσεως ἐπ' ἄπειρ<supplied reason="lost">ο</supplied>ν
+<lb n="11"/><supplied reason="lost">γι</supplied>νομένης, ἐπ' ἄπει
+<lb n="12" break="no"/><supplied reason="lost">ρο</supplied>ν ἡ το<unclear>μ</unclear>ὴ ἔσται. τα
+</ab></div>         
+<div n="9" subtype="column" type="textpart" corresp="#FR503"><ab>
+<lb n="1"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="3"/><gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>τει<gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">κύ</supplied>
+<lb n="4" break="no"/>κ<unclear>λος</unclear> <supplied reason="lost">ἐ</supplied>στ<supplied reason="lost">ὶ σ</supplied>χ<unclear>ῆ</unclear><supplied reason="lost">μα</supplied> ἐ<supplied reason="lost">πί</supplied>
+<lb n="5" break="no"/>πεδο<supplied reason="lost">ν ὑ</supplied>πὸ <supplied reason="lost">μι</supplied>ᾶς γρα<supplied reason="lost">μ</supplied>
+<lb n="6" break="no"/>μῆς <supplied reason="lost">περι</supplied>εχόμε<supplied reason="lost">ν</supplied>ον,
+<lb n="7"/><unclear>π</unclear>ρὸς <supplied reason="lost">ἣν</supplied> ἀφ' ἑ<supplied reason="lost">νὸς</supplied> ση<supplied reason="lost">με</supplied>
+<lb n="8" break="no"/>ίο<supplied reason="lost">υ τῶν ἐ</supplied>ντὸ<supplied reason="lost">ς το</supplied>ῦ κύ
+<lb n="9" break="no"/>κλου <unclear>κε</unclear>ιμέν<supplied reason="lost">ω</supplied>ν <supplied reason="lost">π</supplied>ᾶ
+<lb n="10" break="no"/>σαι αἱ πρ<supplied reason="lost">οσ</supplied>πείπτου
+<lb n="11" break="no"/>σαι ε<unclear>ὐ</unclear><supplied reason="lost">θῆ</supplied>αι ἴσαι <supplied reason="lost">εἰσίν·</supplied>
+<lb n="12"/><supplied reason="lost">ο</supplied>ὕτω <supplied reason="lost">γὰρ αὐτὸν ὁρί</supplied>
+<lb n="13" break="no"/><supplied reason="lost">ζου</supplied>σιν ο<supplied reason="lost">ἱ γεωμέτραι</supplied>
+</ab></div>        
+<div n="10" subtype="column" type="textpart" corresp="#FR498"><ab>
+<lb n="1"/>σε<gap reason="lost" quantity="4" unit="character"/> <unclear>τὴν</unclear> <unclear>β</unclear>άσιν. ἀ
+<lb n="2" break="no"/>νίσου δ<unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><unclear>δο</unclear>θ<supplied reason="lost">εισ</supplied><gap reason="lost" quantity="6" unit="character"/>ρα<gap reason="illegible" quantity="1" unit="character"/>ο
+<lb n="4"/><gap reason="lost" quantity="2" unit="character"/><unclear>ν</unclear><gap reason="lost" quantity="9" unit="character"/>α<unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>ιν<unclear>ο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>του<gap reason="lost" quantity="2" unit="character"/>βωσιν<gap reason="illegible" quantity="1" unit="character"/>τ<gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>
+<lb n="9"/>δοθ<supplied reason="lost">εῖ</supplied><unclear>σ</unclear>αν <supplied reason="lost">γωνίαν</supplied> ἔσ<unclear>τιν</unclear>
+<lb n="10"/>δ<supplied reason="lost">ί</supplied><unclear>χα</unclear> τεμ<supplied reason="lost">εῖν. τὸ</supplied> <unclear>τὴν</unclear>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="11"/>δοθεῖσαν γωνίαν <supplied reason="lost">δ</supplied>ίχ<supplied reason="lost">α</supplied>
+<lb n="12"/>τ<supplied reason="lost">εμεῖ</supplied>ν π<supplied reason="lost">ρο</supplied>λαμβάνου
+<lb n="13" break="no"/>σ<supplied reason="lost">ιν, ὅ</supplied><unclear>τ</unclear>ι δ<supplied reason="lost">ύο</supplied> δοθε<supplied reason="lost">ισῶν</supplied>
+<lb n="14"/>εὐθ<supplied reason="lost">ηῶ</supplied>ν ἀ<unclear>ν</unclear><supplied reason="lost">ίσω</supplied><unclear>ν</unclear> <unclear>ἀ</unclear><supplied reason="lost">πὸ</supplied>
+<lb n="15"/>τ<unclear>ῆς</unclear> <supplied reason="lost">μεί</supplied>ζον<supplied reason="lost">ος τῆι ἐλάτ</supplied>
+<lb n="16" break="no"/>τον<supplied reason="lost">ι ἴση</supplied>ν <supplied reason="lost">ἀφε</supplied>λεῖν ἔσ
+<lb n="17" break="no"/><supplied reason="lost">τι</supplied>ν κ<supplied reason="lost">α</supplied><unclear>ὶ</unclear> <unclear>τὰ</unclear> ἄλλα τ<supplied reason="lost">ο</supplied>ιου
+<lb n="18" break="no"/><supplied reason="lost">τό</supplied>τροπα. χ<unclear>ά</unclear>ριν δὲ τού
+<lb n="19" break="no"/><supplied reason="lost">του</supplied> <unclear>λ</unclear>εγομέν<supplied reason="lost">ου</supplied><gap reason="lost" quantity="6" unit="character"/>
+</ab></div>        
+<div n="11" subtype="column" type="textpart" corresp="#FR499"><ab>
+<lb n="1"/>α<gap reason="lost" quantity="2" unit="character"/>θα<gap reason="lost" quantity="1" unit="character"/>αι<gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ιος τῆς
+<lb n="2"/><gap reason="lost" quantity="3" unit="character"/>ο<unclear>υ</unclear><gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">ἐλάτ</supplied>τονι α. Δ
+<lb n="3"/><gap reason="lost" quantity="6" unit="character"/>τε <unclear>ἄ</unclear><add place="above"><unclear>λ</unclear></add>λον <gap reason="lost" quantity="3" unit="character"/>ν
+<lb n="4"/><gap reason="lost" quantity="6" unit="character"/>τῆς δοθεί<unclear>σ</unclear>η<supplied reason="lost">ς</supplied>
+<lb n="5"/><gap reason="lost" quantity="5" unit="line"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ἔστω,</supplied>
+<lb n="11"/>φ<unclear>ασ</unclear>ίν, ἡ δεδομέν<supplied reason="lost">η γω</supplied>
+<lb n="12" break="no"/>νία <unclear>ἡ</unclear> περιεχομ<supplied reason="lost">ένη</supplied>
+<lb n="13"/><hi rend="supraline"><unclear>Α</unclear></hi><supplied reason="lost">ὑπὸ</supplied> τῆς <hi rend="supraline">ΑΒ</hi>
+<lb n="14"/><supplied reason="lost">π</supplied><unclear>λ</unclear>ε<unclear>υ</unclear><supplied reason="lost">ρᾶς</supplied>
+<lb n="15"/>κ<supplied reason="lost">αὶ τῆς <hi rend="supraline">Α</hi></supplied><hi rend="supraline">Γ</hi>
+<lb n="16"/>καὶ ση<supplied reason="lost">μεῖον</supplied>
+<lb n="17"/>τῆς <hi rend="supraline">ΑΒ</hi>
+<lb n="18"/>πλευρᾶς
+<lb n="19"/><supplied reason="lost"><hi rend="supraline">Δ</hi>, δεῖ</supplied> ἀ<supplied reason="lost">φ</supplied>
+<lb n="20" break="no"/><supplied reason="lost">ε</supplied>λ<supplied reason="lost">εῖ</supplied><unclear>ν</unclear> μῆκος τὸ <hi rend="supraline">ΑΔ</hi> ἱκα<supplied reason="lost">νὸν</supplied>
+</ab></div>        
+<div n="12" subtype="column" type="textpart" corresp="#FR500"><ab>
+<lb n="1"/><gap reason="lost" quantity="10" unit="character"/> καὶ τῶν
+<lb n="2"/><gap reason="lost" quantity="9" unit="character"/>ν τ<unclear>ὸ</unclear> τ<unclear>ρ</unclear>ί
+<lb n="3" break="no"/>γ<unclear>ω</unclear><supplied reason="lost">νον ἐπὶ τ</supplied><unclear>ῆς</unclear> <hi rend="supraline">Δ</hi><supplied reason="lost"><hi rend="supraline">Ε</hi></supplied> καὶ
+<lb n="4"/>αἱ β<gap reason="lost" quantity="8" unit="character"/>αι <hi rend="supraline">ΖΕ</hi> καὶ
+<lb n="5"/><supplied reason="lost"><hi rend="supraline">Δ</hi></supplied><hi rend="supraline">Ζ</hi><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="2" unit="line"/> 
+<lb n="8"/><gap reason="lost" quantity="2" unit="character"/><unclear>ι</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="8" unit="character"/>η<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>τὸν <unclear>η</unclear><gap reason="lost" quantity="6" unit="character"/>τὴν τ<supplied reason="lost">έτ</supplied>
+<lb n="10" break="no"/>μ<unclear>η</unclear><supplied reason="lost">ται ὑπὸ τῆς</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/>ἀν<supplied reason="lost">ίσου</supplied><gap reason="lost" extent="unknown" unit="character"/><hi rend="supraline">ΑΔ</hi><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><supplied reason="lost">ἐπ</supplied>εὶ οὖν <supplied reason="lost">ἴση ἐστὶν ἡ</supplied> <hi rend="supraline">Α</hi><supplied reason="lost"><hi rend="supraline">Δ</hi></supplied>
+<lb n="13"/>τῆι <hi rend="supraline">Α</hi><supplied reason="lost"><hi rend="supraline">Ε</hi></supplied> καὶ κ<unclear>ο</unclear><supplied reason="lost">ινὴ ἡ <hi rend="supraline">ΑΖ</hi>,</supplied>
+<lb n="14"/>δύ<supplied reason="lost">ο ἄρα δυσὶν ἴσαι αἵ</supplied>
+<lb n="15"/><unclear>τ</unclear>ε  <hi rend="supraline"> <unclear>Α</unclear>Δ</hi> <supplied reason="lost">καὶ</supplied> <hi rend="supraline">ΑΖ</hi> <supplied reason="lost">καὶ αἱ <hi rend="supraline">ΑΖ</hi></supplied>
+<lb n="16"/>καὶ <hi rend="supraline">ΑΕ</hi> καὶ <unclear>β</unclear>ά<unclear>σι</unclear>ς ἡ <hi rend="supraline">ΔΖ</hi>
+<lb n="17"/>τῆι <hi rend="supraline">ΕΖ</hi>· ἰ<supplied reason="lost">σ</supplied>όπλε<unclear>υ</unclear>ρον γὰρ
+<lb n="18"/>συνεστά<unclear>θ</unclear>η τ<supplied reason="lost">ρίγ</supplied>ω<unclear>νο</unclear>ν·
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="19"/>οὗ <supplied reason="lost">αἱ</supplied>  <hi rend="supraline"> <unclear>Ζ</unclear>Δ</hi> καὶ <hi rend="supraline">Ζ</hi><supplied reason="lost"><hi rend="supraline">Ε</hi></supplied>
+<lb n="20"/><gap reason="lost" quantity="6" unit="character"/>ν<gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+<div n="13" subtype="column" type="textpart" corresp="#FR501"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> ἐπὶ τῆς δο
+<lb n="2" break="no"/>θείση<unclear>ς</unclear>, φασίν, εὐθ<unclear>ή</unclear><supplied reason="lost">ας</supplied>
+<lb n="3"/>τῆς <hi rend="supraline">ΜΝ</hi>
+<lb n="4"/>τρίγω
+<lb n="5" break="no"/>νο<unclear>ν</unclear> <supplied reason="lost">ἰσό</supplied>
+<lb n="6" break="no"/><unclear>π</unclear>λ<supplied reason="lost">ευρον</supplied>
+<lb n="7"/><supplied reason="lost">συνεστάτω</supplied>
+<lb n="8"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> δει
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ε</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>τ<gap reason="illegible" quantity="1" unit="character"/> τὴν
+<lb n="12"/>δοθ<supplied reason="lost">εῖσ</supplied>αν εὐ<supplied reason="lost">θήα</supplied>ν δί
+<lb n="13" break="no"/>χα τεμεῖν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="16"/><gap reason="lost" quantity="6" unit="character"/>ν<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/><gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">εἰ</supplied> γὰρ τ<supplied reason="lost">ὴ</supplied>ν δο<unclear>θε</unclear>ῖσαν
+<lb n="18"/>εὐθήαν ἔστι <unclear>δ</unclear><supplied reason="lost">ί</supplied><unclear>χ</unclear>α τε
+<lb n="19" break="no"/>μεῖν <gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="5" unit="character"/>α
+<lb n="20"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+<div n="14" subtype="column" type="textpart" corresp="#FR8713"><ab>
+<lb n="1"/>πλευρᾶς <unclear>ε</unclear>ὐθ<unclear>ή</unclear>αν <gap reason="illegible" quantity="3" unit="character"/>
+<lb n="2"/>εἴπερ ἡ <hi rend="supraline">ΜΡ</hi> καὶ <supplied reason="lost"><hi rend="supraline">Ρ</hi></supplied><hi rend="supraline">Ν</hi> <supplied reason="lost">ἴσαι</supplied>
+<lb n="3"/>κα<supplied reason="lost">ὶ</supplied> ἡ δο<unclear>θ</unclear><supplied reason="lost">εῖσα εὐ</supplied>θήα
+<lb n="4"/><supplied reason="lost">ἡ</supplied> <hi rend="supraline">ΜΝ</hi> δίχα <unclear>τ</unclear><supplied reason="lost">έτ</supplied>μητα<supplied reason="lost">ι,</supplied>
+<lb n="5"/><unclear>τὸ</unclear> δ' αὐ<supplied reason="lost">τὸ</supplied> <unclear>ἔ</unclear>σ<unclear>τα</unclear>ι <unclear>κ</unclear>α<unclear>ὶ</unclear> <gap reason="lost" quantity="1" unit="character"/><unclear>ι</unclear>
+<lb n="6"/>τ<unclear>ω</unclear>ν μ<gap reason="lost" quantity="1" unit="character"/>ι<gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="8"/><supplied reason="lost">.</supplied>ντο<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>ναμα<gap reason="lost" quantity="1" unit="character"/>ει<gap reason="lost" quantity="3" unit="character"/><supplied reason="lost">ἐπεὶ γὰρ</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="10"/>ἴση ἐστὶν ἡ <hi rend="supraline">Ξ<unclear>Μ</unclear></hi> <unclear>τῆ</unclear><supplied reason="lost">ι <hi rend="supraline">ΞΝ</hi></supplied>
+<lb n="11"/><space quantity="3" unit="line"/>
+<lb n="14"/>γωνία ἡ Ο τῆι <hi rend="supraline">Π</hi> ἴση<surplus>ι</surplus>
+<lb n="15"/>δ<supplied reason="lost">ί</supplied>χα γὰρ <unclear>ἡ</unclear> <hi rend="supraline">Μ</hi><supplied reason="lost"><hi rend="supraline">Ν</hi> τέτ</supplied>μη
+<lb n="16" break="no"/><supplied reason="lost">τ</supplied>α<unclear>ι</unclear>, οὕτως<gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+<div n="15" subtype="column" type="textpart" corresp="#FR8714"><ab>
+<lb n="1"/><supplied reason="lost">ἐ</supplied>φαρ<supplied reason="lost">μ</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>ναι δ<unclear>ύο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>το<gap reason="lost" quantity="3" unit="character"/>ν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="illegible" quantity="2" unit="character"/>επι<unclear>τ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>θε<unclear>ο</unclear><gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ατ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="9" unit="line"/>
+<lb n="15"/>ξ<gap reason="illegible" quantity="2" unit="character"/>εισαν<gap reason="lost" quantity="3" unit="character"/>α<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><unclear>δ</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+<div n="16" subtype="column" type="textpart" corresp="#FR8715"><ab>
+<lb n="1"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ηι</unclear><gap reason="lost" quantity="1" unit="character"/><supplied reason="lost">περὶ</supplied> τ<supplied reason="lost">οῦ</supplied> προ<unclear>β</unclear>λή
+<lb n="2"/>ματός ἐστιν τ<supplied reason="lost">ο</supplied>ιαῦτα·
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="3"/>πάντα μὲν <unclear>ἡ</unclear>μῶν οὐ
+<lb n="4"/>προενη<unclear>ν</unclear><supplied reason="lost">εγ</supplied>μένων
+<lb n="5"/>ἵνα μὴ εἰς <supplied reason="lost">ἄ</supplied>ληκτον ἐκ
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>ντων
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>λ<unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><space quantity="1" unit="line"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ετρι<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/>εἰς ο<gap reason="illegible" quantity="1" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><unclear>λεν</unclear>
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/>καὶ
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ισ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+<div n="17" subtype="column" type="textpart" corresp="#FR504"><ab>
+<lb n="1"/><unclear>Δημητ</unclear>ρίου
+<lb n="2"/><supplied reason="lost">Περὶ</supplied> <supplied reason="lost">γεω</supplied><unclear>μετ</unclear>ρίας
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
+               <bibl n="1" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83386"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Il pensiero matematico di Demetrio Lacone</title>
-                  <author n="1">
-                     <surname>Angeli</surname>
-                     <forename>Anna</forename>
-                  </author>
-                  <date>1987</date>
-                  <!--ignore - stop-->
-                  <biblScope unit="fragment">Subscriptio</biblScope>
-                  <biblScope unit="fragment">col. 8</biblScope>
-                  <biblScope unit="fragment">col. 9</biblScope>
-                  <biblScope unit="fragment">col. 10</biblScope>
-                  <biblScope unit="fragment">col. 11</biblScope>
-                  <biblScope unit="fragment">col. 12</biblScope>
-                  <biblScope unit="fragment">col. 13</biblScope>
+                  <biblScope n="1" unit="fragment">Subscriptio</biblScope>
+                  <biblScope n="2" unit="fragment">col. 8</biblScope>
+                  <biblScope n="3" unit="fragment">col. 9</biblScope>
+                  <biblScope n="4" unit="fragment">col. 10</biblScope>
+                  <biblScope n="5" unit="fragment">col. 11</biblScope>
+                  <biblScope n="6" unit="fragment">col. 12</biblScope>
+                  <biblScope n="7" unit="fragment">col. 13</biblScope>
                </bibl>
-               <bibl type="reference" subtype="previous">
+               <bibl n="2" type="edition" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83608"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Quelques papyrus traitant de mathématiques</title>
-                  <author n="1">
-                     <surname>Heiberg</surname>
-                     <forename>Johan Ludvig</forename>
-                  </author>
-                  <date>1900</date>
-                  <!--ignore - stop-->
                </bibl>
-               <bibl type="reference" subtype="partial">
+               <bibl n="3" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83678"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Schede demetriache</title>
-                  <author n="1">
-                     <surname>Puglia</surname>
-                     <forename>Enzo</forename>
-                  </author>
-                  <date>2003</date>
-                  <!--ignore - stop-->
                </bibl>
-               <bibl type="reference" subtype="principal">
+               <bibl n="4" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83801"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="m">L'epicureo Demetrio Lacone</title>
-                  <author n="1">
-                     <surname>De Falco</surname>
-                     <forename>Vittorio</forename>
-                  </author>
-                  <pubPlace>Napoli</pubPlace>
-                  <date>1923</date>
-                  <!--ignore - stop-->
-                  <biblScope unit="fragment">Subscriptio</biblScope>
-                  <biblScope unit="fragment">col. 8</biblScope>
-                  <biblScope unit="fragment">col. 9</biblScope>
-                  <biblScope unit="fragment">col. 10</biblScope>
-                  <biblScope unit="fragment">col. 11</biblScope>
-                  <biblScope unit="fragment">col. 12</biblScope>
-                  <biblScope unit="fragment">col. 13</biblScope>
+                  <biblScope n="1" unit="fragment">Subscriptio</biblScope>
+                  <biblScope n="2" unit="fragment">col. 8</biblScope>
+                  <biblScope n="3" unit="fragment">col. 9</biblScope>
+                  <biblScope n="4" unit="fragment">col. 10</biblScope>
+                  <biblScope n="5" unit="fragment">col. 11</biblScope>
+                  <biblScope n="6" unit="fragment">col. 12</biblScope>
+                  <biblScope n="7" unit="fragment">col. 13</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -274,27 +399,31 @@
             <listBibl>
                <bibl type="publication"
                      subtype="ancient"
-                     corresp="#FR498 #FR499 #FR500 #FR501 #FR502 #FR503 #FR504">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1300">Demetrius Laco</author>
+                     corresp="#FR8713 #FR8714 #FR8715 #FR498 #FR499 #FR500 #FR501 #FR502 #FR503 #FR504">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1300">Demetrius Laco</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/683">De geometria</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">G. Cavallo, Libri scritture scribi a Ercolano, Naples 1983, pl. 8</bibl>
-               <bibl type="printed">D.H.Fowler, The Mathematics of Plato's Academy, Oxford 1987, p.203 fig.1</bibl>
-               <bibl type="online">
+               <bibl type="printed" n="1">G. Cavallo, Libri scritture scribi a Ercolano, Naples 1983, pl. 8</bibl>
+               <bibl type="printed" n="2">D.H.Fowler, The Mathematics of Plato's Academy, Oxford 1987, p.203 fig.1</bibl>
+               <bibl type="online" n="1">
                   <ptr target="http://cispe.org/language_en/image/de_geometria.jpg"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="http://www.chartes.it/index.php?r=document/view&amp;id=1087"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>There are two geometric designs with Greek capitals for each angle on the drafts of the papyrus. On the one hand, a three-sided pyramid with an inscribed equilateral triangle can be found on the rigth-hand side of column 11 ll. 14-18, while on the other hand, there is another equilateral triangle separated by a straight line on the right-hand side of column 13, ll. 4-6. Both pieces can be viewed on the following page: http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0114/2e49ad6d.dir/herc.v0004.n0912.a.01.hires.jpg</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

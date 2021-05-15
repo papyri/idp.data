@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv52">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Vente d’un terrain à bâtir</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Dublin</settlement>
                   </placeName>
+                  <collection>Chester Beatty Library</collection>
+                  <idno type="invNo">2177 / 95 + P. Dem. 1 + P. Dem. 2</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,28 +64,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Verkauf (Grundstück)</term>
-               <term>Steuern entrichtet</term>
+               <term n="1">Verkauf (Grundstück)</term>
+               <term n="2">Steuern entrichtet</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-23T07:49:31-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-22T10:36:26-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-02-21T10:12:27-05:00"
+                 who="http://papyri.info/editor/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’ and ‘Print Illustration’.</change>
          <change who="HGV" when="1991-03-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Demotisch - griechisch.</p>
+            <p>Demotisch - griechisch. Vervollständigt durch neues Fragment in T.M. Hickey – K. Vandorpe, ZPE 202, 2017, S. 214–218.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lugd. Bat.</title>
-                  <biblScope type="volume">19</biblScope>
-                  <biblScope type="numbers">5</biblScope>
+                  <biblScope n="1" type="volume">19</biblScope>
+                  <biblScope n="2" type="numbers">5</biblScope>
                </bibl>
                <bibl>
                   <title>DAHT</title>
@@ -92,9 +101,10 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Planche III</bibl>
+               <bibl type="illustration" n="1">Planche III</bibl>
+               <bibl type="illustration" n="2">ZPE 202 (2017), S. 215</bibl>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

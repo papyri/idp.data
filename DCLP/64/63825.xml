@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63825" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 3 428</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5038</idno>
             <idno type="filename">63825</idno>
             <idno type="dclp-hybrid">p.oxy;3;428</idno>
+            <idno type="MP3">1678</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -23,32 +28,46 @@
                   <idno type="invNo">Cambridge (MA), Harvard University Library SM 4361</idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="fragment">
+                  <objectDesc form="Fragment">
                      <supportDesc>
                         <support>
-                           <material>papyrus</material>
+                           <material>Papyrus</material>
+                           <dimensions>
+                              <width unit="cm">5,1 cm</width>
+                              <height unit="cm">5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>papyrus fragment (columns: 0, pagination: 0)</p>
+                        <layout writtenLines="9">
+                           <p>Papyrus fragment (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>Small semi-uncial hand</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,40 +78,109 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>comedy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Comedy</term>
+               <term n="1" type="description">Poetry (drama)</term>
+               <term n="2" type="religion">Classical</term>
+               <term n="3" type="culture">Literature</term>
+               <term n="4">Poetry</term>
+               <term n="5">Comedy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-01-29T09:16:10-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready. Corrected biblio 7893 to 7983 and removed dots from line 9 as per printed editions (verified via image).</change>
+          <change when="2020-01-29T09:16:09-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready. Corrected biblio 7893 to 7983 and removed dots from line 9 as per printed editions (verified via image).</change>
+          <change when="2020-01-29T08:40:30-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: remove extra spaces at start of l.5; place .? at start of l.6 inside its own set of square brackets; add .? to square brackets at end of l.6; no dot on omicron at start of l.7; add scribal high-punctus at end of l.9; add commentary to l.6 that the text extends to the edge of the sheet and that there may be nothing missing at the end of the line. META: remove volume number from 95233; add biblio 7893 #351; add biblio 13993 #1009; add Pleiades georefs for Oxyrhynchites (https://pleiades.stoa.org/places/736982) and Oxyrhynchus (https://pleiades.stoa.org/places/736983); </change>
+          <change when="2020-01-29T08:40:30-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: remove extra spaces at start of l.5; place .? at start of l.6 inside its own set of square brackets; add .? to square brackets at end of l.6; no dot on omicron at start of l.7; add scribal high-punctus at end of l.9; add commentary to l.6 that the text extends to the edge of the sheet and that there may be nothing missing at the end of the line. META: remove volume number from 95233; add biblio 7893 #351; add biblio 13993 #1009; add Pleiades georefs for Oxyrhynchites (https://pleiades.stoa.org/places/736982) and Oxyrhynchus (https://pleiades.stoa.org/places/736983); </change>
+          <change when="2019-10-26T04:25:43-04:00"
+                 who="http://papyri.info/users/FeliceStama">Submit - Codification of the literary text from Kassel - Austin PCG 8 (1995), 303 (fr. *1009).&#xD;
+Updating of some metadata (online reference, genre, dimension, script style).</change>
+          <change when="2019-10-26T04:25:43-04:00"
+                 who="http://papyri.info/users/FeliceStama">Submit - Codification of the literary text from Kassel - Austin PCG 8 (1995), 303 (fr. *1009).&#xD;
+Updating of some metadata (online reference, genre, dimension, script style).</change>
+          <change when="2019-10-26T04:21:12-04:00"
+                 who="http://papyri.info/users/FeliceStama">Commit - Updating the sectiobs 'Editions &amp; Bibliography', 'Author &amp; Work', 'Physical Description (Collection, Dimension, Layout, Material)' and 'General Notes'</change>
+          <change when="2019-10-26T04:21:12-04:00"
+                 who="http://papyri.info/users/FeliceStama">Commit - Updating the sectiobs 'Editions &amp; Bibliography', 'Author &amp; Work', 'Physical Description (Collection, Dimension, Layout, Material)' and 'General Notes'</change>
+          <change when="2019-10-26T04:12:27-04:00"
+                 who="http://papyri.info/users/FeliceStama">Commit - Critical text from Kassel - Austin's PCG 8 (1995), 303 (fr. *1009)</change>
+          <change when="2019-10-26T04:12:27-04:00"
+                 who="http://papyri.info/users/FeliceStama">Commit - Critical text from Kassel - Austin's PCG 8 (1995), 303 (fr. *1009)</change>
+          <change when="2019-10-26T04:06:52-04:00"
+                 who="http://papyri.info/users/FeliceStama">Commit - Critical text from PCG 8 (1995)</change>
+          <change when="2019-10-26T04:06:52-04:00"
+                 who="http://papyri.info/users/FeliceStama">Commit - Critical text from PCG 8 (1995)</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>κ</unclear>αθη<gap reason="lost" quantity="1" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>οισν η <supplied reason="lost">φ</supplied>ρασεν <g type="high-punctus"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>ος ἐκλή<supplied reason="lost">θ</supplied>ης βάρβαρος
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>τα χρὴ πάντως μαθεῖν <g type="high-punctus"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ς <g type="high-punctus"/> ἡ δ᾿ ἐξουσία
+<lb n="6" xml:id="lb7"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">με</supplied>ταφέρουσα τοὺς νόμους <gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>ουσιν <choice><reg>ἐμμένειν</reg><orig>ἐνμένειν</orig></choice> <g type="high-punctus"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear> οὗτο<unclear>ς</unclear> ὁ θρόνος
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/>ρα<g type="high-punctus"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb7" xml:space="preserve">
+            <ref>6</ref>
+            <p>Unlike elsewhere on the papyrus, where line-end is preserved, the text on this line extends to the edge of the fragment. There may be no additional text lost at the end of the line.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95233"/>
                   <biblScope unit="number">428</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">3</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/7983"/>
+                  <biblScope unit="number">351</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/13993"/>
+                  <biblScope n="1" unit="number">1009</biblScope>
+                  <biblScope n="2" unit="page">303</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
+         <div type="bibliography" subtype="illustrations">
+            <listBibl>
+               <bibl type="online">
+                  <ptr target="https://iiif.lib.harvard.edu/manifests/view/drs:11422242$1i"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

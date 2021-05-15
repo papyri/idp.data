@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv381923">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Compte (en grec)</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Louvre E 27626 (522) (sic)</idno>
+                  <placeName>
+                     <settlement>Paris</settlement>
+                  </placeName>
+                  <collection>Louvre</collection>
+                  <idno type="invNo">E 27626 (522) (sic)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,15 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bawit (Hermopolites)</origPlace>
+                     <origPlace>Bawit (Hermopolites, Ägypten)</origPlace>
                      <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/756663 http://www.trismegistos.org/place/2921">Bawit</placeName>
-                        <placeName type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,22 +70,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aufstellung (geordnet nach Ortschaften)</term>
-               <term>Lieferung (?) von litrai aus diesen in den Monaten Mecheir und Phamenoth</term>
+               <term n="1">Aufstellung (geordnet nach Ortschaften)</term>
+               <term n="2">Lieferung (?) von litrai aus diesen in den Monaten Mecheir und Phamenoth</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-04T10:16:43-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-10-04T08:58:41-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-10-03T08:28:36-04:00"
+                 who="http://papyri.info/users/Luca%20De%20Curtis">Submit - P. Louvre Bawit 30: DDbDP text and some HGV metadata added. Lines 2-4, 6-9, 11-13, 15-17, 19 (and probably 21-24) are in eisthesis.</change>
          <change who="HGV" when="2014-11-11">Record created</change>
          <change who="HGV" when="2014-12-23">Record last modified</change>
          <change when="2015-02-12" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
@@ -91,5 +103,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

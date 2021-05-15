@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv44515">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>A Fragmentary Tax - Collector’s Synopsis</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Ann Arbor</settlement>
                   </placeName>
+                  <collection>University of Michigan Library</collection>
+                  <idno type="invNo">P.Mich.inv. 5457, recto</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,19 +67,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Fragment</term>
-               <term>Liste</term>
-               <term>Steuern</term>
+               <term n="1">Fragment</term>
+               <term n="2">Liste</term>
+               <term n="3">Steuern</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-08T12:35:24-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-08T11:40:36-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-24T18:39:43-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to APIS.umich image</change>
+         <change when="2019-12-24T18:39:36-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to APIS.umich image</change>
          <change who="HGV" when="2000-12-08">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Rückseite: P.Bingen 113.</p>
@@ -92,7 +104,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">36</biblScope>
                </bibl>
             </listBibl>
@@ -102,6 +114,13 @@
                <bibl type="illustration">Pl. 69</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://quod.lib.umich.edu/a/apis/x-3961"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

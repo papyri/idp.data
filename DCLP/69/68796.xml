@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m68796" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 68796</title>
@@ -12,9 +12,13 @@
             <idno type="TM">68796</idno>
             <idno type="LDAB">10068</idno>
             <idno type="filename">68796</idno>
-            <idno type="dclp-hybrid">na;;68796</idno>
+            <idno type="dclp-hybrid">tm;;68796</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="-0200" notAfter="-0101" precision="low">II v. Chr.</origDate>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0200" notAfter="-0101" precision="low">II v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,38 +61,64 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term>philology</term>
-               <term>commentary</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 01.606 or 05.120 or 08.485: commentary</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
+               <term n="6">philology</term>
+               <term n="7">commentary</term>
+               <term n="8" type="overview">Homerus; Ilias 01.606 or 05.120 or 08.485: commentary</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-02-20T20:24:40-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+         <change when="2020-02-20T20:22:08-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Fine.</change>
+         <change when="2020-02-20T20:21:28-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Submit - Corrected image link and entered passage metadata.</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
-                  <ptr target="http://digipap.uni-trier.de/FMPro?-db=ub%5ftrier.fp5&amp;-format=dformvw.htm&amp;-lay=Webansicht&amp;-max=1&amp;-skip=280&amp;-token=25&amp;-find"/>
+                  <ptr target="https://digipap.uni-trier.de/papy.php?ac=e&amp;id=281"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="ancientEdition">
+            <listBibl>
+               <bibl type="publication" subtype="ancientQuote">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
+                  <title type="main"
+                         level="m"
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">1</biblScope>
+                  <biblScope n="2" unit="line">606</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="book">5</biblScope>
+                  <biblScope n="5" unit="line">120</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
+                  <biblScope n="7" unit="book">8</biblScope>
+                  <biblScope n="8" unit="line">485</biblScope>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

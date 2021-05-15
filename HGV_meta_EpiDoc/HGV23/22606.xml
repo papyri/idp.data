@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22606">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Contract with a Wet Nurse</title>
+            <title>Contract for Wet-Nursing</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22606</idno>
             <idno type="TM">22606</idno>
-            <idno type="ddb-perseus-style">0246;1;169</idno>
-            <idno type="ddb-filename">p.bodl.1.169</idno>
-            <idno type="ddb-hybrid">p.bodl;1;169</idno>
+            <idno type="ddb-filename">p.nekr.41</idno>
+            <idno type="ddb-hybrid">p.nekr;;41</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. c. 282 (P) (b)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,33 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
-                     <origDate when="0308-11-04">4. Nov. 308</origDate>
+                     <origPlace>Oasis Magna ?, Egypt; Schreibort: Kysis (Oasis Magna, Egypt)</origPlace>
+                     <origDate when="0308-11-04">
+                4. Nov. 308 (Jahr und Monat unsicher)
+                <certainty locus="value" n="1" match="../month-from-date(@when)"/>
+                        <certainty locus="value" n="2" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="located">
+                     <p xml:id="geoCI2EH">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoJ99AH">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/776191 https://www.trismegistos.org/place/2761">Kysis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +66,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,18 +83,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Amme</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Amme</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T15:02:23-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-19T14:50:53-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is well done. Remove translation citation; specify 'Bodleian Library' in collection; P.Nekr. title is 'Contract for Wet-Nursing'</change>
+         <change when="2020-06-19T09:33:51-04:00"
+                 who="http://papyri.info/users/LydiaSchriemer">Submit - Updated metadata following republication in P.Nekr., part of Heidelberg’s Digital Papyrology Webinar, summer 2020.&#xD;
+</change>
          <change who="HGV" when="1997-05-28">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL XI, S. 49.</p>
@@ -80,30 +109,34 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Bodl.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">169</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">41</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">28</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">49</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 73</bibl>
+               <bibl type="illustration">P.Bodl. Platte 73</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bodl. I 169</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

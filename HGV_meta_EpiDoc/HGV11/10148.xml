@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10148">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Kopfsteuerquittungen</title>
+            <title>Poll-tax receipts</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10148</idno>
             <idno type="TM">10148</idno>
             <idno type="ddb-perseus-style">0070;;8</idno>
-            <idno type="ddb-filename">p.bas.8</idno>
-            <idno type="ddb-hybrid">p.bas;;8</idno>
+            <idno type="ddb-filename">p.bas.2.26</idno>
+            <idno type="ddb-hybrid">p.bas;2;26</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Basel</settlement>
                   </placeName>
+                  <collection>Universitätsbibliothek</collection>
+                  <idno type="invNo">P.Bas.Inv. 8</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
+                     <origPlace>Ptolemais Euergetis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0183-12-11">11. Dez. 183</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,45 +70,55 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittungen</term>
-               <term>Kopfsteuer</term>
+               <term n="1">Quittungen</term>
+               <term n="2">Steuer (Kopf-)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-19T09:39:40-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-05-10T12:57:18-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-05-10T12:48:27-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated metadata for P.Bas. II 26</change>
          <change who="HGV" when="1994-01-24">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Spalte II, Z. 1: 26. Juli oder 3. - 12. Aug. 180; Z. 4: 5. Juli 181; Z. 7: 24. Aug. 181; Spalte III, Z. 1: 30. Sept. 182</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Kol. II Z. 1</ref>
-                  <date type="mentioned" notBefore="0180-07-26" notAfter="0180-08-12">26. Juli  - 12. Aug. 180 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/day-from-date(@notAfter)"/>
+                  <date type="mentioned" notBefore="0180-07-26" notAfter="0180-08-12">
+              26. Juli 180 - 12. Aug. 180 (Tag unsicher)
+              <certainty locus="value" n="1" match="../date/day-from-date(@notBefore)"/>
+                     <certainty locus="value" n="2" match="../date/day-from-date(@notAfter)"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Kol. II Z. 1</ref>
-                  <date type="mentioned" notBefore="0180-08-03" notAfter="0180-08-12">3. - 12. Aug. 180 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/day-from-date(@notAfter)"/>
+                  <date type="mentioned" notBefore="0180-08-03" notAfter="0180-08-12">
+              3. Aug. 180 - 12. Aug. 180 (Tag unsicher)
+              <certainty locus="value" n="1" match="../date/day-from-date(@notBefore)"/>
+                     <certainty locus="value" n="2" match="../date/day-from-date(@notAfter)"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Kol. II Z. 4</ref>
                   <date type="mentioned" when="0181-07-05">5. Juli 181</date>
                </item>
-               <item>
+               <item n="4">
                   <ref>Kol. II Z. 7</ref>
                   <date type="mentioned" when="0181-08-24">24. Aug. 181</date>
                </item>
-               <item>
+               <item n="5">
                   <ref>Kol. III Z. 1</ref>
                   <date type="mentioned" when="0182-09-30">30. Sept. 182</date>
                </item>
@@ -111,7 +128,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">8</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">26</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -119,16 +137,29 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">17</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel II</bibl>
+               <bibl type="illustration" n="1">Tafel II</bibl>
+               <bibl type="illustration" n="2">S. 122</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bas. I 8</bibl>
+            </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-leipzig.de/receive/BslPapyri_schrift_00000160"/>
+               </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

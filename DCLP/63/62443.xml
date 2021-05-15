@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62443" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P.Herc. Stub</title>
+            <title>Philodemus, De dis (?)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,13 +14,20 @@
             <idno type="filename">62443</idno>
             <idno type="dclp-hybrid">p.herc;;1049</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Naples, Biblioteca Nazionale 108482/1037</idno>
+                  <idno>
+                     <idno type="invNo">Naples, Biblioteca Nazionale 108482/1037</idno>
+                     <idno type="invNo" xml:id="FR9220">P.Herc. 1049 fr. 17</idno>
+                  </idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
@@ -38,17 +45,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Herculaneum (Campania, Italy); written: Italy</origPlace>
-                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v. Chr.</origDate>
+                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy</origPlace>
+                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Campania</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Italy</placeName>
                      </p>
@@ -57,13 +64,14 @@
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="MSI"
-                                   corresp="#FR11600"
-                                   xml:id="GR11600.01"
-                                   from="1999"
-                                   to="2015">
+                        <custEvent type="MSI" corresp="#FR11600" from="1999" to="2015">
                            <graphic url="http://www.chartes.it/images/photo/PHerc 1049-CR06-10607-FS8-FIL8.jpg"/>
                            <orgName>CPART, Brigham Young University</orgName>
+                        </custEvent>
+                        <custEvent type="sketched" corresp="#FR9220" when="1864">
+                           <forename>Carlo jr.</forename>
+                           <surname>Orazi</surname>
+                           <graphic url="https://dl.bnnonline.it/iiif-imgsrv/1685/!0!54!72!86!54728680146187492219619857150560015210/full/full/0/native.jpg"/>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -80,46 +88,83 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Philodemus; peri theon (Crönert)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-11-26" who="IDP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-07-12T15:53:02-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Added text fragments and metadata.</change>
+          <change when="2020-07-12T15:53:02-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Added text fragments and metadata.</change>
+          <change when="2020-07-12T15:12:08-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add readings from Crönert 1906.</change>
+          <change when="2020-07-12T15:12:08-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add readings from Crönert 1906.</change>
+          <change when="2020-07-11T09:44:49-04:00"
+                 who="http://papyri.info/users/ClaudioVergara">Submit - Transcription entered from Crönert, Gnomon 6 (1930).</change>
+          <change when="2020-07-11T09:44:49-04:00"
+                 who="http://papyri.info/users/ClaudioVergara">Submit - Transcription entered from Crönert, Gnomon 6 (1930).</change>
+          <change when="2014-11-26" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Claudio Vergara (CISPE) and revised by Holger Essler as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://www.epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>,</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> θεός <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> ζῶια <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="3" subtype="fragment" type="textpart" corresp="#FR9220"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/>ἅλις τὰ λεγό<supplied reason="lost">μενα πρὸς τὸν</supplied> Χρύσι<supplied reason="lost">ππον</supplied>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
+               <bibl n="1" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95683"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83722"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Frammenti inediti di opere di Filodemo (Περὶ μουσικῆς-Περὶ θεῶν-Περὶ ῥητορικῆς) in Papiri Ercolanesi</title>
-                  <author n="1">
-                     <surname>Bassi</surname>
-                     <forename>Domenico</forename>
-                  </author>
-                  <date>1910</date>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/83799"/>
+                  <biblScope unit="page">113</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1595">Philodemus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1595">Philodemus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/906">De dis</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
@@ -128,5 +173,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

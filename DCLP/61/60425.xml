@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60425" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Fay. 210</title>
@@ -13,46 +13,72 @@
             <idno type="LDAB">1547</idno>
             <idno type="filename">60425</idno>
             <idno type="dclp-hybrid">p.fay;;210</idno>
+            <idno type="MP3">0820</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Cairo, Egyptian Museum CG 10814</idno>
+                  <idno type="invNo">Cairo, Egyptian Museum CG 10814 (Ro)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">2.7 cm</width>
+                              <height unit="cm">3.7 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout columns="4">
                            <p>papyrus roll? (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>round uncial</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Euhemeria (Arsinoites, Egypt); written: Euhemeria (Arsinoites, Egypt)</origPlace>
+                     <origPlace>Fundort: Euhemeria ? (Arsinoites, Egypt); Schreibort: Euhemeria ? (Arsinoites, Egypt)</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/675">Euhemeria</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://pleiades.stoa.org/places/736893 https://www.trismegistos.org/place/332">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/675 https://pleiades.stoa.org/places/736909">Euhemeria</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/675">Euhemeria</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://pleiades.stoa.org/places/736893 https://www.trismegistos.org/place/332">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/675 https://pleiades.stoa.org/places/736909">Euhemeria</placeName>
                      </p>
                   </provenance>
                </history>
@@ -61,18 +87,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 08.41-54, 86-104, 139-156, 173-186</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -81,39 +106,292 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-02-20T21:28:56-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+          <change when="2020-02-20T21:28:56-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+          <change when="2020-02-20T21:15:03-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: make adscript the iota in i.2; add accent to ἄκοντε in i.5; in i.7 ἔνθά τε &gt; ἔνθα δέ; make adscript the iota in i.10; dot is on lambda not epsilon of ἕλοντο in i.12; add square brackets to |reg| in ii.9; remove |ed| markup in ii.16 and instead insert the comment “Apparently an error, but the same reading occurs here in Π20.”; change |ed| to scribal correction |subst| in iii.5; no square brackets around iota in iii.14; add dots to τὰ in iv.7; dot the φ in iv.8; remove |corr| markup in iv.9 and make added iota a subscript; change |corr| to |reg| in iv.11; put καὶ αὐτοὺς in square brackets in iv.11; change |ed| to |reg| in iv.14; 31 lines missing at top of col. 2; 33 lines missing at top of col. 3; 15 lines missing at top of col.4; ca. 22 lines missing at bottom of col. 4; make adscript all subscript iota in textual supplements as per ed.pr. META: change display name to P. Fay. 210; add pages to biblio 95468 (22-28); add number 10814 descr to biblio 95104; add number 210 to biblio 95143; move image hyperlink to online resources and add Aegyptus 91 (2011), p. 46 pl. 4 to printed images; mark provenance as uncertain and add Pleiades Georefs for Euhemereia (https://pleiades.stoa.org/places/736909) and Arsinoites (https://pleiades.stoa.org/places/736893) and TM Georef for Arsinoites (www.trismegistos.org/place/332)</change>
+          <change when="2020-02-20T21:15:03-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: make adscript the iota in i.2; add accent to ἄκοντε in i.5; in i.7 ἔνθά τε &gt; ἔνθα δέ; make adscript the iota in i.10; dot is on lambda not epsilon of ἕλοντο in i.12; add square brackets to |reg| in ii.9; remove |ed| markup in ii.16 and instead insert the comment “Apparently an error, but the same reading occurs here in Π20.”; change |ed| to scribal correction |subst| in iii.5; no square brackets around iota in iii.14; add dots to τὰ in iv.7; dot the φ in iv.8; remove |corr| markup in iv.9 and make added iota a subscript; change |corr| to |reg| in iv.11; put καὶ αὐτοὺς in square brackets in iv.11; change |ed| to |reg| in iv.14; 31 lines missing at top of col. 2; 33 lines missing at top of col. 3; 15 lines missing at top of col.4; ca. 22 lines missing at bottom of col. 4; make adscript all subscript iota in textual supplements as per ed.pr. META: change display name to P. Fay. 210; add pages to biblio 95468 (22-28); add number 10814 descr to biblio 95104; add number 210 to biblio 95143; move image hyperlink to online resources and add Aegyptus 91 (2011), p. 46 pl. 4 to printed images; mark provenance as uncertain and add Pleiades Georefs for Euhemereia (https://pleiades.stoa.org/places/736909) and Arsinoites (https://pleiades.stoa.org/places/736893) and TM Georef for Arsinoites (www.trismegistos.org/place/332)</change>
+          <change when="2019-07-09T10:52:29-04:00"
+                 who="http://papyri.info/users/SophiaElzie">Submit - Entered text for Aegyptus 91 no.7 P. Fay. 210</change>
+          <change when="2019-07-09T10:52:29-04:00"
+                 who="http://papyri.info/users/SophiaElzie">Submit - Entered text for Aegyptus 91 no.7 P. Fay. 210</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+
+<div n="i" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" quantity="40" unit="line" precision="low"/>
+
+<lb n="1" xml:id="div1-lb2"/><supplied reason="lost">ὣς εἰπὼ</supplied><unclear>ν</unclear> <unclear>ὑπ</unclear>ʼ ὄχε<unclear>σ</unclear><supplied reason="lost">φ</supplied><unclear>ι</unclear> τιτύσ<unclear>κε</unclear><supplied reason="lost">το χαλκόποδʼ ἵππω</supplied>
+
+<lb n="2"/><supplied reason="lost">ὠκυπέτα χ</supplied><unclear>ρ</unclear>υσέηι<unclear>σ</unclear><supplied reason="lost">ι</supplied><unclear>ν</unclear> ἐθείρη<unclear>ισι</unclear>ν <supplied reason="lost">κομόωντε,</supplied>
+
+<lb n="3"/><unclear>χ</unclear><supplied reason="lost">ρυσ</supplied><unclear>ὸν</unclear> δʼ <supplied reason="lost">αὐ</supplied>τὸς ἔδυ<supplied reason="lost">ν</supplied><unclear>ε</unclear> περὶ χρο<hi rend="diaeresis">ΐ</hi>, γέ<supplied reason="lost">ντο δʼ ἱμάσθλην</supplied>
+
+<lb n="4"/>χ<unclear>ρ</unclear><supplied reason="lost">υσείην</supplied> <unclear>ε</unclear>ὔτυκτο<supplied reason="lost">ν, ἑ</supplied>οῦ δʼ ἐπ<supplied reason="lost">εβήσετο δίφρου,</supplied>
+
+<lb n="5"/>μ<unclear>ά</unclear><supplied reason="lost">στιξεν</supplied> <unclear>δ</unclear>ʼ ἐλάαν· τὼ<surplus><unclear>ι</unclear></surplus> δʼ οὐκ ἄκον<supplied reason="lost">τε πετέσθην</supplied>
+
+<lb n="6" xml:id="div1-lb7"/>μ<supplied reason="lost">εσσηγὺς</supplied> <unclear>γ</unclear>αίης τε καὶ οὐρανοῦ ἀ<unclear>σ</unclear><supplied reason="lost">τερόεντος.</supplied>
+
+<lb n="7"/>Γά<unclear>ρ</unclear>γ<supplied reason="lost">αρ</supplied><unclear>ο</unclear><supplied reason="lost">ν, ἔ</supplied><unclear>ν</unclear>θα δέ οἱ τέμενος β<unclear>ωμ</unclear><supplied reason="lost">ός τε θυήεις.</supplied>
+
+<lb n="8"/>ἔνθʼ <supplied reason="lost">ἵ</supplied><unclear>π</unclear>πο<unclear>υ</unclear>ς ἔστησε πατὴρ ἀνδ<unclear>ρ</unclear><supplied reason="lost">ῶν τε θεῶν τε</supplied>
+
+<lb n="9"/>λύσα<supplied reason="lost">ς ἐ</supplied><unclear>ξ</unclear> ὀ<unclear>χ</unclear><supplied reason="lost">έ</supplied>ων, περί <unclear>δ</unclear>ʼ ἠέρα πο<unclear>υ</unclear><supplied reason="lost">λὺν ἔχευεν.</supplied>
+
+<lb n="10"/>αὐτὸ<supplied reason="lost">ς</supplied> <unclear>δ</unclear>ʼ <unclear>ἐν</unclear> <supplied reason="lost">κ</supplied>ορυφῆισι καθέζετ<supplied reason="lost">ο κύδεϊ γαίων</supplied>
+
+<lb n="11"/>εἰσο<supplied reason="lost">ρό</supplied>ω<supplied reason="lost">ν</supplied> <unclear>Τ</unclear>ρώων τε πόλιν <unclear>κ</unclear><supplied reason="lost">αὶ νῆας Ἀχαιῶν.</supplied>
+
+<lb n="12"/>ο<unclear>ἳ</unclear> <unclear>δ</unclear>ʼ <supplied reason="lost">ἄρα</supplied> δ<unclear>ε</unclear><supplied reason="lost">ῖ</supplied><unclear>π</unclear>νον ἕ<unclear>λ</unclear>ο<supplied reason="lost">ν</supplied>το κά<unclear>ρ</unclear><supplied reason="lost">η κομόωντες Ἀχαιοὶ</supplied>
+
+<lb n="13"/>ῥίμ<supplied reason="lost">φα</supplied> <unclear>κα</unclear><supplied reason="lost">τὰ</supplied> κλισί<unclear>α</unclear>ς, <supplied reason="lost">ἀ</supplied><unclear>π</unclear>ὸ δʼ αὐ<supplied reason="lost">τοῦ θωρήσσοντο.</supplied>
+
+</ab>
+</div>
+
+<div n="ii" subtype="column" type="textpart">
+<ab>
+
+<lb n="1"/><gap reason="lost" quantity="31" unit="line" precision="low"/>
+
+<lb n="1" xml:id="div2-lb2"/><supplied reason="lost">σὺν δʼ ἵππους ἐτάραξε κυλινδόμε</supplied><unclear>νος</unclear> <unclear>π</unclear>ε<unclear>ρὶ</unclear> <unclear>χα</unclear>λκῶι.
+
+<lb n="2"/><supplied reason="lost">ὄφρʼ ὁ γέρων ἵπποιο παρηορίας ἀ</supplied><unclear>π</unclear>έ<unclear>τ</unclear>αμνε
+
+<lb n="3"/><supplied reason="lost">φασγάνῳ ἀΐσσων, τόφρʼ Ἕκτορ</supplied>ος ὠκέες ἵπποι
+
+<lb n="4"/><supplied reason="lost">ἦλθον ἀνʼ ἰωχμὸν θρασὺν ἡ</supplied>νίοχον φορέοντες
+
+<lb n="5"/><supplied reason="lost">Ἕκτορα· καί νύ κεν ἔνθʼ ὁ γέρω</supplied><unclear>ν</unclear> ἀπὸ θυμὸν ὄλεσσεν
+
+<lb n="6"/><supplied reason="lost">εἰ μὴ ἄρʼ ὀξὺ νόησε βοὴν ἀγαθ</supplied><unclear>ὸ</unclear>ς Διομήδης·
+
+<lb n="7"/><supplied reason="lost">σμερδαλέον δʼ ἐβόησεν ἐποτ</supplied><unclear>ρ</unclear>ύνων Ὀδυ<surplus>σ</surplus>σῆα·
+
+<lb n="8"/><supplied reason="lost">διογενὲς Λαερτιάδη πολυμή</supplied><unclear>χα</unclear>νʼ Ὀδυσσεῦ
+
+<lb n="9"/><supplied reason="lost">πῇ φεύγεις μετὰ νῶτα βαλὼ</supplied><unclear>ν</unclear> κακὸς ὣς ἐν <choice><reg>ὁμ<supplied reason="lost">ίλῳ</supplied></reg><orig>ὁμ<supplied reason="lost">είλῳ</supplied></orig></choice>;
+
+<lb n="10"/><supplied reason="lost">μή τίς τοι φεύγοντι μεταφρέ</supplied><unclear>νω</unclear>ι ἐν δόρυ πήξη<supplied reason="lost">ι·</supplied>
+
+<lb n="11"/><supplied reason="lost">ἀλλὰ μένʼ ὄφρα γέροντος ἀπώσο</supplied><unclear>με</unclear>ν ἄγριον ἄνδρ<unclear>α</unclear>.
+
+<lb n="12"/><supplied reason="lost">ὣς ἔφατʼ, οὐδʼ ἐσάκουσε πολύτλας</supplied> <unclear>δ</unclear>ῖος Ὀδυσσεύς,
+
+<lb n="13"/><supplied reason="lost">ἀλλὰ παρήϊξεν κοίλας ἐπὶ νῆας Ἀ</supplied>χαιῶν.
+
+<lb n="14"/><supplied reason="lost">Τυδεΐδης δʼ αὐτός περ ἐὼν προμάχο</supplied><unclear>ισ</unclear>ιν ἐμίχθη,
+
+<lb n="15"/><supplied reason="lost">στῆ δὲ πρόσθʼ ἵππων Νηληϊάδαο γέ</supplied><unclear>ρο</unclear>ντος,
+
+<lb n="16" xml:id="div2-lb17"/><supplied reason="lost">καί μιν φωνήσας ἔπεα πτερόεντα πρ</supplied><unclear>οσ</unclear>εύδα·
+
+<lb n="17"/><supplied reason="lost">ὦ γέρον ἦ μάλα δή σε νέοι τείρουσι μαχ</supplied>ητα<unclear>ί</unclear>,
+
+<lb n="18"/><supplied reason="lost">σὴ δὲ βίη λέλυται, χαλεπὸν δέ σε γῆρας ὀ</supplied>πά<supplied reason="lost">ζει,</supplied>
+
+<lb n="19"/><supplied reason="lost">ἠπεδανὸς δέ νύ τοι θεράπων, βραδέες δέ</supplied> <unclear>τ</unclear>ο<unclear>ι</unclear> <supplied reason="lost">ἵπποι.</supplied>
+
+</ab>
+</div>
+
+<div n="iii" subtype="column" type="textpart">
+<ab>
+
+<lb n="1"/><gap reason="lost" quantity="33" unit="line" precision="low"/>
+
+<lb n="1" xml:id="div3-lb2"/><supplied reason="lost">δεῖσε</supplied> <unclear>δ</unclear>ʼ <supplied reason="lost">ὅ γʼ ἐν θυμῷ, Διομήδεα δὲ προσέειπε·</supplied>
+
+<lb n="2"/><unclear>Τ</unclear><supplied reason="lost">υδεΐ</supplied><unclear>δ</unclear>η <supplied reason="lost">ἄ</supplied>γε <supplied reason="lost">δʼ αὖτε φόβον δʼ ἔχε μώνυχας ἵππους.</supplied>
+
+<lb n="3"/>ἦ <unclear>οὐ</unclear> <supplied reason="lost">γ</supplied>ι<unclear>ν</unclear>ώσκ<supplied reason="lost">εις ὅ τοι ἐκ Διὸς οὐχ ἕπετʼ ἀλκή;</supplied>
+
+<lb n="4"/>νῦ<unclear>ν</unclear> <unclear>μὲ</unclear>ν <unclear>γ</unclear>ὰρ τ<unclear>ο</unclear><supplied reason="lost">ύτῳ Κρονίδης Ζεὺς κῦδος ὀπάζει</supplied>
+
+<lb n="5"/><subst><add place="inline">σήμερ<unclear>ο</unclear>ν</add><del rend="corrected">σήμερ<unclear>ο</unclear>ν<unclear>ν</unclear></del></subst>· <hi rend="diaeresis">ὕ</hi>στ<supplied reason="lost">ερον αὖτε καὶ ἡμῖν, αἴ κʼ ἐθέλῃσι,</supplied>
+
+<lb n="6"/>δώσει· <unclear>ἀν</unclear>ὴρ δέ <unclear>κ</unclear><supplied reason="lost">εν οὔ τι Διὸς νόον εἰρύσσαιτο</supplied>
+
+<lb n="7"/><unclear>ο</unclear>ὐδ<unclear>ὲ</unclear> μ<unclear>ά</unclear>λʼ ἴφθι<unclear>μ</unclear><supplied reason="lost">ος, ἐπεὶ ἦ πολὺ φέρτερός ἐστι.</supplied>
+
+<lb n="8"/>τὸν δʼ ἠμε<supplied reason="lost">ί</supplied>βετʼ <supplied reason="lost">ἔπειτα βοὴν ἀγαθὸς Διομήδης·</supplied>
+
+<lb n="9"/>ναὶ δὴ ταῦτά γ<supplied reason="lost">ε πάντα γέρον κατὰ μοῖραν ἔειπες·</supplied>
+
+<lb n="10"/>ἀλλὰ τόδʼ αἰνὸν <supplied reason="lost">ἄχος κραδίην καὶ θυμὸν ἱκάνει·</supplied>
+
+<lb n="11"/>Ἕκτωρ γάρ ποτ<supplied reason="lost">ε φήσει ἐνὶ Τρώεσσʼ ἀγορεύων·</supplied>
+
+<lb n="12"/>Τυδεΐδης ὑπʼ <supplied reason="lost">ἐμεῖο φοβεύμενος ἵκετο νῆας.</supplied>
+
+<lb n="13"/>ὥς ποτʼ ἀπειλ<supplied reason="lost">ήσει· τότε μοι χάνοι εὐρεῖα χθών.</supplied>
+
+<lb n="14"/>τὸν δʼ ἠμείβ<unclear>ε</unclear><supplied reason="lost">τʼ ἔπειτα Γερήνιος ἱππότα Νέστωρ·</supplied>
+
+<lb n="15"/>ὤ μοι Τυδέος υ<supplied reason="lost">ἱὲ δαΐφρονος, οἷον ἔειπες.</supplied>
+
+<lb n="16"/>εἴ περ γάρ σʼ Ἕκ<unclear>τ</unclear><supplied reason="lost">ωρ γε κακὸν καὶ ἀνάλκιδα φήσει,</supplied>
+
+<lb n="17"/>ἀλλʼ οὐ πε<supplied reason="lost">ίσονται Τρῶες καὶ Δαρδανίωνες</supplied>
+
+<lb n="18"/>καὶ Τ<unclear>ρ</unclear>ώ<supplied reason="lost">ων ἄλοχοι μεγαθύμων ἀσπιστάων,</supplied>
+
+<lb n="19"/>τάω<supplied reason="lost">ν ἐν κονίῃσι βάλες θαλεροὺς παρακοίτας.</supplied>
+
+</ab>
+</div>
+
+<div n="iv" subtype="column" type="textpart">
+<ab>
+
+<lb n="1"/><gap reason="lost" quantity="15" unit="line" precision="low"/>
+
+<lb n="1" xml:id="div4-lb2"/><supplied reason="lost">Ἕκτωρ δὲ Τρώεσσι</supplied><unclear>ν</unclear> <supplied reason="lost">ἐκέκ</supplied><unclear>λε</unclear><supplied reason="lost">το μακρὸν ἀΰσας·</supplied>
+
+<lb n="2"/><supplied reason="lost">Τρῶες καὶ Λύκιοι</supplied> καὶ <unclear>Δά</unclear>ρδανο<unclear>ι</unclear> <supplied reason="lost">ἀγχιμαχηταὶ</supplied>
+
+<lb n="3"/><supplied reason="lost">ἀνέρες ἔστε φίλοι,</supplied> μνήσασθε δὲ <supplied reason="lost">θούριδος ἀλκῆς.</supplied>
+
+<lb n="4"/><supplied reason="lost">γιγνώσκω δʼ ὅτι</supplied> <unclear>μ</unclear>οι πρό<unclear>φρ</unclear>ων <unclear>κ</unclear><supplied reason="lost">ατένευσε Κρονίων</supplied>
+
+<lb n="5"/><supplied reason="lost">νίκην καὶ μέγ</supplied><unclear>α</unclear> κῦδο<unclear>ς</unclear>, <unclear>ἀτ</unclear>ὰρ Δ<unclear>α</unclear><supplied reason="lost">ναοῖσί γε πῆμα·</supplied>
+
+<lb n="6"/><supplied reason="lost">νήπιοι οἳ ἄρα δὴ</supplied> <unclear>τάδε</unclear> <unclear>τ</unclear>ε<unclear>ί</unclear>χεα <unclear>μ</unclear><supplied reason="lost">ηχανόωντο</supplied>
+
+<lb n="7"/><supplied reason="lost">ἀβλήχρʼ οὐδεν</supplied><unclear>ό</unclear>σω<unclear>ρα</unclear>· <unclear>τὰ</unclear> δʼ <unclear>ο</unclear>ὐ μέ<supplied reason="lost">νος ἁμὸν ἐρύξει·</supplied>
+
+<lb n="8"/><supplied reason="lost">ἵπποι δὲ ῥέα τά</supplied><unclear>φ</unclear>ρον ὑπε<unclear>ρ</unclear>θορέον<unclear>τ</unclear>α<supplied reason="lost">ι ὀρυκτήν.</supplied>
+
+<lb n="9"/><supplied reason="lost">ἀλλʼ ὅτε κεν δὴ νη</supplied><unclear>υσὶ</unclear>ν ἔπι γλαφυρῇσι <supplied reason="lost">γένωμαι,</supplied>
+
+<lb n="10"/><supplied reason="lost">μνημοσύνη τις</supplied> ἔπειτα πυρὸς δη<supplied reason="lost">ΐοιο γενέσθω,</supplied>
+
+<lb n="11" xml:id="div4-lb12"/><supplied reason="lost">ὡς πυρὶ νῆας ἐνι</supplied>πρήσω, <choice><reg>κτείνω</reg><orig><unclear>κ</unclear>τί<unclear>ν</unclear>ω</orig></choice> δὲ <supplied reason="lost">καὶ αὐτοὺς</supplied>
+
+<lb n="12"/><supplied reason="lost">ὣς εἰπὼν ἵπποισ</supplied><unclear>ιν</unclear> ἐκέ<unclear>κ</unclear>λετο φώ<supplied reason="lost">νησέν τε·</supplied>
+
+<lb n="13"/><supplied reason="lost">Ξάνθέ τε καὶ σὺ Πόδαργ</supplied><unclear>ε</unclear> κ<supplied reason="lost">α</supplied><unclear>ὶ</unclear> <unclear>Α</unclear>ἴθων <unclear>Λ</unclear><supplied reason="lost">άμπέ τε δῖε</supplied>
+
+<lb n="14"/><supplied reason="lost">νῦν μοι τὴν κομιδὴν</supplied> <choice><reg>ἀποτίνετον</reg><orig><supplied reason="lost">ἀ</supplied><unclear>πο</unclear>τε<unclear>ί</unclear>νε<supplied reason="lost">τον</supplied></orig></choice><supplied reason="lost">, ἣν μάλα πολλὴν</supplied>
+
+<lb n="14"/><gap reason="lost" quantity="22" unit="line" precision="low"/>
+
+</ab>
+</div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb2" xml:space="preserve">
+            <ref>1</ref>
+            <p>Fragments I, II, III, IV, and V make up Column I.</p>
+          </item>
+               <item corresp="#div1-lb7" xml:space="preserve">
+            <ref>6</ref>
+            <p>Line 6 of Column I corresponds to 8.46 of the Iliad, while line 7 corresponds to 8.48. 8.47 is omitted.</p>
+          </item>
+               <item corresp="#div2-lb2" xml:space="preserve">
+            <ref>1</ref>
+            <p>Fragments VII and VIII make up Column II.</p>
+          </item>
+               <item corresp="#div2-lb17" xml:space="preserve">
+            <ref>16</ref>
+            <p>προσεύδα is apparently an error, but the same reading occurs here in Π20.</p>
+          </item>
+               <item corresp="#div3-lb2" xml:space="preserve">
+            <ref>1</ref>
+            <p>Column III is from fragment VII.</p>
+          </item>
+               <item corresp="#div4-lb2" xml:space="preserve">
+            <ref>1</ref>
+            <p>Column IV is from fragment VI.</p>
+          </item>
+               <item corresp="#div4-lb12" xml:space="preserve">
+            <ref>11</ref>
+            <p>Line 11 of Column IV corresponds to 8.182 of the Iliad, while line 7 corresponds to 8.184. 8.183 is omitted.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95468"/>
+                  <biblScope n="1" unit="number">7</biblScope>
+                  <biblScope n="2" unit="page" from="22" to="28">22-28</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/16711"/>
+                  <biblScope unit="number">198</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95104"/>
+                  <biblScope n="1" unit="inventory">10814</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95143"/>
-                  <biblScope unit="number">210</biblScope>
-                  <biblScope unit="generic">descr.</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Fay.</title>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">210</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         xml:lang="grc"
+                         ref="http://cwkb.org/work/id/2815/rdf http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg511">Ilias</title>
+                  <biblScope n="1" unit="book">8</biblScope>
+                  <biblScope n="2" unit="line" from="41" to="46">41-46</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="book">8</biblScope>
+                  <biblScope n="5" unit="line" from="48" to="54">48-54</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
+                  <biblScope n="7" unit="book">8</biblScope>
+                  <biblScope n="8" unit="line" from="86" to="104">86-104</biblScope>
+                  <biblScope n="9" unit="generic">and</biblScope>
+                  <biblScope n="10" unit="book">8</biblScope>
+                  <biblScope n="11" unit="line" from="139" to="156">139-156</biblScope>
+                  <biblScope n="12" unit="generic">and</biblScope>
+                  <biblScope n="13" unit="book">8</biblScope>
+                  <biblScope n="14" unit="line" from="173" to="182">173-182</biblScope>
+                  <biblScope n="15" unit="generic">and</biblScope>
+                  <biblScope n="16" unit="book">8</biblScope>
+                  <biblScope n="17" unit="line" from="184" to="186">184-186</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Liège</bibl>
+               <bibl type="printed" n="1">Liège</bibl>
+               <bibl type="printed" n="2">Aegyptus 91 (2011), p. 46 pl. 4</bibl>
+               <bibl type="online">
+                  <ptr target="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Fay.&amp;vVol=&amp;vNum=210"/>
+               </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>The dimensions given are for Fr. I. The dimensions of Fr. II are 1.5 cm (width) x 5.8 cm (height). The dimensions of Fr. III are 3.7 cm (width) x 7.1 cm (height) with a lower margin of 1.9 cm. The dimensions of Fr. IV 1.8 cm (width) x 2.1 cm (height). The dimensions of Fr. V are 3.6 cm (width) x 6.9 cm (height). The dimensions of Fr. VI are 6 cm (width) x 6.9 cm (height). The dimensions of Fr. VII are 7.5 cm (width) x 10.4 cm (height) and intercolumnation of 2.5 cm. The dimensions of Fr. VIII are 7.4 cm (width) x 10.4 cm (height). The fragments have an average leading measure of c. .55 cm and an average line spacing of c. .17 cm.
+On the verso there are remains of 2nd century AD accounts.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

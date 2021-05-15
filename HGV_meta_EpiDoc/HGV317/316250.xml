@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv316250">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an die Chrematisten (Eisagogeus Dionysios)</title>
@@ -29,16 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tanis (Arsinoites)</origPlace>
+                     <origPlace>Tanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0185-12-08" notAfter="-0184-01-05">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 8. Dez. 185 - 5. Jan. 184 v.Chr.</origDate>
+                ca. 8. Dez. 185 - 5. Jan. 184 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737069 http://www.trismegistos.org/place/2251 http://www.trismegistos.org/place/7586 http://www.trismegistos.org/place/2616">Tanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,24 +66,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Onnophris (Bestatter) an die Chrematisten</term>
-               <term>Bitte</term>
-               <term>eine Sperrung der Einnahmen aus dem umstrittenen Bestatter-Privileg zu veranlassen</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Onnophris (Bestatter) an die Chrematisten</term>
+               <term n="3">Bitte</term>
+               <term n="4">eine Sperrung der Einnahmen aus dem umstrittenen Bestatter-Privileg zu veranlassen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-17T12:33:24-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-04-16T09:03:25-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - The link is correct</change>
+         <change when="2021-04-16T08:24:50-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2014-02-11">Record created</change>
          <change who="HGV" when="2014-05-23">Record last modified</change>
          <change when="2014-08-29" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
@@ -93,6 +100,13 @@
                <bibl type="illustration">Tafel X</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm316250"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

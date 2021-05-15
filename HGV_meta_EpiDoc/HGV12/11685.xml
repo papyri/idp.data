@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11685">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 306</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleia (Arsinoites)</origPlace>
+                     <origPlace>Herakleia (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0145-08-28">28. Aug. 145</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741467 http://www.trismegistos.org/place/772">Herakleia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,27 +67,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Bestellung eines Stellvertreters zur Eintreibung von Steuern</term>
-               <term>keine Haftung</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Bestellung eines Stellvertreters zur Eintreibung von Steuern</term>
+               <term n="3">keine Haftung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-17T16:33:02-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-17T16:08:47-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-17T14:50:02-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to BL image</change>
+         <change when="2019-12-17T14:49:51-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to BL image</change>
          <change who="HGV" when="1996-01-18">Record created</change>
          <change who="HGV" when="2010-03-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">306</biblScope>
-                  <biblScope type="pages">(S. 118)</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">306</biblScope>
+                  <biblScope n="3" type="pages">(S. 118)</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -91,7 +103,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">129</biblScope>
                </bibl>
             </listBibl>
@@ -104,10 +116,17 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">W.Chr. 263</bibl>
-               <bibl type="publication" subtype="other">Sel. Pap. II 358</bibl>
+               <bibl type="publication" subtype="other" n="1">W.Chr. 263</bibl>
+               <bibl type="publication" subtype="other" n="2">Sel. Pap. II 358</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_306"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

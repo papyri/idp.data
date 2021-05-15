@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv39337">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Tax receipt</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">39337</idno>
             <idno type="TM">39337</idno>
             <idno type="ddb-perseus-style">0057;2;186</idno>
-            <idno type="ddb-filename">p.amh.2.186</idno>
-            <idno type="ddb-hybrid">p.amh;2;186</idno>
+            <idno type="ddb-filename">p.gascou.38</idno>
+            <idno type="ddb-hybrid">p.gascou;;38</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -31,16 +31,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Hermopolites</origPlace>
                      <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoHIJCA">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,28 +63,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer (Kopf-)</term>
+               <term n="3">δημόσια</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-12T09:25:59-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-11T15:54:29-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-04-11T15:49:50-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated metadata to P.Gascou 38</change>
          <change who="HGV" when="1996-12-09">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Amh.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">186</biblScope>
+                  <title level="s" type="abbreviated">P.Gascou</title>
+                  <biblScope type="numbers">38</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -86,17 +97,38 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SPP III 278 b</bibl>
+               <bibl type="publication" subtype="other" n="1">SPP III 278 b</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Amh. II 186 descr.</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://corsair.themorgan.org/cgi-bin/Pwebrecon.cgi?BBID=286896"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Datierung: 17.(18.) Sept., 15. Indktion.</p>
+         </div>
+         <div type="commentary" subtype="mentionedDates">
+            <list>
+               <item n="1">
+                  <ref>Z. 1</ref>
+                  <date type="mentioned">
+                     <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+                  <note type="annotation">31. Aug. (1. Sept.), 15. Indiktion</note>
+               </item>
+               <item n="2">
+                  <ref>Z. 1</ref>
+                  <date type="mentioned">
+                     <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+                  <note type="annotation">3.(4.) Sept., 15. Indiktion.</note>
+               </item>
+            </list>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

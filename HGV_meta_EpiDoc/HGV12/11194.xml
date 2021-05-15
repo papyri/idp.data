@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11194">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Receipt for Rent of Lodgings</title>
+            <title>Receipt for repayment of an ἐνοίκησις loan</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">11194</idno>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0079-02-10">10. Febr. 79</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737072 http://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,20 +65,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Geld</term>
-               <term>Naturalien</term>
-               <term>Miete</term>
+               <term n="1">Quittung</term>
+               <term n="2">Geld</term>
+               <term n="3">Naturalien</term>
+               <term n="4">Miete</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-03-08T12:53:39-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-03-08T12:15:21-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Do not change title, but certainly update lin5 (BL 8.133).</change>
+         <change when="2020-02-10T14:55:40-05:00"
+                 who="http://papyri.info/editor/users/rfbaumann">Submit - Update title following Youtie, "P.Fuad 56", ZPE, 20 (1976), pp. 108. Update text in line 5 to change '[Ἀ]μμ̣ῖτος' to '[Ἀ]μά̣ιτος' following Keenan, "Notes on Two Tebtunis Archives.," ZPE, 34 (1979), pp. 118.</change>
          <change who="HGV" when="1993-03-22">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Duttenhöfer .</p>
@@ -96,16 +104,20 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Fouad</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">56</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">56</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VII</biblScope>
+                  <biblScope type="pages">57</biblScope>
+               </bibl>
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">133</biblScope>
                </bibl>
             </listBibl>
@@ -117,10 +129,9 @@
             <p>
                <figure>
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Fouad&amp;vVol=&amp;vNum=56"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

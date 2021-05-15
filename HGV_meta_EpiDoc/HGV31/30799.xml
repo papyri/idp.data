@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv30799">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Christlicher Brief</title>
+            <title>Christian letter</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">30799</idno>
             <idno type="TM">30799</idno>
             <idno type="ddb-perseus-style">0070;;16</idno>
-            <idno type="ddb-filename">p.bas.16</idno>
-            <idno type="ddb-hybrid">p.bas;;16</idno>
+            <idno type="ddb-filename">p.bas.2.43</idno>
+            <idno type="ddb-hybrid">p.bas;2;43</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Basel</settlement>
                   </placeName>
+                  <collection>Universitätsbibliothek</collection>
+                  <idno type="invNo">P.Bas. inv. 16 recto</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,31 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0201" notAfter="0250" precision="low">1. Hälfte III</origDate>
+                     <origPlace>Theadelphia (Arsinoites)</origPlace>
+                     <origDate notAfter="0239-11">
+                        <offset n="1" type="before">vor</offset>
+                Nov. 239
+              </origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoJECDBG">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2349 https://pleiades.stoa.org/places/737081">Theadelphia</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,37 +72,47 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Arrianos an Paulos</term>
-               <term>christlich</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Arrianos an Paulos</term>
+               <term n="3">christlich</term>
+               <term n="4">Ernennung</term>
+               <term n="5">Bule</term>
+               <term n="6">Grüße</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-05-14T16:31:12-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-05-05T05:13:43-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-06-19T10:03:03-04:00"
+                 who="http://papyri.info/users/sabine.r.huebner">Submit - New edition P.Bas. 2.43</change>
          <change who="HGV" when="1994-01-24">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">16</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">43</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">15</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">8f.</biblScope>
                </bibl>
             </listBibl>
@@ -96,16 +123,23 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">Naldini, Cristianesimo 4</bibl>
+               <bibl type="publication" subtype="other" n="1">Naldini, Cristianesimo 4</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Bas. I 16</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="it">
                <head xml:lang="de">Italienisch:</head>
-               <bibl type="translations">Ghedini, Lettere cristiane (1923), S. 60, Nr. 3</bibl>
+               <bibl type="translations">G. Ghedini, Lettere cristiane (1923), 60, no. 3</bibl>
+            </listBibl>
+            <listBibl xml:lang="en">
+               <bibl type="translations">S.R. Huebner, Papyri and the Social World (2019), 19.</bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Rückseite: P.Bas. II 44.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

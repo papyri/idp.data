@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7635">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Correspondence of Kleon, Commissioner of Public Works</title>
+            <title>Letter about irrigation</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7635</idno>
             <idno type="TM">7635</idno>
             <idno type="ddb-perseus-style">0187;2;13</idno>
-            <idno type="ddb-filename">p.petr.2.13</idno>
-            <idno type="ddb-hybrid">p.petr;2;13</idno>
+            <idno type="ddb-filename">p.petr.kleon.18</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;18</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 537</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0257-08-26">
-                        <certainty locus="value" match="../year-from-date(@when)"/>26. Aug. 257 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0256-08-26">
-                        <certainty locus="value" match="../year-from-date(@when)"/>26. Aug. 256 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Zielort: Arsinoites; Schreibort: Arsinoites; Fundort: Gurob</origPlace>
+                     <origDate when="-0256-08-26">26. Aug. 256 v.Chr.</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="sent">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoFIEB48">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="found">
+                     <p xml:id="geoJDIHBA">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +61,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,32 +78,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Schleusen</term>
-               <term>Schließen</term>
-               <term>Ortsnamen</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Schleusen</term>
+               <term n="4">Schließen</term>
+               <term n="5">Ortsnamen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-19T07:59:10-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-12-22T07:18:06-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-12-22T04:16:44-05:00"
+                 who="http://papyri.info/editor/users/LisaVanoppr%C3%A9">Submit - Entering translation and changing metadata and text for P. Petr. Kleon 18.&#xD;
+Line 5 is indented, please use correct markup.</change>
          <change who="HGV" when="1998-03-16">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört zum Kleon - Archiv. Alternativdatierung: 26. Aug. 256 v. Chr. Datierung nach dem makedonischen Regierungsjahr.</p>
+            <p>Gehört zum Kleon - Archiv.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">13</biblScope>
-                  <biblScope type="generic">(8)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">18</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,7 +116,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">159</biblScope>
                </bibl>
             </listBibl>
@@ -108,10 +127,18 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 B (1)</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 537 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. II 13 (8)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. III 42 B (1)</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Lond. III 537 descr.</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_537"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

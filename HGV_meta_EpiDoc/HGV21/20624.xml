@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20624">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the Epistrategus</title>
@@ -31,20 +31,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ibion Nemna (Apollonopolites) oder Krekis (Antaiopolites)</origPlace>
+                     <origPlace>Ibion Nemna (Apollonopolites, Ägypten) oder Krekis (Antaiopolites, Ägypten)</origPlace>
                      <origDate notAfter="0212">
-                        <offset type="before" n="1">vor</offset> 212</origDate>
+                        <offset n="1" type="before">vor</offset>
+                212
+              </origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
-                        <placeName type="ancient">Ibion Nemna</placeName>
-                        <placeName type="ancient" subtype="nome">Apollonopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
+                        <placeName n="1" type="ancient">Ibion Nemna</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Apollonopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient">Krekis</placeName>
-                        <placeName type="ancient" subtype="nome">Antaiopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1" type="ancient">Krekis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Antaiopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -52,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,42 +71,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Senphibis an den Epistrategen Iulius Iulianus</term>
-               <term>nach dem Kauf von Land wurde von dem Dorfschreiber die Größe des Landes falsch eingetragen</term>
-               <term>Vermerk (Tadel)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Senphibis an den Epistrategen Iulius Iulianus</term>
+               <term n="3">nach dem Kauf von Land wurde von dem Dorfschreiber die Größe des Landes falsch eingetragen</term>
+               <term n="4">Vermerk (Tadel)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-10T12:56:19-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-09T06:55:33-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T12:40:02-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1996-07-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL VIII, S. 236.</p>
+            <p>Zur Datierung vgl. BL VIII, S. 236. Zu Z. 43 s. R. Mascellari, ZPE 200 (2016) 376–377.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">488</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">488</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">236</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">138</biblScope>
                </bibl>
             </listBibl>
@@ -119,5 +128,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

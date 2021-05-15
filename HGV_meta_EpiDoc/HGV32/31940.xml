@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv31940">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Letter about a Body</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">31940</idno>
             <idno type="TM">31940</idno>
-            <idno type="ddb-perseus-style">0008;;127</idno>
-            <idno type="ddb-filename">chr.wilck.127</idno>
-            <idno type="ddb-hybrid">chr.wilck;;127</idno>
+            <idno type="ddb-filename">p.nekr.28</idno>
+            <idno type="ddb-hybrid">p.nekr;;28</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">BL Papyrus 713</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis magna</origPlace>
-                     <origDate notBefore="0276" notAfter="0300" precision="low">spätes III</origDate>
+                     <origPlace>Fundort: Oasis magna, Egypt oder ; Schreibort: Toeto (Egypt, Panopolites)</origPlace>
+                     <origDate notBefore="0276" notAfter="0300" precision="low">Ende III</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="found">
+                     <p n="1" xml:id="geoEFGDJI" exclude="#geoHDIFG7">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                     <p n="2" xml:id="geoHDIFG7" exclude="#geoEFGDJI"/>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoGHD7E">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/7670 https://pleiades.stoa.org/places/756667">Toeto</placeName>
+                        <placeName n="2" type="ancient" subtype="province">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2719 https://pleiades.stoa.org/places/756614">Panopolites</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +62,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,20 +79,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Psenosiris an Apollon</term>
-               <term>christlich</term>
-               <term>Nachricht vom Empfang einer Leiche zur Bestattung</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Psenosiris an Apollon</term>
+               <term n="3">christlich</term>
+               <term n="4">Nachricht vom Empfang einer Leiche zur Bestattung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T15:20:42-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-19T20:04:11-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is fine. Update inv# to include BL Papyrus; Toeto is in the Panopolite</change>
+         <change when="2020-06-19T09:31:37-04:00"
+                 who="http://papyri.info/users/EleonoraBascherini">Submit - Updated metadata following republication in P.Nekr., part of Heidelberg’s Digital Papyrology Webinar, summer 2020.</change>
          <change who="HGV" when="1997-04-15">Record created</change>
          <change who="HGV" when="2010-03-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. Luchnos 110, 2007, S. 38-40.</p>
@@ -82,56 +106,56 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">73</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">28</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">97</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">80</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">87</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+               <bibl type="BL" n="4">
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">81</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Deissmann, Licht vom Osten, Abb. 40, S. 180</bibl>
-               <bibl type="illustration">Wessely. Plus Anciens Monuments du Christianisme, Planche III 11</bibl>
-               <bibl type="illustration">Deissmann, Original-Dokument aus der Diocletianischen Christenverfolgung, Titelbild</bibl>
+               <bibl type="illustration" n="1">Deissmann, Licht vom Osten, Abb. 40, S. 180</bibl>
+               <bibl type="illustration" n="2">Wessely. Plus Anciens Monuments du Christianisme, Planche III 11</bibl>
+               <bibl type="illustration" n="3">Deissmann, Original-Dokument aus der Diocletianischen Christenverfolgung, Titelbild</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 713 descr.</bibl>
-               <bibl type="publication" subtype="other">W.Chr. 127</bibl>
-               <bibl type="publication" subtype="other">Naldini, Cristianesimo 21</bibl>
-               <bibl type="publication" subtype="other">C.Pap. Hengstl 63</bibl>
+               <bibl type="publication" subtype="other" n="1">P. Grenf. II 73</bibl>
+               <bibl type="publication" subtype="other" n="2">P. Lond. III 713 descr.</bibl>
+               <bibl type="publication" subtype="other" n="3">W. Chr. 127</bibl>
+               <bibl type="publication" subtype="other" n="4">Naldini, Cristianesimo 21</bibl>
+               <bibl type="publication" subtype="other" n="5">G. Pap. Hengstl 63</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="de">
                <head xml:lang="de">Deutsch:</head>
-               <bibl type="translations">Schubart, Ein Jahrtausend am Nil (1912) 88 und (1923) 90</bibl>
-               <bibl type="translations">Metzger, Nachrichten aus dem Wüstensand (1974), Nr. 74</bibl>
-               <bibl type="translations">Guyot - Klein, Das frühe Christentum (1993), Bd. 1, S. 183.</bibl>
+               <bibl type="translations" n="1">Schubart, Ein Jahrtausend am Nil (1912) 88 und (1923) 90</bibl>
+               <bibl type="translations" n="2">Metzger, Nachrichten aus dem Wüstensand (1974), Nr. 74</bibl>
+               <bibl type="translations" n="3">Guyot - Klein, Das frühe Christentum (1993), Bd. 1, S. 183.</bibl>
             </listBibl>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
@@ -139,14 +163,21 @@
             </listBibl>
             <listBibl xml:lang="fr">
                <head xml:lang="de">Französisch:</head>
-               <bibl type="translations">A. Lukaszewicz, JJP 28, 1998, S. 86</bibl>
-               <bibl type="translations">Burnet, L'Égypte ancienne (2003), Nr. 31.</bibl>
+               <bibl type="translations" n="1">A. Lukaszewicz, JJP 28, 1998, S. 86</bibl>
+               <bibl type="translations" n="2">Burnet, L'Égypte ancienne (2003), Nr. 31.</bibl>
             </listBibl>
             <listBibl xml:lang="it">
                <head xml:lang="de">Italienisch:</head>
                <bibl type="translations">Ghedini, Lettere cristiane (1923), S. 117, Nr. 11</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_713"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

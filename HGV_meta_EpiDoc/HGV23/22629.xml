@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22629">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Loan of money</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22629</idno>
             <idno type="TM">22629</idno>
-            <idno type="ddb-perseus-style">0124;2;72</idno>
-            <idno type="ddb-filename">p.grenf.2.72</idno>
-            <idno type="ddb-hybrid">p.grenf;2;72</idno>
+            <idno type="ddb-filename">p.nekr.39</idno>
+            <idno type="ddb-hybrid">p.nekr;;39</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">BL Papyrus 712</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +32,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kysis (Oasis Magna)</origPlace>
+                     <origPlace>Fundort: Kysis (Oasis Magna, Egypt); Schreibort: Dios Polis (Hiou)</origPlace>
                      <origDate when="0308-02-18">18. Febr. 308</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="found">
+                     <p xml:id="geoBFCA0E">
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/776191 http://www.trismegistos.org/place/2761">Kysis</placeName>
-                        <placeName type="ancient" subtype="region">Oasis Magna</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/619 https://pleiades.stoa.org/places/776173">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoDCABIE">
+                        <placeName type="ancient"
+                                   ref="https://pleiades.stoa.org/places/756566 https://www.trismegistos.org/place/577">Dios Polis (Hiou)</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +58,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,19 +75,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T15:46:17-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-19T14:43:30-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - Fine. Remove translation citation; add BL Papyrus to inv. #; double-check all provenance entries.</change>
+         <change when="2020-06-19T09:35:01-04:00"
+                 who="http://papyri.info/users/JohannesNussbaum">Submit - Updated metadata following republication in P.Nekr., part of Heidelberg’s Digital Papyrology Webinar, summer 2020.</change>
          <change who="HGV" when="1997-04-15">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL I, S. 190, BL III, S. 71, BL VIII, S. 143.</p>
@@ -82,9 +101,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">72</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">39</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,7 +110,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">143</biblScope>
                </bibl>
             </listBibl>
@@ -103,9 +121,17 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 712 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Grenf. II 72</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Lond. III 712 descr.</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_712"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

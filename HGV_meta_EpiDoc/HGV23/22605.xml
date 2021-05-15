@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22605">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Acknowledgement of the Receipt of a Corpse</title>
+            <title>Acknowledgement of Receipt of a Corpse</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22605</idno>
             <idno type="TM">22605</idno>
-            <idno type="ddb-perseus-style">0246;1;167</idno>
-            <idno type="ddb-filename">p.bodl.1.167</idno>
-            <idno type="ddb-hybrid">p.bodl;1;167</idno>
+            <idno type="ddb-filename">p.nekr.45</idno>
+            <idno type="ddb-hybrid">p.nekr;;45</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. c. 272 (P)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
-                     <origDate notBefore="0311-07-01" notAfter="0311-07-31">1. - 31. Juli 311</origDate>
+                     <origPlace>Fundort: Kysis (Oasis Magna, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate when="0311-07">Juli 311</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="found">
+                     <p xml:id="geoDACGI2">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/776191 www.trismegistos.org/place/2761">Kysis</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoJH97FB">
+                        <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +57,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,35 +74,45 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bestätigung</term>
-               <term>Erhalt</term>
-               <term>Leichnam</term>
-               <term>römische Datierung</term>
+               <term n="1">Bestätigung</term>
+               <term n="2">Erhalt</term>
+               <term n="3">Leichnam</term>
+               <term n="4">römische Datierung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T15:41:08-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-19T14:53:45-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is fine. Remove days from date; delete mentioned date; </change>
+         <change when="2020-06-19T10:32:29-04:00"
+                 who="http://papyri.info/users/ClaudioVergara">Submit - Updated metadata following republication in P.Nekr., part of Heidelberg’s Digital Papyrology Webinar, summer 2020.</change>
          <change who="HGV" when="1997-05-28">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Bodl.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">167</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">45</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 72</bibl>
+               <bibl type="illustration">P.Bodl. I, Plate 72</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bodl. I 167</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

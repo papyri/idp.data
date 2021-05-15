@@ -1,0 +1,38 @@
+name: XML Validation
+on: [push, pull_request]
+jobs:
+  Validate_collection_RDF:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: java -jar Validation/jing.jar Validation/rdfxml.rng RDF/collection.rdf
+  Validate_DDB_EpiDoc_XML:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install -y moreutils parallel
+      - run: find DDB_EpiDoc_XML -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.16/tei-epidoc.rng {}"
+  Validate_HGV_meta_EpiDoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install -y moreutils parallel
+      - run: find HGV_meta_EpiDoc -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.13/tei-epidoc.rng {}"
+  Validate_DCLP:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install -y moreutils parallel
+      - run: find DCLP -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.23/tei-epidoc.rng {}"
+  Validate_HGV_trans_EpiDoc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install -y moreutils parallel
+      - run: find HGV_trans_EpiDoc -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.13/tei-epidoc.rng {}"
+  Validate_APIS:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install -y moreutils parallel
+      - run: find APIS -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.13/tei-epidoc.rng {}"

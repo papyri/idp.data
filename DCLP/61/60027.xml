@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60027" xml:lang="en">
-   <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60027">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 48 3378</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1141</idno>
             <idno type="filename">60027</idno>
             <idno type="dclp-hybrid">p.oxy;48;3378</idno>
+            <idno type="MP3">474.1</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +32,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">4.5 cm</width>
+                              <height unit="cm">3.8 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="6">
                            <p>papyrus roll (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -43,17 +52,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (U, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -84,55 +95,90 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Herodotus; Historiae 03 37.2</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">history</term>
             </keywords>
          </textClass>
          <langUsage>
-            <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-29T20:54:19-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+         <change when="2019-12-29T20:52:31-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Fine.</change>
+         <change when="2019-12-29T20:51:53-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Submit - Updated display name</change>
+         <change when="2019-11-13T09:39:07-05:00" who="http://papyri.info/users/simoeis">Finalized - Ready</change>
+         <change when="2019-11-13T09:25:55-05:00" who="http://papyri.info/users/simoeis">Vote - Accept-Text-Meta - See Sampson's comments.</change>
+         <change when="2019-11-04T21:00:18-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Some tidying necessary. Correct word-wrap at line breaks for lines 1-2, 4-5, 6-7; in l.1 encode [.?] &lt;:[κ]α̣ὶ̣=DRSVPc|ed|καὶ ἐς=ABCP1:&gt;; in l.2 encode ἱ(¨)ρὸν̣ (with extra space before iota); in l.3 add accent to ἐπί and remove handshift notation (if it is included, it goes before ἐπί); in l.3 add accent to τῶι; in l.5 correct the accent on γὲλασε to acute and remove lunate sigma in ἔ̣στι; in l.6 correct accent on τό and note that the reading τὸ ἄγαλμα = DRV; add line # to lost.?lin at end of text. Meta: remove volume # from biblio 9607; Herodotus is CWKB author 915 and work 2691 (also, add work details to Author &amp; Work section); update online resources with link (http://163.1.169.40/cgi-bin/library?e=q-000-00---0POxy--00-0-0--0prompt-10---4------0-1l--1-en-50---20-about-3378--00031-001-0-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=search&amp;d=HASH0189219d0a9ab97d390e8eee); MP3 number is 474.1; correct spelling of Oxyrhynchos and add geo ref https://pleiades.stoa.org/places/736983;</change>
+         <change when="2019-08-19T10:41:01-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Originally submitted to litpap.info 2017.12.09 by Natalie Gleason. Submission has been transferred to papyri.info. Submission and voting notes were: “Submitting for Todd Hickey's Herodotus (GRK 120) class at UC Berkeley“</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Right margin preserved from within a column. Line-ends from an account in drachmas appear on the reverse of the papyrus.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/> 
+<lb n="1"/><gap reason="lost" atLeast="4" atMost="5" unit="character"/> <supplied reason="lost">κ</supplied><unclear>αὶ</unclear> τοῦ ῾<unclear>Η</unclear>
+<lb n="2" break="no"/><supplied reason="lost">φαίστο</supplied><unclear>υ</unclear> τὸ <hi rend="diaeresis">ἱ</hi>ρὸ<unclear>ν</unclear> 
+<lb n="3" xml:id="lb4"/><supplied reason="lost">ἦλθε κ</supplied>αὶ πολλὰ <add place="interlinear"> ἐπὶ</add> τῶι
+<lb n="4"/><supplied reason="lost">ἀγάλ</supplied><unclear>μ</unclear>ατι κατε
+<lb n="5" break="no"/><supplied reason="lost">γέλασε</supplied> <unclear>ἔ</unclear>στι γαρ <g rend="extension" type="filler"/>
+<lb n="6"/><supplied reason="lost">τοῦ Ἡφαί</supplied><unclear>στ</unclear>ου τὸ ἄ 
+<lb n="7" break="no"/><supplied reason="lost">γαλμα</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb4" xml:space="preserve">
+            <ref>3</ref>
+            <p>Addition of ἐπί by a second correcting hand is an unsupported reading</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/9607"/>
-                  <biblScope unit="number">3378</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">48</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">3378</biblScope>
+                  <biblScope n="2" unit="page">67</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016">Herodotus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016 http://cwkb.org/author/id/915/rdf">Herodotus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/176">Historiae</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/176 http://cwkb.org/work/id/2691/rdf">Historiae</title>
+                  <biblScope n="1" unit="book">3</biblScope>
+                  <biblScope n="2" unit="chapter">37</biblScope>
+                  <biblScope n="3" unit="part">2</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
                <bibl type="online">
-                  <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol48/pages/3378.htm"/>
+                  <ptr target="http://163.1.169.40/cgi-bin/library?e=q-000-00---0POxy--00-0-0--0prompt-10---4------0-1l--1-en-50---20-about-3378--00031-001-0-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=search&amp;d=HASH0189219d0a9ab97d390e8eee"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

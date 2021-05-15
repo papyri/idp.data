@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11832">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an den Präfekten T. Flavius Titianus</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0133-01-07">7. Jan. 133</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737053 http://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,27 +65,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Satabus an den Präfekten T. Flavius Titianus</term>
-               <term>Einbruch</term>
-               <term>Raub</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Satabus an den Präfekten T. Flavius Titianus</term>
+               <term n="3">Einbruch</term>
+               <term n="4">Raub</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-08T07:31:35-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-08T05:24:13-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-07T11:01:20-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1998-08-14">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Louvre</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">2</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">2</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -91,7 +99,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">111</biblScope>
                </bibl>
             </listBibl>
@@ -101,6 +109,9 @@
                <bibl type="illustration">Tafel 2</bibl>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 34–36 s. R. Mascellari, ZPE 200 (2016) 370–371.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

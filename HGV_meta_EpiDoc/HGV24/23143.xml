@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23143">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Geplante Demosiosis eines Handscheines vor dem Erzrichter</title>
+            <title>Mandate to register a manumission and gift</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">23143</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Sackler Library</collection>
+                  <idno type="invNo">Papyrology Rooms 89 B/5(b) + 89 B/9(b)2</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,12 +33,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
+                     <origPlace>Hibis (Oasis Magna)</origPlace>
                      <origDate notBefore="0240" notAfter="0241">240 - 241</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2786 https://pleiades.stoa.org/places/776181">Hibis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
                      </p>
                   </provenance>
@@ -45,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,25 +69,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Demosiosis eines Vertrages als Stellvertreter</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Demosiosis eines Vertrages als Stellvertreter</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-07-12T08:57:04-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-07-12T08:45:22-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-07-12T08:43:48-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updating two HGV records for P.Nekr.</change>
          <change who="HGV" when="1995-05-29">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">4653</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">4</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -87,14 +100,22 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">195</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Plate II</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB I 4653</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

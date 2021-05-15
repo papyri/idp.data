@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5287">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition</title>
@@ -31,16 +31,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria? (Arsinoites)</origPlace>
+                     <origPlace>Euhemeria ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0034-08">Aug. 34 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/736909 http://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,25 +66,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Schadensersatz</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Schadensersatz</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24T04:24:42-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-11-23T10:39:37-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - The added link works.</change>
+         <change when="2020-11-13T11:15:06-05:00"
+                 who="http://papyri.info/users/LaviniaFerretti">Submit - Link to digital image added. Also IIIF link possible, but I don't know if it is supported by the system: https://luna.manchester.ac.uk/luna/servlet/iiif/m/ManchesterDev~93~3~54838~165808/manifest</change>
          <change who="HGV" when="1994-11-18">Record created</change>
          <change who="HGV" when="2011-04-06">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">69</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">69</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -90,15 +98,15 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">227</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 3</bibl>
-               <bibl type="illustration">Seider, Paläographie III, 1, II Abb. 88, S. 351</bibl>
+               <bibl type="illustration" n="1">Plate 3</bibl>
+               <bibl type="illustration" n="2">Seider, Paläographie III, 1, II Abb. 88, S. 351</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -107,6 +115,13 @@
                <bibl type="publication" subtype="other">C.Pap. Hengstl 47</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/s/6pw91u"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

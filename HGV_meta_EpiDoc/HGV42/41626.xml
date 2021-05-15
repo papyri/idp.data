@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv41626">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv41626">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe wegen einer Streitigkeit um ein Grundstück</title>
@@ -30,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0163-02-15">15. Febr. 163</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,26 +65,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Gaius Iulius Niger an den Epistrategen Vedius Faustus</term>
-               <term>hat nach Kauf von Land (Staatsland) Unrecht (hybris) von einem Ägypter erlitten</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Gaius Iulius Niger an den Epistrategen Vedius Faustus</term>
+               <term n="3">hat nach Kauf von Land (Staatsland) Unrecht (hybris) von einem Ägypter erlitten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-10T13:04:28-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-09T07:15:59-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T11:51:53-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - l. 3: corrected στρατευάμενος to στρατευσάμενος (ed., photo)&#xD;
+l. 12: corrected free-floating accent of καὶ&#xD;
+l. 13: corrected ἐκτότε to ἔκτοτε&#xD;
+l. 27: removed second accent from ἐνέχυρα&#xD;
+l. 36–37: merged the two lines (Mascellari, photo)&#xD;
+Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="2003-12-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">24</biblScope>
-                  <biblScope type="numbers">16252</biblScope>
+                  <biblScope n="1" type="volume">24</biblScope>
+                  <biblScope n="2" type="numbers">16252</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -107,10 +121,12 @@
             <p>
                <figure>
                   <graphic url="http://quod.lib.umich.edu/a/apis/x-1660"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 34–36 (vormals 37) s. R. Mascellari, ZPE 200 (2016) 375–376.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

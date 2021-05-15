@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64550" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 64550</title>
+            <title>Christian prayer</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -12,9 +12,13 @@
             <idno type="TM">64550</idno>
             <idno type="LDAB">5779</idno>
             <idno type="filename">64550</idno>
-            <idno type="dclp-hybrid">na;;64550</idno>
+            <idno type="dclp-hybrid">bkt;9;155</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">16.2 cm</width>
+                              <height unit="cm">17.1 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,19 +46,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0300" notAfter="0499">300 - 499</origDate>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0301" notAfter="0500" precision="low">IV - V</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                                   ref="https://www.trismegistos.org/place/2720 https://pleiades.stoa.org/places/756575">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/816 https://pleiades.stoa.org/places/756574">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -88,44 +99,176 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term>litany</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">litany</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
+               <term n="4">litany</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-11-20T10:25:10-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+          <change when="2020-11-20T10:25:09-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+          <change when="2020-11-20T08:51:44-05:00" who="http://papyri.info/users/simoeis">Vote - Accept-Text-Meta - I agree with Sampson about the end of line 3. I suggest adding θεός without the nomen sacrum marks as an alt reading. In addition to this, note Sampson's requested changes.</change>
+          <change when="2020-11-20T08:51:44-05:00" who="http://papyri.info/users/simoeis">Vote - Accept-Text-Meta - I agree with Sampson about the end of line 3. I suggest adding θεός without the nomen sacrum marks as an alt reading. In addition to this, note Sampson's requested changes.</change>
+          <change when="2020-06-13T09:54:44-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Well done. The corrections on r.6 and 7 are well spotted, but I would like a second vote on the one in r.3 (it makes sense, but θεός is nowhere else in the text written as a nomen sacrum). Please also note Paul’s requests about the dot and supraline which need to be added in the xml (not possible in Leiden+) in finalization. Please correct te &gt; the in the commentary to r.8. META: Hermopolis is Pleiades georef (https://pleiades.stoa.org/places/756574); Hermopolites is Pleiades georef (https://pleiades.stoa.org/places/756575).</change>
+          <change when="2020-06-13T09:54:44-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Well done. The corrections on r.6 and 7 are well spotted, but I would like a second vote on the one in r.3 (it makes sense, but θεός is nowhere else in the text written as a nomen sacrum). Please also note Paul’s requests about the dot and supraline which need to be added in the xml (not possible in Leiden+) in finalization. Please correct te &gt; the in the commentary to r.8. META: Hermopolis is Pleiades georef (https://pleiades.stoa.org/places/756574); Hermopolites is Pleiades georef (https://pleiades.stoa.org/places/756575).</change>
+          <change when="2020-06-02T05:54:01-04:00"
+                 who="http://papyri.info/users/PaulvdLaan">General - Small unplaced fragment (1 x 1.3 cm)&#xD;
+&#xD;
+lost.?lin&#xD;
+[.?]v[.?]&#xD;
+[.?[.1&#xD;
+lost.?lin</change>
+          <change when="2020-06-02T05:54:01-04:00"
+                 who="http://papyri.info/users/PaulvdLaan">General - Small unplaced fragment (1 x 1.3 cm)&#xD;
+&#xD;
+lost.?lin&#xD;
+[.?]v[.?]&#xD;
+[.?[.1&#xD;
+lost.?lin</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> 
+<div n="a" subtype="fragment" type="textpart">
+<div n="r" type="textpart"><ab>
+    <lb n="1"/>ὁ <supplied reason="lost">σωτὴ</supplied>ρ τῶν ἀνθρώπων κύριε <g type="slanting-stroke"/><g type="slanting-stroke"/> <supplied reason="lost">θε</supplied><unclear>ὸ</unclear>ς ἐλέησ<supplied reason="lost">ον</supplied>
+
+    <lb n="2"/>μ<unclear>ὴ</unclear> <choice><reg><supplied reason="lost">ἀ</supplied>πολέσῃς</reg><orig><supplied reason="lost">ἀ</supplied>πολήσης</orig></choice> <unclear>ἡ</unclear>μᾶς ἐν ὀργῇ κύριε <supplied reason="lost">ὁ</supplied> <unclear>θ</unclear>ε<unclear>ὸ</unclear>ς ἐλέη<supplied reason="lost">σον</supplied>
+
+    <lb n="3"/>μὴ πρὸ <choice><reg>εἱμαρμένης</reg><orig><hi rend="diaeresis">ἱ</hi>μαρμένης</orig></choice> <choice><reg>τὰ</reg><orig>πα</orig></choice> ποίμνιά σου ἀπολέσῃς <expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ς</hi></expan> <app type="editorial"><lem resp="PN P. van der Laan"><app type="alternative"><lem><expan><hi rend="supraline">θ</hi><supplied reason="lost"><ex>εό</ex><hi rend="supraline">ς</hi></supplied></expan></lem><rdg><expan>θ<supplied reason="lost"><ex>εό</ex>ς</supplied></expan></rdg></app></lem><rdg><hi rend="supraline">θ</hi><gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+
+    <lb n="4"/>μὴ <choice><reg>καυχάσθω</reg><orig>καυκάσθω</orig></choice> ὁ πονηρὸς ἐπὶ τῇ ἡμῶν <choice><reg>ἀπωλείᾳ</reg><orig>ἀπολίᾳ</orig></choice> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="5"/>λευλευ κύριε <unclear>σ</unclear>ὺ ἡμᾶς <unclear>ἐ</unclear>λέησον <expan><hi rend="supraline">Ἰ</hi><ex>ησοῦ</ex><hi rend="supraline">ς</hi></expan>
+
+    <lb n="6"/><app type="editorial"><lem resp="PN P. van der Laan"><supplied reason="lost">λ</supplied><unclear>ε</unclear>υλευ</lem><rdg>λελευ</rdg></app> πανελεή<supplied reason="lost">μ</supplied>ων οὐδὲν κακὸν <choice><reg>γιγνώ<supplied reason="lost">σ</supplied>κει<supplied reason="lost">ς</supplied></reg><orig>γινώ<supplied reason="lost">σ</supplied><unclear>κι</unclear><supplied reason="lost">ς</supplied></orig></choice>
+
+    <lb n="7"/><app type="editorial"><lem resp="PN P. van der Laan"><unclear>λ</unclear>ευλευ</lem><rdg><supplied reason="lost">λ</supplied><unclear>ε</unclear>υλευ</rdg></app> ἐπίνευσον <unclear>σ</unclear>ὺ ἡμ<unclear>ῶ</unclear>ν ἡ σωτηρία
+
+    <lb n="8" xml:id="div1-div1-lb8"/>δεῦτε πάντες θαυμάσατε τὰ θαυμάσι<supplied reason="lost">α</supplied> τοῦ κ<unclear>υ</unclear><supplied reason="lost">ρ</supplied><unclear>ί</unclear><add place="above">ου</add>
+
+    <lb n="9"/><supplied reason="lost">σωτ</supplied><unclear>ὴ</unclear>ρ τῶν ἀνθρώπων ὕψιστε καὶ <expan>μο<supplied reason="lost">νογ<ex>ενὴ</ex></supplied></expan> <expan><hi rend="supraline">Χ</hi><ex>ριστ</ex><unclear>ε</unclear><hi rend="supraline">́</hi></expan>
+
+    <lb n="10"/><supplied reason="lost">ὁ τ</supplied><unclear>ὸ</unclear>ν κόσμον ἔκτισας ὡς πατὴρ <supplied reason="lost"><unclear>ἐ</unclear>λέη</supplied><unclear>σον</unclear>
+
+    <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ν ἐλέησον καὶ ἀγγέλων <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" quantity="2" unit="character" precision="low"/><unclear>ε</unclear>κον<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="13"/><gap reason="lost" extent="unknown" unit="character"/>τε <unclear>θεὸς</unclear> σὺ ἡμῶν ἡ σωτηρία <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="14"/><supplied reason="lost">τὸν</supplied> <add place="above">κόσμον</add> ἔκτισας ὡ<unclear>ς</unclear> <unclear>π</unclear>ατὴρ ἐλέησο<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="15"/>μὴ <unclear>πρὸ</unclear> <choice><reg>εἱμαρμένης</reg><orig><hi rend="diaeresis"><unclear>ἱ</unclear></hi>μαρμένης</orig></choice> τὰ ποίμνιά σου <choice><reg>ἀπολέσῃς</reg><orig>ἀπελης</orig></choice>
+
+    <lb n="16"/>δεῦτε προ<unclear>π</unclear>ον<unclear>τε</unclear><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>ς</unclear> κα<unclear>ὶ</unclear> ξένοι καὶ <choice><reg>πολῖται</reg><orig>πολῖτε</orig></choice>
+
+    <lb n="17"/>θαυμάσ<unclear>ο</unclear>με<supplied reason="lost">ν τὰ θαυμάσι</supplied>α τοῦ κυρίου <choice><reg>σωτῆρο<supplied reason="lost">ς</supplied></reg><orig>σ<unclear>ο</unclear>τῆρ<unclear>ο</unclear><supplied reason="lost">ς</supplied></orig></choice>
+
+    <lb n="17"/><gap reason="illegible" quantity="1" unit="line"><desc>vestiges</desc><certainty match=".." locus="name"/></gap>
+
+    <lb n="18"/><supplied reason="lost">ἁ</supplied><unclear>λιέ</unclear>ων <gap reason="lost" quantity="5" unit="character" precision="low"/><gap reason="illegible" quantity="3" unit="character"/>της καὶ ἀστε<unclear>ρ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="19"/><gap reason="lost" extent="unknown" unit="character"/>ημων φ<gap reason="lost" quantity="3" unit="character" precision="low"/><unclear>π</unclear>ε σὺ ἡμᾶς κ<supplied reason="lost">ύριε</supplied>
+
+    <lb n="20"/><supplied reason="lost">εὐ</supplied>εργέτα <choice><reg>δίκ<supplied reason="lost">αι</supplied>ε</reg><orig>δίκ<supplied reason="lost">ε</supplied>ε</orig></choice> <supplied reason="lost">π</supplied><unclear>ά</unclear>τερ ὅλου τ<unclear>ο</unclear>ῦ <supplied reason="lost">κόσμου</supplied>
+</ab></div>
+<div n="v" type="textpart"><ab> 
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+
+    <lb n="1"/><g type="stauros"/> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="2"/><num value="1">εἷς</num> θεὸ<supplied reason="lost">ς ἐλέ</supplied>ησον <num value="1">εἷ<supplied reason="omitted">ς</supplied></num> θεὸς ἐλέ<unclear>ησον</unclear>
+<milestone rend="horizontal-rule" unit="undefined"/>
+    <lb n="3"/>λευλευ ἐλέησον 
+
+    <lb n="4"/>λευλευ κύριε
+
+    <lb n="5"/><supplied reason="lost">λ</supplied>ευλευ δεόμεθα
+
+    <lb n="6"/>λευλευ <choice><reg>ἐπάκουσον</reg><orig>ἐπάκουσαν</orig></choice>
+
+    <lb n="7"/>λευλευ ἀόρατε
+
+    <lb n="8"/>λευλευ ἀμίαντε
+
+    <lb n="9"/>λευ<supplied reason="lost">λευ δ</supplied>ίκαιε
+
+    <lb n="10"/>λ<unclear>ευ</unclear><supplied reason="lost">λευ κύρ</supplied>ιε
+
+    <lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ε
+
+    <lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ε 
+</ab></div>
+</div>
+ <div n="b" subtype="fragment" type="textpart"><ab>
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>ν<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+
+    <lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> 
+   
+    
+
+
+
+
+
+
+
+
+
+ </div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-div1-lb8" xml:space="preserve"><ref/> <p>The printed BKT edition contains a typo; as the superscripted -ου belongs at the end of the line, as printed here</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/58234"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="a" type="main">Varia Christiana II.</title>
-                  <author n="1">
-                     <surname>Treu</surname>
-                     <forename>Kurt</forename>
-                  </author>
-                  <date>1986</date>
-                  <!-- ignore - stop -->
+                  <biblScope unit="number">4</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope unit="number">155</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/15442"/>
+                  <biblScope unit="page">13</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">BKT 9, pl.69</bibl>
                <bibl type="online">
-                  <ptr target="http://smb.museum/berlpap/index.php/04444/"/>
+                  <ptr target="https://berlpap.smb.museum/04444/"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

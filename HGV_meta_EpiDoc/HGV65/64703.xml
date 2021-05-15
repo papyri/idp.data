@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv64703">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv64703">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Christliches Gebet wegen eines Augenleidens</title>
@@ -16,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Staatliche Museen</collection>
+                  <idno type="invNo">P.Berol. 21911</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -38,8 +41,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -54,19 +58,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Gebet</term>
-               <term>Augenleiden</term>
-               <term>Zitat von den Psalmen</term>
+               <term n="1">Gebet</term>
+               <term n="2">Augenleiden</term>
+               <term n="3">Zitat von den Psalmen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T14:02:29-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-20T09:43:01-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is fine--some updating before pushing through for DCLP is possible. Add BKT IX 206 to 'other publications' and update the Collection info (P.Berol. 21911).</change>
+         <change when="2020-06-20T08:59:39-04:00"
+                 who="http://papyri.info/users/PaulvdLaan">Submit - Text encoded as part of Heidelberg's Papyrological Webinar Summer 2020</change>
          <change who="HGV" when="1990-09-19">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>= LDAB 5973. Vgl. Kongr. XXIV, S. 510f.</p>
@@ -75,8 +85,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">11494</biblScope>
+                  <biblScope n="1" type="volume">14</biblScope>
+                  <biblScope n="2" type="numbers">11494</biblScope>
                </bibl>
                <bibl>
                   <title>LDAB</title>
@@ -88,7 +98,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">274</biblScope>
                </bibl>
             </listBibl>
@@ -101,7 +111,8 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">Suppl. Mag. I 26</bibl>
+               <bibl type="publication" subtype="other" n="1">Suppl. Mag. I 26</bibl>
+               <bibl type="publication" subtype="other" n="2">BKT 9 206</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -115,10 +126,9 @@
             <p>
                <figure>
                   <graphic url="http://berlpap.smb.museum/04918/"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

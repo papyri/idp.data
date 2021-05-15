@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65371" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Rain. Unterricht. 134</title>
+            <title>School text: composition theme</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6617</idno>
             <idno type="filename">65371</idno>
             <idno type="dclp-hybrid">p.rain.unterricht;;134</idno>
+            <idno type="MP3">02723.010</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,39 +62,68 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>philology</term>
-               <term type="culture">science</term>
-               <term type="overview">composition theme</term>
+               <term n="1" type="culture">science</term>
+               <term n="2">philology</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-06-03T13:09:36-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text, updated metadata.</change>
+          <change when="2020-06-03T13:09:36-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text, updated metadata.</change>
+          <change when="2020-06-03T12:58:23-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - L.5  *stauros* inside lacuna</change>
+          <change when="2020-06-03T12:58:23-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - L.5  *stauros* inside lacuna</change>
+          <change when="2020-06-01T22:06:15-04:00"
+                 who="http://papyri.info/users/marinapaciullo">Submit - Text edited for the class "Griechische Quellen zum antiken Unterricht"</change>
+          <change when="2020-06-01T22:06:15-04:00"
+                 who="http://papyri.info/users/marinapaciullo">Submit - Text edited for the class "Griechische Quellen zum antiken Unterricht"</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Marina Paciullo and revised by Holger Essler as part of the teaching in papyrology at Würzburg.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><g type="stauros"/> τὸν τῆς Ἀλκμήνη<supplied reason="lost">ς υἱὸν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>ἐν <choice><reg>ἀγῶσι</reg><orig>ἀγῶσει</orig></choice>, τὸν δὲ δεσπό<supplied reason="lost">την ἡμῶν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>ἀλεξίκακον βασιλέα <g type="stauros"/>
+<lb n="4"/><g type="stauros"/> ἐκοσμεῖτο πρώην <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>ἐκ τῶν ὁμοίων κόσμ<supplied reason="lost">ων <g type="stauros"/></supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P. Rainer Unterricht (MPER N.S. 15)</title>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/10813"/>
                   <biblScope unit="number">134</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">MPER 15, pl. 60</bibl>
+               <bibl type="online">
+                  <ptr target="http://data.onb.ac.at/rec/RZ00004126"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

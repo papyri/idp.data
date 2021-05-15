@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5141">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Amtliche Liste</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Helsinki</settlement>
                   </placeName>
+                  <collection>Museum</collection>
+                  <idno type="invNo">25 Vo + 26 Vo</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolites</origPlace>
+                     <origPlace>Herakleopolites ?, Ägypten</origPlace>
                      <origDate notBefore="-0165" notAfter="-0164">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 165 - 164 v.Chr.</origDate>
+                ca. 165 - 164 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,29 +71,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Zahlung</term>
-               <term>Korn</term>
+               <term n="1">Liste</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Korn</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-12T10:57:32-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-12T10:27:25-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-12-17T06:38:28-05:00"
+                 who="http://papyri.info/users/LaviniaFerretti">Submit - Cf. M. Stern, in BASP 53 (2016), p. 43-44. Provenance indicated as uncertain: also Arsinoites possible. In Bemerkungen, appartenance to Oikonomos-archive indicated as uncertain: cf. too BGU XX, S. 6.</change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: P.Hels. I 4. Gehört zum Ökonomen - Archiv im Herakleopolites. Zur Datierung (vielleicht Ende II - ca. 170 v.Chr.) vgl. BGU XX 2840 Einl., S. 6.</p>
+            <p>Rückseite: P.Hels. I 4. Gehört zum Ökonomen - Archiv im Herakleopolites (nicht sicher). Zur Datierung (vielleicht Ende II - ca. 170 v.Chr.) vgl. BGU XX 2840 Einl., S. 6. Zur Herkunft vgl. BASP 53 (2016) S. 43.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Hels.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">5</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">5</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,7 +107,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">105</biblScope>
                </bibl>
             </listBibl>
@@ -103,5 +118,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

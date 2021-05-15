@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv16374">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Deklaration unbewässert gebliebenen Landes</title>
@@ -32,19 +32,21 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchites</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0224"
                                notAfter="0225"
                                cert="low">224 - 225 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0220"
                                notAfter="0221"
                                cert="low">220 - 221 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -52,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,28 +71,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Deklaration</term>
-               <term>Land (unbewässert)</term>
+               <term n="1">Deklaration</term>
+               <term n="2">Land (unbewässert)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-12-29T15:58:55-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-12-29T13:28:54-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-12-26T13:49:26-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliography (D. Hagedorn, ZPE 198 (2016) 195, n. 21) under ‘Commentary’.</change>
          <change who="HGV" when="1991-05-24">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 220 - 221. Zur Datierung vgl. BL VIII, S. 365.</p>
+            <p>Alternativdatierung: 220 - 221. Zur Datierung vgl. BL VIII, S. 365. Zu Z. 3 und 4 s. D. Hagedorn, ZPE 198 (2016) 195, Anm. 21.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">11033</biblScope>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">11033</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,7 +106,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">365</biblScope>
                </bibl>
             </listBibl>
@@ -115,11 +124,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://digibib.ub.uni-giessen.de/cgi-bin/populo/pap.pl?t_allegro=x&amp;f_SIG=SB+11033"/>
-                  <head>Abbildung im Internet</head>
+                  <graphic url="https://papyri.uni-leipzig.de/receive/GiePapyri_schrift_00005330"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

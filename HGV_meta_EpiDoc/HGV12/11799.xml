@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11799">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 846</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,31 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0140-01-27"
                                notAfter="0140-02-25">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>27. Jan. - 25. Febr. 140 (Monat und Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                27. Jan. - 25. Febr. 140 (Monat und Tag unsicher)
+                <certainty locus="value" n="1" match="../day-from-date(@notBefore)"/>
+                        <certainty locus="value" n="2" match="../month-from-date(@notBefore)"/>
+                     </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0140-07-25"
                                notAfter="0140-08-23">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>25. Juli - 23. Aug. 140 (Monat und Tag unsicher)</origDate>
+                25. Juli - 23. Aug. 140 (Monat und Tag unsicher)
+                <certainty locus="value" n="1" match="../day-from-date(@notBefore)"/>
+                        <certainty locus="value" n="2" match="../month-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737053 http://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -56,8 +65,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -72,19 +82,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Protest gegen die Ernennung zum Ältesten</term>
-               <term>Verweis auf mangelndes Vermögen</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Protest gegen die Ernennung zum Ältesten</term>
+               <term n="3">Verweis auf mangelndes Vermögen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-18T15:01:48-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-18T14:49:36-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-18T10:39:18-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to BL image.</change>
+         <change when="2019-12-18T10:39:11-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to BL image.</change>
          <change who="HGV" when="1995-07-24">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 25. Juli - 23. Aug. 140. Zu Z. 4 vgl. Reiter, Nomarchen, S. 128, Anm. 84.</p>
@@ -93,9 +111,9 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">846</biblScope>
-                  <biblScope type="pages">(S. 131)</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">846</biblScope>
+                  <biblScope n="3" type="pages">(S. 131)</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -108,6 +126,13 @@
                <bibl type="publication" subtype="other">W.Chr. 325</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_846"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

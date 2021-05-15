@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60028" xml:lang="en">
-   <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60028">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 48 3382</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1142</idno>
             <idno type="filename">60028</idno>
             <idno type="dclp-hybrid">p.oxy;48;3382</idno>
+            <idno type="MP3">480.2</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,28 +32,39 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">4.3cm</width>
+                              <height unit="cm">8.8cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="2" writtenLines="48">
                            <p>papyrus roll (columns: 2, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>neat and upright, small capitals slightly slant right</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="located">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -79,55 +95,122 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Herodotus; Historiae 08.1</term>
+               <term n="1" type="description">history</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose</term>
+               <term n="5">history</term>
             </keywords>
          </textClass>
          <langUsage>
-            <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-29T21:44:48-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready; added CWKB 2691 for Historiae, as well.</change>
+         <change when="2019-12-29T21:42:37-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Fine.</change>
+         <change when="2019-12-29T21:41:30-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Submit - Corrected typo in bibliography entry (95468 &gt; 95408)</change>
+         <change when="2019-12-29T20:47:27-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+         <change when="2019-12-29T20:47:27-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+         <change when="2019-12-29T20:24:36-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Some corrections needed. TEXT: restore Mironczuk’s reading for the first four lines of the column and remove lostlin markup at column beginning (1. [ταῦτα μὲν δὴ οὕτω λέγεται] 2. [γενέσθαι· οἱ δε Ἑλλήνων ἐς] 3. [τὸν ναυτικόν στρατὸν ταχ] 4.- [θέντες ἦσαν οἵδε, Ἀθην]αίο[ι]); l.1 insert comma after οἵδε; ll. 2-3 remove |ed| markup; l.3 dot iota of second καὶ and add grave accent to ὑπὸ; l.8 remove |ed| markup; in l. 12 I would remove the |ed| markup (the only interesting form is σφιν vs. the mss. σφι, but this is not really a novel reading); remove |ed| markup in ll. 13-14; in ll. 14-15 add accent to δυοκαίδεκα and remove |ed| markup; remove |ed| markup in l.18. In general, the list should be punctuated with commas throughout and all lines should be renumbered following the restoration of column beginning; 27 lines missing at column end. In col. ii renumber missing lines (twelve missing initially, 34 missing afterward) and renumber extant lines as 1 and 2, respectively. Insert punctuation (raised dot) after Λακεδαιμονίους. Make sure line numbers precede lost.?lin markup in both columns. META: remove volume number from biblio 9607; insert 95468 pp. 230-231 into biblio; remove 82308 from biblio entirely; update link to online image (http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH011d/313d0b27.dir/POxy.v0048.n3382.a.01.hires.jpg); change display name to P.Oxy. 48 3382 and remove legacy name; Herodotus is CWKB 915; add passage details 8.1.1-2 to Author &amp; Work section; MP3 is 480.2; correct spelling of Oxyrhynchus in provenance and add Pleiades georef (https://pleiades.stoa.org/places/736983); under physical description there are 2 columns and 48 lines per column. Simplify (if not remove) the two points of commentary; by adding Mironczuk to the bibliography they are accounted for.</change>
+         <change when="2019-12-29T20:24:36-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Some corrections needed. TEXT: restore Mironczuk’s reading for the first four lines of the column and remove lostlin markup at column beginning (1. [ταῦτα μὲν δὴ οὕτω λέγεται] 2. [γενέσθαι· οἱ δε Ἑλλήνων ἐς] 3. [τὸν ναυτικόν στρατὸν ταχ] 4.- [θέντες ἦσαν οἵδε, Ἀθην]αίο[ι]); l.1 insert comma after οἵδε; ll. 2-3 remove |ed| markup; l.3 dot iota of second καὶ and add grave accent to ὑπὸ; l.8 remove |ed| markup; in l. 12 I would remove the |ed| markup (the only interesting form is σφιν vs. the mss. σφι, but this is not really a novel reading); remove |ed| markup in ll. 13-14; in ll. 14-15 add accent to δυοκαίδεκα and remove |ed| markup; remove |ed| markup in l.18. In general, the list should be punctuated with commas throughout and all lines should be renumbered following the restoration of column beginning; 27 lines missing at column end. In col. ii renumber missing lines (twelve missing initially, 34 missing afterward) and renumber extant lines as 1 and 2, respectively. Insert punctuation (raised dot) after Λακεδαιμονίους. Make sure line numbers precede lost.?lin markup in both columns. META: remove volume number from biblio 9607; insert 95468 pp. 230-231 into biblio; remove 82308 from biblio entirely; update link to online image (http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH011d/313d0b27.dir/POxy.v0048.n3382.a.01.hires.jpg); change display name to P.Oxy. 48 3382 and remove legacy name; Herodotus is CWKB 915; add passage details 8.1.1-2 to Author &amp; Work section; MP3 is 480.2; correct spelling of Oxyrhynchus in provenance and add Pleiades georef (https://pleiades.stoa.org/places/736983); under physical description there are 2 columns and 48 lines per column. Simplify (if not remove) the two points of commentary; by adding Mironczuk to the bibliography they are accounted for.</change>
+         <change when="2019-08-19T06:42:33-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Originally submitted to litpap.info 2017.12.12 by Jesse Obert. Submission has been transferred to papyri.info. Submission notes were: “Completed for a Todd Hickey's class. Originally submitted on December 1st, but bounced due to a technical issue.“</change>
+         <change when="2019-08-19T06:42:33-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Originally submitted to litpap.info 2017.12.12 by Jesse Obert. Submission has been transferred to papyri.info. Submission notes were: “Completed for a Todd Hickey's class. Originally submitted on December 1st, but bounced due to a technical issue.“</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1" xml:id="div1-lb1"/><supplied reason="lost">ταῦτα μὲν δὴ οὕτω λέγεται</supplied> 
+<lb n="2"/><supplied reason="lost">γενέσθαι· οἱ δε Ἑλλήνων ἐς</supplied> 
+<lb n="3"/><supplied reason="lost">τὸν ναυτικόν στρατὸν ταχ</supplied> 
+<lb n="4" break="no"/><supplied reason="lost">θέντες ἦσαν οἵδε, Ἀθην</supplied><unclear>αῖο</unclear><supplied reason="lost">ι</supplied>
+<lb n="5"/><supplied reason="lost">μὲν νέας παρεχό</supplied><unclear>μ</unclear>εν<unclear>οι</unclear> ἑκα
+<lb n="6" break="no"/><supplied reason="lost">τὸν καὶ εἴκοσι κα</supplied><unclear>ὶ</unclear> ἑπτά<g type="middot"/> <hi rend="diaeresis">ὑ</hi><unclear>π</unclear><supplied reason="lost">ὸ</supplied>
+<lb n="7"/><supplied reason="lost">δὲ ἀρετῆς τε καὶ</supplied> προθυμίης
+<lb n="8"/><supplied reason="lost">Πλαταιέες ἄπει</supplied><unclear>ροι</unclear> τῆς ναυ
+<lb n="9" break="no"/><supplied reason="lost">τικῆς ἐόντες συ</supplied><unclear>ν</unclear>επλ<unclear>ή</unclear>ρου<unclear>ν</unclear>
+<lb n="10"/><supplied reason="lost">τοῖσι Ἀθηναίοισι τ</supplied><unclear>ὰς</unclear> <unclear>ν</unclear>έας<g type="middot"/>
+<lb n="11"/><supplied reason="lost">Κορίνθιοι δὲ τεσσερά</supplied><unclear>κο</unclear>ντα
+<lb n="12"/><supplied reason="lost">νέας παρείχοντο, Μεγ</supplied><unclear>α</unclear>ρέες
+<lb n="13"/><supplied reason="lost">δὲ εἴκοσι. καὶ Χαλκι</supplied><unclear>δέε</unclear>ς
+<lb n="14"/><supplied reason="lost">ἐπλήρουν εἴκοσι, Ἀθ</supplied><unclear>η</unclear>ν<unclear>αί</unclear>
+<lb n="15" break="no"/><supplied reason="lost">ων παρεχόντων σ</supplied>φιν τὰς
+<lb n="16"/><supplied reason="lost">νέας, Αἰγινῆται δ</supplied><unclear>ὲ</unclear> ὀκτ<unclear>ω</unclear>
+<lb n="17" break="no"/><supplied reason="lost">καίδεκα, Σικυώνι</supplied><unclear>οι</unclear> <unclear>δὲ</unclear> <supplied reason="lost">δυο</supplied>
+<lb n="18" break="no"/><supplied reason="lost">καίδεκα, Λακεδαιμ</supplied>όνιο<supplied reason="lost">ι</supplied>
+<lb n="19"/><supplied reason="lost">δὲ δέκα, Ἐπιδαύρι</supplied><unclear>οι</unclear> <unclear>δὲ</unclear> <unclear>ὀ</unclear><supplied reason="lost">κ</supplied>
+<lb n="20" break="no"/><supplied reason="lost">τὼ, Ἐρετριέες δὲ ἑπτ</supplied><unclear>ὰ</unclear>, Τροι<unclear>ζ</unclear><supplied reason="lost">ή</supplied>
+<lb n="21" break="no"/><supplied reason="lost">νιοι δὲ πέντε, Στυ</supplied>ρέες <unclear>δ</unclear><supplied reason="lost">ὲ</supplied>
+<lb n="21"/><gap reason="lost" quantity="27" unit="line"/>
+</ab></div>
+
+<div n="ii" subtype="column" type="textpart"><ab>
+
+<lb n="1"/><gap reason="lost" quantity="12" unit="line"/>
+<lb n="1"/><unclear>τ</unclear><supplied reason="lost">οὺς Λακεδαιμονίους· ἀλλὰ</supplied>
+<milestone rend="horizontal-rule" unit="undefined"/>---
+<lb n="2"/><unclear>τ</unclear><supplied reason="lost">αῦτα μὲν ὕστερον ἐγένετο</supplied>
+<lb n="2"/><gap reason="lost" quantity="34" unit="line"/>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb1" xml:space="preserve">
+            <ref/>
+            <p>See Mirończuk (2012), p. 230 for the reconstruction of the two columns.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/9607"/>
                   <biblScope unit="number">3382</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">48</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95408"/>
+                  <biblScope unit="page" from="230" to="231">230-231</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016">Herodotus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016 http://cwkb.org/author/id/915/rdf">Herodotus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/176">Historiae</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/176 http://cwkb.org/work/id/2691/rdf">Historiae</title>
+                  <biblScope n="1" unit="book">8</biblScope>
+                  <biblScope n="2" unit="chapter">1</biblScope>
+                  <biblScope n="3" unit="part" from="1" to="2">1-2</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
                <bibl type="online">
-                  <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol48/pages/3382.htm"/>
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH011d/313d0b27.dir/POxy.v0048.n3382.a.01.hires.jpg"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60343" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 60343</title>
@@ -12,9 +12,14 @@
             <idno type="TM">60343</idno>
             <idno type="LDAB">1464</idno>
             <idno type="filename">60343</idno>
-            <idno type="dclp-hybrid">na;;60343</idno>
+            <idno type="dclp-hybrid">tm;;60343</idno>
+            <idno type="MP3">00631.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +43,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Karanis (Arsinoites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0001" notAfter="0099">1 - 99</origDate>
+                     <origPlace>Fundort: Karanis (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0001"
+                               notAfter="0099">1 - 99</origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notBefore="0100"
+                               notAfter="0150">100 - 150</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1008 https://pleiades.stoa.org/places/736932">Karanis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -79,11 +96,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 02.89-110</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Ilias 02.89-110</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -92,30 +109,119 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-03-02T08:28:33-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+          <change when="2021-03-02T08:28:32-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+          <change when="2019-06-24T06:38:30-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2019-06-24T06:38:30-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2019-06-23T13:16:54-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">General - Please do NOT finalize these texts. They are awaiting the publication of the printed volume at the end of 2019.</change>
+          <change when="2019-06-23T13:16:54-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">General - Please do NOT finalize these texts. They are awaiting the publication of the printed volume at the end of 2019.</change>
+          <change when="2019-06-21T10:02:46-04:00"
+                 who="http://papyri.info/editor/users/JohannesNussbaum">Submit - Added text and updated metadata according to the edition.</change>
+          <change when="2019-06-21T10:02:46-04:00"
+                 who="http://papyri.info/editor/users/JohannesNussbaum">Submit - Added text and updated metadata according to the edition.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+    <lb n="1"/><supplied reason="lost">βοτρυδὸν δὲ πέτονται ἐπ’ ἄνθεσ</supplied><unclear>ι</unclear>ν εἰαρινοῖσιν·
+
+    <lb n="2"/><supplied reason="lost">αἳ μέν τ’ ἔνθα ἅλις πεποτήαται</supplied>, αἳ δέ τε ἔνθα·
+
+    <lb n="3"/><supplied reason="lost">ὣς τῶν ἔθνεα πολλὰ νεῶν ἄ</supplied>πο καὶ κλισιάων
+
+    <lb n="4"/><supplied reason="lost">ἠϊόνος προπάροιθε βαθείης ἐσ</supplied>τιχόωντο
+
+    <lb n="5"/><supplied reason="lost">ἰλαδὸν εἰς ἀγορήν· μετὰ δέ σφισ</supplied>ιν ὄσσα δεδήει
+
+    <lb n="6"/><supplied reason="lost">ὀτρύνουσ’ ἰέναι Διὸς ἄγγελος· οἳ δ’</supplied> ἀγέροντο.
+
+    <lb n="7"/><supplied reason="lost">τετρήχει δ’ ἀγορή, ὑπὸ δὲ στενα</supplied>χίζετο γαῖα
+
+    <lb n="8"/><supplied reason="lost">λαῶν ἱζόντων, ὅμαδος δ’ ἦν· ἐ</supplied>ννέα δέ σφεας
+
+    <lb n="9"/><supplied reason="lost">κήρυκες βοόωντες ἐρήτυον, εἴ</supplied> ποτ’ ἀϋτῆς
+
+    <lb n="10"/><supplied reason="lost">σχοίατ’, ἀκούσειαν δὲ διοτρεφέ</supplied>ων βασιλήων.
+
+    <lb n="11"/><supplied reason="lost">σπουδῇ δ’ ἕζετο λαός, ἐρήτυθε</supplied>ν δὲ καθ’ ἕδρας
+
+    <lb n="12"/><supplied reason="lost">παυσάμενοι κλαγγῆς. ἀνὰ δὲ κρεί</supplied>ων Ἀγαμέμνων
+
+    <lb n="13"/><supplied reason="lost">ἔστη σκῆπτρον ἔχων· τὸ μὲν Ἥφαιστος</supplied> κάμε τεύχων.
+
+    <lb n="14"/><supplied reason="lost">Ἥφαιστος μὲν δῶκε Διὶ Κρονίωνι ἄνα</supplied>κτι,
+
+    <lb n="15"/><supplied reason="lost">αὐτὰρ ἄρα Ζεὺς δῶκε διακτόρῳ Ἀργειφόν</supplied>τηι,
+
+    <lb n="16"/><supplied reason="lost">Ἑρμείας δὲ ἄναξ δῶκεν Πέλοπι πληξίππ</supplied>ωι,
+
+    <lb n="17"/><supplied reason="lost">αὐτὰρ ὃ αὖτε Πέλοψ δῶκ’ Ἀτρέϊ ποιμένι λα</supplied>ῶν·
+
+    <lb n="18"/><supplied reason="lost">Ἀτρεὺς δὲ θνῄσκων ἔλιπεν πολύαρνι Θυ</supplied>έστηι,
+
+    <lb n="19"/><supplied reason="lost">αὐτὰρ ὃ αὖτε Θυέστ’ Ἀγαμέμνονι λεῖπε</supplied> φορῆναι,
+
+    <lb n="20"/><supplied reason="lost">πολλῇσιν νήσοισι καὶ Ἄργεϊ παντὶ ἀνάσσ</supplied>ειν.
+
+    <lb n="21"/><supplied reason="lost">τῷ ὅ γ’ ἐρεισάμενος ἔπε’ Ἀργείοισι μετηύ</supplied>δα·
+
+    <lb n="22"/><supplied reason="lost">ὦ φίλοι ἥρωες Δαναοὶ θεράποντες Ἄρηο</supplied>ς,
+</ab></div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                  <biblScope n="1" unit="book">2</biblScope>
+                  <biblScope n="2" unit="line" from="89" to="110">89-110</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ.</bibl>
-               <bibl type="online">
+               <bibl type="printed">BASP 12 (1975) after p. 22</bibl>
+               <bibl type="online" n="1">
                   <ptr target="http://www.papyri.info/apis/michigan.apis.1624"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://quod.lib.umich.edu/a/apis/x-1624/2755r.tif"/>
+               </bibl>
+               <bibl type="online" n="3">
+                  <ptr target="http://hdl.handle.net/2027/spo.0599796.0012.001:04"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/51004"/>
+                  <biblScope unit="number">1</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/16711"/>
+                  <biblScope unit="number">540</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>The text shows no variants from the Teubner Edition of M.L. West, 1998.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

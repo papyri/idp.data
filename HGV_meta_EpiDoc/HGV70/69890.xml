@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv69890">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Reconnaissance de dette</title>
+            <title>Un riconoscimento di debito redatto a Colonia Aelia Capitolina</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">69890</idno>
             <idno type="TM">69890</idno>
             <idno type="ddb-perseus-style">0279;5;284</idno>
-            <idno type="ddb-filename">chla.5.284</idno>
-            <idno type="ddb-hybrid">chla;5;284</idno>
+            <idno type="ddb-filename">zpe.206.185</idno>
+            <idno type="ddb-hybrid">zpe;206;185</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Ann Arbor</settlement>
                   </placeName>
+                  <collection>Michigan University, Library</collection>
+                  <idno type="invNo">inv. 3258 + inv. 3888c + 3944k</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,18 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Jerusalem</origPlace>
-                     <origDate when="0188">188</origDate>
+                     <origPlace>Schreibort: Aelia Capitolina; Fundort: Egypt</origPlace>
+                     <origDate when="0141">141</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
                         <placeName type="ancient"
-                                   ref="http://pleiades.stoa.org/places/687928 http://www.trismegistos.org/place/853">Jerusalem</placeName>
+                                   ref="http://pleiades.stoa.org/places/687928 http://www.trismegistos.org/place/853">Aelia Capitolina</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoCHB7F1">
+                        <placeName type="ancient">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,19 +69,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Schuldschein</term>
-               <term>Darlehen</term>
-               <term>Soldaten</term>
+               <term n="1">Schuldschein</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Soldaten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-18T13:15:50-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-18T09:38:49-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-18T09:13:33-05:00"
+                 who="http://papyri.info/users/andrea.bernini82">Submit - I submit P.Mich. VII 445 + inv. 3888c + inv. 3944k, proofread against the print edition</change>
          <change who="HGV" when="1999-12-22">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Lateinisch.</p>
@@ -81,33 +95,40 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">ChLA</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">284</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">206</biblScope>
+                  <biblScope n="2" type="fascicle">(2018)</biblScope>
+                  <biblScope n="3" type="pages">S. 185</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 19</bibl>
-               <bibl type="illustration">P.Mich. VII, Plate X c</bibl>
+               <bibl type="illustration" n="1">ChLA V, S. 19</bibl>
+               <bibl type="illustration" n="2">P.Mich. VII, Plate X c</bibl>
+               <bibl type="illustration" n="3">ZPE 206 (2018), S. 186</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Mich. VII 445</bibl>
-               <bibl type="publication" subtype="other">CPL 194</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Mich. VII 445</bibl>
+               <bibl type="publication" subtype="other" n="2">CPL 194</bibl>
+               <bibl type="publication" subtype="other" n="3">ChLA 5 284</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://quod.lib.umich.edu/a/apis/x-1914"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="it">
+               <bibl type="translations">A. Bernini, Un riconoscimento di debito redatto a Colonia Aelia Capitolina, ZPE 206 (2018) 183-193, p. 187</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

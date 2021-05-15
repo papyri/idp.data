@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml" ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32181">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32181">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Comunicazione al basilikogrammateus del Memfite</title>
@@ -28,14 +29,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Doreas Kome (Memphites)</origPlace>
+                     <origPlace>Doreas Kome (Memphites, Ägypten)</origPlace>
                      <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Doreas Kome</placeName>
-                        <placeName type="ancient" subtype="nome">Memphites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" ref="http://www.trismegistos.org/place/3076">Doreas Kome</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2714 https://pleiades.stoa.org/places/736964">Memphites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -43,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,22 +64,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>Horion</term>
-               <term>Dorfschreiber</term>
-               <term>an den Königlichen Schreiber N.N.</term>
-               <term>betrifft Schreiben von Sabinianus (?) (procurator usiacus in Vertretung des Archiereus)</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">Horion</term>
+               <term n="3">Dorfschreiber</term>
+               <term n="4">an den Königlichen Schreiber N.N.</term>
+               <term n="5">betrifft Schreiben von Sabinianus (?) (procurator usiacus in Vertretung des Archiereus)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-11T10:47:58-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-09T12:24:12-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-04-09T12:16:45-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated the text of P.Daris 5</change>
          <change who="HGV" when="1998-01-23">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2016-10-19" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -96,5 +107,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

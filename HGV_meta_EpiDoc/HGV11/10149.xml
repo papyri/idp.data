@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10149">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Sitologenquittung</title>
+            <title>Sitologos receipt</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10149</idno>
             <idno type="TM">10149</idno>
             <idno type="ddb-perseus-style">0070;;9</idno>
-            <idno type="ddb-filename">p.bas.9</idno>
-            <idno type="ddb-hybrid">p.bas;;9</idno>
+            <idno type="ddb-filename">p.bas.2.42</idno>
+            <idno type="ddb-hybrid">p.bas;2;42</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Basel</settlement>
                   </placeName>
+                  <collection>Universitätsbibliothek</collection>
+                  <idno type="invNo">P.Bas. inv. 9</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleia (Arsinoites)</origPlace>
+                     <origPlace>Herakleia (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0201-05-23">23. Mai 201</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="http://pleiades.stoa.org/places/741467 http://www.trismegistos.org/place/772">Herakleia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/772 https://pleiades.stoa.org/places/741467">Herakleia</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,43 +70,59 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Sitologen</term>
+               <term n="1">Quittung</term>
+               <term n="2">Sitologen</term>
+               <term n="3">Weizen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-05-13T09:51:46-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-05-13T05:59:37-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-05-13T05:48:49-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated metadata to P.Bas. 2 42 </change>
          <change who="HGV" when="1994-01-24">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Bas.</title>
-                  <biblScope type="numbers">9</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">42</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">14</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">9</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 180</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bas. I 9</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7680">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Correspondence of Cleon with his Family</title>
+            <title>Letter from Metrodora to Kleon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7680</idno>
             <idno type="TM">7680</idno>
             <idno type="ddb-perseus-style">0187;3;42</idno>
-            <idno type="ddb-filename">p.petr.3.42</idno>
-            <idno type="ddb-hybrid">p.petr;3;42</idno>
+            <idno type="ddb-filename">p.petr.kleon.3</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;3</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Dublin</settlement>
                   </placeName>
+                  <collection>Trinity College</collection>
+                  <idno type="invNo">Pap. FF 15 [42 h (8 f) - l. 1-18]</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites (?)</origPlace>
-                     <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
+                     <origPlace>Zielort: Arsinoites; Fundort: Gurob; Schreibort: Alexandria</origPlace>
+                     <origDate notBefore="-0253-07" notAfter="-0252">
+                2. Hälfte 253 - 252 v.Chr.
+                <precision match="../@notBefore"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="sent">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoDBHCAG">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="composed">
+                     <p xml:id="geoCGHI2F">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/100 https://pleiades.stoa.org/places/727070">Alexandria</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +63,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,19 +80,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Metrodora (?) an Kleon (?)</term>
-               <term>Sorge um die Zukunft nach einem negativen Vorfall</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Metrodora (?) an Kleon (?)</term>
+               <term n="3">Sorge um die Zukunft nach einem negativen Vorfall</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-09T08:28:09-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-11-07T16:49:12-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-11-07T04:45:30-05:00"
+                 who="http://papyri.info/users/LisaVanoppr%C3%A9">Submit - Entering translation and changing metadata and text for P. Petr. Kleon 3.&#xD;
+Please check if I entered the editorial corrections in lines 5,7,8 and 17 correctly.</change>
          <change who="HGV" when="1997-09-10">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Kleon - Archiv. Datierung nach dem Rahmen des Kleon - Archivs.</p>
@@ -81,12 +107,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">42</biblScope>
-                  <biblScope type="generic">H</biblScope>
-                  <biblScope type="generic">(8)</biblScope>
-                  <biblScope type="generic">(f)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">3</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -98,18 +120,22 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">Witkowski, Epistulae privatae 6</bibl>
+               <bibl type="publication" subtype="other" n="1">P. Petr. III 42 h (8 f) Z. 1-18</bibl>
+               <bibl type="publication" subtype="other" n="2">Witkowski, Epistulae privatae 6 Z. 1-18</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">Lewis, Greeks in Ptolemaic Egypt (1986), S. 44</bibl>
-               <bibl type="translations">Bagnall - Cribiore, Women's Letters (2006), S. 110</bibl>
-               <bibl type="translations">Bagnall - Cribiore, Women's Letters (2008), A2.7, Nr. 13</bibl>
+               <bibl type="translations" n="1">Lewis, Greeks in Ptolemaic Egypt (1986), S. 44</bibl>
+               <bibl type="translations" n="2">Bagnall - Cribiore, Women's Letters (2006), S. 110</bibl>
+               <bibl type="translations" n="3">Bagnall - Cribiore, Women's Letters (2008), A2.7, Nr. 13</bibl>
+            </listBibl>
+            <listBibl xml:lang="fr">
+               <bibl type="translations">Revue des études grecques (REG) 21 (1908), p. 138 [42 h (8 f)]</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

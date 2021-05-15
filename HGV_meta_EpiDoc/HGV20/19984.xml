@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv19984">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Prosopites</origPlace>
+                     <origPlace>Prosopites, Ägypten</origPlace>
                      <origDate when="0161-03-24">24. März 161</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Prosopites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Prosopites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,32 +62,40 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Schreiben (privat)</term>
-               <term>Anicus an Chenthnuphis</term>
-               <term>Sendung zweier Auszüge aus Registern (Zensus)</term>
-               <term>um zu beweisen</term>
-               <term>daß sie Geschwister von derselben Mutter sind</term>
+               <term n="1">Schreiben (privat)</term>
+               <term n="2">Anicus an Tamystha</term>
+               <term n="3">Sendung zweier Auszüge aus Registern (Zensus)</term>
+               <term n="4">um zu beweisen</term>
+               <term n="5">daß sie Geschwister von derselben Mutter sind</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-04T11:37:12-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-04T08:18:03-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-02-01T14:15:59-05:00"
+                 who="http://papyri.info/editor/users/PeterArzt-Grabner">Submit - Unter „Inhalt“ muss es heißen „Anicus an Tamystha“ (statt „an Chenthnuphis“); Chenthnuphis ist der Vater des Anicus (siehe Z. 28). „Keenan, Law and Legal Practice“ ist auf der Seite der „Abkürzungen zitierter Bücher“ noch nicht angegeben.</change>
+         <change when="2021-02-01T14:15:28-05:00"
+                 who="http://papyri.info/editor/users/PeterArzt-Grabner">Commit - Inhalt: Chenthnuphis corrected to Tamystha</change>
          <change who="HGV" when="1996-01-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 2: 131 - 132; Z. 25: 145 - 146</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 2</ref>
                   <date type="mentioned" notBefore="0131" notAfter="0132">131 - 132</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 25</ref>
                   <date type="mentioned" notBefore="0145" notAfter="0146">145 - 146</date>
                </item>
@@ -96,9 +105,9 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">324</biblScope>
-                  <biblScope type="pages">(S. 63)</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">324</biblScope>
+                  <biblScope n="3" type="pages">(S. 63)</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,7 +115,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">98/99</biblScope>
                </bibl>
             </listBibl>
@@ -122,6 +131,18 @@
                <bibl type="publication" subtype="other">W.Chr. 208</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_324"/>
+               </figure>
+            </p>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations">Keenan, Law and Legal Practice (2014), 4.4.5 (S. 198-200)</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

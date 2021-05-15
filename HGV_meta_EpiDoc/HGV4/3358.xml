@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3358">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Violences et vol</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Magdola (Arsinoites)</origPlace>
-                     <origDate when="-0221-02-26">26. Febr. 221 v.Chr.</origDate>
+                     <origPlace>Magdola (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="-0221-02-26">26. Feb. 221 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736956 http://www.trismegistos.org/place/715 http://www.trismegistos.org/place/1284">Magdola</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,23 +65,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Thamunis an den König</term>
-               <term>Prügelei mit einer anderen Frau im Bad</term>
-               <term>Raub der Halskette</term>
-               <term>Gefangenhaltung durch den Komarchen</term>
-               <term>Raub des Mantels</term>
-               <term>Forderung von Ersatz (Schaden)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Thamunis an den König</term>
+               <term n="3">Prügelei mit einer anderen Frau im Bad</term>
+               <term n="4">Raub der Halskette</term>
+               <term n="5">Gefangenhaltung durch den Komarchen</term>
+               <term n="6">Raub des Mantels</term>
+               <term n="7">Forderung von Ersatz (Schaden)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-01-24T10:22:33-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-01-24T06:11:48-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Separate the two different values</change>
+         <change when="2019-01-24T02:12:11-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added link to digital images of recto &amp; verso; not sure about the formatting.</change>
          <change who="HGV" when="1992-11-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -103,9 +111,16 @@
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/3358"/>
+               </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">65</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">90</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -115,9 +130,9 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lille II 42</bibl>
-               <bibl type="publication" subtype="other">M.Chr. 8</bibl>
-               <bibl type="publication" subtype="other">C.Pap. Hengstl 45</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lille II 42</bibl>
+               <bibl type="publication" subtype="other" n="2">M.Chr. 8</bibl>
+               <bibl type="publication" subtype="other" n="3">C.Pap. Hengstl 45</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -127,6 +142,16 @@
                <bibl type="translations">Burnet, L'Égypte ancienne (2003), Nr. 7</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PEnteux/2010071.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PEnteux/2020071.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

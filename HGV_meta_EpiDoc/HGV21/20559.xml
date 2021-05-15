@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20559">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Taxation Account</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 798</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,7 +35,9 @@
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
                      <origDate notBefore="0025-07-22">
-                        <offset type="after" n="1">nach</offset> 22. Juli 25</origDate>
+                        <offset n="1" type="after">nach</offset>
+                22. Juli 25
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,39 +67,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Steuern</term>
-               <term>Kopien von Quittungen</term>
-               <term>Anzug aus einer Epikrisis</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Steuern</term>
+               <term n="3">Kopien von Quittungen</term>
+               <term n="4">Anzug aus einer Epikrisis</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-01-01T09:23:10-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-01-01T08:28:42-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-31T23:27:30-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to BL page.&#xD;
+</change>
+         <change when="2019-12-31T23:27:23-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to BL page.</change>
          <change who="HGV" when="1996-07-30">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört zum Tryphon - Archiv. Gehört zu SB X 10220 (= P.Oxy. II 314  descr.). Vgl. P.Oxy. LXXVIII 5172,2 Anm. und 3 Anm.</p>
+            <p>Gehört zum Tryphon - Archiv. Gehört zu SB X 10220 (= P.Oxy. II 314 descr.). Vgl. P.Oxy. LXXVIII 5172,2 Anm. und 3 Anm.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 1 - 34: mehrere Einzeldaten aus dem Zeitraum 12. Febr. 21 - 7. Juli 25; Z. 35: 11 - 12; Z. 42: 12 - 13</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 1-34</ref>
                   <note type="comment">mehrere Einzeldaten aus dem Zeitraum</note>
                   <date type="mentioned" notBefore="0021-02-12" notAfter="0025-07-07">12. Febr. 21 - 7. Juli 25</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 35</ref>
                   <date type="mentioned" notBefore="0011" notAfter="0012">11 - 12</date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 42</ref>
                   <date type="mentioned" notBefore="0012" notAfter="0013">12 - 13</date>
                </item>
@@ -104,8 +118,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">288</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">288</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -113,7 +127,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">138</biblScope>
                </bibl>
             </listBibl>
@@ -124,10 +138,17 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 798 descr.</bibl>
-               <bibl type="publication" subtype="other">Z. 16-20, 31-34: Sel. Pap. II 380</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lond. III 798 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">Z. 16-20, 31-34: Sel. Pap. II 380</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_798"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

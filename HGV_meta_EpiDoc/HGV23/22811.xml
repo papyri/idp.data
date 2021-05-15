@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22811">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 1159</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,21 +64,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Listen mit Namen von Personen</term>
-               <term>die für den bevorstehenden Besuch des Präfekten Lucius Valerius Proclus Vorräte bereitstellen müssen</term>
-               <term>Nennung der Kategorien</term>
-               <term>die von dieser Pflicht befreien</term>
+               <term n="1">Bericht</term>
+               <term n="2">Listen mit Namen von Personen</term>
+               <term n="3">die für den bevorstehenden Besuch des Präfekten Lucius Valerius Proclus Vorräte bereitstellen müssen</term>
+               <term n="4">Nennung der Kategorien</term>
+               <term n="5">die von dieser Pflicht befreien</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-18T04:26:12-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-18T04:02:55-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-17T21:05:02-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to BL image.</change>
+         <change when="2019-12-17T21:04:53-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to BL image.</change>
          <change who="HGV" when="1995-08-21">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. ZPE 17, 1975, S. 289. Zu Z. 64 vgl. ZPE 166, 2008, S. 176, zu Z. 35.</p>
@@ -84,17 +95,20 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1159</biblScope>
-                  <biblScope type="pages">(S. 112)</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">1159</biblScope>
+                  <biblScope n="3" type="pages">(S. 112)</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/22811"/>
+               </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">103</biblScope>
                </bibl>
             </listBibl>
@@ -117,6 +131,13 @@
                <bibl type="translations">Johnson, Roman Egypt (1936), S. 628, Nr. 376</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_1159"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

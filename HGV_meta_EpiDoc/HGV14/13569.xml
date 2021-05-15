@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13569">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>P.Tebt. II 439 riedito</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">13569</idno>
             <idno type="TM">13569</idno>
             <idno type="ddb-perseus-style">0206;2;439</idno>
-            <idno type="ddb-filename">p.tebt.2.439</idno>
-            <idno type="ddb-hybrid">p.tebt;2;439</idno>
+            <idno type="ddb-filename">zpe.200.366</idno>
+            <idno type="ddb-hybrid">zpe;200;366</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berkeley</settlement>
                   </placeName>
+                  <collection>Bancroft Library</collection>
+                  <idno type="invNo">UC 1424</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0151-06-15">15. Juni 151</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737072 http://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="86994"/>
+                  <biblScope type="pp">366</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,26 +76,40 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Zoilos an einen Epistrategen (?)</term>
-               <term>Antrag auf Freilassung</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Zoilos an einen Strategen</term>
+               <term n="3">Landflucht</term>
+               <term n="4">Antrag auf Freilassung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-12T09:58:12-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-12T08:48:22-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-12T08:47:09-05:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated the HGV metadata file</change>
+         <change when="2021-01-09T07:32:27-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-08T16:32:43-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T13:45:07-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Entered text from re-edition, R. Mascellari, ZPE 200 (2016) 363–378; added a reference to this (and the illustration) under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1996-05-07">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">439</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">200</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="pages">S. 366</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -91,12 +118,19 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
-                  <graphic url="http://wwwapp.cc.columbia.edu/ldpd/app/apis/item?mode=item&amp;key=berkeley.apis.654"/>
-                  <head>Abbildung im Internet</head>
+               <figure n="1">
+                  <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=654&amp;item=1"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://www.jstor.org/stable/26603898?seg=3&amp;seq=3"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Tebt. II 439</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

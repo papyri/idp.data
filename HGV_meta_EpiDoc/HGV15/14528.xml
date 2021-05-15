@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv14528">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lieferungskauf (Gemüsesamen)</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
+                     <origPlace>Ptolemais Euergetis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0239-01-28">28. Jan. 239</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,31 +65,51 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>Lieferung</term>
-               <term>Vorauszahlung</term>
-               <term>Gemüsesamen</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Lieferung</term>
+               <term n="4">Vorauszahlung</term>
+               <term n="5">Gemüsesamen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-05T10:25:19-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-02T08:56:16-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-02-01T14:01:48-05:00"
+                 who="http://papyri.info/editor/users/PeterArzt-Grabner">Submit - Notes: Lippert - Schentuleit Anm. 6 corrected to 61</change>
+         <change when="2021-02-01T14:01:38-05:00"
+                 who="http://papyri.info/editor/users/PeterArzt-Grabner">Commit - Notes: Lippert - Schentuleit Anm. 6 corrected to 61</change>
          <change who="HGV" when="1990-09-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 6 vgl. Lippert - Schentuleit, Tebtynis und Soknopaiu Nesos, S. 54, Anm. 6. Zu Z. 6 und 16 vgl. ZPE 154, 2005, S. 199f.</p>
+            <p>Zu Z. 6 vgl. Lippert - Schentuleit, Tebtynis und Soknopaiu Nesos, S. 54, Anm. 61. Zu Z. 6 und 16 vgl. ZPE 154, 2005, S. 199f.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">11907</biblScope>
+                  <biblScope n="1" type="volume">14</biblScope>
+                  <biblScope n="2" type="numbers">11907</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/14528"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">211</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -107,10 +129,9 @@
             <p>
                <figure>
                   <graphic url="http://wwwapp.cc.columbia.edu/ldpd/app/apis/item?mode=item&amp;key=yale.apis.0004160000"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

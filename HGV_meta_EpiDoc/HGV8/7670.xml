@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7670">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragments of Letters</title>
+            <title>Letter of Philonides to his father</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7670</idno>
             <idno type="TM">7670</idno>
             <idno type="ddb-perseus-style">0187;1;30</idno>
-            <idno type="ddb-filename">p.petr.1.30</idno>
-            <idno type="ddb-hybrid">p.petr;1;30</idno>
+            <idno type="ddb-filename">p.petr.kleon.8</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;8</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 503 a</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites (?)</origPlace>
-                     <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
+                     <origPlace>Zielort: Arsinoites; Fundort: Gurob; Schreibort: Alexandria</origPlace>
+                     <origDate notBefore="-0260" notAfter="-0249">
+                ca. 260 - 249 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="sent">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoFDBJEA">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="composed">
+                     <p xml:id="geoCB2DAJ">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/100 https://pleiades.stoa.org/places/727070">Alexandria</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +63,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,20 +80,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Philonides an seinen Vater (Kleon)</term>
-               <term>Kleidungsstück (?)</term>
-               <term>Genesung</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Philonides an seinen Vater (Kleon)</term>
+               <term n="3">Kleidungsstück (?)</term>
+               <term n="4">Genesung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-28T09:47:16-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-10-26T10:18:14-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-10-25T12:45:31-04:00"
+                 who="http://papyri.info/users/LisaVanoppr%C3%A9">Submit - Entering translation and changing metadata and text for P. Petr. Kleon 8.&#xD;
+Lines 6 and 7 are indented, please use correct markup.</change>
          <change who="HGV" when="1998-04-16">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Kleon - Archiv. Datierung nach dem Rahmen des Kleon - Archivs.</p>
@@ -82,26 +108,32 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">30</biblScope>
-                  <biblScope type="generic">(1)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">8</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">XXX (1)</bibl>
+               <bibl type="illustration">P.Petr. I, Pl. XXX (1)</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_503"/>
+               </figure>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 H (4)</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 503 (a) descr.</bibl>
-               <bibl type="publication" subtype="other">Witkowski, Epistulae privatae 1</bibl>
+               <bibl type="publication" subtype="other" n="1">P. Petrie I 30 (1)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. III 42 H (4)</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Lond. III 503 (a) descr.</bibl>
+               <bibl type="publication" subtype="other" n="4">Witkowski, Epistulae privatae 1</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

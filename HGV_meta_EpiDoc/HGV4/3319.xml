@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3319">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Prêt d’argent</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Magdola (Arsinoites)</origPlace>
-                     <origDate when="-0221-02-26">26. Febr. 221 v.Chr.</origDate>
+                     <origPlace>Magdola (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="-0221-02-26">26. Feb. 221 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736956 http://www.trismegistos.org/place/715 http://www.trismegistos.org/place/1284">Magdola</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,19 +65,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Dioskurides und Nikanor an den König</term>
-               <term>Eintreibung eines Darlehens (Geld)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Dioskurides und Nikanor an den König</term>
+               <term n="3">Eintreibung eines Darlehens (Geld)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-10T09:26:54-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-09T15:36:46-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-08T03:52:22-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - images ajoutées</change>
          <change who="HGV" when="1992-11-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -104,9 +112,9 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lille II 23</bibl>
-               <bibl type="publication" subtype="other">M.Chr. 9</bibl>
-               <bibl type="publication" subtype="other">Jur. Pap. 76</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lille II 23</bibl>
+               <bibl type="publication" subtype="other" n="2">M.Chr. 9</bibl>
+               <bibl type="publication" subtype="other" n="3">Jur. Pap. 76</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -118,12 +126,17 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Enteux.&amp;vVol=&amp;vNum=44"/>
-                  <head>Abbildung im Internet</head>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Enteuxeis-bw/300dpi/P.Enteux.44r.jpg"/>
+               </figure>
+               <figure n="3">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Enteuxeis-bw/300dpi/P.Enteux.44v.jpg"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

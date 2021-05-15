@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10943">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Rendimento di conti</title>
+            <title>Monthly account in kind</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10943</idno>
             <idno type="TM">10943</idno>
-            <idno type="ddb-perseus-style">0111;1;100</idno>
-            <idno type="ddb-filename">p.flor.1.100</idno>
-            <idno type="ddb-hybrid">p.flor;1;100</idno>
+            <idno type="ddb-filename">p.messeri.39</idno>
+            <idno type="ddb-hybrid">p.messeri;;39</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <placeName>
-                     <settlement>unbekannt</settlement>
-                  </placeName>
+                  <idno type="invNo">Florence, Biblioteca Medicea Laurenziana, P. Flor. 100</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,11 +29,14 @@
                <history>
                   <origin>
                      <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0231" notAfter="0232">231 - 232</origDate>
+                     <origDate when="0239-01">
+                        <certainty locus="value" match="../year-from-date(@when)"/>Jan. 239 (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
@@ -46,7 +46,7 @@
       </fileDesc>
       <encodingDesc>
          <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -70,37 +70,45 @@
          <change who="HGV" when="1997-09-02">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2021-01-21" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört zum Heroninos - Archiv. Zur Datierung vgl. Rathbone, Economic Rationalism, S. 46 (gegen BL V, S. 29). Rückseite: P.Flor. II  185. Rückseite gehört zum Heroninos - Archiv.</p>
+            <p>Gehört zum Heroninos-Archiv.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Flor.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">100</biblScope>
+                  <title level="s" type="abbreviated">P.Messeri</title>
+                  <biblScope type="numbers">39</biblScope>
                </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="illustrations">
+            <p>
+               <bibl type="illustration">Tavola XXXVI</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Flor. I 100</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">126</biblScope>
                </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">69/70</biblScope>
                </bibl>
             </listBibl>
-         </div>
-         <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
          </div>
       </body>
    </text>

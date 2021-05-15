@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7649">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Public Works</title>
+            <title>Letter about irrigation</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7649</idno>
             <idno type="TM">7649</idno>
             <idno type="ddb-perseus-style">0187;3;42</idno>
-            <idno type="ddb-filename">p.petr.3.42</idno>
-            <idno type="ddb-hybrid">p.petr;3;42</idno>
+            <idno type="ddb-filename">p.petr.kleon.22</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;22</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Dublin</settlement>
                   </placeName>
+                  <collection>Trinity College</collection>
+                  <idno type="invNo">Pap. F 45</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0256-10-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. Okt. 256 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0255-10-15">
-                        <certainty locus="value" match="../year-from-date(@when)"/>15. Okt. 255 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Schreibort: Arsinoites ?; Fundort: Gurob</origPlace>
+                     <origDate when="-0255-10-15">15. Okt. 255 v.Chr.</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoBEC1G">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,37 +72,42 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Deich</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Deich</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-23T10:46:46-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-10T09:00:04-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-02-09T14:34:37-05:00"
+                 who="http://papyri.info/editor/users/LisaVanoppr%C3%A9">Submit - Entering translation and changing metadata and text for P. Petr. Kleon 22.</change>
          <change who="HGV" when="1997-09-09">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Datierung nach dem makedonischen Regierungsjahr. Alternativdatierung: 15. Okt. 255 v. Chr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">42</biblScope>
-                  <biblScope type="generic">C</biblScope>
-                  <biblScope type="generic">(14)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">22</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Petr. III 42 c (14)</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

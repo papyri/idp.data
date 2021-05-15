@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20177">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,17 +31,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Therenuthis (Prosopites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0164-09-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 164 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0196-09-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 196 (Jahr unsicher)</origDate>
+                     <origPlace>Therenuthis (Prosopites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0164-09-10">
+                10. Sept. 164 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0196-09-10">
+                10. Sept. 196 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Therenuthis</placeName>
-                        <placeName type="ancient" subtype="nome">Prosopites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Therenuthis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Prosopites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,42 +70,51 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Tamystha an N.N.</term>
-               <term>Streit (Erbe)</term>
-               <term>Land</term>
-               <term>Vorwand der Verwandten</term>
-               <term>βασιλικὴ γῆ</term>
-               <term>ihr eigenes Plädoyer</term>
-               <term>kinderlos und alleinstehend</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Tamystha an N.N.</term>
+               <term n="3">Streit (Erbe)</term>
+               <term n="4">Land</term>
+               <term n="5">Vorwand der Verwandten</term>
+               <term n="6">βασιλικὴ γῆ</term>
+               <term n="7">ihr eigenes Plädoyer</term>
+               <term n="8">kinderlos und alleinstehend</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-08T08:16:02-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-08T05:20:53-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-07T10:35:28-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1996-02-02">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 10. Sept. 196.</p>
+            <p>Alternativdatierung: 10. Sept. 196. Zu Z. 25 und 26–27 s. R. Mascellari, ZPE 200 (2016) 369–370.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">648</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">648</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/20177"/>
+               </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">31</biblScope>
                </bibl>
             </listBibl>
@@ -111,9 +125,9 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">W.Chr. 360</bibl>
-               <bibl type="publication" subtype="other">Sel. Pap. II 284</bibl>
-               <bibl type="publication" subtype="other">Jur. Pap. 58</bibl>
+               <bibl type="publication" subtype="other" n="1">W.Chr. 360</bibl>
+               <bibl type="publication" subtype="other" n="2">Sel. Pap. II 284</bibl>
+               <bibl type="publication" subtype="other" n="3">Jur. Pap. 58</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -131,10 +145,9 @@
             <p>
                <figure>
                   <graphic url="http://berlpap.smb.museum/01853/"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

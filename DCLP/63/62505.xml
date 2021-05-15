@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62505" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P.Herc. 1815</title>
+            <title>Philodemus, De pietate</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,13 +15,17 @@
             <idno type="dclp-hybrid">p.herc;;1815</idno>
             <idno type="herc-fr">1177</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">1815</idno>
+                  <idno type="invNo">P.Herc. 1815 fr. F</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
@@ -39,42 +43,40 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herculaneum (Campania, Italy) oder Italy (?)</origPlace>
-                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v. Chr.</origDate>
+                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy ?; Pisones (Italy)</origPlace>
+                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/481">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient"
                                    subtype="region"
-                                   ref="https://www.trismegistos.org/place/932"
-                                   cert="low">Italy</placeName>
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/932">Italy</placeName>
                      </p>
                   </provenance>
-                  <provenance type="stored">
+                  <provenance n="3">
                      <p>
-                        <placeName type="ancient">Pisones</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="1" type="ancient">Pisones</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
                </history>
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="sketched"
-                                   corresp="#FR1177"
-                                   from="1781"
-                                   to="1806"
-                                   xml:id="GR1177.01">
+                        <custEvent type="unrolled" corresp="#FR1177" from="1781" to="1806"/>
+                        <custEvent type="sketched" corresp="#FR1177" from="1781" to="1806">
                            <forename>Giovanni Battista</forename>
                            <surname>Malesci</surname>
                            <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASH0142.dir/herc.v006.1573.a.01.hires.jpg"/>
@@ -86,73 +88,131 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                                    <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Philodemus; peri eusebeias (de pietate) (Crönert)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
+               <term n="5">mythology</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-03-06" who="IDP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-06-23T08:29:16-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata.</change>
+          <change when="2020-06-23T08:29:16-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text and metadata.</change>
+          <change when="2020-06-23T07:42:49-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Line divisions of original/apograph, add first and last line.</change>
+          <change when="2020-06-23T07:42:49-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Line divisions of original/apograph, add first and last line.</change>
+          <change when="2020-06-21T14:54:51-04:00" who="http://papyri.info/users/MaxLee">Submit - Text: please look at the way I showed Obbink's correction of the apograph by G.B. Malesci.I followed Holger's suggestions. I looked at the original apograph and typed out what the apograph had down as the original text and then corrected it with Obbink's conjectured/revised published text.&#xD;
+&#xD;
+Translation: I did not know how to have a line break for the note on the translation so please reformat this and let me know how to insert a line break in Leiden+&#xD;
+&#xD;
+Thanks, Max</change>
+          <change when="2020-06-21T14:54:51-04:00" who="http://papyri.info/users/MaxLee">Submit - Text: please look at the way I showed Obbink's correction of the apograph by G.B. Malesci.I followed Holger's suggestions. I looked at the original apograph and typed out what the apograph had down as the original text and then corrected it with Obbink's conjectured/revised published text.&#xD;
+&#xD;
+Translation: I did not know how to have a line break for the note on the translation so please reformat this and let me know how to insert a line break in Leiden+&#xD;
+&#xD;
+Thanks, Max</change>
+          <change when="2020-06-19T09:34:18-04:00" who="http://papyri.info/users/MaxLee">Commit - added location to meta data from pleiades canonical URI</change>
+          <change when="2020-06-19T09:34:18-04:00" who="http://papyri.info/users/MaxLee">Commit - added location to meta data from pleiades canonical URI</change>
+          <change when="2020-06-18T23:31:10-04:00" who="http://papyri.info/users/MaxLee">Commit - I'm stuck again; the editions are not showing up in the preview and I don't know why. The TM numbers are correct</change>
+          <change when="2020-06-18T23:31:10-04:00" who="http://papyri.info/users/MaxLee">Commit - I'm stuck again; the editions are not showing up in the preview and I don't know why. The TM numbers are correct</change>
+          <change when="2020-06-18T23:29:27-04:00" who="http://papyri.info/users/MaxLee">Commit - I cannot figure out how to put underlines for certain letters; I'm stuck</change>
+          <change when="2020-06-18T23:29:27-04:00" who="http://papyri.info/users/MaxLee">Commit - I cannot figure out how to put underlines for certain letters; I'm stuck</change>
+          <change when="2020-06-18T23:29:27-04:00" who="http://papyri.info/users/MaxLee">Commit - I cannot figure out how to put underlines for certain letters; I'm stuck</change>
+          <change when="2020-06-18T23:29:27-04:00" who="http://papyri.info/users/MaxLee">Commit - I cannot figure out how to put underlines for certain letters; I'm stuck</change>
+          <change when="2020-06-18T22:28:51-04:00" who="http://papyri.info/users/MaxLee">Commit - added to the bibliography the principal edition and made comments on the reconstructed text by Obbink in the General Notes</change>
+          <change when="2020-06-18T22:28:51-04:00" who="http://papyri.info/users/MaxLee">Commit - added to the bibliography the principal edition and made comments on the reconstructed text by Obbink in the General Notes</change>
+          <change when="2020-06-12T10:25:29-04:00" who="http://papyri.info/users/MaxLee">Commit - I cleaned up the text and fixed the errors and broken Leiden errors</change>
+          <change when="2020-06-12T10:25:29-04:00" who="http://papyri.info/users/MaxLee">Commit - I cleaned up the text and fixed the errors and broken Leiden errors</change>
+          <change when="2014-03-06" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Max Lee. Revision by Holger Essler as part of the Project <ref target="http://http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="F" subtype="fragment" type="textpart" corresp="#FR1177">
+<ab>
+<lb n="1"/><gap reason="lost" quantity="4" unit="character" precision="low"/>οεισ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="4" unit="character" precision="low"/><supplied reason="lost">Νέ</supplied>
+<lb n="2" break="no"/><supplied reason="lost">με</supplied>σιν τ’ ὁ τὰ Κύ<supplied reason="lost">πρια</supplied>
+<lb n="3"/><supplied reason="lost">γ</supplied>ράψας ὁμοιωθέ<supplied reason="lost">ν</supplied>
+<lb n="4" break="no"/><supplied reason="lost">τ</supplied>α χηνὶ κ<choice><corr>αὶ</corr><sic>ν</sic></choice> αὐτ<supplied reason="lost">ὸν</supplied> 
+<lb n="5"/><unclear>δ</unclear>ιώκειν, καὶ μιγ<choice><corr>έν</corr><sic>ό</sic></choice>ν
+<lb n="6" break="no"/><supplied reason="lost">τα</supplied>ς ὠ<unclear>ιὸ</unclear>ν τεκεῖν 
+<lb n="7"/><supplied reason="lost">ἐξ</supplied> οὗ <choice><corr>γε</corr><sic>εἰ</sic></choice>νέσθαι τὴν
+<lb n="8"/><supplied reason="lost">Ἑλ</supplied>ένην. ὡς δ<choice><corr>ὲ</corr><sic>θ</sic></choice> 
+<lb n="9"/><supplied reason="lost">Λή</supplied>δας <unclear>ἐ</unclear>ρασθεὶ<choice><corr>ς</corr><sic>o</sic></choice> <supplied reason="lost">ἐ</supplied>
+<lb n="10" break="no"/><supplied reason="lost">γ</supplied><unclear>έ</unclear>νετο κύκνο<unclear>ς</unclear>, 
+<lb n="11"/><supplied reason="lost">Εὐ</supplied>ρώπης δὲ ταῦ
+<lb n="12" break="no"/><supplied reason="lost">ρος</supplied>, Λαμίας δὲ ἔ
+<lb n="13" break="no"/><supplied reason="lost">πο</supplied>ψ, Δανάης δ<choice><corr>ὲ</corr><sic>θ</sic></choice> <choice><corr>χρ</corr><sic>φ</sic></choice><supplied reason="lost">υ</supplied>
+<lb n="14" break="no"/><supplied reason="lost">σὸ</supplied><unclear>ς</unclear> καὶ πα<choice><corr>ρ</corr><sic>τ</sic></choice>’ Ἀπο<unclear>λ</unclear><supplied reason="lost">λω</supplied>
+<lb n="15" break="no"/><supplied reason="lost">νίδηι</supplied> κ<choice><corr>α</corr><sic>δ</sic></choice>ὶ π<choice><corr>α</corr><sic>δ</sic></choice>ρ’ Εὐ<supplied reason="lost">ρι</supplied>
+<lb n="16" break="no"/><supplied reason="lost">πίδ</supplied>η<supplied reason="lost">ι</supplied> λέ<choice><corr>γ</corr><sic>τ</sic></choice>ετ<supplied reason="lost">αι</supplied>. <gap reason="lost" quantity="3" unit="character" precision="low"/>
+<lb n="17"/><gap reason="lost" quantity="2" unit="character" precision="low"/>νπα<unclear>ρ</unclear><gap reason="lost" quantity="5" unit="character" precision="low"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="previous">
+               <bibl n="1" type="edition" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83357"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Litterarische Texte mit Ausschluß der christlichen</title>
-                  <author n="1">
-                     <surname>Crönert</surname>
-                     <forename>Wilhelm</forename>
-                  </author>
-                  <date>1901</date>
-                  <!--ignore - stop-->
+                  <biblScope unit="page">109</biblScope>
                </bibl>
-               <bibl type="reference" subtype="previous">
+               <bibl n="2" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83687"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Zeus und Nemesis in der Kyprien- Die Verwandlungssage nach Pseudo-Apollodor und Philodem</title>
-                  <author n="1">
-                     <surname>Luppe</surname>
-                     <forename>Wolfgang</forename>
-                  </author>
-                  <date>1974</date>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/83746"/>
+                  <biblScope unit="page" from="184" to="185">184-185</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/83766"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1595">Philodemus<certainty cert="low" locus="value" target="#FR1177"/>
-                  </author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1595">Philodemus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/933">De pietate<certainty cert="low" locus="value" target="#FR1177"/>
-                  </title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/933">De pietate</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="http://www.chartes.it/index.php?r=document/view&amp;id=1839"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://163.1.169.40/cgi-bin/library?e=d-000-00---0PHerc--00-0-0--0prompt-10---4------0-1l--1-en-50---20-about---00031-001-1-0utfZz-8-00&amp;a=d&amp;c=PHerc&amp;cl=CL5.1.114&amp;d=HASH0142e4f2eea73a07000d3502"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

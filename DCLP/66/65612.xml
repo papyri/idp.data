@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65612" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Upz. 1 81</title>
+            <title>Nectanebo's Dream</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,16 +13,21 @@
             <idno type="LDAB">6863</idno>
             <idno type="filename">65612</idno>
             <idno type="dclp-hybrid">upz;1;81</idno>
+            <idno type="MP3">02476.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Leiden, National Museum of Antiquities P. d'Anastasi 67</idno>
-                     <idno type="invNo">Leiden, National Museum of Antiquities I 396</idno>
+                     <idno type="invNo" n="1">Leiden, National Museum of Antiquities P. d'Anastasi 67</idno>
+                     <idno type="invNo" n="2">Leiden, National Museum of Antiquities I 396</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -30,32 +35,47 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">80</width>
+                              <height unit="cm">17</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
-                           <p>papyrus roll (columns: 3, pagination: 0)</p>
+                        <layout columns="5">
+                           <p>papyrus roll (columns: 5, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Memphis (L, Egypt); written: Memphis (L, Egypt)</origPlace>
-                     <origDate when="-0150">150 v.Chr.</origDate>
+                     <origPlace>Fundort: Memphis (Memphites, Egypt) oder ; Schreibort: Memphis (Memphites, Egypt)</origPlace>
+                     <origDate when="-0150" precision="medium">ca. 150 v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="nome">L</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1344">Memphis</placeName>
+                  <provenance n="1" type="found">
+                     <p n="1" xml:id="geoCG6AI0" exclude="#geoEJICFA">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1344 https://pleiades.stoa.org/places/736963">Memphis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2714 https://pleiades.stoa.org/places/736964">Memphites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
+                     <p n="2" xml:id="geoEJICFA" exclude="#geoCG6AI0"/>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">L</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1344">Memphis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1344 https://pleiades.stoa.org/places/736963">Memphis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2714 https://pleiades.stoa.org/places/736964">Memphites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -64,50 +84,288 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>divination</term>
-               <term>incubation</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="religion">Egyptian background</term>
-               <term type="overview">Nectanebo's Dream</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="religion">Egyptian background</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">prose</term>
+               <term n="5">divination</term>
+               <term n="6">incubation</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-09-09T10:43:22-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready. Changed line numbering, added image links. Retained UPZ I 81 and the principal edition. Added a few readings from Koenen's edition in BASP 22.</change>
+          <change when="2020-09-09T10:43:21-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready. Changed line numbering, added image links. Retained UPZ I 81 and the principal edition. Added a few readings from Koenen's edition in BASP 22.</change>
+          <change when="2020-09-09T06:46:27-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2020-09-09T06:46:27-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2020-08-27T08:02:34-04:00"
+                 who="http://papyri.info/users/Gr%C3%A9taK%C3%A1das">Submit - I entered the text and metadata from the printed edition by Koenen (BASP 22, 1985, 176-183) during and after the Digital Papyrology Webinar, SS2020.</change>
+          <change when="2020-08-27T08:02:34-04:00"
+                 who="http://papyri.info/users/Gr%C3%A9taK%C3%A1das">Submit - I entered the text and metadata from the printed edition by Koenen (BASP 22, 1985, 176-183) during and after the Digital Papyrology Webinar, SS2020.</change>
+          <change when="2020-07-17T10:57:02-04:00"
+                 who="http://papyri.info/users/Gr%C3%A9taK%C3%A1das">General - </change>
+          <change when="2020-07-17T10:57:02-04:00"
+                 who="http://papyri.info/users/Gr%C3%A9taK%C3%A1das">General - </change>
+          <change when="2020-07-17T10:56:58-04:00"
+                 who="http://papyri.info/users/Gr%C3%A9taK%C3%A1das">General - </change>
+          <change when="2020-07-17T10:56:58-04:00"
+                 who="http://papyri.info/users/Gr%C3%A9taK%C3%A1das">General - </change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>The text presented here follows that of UPZ I 81 in line numbering. I (jcowey) felt that this avoids the complications that might follow if the continuous line numbering used by Koenen and López Martínez (different in each case) had been used. The six lines preceding Πετήσιος in line 6 of column 1 have been added. They are clear on the image and were included by María Paz López Martínez in her edition.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart"><ab> 
+    <lb n="1"/><gap reason="ellipsis" quantity="4" unit="line"><desc>non transcribed</desc></gap>
+
+    <lb n="5"/><g type="check"/> <gap reason="ellipsis" quantity="1" unit="line"><desc>non transcribed</desc></gap>
+
+    <lb n="6" xml:id="div1-lb3"/> <gap reason="ellipsis" quantity="1" unit="line"><desc>non transcribed</desc></gap>
+
+    <lb n="7" xml:id="div1-lb4"/><g type="check"/> <gap reason="ellipsis" quantity="1" unit="line"><desc>non transcribed</desc></gap>
+<milestone rend="paragraphos" unit="undefined"/> 
+    <lb n="8"/>Πετήσιος
+
+    <lb n="9"/><choice><reg>ἱερογλύφου</reg><orig>ἱερωγλύφου</orig></choice>
+
+    <lb n="10"/>πρὸς <choice><reg>Νεκτοναβὼν</reg><orig>Νεκτοναβὼι</orig></choice>
+
+    <lb n="11"/>τὸν βασιλέα
+
+    <lb n="12"/>Πε<unclear>τε</unclear>ε<unclear>ισ</unclear>ηη
+</ab></div> 
+<div n="ii" subtype="column" type="textpart"><ab>
+    <lb n="1"/>ἔτους <num value="16"><hi rend="supraline">ις</hi></num> Φαρμοῦθι <num value="21"><hi rend="supraline">κα</hi></num> εἰ τὴν <num value="22"><hi rend="supraline">κβ</hi></num>, <gap reason="lost" quantity="5" unit="character"/>
+
+    <lb n="2"/>κατὰ θεὸν δὲ <choice><reg>διχομηνίαι</reg><orig>διαδεχομενίαν</orig></choice>, <choice><reg>Νεκτροναβὼ</reg><orig>Νεκτροναβὼς</orig></choice>
+
+    <lb n="3"/>τοῦ βασιλέως καταγινομένου ἐ<supplied reason="omitted">μ</supplied> Μέμφει καὶ θυσίαν
+
+    <lb n="4"/>ποτὲ συντελεσαμένου καὶ ἀξιώσαντος τοὺς
+
+    <lb n="5"/>θεοὺς δηλῶσαι αὐτῶι τὰ ἐνεστηκότα ἔδοξεν
+
+    <lb n="6"/>κατ' ἐνύπν<supplied reason="omitted">ι</supplied>ον πλοῖον  παπύρινον ὃ καλεῖται
+
+    <lb n="7"/><choice><reg>Αἰγυπτιστὶ</reg><orig>Αἰγυπτιστεὶ</orig></choice> Ῥω<supplied reason="omitted">μ</supplied>ψ προσορμῆσαι εἰς Μέμφιν, 
+
+    <lb n="8"/>ἐφ' οὗ ἦν θρόνος μέγας· ἐπί τε τούτου καθῆσθαι
+
+    <lb n="9"/>τὴν <choice><reg>μεγαλόδοξον</reg><orig>μεγαλώδοξον</orig></choice> εὐεργέτειαν, καρπῶν
+
+    <lb n="10"/><choice><corr cert="low">εὐρέτριαν</corr><sic>εὐεργέτειαν</sic></choice> καὶ θεῶν <choice><reg>ἄνασσαν</reg><orig>ἄνασον</orig></choice> Ἶσιν· καὶ τοὺς 
+
+    <lb n="11"/>ἐν <choice><reg>Αἰγύπτῳ</reg><orig>Ἀγύπτῳ</orig></choice> θεοὺς πάντας <choice><reg>παρεστάναι</reg><orig>παραστάναι</orig></choice> αὐτῇ
+
+    <lb n="12"/>ἐγ <choice><reg>δεξιῶν</reg><orig>δεξιο̃ν</orig></choice> καὶ <choice><reg>εὐωνύμων</reg><orig>εὐωμένωι</orig></choice> αὐτῆς· ἕνα δὲ
+
+    <lb n="13"/>προελθόντα εἰς τὸ μέσον, οὗ <choice><reg>ὑπελάμβανεν</reg><orig>ὑπελάμβανον</orig></choice> εἶναι
+<milestone rend="paragraphos" unit="undefined"/>
+    <lb n="14" xml:id="div2-lb14"/>τὸ μέγεθος πηχῶν <add place="above">ου ου πηλουπητ<gap reason="illegible" quantity="2" unit="character"/></add> εἴκοσι ἑνός, τὸν προσαγορευ
+
+    <lb n="15" break="no"/>όμενον <choice><reg>Αἰγυπτιστὶ</reg><orig>Αἰγυπτιστεὶ</orig></choice> <choice><reg>Ὀνοῦριν</reg><orig>Ὀνοῦρει</orig></choice>, <choice><reg>Ἑλληνιστὶ</reg><orig>Ἑλληνιστεὶ</orig></choice> δὲ
+
+    <lb n="16"/><choice><reg>Ἄρην</reg><orig>Ἄρης</orig></choice>, πεσόντα ἐπὶ κοιλίαν <choice><reg>λέγειν</reg><orig>λέγιν</orig></choice> τάδε· 
+
+    <lb n="17"/><q> ἐλθέ μοι θεὰ θεῶν, κράτος ἔχουσα <choice><reg>μέ
+
+    <lb n="18" break="no"/>γιστον</reg><orig>μέ<lb n="18" break="no"/><del rend="erasure">γιτον</del></orig></choice> καὶ τῶν ἐν τῷ κόσμωι ἄρχουσα
+
+    <lb n="19"/>καὶ <choice><reg>σώζουσα</reg><orig>ζώζουσα</orig></choice> θεοὺς <choice><reg>πάντας</reg><orig>πάντες</orig></choice>, <choice><reg>Ἶσι</reg><orig>Ἶσιν</orig></choice>, καὶ <choice><reg>ἵλεως</reg><orig>εἵλεως</orig></choice>
+
+    <lb n="20"/>γινομένη<surplus>ς</surplus> ἐπάκουσόν <choice><reg>μου</reg><orig>μοι</orig></choice>. <choice><reg>καθότι</reg><orig>καθότει</orig></choice> προσέταξας,
+
+    <lb n="21" xml:id="div2-lb22"/>διατετήρηκα τὴν χώραν ἀμέμπτως· </q>
+</ab></div>
+<div n="iii" subtype="column" type="textpart"><ab>
+    <lb n="1"/><q> καὶ ἕως τοῦ νῦν ἐμοῦ τὴν πᾶσαν
+
+    <lb n="2"/>ἐπιμέλειαν πεποιημένου <choice><reg>Νεκτον
+
+    <lb n="3" break="no"/>αβῶ</reg><orig>Νεκτον<lb n="3" break="no"/>αβὼι</orig></choice> τοῦ <app type="editorial"><lem resp="Clarysse">βασιλέως<surplus>ς</surplus> ἅμ' αὐτὸς</lem><rdg resp="Wilcken">βασιλέως Σαμαῦτος</rdg></app> ὑπὸ σοῦ 
+
+    <lb n="4"/><choice><reg>κατασταθεὶς</reg><orig>κατασταθὶς</orig></choice> ἐπὶ<surplus>ς</surplus> τῆϲ ἀρχῆς ἠμέληκεν
+
+    <lb n="5"/>τοῦ ἐμοῦ ἱεροῦ καὶ τοῖς ἐμοῖς <choice><reg>προστάγ
+
+    <lb n="6" break="no" xml:id="div3-lb7"/>μασιν</reg><orig>προσ<unclear>σ</unclear>τάγ<lb n="6" break="no"/>γμασιν</orig></choice> ἀντιπέπτωκεν. ἐκτὸς τοῦ
+
+    <lb n="7"/>ἑαυτοῦ ἱεροῦ <choice><reg>εἰμι</reg><orig>εἰμει</orig></choice> καὶ τὰ ἐν τῷ ἀδύτωι <supplied reason="omitted">τῶι καλουμένωι Φέρσωι</supplied>
+
+    <lb n="8"/><choice><reg>ἡμιτέλεστά</reg><orig>ἱμιτέλεστά</orig></choice> <choice><reg>ἐστιν</reg><orig>ἐστειν</orig></choice> διὰ τὴν τοῦ <choice><reg>προεσ
+
+    <lb n="9" break="no"/>τῶτος</reg><orig>πρωεσ<lb n="9" break="no" xml:id="div3-lb12"/>τῶτος</orig></choice> κακίαν. </q> τὴν δὲ τῶν θεῶν 
+
+    <lb n="10"/><choice><reg>ἄνασσαν</reg><orig>ἄνασσον</orig></choice> ἀκούσ<supplied reason="omitted">ασ</supplied>αν τὰ <choice><reg>προδεδηλωμέν<supplied reason="lost">α</supplied></reg><orig>προδεδηλομέν<supplied reason="lost">α</supplied></orig></choice>
+
+    <lb n="11"/>μηθὲν ἀποκριθῆναι. <choice><reg>ἰδὼν</reg><orig>εἰδὼν</orig></choice> τὸν <choice><reg>ὄνειρον</reg><orig>ὄνιρον</orig></choice> 
+
+    <lb n="12"/>διεγέρθη
+
+    <lb n="13"/>καὶ προσέταξεν κατὰ <choice><reg>σπουδὴν</reg><orig>σποδὴν</orig></choice> <choice><reg>ἀποστεῖλαι</reg><orig>ἀποστῖλαι</orig></choice>
+
+    <lb n="14"/><add place="above"><del rend="erasure">τὴν μεσόγεον</del></add> εἰς Σεβεννῦτον <add place="above">τὴν μεσόγεον</add> ἐπὶ τὸν <choice><reg>ἀρχιερέα</reg><orig>ἀρχιερῆα</orig></choice> καὶ
+
+    <lb n="15"/>τὸν προφήτην τοῦ Ὀνούριος. παραγενο
+
+    <lb n="16" break="no"/>μένων δὲ αὐτῶν εἰς τὴν αὐλήν,
+
+    <lb n="17"/>ἐπυνθάνετο ὁ βασιλεύς,
+
+    <lb n="18"/>τίνα ἐστὶν τὰ <choice><reg>ἐνλείποντα</reg><orig>ἐνλίποντα</orig></choice> ἔργα ἐν τῷ
+
+    <lb n="19"/>ἀδύτωι τῶι καλουμένωι Φέρσωι. 
+
+    <lb n="20"/>τῶν δὲ φαμένων· <q> τέλος ἔχει πάντα παρὲξ
+
+    <lb n="21"/>τῆς ἐπιγραφῆς τῶν <app type="editorial"><lem><choice><reg>ἐνκολαπτομένων</reg><orig>ἐνκολαπτωμένον</orig></choice></lem><rdg resp="Wilcken">ἐνκολλαπτωμένον</rdg></app>
+
+    <lb n="22"/>ἱερῶν γραμμάτων ἐν τοῖς λιθικοῖς ἔργοις, </q>
+</ab></div>
+<div n="iv" subtype="column" type="textpart"><ab>
+    <lb n="1"/>προσέταξεν κατὰ σπουδὴν <choice><reg>γράψαι</reg><orig>γράψας</orig></choice> εἰς τὰ λόγι<surplus>σ</surplus>μα
+
+    <lb n="2"/>ἱερὰ τὰ κατ' <choice><reg>Αἴγυπτον</reg><orig>Ἄγυπτον</orig></choice> ἐπὶ τοὺς ἱερογλύφους.
+
+    <lb n="3"/>παραγενομένων δ' αὐτῶν κατὰ τὸ προστεταγμέ
+
+    <lb n="4" break="no"/>νον, ἐπυνθάνετο ὁ βασιλεύς, τίς <choice><reg>ἐστιν</reg><orig>ἐστειν</orig></choice> ἐν αὐτοῖς
+
+    <lb n="5"/>εὐφυέστατος ὃς δυνήσεται ἐν τάχει ἐπιτελέ
+
+    <lb n="6" break="no"/>σαι τὰ <choice><reg>ἐνλείποντα</reg><orig>ἐνλίποντα</orig></choice> ἔργα ἐν τῷ ἀδύτωι τῷ
+
+    <lb n="7"/>καλουμένῳ <gap reason="lost" quantity="2" unit="character"/> Φέρσωι <gap reason="lost" quantity="3" unit="character"/>. τούτων <app type="editorial"><lem>διη
+<milestone rend="paragraphos" unit="undefined"/>
+    <lb n="8" break="no"/>ρηθέντων</lem><rdg resp="Koenen">διε<lb n="8" break="no"/>ρωτηθέντων</rdg><rdg resp="Wilamowitz, Wilcken">δὲ <lb n="8" break="no"/> ῥηθέντων</rdg></app> <app type="alternative"><lem><supplied reason="omitted">εἷ</supplied>ς <supplied reason="omitted">τῶ</supplied>ν</lem><rdg>ὁ ἐ<supplied reason="omitted">λθὼ</supplied>ν</rdg></app> ἐξ Ἀφροδίτης πόλεως τοῦ
+
+    <lb n="9"/><choice><reg>Ἀφροδιτοπολίτου</reg><orig>Ἀφορδιτοπολίτου</orig></choice> <choice><reg>ὧι ὄνομα</reg><orig>ὁ̃ι ὤνομα</orig></choice> Πετῆσι<surplus>ο</surplus>ς,
+
+    <lb n="10"/>πατρὸς δὲ <choice><reg>Ἑργέως</reg><orig>Ἐργῆος</orig></choice>, καταστὰς ἔφη δύνασθαι
+
+    <lb n="11"/>τὰ ἔργα πάντα <choice><reg>ἐπιτελέσειν</reg><orig>ἐπιτελέσιν</orig></choice> ἐν <choice><reg>ὀλίγαις</reg><orig>ηλι</orig></choice> ἡμέραι<supplied reason="omitted">ς</supplied>.
+
+    <lb n="12"/>ὁμοίως δὲ καὶ τῶν ἄλλων ἐπυνθάνετο
+
+    <lb n="13"/>ὁ βασιλεύς. οἱ δὲ ἔφασαν ἀληθῆ λέγειν <supplied reason="omitted">αὐτὸν</supplied> καὶ μὴ
+
+    <lb n="14"/><supplied reason="lost">εἶ</supplied>ναι ἐν τῇ χώραι τοιοῦτον παρευρέσει
+
+    <lb n="15"/><choice><reg>ᾑτινιοῦν</reg><orig>ἡτινειοῦν</orig></choice> <gap reason="lost" quantity="4" unit="character"/>. διότι τὰ <choice><reg>προδεδηλωμέ
+
+    <lb n="16" break="no"/>να</reg><orig>προδεδηλομέ<lb n="16" break="no"/>να</orig></choice> ἔργα τάξας αὐτῷ <subst><add place="inline">μισθοὺς</add><del rend="corrected">εισθους</del></subst> <subst><add place="inline">μεγάλους</add><del rend="corrected">μεαγλους</del></subst> <supplied reason="omitted">ἔδωκεν</supplied> ἅμα
+
+    <lb n="17"/><choice><reg>τε</reg><orig>το</orig></choice> παρεκάλεσεν αὐτὸν <choice><reg>ἵνα</reg><orig>εἵνα</orig></choice> ἐν <choice><reg>ὀλίγαις</reg><orig>ὀλίαις</orig></choice> ἡμέραις
+
+    <lb n="18"/><choice><reg>ἐγδιώξῃ</reg><orig>ἐγδιόξῃ</orig></choice> τὸ ἔργον καθάπερ καὶ αὐτὸς ἔ<supplied reason="omitted">φη ἐ</supplied>πιτε
+
+    <lb n="19" break="no"/>λε<supplied reason="lost">ῖ</supplied>ν διὰ τῆν τοῦ θεοῦ <choice><reg>βούλησιν</reg><orig>μβούλησιν</orig></choice>. ὁ δὲ Πετῆσι<surplus>ο</surplus>ς
+
+    <lb n="20"/>κέρματα λαβὼν πολλὰ ἀπῆλθεν εἰς Σεβεννῦτον
+
+    <lb n="21"/>καὶ ἔδοξεν αὐτῷ <choice><reg>φύσει</reg><orig>φύσι</orig></choice> ὄντι οἰνοπότῃ
+
+    <lb n="22"/>ῥαθυμῆσαι πρὶν ἢ ἅψασθαι τοῦ ἔργου.
+</ab></div>
+<div n="v" subtype="column" type="textpart"><ab>
+    <lb n="1"/>καὶ δὴ συνβαίνει αὐτῷ <choice><reg>περιπατοῦντι</reg><orig>περιπαντοῦντει</orig></choice>
+
+    <lb n="2"/>κατὰ τὸ πρὸς νότον μέρος τοῦ ἱεροῦ <choice><reg>κατανοῆσαι</reg><orig>κατανωῆσαι</orig></choice>
+
+    <lb n="3"/><app type="editorial"><lem resp="Clarysse">Ἁθύρεψε</lem><rdg resp="Wilcken"><choice><reg>μυρεψοῦ</reg><orig>μυρεψε</orig></choice></rdg><rdg resp="Leemans">Μυρεψε</rdg></app> θυγατέρα ἥτις ἦν καλλίστη τῶν <choice><reg>εἴδ<supplied reason="lost">ε</supplied>ι</reg><orig>ἴδ<supplied reason="lost">ε</supplied>ι</orig></choice>
+
+    <lb n="4" xml:id="div5-lb4"/><unclear>κα</unclear>τ' <choice><reg>ἐκεῖνον</reg><orig>ἐκῖνον</orig></choice> τὸν <supplied reason="omitted">τόπον καλλίστων</supplied>.
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb3" xml:space="preserve">
+            <ref>6</ref>
+            <p>According to L. Koenen the preceding six lines do not belong to the text.</p>
+          </item>
+               <item corresp="#div1-lb4" xml:space="preserve">
+            <ref>7</ref>
+            <p>According to L. Koenen the scribe left a space of one line and "playfully repeated the name of the hieroglyphist".</p>
+          </item>
+               <item corresp="#div2-lb14" xml:space="preserve">
+            <ref>14</ref>
+            <p>Above line 14 letters unrelated to the main text, perhaps by a second hand.</p>
+          </item>
+               <item corresp="#div2-lb22" xml:space="preserve">
+            <ref>21</ref>
+            <p>The quotation continues uninterruptidely until line 22, col. iii.</p>
+          </item>
+               <item corresp="#div3-lb7" xml:space="preserve">
+            <ref>6</ref>
+            <p>After τῷ ἀδύτωι Wilcken supplemented τῷ καλουμένῳ Φέρσῳ, in accordance with col. iii line 19 and col. iv lines 6-7.</p>
+          </item>
+               <item corresp="#div3-lb12" xml:space="preserve">
+            <ref>9</ref>
+            <p>The rest of the line is left empty.</p>
+          </item>
+               <item corresp="#div5-lb4" xml:space="preserve">
+            <ref>4</ref>
+            <p>Drawing of a man after the end of the written text.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/15306"/>
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="page" from="21" to="27">21-27</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/57270"/>
+               </bibl>
+               <bibl n="3" type="edition" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95039"/>
                   <biblScope unit="number">81</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">UPZ</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">C.Leemans, Papyri Graeci</bibl>
-               <bibl type="printed">Boswinkel-Sijpesteijn, Greek Papyri, ostraca and mummy-labels, pl.6</bibl>
-               <bibl type="printed">M.J.Raven, Papyrus. Van Bies tot Boekrol, 1982, p.14</bibl>
-               <bibl type="printed">B. Legras, Les reclus grecs du Sarapeion, Stud. Hell. 49, 2011, p. 299</bibl>
+               <bibl type="printed" n="1">C. Leemans, Papyri Graeci</bibl>
+               <bibl type="printed" n="2">Boswinkel-Sijpesteijn, Greek Papyri, ostraca and mummy-labels, pl.6</bibl>
+               <bibl type="printed" n="3">M.J. Raven, Papyrus. Van Bies tot Boekrol, 1982, p.14</bibl>
+               <bibl type="printed" n="4">B. Legras, Les reclus grecs du Sarapeion, Stud. Hell. 49, 2011, p. 299</bibl>
+               <bibl type="online" n="1">
+                  <ptr target="https://www.rmo.nl/en/collection/search-collection/collection-piece/?object=176231"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="https://www.rmo.nl/en/collection/search-collection/collection-piece/?object=176232"/>
+               </bibl>
+               <bibl type="online" n="3">
+                  <ptr target="https://www.rmo.nl/en/collection/search-collection/collection-piece/?object=22591"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

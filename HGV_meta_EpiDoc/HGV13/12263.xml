@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12263">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the Epistrategus concerning Assault</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0198-08-26">26. Aug. 198</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,21 +65,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Gemellus an den Epistrategen Calpurnius Concessus</term>
-               <term>Gewalt durch einen Gehilfen (Steuer-)</term>
-               <term>der ihn trotz Blindheit zur Arbeit heranziehen wollte</term>
-               <term>Kopie der früheren Eingabe an den Präfekten</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Gemellus an den Epistrategen Calpurnius Concessus</term>
+               <term n="3">Gewalt durch einen Gehilfen (Steuer-)</term>
+               <term n="4">der ihn trotz Blindheit zur Arbeit heranziehen wollte</term>
+               <term n="5">Kopie der früheren Eingabe an den Präfekten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-09T16:08:32-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Fine</change>
+         <change when="2021-01-09T07:26:27-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T12:23:51-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - l. 4: added missing accent on ἀντίγραφον.&#xD;
+Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1992-07-07">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -95,8 +104,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Mich.</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">425</biblScope>
+                  <biblScope n="1" type="volume">6</biblScope>
+                  <biblScope n="2" type="numbers">425</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -104,7 +113,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">214</biblScope>
                </bibl>
             </listBibl>
@@ -114,16 +123,17 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://quod.lib.umich.edu/a/apis/x-1724"/>
-                  <head>Abbildung im Internet</head>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Mich.&amp;vVol=6&amp;vNum=425"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 27–29 s. R. Mascellari, ZPE 200 (2016) 376.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

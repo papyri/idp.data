@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64265" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Bas. 1</title>
+            <title>Literary text with medical content</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -12,21 +12,29 @@
             <idno type="TM">64265</idno>
             <idno type="LDAB">5485</idno>
             <idno type="filename">64265</idno>
-            <idno type="dclp-hybrid">p.bas;;1</idno>
+            <idno type="dclp-hybrid">p.bas;2;3</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Basel, Universitätsbibliothek P. number unknown (P. Grynaeus)</idno>
+                  <idno type="invNo">Basel, Universitätsbibliothek, P.Bas. I 1A</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">8.8</width>
+                              <height unit="cm">11.2</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,17 +46,14 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="0200" notAfter="0399">200 - 399</origDate>
+                     <origPlace>Ravenna ?</origPlace>
+                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
                   </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                     </p>
-                  </provenance>
-                  <provenance type="composed">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                  <provenance type="located">
+                     <p xml:id="geoJ9A9DI">
+                        <placeName type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/3192 https://pleiades.stoa.org/places/393480">Ravenna</placeName>
                      </p>
                   </provenance>
                </history>
@@ -57,39 +62,184 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>unidentified</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">Unidentified</term>
+               <term n="1">unidentified</term>
+               <term n="2">medicine</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-03-03T16:30:51-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+          <change when="2021-03-03T16:30:51-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+          <change when="2019-06-24T06:37:15-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2019-06-24T06:37:15-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+          <change when="2019-06-23T13:17:16-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">General - Please do NOT finalize these texts. They are awaiting the publication of the printed volume at the end of 2019.</change>
+          <change when="2019-06-23T13:17:16-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">General - Please do NOT finalize these texts. They are awaiting the publication of the printed volume at the end of 2019.</change>
+          <change when="2019-06-21T11:25:30-04:00"
+                 who="http://papyri.info/editor/users/pedrogbhuarte">Submit - Entered text and metadata according to the new P.Bas. 2 edition. &#xD;
+&#xD;
+Encountered three problems:&#xD;
+&#xD;
+1) I could not encode properly an uncertain diaeresis in Recto Line 13. (App: "13 ϋ? pap.")&#xD;
+&#xD;
+2) I did not find the way to encode 3 scribal corrections in which it is not certain out of what they were corrected. In the Apparatus should appear: &#xD;
+- RECTO: 4 τοιαυτη: υτ ex corr. || 8 γαρ: ρ ex corr.&#xD;
+- VERSO: 14 ξ ex corr.&#xD;
+&#xD;
+3) I had a problem with another scribal correction in the 21st line of the Recto. It should appear in the Apparatus: "21 κ ex γ (?) corr." but it appears "\ε/ίκνυσινκ corr γ(?)". There is probably a problem with the slashes (\ /).</change>
+          <change when="2019-06-21T11:25:30-04:00"
+                 who="http://papyri.info/editor/users/pedrogbhuarte">Submit - Entered text and metadata according to the new P.Bas. 2 edition. &#xD;
+&#xD;
+Encountered three problems:&#xD;
+&#xD;
+1) I could not encode properly an uncertain diaeresis in Recto Line 13. (App: "13 ϋ? pap.")&#xD;
+&#xD;
+2) I did not find the way to encode 3 scribal corrections in which it is not certain out of what they were corrected. In the Apparatus should appear: &#xD;
+- RECTO: 4 τοιαυτη: υτ ex corr. || 8 γαρ: ρ ex corr.&#xD;
+- VERSO: 14 ξ ex corr.&#xD;
+&#xD;
+3) I had a problem with another scribal correction in the 21st line of the Recto. It should appear in the Apparatus: "21 κ ex γ (?) corr." but it appears "\ε/ίκνυσινκ corr γ(?)". There is probably a problem with the slashes (\ /).</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+
+    <lb n="1"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>σου</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="2"/><gap reason="lost" quantity="1" unit="character"/>ερα<unclear>ς</unclear> <unclear>π</unclear>ιστώσασ<unclear>θα</unclear><supplied reason="lost">ι</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="3"/>νδ<unclear>ε</unclear> <unclear>τὸ</unclear>ν λόγον κα<unclear>ὶ</unclear> <unclear>τ</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="4"/><gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="1" unit="character"/> <unclear>ἡ</unclear> <unclear>βλ</unclear>άβη <subst><add place="inline">το<unclear>ιαύ</unclear>τη</add><del rend="corrected">το<unclear>ια</unclear><gap reason="illegible" quantity="2" unit="character"/>η</del></subst> ἐσ<unclear>τί</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="5"/>φέρει<unclear>ν</unclear> ἀνάγνωσιν ἣν <unclear>τι</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="6"/><unclear>ε</unclear>ὐθ<unclear>έ</unclear>ω<supplied reason="lost">ς</supplied> ἔσ<add place="above"><unclear>τ</unclear></add>ι<unclear>ν</unclear> δὲ καὶ <unclear>ἡ</unclear> <unclear>ἡ</unclear>συ<unclear>χ</unclear><supplied reason="lost">ία</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="7"/><unclear>κ</unclear>οιη<unclear>ς</unclear> ὠφελείας πιστο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="8"/><unclear>τ</unclear>ήν τ<unclear>ε</unclear> <subst><add place="inline">γὰρ</add><del rend="corrected">γα<gap reason="illegible" quantity="1" unit="character"/></del></subst> ἀνάπαυλαν τ<unclear>ω</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="9"/><unclear>χα</unclear>ι καθ’ ὁρ<unclear>μ</unclear>ὴν κ<del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/></del>ινησ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="10"/><unclear>π</unclear>αρέχεται καὶ ουδ<unclear>ην</unclear>τι<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="11"/>ραν τῶν ἀναγκαίων υ<unclear>π</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="12"/><unclear>τ</unclear>ερο<unclear>ν</unclear> <unclear>δεῖν</unclear> τοῦτο μέρος <unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="13" xml:id="div1-lb14"/><unclear>ὕπ</unclear>ν<unclear>ω</unclear>ν <unclear>γ</unclear>ενέσεως η τ <unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="14"/>θερ<unclear>μ</unclear><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>μ</unclear>ε<unclear>ν</unclear><gap reason="illegible" quantity="1" unit="character"/>τε<gap reason="illegible" quantity="1" unit="character"/>νπ<unclear>ο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="15"/><unclear>ε</unclear><gap reason="illegible" quantity="6" unit="character"/>εινησ<unclear>ις</unclear> κα<unclear>ὶ</unclear> η<unclear>τ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="16"/><gap reason="lost" quantity="4" unit="character" precision="low"/> <supplied reason="lost">δ</supplied>υνάμεως <unclear>ησ</unclear>υ<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="17"/><gap reason="lost" quantity="4" unit="character" precision="low"/><unclear>ω</unclear>ς ζώοι<unclear>ς</unclear> <unclear>εδεχ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="18"/><gap reason="lost" quantity="4" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/>η <unclear>ἰ</unclear>δί<add place="above"><unclear>α</unclear></add> μαρτυρ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="19"/><gap reason="lost" quantity="4" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/>οις · ἡ δ’ <unclear>ἐ</unclear>πίνευ<unclear>σι</unclear><supplied reason="lost">ς</supplied><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="20"/><gap reason="lost" quantity="4" unit="character" precision="low"/><unclear>α</unclear>βαση πρὸς του<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="21"/><gap reason="lost" quantity="4" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ς</unclear> <subst><add place="inline">ἐπιδ<add place="above"><unclear>ε</unclear></add><unclear>ί</unclear>κνυσιν</add><del rend="corrected">ἐπιδ<add place="above"><unclear>ε</unclear></add><unclear>ίγ</unclear>νυσιν</del></subst> <unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="22"/><gap reason="illegible" quantity="1" unit="line"/>
+
+    <lb n="23"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> 
+<div n="v" type="textpart"><ab> 
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+
+    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="5" unit="character"/><gap reason="lost" quantity="1" unit="character"/><unclear>μο</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><unclear>η</unclear>ε<unclear>ι</unclear> <unclear>γ</unclear>ί<unclear>γ</unclear>νεται κ<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="3"/><supplied reason="lost">Ἱπποκράτ</supplied>ης ἐν Ἀφορισμ<unclear>οῖς</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> γὰρ διὰ <subst><add place="inline">πλειόνων</add><del rend="corrected">πλει<unclear>β</unclear>όνων</del></subst> <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ε<unclear>π</unclear>ερ<gap reason="illegible" quantity="2" unit="character"/><add place="above"><unclear>ο</unclear>υ</add>τουπ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="6"/><supplied reason="lost">τ</supplied><unclear>ῶ</unclear>ν δ’ <unclear>ἰα</unclear>τ<unclear>ρ</unclear>ῶν καὶ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>κα</unclear><supplied reason="lost">ὶ</supplied> <unclear>παλμ</unclear>οῦ <unclear>κα</unclear><supplied reason="lost">ὶ</supplied> τρόμου <gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="8"/><unclear>μαθ</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>π</unclear>ο<unclear>δημ</unclear>ωνεντ<unclear>ω</unclear><gap reason="lost" extent="unknown" unit="character"/>
+    
+    <lb n="9"/><unclear>τ</unclear>ῆς <supplied reason="lost">ὑ</supplied>στερικῆς <del rend="erasure"><unclear>δὲ</unclear></del> ἀπνοί<unclear>α</unclear><supplied reason="lost">ς</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">με</supplied>
+
+    <lb n="10"/>-ταφέρειν ἅπαντα προσ<gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="11"/>τὰ <subst><add place="inline">δι’ ἑτέρων</add><del rend="corrected">δετέρων</del></subst> <choice><reg>ἀποδεδειγμέ<supplied reason="lost">να</supplied></reg><orig>ἀποδεδιγμ<unclear>έ</unclear><supplied reason="lost">να</supplied></orig></choice><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="12"/><unclear>μ</unclear>ιμνήσκειν ὅτι δεδ<unclear>ο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+    <lb n="13"/><unclear>τ</unclear>ινων <subst><add place="inline">ἐξ</add><del rend="corrected">ε<gap reason="illegible" quantity="1" unit="character"/></del></subst> α<unclear>ἰ</unclear>τίων τε<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb14" xml:space="preserve"><ref>13</ref> <p>Possibly a diaeresis on the initial upsilon.</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95078"/>
-                  <biblScope unit="number">1</biblScope>
-                  <biblScope unit="generic">A</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Basel</title>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="generic">A</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95467"/>
+                  <biblScope unit="number">3</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
+         <div type="bibliography" subtype="ancientEdition">
+            <listBibl>
+               <bibl type="publication" subtype="ancient"/>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Known as P. Grynaeus 1</p>
+         </div>
+         <div type="bibliography" subtype="illustrations">
+            <listBibl>
+               <bibl type="printed">P.Bas. II, p. 40</bibl>
+               <bibl type="online" n="1">
+                  <ptr target="https://papyri.uni-leipzig.de/receive/BslPapyri_schrift_00000080"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="https://papyri.uni-leipzig.de/receive/BslPapyri_text_00000060"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

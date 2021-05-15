@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4592">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Receipt for beer tax</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">4592</idno>
             <idno type="TM">4592</idno>
             <idno type="ddb-perseus-style">0135;1;138</idno>
-            <idno type="ddb-filename">p.hib.1.138</idno>
-            <idno type="ddb-hybrid">p.hib;1;138</idno>
+            <idno type="ddb-filename">zpe.186.239_1</idno>
+            <idno type="ddb-hybrid">zpe;186;239_1</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Graz</settlement>
                   </placeName>
+                  <collection>Universität</collection>
+                  <idno type="invNo">Ms. I 1932</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,22 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolites (?)</origPlace>
+                     <origPlace>Phebichis (Herakleopolites, Ägypten)</origPlace>
                      <origDate when="-0245-01-15">15. Jan. 245 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1755 https://pleiades.stoa.org/places/737005">Phebichis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="86746"/>
+                  <biblScope type="pp">239</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,29 +76,39 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Zahlung</term>
-               <term>Steuern</term>
+               <term n="1">Quittung</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Steuern</term>
+               <term n="4">Bier</term>
+               <term n="5">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-15T09:03:02-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-10-15T08:48:09-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-10-15T08:46:00-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updated the metadata to reflect ZPE edition.</change>
          <change who="HGV" when="1996-12-20">Record created</change>
          <change who="HGV" when="2010-05-15">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Descr. Griechisch - demotisch. Zur demotischen Subskription vgl. AncSoc 37, 2007, S. 89-95. Vgl. Harrauer, Paläographie, Textband, S. 194, Nr. 19. Neuedition: ZPE 186, 2013, S. 239f.</p>
+            <p>Griechisch - demotisch. Zur demotischen Subskription vgl. AncSoc 37, 2007, S. 89-95. Vgl. Harrauer, Paläographie, Textband, S. 194, Nr. 19.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Hib.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">138</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">186</biblScope>
+                  <biblScope n="2" type="fascicle">(2013)</biblScope>
+                  <biblScope n="3" type="pages">S. 239</biblScope>
+                  <biblScope n="4" type="number">Nr. 1</biblScope>
                </bibl>
                <bibl>
                   <title>DAHT</title>
@@ -91,20 +116,34 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">112</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">AncSoc 37, 2007, S. 95 (Ausschnitt)</bibl>
-               <bibl type="illustration">Harrauer, Paläographie, Tafelband, Abb. 19</bibl>
+               <bibl type="illustration" n="1">AncSoc 37, 2007, S. 95 (Ausschnitt)</bibl>
+               <bibl type="illustration" n="2">Harrauer, Paläographie, Tafelband, Abb. 19</bibl>
+               <bibl type="illustration" n="3">ZPE 186 (2013), S. 240</bibl>
             </p>
          </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://sosa2.uni-graz.at/sosa/katalog/katalogisate/1932.html"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Hib. I 138</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

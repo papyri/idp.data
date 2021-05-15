@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21102">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Monatsberichte von Steuereinnehmern</title>
@@ -33,15 +33,18 @@
                   <origin>
                      <origPlace>unbekannt</origPlace>
                      <origDate notBefore="0222-05-26" notAfter="0222-06-24">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>26. Mai - 24. Juni 222 (Jahr unsicher)</origDate>
+                26. Mai - 24. Juni 222 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -56,32 +59,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Steuer</term>
-               <term>Rechenschaft</term>
-               <term>Geld</term>
-               <term>Stategos (Aur. Isidotos alias Horigenes)</term>
+               <term n="1">Bericht</term>
+               <term n="2">Steuer</term>
+               <term n="3">Rechenschaft</term>
+               <term n="4">Geld</term>
+               <term n="5">Strategos (Aur. Isidotos alias Horigenes)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-02T07:14:47-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-02T06:30:58-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Indeed</change>
+         <change when="2021-02-01T14:09:37-05:00"
+                 who="http://papyri.info/users/PeterArzt-Grabner">Submit - Inhalt: Stategos corrected to Strategos</change>
+         <change when="2021-02-01T14:09:23-05:00"
+                 who="http://papyri.info/users/PeterArzt-Grabner">Commit - Inhalt: Stategos corrected to Strategos</change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p/>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Heid.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">312</biblScope>
-                  <biblScope type="columns">Kol. II</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">312</biblScope>
+                  <biblScope n="3" type="columns">Kol. II</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,10 +102,9 @@
             <p>
                <figure>
                   <graphic url="http://www.rzuser.uni-heidelberg.de/~gv0/Papyri/P.Heid._IV/312/P.Heid._IV_312.html"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

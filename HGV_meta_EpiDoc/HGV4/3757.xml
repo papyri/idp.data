@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3757">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Account</title>
@@ -31,20 +31,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="-0094-10-27">
+                     <origPlace>Theogonis (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" notBefore="-0094-10-27">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 27. Okt. 94 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="-0061-10-18">
+                        <offset n="1" type="after">nach</offset>
+                27. Okt. 94 v.Chr. (Jahr unsicher)
+              </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" notBefore="-0061-10-18">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 18. Okt. 61 v.Chr. (Jahr unsicher)</origDate>
+                        <offset n="1" type="after">nach</offset>
+                18. Okt. 61 v.Chr. (Jahr unsicher)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741626 http://www.trismegistos.org/place/2376">Theogonis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -52,8 +57,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,21 +74,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aufstellung</term>
-               <term>verschiedene Zahlungen an Beamte</term>
+               <term n="1">Aufstellung</term>
+               <term n="2">verschiedene Zahlungen an Beamte</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-19T04:52:13-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-18T16:00:13-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-18T13:34:30-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1997-02-26">Record created</change>
          <change who="HGV" when="2010-10-26">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: nach 18. Okt. 61 v. Chr. Vgl. Kongr. XXV, S. 313-321.</p>
+            <p>Alternativdatierung: nach 18. Okt. 61 v. Chr. Vgl. Kongr. XXV, S. 313-321. Zu Z. 22, 27 und 57 s. D. Kaltsas, ZPE 200 (2016) 423, Anm. 13.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -90,74 +102,102 @@
             <note type="original" subtype="Y">Z. 4, 33: 30. Sept. 61 v. Chr.; Z. 46: 1. Okt. 61 v. Chr.; Z. 60: 3. Okt. 61 v. Chr.; Z. 69: 4. Okt. 61 v. Chr.; Z. 88: 7. Okt. 61 v. Chr.; Z. 92: 8. Okt. 61 v. Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 33</ref>
-                  <date type="mentioned" when="-0094-10-09">9. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-09">
+              9. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 33</ref>
-                  <date type="mentioned" when="-0061-09-30">30. Sept. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-09-30">
+              30. Sept. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 4</ref>
-                  <date type="mentioned" when="-0094-10-09">9. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-09">
+              9. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="4">
                   <ref>Z. 4</ref>
-                  <date type="mentioned" when="-0061-09-30">30. Sept. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-09-30">
+              30. Sept. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="5">
                   <ref>Z. 46</ref>
-                  <date type="mentioned" when="-0094-10-10">10. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-10">
+              10. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="6">
                   <ref>Z. 46</ref>
-                  <date type="mentioned" when="-0061-10-01">1. Okt. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-10-01">
+              1. Okt. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="7">
                   <ref>Z. 60</ref>
-                  <date type="mentioned" when="-0094-10-12">12. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-12">
+              12. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="8">
                   <ref>Z. 60</ref>
-                  <date type="mentioned" when="-0061-10-03">3. Okt. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-10-03">
+              3. Okt. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="9">
                   <ref>Z. 69</ref>
-                  <date type="mentioned" when="-0094-10-13">13. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-13">
+              13. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="10">
                   <ref>Z. 69</ref>
-                  <date type="mentioned" when="-0061-10-04">4. Okt. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-10-04">
+              4. Okt. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="11">
                   <ref>Z. 88</ref>
-                  <date type="mentioned" when="-0094-10-16">16. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-16">
+              16. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="12">
                   <ref>Z. 88</ref>
-                  <date type="mentioned" when="-0061-10-07">7. Okt. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-10-07">
+              7. Okt. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="13">
                   <ref>Z. 92</ref>
-                  <date type="mentioned" when="-0094-10-17">17. Okt. 94 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0094-10-17">
+              17. Okt. 94 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="14">
                   <ref>Z. 92</ref>
-                  <date type="mentioned" when="-0061-10-08">8. Okt. 61 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0061-10-08">
+              8. Okt. 61 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>
@@ -166,8 +206,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">121</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">121</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -175,7 +215,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">354</biblScope>
                </bibl>
             </listBibl>
@@ -185,16 +225,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
-                  <graphic url="http://wwwapp.cc.columbia.edu/ldpd/app/apis/item?mode=item&amp;key=berkeley.apis.869"/>
-                  <head>Abbildung im Internet</head>
+               <figure n="1">
+                  <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=869&amp;item=1"/>
                </figure>
-               <figure>
-                  <graphic url="http://wwwapp.cc.columbia.edu/ldpd/app/apis/item?mode=item&amp;key=berkeley.apis.870"/>
-                  <head>Abbildung im Internet</head>
+               <figure n="2">
+                  <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=870&amp;item=1"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

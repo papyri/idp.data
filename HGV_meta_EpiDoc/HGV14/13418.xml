@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13418">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Résumés de contrats</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="0117" notAfter="0138">117 - 138</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,28 +62,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Verträge</term>
-               <term>Amme</term>
-               <term>Sklave</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Verträge</term>
+               <term n="2">Amme</term>
+               <term n="3">Sklave</term>
+               <term n="4">Darlehen</term>
+               <term n="5">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-10T13:08:35-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-09T15:11:58-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-09T11:30:14-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’. </change>
          <change who="HGV" when="1991-07-12">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Strasb.</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">646</biblScope>
+                  <biblScope n="1" type="volume">7</biblScope>
+                  <biblScope n="2" type="numbers">646</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -90,7 +97,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">427/428</biblScope>
                </bibl>
             </listBibl>
@@ -106,6 +113,9 @@
                <bibl type="publication" subtype="other">CPGr I 29</bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 3 vgl. R.W. Daniel, ZPE 200 (2016) 395.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

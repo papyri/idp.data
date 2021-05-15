@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23144">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Sale</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">23144</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Sackler Library</collection>
+                  <idno type="invNo">Papyrology Rooms 89 B7 / 8 (a) + 87 B7 / (c)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,11 +33,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna (?)</origPlace>
-                     <origDate notBefore="0254" notAfter="0260">254 - 260</origDate>
+                     <origPlace>Oasis Magna ?</origPlace>
+                     <origDate notBefore="0254-04-15" notAfter="0256">15. Apr. 254 - 256</origDate>
                   </origin>
                   <provenance type="located">
-                     <p>
+                     <p xml:id="geoHDFG5">
                         <placeName type="ancient"
                                    cert="low"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,12 +70,20 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-06-12T15:31:32-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-12T14:16:37-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - See Sampson's comments</change>
+         <change when="2020-06-12T11:23:02-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept - This is fine. Date is mentioned in lines 10-12. Add ref to BL V 93; specify P.Nekr Plate VI under print illustrations.</change>
+         <change when="2020-06-12T10:03:17-04:00"
+                 who="http://papyri.info/users/FernandaMaffei">Submit - Updated metadata following republication in P.Nekr., entered from ed. pr. as part of Heidelberg’s Digital Papyrology Webinar, summer 2020</change>
          <change who="HGV" when="1995-05-29">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zum Ort vgl. CE 39, 1964, S. 157. Tag: 15. Apr.</p>
@@ -80,15 +91,37 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">4657</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">14</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Plate VI</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">SB 1, 4656</bibl>
+               <bibl type="publication" subtype="other" n="2">SB 1, 4657</bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations">P. Nekr. S. 55</bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="mentionedDates"/>
+         <div type="bibliography" subtype="corrections">
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">V</biblScope>
+                  <biblScope type="pages">93</biblScope>
+               </bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

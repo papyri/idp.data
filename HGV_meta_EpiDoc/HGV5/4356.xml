@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4356">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Brief des Alexibios an Nechthenibis</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kaminoi (Arsinoites)</origPlace>
+                     <origPlace>Kaminoi (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0225" notAfter="-0201" precision="low">Ende III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/741488 http://www.trismegistos.org/place/994">Kaminoi</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,20 +65,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief</term>
-               <term>Alexibios an Nechthenibis</term>
-               <term>mit der Abschrift eines Briefes</term>
-               <term>Alexibios an Aetos</term>
+               <term n="1">Brief</term>
+               <term n="2">Alexibios an Nechthenibis</term>
+               <term n="3">mit der Abschrift eines Briefes</term>
+               <term n="4">Alexibios an Aetos</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-16T09:25:08-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-16T08:48:01-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-06T06:28:11-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - image ajoutée</change>
          <change who="HGV" when="1998-01-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Nechthenibis - Archiv.</p>
@@ -85,8 +93,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">14404</biblScope>
+                  <biblScope n="1" type="volume">20</biblScope>
+                  <biblScope n="2" type="numbers">14404</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,7 +102,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">230</biblScope>
                </bibl>
             </listBibl>
@@ -110,6 +118,13 @@
                <bibl type="publication" subtype="other">SB XII 10849 und 10870</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/SB%2014404.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

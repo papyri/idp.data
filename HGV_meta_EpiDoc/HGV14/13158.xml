@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13158">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an eine Behörde</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theadelphia (Arsinoites)</origPlace>
+                     <origPlace>Theadelphia (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0207-12-31">31. Dez. 207</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737081 http://www.trismegistos.org/place/2349">Theadelphia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,43 +65,56 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Aponios an den Dioiketen (?) Aelius Mamertinus</term>
-               <term>Aponios ist Sitologe in Theadelphia und bittet um Befreiung von der zusätzlichen Liturgie als Dorfschreiber im benachbarten Euhemeria</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Aponios an den Dioiketen (?) Aelius Mamertinus</term>
+               <term n="3">Aponios ist Sitologe in Theadelphia und bittet um Befreiung von der zusätzlichen Liturgie als Dorfschreiber im benachbarten Euhemeria</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-09T07:29:18-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-08T15:06:32-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T12:31:09-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1994-11-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: P.Strasb. V 452. Zur Datierung vgl. BL VIII, S. 414. Zu Z. 18 vgl. ZPE 146, 2004, S. 180 mit Anm. 13.</p>
+            <p>Rückseite: P.Strasb. V 452. Zur Datierung vgl. BL VIII, S. 414. Zu Z. 18 vgl. ZPE 146, 2004, S. 180 mit Anm. 13. Zu Z. 17–18 s. R. Mascellari, ZPE 200 (2016) 376.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Strasb.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">57</biblScope>
-                  <biblScope type="side">R</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">57</biblScope>
+                  <biblScope n="3" type="side">R</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/13158"/>
+               </bibl>
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">414</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">254</biblScope>
+               </bibl>
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">239</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -109,5 +124,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

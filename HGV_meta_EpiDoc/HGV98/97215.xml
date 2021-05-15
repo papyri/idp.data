@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv97215">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Reçu de taxe (en grec)</title>
@@ -9,7 +9,6 @@
          <publicationStmt>
             <idno type="filename">97215</idno>
             <idno type="TM">97215</idno>
-            <idno type="ddb-perseus-style">;;5</idno>
             <idno type="ddb-filename">p.louvre.bawit.5</idno>
             <idno type="ddb-hybrid">p.louvre.bawit;;5</idno>
          </publicationStmt>
@@ -29,16 +28,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bawit (Hermopolites)</origPlace>
+                     <origPlace>Bawit (Hermopolites, Ägypten)</origPlace>
                      <origDate when="0710-01-28">
-                        <certainty locus="value" match="../year-from-date(@when)"/>28. Jan. 710 (Jahr unsicher)</origDate>
+                28. Jan. 710 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/756663 http://www.trismegistos.org/place/2921">Bawit</placeName>
-                        <placeName type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="http://www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,26 +68,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuer (Kopfsteuer</term>
-               <term>andrismos)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer (Kopfsteuer andrismos)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-18T09:55:43-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-07-18T09:48:41-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-07-18T09:42:12-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Change ddb idnos</change>
          <change who="HGV" when="2006-07-15">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2015-02-12" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Datierung: 28.(29.) Jan., 8. Indiktion. Rückseite: P.Louvre Bawit 10.</p>
-         </div>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -93,9 +101,9 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 12</bibl>
-               <bibl type="illustration">Clédat, Le monastère et la nécropole de Baouit (MIFAO 111, 1999), S. 349</bibl>
-               <bibl type="illustration">Festschrift M. Krause, Tafel 1a</bibl>
+               <bibl type="illustration" n="1">S. 12</bibl>
+               <bibl type="illustration" n="2">Clédat, Le monastère et la nécropole de Baouit (MIFAO 111, 1999), S. 349</bibl>
+               <bibl type="illustration" n="3">Festschrift M. Krause, Tafel 1a</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -105,5 +113,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

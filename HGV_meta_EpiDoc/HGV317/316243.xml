@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv316243">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an Protarchos</title>
@@ -29,16 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tanis (Arsinoites)</origPlace>
+                     <origPlace>Tanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0189-10-23" cert="low">
-                        <offset type="after" n="1">nach</offset> 23. Okt. 189 v.Chr. (?)</origDate>
+                        <offset n="1" type="after">nach</offset>
+                23. Okt. 189 v.Chr. (?)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737069 http://www.trismegistos.org/place/2251 http://www.trismegistos.org/place/7586 http://www.trismegistos.org/place/2616">Tanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +66,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Amenneus (Bestatter) an Protarchos (Aufseher über die Chrematisten, πρὸς τῇ ἐπιμελείᾳ τῶν χρηματιστῶν)</term>
-               <term>Schilderung des Verlaufs des Rechtsstreits</term>
-               <term>Bitte um Durchsetzung einer früheren Entscheidung und weitere Hilfe</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Amenneus (Bestatter) an Protarchos (Aufseher über die Chrematisten, πρὸς τῇ ἐπιμελείᾳ τῶν χρηματιστῶν)</term>
+               <term n="3">Schilderung des Verlaufs des Rechtsstreits</term>
+               <term n="4">Bitte um Durchsetzung einer früheren Entscheidung und weitere Hilfe</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-16T12:46:09-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-04-16T08:50:56-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - The link is correct</change>
+         <change when="2021-04-16T08:11:56-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2014-02-10">Record created</change>
          <change who="HGV" when="2014-08-27">Record last modified</change>
          <change when="2014-08-29" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zu Z. 38 vgl. BASP 51, 2014, S. 247.</p>
@@ -85,18 +95,15 @@
             <note type="original">Z. 7: 204-203 v.Chr.; Z. 19: 4. Sept. 189 v.Cr.</note>
             <note type="source">HGV.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 7</ref>
-                  <date type="mentioned" notBefore="-0204" notAfter="-0203">204-203 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0204" notAfter="-0203">204 - 203 v.Chr.</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 19</ref>
-                  <date type="mentioned" when="0189-09-04">4. Sept. 189 v.Cr.</date>
+                  <date type="mentioned" when="0189-09-04">4. Sept. 189</date>
                </item>
             </list>
-         </div>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -111,6 +118,13 @@
                <bibl type="illustration">Tafel III</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm316243"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

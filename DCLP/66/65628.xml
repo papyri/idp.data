@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65628" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 65628</title>
+            <title>New Fragments of Euripidean Lyric</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -12,17 +12,22 @@
             <idno type="TM">65628</idno>
             <idno type="LDAB">6879</idno>
             <idno type="filename">65628</idno>
-            <idno type="dclp-hybrid">na;;65628</idno>
+            <idno type="dclp-hybrid">tm;;65628</idno>
+            <idno type="MP3">1937.1</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Ann Arbor, Michigan University, Library P. 3498 Vo</idno>
-                     <idno type="invNo">Ann Arbor, Michigan University, Library P. 3250 a-c Vo</idno>
+                     <idno type="invNo" n="1">Ann Arbor, Michigan University, Library P. 3498 Vo</idno>
+                     <idno type="invNo" n="2">Ann Arbor, Michigan University, Library P. 3250 a-c Vo</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -30,27 +35,31 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">26.6, 30.5 cm</width>
+                              <height unit="cm">8.7, 8.8 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="4">
                            <p>papyrus roll (columns: 4, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>semi-cursive</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="-0220" notAfter="-0150">220 - 150 v. Chr.</origDate>
+                     <origPlace>Egypt</origPlace>
+                     <origDate notBefore="-0220" notAfter="-0150">220 - 150 v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                     </p>
-                  </provenance>
-                  <provenance type="composed">
-                     <p>
+                  <provenance type="located">
+                     <p xml:id="geoEJGDFA">
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
@@ -80,31 +89,168 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>lyric</term>
-               <term>mythography</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">mythographical poem about Troy</term>
+               <term n="1" type="description">new music</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">poetry</term>
+               <term n="5">lyric</term>
+               <term n="6">mythography</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-03-21T06:47:45-04:00" who="http://papyri.info/users/simoeis">Finalized - Ready</change>
+          <change when="2020-03-21T06:47:45-04:00" who="http://papyri.info/users/simoeis">Finalized - Ready</change>
+          <change when="2020-03-21T06:44:00-04:00" who="http://papyri.info/users/simoeis">Vote - Accept-Straight-to-Finalization - Delete apis idno at finalization stage.</change>
+          <change when="2020-03-21T06:44:00-04:00" who="http://papyri.info/users/simoeis">Vote - Accept-Straight-to-Finalization - Delete apis idno at finalization stage.</change>
+          <change when="2019-12-18T11:53:26-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">General - Note for finalizer: please also delete APIS IDNO from the .xml; it was entered in error (I will instead add TM, DCLP and DCLP-hybrid numbers to the respective APIS entries to assist in aggregation).</change>
+          <change when="2019-12-18T11:53:26-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">General - Note for finalizer: please also delete APIS IDNO from the .xml; it was entered in error (I will instead add TM, DCLP and DCLP-hybrid numbers to the respective APIS entries to assist in aggregation).</change>
+          <change when="2019-12-18T11:51:08-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Submit - Initial entry of TM 65628 into DCLP, from ZPE 210 (2019). With one exception, I've encoded corrections using double brackets instead of |subst|, and there are a few places where a vacat of 1 space is indicated (though this makes the display somewhat awkward).</change>
+          <change when="2019-12-18T11:51:08-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Submit - Initial entry of TM 65628 into DCLP, from ZPE 210 (2019). With one exception, I've encoded corrections using double brackets instead of |subst|, and there are a few places where a vacat of 1 space is indicated (though this makes the display somewhat awkward).</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="edition" xml:space="preserve"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="1" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><note xml:lang="en">P.Mich. inv. 3498+3250b</note>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/> ἀ<unclear>π</unclear>εν<unclear>ε</unclear>π<unclear>ον</unclear><supplied reason="lost">τ<gap reason="illegible" quantity="2" unit="character"/></supplied><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἁλί</supplied>ρραντον ἀκτά<unclear>ν</unclear>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><unclear>π</unclear>έμποντες <gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">Φ</supplied><unclear>ρ</unclear>ύγιος λιμὴν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>ν<g type="dicolon"/> Δαναΐδ<unclear>αι</unclear> Δα<unclear>ν</unclear><supplied reason="lost">αΐδ</supplied><unclear>α</unclear>ι
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">Ἀπι</supplied>δ<unclear>α</unclear>νῆς ἅμ’ α<unclear>ἱ</unclear>μ<unclear>υλο</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">Ἰθα</supplied>κήσιοι Λοκροὶ Ἄ<supplied reason="lost">βα</supplied><unclear>ντες</unclear>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><unclear>κ</unclear>οι Κρῆτες ἐπ<gap reason="illegible" quantity="3" unit="character"/>ασι
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/>ωτ<unclear>ω</unclear>ι ἴ<unclear>τ</unclear>ε ἴτε <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><unclear>τ</unclear>ροφιδα <unclear>λ</unclear>ίγα <unclear>πν</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>αγα</unclear>λα<gap reason="illegible" quantity="1" unit="character"/><unclear>ιτυ</unclear>οκ<unclear>α</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
+<lb n="1"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="15" unit="character" precision="low"/>
+<lb n="2"/><unclear>π</unclear>εύκ<unclear>α</unclear> συ<unclear>ν</unclear><gap reason="lost" quantity="15" unit="character" precision="low"/><gap reason="illegible" quantity="2" unit="character"/>ωδα<unclear>ν</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>ὀξυθηκτ<gap reason="lost" quantity="15" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/>οντεσ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/>Ἄρεως βίαι κε<gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="4" unit="character"/>κ<unclear>ε</unclear><supplied reason="lost">ί</supplied>ρε<unclear>τ</unclear><supplied reason="lost">ε</supplied> <unclear>τ</unclear>έ<del rend="erasure"><gap reason="illegible" quantity="2" unit="character"/></del><unclear>μ</unclear><del rend="erasure"><gap reason="illegible" quantity="2" unit="character"/></del><unclear>ν</unclear>ε<unclear>τ</unclear><supplied reason="lost">ε</supplied>
+<lb n="5"/>κ<unclear>ό</unclear>πτ<unclear>ε</unclear>τ’ Ἰδα<unclear>ί</unclear><supplied reason="lost">ων</supplied> <gap reason="illegible" quantity="3" unit="character"/> δ<unclear>εν</unclear>δρέ<unclear>ω</unclear>ν παλα<add place="above">ι</add>ό<supplied reason="lost">ν</supplied>
+<lb n="6"/><unclear>π</unclear>τα<unclear>ν</unclear>αστη<unclear>μα</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>υν, ὦ μέ<unclear>λεοι</unclear>, ξυλ<unclear>ο</unclear><supplied reason="lost">φο</supplied>
+<lb n="7" break="no"/>ρ<unclear>ε</unclear>ῖτε δ’ ὡς <unclear>τά</unclear><supplied reason="lost">χ</supplied><unclear>ος</unclear> <unclear>Σ</unclear>καμ<unclear>α</unclear>νδρ<unclear>ίο</unclear>υς ἐπὶ ῥ<supplied reason="lost">οάς,</supplied>
+<lb n="8"/>κείρεθ’ οἱ <unclear>μ</unclear>ὲν α<unclear>σ</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><unclear>αλ</unclear>υ<unclear>β</unclear>ι κυ<unclear>π</unclear>αρίσσο<unclear>υ</unclear><supplied reason="lost">ς</supplied>
+<lb n="9"/>ἐπὶ γᾶι τε δοχμο<supplied reason="lost">ὶ κ</supplied><unclear>ει</unclear><supplied reason="lost">ρ</supplied>ετε πλατέσι τε δ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>δ<unclear>ομ</unclear>ους πρῶνας <gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/> <unclear>μα</unclear>κροφ<unclear>υ</unclear>εῖς ἐ<unclear>λ</unclear>αφ<unclear>ρ</unclear><supplied reason="lost">ο</supplied>
+<lb n="11" break="no"/>σω<unclear>μ</unclear>ατουϲ ῥίπτ<unclear>ετε</unclear> <unclear>ῥ</unclear><supplied reason="lost">ί</supplied><unclear>π</unclear>τε<unclear>τ</unclear>’ ἐ<unclear>πὶ</unclear> πο<unclear>λὺ</unclear> δ<unclear>ρ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+</div>
+<div n="2" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><note xml:lang="en">P.Mich. inv. 3250c+3250a</note>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
+<lb n="1"/><gap reason="lost" atLeast="3" atMost="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> Σιμ<unclear>ό</unclear>εντο<unclear>ς</unclear> <gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="5" unit="character" precision="low"/><gap reason="illegible" atLeast="4" atMost="5" unit="character"/>
+<lb n="2"/>σὺν τάχει <unclear>δ</unclear>ολιοτ<supplied reason="omitted">ρ</supplied>oπο<unclear>ν</unclear> <supplied reason="lost">ἀνυέ</supplied><unclear>τ</unclear>ω
+<lb n="3"/>δολιότρόπ<unclear>ο</unclear>ν ἀνυέτω <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" atLeast="3" atMost="4" unit="character"/>τις
+<lb n="4"/><gap reason="lost" atLeast="0" atMost="1" unit="character"/>τε κρυψι<unclear>μ</unclear>ερόπ’ ἐντύ<supplied reason="lost">ε</supplied>τ<gap reason="illegible" quantity="1" unit="character"/><del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/></del><unclear>ω</unclear>ρα
+<lb n="5"/>Πριάμου π<unclear>ά</unclear>τρα<unclear>ς</unclear>. <space quantity="1" unit="character"/>ὡϲ <unclear>δ</unclear>’ <choice><reg><unclear>ἐ</unclear>κάρυξ<unclear>ε</unclear></reg><orig>εκυρυξε</orig></choice>,
+<lb n="6"/>κατὰ μικρὸ<unclear>ν</unclear> αὐτῶν ἐγ<unclear>γογ</unclear>γύζε τὸ
+<lb n="7"/>στρατόπεδον, <choice><reg>Τουθ’</reg><orig>Τοῦτ’</orig></choice> ἁ<unclear>μὶν</unclear> λοιπόν,
+<lb n="8"/>ἁμὶν ἔτι <unclear>ξυλο</unclear>φ<unclear>ό</unclear>ρεῖν, ὢ <unclear>σ</unclear>τρα<unclear>τ</unclear>είας
+<lb n="9"/>καλᾶς. <space quantity="1" unit="character"/>οἱ μὲν εὐτόλ<unclear>μ</unclear><supplied reason="lost">ω</supplied>ν <supplied reason="lost">φ</supplied><unclear>ρ</unclear><supplied reason="lost">ε</supplied><unclear>ν</unclear>ῶν
+<lb n="10"/>λογάδες ἐστέλλοντο ε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>δε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" atLeast="2" atMost="3" unit="character"/>οπ<gap reason="illegible" atLeast="2" atMost="3" unit="character"/>ν
+<lb n="11"/>εἰς ἅμιλλαν ἄνδρες Ἑλλάνων <unclear>ἄ</unclear><supplied reason="lost">κ</supplied>ρ<supplied reason="lost">ο</supplied>ι
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
+<lb n="1"/><gap reason="lost" quantity="12" unit="character" precision="low"/><unclear>κ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>τεσ<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="12" unit="character" precision="low"/>ε<unclear>δ</unclear><gap reason="lost" quantity="3" unit="character"/><unclear>τε</unclear>μουσ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" atLeast="0" atMost="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <unclear>χερ</unclear>οῖ<unclear>ν</unclear> <gap reason="lost" atLeast="2" atMost="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ρ<gap reason="illegible" quantity="1" unit="character"/>τε<unclear>μ</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ϲ<unclear>ε</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>δ</unclear>ια<unclear>ισ</unclear>ο<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/>ταχὺ <unclear>δεδ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ο<space quantity="1" unit="character"/><add place="above">τα<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>ε<gap reason="illegible" quantity="1" unit="character"/><unclear>ο</unclear>ν<unclear>δ</unclear><gap reason="illegible" quantity="1" unit="character"/></add><gap reason="illegible" quantity="1" unit="character"/><unclear>ε</unclear> πτε<unclear>λ</unclear><supplied reason="omitted">έ</supplied><unclear>ηι</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>πάντα δὲ <supplied reason="lost">κατ</supplied>εκλᾶτ<supplied reason="lost">ο δέ</supplied>νδρα τα<unclear>μ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/>καὶ πάρος κ<supplied reason="lost">ρα</supplied><unclear>τ</unclear>ερὰ δ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><unclear>χ</unclear>ρηστα τ<unclear>ι</unclear><gap reason="lost" quantity="7" unit="character" precision="low"/>ο
+<lb n="7"/>νε<unclear>ω</unclear>ν <unclear>ν</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> τριχώ<unclear>μ</unclear>ατα δε<unclear>λ</unclear>α<gap reason="lost" quantity="7" unit="character" precision="low"/>θει
+<lb n="8"/>φυσ<unclear>ω</unclear>μο<unclear>ν</unclear> ἐθορυβοῦντο <supplied reason="omitted">ἐ</supplied>φυσῶν <unclear>θ</unclear>’ ἱ<unclear>δ</unclear><supplied reason="lost">ρῶι</supplied> <gap reason="lost" quantity="4" unit="character" precision="low"/>το
+<lb n="9"/>σπεύδοντες ἅμα ποι<unclear>ε</unclear>ῖν καὶ κ<unclear>α</unclear><del rend="erasure"><unclear>ι</unclear></del>π<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>ἕτερ<del rend="erasure"><unclear>α</unclear></del>οι <unclear>δὲ</unclear> <unclear>μ</unclear><del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/></del><gap reason="illegible" quantity="2" unit="character"/>εκ<gap reason="lost" quantity="2" unit="character"/>αιρον πε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="7" unit="character" precision="low"/><unclear>ι</unclear>ν
+<lb n="11"/>ἔχοντες ἐνέσει<unclear>ον</unclear> <unclear>ἐ</unclear>πέσει<unclear>ο</unclear>ν <gap reason="lost" quantity="4" unit="character" precision="low"/> <supplied reason="lost">ἐνέ</supplied>σειεν ἐπέσειεν α<unclear>μ</unclear>α<unclear>σ</unclear>ο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" atLeast="1" atMost="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+</ab></div>
+<div n="iii" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"><certainty match=".." locus="name"/></gap>
+<lb n="1"/><unclear>π</unclear>έ<unclear>ν</unclear><supplied reason="lost">θ</supplied><unclear>εα</unclear> δ’ α<unclear>π</unclear><gap reason="illegible" atLeast="2" atMost="3" unit="character"/>ε<unclear>ιγ</unclear>ε<unclear>τ</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>σ</unclear>σε<unclear>τ</unclear><gap reason="lost" atLeast="3" atMost="4" unit="character"/><unclear>δε</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>ἔπ<unclear>ε</unclear><supplied reason="lost">σ’</supplied> ἐδαφέε<supplied reason="lost">σ</supplied><unclear>σι</unclear>ν ἄλλ<unclear>ο</unclear> <unclear>δ</unclear>έ προσ<gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" atLeast="0" atMost="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>νε<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>αν<unclear>ω</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>δ’ <unclear>ὑποκ</unclear>ά<del rend="erasure">θ</del>τωθε, τοὶ δὲ τὰ π<supplied reason="lost">ρ</supplied><unclear>ο</unclear>κε<unclear>κ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/>εἰς <unclear>τ</unclear><supplied reason="lost">ὸ</supplied> πρόσ<unclear>θ</unclear><supplied reason="lost">ε</supplied><unclear>ν</unclear>. ὤθευν. <space quantity="1" unit="character"/> τέ<unclear>μ</unclear>νον <gap reason="illegible" quantity="1" unit="character"/><unclear>ετ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><subst><add place="inline">προ<unclear>σ</unclear>τάγμ<unclear>α</unclear>τ’</add><del rend="corrected">προσταγματα</del></subst> <add place="above">ἔ</add>δει Παφίης κεῖσθαι <unclear>κ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><unclear>π</unclear>ο<unclear>ν</unclear> <unclear>ἐ</unclear>ρωτικ<unclear>ὸν</unclear> τὴν ἐφ’ ἑνὶ με<unclear>μ</unclear>ενηκυιαν <unclear>π</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><unclear>μ</unclear>νο<unclear>ς</unclear> ἀνάλω<unclear>τ</unclear><supplied reason="lost">ος</supplied> Ἔτνα Παλικῶν διπλ<unclear>ῶ</unclear>ν <unclear>τον</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>ὅσ’ ὀδ<unclear>ύ</unclear>ν<unclear>η</unclear>ς <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/>ται <space quantity="1" unit="character"/><del rend="erasure"><unclear>δεξ</unclear><gap reason="illegible" quantity="3" unit="character"/><unclear>σετο</unclear>β<unclear>α</unclear>λ<unclear>ο</unclear>ν</del><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>ο <space quantity="1" unit="character"/> <g type="middot"/>
+</ab></div>
+</div></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ZPE 13, pl.IXc</bibl>
-               <bibl type="printed">Borges-Sampson, New Literary Papyri, p.38 and pl. 2, 4, 6</bibl>
-               <bibl type="online">
+               <bibl type="printed" n="1">ZPE 13, pl.IXc</bibl>
+               <bibl type="printed" n="2">Borges-Sampson, New Literary Papyri, p.38 and pl. 2, 4, 6</bibl>
+               <bibl type="printed" n="3">ZPE 210, S. 52</bibl>
+               <bibl type="online" n="1">
                   <ptr target="http://www.papyri.info/apis/michigan.apis.1990"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="https://contentdm.lib.byu.edu/digital/collection/p15999coll4/search/searchterm/michigan.apis.1990!Michigan/field/subjec!collec/mode/exact!all/conn/and!all/order/nosort/ad/asc"/>
+               </bibl>
+               <bibl type="online" n="3">
+                  <ptr target="http://www.papyri.info/apis/michigan.apis.3413"/>
+               </bibl>
+               <bibl type="online" n="4">
+                  <ptr target="https://contentdm.lib.byu.edu/digital/collection/p15999coll4/search/searchterm/michigan.apis.3413"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8352"/>
+                  <biblScope unit="fragment">S477</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/50210"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95412"/>
+                  <biblScope unit="page" from="36" to="129">36-129</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95419"/>
+               </bibl>
+               <bibl n="5" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95420"/>
+                  <biblScope unit="page" from="373" to="375">373-375</biblScope>
+               </bibl>
+               <bibl n="6" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95485"/>
+                  <biblScope unit="page" from="24" to="40">24-40</biblScope>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv927">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Hierokles to Zenon</title>
@@ -33,15 +33,18 @@
                   <origin>
                      <origPlace>unbekannt</origPlace>
                      <origDate notAfter="-0250-03-14">
-                        <offset type="before" n="1">vor</offset> 14. März 250 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                14. März 250 v.Chr.
+              </origDate>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -56,21 +59,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief</term>
-               <term>Hierokles an Zenon</term>
-               <term>Bittschrift</term>
-               <term>Steuern</term>
-               <term>Schulden</term>
+               <term n="1">Brief</term>
+               <term n="2">Hierokles an Zenon</term>
+               <term n="3">Bittschrift</term>
+               <term n="4">Steuern</term>
+               <term n="5">Schulden</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-01T10:42:37-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-26T14:31:44-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine.</change>
+         <change when="2021-01-25T14:17:39-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1994-03-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -87,8 +96,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Cair. Zen.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">59283</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">59283</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -99,10 +108,12 @@
             <p>
                <figure>
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Cair.Zen.&amp;vVol=2&amp;vNum=59283"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Siehe L. Ferretti, P. Schubert, M. Tomcik, ZPE 201 (2017) 217–218.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

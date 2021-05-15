@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10546">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter to a Dioiketes</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia (Arsinoites)</origPlace>
+                     <origPlace>Philadelphia (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0006-02-16">16. Febr. 6</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737008 http://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,19 +65,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>N.N. an Asklepiades</term>
-               <term>Hilfe für Isidoros</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">N.N. an Asklepiades</term>
+               <term n="3">Hilfe für Isidoros</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-24T10:44:44-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-20T10:03:36-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-19T13:40:23-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to BL image.&#xD;
+</change>
+         <change when="2019-12-19T13:40:03-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to the BL image.</change>
          <change who="HGV" when="1904-01-23">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Isidoros aus Psophthis. Zur Datierung vgl. Kongr. XXI, S. 413, Anm. 3. Vgl. Kongr. XXIII, S. 273-278. Zu Z. 6 vgl. Kongr. XXVI, S. 325, zu Z. 7. Erweiterte Neuedition: GRBS 52, 2014, S. 37-44.</p>
@@ -84,24 +95,24 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Col.</title>
-                  <biblScope type="volume">8</biblScope>
-                  <biblScope type="numbers">211</biblScope>
+                  <biblScope n="1" type="volume">8</biblScope>
+                  <biblScope n="2" type="numbers">211</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">42</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">64</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">53</biblScope>
                </bibl>
             </listBibl>
@@ -113,12 +124,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://wwwapp.cc.columbia.edu/ldpd/app/apis/item?mode=item&amp;key=columbia.apis.p246"/>
-                  <head>Abbildung im Internet</head>
+               </figure>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_2553"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

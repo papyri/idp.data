@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2229">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Das königliche Indulgenzdekret vom 9. Okt. 186 v. Chr.</title>
+            <title>New Fragments of the Amnesty Decree of October 9, 186 BCE</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">2229</idno>
             <idno type="TM">2229</idno>
             <idno type="ddb-perseus-style">0144;7;313</idno>
-            <idno type="ddb-filename">p.koeln.7.313</idno>
-            <idno type="ddb-hybrid">p.koeln;7;313</idno>
+            <idno type="ddb-filename">basp.54.48</idno>
+            <idno type="ddb-hybrid">basp;54;48</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cologne</settlement>
                   </placeName>
+                  <collection>Papyrussammlung</collection>
+                  <idno type="invNo">P.Köln inv. 21760 + P.PalauRibes inv. 172a-d + P.Monts.Roca inv. 908</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,39 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos (?)</origPlace>
+                     <origPlace>Oxyrhynchos ? (Oxyrhynchites, Egypt)</origPlace>
                      <origDate notBefore="-0186-10-09">
-                        <offset type="after" n="1">nach</offset> 9. Okt. 186 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                9. Okt. 186 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
-                                   ref="http://pleiades.stoa.org/places/736982 http://www.trismegistos.org/place/2722 http://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                                   ref="http://pleiades.stoa.org/places/736982 http://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="http://www.trismegistos.org/place/2722 http://pleiades.stoa.org/places/736983">Oxyrhynchites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/95670"/>
+                  <biblScope type="pp">51</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,25 +80,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Erlaß (königlich)</term>
-               <term>Amnestie</term>
-               <term>Anachoresis</term>
-               <term>Schuldenerlaß</term>
-               <term>Steuern</term>
-               <term>Pacht</term>
-               <term>Schiffe</term>
-               <term>Requirierung</term>
-               <term>Habeas Corpus</term>
+               <term n="1">Erlaß (königlich)</term>
+               <term n="2">Amnestie</term>
+               <term n="3">Anachoresis</term>
+               <term n="4">Schuldenerlaß</term>
+               <term n="5">Steuern</term>
+               <term n="6">Pacht</term>
+               <term n="7">Schiffe</term>
+               <term n="8">Requirierung</term>
+               <term n="9">Habeas Corpus</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-06-07T10:13:48-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-03T10:43:15-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is fine. Update collection info; enter SB bibliography ref; and move P.Köln publication details to 'other publications', replacing them with the BASP details.</change>
+         <change when="2020-05-30T12:27:54-04:00"
+                 who="http://papyri.info/users/ALBADEFRUTOS">Submit - I've added a reference to the publication of further fragments of the same documents (in BASP). Part of Heidelberg Webinar DigiPap 2020. </change>
+         <change when="2020-05-30T12:26:06-04:00"
+                 who="http://papyri.info/users/ALBADEFRUTOS">Commit - We've added BASP 54 (2017) S. 51 under "Other publications"</change>
          <change who="HGV" when="1993-10-13">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -90,33 +115,35 @@
             <list>
                <item>
                   <ref>A Z. 9-10</ref>
-                  <date type="mentioned" notBefore="-0186-09-04" notAfter="-0186-10-03">4. Sept.  - 3. Okt. 186 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0186-09-04" notAfter="-0186-10-03">4. Sept. 186 - 3. Okt. 186 v.Chr.</date>
                </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">313</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">54</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 48</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel XIV - XV</bibl>
-               <bibl type="illustration">P.Kroll, Tafel I, II</bibl>
-               <bibl type="illustration">StudPap 21, 1982, nach S. 78 und vor S. 79</bibl>
+               <bibl type="illustration" n="1">Tafel XIV - XV</bibl>
+               <bibl type="illustration" n="2">P.Kroll, Tafel I, II</bibl>
+               <bibl type="illustration" n="3">StudPap 21, 1982, nach S. 78 und vor S. 79</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Kroll</bibl>
-               <bibl type="publication" subtype="other">SB VI 9316</bibl>
-               <bibl type="publication" subtype="other">SB XVI 12540 und 12541</bibl>
-               <bibl type="publication" subtype="other">C.Ord.Ptol. 34</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Kroll</bibl>
+               <bibl type="publication" subtype="other" n="2">SB VI 9316</bibl>
+               <bibl type="publication" subtype="other" n="3">SB XVI 12540 und 12541</bibl>
+               <bibl type="publication" subtype="other" n="4">C.Ord.Ptol. 34</bibl>
+               <bibl type="publication" subtype="other" n="5">P.Köln VII 313</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -128,12 +155,20 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
-                  <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/Karte/VII_313.html"/>
-                  <head>Abbildung im Internet</head>
+               <figure n="1">
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm2229"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://dvctvs.upf.edu/catalogo/ductus.php?operacion=introduce&amp;ver=1&amp;nume=1223"/>
+               </figure>
+               <figure n="3">
+                  <graphic url="http://dvctvs.upf.edu/catalogo/ductus.php?operacion=introduce&amp;ver=1&amp;nume=1221"/>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>The new edition in BASP is only a new edition of col. i. For the other columns, see the edition in P.Köln VII 313.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv316254">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an den Basilikos Grammateus Petosiris</title>
@@ -29,16 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tanis (Arsinoites)</origPlace>
+                     <origPlace>Tanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notAfter="-0184-04-29">
-                        <offset type="before" n="1">vor</offset> 29. Apr. 184 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                29. Apr. 184 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737069 http://www.trismegistos.org/place/2251 http://www.trismegistos.org/place/7586 http://www.trismegistos.org/place/2616">Tanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +66,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Amenneus und Onnophris (Bestatter) an Petosiris (Königlicher Schreiber)</term>
-               <term>Bitte</term>
-               <term>das sich aus dem Kaufangebot (= P.Tarich. 10) ergebenden Verwaltungsverfahren zum Abschluß zu bringen</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Amenneus und Onnophris (Bestatter) an Petosiris (Königlicher Schreiber)</term>
+               <term n="3">Bitte</term>
+               <term n="4">das sich aus dem Kaufangebot (= P.Tarich. 10) ergebenden Verwaltungsverfahren zum Abschluß zu bringen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-16T10:04:06-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-04-16T08:47:17-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - The link is correct</change>
+         <change when="2021-04-16T08:06:52-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2014-02-11">Record created</change>
          <change who="HGV" when="2014-05-23">Record last modified</change>
          <change when="2014-08-29" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -84,12 +94,9 @@
             <list>
                <item>
                   <ref>Z. 19</ref>
-                  <date type="mentioned" notBefore="-0204" notAfter="-0203">204-203 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0204" notAfter="-0203">204 - 203 v.Chr.</date>
                </item>
             </list>
-         </div>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -104,6 +111,13 @@
                <bibl type="illustration">Tafel XIV</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm316254"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

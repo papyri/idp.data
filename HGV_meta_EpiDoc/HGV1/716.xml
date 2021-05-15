@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv716">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Apollonios to Zenon</title>
@@ -31,9 +31,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria (?)</origPlace>
+                     <origPlace>Alexandria ?</origPlace>
                      <origDate notAfter="-0258-05-09">
-                        <offset type="before" n="1">vor</offset> 9. Mai 258 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                9. Mai 258 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -47,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,18 +66,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>Apollonios an Zenon</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">Apollonios an Zenon</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-01T14:48:28-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-01T10:39:44-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-25T14:12:24-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1994-05-05">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -91,8 +100,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Cair. Zen.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">59058</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">59058</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -103,10 +112,12 @@
             <p>
                <figure>
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Cair.Zen.&amp;vVol=1&amp;vNum=59058"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Rekto Z. 1 und 2 s. L. Ferretti, P. Schubert, M. Tomcik, ZPE 201 (2017) 215–217.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

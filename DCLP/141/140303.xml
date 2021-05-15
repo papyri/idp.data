@@ -1,121 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m140303" xml:lang="en">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>P.Herc. Stub</title>
-         </titleStmt>
-         <publicationStmt>
-            <authority>Digital Corpus of Literary Papyri</authority>
-            <idno type="dclp">140303</idno>
-            <idno type="TM">140303</idno>
-            <idno type="LDAB">140303</idno>
-            <idno type="filename">140303</idno>
-            <idno type="dclp-hybrid">p.herc;;413</idno>
-            <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc>
-               <msIdentifier>
-                  <idno type="invNo">Naples, Biblioteca Nazionale 107847 /402</idno>
-               </msIdentifier>
-               <physDesc>
-                  <objectDesc form="roll">
-                     <supportDesc>
-                        <support>
-                           <material>papyrus</material>
-                        </support>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout>
-                           <p>papyrus roll</p>
-                        </layout>
-                     </layoutDesc>
-                  </objectDesc>
-               </physDesc>
-               <history>
-                  <origin>
-                     <origPlace>Found: Herculaneum (Campania, Italy); written: Italy</origPlace>
-                     <origDate notBefore="-0100" notAfter="0079">-100 v. Chr. - 79 n. Chr.</origDate>
-                  </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="nome">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
-                     </p>
-                  </provenance>
-                  <provenance type="composed">
-                     <p>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                     </p>
-                  </provenance>
-               </history>
-               <additional>
-                  <adminInfo>
-                     <custodialHist>
-                        <custEvent type="MSI"
-                                   corresp="#FR12392"
-                                   xml:id="GR12392.01"
-                                   from="1999"
-                                   to="2015">
-                           <graphic url="http://www.chartes.it/images/photo/PHerc 413B-CR01-11245-FS5.-FIL8.jpg"/>
-                           <orgName>CPART, Brigham Young University</orgName>
-                        </custEvent>
-                     </custodialHist>
-                  </adminInfo>
-               </additional>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <p>
-        This file encoded to comply with EpiDoc Guidelines and Schema version 8
-        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
-         </p>
-      </encodingDesc>
-      <profileDesc>
-         <textClass>
-            <keywords>
-               <term>prose</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Latin letter or legal deposition ?)</term>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change when="2014-11-26" who="IDP">Crosswalked to EpiDoc XML</change>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>P.Herc. 413</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Digital Corpus of Literary Papyri</authority>
+                <idno type="dclp">140303</idno>
+                <idno type="TM">140303</idno>
+                <idno type="LDAB">140303</idno>
+                <idno type="filename">140303</idno>
+                <idno type="dclp-hybrid">p.herc;;413</idno>
+                <idno type="herc-fr">1464</idno>
+                <idno type="herc-fr">1465</idno>
+                <idno type="herc-fr">1466</idno>
+                <idno type="herc-fr">1467</idno>
+                <idno type="herc-fr">1470</idno>
+                <availability>
+                    <p>
+                        © Digital Corpus of Literary Papyri. This work is licensed under a
+                        <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+                        .
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <idno>
+                            <idno type="invNo" xml:id="FR1464">O 413 [top right]</idno>
+                            <idno type="invNo" xml:id="FR1465">O 413 [bottom right]</idno>
+                            <idno type="invNo" xml:id="FR1466">O 413 [top right]</idno>
+                            <idno type="invNo" xml:id="FR1467">O 413 [top left]</idno>
+                            <idno type="invNo" xml:id="FR1470">O 459 [top right]</idno>
+                        </idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc form="roll">
+                            <supportDesc>
+                                <support>
+                                    <material>papyrus</material>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p>papyrus roll</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy</origPlace>
+                            <origDate notBefore="-0100" notAfter="0079">100 v.Chr. - 79</origDate>
+                        </origin>
+                        <provenance n="1" type="found">
+                            <p>
+                                <placeName n="1" type="ancient" subtype="nome">Campania</placeName>
+                                <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                                <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                            </p>
+                        </provenance>
+                        <provenance n="2" type="composed">
+                            <p>
+                                <placeName type="ancient" subtype="region">Italy</placeName>
+                            </p>
+                        </provenance>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <custodialHist>
+                                <custEvent type="MSI" corresp="#FR12392" from="1999" to="2002">
+                                    <graphic url="http://www.chartes.it/images/photo/PHerc 413B-CR01-11245-FS5.-FIL8.jpg"/>
+                                    <orgName>CPART, Brigham Young University</orgName>
+                                </custEvent>
+                                <custEvent type="tried"
+                                   corresp="#FR1464 #FR1465 #FR1466 #FR1467 #FR1470"
+                                   when="1790"/>
+                                <custEvent type="sketched" corresp="#FR1464" from="1790" to="1790">
+                                    <forename>Giovanni Battista</forename>
+                                    <surname>Malesci</surname>
+                                    <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASHc490.dir/herc.v006.1569.a.01.hires.jpg"/>
+                                </custEvent>
+                                <custEvent type="sketched" corresp="#FR1465" from="1781" to="1806">
+                                    <forename>Giovanni Battista</forename>
+                                    <surname>Malesci</surname>
+                                    <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASHf340.dir/herc.v006.1572.a.01.hires.jpg"/>
+                                </custEvent>
+                                <custEvent type="sketched" corresp="#FR1466" from="1781" to="1806">
+                                    <forename>Giovanni Battista</forename>
+                                    <surname>Malesci</surname>
+                                    <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASHf340.dir/herc.v006.1572.a.01.hires.jpg"/>
+                                </custEvent>
+                                <custEvent type="sketched" corresp="#FR1467" from="1781" to="1806">
+                                    <forename>Giovanni Battista</forename>
+                                    <surname>Malesci</surname>
+                                    <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASHf340.dir/herc.v006.1572.a.01.hires.jpg"/>
+                                </custEvent>
+                                <custEvent type="sketched" corresp="#FR1470" from="1781" to="1806">
+                                    <forename>Giovanni Battista</forename>
+                                    <surname>Malesci</surname>
+                                    <graphic url="http://clp.classics.ox.ac.uk/gsdl/collect/PHerc/index/assoc/HASHf340.dir/herc.v006.1571.a.01.hires.jpg"/>
+                                </custEvent>
+                            </custodialHist>
+                        </adminInfo>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>
+                This file encoded to comply with EpiDoc Guidelines and Schema version 8
+                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+            </p>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term n="1" type="religion">classical</term>
+                    <term n="2" type="culture">literature</term>
+                    <term n="3">prose</term>
+                    <term n="4" type="overview">Latin letter or legal deposition ?</term>
+                </keywords>
+            </textClass>
+            <langUsage>
+            <language ident="en">English</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+        </profileDesc>
+        <revisionDesc>
+          <change when="2021-02-15T13:24:18-05:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Ok.</change>
+          <change when="2021-02-15T13:20:16-05:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2021-02-15T13:14:53-05:00"
+                 who="http://papyri.info/editor/users/HolgerEssler">Submit - Corrected typos, apparatus.</change>
+          <change when="2021-02-14T06:42:22-05:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Ok.</change>
+          <change when="2021-02-14T06:42:21-05:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Ok.</change>
+          <change when="2021-02-14T06:38:17-05:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2021-02-14T06:38:17-05:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2021-02-14T06:36:38-05:00"
+                 who="http://papyri.info/editor/users/HolgerEssler">Submit - Entered text from reference edition, updated metadata.</change>
+          <change when="2021-02-14T06:36:38-05:00"
+                 who="http://papyri.info/editor/users/HolgerEssler">Submit - Entered text from reference edition, updated metadata.</change>
+          <change when="2014-11-26" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
-      <body>
+    </teiHeader>
+    <text>
+        <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Sara Fenoglio, Elena Barchielli and Holger Essler as part of the course on <emph rend="italics">Digital Editions of Fragmentary Texts</emph> at Ca'Foscari University of Venice. Revision by Holger Essler.</p></div>
+         <div xml:lang="la" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart" corresp="#FR1464"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <g type="middot"/> cum <supplied reason="lost"><g type="middot"/></supplied> qu<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><surplus>ma</surplus><app type="editorial"><lem>ontis</lem><rdg resp="Janko"><app type="alternative"><lem><supplied reason="lost">ins</supplied>ontis</lem><rdg><supplied reason="lost">s</supplied>ontis</rdg><rdg><supplied reason="lost">f</supplied>ontis</rdg></app></rdg></app> <g type="middot"/> a<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">prae</supplied>cones <g type="middot"/> u<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <app type="editorial"><lem resp="Lindsay"><supplied reason="lost">p</supplied>ecuniam</lem><rdg/></app> <supplied reason="lost"><g type="middot"/></supplied><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> cum <g type="middot"/> <unclear>p</unclear>ret<supplied reason="lost">i</supplied>o <supplied reason="lost"><g type="middot"/></supplied><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> om<unclear>n</unclear>is <g type="middot"/> qui<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">g</supplied>inta <g type="middot"/> quae<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem resp="Janko"><unclear>m</unclear>os</lem><rdg resp="O"><unclear>m</unclear>op</rdg></app> <supplied reason="lost"><g type="middot"/></supplied> exemu<unclear>n</unclear><supplied reason="lost">t</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">m</supplied>ensem <supplied reason="lost"><g type="middot"/></supplied> m<gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><g type="middot"/></supplied> aiebat <g type="middot"/> lege<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2" subtype="fragment" type="textpart" corresp="#FR1465"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> in senatu <supplied reason="lost"><g type="middot"/></supplied> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ibus <g type="dicolon"/> dixisse<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>qui<unclear>d</unclear> <supplied reason="lost"><g type="middot"/></supplied> non<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem>ator</lem><rdg resp="Janko"><app type="alternative"><lem><supplied reason="lost">procur</supplied>ator</lem><rdg><supplied reason="lost">cur</supplied>ator</rdg></app></rdg></app> <g type="middot"/> barba<supplied reason="lost">r</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">i</supplied>sdem <g type="middot"/> inqui<supplied reason="lost">t</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">h</supplied>oc <supplied reason="lost"><g type="middot"/></supplied> modo <supplied reason="lost"><g type="middot"/></supplied> <unclear>p</unclear>ote<supplied reason="lost">rat</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>a <supplied reason="lost"><g type="middot"/></supplied> quod <g type="middot"/> se<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> non <g type="middot"/> <app type="editorial"><lem resp="Janko">incud</lem><rdg resp="O">encud</rdg></app><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/> e <g type="middot"/> g<unclear>r</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="3" subtype="fragment" type="textpart" corresp="#FR1466"><ab>
+<lb n="1"/><app type="editorial"><lem>dit <supplied reason="lost"><g type="middot"/></supplied> ses<gap reason="illegible" quantity="1" unit="character"/></lem><rdg resp="Janko"><supplied reason="lost">abdi</supplied> <lb n="1"/>dit <supplied reason="lost"><g type="middot"/></supplied> ses<supplied reason="lost">e</supplied></rdg></app><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>cum <g type="middot"/> abeo<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>ei <g type="middot"/> dom<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><app type="editorial"><lem>longin<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Janko"><app type="alternative"><lem>longin<supplied reason="lost">qu</supplied><gap reason="lost" extent="unknown" unit="character"/></lem><rdg>Longin<gap reason="lost" extent="unknown" unit="character"/></rdg></app></rdg></app>
+<lb n="5"/>centi <supplied reason="lost"><g type="middot"/></supplied> c<supplied reason="lost">um</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/>esset <g type="middot"/> ira<supplied reason="lost">tus</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/>cum <supplied reason="lost"><g type="middot"/></supplied> hae <supplied reason="lost"><g type="middot"/></supplied> <unclear>n</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">car</supplied>
+<lb n="8" break="no"/>mine <g type="middot"/> i<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">noce</supplied>
+<lb n="9" break="no"/>ret <g type="middot"/> ab<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">car</supplied>
+<lb n="10" break="no"/>men <g type="middot"/> m<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="4" subtype="fragment" type="textpart" corresp="#FR1467"><ab>
+<lb n="1"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/><unclear>d</unclear> <supplied reason="lost"><g type="middot"/></supplied> h<gap reason="lost" quantity="3" unit="character"/></lem><rdg resp="Janko"><supplied reason="lost">se</supplied><unclear>d</unclear> <supplied reason="lost"><g type="middot"/></supplied> h<supplied reason="lost">aec</supplied></rdg></app> <supplied reason="lost">a</supplied>ii<unclear>e</unclear>b<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><g type="middot"/> <app type="editorial"><lem>ene<gap reason="lost" atLeast="2" atMost="3" unit="character"/></lem><rdg resp="Janko"><app type="alternative"><lem>ene<supplied reason="lost">ca</supplied><gap reason="lost" extent="unknown" unit="character"/></lem><rdg>ene<supplied reason="lost">ru</supplied><gap reason="lost" extent="unknown" unit="character"/></rdg></app></rdg></app> <supplied reason="lost"><g type="middot"/></supplied> qual<unclear>i</unclear>s <supplied reason="lost"><g type="middot"/></supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>a <supplied reason="lost"><g type="middot"/></supplied> annì <g type="middot"/> <app type="alternative"><lem>quon<supplied reason="lost">iam</supplied></lem><rdg>quon<supplied reason="lost">dam</supplied></rdg></app> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>icaui</lem><rdg resp="Janko"><supplied reason="lost">iud</supplied>icavi</rdg></app> <supplied reason="lost"><g type="middot"/></supplied> r<unclear>ap</unclear><supplied reason="lost">t</supplied><unclear>ì</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem><gap reason="illegible" quantity="3" unit="character"/>curator</lem><rdg resp="Lindsay"><supplied reason="lost">pro</supplied>curator</rdg></app><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>uit <supplied reason="lost"><g type="middot"/></supplied> de <supplied reason="lost"><g type="middot"/></supplied> uia<gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">n</supplied><choice><corr>u</corr><sic>ù</sic></choice>ntia <supplied reason="lost"><g type="middot"/></supplied> <unclear>N</unclear>ìno <supplied reason="lost"><g type="middot"/></supplied><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/> <supplied reason="lost"><g type="middot"/></supplied> saluta<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>m <supplied reason="lost"><g type="middot"/></supplied> scis <g type="middot"/> no<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost"><g type="middot"/></supplied> Hercules <g type="middot"/> eius <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="5" subtype="fragment" type="textpart" corresp="#FR1470"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">i</supplied>nquit <g type="middot"/> mi<unclear>h</unclear><supplied reason="lost">i</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">o</supplied>mnia <g type="middot"/> q<supplied reason="lost">u</supplied><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> cum <supplied reason="lost"><g type="middot"/></supplied> accep<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">n</supplied>ec <supplied reason="lost"><g type="middot"/></supplied> s<supplied reason="lost">i</supplied>t <supplied reason="lost"><g type="middot"/></supplied> nil <supplied reason="lost"><g type="middot"/></supplied> q<supplied reason="lost">uod</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem resp="Janko">tibus</lem><rdg resp="O">t<unclear>p</unclear>bus</rdg></app> <g type="middot"/> ipsi<supplied reason="lost">s</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>m <supplied reason="lost"><g type="middot"/></supplied> for<unclear>t</unclear>em <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">proge</supplied>niem <g type="middot"/> ei<unclear>q</unclear><supplied reason="lost">ue</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">n</supplied>il <supplied reason="lost"><g type="middot"/></supplied> est <supplied reason="lost"><g type="middot"/></supplied> <expan>n<ex>on</ex></expan> <app type="editorial"><lem>lic<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Janko">lic<supplied reason="lost">itum</supplied></rdg></app>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
-            <listBibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/83487"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">New fragments of Epicurus, Metrodorus, Demetrius Laco, Philodemus, the Carmen de bello Actiaco and other texts in Oxonian disegni of 1788-1792</title>
-                  <author n="1">
-                     <surname>Janko</surname>
-                     <forename>Richard</forename>
-                  </author>
-                  <date>2008</date>
-                  <!--ignore - stop-->
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="edition" xml:space="preserve"/>
+                <listBibl>
+                    <bibl type="reference" subtype="partial">
+                        <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                        <!-- ignore - stop -->
+                        <ptr target="http://papyri.info/biblio/83487"/>
+                        <biblScope n="1" unit="page" from="62" to="64">62-64</biblScope>
+                        <biblScope n="2" unit="page">69</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
          <div type="bibliography" subtype="illustrations">
-            <listBibl>
-               <bibl type="online">
-                  <ptr target="http://www.chartes.it/index.php?r=document/view&amp;id=433"/>
-               </bibl>
-            </listBibl>
-         </div>
+                <listBibl>
+                    <bibl type="online">
+                        <ptr target="http://www.chartes.it/index.php?r=document/view&amp;id=433"/>
+                    </bibl>
+                </listBibl>
+            </div>
       </body>
-   </text>
+    </text>
 </TEI>

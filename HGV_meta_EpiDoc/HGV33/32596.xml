@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32596">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Steuerquittung (für χρυσὸς βουρδώνων) und Abrechnung</title>
@@ -9,16 +9,17 @@
          <publicationStmt>
             <idno type="filename">32596</idno>
             <idno type="TM">32596</idno>
-            <idno type="ddb-perseus-style">0239;16;12828</idno>
-            <idno type="ddb-filename">sb.16.12828</idno>
-            <idno type="ddb-hybrid">sb;16;12828</idno>
+            <idno type="ddb-filename">basp.50.261</idno>
+            <idno type="ddb-hybrid">basp;50;261</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Österreichische Nationalbibliothek</collection>
+                  <idno type="invNo">P.Vindob. G 14015</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,22 +32,33 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolites (?)</origPlace>
+                     <origPlace>Hermopolites ?, Ägypten</origPlace>
                      <origDate notBefore="0326" notAfter="0375" precision="low">Mitte IV</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2720 https://pleiades.stoa.org/places/756575">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/86481"/>
+                  <biblScope type="pp">261</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,34 +73,38 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Abrechnung</term>
-               <term>Steuer</term>
-               <term>Maultiere</term>
-               <term>Zahlung</term>
-               <term>Namen</term>
-               <term>Landbesitzer</term>
-               <term>Liste</term>
+               <term n="1">Quittung</term>
+               <term n="2">Abrechnung</term>
+               <term n="3">Steuer</term>
+               <term n="4">Maultiere</term>
+               <term n="5">Zahlung</term>
+               <term n="6">Namen</term>
+               <term n="7">Landbesitzer</term>
+               <term n="8">Liste</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-06-18T20:40:20-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go. Also added the SB ref and removed mention of the Neuedition in general notes now that BASP is the edition of record.</change>
+         <change when="2020-05-29T05:10:25-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-05-28T20:54:17-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Submit - Revised HGV meta and DDbDP text on the basis of Bagnall/Worp in BASP 50 (2013). Will need to be renamed.</change>
          <change who="HGV" when="1990-07-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Neuedition: BASP 50, 2013, S. 261-264.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">16</biblScope>
-                  <biblScope type="numbers">12828</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">50</biblScope>
+                  <biblScope n="2" type="fascicle">(2013)</biblScope>
+                  <biblScope n="3" type="pages">S. 261</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,17 +116,17 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SB III 7034</bibl>
+               <bibl type="publication" subtype="other" n="1">SB XVI 12828</bibl>
+               <bibl type="publication" subtype="other" n="2">SB III 7034</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://data.onb.ac.at/rec/RZ00006099"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

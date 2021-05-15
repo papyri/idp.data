@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11830">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11830">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Verzinsliches Darlehen von vier Personen über 524 Drachmen</title>
@@ -30,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0141-09-10">10. Sept. 141</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737053 http://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,29 +65,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-12-30T04:22:01-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-12-29T15:59:49-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-12-29T13:58:57-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1998-08-14">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: P.Louvre I 12.</p>
+            <p>Rückseite: P.Louvre I 12. Zu Z. 13 s. P. van Minnen, ZPE 199 (2016) 146, Anm. 12.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Louvre</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">18</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">18</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,7 +101,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">112</biblScope>
                </bibl>
             </listBibl>
@@ -112,10 +121,9 @@
             <p>
                <figure>
                   <graphic url="http://berlpap.smb.museum/00218/"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

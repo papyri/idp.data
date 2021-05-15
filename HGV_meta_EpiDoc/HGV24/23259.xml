@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23259">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Verkauf einer halben Eselin</title>
+            <title>Sale of a Half-Share of a Donkey</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">23259</idno>
             <idno type="TM">23259</idno>
-            <idno type="ddb-perseus-style">0239;1;5679</idno>
-            <idno type="ddb-filename">sb.1.5679</idno>
-            <idno type="ddb-hybrid">sb;1;5679</idno>
+            <idno type="ddb-filename">p.nekr.37</idno>
+            <idno type="ddb-hybrid">p.nekr;;37</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Beuron</settlement>
                   </placeName>
+                  <collection>Erzabtei Beuron</collection>
+                  <idno type="invNo">inv. no. unbekannt</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,29 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
-                     <origDate notBefore="0307-02-25" notAfter="0307-03-26">25. Febr. - 26. März 307</origDate>
+                     <origPlace>Hibis (Oasis Magna, Egypt) oder Kysis (Oasis Magna, Egypt)</origPlace>
+                     <origDate notBefore="0307-02" notAfter="0307-03">Febr. - März 307</origDate>
                   </origin>
                   <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                     <p n="1" xml:id="geoIFG6A0" exclude="#geoDGBF3">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2786 https://pleiades.stoa.org/places/776181">Hibis</placeName>
+                     </p>
+                     <p n="2" xml:id="geoDGBF3" exclude="#geoIFG6A0">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2761 https://pleiades.stoa.org/places/776191">Kysis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/619 http://pleiades.stoa.org/places/776210">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +62,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,19 +79,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>halbe Eselin</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">halbe Eselin</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T15:39:14-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-19T15:07:09-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is well done. Remove days from date (edition says Feb–March); collection is now the Erzabtei Beuron, in Beuron (inv. # unknown) </change>
+         <change when="2020-06-19T09:30:28-04:00"
+                 who="http://papyri.info/users/AlessiaLavorante">Submit - Updated metadata following republication in P.Nekr., part of Heidelberg’s Digital Papyrology Webinar, summer 2020.</change>
          <change who="HGV" when="1995-06-26">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL VIII, S. 322, BL III, S. 175, BL IV, S. 35. Zu Z. 10-15 und 17-18 vgl. ZPE 134, 2001, S. 175-176.</p>
@@ -81,26 +105,25 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">5679</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">37</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">322</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">244</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
-                  <biblScope type="pages">182f.</biblScope>
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XII</biblScope>
+                  <biblScope type="pages">182/183</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -111,10 +134,14 @@
             <p>
                <figure>
                   <graphic url="http://www.rzuser.uni-heidelberg.de/~gv0/Papyri/Grad.html"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB I 5679</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

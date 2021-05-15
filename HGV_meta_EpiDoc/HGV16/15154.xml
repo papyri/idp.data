@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv15154">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eine Datierung nach Aurelian und Vaballath</title>
@@ -31,13 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate when="0272-02-21">21. Febr. 272</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,18 +65,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Datierung</term>
-               <term>Vaballath und Aurelian</term>
+               <term n="1">Datierung</term>
+               <term n="2">Vaballath und Aurelian</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-29T15:37:23-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-07-29T15:21:24-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-07-13T06:42:13-04:00"
+                 who="http://papyri.info/users/mgerhardt">Submit - Added link to record/image in BerlPap.</change>
+         <change when="2020-07-13T06:41:59-04:00"
+                 who="http://papyri.info/users/mgerhardt">Commit - Added link to record/image in BerlPap.</change>
          <change who="HGV" when="1997-02-28">Record created</change>
          <change who="HGV" when="2010-03-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zum Ort vgl. ZN 15, 1887, S. 331.</p>
@@ -88,6 +100,13 @@
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://berlpap.smb.museum/11740/"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

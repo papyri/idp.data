@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60560" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 36 2748</title>
+            <title>A complete column of line beginnings from a roll of Iliad 16</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1684</idno>
             <idno type="filename">60560</idno>
             <idno type="dclp-hybrid">p.oxy;36;2748</idno>
+            <idno type="MP3">00931.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">10 cm</width>
+                              <height unit="cm">19.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -35,24 +44,39 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>Upright uncials</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Oxyrhynchos (Oxyrhynchites, Egypt)</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Oxyrhynchos (Oxyrhynchites, Egypt)</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -74,18 +98,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 016.129-160, school text?</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -94,15 +117,26 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-28T15:26:10-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Metadata updated.</change>
+         <change when="2020-04-28T14:41:49-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - This is good. Remove the volume # from biblio 7448, update display name; add passage details and CWKB numbers, and dimensions</change>
+         <change when="2020-04-28T14:38:39-04:00"
+                 who="http://papyri.info/users/LaurenTisdale">Submit - Updated the metadata by adding the MP3 #, Pleiades geo tags, and the online image link. Part of research project with C. M. Sampson at the University of Manitoba.</change>
          <change who="Ch. Sailer">Entered Greek text from reference edition</change>
          <change who="dclp" when="2016-08-12">set date for change log</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="frontmatter" xml:space="preserve">
-            <p>This papyrus has been digitally edited by Christian Sailer and revised by Vincenzo Damiani as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref></p>
-         </div>
+        <p>
+          This papyrus has been digitally edited by Christian Sailer and revised by Vincenzo Damiani as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="1" corresp="#FR6673" subtype="fragment" type="textpart"><ab>
 <lb n="129"/>δύσεο τεύχεα θ<gap reason="lost" extent="unknown" unit="character"/>
@@ -140,31 +174,42 @@
 </ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/7448"/>
                   <biblScope unit="number">2748</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">36</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/16711"/>
+                  <biblScope unit="number">500 b</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">16</biblScope>
+                  <biblScope n="2" unit="line" from="129" to="160">129-160</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">G. Cavallo, La scrittura greca e latina dei papiri, 2008, p. 99 [74]</bibl>
+               <bibl type="online">
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH01a0.dir/POxy.v0036.n2748.a.01.hires.jpg"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

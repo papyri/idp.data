@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11878">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11878">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an den praefectus Aegypti Q. Aemilius Saturninus</title>
@@ -30,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bakchias (Arsinoites)</origPlace>
+                     <origPlace>Bakchias (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0198-11-08">8. Nov. 198</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736896 http://www.trismegistos.org/place/392">Bakchias</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,27 +65,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Suchos - Priester an den Präfekten Q. Aemilius Saturninus</term>
-               <term>Einspruch gegen die Heranziehung von Arbeiten (Kanal) und gegen die Zahlung einer Summe (Geld) als Ersatz</term>
-               <term>Verweis an den Epistrategen</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Suchos - Priester an den Präfekten Q. Aemilius Saturninus</term>
+               <term n="3">Einspruch gegen die Heranziehung von Arbeiten (Kanal) und gegen die Zahlung einer Summe (Geld) als Ersatz</term>
+               <term n="4">Verweis an den Epistrategen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-08T08:06:04-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-08T05:07:05-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-07T10:49:59-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1996-04-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lund.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,10 +110,12 @@
             <p>
                <figure>
                   <graphic url="http://papyri.info/apis/lund.apis.38"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 37–40 s. R. Mascellari, ZPE 200 (2016) 370.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

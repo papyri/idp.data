@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv110222">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Una lettera privata tolemaica della collezione papirologica genovese</title>
+            <title>Lettera di Philon a Philon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">110222</idno>
             <idno type="TM">110222</idno>
-            <idno type="ddb-perseus-style">0291;;57</idno>
-            <idno type="ddb-filename">p.sijp.57</idno>
-            <idno type="ddb-hybrid">p.sijp;;57</idno>
+            <idno type="ddb-perseus-style">;4;161</idno>
+            <idno type="ddb-filename">p.genova.4.161</idno>
+            <idno type="ddb-hybrid">p.genova;4;161</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">PUG inv. 46.6</idno>
+                  <idno type="invNo">Genua, Università DR 46.6</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,13 +29,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0101" precision="low">III - II v.Chr.</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="http://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -43,8 +46,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,34 +63,55 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Philon an Philon</term>
-               <term>Reise in den Oxyrhynchites</term>
-               <term>Bitte um Nachrichten</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Philon an Philon</term>
+               <term n="3">Reise in den Oxyrhynchites</term>
+               <term n="4">Bitte um Nachrichten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-01-23T10:53:44-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-01-23T10:45:23-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-01-23T10:41:59-05:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Checked and updated the version of the text</change>
          <change who="HGV" when="2007-09-08">Record created</change>
          <change who="HGV" when="2010-10-27">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change when="2019-01-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Sijp.</title>
-                  <biblScope type="numbers">57</biblScope>
+                  <title level="s" type="abbreviated">PUG</title>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">161</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 62</bibl>
+               <bibl type="illustration">Tav. XIX</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Sijp. 57</bibl>
+            </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.pug.unige.net/pug;IV;161"/>
+               </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

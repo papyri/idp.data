@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv36165">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Affitto di terreno</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Alexandria</settlement>
                   </placeName>
+                  <collection>Museo Greco-Romano</collection>
+                  <idno type="invNo">253</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aphrodites Kome (Antaiopolites)</origPlace>
+                     <origPlace>Aphrodites Kome (Antaiopolites, Ägypten)</origPlace>
                      <origDate notBefore="0522" notAfter="0553">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 522 - 553</origDate>
+                ca. 522 - 553
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Aphrodites Kome</placeName>
-                        <placeName type="ancient" subtype="nome">Antaiopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Aphrodites Kome</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Antaiopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,18 +68,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Pacht</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Pacht</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-11T11:33:25-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-11-11T10:37:02-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Leave the PSI link even though there is no image. Other information which may be useful is stored there.</change>
+         <change when="2020-11-10T03:37:56-05:00"
+                 who="http://papyri.info/users/JohannesNussbaum">Submit - I made the following changes to HGV Meta:&#xD;
+Added collection (from psi-online)&#xD;
+Removed the invalid psi-online-link&#xD;
+Moved the working psi-online-link from "Illustrations" to "Other publications", because psi-online has no image&#xD;
+Added link to image on aphrodito.info</change>
          <change who="HGV" when="1993-02-03">Record created</change>
          <change who="HGV" when="2011-01-16">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Dioskoros-Archiv. Zur Datierung vgl. Festschrift G. Dobesch, S. 848f.</p>
@@ -83,8 +98,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">8</biblScope>
-                  <biblScope type="numbers">934</biblScope>
+                  <biblScope n="1" type="volume">8</biblScope>
+                  <biblScope n="2" type="numbers">934</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -93,16 +108,15 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
-                  <graphic url="http://www.psi-online.it/documents/psi;8;934"/>
-                  <head>Abbildung im Internet</head>
+               <figure n="1">
+                  <graphic url="http://bipab.aphrodito.info//pages_html/PSI_VIII_934.html"/>
                </figure>
-               <figure>
-                  <graphic url="http://www.psi-online.it/documents/934"/>
-                  <head>Abbildung im Internet</head>
+               <figure n="2">
+                  <graphic url="http://www.psi-online.it/documents/psi;8;934"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications"/>
       </body>
-   </text>
+  </text>
 </TEI>

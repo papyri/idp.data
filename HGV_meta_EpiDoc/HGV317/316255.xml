@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv316255">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Beamtenkorrespondenz</title>
@@ -29,16 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tanis (Arsinoites)</origPlace>
+                     <origPlace>Tanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0184-05-04">
-                        <offset type="after" n="1">nach</offset> 4. Mai 184 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                4. Mai 184 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737069 http://www.trismegistos.org/place/2251 http://www.trismegistos.org/place/7586 http://www.trismegistos.org/place/2616">Tanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,21 +66,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Korrespondenz (amtlich)</term>
-               <term>betrifft das Angebot auf Erwerb eines eines Bestatter-Privilegs (= P.Tarich. 10)</term>
-               <term>Königlicher Schreiber</term>
-               <term>Bezirksschreiber</term>
-               <term>Dorfschreiber</term>
+               <term n="1">Korrespondenz (amtlich)</term>
+               <term n="2">betrifft das Angebot auf Erwerb eines eines Bestatter-Privilegs (= P.Tarich. 10)</term>
+               <term n="3">Königlicher Schreiber</term>
+               <term n="4">Bezirksschreiber</term>
+               <term n="5">Dorfschreiber</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-17T12:44:35-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-04-16T09:14:58-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - The link is correct</change>
+         <change when="2021-04-16T08:29:24-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="2014-02-11">Record created</change>
          <change who="HGV" when="2014-05-23">Record last modified</change>
          <change when="2014-08-29" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Z. 7. Zu Z. 13 und 15 vgl. BASP 51, 2014, S. 247f.</p>
@@ -86,22 +96,19 @@
             <note type="original">Z. 1: 204-203 v.Chr.; Z. 11: 188-187 v.Chr.; Z. 16: 29. Apr. 184 v.Chr.</note>
             <note type="source">HGV.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 1</ref>
-                  <date type="mentioned" notBefore="-0204" notAfter="-0203">204-203 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0204" notAfter="-0203">204 - 203 v.Chr.</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 11</ref>
-                  <date type="mentioned" notBefore="-0188" notAfter="-0187">188-187 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0188" notAfter="-0187">188 - 187 v.Chr.</date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 16</ref>
                   <date type="mentioned" when="-0184-04-29">29. Apr. 184 v.Chr.</date>
                </item>
             </list>
-         </div>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -116,6 +123,13 @@
                <bibl type="illustration">Tafel XV</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm316255"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

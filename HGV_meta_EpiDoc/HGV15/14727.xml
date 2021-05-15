@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv14727">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Abgabenquittung ( für τέλος ὄνου)</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 305</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,14 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandru Nesos (Arsinoites)</origPlace>
+                     <origPlace>Alexandru Nesos (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0145-04-01">1. Apr. 145</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Alexandru Nesos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Alexandru Nesos</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,12 +70,20 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-12-17T16:36:11-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-12-17T16:26:30-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-17T15:00:09-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added link to BL image.</change>
+         <change when="2019-12-17T15:00:03-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added link to BL image.</change>
          <change who="HGV" when="1994-05-25">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL XI, S. 224.</p>
@@ -81,8 +92,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">18</biblScope>
-                  <biblScope type="numbers">13257</biblScope>
+                  <biblScope n="1" type="volume">18</biblScope>
+                  <biblScope n="2" type="numbers">13257</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -90,7 +101,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">224</biblScope>
                </bibl>
             </listBibl>
@@ -106,6 +117,13 @@
                <bibl type="publication" subtype="other">P.Lond. II 305 descr.</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_305"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

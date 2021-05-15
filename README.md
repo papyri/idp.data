@@ -1,5 +1,7 @@
 # Papyri.info IDP (Integrating Digital Papyrology) Data
 
+[![XML Validation](https://github.com/papyri/idp.data/workflows/XML%20Validation/badge.svg?event=push)](https://github.com/papyri/idp.data/actions?query=workflow%3A%22XML+Validation%22) [![GitHub contributors](https://img.shields.io/github/contributors-anon/papyri/idp.data)](https://github.com/papyri/idp.data/graphs/contributors) ![GitHub repo size](https://img.shields.io/github/repo-size/papyri/idp.data)
+
 This repository contains data produced by and used to run the [Papyri.info](http://papyri.info/) website. For the code which runs Papyri.info, see the [`papyri/navigator` repository](https://github.com/papyri/navigator) and the [`sosol/sosol` repository](https://github.com/sosol/sosol) (used for the Papyrological Editor). For some more project background, see [the Papyri.info about page](http://papyri.info/docs/about), [the DDbDP background page](http://papyri.info/docs/ddbdp), or [_The Son of Suda On-Line_](http://ryanfb.github.io/papers-BICS/sosol-bics-draft.pdf) (2013). Papyri.info is maintained by the [Duke Collaboratory for Classics Computing](http://dcthree.github.io/) (DC3).
 
 ## Repository Contents
@@ -9,13 +11,15 @@ As Integrating Digital Papyrology implies, this repository brings together sever
 * `APD` - Texts from the Arabic Papyrology Database in [EpiDoc XML](http://epidoc.sf.net/)
 * `APIS` - Metadata for the [Advanced Papyrological Information System (APIS)](http://papyri.info/docs/apis) in EpiDoc XML
 * `Biblio` - Bibliographic data for the [Bibliographie Papyrologique (BP)](http://www.ulb.ac.be/philo/cpeg/bp.htm)
+* `DCLP` - Texts from the Digital Corpus of Literary Papyri in EpiDoc XML
 * `DDB_EpiDoc_XML` - Texts from the [Duke Data Bank of Documentary Papyri (DDbDP)](http://papyri.info/docs/ddbdp) in EpiDoc XML
 * `HGV_meta_EpiDoc` - Metadata from the [Heidelberger Gesamtverzeichnis der Griechischen Papyrusurkunden Ägyptens (HGV)](http://www.rzuser.uni-heidelberg.de/~gv0/) in EpiDoc XML
 * `HGV_metadata` - Upstream HGV FileMaker data
 * `HGV_trans_EpiDoc` - Translations from the HGV in EpiDoc XML
 * `RDF` - Collection metadata from Papyri.info in RDF XML
+* `Validation` - Dependencies for XML validation (see `.github/workflows/xml-validation.yml`)
 
-Automated XML validation for this repository is available at <https://travis-ci.org/papyri/idp.data/>.
+Automated XML validation for this repository is available [as a GitHub Action](https://github.com/papyri/idp.data/actions?query=workflow%3A%22XML+Validation%22).
 
 ## Updates
 

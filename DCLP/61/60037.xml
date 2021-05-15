@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60037" xml:lang="en">
-   <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60037">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 17 2097</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1151</idno>
             <idno type="filename">60037</idno>
             <idno type="dclp-hybrid">p.oxy;17;2097</idno>
+            <idno type="MP3">464</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,11 +32,15 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">12.5 cm</width>
+                              <height unit="cm">15.3 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1" writtenLines="37">
-                           <p>papyrus roll (columns: 2, written lines: [37], pagination: 0)</p>
+                        <layout columns="2" writtenLines="23">
+                           <p>papyrus roll (columns: 2, written lines: [23], pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -43,17 +52,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (U, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">U</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -64,59 +75,155 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Herodotus; Historiae 01 64-65</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">history</term>
             </keywords>
          </textClass>
          <langUsage>
-            <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-02-12T09:29:58-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+          <change when="2020-02-12T09:29:57-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready.</change>
+          <change when="2020-02-12T09:21:13-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: redo square brackets in i.1; dot omega in i.2; renumber lost.5lin as line 3, and then the subsequent line as i.8; move $m2 to interlin and remove space before αύτην;  correct hyphen at line break in i.7 and elsewhere; change scribal apostrophe in i.8 to diastole; insert lost.?lin at head of column ii; correct accent on article in ii.10; delete |ed| markup in ii.10-11; correct the accent on καί in ii.19; remove braces and correct a to alpha at start of ii.21; code ii.23 as scribal correction. META: delete volume # from 95231; add #3 to 4392; insert image link (http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0132.dir/POxy.v0017.n2097.a.01.hires.jpg);  change display name to P. Oxy. 17 2097 and delete legacy name; add CWKB numbers for Herodotus (915, 2691); MP3 is 464; correct the spelling of Oxyrhynchus and add Pleiades georef (https://pleiades.stoa.org/places/736983)</change>
+          <change when="2020-02-12T09:21:13-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - TEXT: redo square brackets in i.1; dot omega in i.2; renumber lost.5lin as line 3, and then the subsequent line as i.8; move $m2 to interlin and remove space before αύτην;  correct hyphen at line break in i.7 and elsewhere; change scribal apostrophe in i.8 to diastole; insert lost.?lin at head of column ii; correct accent on article in ii.10; delete |ed| markup in ii.10-11; correct the accent on καί in ii.19; remove braces and correct a to alpha at start of ii.21; code ii.23 as scribal correction. META: delete volume # from 95231; add #3 to 4392; insert image link (http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0132.dir/POxy.v0017.n2097.a.01.hires.jpg);  change display name to P. Oxy. 17 2097 and delete legacy name; add CWKB numbers for Herodotus (915, 2691); MP3 is 464; correct the spelling of Oxyrhynchus and add Pleiades georef (https://pleiades.stoa.org/places/736983)</change>
+          <change when="2019-08-15T14:15:39-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Originally submitted to litpap.info 2017.12.07 by Elizabeth Keyser. Submission has been transferred to papyri.info. Submission notes were: “Submitted as project in Todd Hickey's Herodotus class“</change>
+          <change when="2019-08-15T14:15:39-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Originally submitted to litpap.info 2017.12.07 by Elizabeth Keyser. Submission has been transferred to papyri.info. Submission notes were: “Submitted as project in Todd Hickey's Herodotus class“</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This fragment contains the bottoms of two columns, written in medium-sized sloping hand which suggests a date around the middle of the third century.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τ</supplied><unclear>ῶ</unclear>ν<g rend="extension" type="filler"/>
+<lb n="2"/><supplied reason="lost">μὲν αὐτόθεν τ</supplied><unclear>ῶν</unclear> δὲ
+<lb n="2"/><gap reason="lost" quantity="5" unit="line"/>
+<lb n="3"/><supplied reason="lost">των παῖδ</supplied>ας λαβὼν
+<lb n="4"/><supplied reason="lost">καὶ κατασ</supplied>τήσας ἐς
+<lb n="5"/><supplied reason="lost">Νάξον καὶ</supplied> γὰρ <add place="interlinear"> <handShift new="m2"/>τ</add><unclear>α</unclear><supplied reason="lost">ύ</supplied>τη<supplied reason="lost">ν</supplied>
+<lb n="6"/><supplied reason="lost">ὁ Πεισίστ</supplied><unclear>ρ</unclear>ατος κα<supplied reason="lost">τ</supplied>ε
+<lb n="7" break="no" xml:id="div1-lb8"/><supplied reason="lost">στρέψα</supplied>το <unclear>π</unclear><supplied reason="lost">ο</supplied>λέμωι 
+<lb n="8"/><supplied reason="lost">καὶ ἐπέτ</supplied>ρεψε Λυγ<g type="diastole"/>δάμι
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="9" xml:id="div2-lb1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="9"/>φευγ<supplied reason="lost">ότας καὶ ἐόντας</supplied>
+<lb n="10"/>ἤδ<supplied reason="lost">η τῶι πολέωι καθυ</supplied>
+<lb n="11" break="no" xml:id="div2-lb4"/>περτέρους <supplied reason="lost">Τεγεητέων</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="12" xml:id="div2-lb5"/>ἐπὶ <supplied reason="lost">γ</supplied>ὰρ <app type="editorial"><lem>Λέο<supplied reason="lost">ν</supplied>το<supplied reason="lost">ς</supplied></lem><rdg resp="codd.">Λέοντος βασιλεύοντος</rdg></app><supplied reason="lost"> καὶ Ἡ</supplied>
+<lb n="13" break="no"/>γησικλέος ἐν Σπά<supplied reason="lost">ρτηι</supplied>
+<lb n="14"/>τοὺς ἄλλους πολέ<supplied reason="lost">μους</supplied>
+<lb n="15"/>εὐτυχέοντες οἱ <supplied reason="lost">Λακε</supplied>
+<lb n="16" break="no" xml:id="div2-lb9"/><supplied reason="lost">δ</supplied>αιμόνιοι<g type="middot"/> πρὸς Τεγεή
+<lb n="17" break="no"/><supplied reason="lost">τ</supplied>ας  μούνους προσέπτα<supplied reason="lost">ι</supplied>
+<lb n="18" break="no" xml:id="div2-lb11"/>ον<g type="middot"/> τὸ δὲ ἔτι πρότερον
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="19"/>τούτων καὶ κακονο
+<lb n="20" break="no"/>μώτατοι ἦσαν σχεδὸν
+<lb n="21" xml:id="div2-lb14"/><app type="editorial"><lem><supplied reason="lost">ἁ</supplied>πάντων</lem><rdg resp="codd.">πάντων</rdg></app> Ἑλλήνων
+<lb n="22"/>κατά τε σφέας αὐτοὺ<supplied reason="lost">ς</supplied>
+<lb n="23" xml:id="div2-lb16"/>καὶ ξείνοισι <subst><add place="inline">ἀπρόσμι</add><del rend="corrected">ἀπρόσαμι</del></subst>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb8" xml:space="preserve">
+            <ref>8</ref>
+            <p>The apostrophe between the γ and the δ is uncertain, but without it there is more ink than the letters will account for. It is alternatively possible that a mistake was made.</p>
+          </item>
+               <item corresp="#div2-lb1" xml:space="preserve">
+            <ref>9</ref>
+            <p>The preceding πε- of πεφευγότας would have been on the previous line before the break in the papyrus.</p>
+          </item>
+               <item corresp="#div2-lb4" xml:space="preserve">
+            <ref>11</ref>
+            <p>Paragraphos indicates the end of a sentence after Τεγεητέων</p>
+          </item>
+               <item corresp="#div2-lb5" xml:space="preserve">
+            <ref>12</ref>
+            <p>βασιλεύοντος does not appear on the papyrus but is present in MSS. Its absence on the papyrus perhaps follows epigraphic dating conventions.</p>
+          </item>
+               <item corresp="#div2-lb9" xml:space="preserve">
+            <ref>16</ref>
+            <p>The purpose of the stop is to disconnect πρὸς Τεγεή from the preceding participle.</p>
+          </item>
+               <item corresp="#div2-lb11" xml:space="preserve">
+            <ref>18</ref>
+            <p>Paragraphos indicates end of a sentence after -ον
+Middot may indicate end of the section after -ον</p>
+          </item>
+               <item corresp="#div2-lb14" xml:space="preserve">
+            <ref>21</ref>
+            <p>[α]πάντων is demanded by the spacing.</p>
+          </item>
+               <item corresp="#div2-lb16" xml:space="preserve">
+            <ref>23</ref>
+            <p>The superfluous α was canceled by a long vertical stroke and by an overwritten dot.
+The remaining -κτοι of ἀπρόσμικτοι would have been produced on the following page.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95231"/>
                   <biblScope unit="number">2097</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">17</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/4392"/>
+                  <biblScope unit="number">3</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016">Herodotus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016 http://cwkb.org/author/id/915/rdf">Herodotus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/176">Historiae</title>
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/176 http://cwkb.org/work/id/2691/rdf">Historiae</title>
+                  <biblScope n="1" unit="book">1</biblScope>
+                  <biblScope n="2" unit="chapter" from="64" to="65">64-65</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
+               <bibl type="online">
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0132.dir/POxy.v0017.n2097.a.01.hires.jpg"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22826">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -10,15 +10,17 @@
             <idno type="filename">22826</idno>
             <idno type="TM">22826</idno>
             <idno type="ddb-perseus-style">0154;3;1168</idno>
-            <idno type="ddb-filename">p.lond.3.1168</idno>
-            <idno type="ddb-hybrid">p.lond;3;1168</idno>
+            <idno type="ddb-filename">p.lond.3.1168intro</idno>
+            <idno type="ddb-hybrid">p.lond;3;1168intro</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 1168</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,7 +35,9 @@
                   <origin>
                      <origPlace>Hermopolis</origPlace>
                      <origDate notBefore="0043" notAfter="0044">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 43 - 44</origDate>
+                ca. 43 - 44
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,18 +67,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechung</term>
-               <term>Textilien</term>
+               <term n="1">Abrechung</term>
+               <term n="2">Textilien</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-08T11:49:43-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-08T10:46:02-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-12-31T23:54:33-05:00"
+                 who="http://papyri.info/users/gwschwendner">Submit - Added to link to BL digital images.</change>
+         <change when="2019-12-31T23:54:25-05:00"
+                 who="http://papyri.info/users/gwschwendner">Commit - Added to link to BL digital images.</change>
          <change who="HGV" when="1995-08-21">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Descr. Zur Datierung vgl. BL I, S. 282.</p>
@@ -82,10 +95,10 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1168</biblScope>
-                  <biblScope type="pages">(S. 135</biblScope>
-                  <biblScope type="generic">(Einleitung))</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">1168</biblScope>
+                  <biblScope n="3" type="pages">(S. 135</biblScope>
+                  <biblScope n="4" type="generic">(Einleitung))</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,6 +107,13 @@
                <bibl type="illustration">P.Lond. III, Plate 20</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_1168"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

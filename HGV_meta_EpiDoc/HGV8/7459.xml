@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7459">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Bricks</title>
+            <title>Account of bricks</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7459</idno>
             <idno type="TM">7459</idno>
             <idno type="ddb-perseus-style">0187;3;46</idno>
-            <idno type="ddb-filename">p.petr.3.46</idno>
-            <idno type="ddb-hybrid">p.petr;3;46</idno>
+            <idno type="ddb-filename">p.petr.kleon.124</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;124</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. d. 26 (P)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
+                     <origPlace>Fundort: Gurob; Schreibort: Arsinoites</origPlace>
+                     <origDate notBefore="-0260" notAfter="-0236">
+                ca. 260 - 236 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoCDFBAG">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +57,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,27 +74,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Ziegel</term>
-               <term>Geld</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Ziegel</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-14T04:11:36-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-10-14T04:03:47-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-10-14T03:19:48-04:00"
+                 who="http://papyri.info/users/LisaVanoppr%C3%A9">Submit - Entering translation for P. Petr. Kleon 124.&#xD;
+Changing metadata and text for P. Petr. Kleon 124.&#xD;
+Lines 2-13 are indented, please use correct markup.</change>
          <change who="HGV" when="1997-09-10">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">46</biblScope>
-                  <biblScope type="generic">(3)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">124</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -93,10 +112,11 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">Z. 1 - 7: P.Petr. II 14 (3)</bibl>
-               <bibl type="publication" subtype="other">Z. 9 - 13: P.Petr. II, S. 30</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. III 46 (3)</bibl>
+               <bibl type="publication" subtype="other" n="2">Z. 1 - 7: P.Petr. II 14 (3)</bibl>
+               <bibl type="publication" subtype="other" n="3">Z. 9 - 13: P.Petr. II, S. 30</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

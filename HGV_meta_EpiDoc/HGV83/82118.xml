@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv82118">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Brief</title>
+            <title>Lettre</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">82118</idno>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Vienne, Österreichische Nationalbibliothek, P.Vindob. K 803</idno>
+                  <placeName>
+                     <settlement>Vienna</settlement>
+                  </placeName>
+                  <collection>Österreichische Nationalbibliothek</collection>
+                  <idno type="invNo">P.Vindob. K 803</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Babylon (Heliopolites)</origPlace>
-                     <origDate notBefore="0701" notAfter="0800" precision="low">VIII</origDate>
+                     <origPlace>Babylon (Heliopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0701" notAfter="0800" cert="low" precision="low">VIII (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/727082 http://www.trismegistos.org/place/389">Babylon</placeName>
-                        <placeName type="ancient" subtype="nome">Heliopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Heliopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,37 +67,57 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Lettre</term>
-               <term>Travail</term>
-               <term>Femme</term>
-               <term>Envoi</term>
-               <term>Vin</term>
-               <term>Liste</term>
-               <term>Compte</term>
-               <term>Bateau</term>
-               <term>Arabe</term>
+               <term n="1">Lettre</term>
+               <term n="2">Travail</term>
+               <term n="3">Femme</term>
+               <term n="4">Envoi</term>
+               <term n="5">Vin</term>
+               <term n="6">Liste</term>
+               <term n="7">Compte</term>
+               <term n="8">Bateau</term>
+               <term n="9">Arabe</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-11T10:49:01-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-11T10:36:27-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-04-11T10:34:04-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Changed metadata for P.Gascou 24</change>
          <change who="HGV" when="2012-08-28">Record last modified</change>
          <change when="2012-08-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">CPR</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">228</biblScope>
+                  <title level="s" type="abbreviated">P.Gascou</title>
+                  <biblScope type="numbers">24</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 72 u. 73</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://data.onb.ac.at/rec/RZ00008177"/>
+               </figure>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">CPR II 228</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

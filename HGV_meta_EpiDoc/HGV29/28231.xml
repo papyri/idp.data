@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28231">
-   <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28231">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -30,16 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0172-02-24">
-                        <certainty locus="value" match="../year-from-date(@when)"/>24. Febr. 172 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0204-02-24">
-                        <certainty locus="value" match="../year-from-date(@when)"/>24. Febr. 204 (Jahr unsicher)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0172-02-24">
+                24. Febr. 172 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0204-02-24">
+                24. Febr. 204 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,40 +69,49 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Gaius Iulius Apollinarios an N.N. (nicht der Stratege)</term>
-               <term>als Veteran hat er nach seiner Entlassung Anspruch auf 5 Jahre Pause</term>
-               <term>wird aber trotzdem ständig zu Liturgien herangezogen</term>
-               <term>zusätzliches Argument</term>
-               <term>Alter und keine Familie</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Gaius Iulius Apollinarios an N.N. (nicht der Stratege)</term>
+               <term n="3">als Veteran hat er nach seiner Entlassung Anspruch auf 5 Jahre Pause</term>
+               <term n="4">wird aber trotzdem ständig zu Liturgien herangezogen</term>
+               <term n="5">zusätzliches Argument</term>
+               <term n="6">Alter und keine Familie</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-10T12:58:46-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-09T07:11:52-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-08T12:26:43-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1996-02-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 24. Febr. 204</p>
+            <p>Alternativdatierung: 24. Febr. 204. Zu Z. 30 s. R. Mascellari, ZPE 200 (2016) 376.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">180</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">180</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/28231"/>
+               </bibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">17</biblScope>
                </bibl>
             </listBibl>
@@ -107,8 +122,8 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">W.Chr. 396</bibl>
-               <bibl type="publication" subtype="other">Sel. Pap. II 285</bibl>
+               <bibl type="publication" subtype="other" n="1">W.Chr. 396</bibl>
+               <bibl type="publication" subtype="other" n="2">Sel. Pap. II 285</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -119,18 +134,17 @@
             </listBibl>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">Johnson, Roman Egypt (1936), S. 612, Nr. 358</bibl>
-               <bibl type="translations">Campbell, Roman Army (1994), 339</bibl>
+               <bibl type="translations" n="1">Johnson, Roman Egypt (1936), S. 612, Nr. 358</bibl>
+               <bibl type="translations" n="2">Campbell, Roman Army (1994), 339</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://berlpap.smb.museum/01978/"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2290">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Lista di beni</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">2290</idno>
             <idno type="TM">2290</idno>
             <idno type="ddb-perseus-style">0238;7;865</idno>
-            <idno type="ddb-filename">psi.7.865</idno>
-            <idno type="ddb-hybrid">psi;7;865</idno>
+            <idno type="ddb-filename">psi.com.12.1</idno>
+            <idno type="ddb-hybrid">psi.com;12;1</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">BML inv. 19170</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia (Arsinoites)</origPlace>
+                     <origPlace>Philadelphia (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737008 http://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,18 +70,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Fragment</term>
-               <term>Erwähnung von Kleidung</term>
+               <term n="1">Liste</term>
+               <term n="2">Kleidung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-05T09:18:24-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-02-14T06:24:38-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-02-14T05:18:51-05:00"
+                 who="http://papyri.info/users/AnnaArpaia">Submit - I updated in Metadata the link to PSI online-&gt;PSI Com. 12 1 with the image.</change>
          <change who="HGV" when="1993-08-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Zenon - Archiv. Descr. Datierung nach dem Rahmen des Zenon - Archivs.</p>
@@ -82,21 +95,21 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">865</biblScope>
+                  <title level="s" type="abbreviated">PSI Com.</title>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">1</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">245</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">248</biblScope>
                </bibl>
             </listBibl>
@@ -109,11 +122,15 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://www.psi-online.it/documents/psi;7;865"/>
-                  <head>Abbildung im Internet</head>
+                  <graphic url="http://www.psi-online.it/documents/psi-com12-1"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI VII 865</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

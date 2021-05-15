@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35054">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Lettera</title>
+            <title>Lettera a un benefattore</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">35054</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Istituto Papirologico ’G. Vitelli’</collection>
+                  <idno type="invNo">PSI inv. 2535 Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites (?)</origPlace>
-                     <origDate notBefore="0401" notAfter="0500" precision="low">V</origDate>
+                     <origPlace>Oxyrhynchites ?, Ägypten</origPlace>
+                     <origDate notBefore="0501" notAfter="0700" precision="low">VI - VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,20 +68,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>N.N. an N.N.</term>
-               <term>christlich</term>
-               <term>Gebet</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">christlich</term>
+               <term n="4">Gebet</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-05T09:39:16-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2018-02-14T06:34:42-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2018-02-14T05:36:11-05:00"
+                 who="http://papyri.info/users/AnnaArpaia">Submit - I updated the link to the papyrus in PSI online with the image. The previous one doesn't exist anymore.</change>
          <change who="HGV" when="1992-03-13">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zum Ort vgl. CE 47, 1972, S. 272. Vgl. Feissel - Gascou, La pétition à Byzance, S. 187.</p>
@@ -82,15 +95,17 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">1425</biblScope>
+                  <title level="s" type="abbreviated">PSI Com.</title>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">13</biblScope>
+                  <biblScope n="3" type="generic">a</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">L'Istituto Papirologico "G. Vitelli", Storia, scavi e collezioni (CD, 2003), Papiri documentari 16</bibl>
+               <bibl type="illustration" n="1">L'Istituto Papirologico "G. Vitelli", Storia, scavi e collezioni (CD, 2003), Papiri documentari 16</bibl>
+               <bibl type="illustration" n="2">Tavole XI-XII</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="translations">
@@ -103,11 +118,15 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://www.psi-online.it/documents/psi;14;1425"/>
-                  <head>Abbildung im Internet</head>
+                  <graphic url="http://www.psi-online.it/documents/psi-com12-13"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI XIV 1425</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv17104">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettre de Sarapion à Eutychidès</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolites</origPlace>
+                     <origPlace>Hermopolites, Ägypten</origPlace>
                      <origDate notBefore="0090" notAfter="0133">90 - 133</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,20 +62,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Sarapion an Eutychides</term>
-               <term>Landwirtschaft</term>
-               <term>Mantik</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Sarapion an Eutychides</term>
+               <term n="3">Landwirtschaft</term>
+               <term n="4">Mantik</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-01T15:29:18-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-02-01T15:00:31-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - Ok.</change>
+         <change when="2021-02-01T13:54:22-05:00"
+                 who="http://papyri.info/users/PeterArzt-Grabner">Submit - Illustration added</change>
+         <change when="2021-02-01T13:54:02-05:00"
+                 who="http://papyri.info/users/PeterArzt-Grabner">Commit - Illustration added</change>
          <change who="HGV" when="1992-03-03">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Datierung nach dem Rahmen des Archivs. Zu Z. 7 und 8-9 vgl. CE 84, 2009, S. 248f.</p>
@@ -83,13 +92,16 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sarap.</title>
-                  <biblScope type="numbers">83</biblScope>
-                  <biblScope type="generic">a</biblScope>
+                  <biblScope n="1" type="numbers">83</biblScope>
+                  <biblScope n="2" type="generic">a</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Orakelsprüche, Magie und Horoskope, S. 83, Abb. 22</bibl>
+            </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
@@ -108,10 +120,9 @@
             <p>
                <figure>
                   <graphic url="http://data.onb.ac.at/rec/RZ00005084"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59447" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P.Herc. Stub</title>
+            <title>Chrysippus: De providentia 1</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,13 +14,23 @@
             <idno type="filename">59447</idno>
             <idno type="dclp-hybrid">p.herc;;1421</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Naples, Biblioteca Nazionale 108853 / 1405</idno>
+                  <idno>
+                     <idno type="invNo" n="1">P.Herc. 1421 pezzo 1</idno>
+                     <idno type="invNo" n="2">P.Herc. 1421 pezzo 2</idno>
+                     <idno type="invNo" n="3">P.Herc. 1421 pezzo 3</idno>
+                     <idno type="invNo" n="4">P.Herc. 1421 pezzo 4</idno>
+                     <idno type="invNo" n="5">P.Herc. 1421 subscriptio</idno>
+                  </idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
@@ -38,17 +48,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Herculaneum (Campania, Italy); written: Italy</origPlace>
+                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy</origPlace>
                      <origDate notBefore="0001" notAfter="0050" precision="low">1. Hälfte I</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Campania</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Italy</placeName>
                      </p>
@@ -65,6 +75,22 @@
                            <graphic url="http://www.chartes.it/images/photo/PHerc 1421-CR04-09443-FS8-FIL8.jpg"/>
                            <orgName>CPART, Brigham Young University</orgName>
                         </custEvent>
+                        <custEvent type="sketched" corresp="#FR9208" when="1915">
+                           <forename>Mario</forename>
+                           <surname>Arman</surname>
+                        </custEvent>
+                        <custEvent type="sketched" corresp="#FR9209" when="1915">
+                           <forename>Mario</forename>
+                           <surname>Arman</surname>
+                        </custEvent>
+                        <custEvent type="sketched" corresp="#FR9210" when="1915">
+                           <forename>Mario</forename>
+                           <surname>Arman</surname>
+                        </custEvent>
+                        <custEvent type="sketched" corresp="#FR9211" when="1915">
+                           <forename>Mario</forename>
+                           <surname>Arman</surname>
+                        </custEvent>
                      </custodialHist>
                   </adminInfo>
                </additional>
@@ -80,11 +106,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Chrysippus; peri pronoias 01, with title</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -93,44 +118,88 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-11-26" who="IDP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-05-16T15:15:14-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Finalized - Revised text, added @corresp, updated bibliography.</change>
+          <change when="2020-05-16T12:15:38-04:00"
+                 who="http://papyri.info/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2020-05-16T12:15:07-04:00"
+                 who="http://papyri.info/users/HolgerEssler">Submit - Submitted and corrected edition encoded by C. Vergara. </change>
+          <change when="2014-11-26" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Claudio Vergara (CISPE) and revised by Holger Essler as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart" corresp="#FR9207"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">πε</supplied>
+<lb n="2" break="no"/>ρ<unclear>ὶ</unclear> <app type="alternative"><lem>θε<unclear>ὸ</unclear><supplied reason="lost">ν</supplied></lem><rdg>θε<unclear>ο</unclear><supplied reason="lost">ὺς</supplied></rdg></app> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2" subtype="fragment" type="textpart" corresp="#FR9208"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/>νει<unclear>ν</unclear> τὸν λόγον το<supplied reason="lost" cert="low">ῦτον </supplied>
+<lb n="2"/>κατ<unclear>ακ</unclear>ολου<unclear>θ</unclear>εῖν <gap reason="illegible" quantity="5" unit="character"/>
+<lb n="3"/>δια<unclear>φ</unclear>όρου καὶ τ<unclear>α</unclear> <gap reason="illegible" quantity="5" unit="character"/>
+<lb n="4"/><unclear>γ</unclear>εί<unclear>ν</unclear>εσθαι διαφορ<gap reason="lost" quantity="3" unit="character"/>
+<lb n="4"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> τῆς ζ<supplied reason="lost">ωῆς</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="3" subtype="fragment" type="textpart" corresp="#FR9209"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> τῆς ψ<unclear>υ</unclear><supplied reason="lost">χῆς</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/> 
+</ab></div>
+<div n="4" subtype="fragment" type="textpart" corresp="#FR9210"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><unclear>π</unclear>ολλῶν συντέτε<unclear>υ</unclear>χεν
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="5" type="textpart" subtype="fragment" corresp="#FR9211"><ab>
+<lb n="1"/>Χρυσίππου
+<lb n="2"/>περὶ προνοίας
+<lb n="3"/><num value="1">α</num>
+<lb n="4"/><expan>ἀριθ<ex>μὸς</ex></expan>  <num value="2120">ΧΧΗ<unclear>Δ</unclear></num>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
+               <bibl n="1" type="edition" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83723"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Notizie di Papiri Ercolanesi inediti</title>
-                  <author n="1">
-                     <surname>Bassi</surname>
-                     <forename>Domenico</forename>
-                  </author>
-                  <date>1916</date>
-                  <!--ignore - stop-->
+                  <biblScope unit="page" from="209" to="10">209-10</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/83890"/>
+                  <biblScope n="1" unit="number">82</biblScope>
+                  <biblScope n="2" unit="page" from="276" to="277">276-277</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1264">Chrysippus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1264">Chrysippus</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/665">De providentia</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
+               <bibl type="printed">Del Mastro, Titoli e annotazioni bibliologiche, p. 276.</bibl>
                <bibl type="online">
                   <ptr target="http://www.chartes.it/index.php?r=document/view&amp;id=1446"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

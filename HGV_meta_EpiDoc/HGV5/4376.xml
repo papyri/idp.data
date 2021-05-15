@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4376">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Fragment eines Hypomnema (?)</title>
@@ -31,20 +31,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Magdola (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0243-06-12">
-                        <certainty locus="value" match="../year-from-date(@when)"/>12. Juni 243 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0218-06-06">
-                        <certainty locus="value" match="../year-from-date(@when)"/>6. Juni 218 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" when="-0201-06-01">
-                        <certainty locus="value" match="../year-from-date(@when)"/>1. Juni 201 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Magdola (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0243-06-12">
+                12. Juni 243 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0218-06-06">
+                6. Juni 218 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="3" xml:id="dateAlternativeZ" when="-0201-06-01">
+                1. Juni 201 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736956 http://www.trismegistos.org/place/715 http://www.trismegistos.org/place/1284">Magdola</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -52,8 +59,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,18 +76,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe (?)</term>
-               <term>Steuern</term>
+               <term n="1">Eingabe (?)</term>
+               <term n="2">Steuern</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-08T12:14:36-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-07T17:08:42-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-06T05:41:23-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - images ajoutées</change>
          <change who="HGV" when="1991-04-29">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierungen: 6. Juni 218 v. Chr., 1. Juni 201 v. Chr. Zum Ort und zur Datierung vgl. BL X, S. 206.</p>
@@ -88,8 +102,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">10869</biblScope>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">10869</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,7 +111,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">X</biblScope> 
+                  <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">206</biblScope>
                </bibl>
             </listBibl>
@@ -105,6 +119,16 @@
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2010179.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/Documentaires/2020179.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

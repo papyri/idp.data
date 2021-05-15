@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv14634">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Steuerquittung (für Gartensteuer, ἐλαίας παραγωγή, ναύβιον, ἐπαρούριον, κόλλυβος, συμβολικόν und γεωμετρία)</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
-                     <origDate notBefore="0146-10-28" notAfter="0146-11-26">28. Okt. - 26. Nov. 146</origDate>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0125-10-28" notAfter="0125-11-26">28. Okt. - 26. Nov. 125</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,28 +65,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Zahlung</term>
-               <term>Steuern</term>
-               <term>Namen</term>
-               <term>Beamte</term>
+               <term n="1">Quittung</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Steuern</term>
+               <term n="4">Namen</term>
+               <term n="5">Beamte</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-11-24T09:10:56-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-11-24T08:55:14-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-11-24T08:43:32-05:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Corrected the date in accordance with the new reading of line 11.</change>
          <change who="HGV" when="1990-07-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">16</biblScope>
-                  <biblScope type="numbers">12637</biblScope>
+                  <biblScope n="1" type="volume">16</biblScope>
+                  <biblScope n="2" type="numbers">12637</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,10 +114,12 @@
             <p>
                <figure>
                   <graphic url="http://quod.lib.umich.edu/a/apis/x-1657"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung vgl. TM, APIS record und die verbesserte Lesung in Z. 11 (Hadrian statt Antoninus Pius).</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

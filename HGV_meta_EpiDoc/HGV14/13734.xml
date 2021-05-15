@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13734">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe eines Antinoiten zwecks Befreiung von einer Liturgie</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="0161" notAfter="0169">161 - 169</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,67 +62,77 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Petition</term>
-               <term>Befreiung</term>
-               <term>Liturgie</term>
-               <term>Kamele</term>
-               <term>kaiserliche Privilegien</term>
-               <term>Briefe von Kaisern</term>
-               <term>Praefekten in Abschrift als Beglaubigung</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Petition</term>
+               <term n="3">Befreiung</term>
+               <term n="4">Liturgie</term>
+               <term n="5">Kamele</term>
+               <term n="6">kaiserliche Privilegien</term>
+               <term n="7">Briefe von Kaisern</term>
+               <term n="8">Praefekten in Abschrift als Beglaubigung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-08T05:00:55-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-07T16:03:27-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-07T14:59:38-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1992-12-09">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 50 vgl. ZPE 167, 2008, S. 146.</p>
+            <p>Zu Z. 50 vgl. ZPE 167, 2008, S. 146. Zu Z. 73–74 s. R. Mascellari, ZPE 200 (2016) 374–375.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 28 - 33: Abschrift eines Dokuments von 130 - 134 (135); Z. 34 - 41: Abschrift eines Dokuments von 152; Z. 42 - 52: Abschrift eines Dokuments von 161; Z. 53 - 59: Abschrift eines Dokuments vom 14. Apr. 135; Z. 60 - 65: Abschrift eines Dokuments vom 24. Febr. 137; Z. 66 - 71: Abschrift eines Dokuments vom 24. Aug. 156</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 28-33</ref>
                   <note type="comment">Abschrift eines Dokuments von</note>
-                  <date type="mentioned" notBefore="0130" notAfter="0134">130 - 134 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned" notBefore="0130" notAfter="0134">
+              130 - 134 (Jahr unsicher)
+              <certainty locus="value" n="1" match="../date/year-from-date(@notBefore)"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@notAfter)"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 28-33</ref>
-                  <date type="mentioned" notBefore="0130" notAfter="0135">130 - 135 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@notBefore)"/>
-                     <certainty locus="value" match="../date/year-from-date(@notAfter)"/>
+                  <date type="mentioned" notBefore="0130" notAfter="0135">
+              130 - 135 (Jahr unsicher)
+              <certainty locus="value" n="1" match="../date/year-from-date(@notBefore)"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@notAfter)"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 34-41</ref>
                   <note type="comment">Abschrift eines Dokuments von</note>
                   <date type="mentioned" when="0152">152</date>
                </item>
-               <item>
+               <item n="4">
                   <ref>Z. 42-52</ref>
                   <note type="comment">Abschrift eines Dokuments von</note>
                   <date type="mentioned" when="0161">161</date>
                </item>
-               <item>
+               <item n="5">
                   <ref>Z. 53-59</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
                   <date type="mentioned" when="0135-04-14">14. Apr. 135</date>
                </item>
-               <item>
+               <item n="6">
                   <ref>Z. 60-65</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
                   <date type="mentioned" when="0137-02-24">24. Febr. 137</date>
                </item>
-               <item>
+               <item n="7">
                   <ref>Z. 66-71</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
                   <date type="mentioned" when="0156-08-24">24. Aug. 156</date>
@@ -140,7 +151,7 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">375</biblScope>
                </bibl>
             </listBibl>
@@ -158,18 +169,17 @@
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">Johnson - Coleman-Norton - Bourne, Ancient Roman Statutes (1961), S. 206-207, Nr. 248 (Kol. II 53-59)</bibl>
-               <bibl type="translations">Sherk, Augustus to Hadrian (1988), S. 193, Nr. 153 (Kol. II 53-59)</bibl>
+               <bibl type="translations" n="1">Johnson - Coleman-Norton - Bourne, Ancient Roman Statutes (1961), S. 206-207, Nr. 248 (Kol. II 53-59)</bibl>
+               <bibl type="translations" n="2">Sherk, Augustus to Hadrian (1988), S. 193, Nr. 153 (Kol. II 53-59)</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
                   <graphic url="http://papyri-wuerzburg.dl.uni-leipzig.de/receive/WrzPapyri_schrift_00000180"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

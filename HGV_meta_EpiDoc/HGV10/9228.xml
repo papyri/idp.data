@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv9228">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aueris (Arsinoites)</origPlace>
+                     <origPlace>Aueris (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0027-01-13">13. Jan. 27 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736918 http://www.trismegistos.org/place/747">Aueris</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,22 +65,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eid</term>
-               <term>Vollzug eines Vertrages (Kauf)</term>
-               <term>Übereignung von Land</term>
+               <term n="1">Eid</term>
+               <term n="2">Vollzug eines Vertrages (Kauf)</term>
+               <term n="3">Übereignung von Land</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-02-01T15:45:31-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-02-01T14:47:26-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-02-01T13:24:51-05:00"
+                 who="http://papyri.info/users/PeterArzt-Grabner">Submit - Arzt-Grabner, page number corrected</change>
+         <change when="2021-02-01T13:24:37-05:00"
+                 who="http://papyri.info/users/PeterArzt-Grabner">Commit - Arzt-Grabner, page number corrected</change>
          <change who="HGV" when="1996-02-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. ZPE 100, 1994, S. 211 - 222. Zu Z. 20 vgl. Arzt-Grabner, 2. Korinther, S. 41ß, Anm. 847.</p>
+            <p>Zur Datierung vgl. ZPE 100, 1994, S. 211 - 222. Zu Z. 20 vgl. Arzt-Grabner, 2. Korinther, S. 419, Anm. 847.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -87,7 +97,7 @@
             <list>
                <item>
                   <ref>S. 17</ref>
-                  <date type="mentioned" notBefore="0027-01-11" notAfter="0027">11. Jan. - 27</date>
+                  <date type="mentioned" notBefore="0027-01-11" notAfter="0027">11. Jan. 27 - 27</date>
                </item>
             </list>
          </div>
@@ -95,8 +105,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">543</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">543</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -109,10 +119,9 @@
             <p>
                <figure>
                   <graphic url="http://berlpap.smb.museum/02424/"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

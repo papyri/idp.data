@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv19362">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Bodenpachthypomnema</title>
@@ -31,17 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Sesiy (Hermopolites)</origPlace>
+                     <origPlace>Sesiy (Hermopolites, Ägypten)</origPlace>
                      <origDate notBefore="0435-09-29" notAfter="0435-10-28">
-                        <certainty locus="value" match="../month-from-date(@notBefore)"/>
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>29. Sept. - 28. Okt. 435 (Monat und Tag unsicher)</origDate>
+                29. Sept. - 28. Okt. 435 (Monat und Tag unsicher)
+                <certainty locus="value" n="1" match="../day-from-date(@notBefore)"/>
+                        <certainty locus="value" n="2" match="../month-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/759641 http://www.trismegistos.org/place/2940">Sesiy</placeName>
-                        <placeName type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,29 +69,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Pacht</term>
-               <term>Land (Wein)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Pacht</term>
+               <term n="3">Land (Wein)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-04T05:48:47-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-02T18:33:08-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-02T13:12:15-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="2002-02-06">Record created</change>
          <change who="HGV" when="2009-07-03">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Rückseite vgl. AnalPap 23-24, 2011-2012, S. 160 (zu P.Flor. III 315).</p>
+            <p>Zur Rückseite vgl. AnalPap 23-24, 2011-2012, S. 160 (zu P.Flor. III 315). Zu Z. 9–10 s. D. Hagedorn, ZPE 198 (2016) 191, Anm. 6.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">22</biblScope>
-                  <biblScope type="numbers">15493</biblScope>
+                  <biblScope n="1" type="volume">22</biblScope>
+                  <biblScope n="2" type="numbers">15493</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,15 +105,15 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">238</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Pap.Flor. XXX, Tav. CXXXVII</bibl>
-               <bibl type="illustration">Cavallo, Scrittura, S. 127 [102] (Ausschnitt)</bibl>
+               <bibl type="illustration" n="1">Pap.Flor. XXX, Tav. CXXXVII</bibl>
+               <bibl type="illustration" n="2">Cavallo, Scrittura, S. 127 [102] (Ausschnitt)</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -113,5 +123,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

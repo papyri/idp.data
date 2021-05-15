@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv381921">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Compte de vin (en grec)</title>
+            <title>Compte de vin</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">381921</idno>
             <idno type="TM">381921</idno>
-            <idno type="ddb-perseus-style">;;28</idno>
             <idno type="ddb-filename">p.louvre.bawit.28</idno>
             <idno type="ddb-hybrid">p.louvre.bawit;;28</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
+                  <placeName>
+                     <settlement>Paris</settlement>
+                  </placeName>
+                  <collection>Palais du Louvre</collection>
                   <idno type="invNo">P.Louvre E 27577</idno>
                </msIdentifier>
                <physDesc>
@@ -29,15 +32,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Bawit (Hermopolites)</origPlace>
+                     <origPlace>Bawit (Hermopolites, Ägypten)</origPlace>
                      <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/756663 http://www.trismegistos.org/place/2921">Bawit</placeName>
-                        <placeName type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="http://www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,26 +69,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aufstellung</term>
-               <term>Lieferungen (Fuhren)</term>
-               <term>Wein</term>
-               <term>Transportkosten</term>
+               <term n="1">Aufstellung</term>
+               <term n="2">Lieferungen (Fuhren)</term>
+               <term n="3">Wein</term>
+               <term n="4">Transportkosten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-18T12:43:49-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-07-18T09:49:56-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-07-17T09:47:50-04:00"
+                 who="http://papyri.info/users/Luca%20De%20Curtis">Submit - Text and some metadata added (Digital Papyrology webinar 2020)</change>
          <change who="HGV" when="2014-11-11">Record created</change>
          <change who="HGV" when="2014-12-23">Record last modified</change>
          <change when="2015-02-12" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Tag: 3.(4.) Sept.</p>
-         </div>
-         <div type="edition">
-            <p>Kein Text: not yet entered</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -96,5 +107,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

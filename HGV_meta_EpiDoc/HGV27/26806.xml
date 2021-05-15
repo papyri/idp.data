@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv26806">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Orakelfrage</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737053 http://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,18 +65,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Orakel</term>
-               <term>Frage</term>
+               <term n="1">Orakel</term>
+               <term n="2">Frage</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-03-03T15:29:50-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-02-01T14:56:43-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Fine. Give the new illustration a separate entry in the xml.</change>
+         <change when="2021-02-01T13:59:36-05:00"
+                 who="http://papyri.info/editor/users/PeterArzt-Grabner">Submit - Illustration added</change>
+         <change when="2021-02-01T13:59:26-05:00"
+                 who="http://papyri.info/editor/users/PeterArzt-Grabner">Commit - Illustration added</change>
          <change who="HGV" when="1991-05-29">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. AnalPap 16-17, 2004-2005, S. 94f.</p>
@@ -83,23 +93,31 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">11227</biblScope>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">11227</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/26806"/>
+               </bibl>
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">212</biblScope>
+               </bibl>
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">209</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">ZPE 11, 1973, Tafel IV b nach S. 200</bibl>
+               <bibl type="illustration" n="1">ZPE 11, 1973, Tafel IV b nach S. 200</bibl>
+               <bibl type="illustration" n="2">Orakelsprüche, Magie und Horoskope, S. 28, Abb. 6</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -119,10 +137,9 @@
             <p>
                <figure>
                   <graphic url="http://data.onb.ac.at/rec/RZ00006205"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

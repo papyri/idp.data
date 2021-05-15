@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3386">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Intimidation de témoins</title>
@@ -31,16 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Magdola (Arsinoites)</origPlace>
+                     <origPlace>Magdola (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0221-02-26" notAfter="-0221-02-27">
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>26. Febr. - 27. Febr. 221 v.Chr. (Tag unsicher)</origDate>
+                26. - 27. Feb. 221 v.Chr. (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736956 http://www.trismegistos.org/place/715 http://www.trismegistos.org/place/1284">Magdola</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,23 +68,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Tetosiris an den König</term>
-               <term>Einschüchterung von Zeugen durch den Gegner</term>
-               <term>ursprüngliche Auseinandersetzung um den Bau eines Hauses</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Tetosiris an den König</term>
+               <term n="3">Einschüchterung von Zeugen durch den Gegner</term>
+               <term n="4">ursprüngliche Auseinandersetzung um den Bau eines Hauses</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-02-09T15:26:16-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-02-08T12:15:33-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-02-08T03:59:10-05:00"
+                 who="http://papyri.info/users/ValentinB.">Submit - images ajoutées</change>
          <change who="HGV" when="1992-11-30">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 6 und 8 vgl. JJP 41, 2011, S. 15-33. </p>
+            <p>Zu Z. 6 und 8 vgl. JJP 41, 2011, S. 15-33.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -100,6 +110,16 @@
                <bibl type="translations">Lewis, Greeks in Ptolemaic Egypt (1986), S. 60-61</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PEnteux/2011134.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/photos/PEnteux/2021134.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

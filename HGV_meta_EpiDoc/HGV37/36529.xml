@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv36529">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment de contrat</title>
+            <title>Contrat d'engagement d'intendant des archives de Disocore d’Aphrodité</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">36529</idno>
@@ -31,14 +31,14 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aphrodites Kome (Antaiopolites)</origPlace>
-                     <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
+                     <origPlace>Aphrodites Kome (Antaiopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0565" notAfter="0578">565 - 578</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Aphrodites Kome</placeName>
-                        <placeName type="ancient" subtype="nome">Antaiopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Aphrodites Kome</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Antaiopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +46,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,19 +63,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Einstellung</term>
-               <term>Verwalter</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Einstellung</term>
+               <term n="3">Verwalter</term>
+               <term n="4">Arbeit</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-04-11T12:24:32-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-04-11T12:12:21-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-04-11T12:06:28-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Changed metadata to P.Gascou 30</change>
          <change who="HGV" when="1994-09-02">Record created</change>
          <change who="HGV" when="2011-01-16">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Dioskoros - Archiv. Vgl. Annuaire de l'École Pratique des Hautes Études, Sect. hist. et phil. 141, 2008-2009 (2011), S. 85f.</p>
@@ -82,9 +90,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Cair. Masp.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">67304</biblScope>
+                  <title level="s" type="abbreviated">P.Gascou</title>
+                  <biblScope type="numbers">30</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,26 +99,32 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
+                  <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">47</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 152</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Cair.Masp.&amp;vVo3=1&amp;vNum=67304"/>
-                  <head>Abbildung im Internet</head>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://www.misha.fr/papyrus_bipab/pages_html/P_Cair_Masp_III_67304.html"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Cair. Masp. III 67304</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

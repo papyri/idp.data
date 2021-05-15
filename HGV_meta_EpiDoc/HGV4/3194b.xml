@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3194b">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,27 +62,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Brot</term>
-               <term>Geld</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Brot</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-19T04:47:44-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready</change>
+         <change when="2021-01-18T16:13:33-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-18T13:23:06-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">264</biblScope>
-                  <biblScope type="side">V</biblScope>
+                  <biblScope n="1" type="volume">6</biblScope>
+                  <biblScope n="2" type="numbers">264</biblScope>
+                  <biblScope n="3" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,10 +99,12 @@
             <p>
                <figure>
                   <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/Karte/VI_264.html"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 2 s. D. Kaltsas, ZPE 200 (2016) 421, Anm. 7.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

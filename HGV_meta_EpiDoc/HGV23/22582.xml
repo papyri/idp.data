@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22582">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Loan of Money</title>
+            <title>Loan of money</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22582</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. c. 267 (P) (b)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
+                     <origPlace>Hibis ? (Oasis Magna)</origPlace>
                      <origDate when="0237-09-13">13. Sept. 237</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2786 https://pleiades.stoa.org/places/776181">Hibis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,25 +70,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2019-07-12T08:57:03-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2019-07-12T08:45:22-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2019-07-12T08:43:48-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Updating two HGV records for P.Nekr.</change>
          <change who="HGV" when="1997-05-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Bodl.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">43</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">1</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -87,16 +102,21 @@
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope> 
+                  <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">45</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 29</bibl>
+               <bibl type="illustration">P.Bodl. I, Plate 29</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bodl. I 43</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

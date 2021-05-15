@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12886">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Melderolle von Bankdiagraphai</title>
@@ -31,13 +31,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="0139-12-28" notAfter="0140-01-26">28. Dez. 139 - 26. Jan. 140</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +45,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,66 +62,79 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Verträge</term>
-               <term>Bankdiagraphai</term>
+               <term n="1">Register</term>
+               <term n="2">Verträge</term>
+               <term n="3">Bankdiagraphai</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-01-11T05:30:01-05:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-01-09T15:58:43-05:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-09T11:38:17-05:00"
+                 who="http://papyri.info/users/dkaltsas">Submit - Added bibliographical reference under ‘Notes / Bemerkungen’.</change>
          <change who="HGV" when="1993-08-01">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu derselben Rolle gehört vielleicht auch P.Berol. inv. 1893; vgl. APF 45, 1999, S. 47-56. Zu Z. 263f. vgl. APF 46, 2000, S. 98f. Zu Z. 73 und 315 vgl. Russo, Gioielli, S. 38, Nr. 36.</p>
+            <p>Zu derselben Rolle gehört vielleicht auch P.Berol. inv. 1893; vgl. APF 45, 1999, S. 47-56. Zu Z. 263f. vgl. APF 46, 2000, S. 98f. Zu Z. 73 und 315 vgl. Russo, Gioielli, S. 38, Nr. 36. Zu Z. 319–320 vgl. R.W. Daniel, ZPE 200 (2016) 395.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ross. Georg.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">18</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">18</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/12886"/>
+               </bibl>
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">P.Ross. Georg. II 18\tVIII</biblScope>
                   <biblScope type="pages">290</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope> 
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">225</biblScope>
                </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope> 
-                  <biblScope type="pages">166</biblScope>
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">XII</biblScope>
+                  <biblScope type="pages">48/166</biblScope>
+               </bibl>
+               <bibl type="BL" n="4">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">183</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Z. 1 - 20: APF 45, 1999, Tafel II</bibl>
-               <bibl type="illustration">Z. 260 - 267: Tafel 2</bibl>
-               <bibl type="illustration">Z. 188 - 208: P.Cair.Preis., Plate 29</bibl>
-               <bibl type="illustration">Z. 292 - 322: P.Cair.Preis., Plate 28 und 29</bibl>
-               <bibl type="illustration">Z. 323 - 349: P.Cair.Preis., Plate 28</bibl>
+               <bibl type="illustration" n="1">Z. 1 - 20: APF 45, 1999, Tafel II</bibl>
+               <bibl type="illustration" n="2">Z. 260 - 267: Tafel 2</bibl>
+               <bibl type="illustration" n="3">Z. 188 - 208: P.Cair.Preis., Plate 29</bibl>
+               <bibl type="illustration" n="4">Z. 292 - 322: P.Cair.Preis., Plate 28 und 29</bibl>
+               <bibl type="illustration" n="5">Z. 323 - 349: P.Cair.Preis., Plate 28</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">Z. 188 - 208: P.Cair. Preis. 31 e und d</bibl>
-               <bibl type="publication" subtype="other">Z. 292 - 322: P.Cair. Preis. 31 c und a</bibl>
-               <bibl type="publication" subtype="other">Z. 323 - 349: P.Cair. Preis. 31 b</bibl>
-               <bibl type="publication" subtype="other">Z. 65 - 76: CPGr I 30</bibl>
-               <bibl type="publication" subtype="other">Z. 309 - 321: CPGr I 31</bibl>
+               <bibl type="publication" subtype="other" n="1">Z. 188 - 208: P.Cair. Preis. 31 e und d</bibl>
+               <bibl type="publication" subtype="other" n="2">Z. 292 - 322: P.Cair. Preis. 31 c und a</bibl>
+               <bibl type="publication" subtype="other" n="3">Z. 323 - 349: P.Cair. Preis. 31 b</bibl>
+               <bibl type="publication" subtype="other" n="4">Z. 65 - 76: CPGr I 30</bibl>
+               <bibl type="publication" subtype="other" n="5">Z. 309 - 321: CPGr I 31</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -134,10 +148,9 @@
             <p>
                <figure>
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Cair.Preis.&amp;vVol=&amp;vNum=31"/>
-                  <head>Abbildung im Internet</head>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

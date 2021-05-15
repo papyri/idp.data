@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m58933" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 58933</title>
+            <title>Acta Alexandrinorum; Acta Maximi?</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -12,9 +12,14 @@
             <idno type="TM">58933</idno>
             <idno type="LDAB">28</idno>
             <idno type="filename">58933</idno>
-            <idno type="dclp-hybrid">na;;58933</idno>
+            <idno type="dclp-hybrid">tm;;58933</idno>
+            <idno type="MP3">02241.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">2.6</width>
+                              <height unit="cm">8</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,38 +47,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
+                     <origPlace>unbekannt</origPlace>
+                     <origDate notBefore="0176" notAfter="0200" precision="low">Ende II</origDate>
                   </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                     </p>
-                  </provenance>
-                  <provenance type="composed">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                     </p>
-                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term>acta</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Acta Alexandrinorum; Acta Maximi?</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">history</term>
+               <term n="5">acta</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -78,19 +76,42 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-10-22T15:53:50-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-10-22T15:50:01-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+         <change when="2020-10-22T15:48:21-04:00"
+                 who="http://papyri.info/users/james.cowey">Submit - Added bibliography, measurement  and modified date</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0300">Acta Alexandrinorum</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0300">Acta Alexandrinorum</author>
                </bibl>
             </listBibl>
          </div>
          <div type="edition" xml:space="preserve" xml:lang="grc"/>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/20481"/>
+                  <biblScope unit="page">180</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/6143"/>
+                  <biblScope unit="number">21</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

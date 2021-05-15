@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22632">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Deed of Divorce</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22632</idno>
             <idno type="TM">22632</idno>
-            <idno type="ddb-perseus-style">0007;;295</idno>
-            <idno type="ddb-filename">chr.mitt.295</idno>
-            <idno type="ddb-hybrid">chr.mitt;;295</idno>
+            <idno type="ddb-filename">p.nekr.34</idno>
+            <idno type="ddb-hybrid">p.nekr;;34</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 716</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +32,43 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kysis (Oasis Magna)</origPlace>
+                     <origPlace>Kysis (Egypt, Oasis Magna); Schreibort: Hibis ? (Oasis Magna, Egypt) oder Kysis ? (Oasis Magna, Egypt)</origPlace>
                      <origDate notBefore="0305" notAfter="0306">305 - 306</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="located">
+                     <p xml:id="geoDIGBJF">
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/776191 http://www.trismegistos.org/place/2761">Kysis</placeName>
-                        <placeName type="ancient" subtype="region">Oasis Magna</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://pleiades.stoa.org/places/776210 www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="province">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p n="1" xml:id="geoEJF59G" exclude="#geoHBDAG7">
+                        <placeName n="1"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/2786 https://pleiades.stoa.org/places/776181">Hibis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://pleiades.stoa.org/places/776210 www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                     <p n="2" xml:id="geoHBDAG7" exclude="#geoEJF59G">
+                        <placeName n="1"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="http://pleiades.stoa.org/places/776191 http://www.trismegistos.org/place/2761">Kysis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://pleiades.stoa.org/places/776210 www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +76,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,18 +93,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Scheidung</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Scheidung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-03T14:51:19-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-06-19T20:12:05-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - HGVAccept - This is well done.</change>
+         <change when="2020-06-19T09:31:01-04:00"
+                 who="http://papyri.info/users/LaviniaFerretti">Submit - Updated metadata following republication in P.Nekr., part of Heidelberg’s Digital Papyrology Webinar, summer 2020.&#xD;
+</change>
          <change who="HGV" when="1997-04-15">Record created</change>
          <change who="HGV" when="2010-03-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL VIII, S. 143.</p>
@@ -81,18 +119,24 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">76</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">34</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope> 
+               <bibl type="BL-online">
+                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/22632"/>
+               </bibl>
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">143</biblScope>
+               </bibl>
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">104</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -102,10 +146,11 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 716 descr.</bibl>
-               <bibl type="publication" subtype="other">M.Chr. 295</bibl>
-               <bibl type="publication" subtype="other">Sel. Pap. I 8</bibl>
-               <bibl type="publication" subtype="other">Jur. Pap. 21</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lond. III 716 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Grenf. II 76</bibl>
+               <bibl type="publication" subtype="other" n="3">M.Chr. 295</bibl>
+               <bibl type="publication" subtype="other" n="4">Sel. Pap. I 8</bibl>
+               <bibl type="publication" subtype="other" n="5">Jur. Pap. 21</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -115,6 +160,13 @@
                <bibl type="translations">Grubbs, Women and the Law (2002), S. 214</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_716"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

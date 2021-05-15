@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61002" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 11 1389</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2135</idno>
             <idno type="filename">61002</idno>
             <idno type="dclp-hybrid">p.oxy;11;1389</idno>
+            <idno type="MP3">805</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -26,29 +31,41 @@
                   <objectDesc form="codex">
                      <supportDesc>
                         <support>
-                           <material>parchment</material>
+                           <material>vellum</material>
+                           <dimensions>
+                              <width unit="cm">16.5 cm</width>
+                              <height unit="cm">5.1 cm</height>
+                           </dimensions>
                         </support>
+                        <foliation>
+                           <dim type="pagination">16</dim>
+                        </foliation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
-                           <p>parchment codex (columns: 1, pagination: 0)</p>
+                        <layout columns="4" writtenLines="34">
+                           <p>vellum codex (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0300" notAfter="0399">300 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,18 +76,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 07.182-194, 218-230, 250-255, 285-289</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,42 +95,171 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2020-01-15T09:49:12-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready. Updated text and metadata to reflect Kotyl (2019). Only a few points of commentary have been included, despite my earlier vote, on the grounds that the readings on the papyrus are attested in other mss. </change>
+          <change when="2020-01-15T09:49:12-05:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Finalized - Ready. Updated text and metadata to reflect Kotyl (2019). Only a few points of commentary have been included, despite my earlier vote, on the grounds that the readings on the papyrus are attested in other mss. </change>
+          <change when="2019-11-06T09:28:41-05:00"
+                 who="http://papyri.info/users/j.lougovaya.ast">Vote - Accept-Text-Meta - Implement M. Sampson's requests, i.e. in i.5 change scribal accent to grave; in i.6 instead of angled brackets, make the iota subscript (and remove line break); i.10 insert *middot* after φιλοι; i.11 dot upsilon in [θ]υμῶι; remove lost.22lin from end of col.i (as some of these 22 lines could have been at the head of the next page’s column); remove lost.19lin from end of col.ii (as some of these 19 lines could have been at the head of the next page’s column); remove lost.29lin from end of col.iii (as some of these 29 lines could have been at the head of the next page’s column)—codicological commentary can clarify; at iii.1 the ed.pr. has .4[.?]; reading variants should be incorporated for 7.186, 7.187, 7.188, 7.195-99, 7.221. METADATA: delete volume number entry from 95225; correct the MP3 number (= 805.0); the inventory number according to the ed.pr. is Bridwell papyrus 5 (TM metadata is a bit confusing here). </change>
+          <change when="2019-11-06T09:28:41-05:00"
+                 who="http://papyri.info/users/j.lougovaya.ast">Vote - Accept-Text-Meta - Implement M. Sampson's requests, i.e. in i.5 change scribal accent to grave; in i.6 instead of angled brackets, make the iota subscript (and remove line break); i.10 insert *middot* after φιλοι; i.11 dot upsilon in [θ]υμῶι; remove lost.22lin from end of col.i (as some of these 22 lines could have been at the head of the next page’s column); remove lost.19lin from end of col.ii (as some of these 19 lines could have been at the head of the next page’s column); remove lost.29lin from end of col.iii (as some of these 29 lines could have been at the head of the next page’s column)—codicological commentary can clarify; at iii.1 the ed.pr. has .4[.?]; reading variants should be incorporated for 7.186, 7.187, 7.188, 7.195-99, 7.221. METADATA: delete volume number entry from 95225; correct the MP3 number (= 805.0); the inventory number according to the ed.pr. is Bridwell papyrus 5 (TM metadata is a bit confusing here). </change>
+          <change when="2019-09-27T21:37:54-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Text: placing scribal *apostrophe* after an apostrophe produces a double apostrophe in the app.crit (can this be avoided?); in i.5 change scribal accent to grave; in i.6 instead of angled brackets, make the iota subscript (and remove line break); i.10 insert *middot* after φιλοι; i.11 dot upsilon in [θ]υμῶι; remove lost.22lin from end of col.i (as some of these 22 lines could have been at the head of the next page’s column); remove lost.19lin from end of col.ii (as some of these 19 lines could have been at the head of the next page’s column); remove lost.29lin from end of col.iii (as some of these 29 lines could have been at the head of the next page’s column)—codicological commentary can clarify; at iii.1 the ed.pr. has .4[.?]; various bits of commentary should be incorporated (i.e., 7.186, 7.187, 7.188, 7.195-99, 7.221. METADATA: delete volume number entry from 95225; correct the MP3 number (= 805.0); should pagination be updated under physical description?; the inventory number according to the ed.pr. is Bridwell papyrus 5 (TM metadata is a bit confusing here).</change>
+          <change when="2019-09-27T21:37:54-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept-Text-Meta - Text: placing scribal *apostrophe* after an apostrophe produces a double apostrophe in the app.crit (can this be avoided?); in i.5 change scribal accent to grave; in i.6 instead of angled brackets, make the iota subscript (and remove line break); i.10 insert *middot* after φιλοι; i.11 dot upsilon in [θ]υμῶι; remove lost.22lin from end of col.i (as some of these 22 lines could have been at the head of the next page’s column); remove lost.19lin from end of col.ii (as some of these 19 lines could have been at the head of the next page’s column); remove lost.29lin from end of col.iii (as some of these 29 lines could have been at the head of the next page’s column)—codicological commentary can clarify; at iii.1 the ed.pr. has .4[.?]; various bits of commentary should be incorporated (i.e., 7.186, 7.187, 7.188, 7.195-99, 7.221. METADATA: delete volume number entry from 95225; correct the MP3 number (= 805.0); should pagination be updated under physical description?; the inventory number according to the ed.pr. is Bridwell papyrus 5 (TM metadata is a bit confusing here).</change>
+          <change when="2019-07-23T11:16:55-04:00"
+                 who="http://papyri.info/users/LucyParr">Submit - Entered Aegyptus 94</change>
+          <change when="2019-07-23T11:16:55-04:00"
+                 who="http://papyri.info/users/LucyParr">Submit - Entered Aegyptus 94</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> 
+
+<div n="flesh" type="textpart">
+<div n="I" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><unclear>ἐκ</unclear> <unclear>δ</unclear>ʼ <unclear>ἔ</unclear><supplied reason="lost">θορε κλῆρος κυνέης ὃν ἄρʼ ἤθελον αὐτοὶ</supplied>
+<lb n="2"/>Α<hi rend="acute">ἴ</hi>αντος· κ<unclear>ῆρ</unclear><supplied reason="lost">υξ δὲ φέρων ἀνʼ ὅμιλον ἁπάντῃ</supplied>
+<lb n="3" xml:id="div1-div1-lb4"/><add place="left"><gap reason="illegible" quantity="2" unit="character"/></add> δε<hi rend="circumflex">ῖ</hi>ξʼ<g type="apostrophe"/> ἐνδ<hi rend="acute">έ</hi>ξια π<unclear>ᾶ</unclear><supplied reason="lost">σιν ἀριστήεσσιν Ἀχαιῶν.</supplied>
+<lb n="4"/><add place="left"><gap reason="illegible" quantity="1" unit="character"/></add> οἳ δʼ<g type="apostrophe"/> οὐ γιγν<hi rend="acute">ώ</hi>σκοντ<unclear>ες</unclear> <supplied reason="lost">ἀπηνήναντο ἕκαστος.</supplied>
+<lb n="5"/>ἀλλʼ<g type="apostrophe"/> <hi rend="acute">ὅ</hi>τε δ<hi rend="grave">ὴ</hi> τὸν <hi rend="acute"><hi rend="diaeresis">ἵ</hi></hi>κανε φ<unclear>έρ</unclear>ων ἀνʼ <supplied reason="lost">ὅμιλον ἁπάντῃ</supplied>
+<lb n="6"/><unclear>ὅ</unclear>ς μ<unclear>ι</unclear>ν ἐπιγρ<hi rend="acute">ά</hi>ψας κυν<hi rend="acute">έ</hi>ῃ β<hi rend="acute">ά</hi>λε <unclear>φαίδιμο</unclear>ς Α<unclear>ἴ</unclear><supplied reason="lost">ας,</supplied>
+<lb n="7"/><hi rend="acute"><unclear>ἤ</unclear></hi><unclear>τ</unclear>ο<unclear>ι</unclear> <hi rend="diaeresis">ὑ</hi><unclear>π</unclear><hi rend="acute">έ</hi>σχεθε χε<hi rend="circumflex">ῖ</hi><unclear>ρ</unclear>ʼ, <unclear>ὃ</unclear> δʼ<g type="apostrophe"/> ἄρʼ <hi rend="acute">ἔ</hi>μβαλεν <unclear>ἄγχι</unclear> π<unclear>α</unclear><supplied reason="lost">ραστάς,</supplied>
+<lb n="8"/><unclear>γν</unclear><hi rend="circumflex">ῶ</hi> <unclear>δ</unclear><hi rend="grave"><unclear>ὲ</unclear></hi> <unclear>κλ</unclear><hi rend="acute">ή</hi>ρου σ<hi rend="circumflex">ῆ</hi>μα ἰδ<hi rend="acute">ώ</hi>ν, γή<unclear>θ</unclear>ησε <supplied reason="lost">δὲ θυμῷ.</supplied>
+<lb n="9"/>τὸν μὲν <unclear>π</unclear>ὰρ π<hi rend="acute">ό</hi>δʼ<g type="apostrophe"/> <hi rend="asper">ἑ</hi>ὸ<hi rend="grave">ν</hi> χαμ<hi rend="acute">ά</hi>δ<unclear>ις</unclear> <unclear>βά</unclear><supplied reason="lost">λε φώνησέν τε·</supplied>
+<lb n="10"/><hi rend="circumflex"><unclear>ὦ</unclear></hi> φ<hi rend="acute">ί</hi>λο<hi rend="grave">ι</hi><g type="middot"/> ἤτοι κλ<hi rend="circumflex">ῆ</hi>ρος ἐμ<hi rend="grave">ό</hi>ς, χαίρω <unclear>δ</unclear><supplied reason="lost">ὲ καὶ αὐτὸς</supplied>
+<lb n="11"/><supplied reason="lost">θυ</supplied>μ<hi rend="circumflex">ῶ</hi>ι,<g type="middot"/> ἐπεὶ δοκέω νικησ<hi rend="acute"><unclear>έ</unclear></hi><supplied reason="lost">μεν Ἕκτορα δῖον.</supplied>
+<lb n="12"/><supplied reason="lost">ἀλλʼ</supplied><g type="apostrophe"/>  ἄ<hi rend="acute">γ</hi>ετʼ<g type="apostrophe"/> <hi rend="acute">ὄ</hi>φρʼ<g type="apostrophe"/> <hi rend="acute">ἂ</hi>ν ἐγ<hi rend="acute"><hi rend="lenis">ὼ</hi></hi> πολ<unclear>ε</unclear><supplied reason="lost">μήϊα τεύχεα δύω,</supplied>
+<lb n="13"/><supplied reason="lost">τόφρʼ</supplied> <hi rend="diaeresis">ὑ</hi>με<hi rend="circumflex">ῖ</hi>ς ε<hi rend="acute"><hi rend="lenis"><unclear>ὔ</unclear></hi></hi>χεσ<unclear>θ</unclear>ε Δι<supplied reason="lost">ὶ Κρονίωνι ἄνακτι</supplied>
+<lb n="14" xml:id="div1-div1-lb15"/><supplied reason="lost">σιγῇ ἐφʼ ὑμείων ἵ</supplied><unclear>ν</unclear><supplied reason="lost">α μὴ Τρῶές γε πύθωνται,</supplied>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+</div>
+
+<div n="hair" type="textpart">
+<div n="II" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">ἂψ λαῶν ἐς ὅμιλον, ἐπεὶ προκαλέσσατο</supplied> χ<hi rend="acute">ά</hi>ρμ<unclear>ηι</unclear>.
+<lb n="2"/><supplied reason="lost">Αἴας δʼ ἐγγύθεν ἦλθε φέρων σάκο</supplied><unclear>ς</unclear> ἠ<hi rend="acute">ΰ</hi><unclear>τε</unclear> <unclear>π</unclear><hi rend="acute">ύ</hi>ρ<unclear>γον</unclear>
+<lb n="3"/><supplied reason="lost">χάλκεον ἑπταβόειον, ὅ οἱ Τ</supplied><unclear>υχ</unclear>ίος <unclear>κ</unclear><hi rend="acute"><unclear>ά</unclear></hi>μ<unclear>ε</unclear> τ<hi rend="acute">ε</hi><unclear>ύ</unclear>χων
+<lb n="4"/><supplied reason="lost">σκυτο</supplied><unclear>τόμω</unclear>ν ὄχʼ ἄριστος <hi rend="diaeresis"><hi rend="acute">Ὕ</hi></hi>λη<unclear>ι</unclear> <hi rend="acute">ἔ</hi>νι ο<unclear>ἰκ</unclear><hi rend="acute">ί</hi>α να<hi rend="acute">ί</hi>ων,
+<lb n="5"/><supplied reason="lost">ὅς οἱ ἐ</supplied><unclear>π</unclear>οίησ<unclear>εν</unclear> <unclear>σάκ</unclear>ος <unclear>α</unclear>ἰ<hi rend="acute">ό</hi>λον <hi rend="asper">ἑ</hi>πτα<unclear>β</unclear><hi rend="acute"><unclear>ό</unclear></hi><unclear>ει</unclear><supplied reason="lost">ον</supplied>
+<lb n="6"/><supplied reason="lost">ταύρ</supplied><unclear>ων</unclear> <unclear>ζα</unclear>τ<unclear>ρεφέ</unclear>ων, ἐπὶ δʼ<g type="apostrophe"/> <hi rend="acute">ὄ</hi><unclear>γ</unclear>δοον <hi rend="acute">ἤ</hi>λ<unclear>α</unclear><supplied reason="lost">σε χαλκόν.</supplied>
+<lb n="7"/><supplied reason="lost">τὸ πρόσθ</supplied><unclear>ε</unclear> στέ<unclear>ρνοι</unclear>ο φ<hi rend="acute">έ</hi>ρων Τελαμ<hi rend="acute">ώ</hi>ν<supplied reason="lost">ιος Αἴας</supplied>
+<lb n="8"/><supplied reason="lost">στῆ ῥα μάλʼ</supplied> <unclear>Ἕκ</unclear>τορος ἐ<unclear>γ</unclear>γύ<hi rend="grave">ς</hi>,<g type="middot"/> ἀπειλ<hi rend="acute">ή</hi>σα<unclear>ς</unclear> δ<unclear>ὲ</unclear> <supplied reason="lost">προσ</supplied><unclear>η</unclear><hi rend="acute"><unclear>ύ</unclear></hi><unclear>δα</unclear>·
+<lb n="9"/><supplied reason="lost">Ἕκτορ νῦν μὲ</supplied><unclear>ν</unclear> δὴ <unclear>σ</unclear><hi rend="acute">ά</hi>φα <hi rend="acute"><hi rend="lenis">ε</hi></hi>ἴσεαι οἰ<hi rend="acute">ό</hi><unclear>θ</unclear>εν ο<hi rend="circumflex">ἴ</hi>ος
+<lb n="10"/><supplied reason="lost">οἷοι καὶ Δαναοῖσιν</supplied> <unclear>ἀρ</unclear>ιστ<hi rend="circumflex">ῆ</hi><supplied reason="lost">ε</supplied><unclear>ς</unclear> μετ<hi rend="acute">έ</hi>ασι
+<lb n="11"/><supplied reason="lost">καὶ μετʼ Ἀχιλλῆα ῥηξή</supplied><unclear>ν</unclear>ορα <unclear>θ</unclear><hi rend="grave"><unclear>υ</unclear></hi><unclear>μολ</unclear><hi rend="acute"><unclear>έ</unclear></hi><unclear>ον</unclear>τα.<g type="high-punctus"/>
+<lb n="12"/><supplied reason="lost">ἀλλʼ ὃ μὲν ἐν νήεσσι κο</supplied><unclear>ρ</unclear>ω<unclear>ν</unclear><hi rend="acute">ί</hi><unclear>σ</unclear><supplied reason="lost">ι</supplied> <unclear>πο</unclear>ντοπ<hi rend="acute">ό</hi><supplied reason="lost">ροισιν</supplied>
+<lb n="13"/><supplied reason="lost">κεῖτʼ ἀπομηνίσας Ἀγαμέμνονι ποι</supplied>μ<supplied reason="lost">ένι λαῶν·</supplied>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+</div>
+
+<div n="hair" type="textpart">
+<div n="III" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><unclear>καὶ</unclear> <supplied reason="lost">βάλε Πριαμίδαο κατ’ ἀσπίδα πάντοσ’ ἐΐσην.</supplied>
+<lb n="2"/>διὰ μὲ<unclear>ν</unclear> <supplied reason="lost">ἀσπίδος ἦλθε φαεινῆς ὄβριμον ἔγχος,</supplied>
+<lb n="3"/>κ<unclear>αὶ</unclear> <unclear>δι</unclear>ὰ <unclear>θ</unclear><supplied reason="lost">ώρηκος πολυδαιδάλου ἠρήρειστο·</supplied>
+<lb n="4"/><unclear>ἀ</unclear>ντ<unclear>ικ</unclear><supplied reason="lost">ρὺ δὲ παραὶ λαπάρην διάμησε χιτῶνα</supplied>
+<lb n="5"/><hi rend="acute"><unclear>ἔ</unclear></hi><unclear>γχ</unclear>ο<unclear>ς</unclear>· <supplied reason="lost">ὃ δʼ ἐκλίνθη καὶ ἀλεύατο κῆρα μέλαιναν.</supplied>
+<lb n="6"/>τ<unclear>ὼ</unclear> <supplied reason="lost">δʼ ἐκσπασσαμένω δολίχʼ ἔγχεα χερσὶν ἅμʼ ἄμφω</supplied>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+</div>
+
+
+<div n="flesh" type="textpart">
+<div n="IV" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">αὐτὸς γὰρ χάρμῃ προκαλέσσατο πάντας ἀ</supplied><unclear>ρί</unclear><supplied reason="lost">στο</supplied><unclear>υς</unclear>.
+<lb n="2"/><supplied reason="lost">ἀρχέτω· αὐτὰρ ἐγὼ μάλα πείσομαι ᾗ περ ἂν</supplied> <hi rend="asper"><unclear>ο</unclear></hi><hi rend="circumflex">ὗ</hi>τος.
+<lb n="3"/><supplied reason="lost">τὸν δʼ αὖτε προσέειπε μέγας κορυθαίολος Ἕ</supplied><unclear>κ</unclear>τωρ·
+<lb n="4"/><supplied reason="lost">Αἶαν ἐπεί τοι δῶκε θεὸς μέγεθός τε βίην</supplied> <unclear>τε</unclear>
+<lb n="5"/><supplied reason="lost">καὶ πινυτήν, περὶ δʼ ἔγχει Ἀχαιῶν φέρτατό</supplied><unclear>ς</unclear> <unclear>ἐ</unclear>σσι,
+<lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+</div>
+</div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-div1-lb4" xml:space="preserve"><ref/> <p>On the left margin, opposite lines three and four, there are some dark traces which Mirończuk (2014) suggests might be ink. Kotyl (2019) writes "The traces at the margin look quite deliberate and they may have something to do with editorial markings of some kind (a reference to scholia?)."</p></item>
+               <item corresp="#div1-div1-lb15" xml:space="preserve"><ref>14</ref> <p>Mironczuk (2014) notes that Zenodotus, Aristophanes and Aristarchus athetized these lines "on the ground that 'they are not consistent with the character of Aias, and that he raises objections to himself absurdly'" (25) (H 196-199 are rejected by Wilamowitz and bracketed by West). All the lines apparently were in the manuscript</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/95225"/>
                   <biblScope unit="number">1389</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">11</biblScope>
-                  <!--ignore - stop-->
+               </bibl>
+               <bibl n="2" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95474"/>
+                  <biblScope unit="page" from="3" to="11">3-11</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/16711"/>
+                  <biblScope unit="number">193</biblScope>
+               </bibl>
+               <bibl n="4" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95491"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">7</biblScope>
+                  <biblScope n="2" unit="line" from="182" to="195">182-195</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="book">7</biblScope>
+                  <biblScope n="5" unit="line" from="218" to="230">218-230</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
+                  <biblScope n="7" unit="book">7</biblScope>
+                  <biblScope n="8" unit="line" from="250" to="255">250-255</biblScope>
+                  <biblScope n="9" unit="generic">and</biblScope>
+                  <biblScope n="10" unit="book">7</biblScope>
+                  <biblScope n="11" unit="line" from="285" to="289">285-289</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Liège</bibl>
+               <bibl type="printed" n="1">Liège</bibl>
+               <bibl type="printed" n="2">Aegyptus 94 (2014) p. 11</bibl>
+               <bibl type="printed" n="3">BASP 56 (2019) p. 163</bibl>
                <bibl type="online">
                   <ptr target="http://smu.edu/bridwell/specialcollections/bridwellpapyri/brpapyri.htm"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Also known as Bridwell papyrus 5. This single-quire codex consisted of four sheets, each containing four single-column leaves, with 34 lines of text per column.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

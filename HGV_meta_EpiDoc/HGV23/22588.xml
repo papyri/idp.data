@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22588">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Conclusion of a Document</title>
+            <title>End of a document</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22588</idno>
             <idno type="TM">22588</idno>
             <idno type="ddb-perseus-style">0246;1;51</idno>
-            <idno type="ddb-filename">p.bodl.1.51</idno>
-            <idno type="ddb-hybrid">p.bodl;1;51</idno>
+            <idno type="ddb-filename">p.nekr.8</idno>
+            <idno type="ddb-hybrid">p.nekr;;8</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. c. 281 (P) (a)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,7 @@
                <history>
                   <origin>
                      <origPlace>Oasis Magna</origPlace>
-                     <origDate when="0240" precision="medium">ca. 240</origDate>
+                     <origDate notBefore="0240" notAfter="0241" cert="low">240 - 241 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,33 +64,51 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Schluß eines Dokumentes</term>
-               <term>Abschrift eines Vertrages</term>
+               <term n="1">Schluß eines Dokumentes</term>
+               <term n="2">Abschrift eines Vertrages</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2020-07-09T13:14:42-04:00"
+                 who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-07-09T12:21:31-04:00"
+                 who="http://papyri.info/users/james.cowey">Vote - HGVAccept - See Sampson's comments</change>
+         <change when="2020-06-12T11:04:47-04:00"
+                 who="http://papyri.info/users/Mike%20Sampson">Vote - Accept - Update 'title' and 'number' under Publication and remove volume #; title is 'End of a Document'; date is 240/241 (?); English translation is on P.Nekr. S. 37; remove BL entry. This is otherwise fine.</change>
+         <change when="2020-06-12T10:04:42-04:00"
+                 who="http://papyri.info/users/RiccardoBongiovanni">Submit - Updated metadata following republication in P.Nekr., entered from ed. pr. as part of Heidelberg’s Digital Papyrology Webinar, summer 2020.&#xD;
+</change>
          <change who="HGV" when="1997-05-23">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Bodl.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">51</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">8</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 33</bibl>
+               <bibl type="illustration">P.Bodl. I, Plate 33</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bodl. I, 51</bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations">P.Nekr., S. 37</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
