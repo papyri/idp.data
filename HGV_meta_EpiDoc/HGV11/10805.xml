@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10805">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Penthemeros certificate on behalf of Athenas Kome</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10805</idno>
             <idno type="TM">10805</idno>
             <idno type="ddb-perseus-style">0110;;221</idno>
-            <idno type="ddb-filename">p.fay.221</idno>
-            <idno type="ddb-hybrid">p.fay;;221</idno>
+            <idno type="ddb-filename">basp.54.74_3</idno>
+            <idno type="ddb-hybrid">basp;54;74_3</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">CG 10819</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0161-08-07">7. Aug. 161</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736909 http://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="95779"/>
+                  <biblScope type="pp">74</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,43 +76,52 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Penthemeros</term>
+               <term n="1">Quittung</term>
+               <term n="2">Penthemeros</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-05-20T08:07:31-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-05-18T07:07:42-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-05-18T02:51:05-04:00"
+                 who="http://papyri.info/editor/users/NadineGrotkamp">Submit - Entered text and metadata from Bulletin of the American Society of Papyrologists (BASP) 54 (2017), p. 74-76 no. 3</change>
          <change who="HGV" when="1996-10-18">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">3. - 6. Aug. 161</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref/>
-                  <date type="mentioned" notBefore="0161-08-03" notAfter="0161-08-06">3. - 6. Aug. 161</date>
+                  <ref>Z. 7</ref>
+                  <date type="mentioned" notBefore="0161-08-03" notAfter="0161-08-06">3. Aug. 161 - 6. Aug. 161</date>
                </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Fay.</title>
-                  <biblScope type="numbers">221</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">54</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 74</biblScope>
+                  <biblScope n="4" type="number">Nr. 3</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 75</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -108,6 +130,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Fay. 221</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
