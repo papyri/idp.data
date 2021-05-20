@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28633">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,24 +31,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="low">II - III</origDate>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736909 http://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="86357"/>
+                  <biblScope type="pp">94</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,10 +71,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Ninnaros an Zosimos</term>
-               <term>Lieferung</term>
-               <term>Geld und Waren</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Ninnaros an Zosimos</term>
+               <term n="3">Lieferung</term>
+               <term n="4">Geld und Waren</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,8 +83,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Descr. Neuedition: APF 60, 2014, S. 169-172. Zu Z. 10-11 vgl. Tyche 30, 2015, S. 233f., Korr. Tyche 812.</p>
@@ -90,7 +98,10 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">s. 94</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -99,6 +110,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">correction : D. Hagedorn, Tyche 30 (2015), p. 233-234 no. 812</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
