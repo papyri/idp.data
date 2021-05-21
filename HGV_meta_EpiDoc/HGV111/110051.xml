@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv110051">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Sale of a Female Donkey (?) at Kerkesoucha (?)</title>
+            <title>Sale of a Female Donkey at Kerkesoucha</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">110051</idno>
@@ -29,14 +29,14 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kerkesucha (?) (Arsinoites)</origPlace>
-                     <origDate notBefore="0190-03-27" notAfter="0190-04-25">27. März - 25. Apr. 190</origDate>
+                     <origPlace>Schreibort: Kerkesucha (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="0183-04-09">9. Apr. 183</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance type="composed">
                      <p>
-                        <placeName type="ancient" cert="low">Kerkesucha</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient">Kerkesucha</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +44,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,8 +61,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Verkauf (Eselin)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Verkauf (Eselin)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -70,23 +71,25 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 8, 10, 15-16 und 19 vgl. ZPE 194, 2015, S. 204 und 208. Neuedition: APF 61, 2015, S. 317-322. Zur Datierung vgl. ebenda.</p>
+            <p>Zu Z. 8, 10, 15-16 und 19 vgl. ZPE 194, 2015, S. 204 und 208. Neuedition: APF 61, 2015, S. 317-322. Zu Z. 1, 6 und 7 vgl. APF 66, 2020, S. 332. Zur Datierung vgl. ebenda.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Berl. Cohen</title>
-                  <biblScope type="numbers">8</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">61</biblScope>
+                  <biblScope n="2" type="fascicle">(2015)</biblScope>
+                  <biblScope n="3" type="pages">S. 319</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 8</bibl>
+               <bibl type="illustration">P.Berl. Cohen, Plate 8</bibl>
             </p>
          </div>
          <div type="figure">
@@ -95,7 +98,12 @@
                   <graphic url="http://berlpap.smb.museum/15896/"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Berl. Cohen 8</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
