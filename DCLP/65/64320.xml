@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64320" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Ryl. 3 470</title>
@@ -14,7 +14,11 @@
             <idno type="filename">64320</idno>
             <idno type="dclp-hybrid">p.ryl;3;470</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -23,30 +27,32 @@
                   <idno type="invNo">Manchester, John Rylands Library Gr. 470</idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="sheet">
+                  <objectDesc>
                      <supportDesc>
                         <support>
-                           <material>parchment</material>
+                           <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">9.4 cm</width>
+                              <height unit="cm">18 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>parchment sheet (columns: 0, pagination: 0)</p>
-                        </layout>
+                        <layout columns="1" writtenLines="10"/>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0800">600 - 800</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,50 +63,97 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>magic</term>
-               <term>amulet (?)</term>
-               <term type="culture">literature</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">hymn to Mary "sub tuum praesidum"; amulet ?</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">poetry</term>
+               <term n="5">magic</term>
+               <term n="6">amulet (?)</term>
+               <term n="7" type="overview">hymn to Mary "sub tuum praesidum"; amulet ?</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><gap reason="illegible" quantity="1" unit="character"/>πο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>εὔσπλα<supplied reason="lost" cert="low">γχνε παρθένε </supplied>
+<lb n="3"/>κα<unclear>τ</unclear>᾽ ἄφε<supplied reason="lost" cert="low">σιν ἁμαρτιῶν </supplied>
+<lb n="4"/>θεοτόκε <g type="dicolon"/> τὰ<supplied reason="lost" cert="low">ς ἐμὰς </supplied>
+<lb n="5"/>ἱκεσίας <g type="dicolon"/> μὴ <choice><reg>παρ
+<lb n="6" break="no"/>ίδῃς</reg><orig>παρ<lb n="6" break="no"/>είδῃς</orig></choice> <choice><reg>ἐν</reg><orig>ἐμ</orig></choice> περίστασει
+<lb n="7"/>ἀλλ᾽ ἐκ κινδύνου
+<lb n="8"/>ῥῦσαι ἡμᾶς.
+<lb n="9"/>μόνη δ<unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="10"/>ηρυλο<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+
+
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/3787"/>
-                  <biblScope unit="number">470</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Ryl. Gr.</title>
-                  <biblScope unit="volume">3</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3787"/>
+                  <biblScope n="1" unit="number">470</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/40277"/>
+                  <biblScope n="1" unit="volume">74</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="76" to="82">76-82</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/36882"/>
+                  <biblScope n="1" unit="volume">52</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="229" to="233">229-233</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/79961"/>
+                  <biblScope n="1" unit="volume">48</biblScope>
+                  <biblScope n="2" unit="number">176</biblScope>
+                  <biblScope n="3" unit="page" from="211" to="213">211-213</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope n="1" unit="number">9832</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P.Ryl. 03 pl.1</bibl>
-               <bibl type="online">
-                  <ptr target="http://enriqueta.man.ac.uk:8180/luna/servlet/detail/ManchesterDev~93~3~22419~100285:Christian-Prayer?sort=Image_sequence_number%2CFolio%2CImage_Title%2CDate_created&amp;qvq=sort:Image_sequence_number,Folio,Image_Title,Date_created;lc:ManchesterDev~93~3&amp;mi=210&amp;trs=341"/>
-               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
