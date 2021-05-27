@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv39616">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">1300</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0601" notAfter="0700" precision="low">VII</origDate>
+                     <origPlace>oder</origPlace>
+                     <origDate notBefore="0643" notAfter="0644" precision="medium">
+                ca. 643 - 644
+                <precision match="../@notAfter" degree="0.5"/>
+                     </origDate>
                   </origin>
+                  <provenance type="located">
+                     <p n="1" xml:id="geoCHAE4" exclude="#geoEG66BF"/>
+                     <p n="2" xml:id="geoEG66BF" exclude="#geoCHAE4"/>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,8 +65,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>N.N. an N.N.</term>
+               <term n="1">Brief</term>
+               <term n="2">Hypatios an Senuthios</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -65,24 +75,27 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Descr.</p>
+            <p>Gehört zum Senuthios-Archiv.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1300</biblScope>
-                  <biblScope type="pages">(S. LXXII)</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">1300</biblScope>
+                  <biblScope n="3" type="pages">(S. LXXII)</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">ZPE 216, 2020, S. 253.</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -91,6 +104,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">ZPE 216, 2020, S. 251–255.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
