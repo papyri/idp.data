@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv25520">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Vente d’une ânesse par ses copropriétaires</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">25520</idno>
             <idno type="TM">25520</idno>
             <idno type="ddb-perseus-style">0056;;inv536</idno>
-            <idno type="ddb-filename">p.alex.inv536</idno>
-            <idno type="ddb-hybrid">p.alex;;inv536</idno>
+            <idno type="ddb-filename">apf.60.385</idno>
+            <idno type="ddb-hybrid">apf;60;385</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Alexandria</settlement>
                   </placeName>
+                  <collection>Graeco-Roman Museum</collection>
+                  <idno type="invNo">P. 536</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,30 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0001" notAfter="0400" precision="low">I - IV</origDate>
+                     <origPlace>Arsinoites</origPlace>
+                     <origDate notBefore="0201" notAfter="0250" precision="low">1. Hälfte III</origDate>
                   </origin>
+                  <provenance>
+                     <p xml:id="geoIDE3A">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://pleiades.stoa.org/places/736893 https://www.trismegistos.org/place/332">Arsinoites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="86378"/>
+                  <biblScope type="pp">385</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,34 +71,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Preis</term>
-               <term>Veräußerung</term>
-               <term>Vertrag</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Esel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-04T10:28:42-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-06-02T15:35:46-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Restore the original publication in "Other publications"</change>
+         <change when="2021-06-02T13:20:43-04:00"
+                 who="http://papyri.info/editor/users/AlexH.">Submit - Entered text from the edition Vente d’une ânesse par ses copropriétaires, François Gerardin (New Haven).</change>
          <change who="HGV" when="1992-03-17">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Alex.</title>
-                  <biblScope type="inventory">Inv.Nr. 536</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">60</biblScope>
+                  <biblScope n="2" type="fascicle">(2014)</biblScope>
+                  <biblScope n="3" type="pages">S. 385</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 386</bibl>
+            </p>
+         </div>
+         <div type="figure"/>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Alex. Inv.Nr. 536</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
