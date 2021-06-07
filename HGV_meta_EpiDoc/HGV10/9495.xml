@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv9495">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittung über die für eine elterliche Schenkung entrichtete (Verkehrs-) Steuer</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Staatliche Museen</collection>
+                  <idno type="invNo">P. 11603</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia (Arsinoites)</origPlace>
+                     <origPlace>Philadelphia (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0166" notAfter="0167">166 - 167</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/737008 http://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -53,8 +59,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -69,18 +76,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung (Steuer)</term>
-               <term>Geld</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-07T11:12:02-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-06-07T10:23:35-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-06-07T10:19:57-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Altered publication information to update to Tyche 30</change>
          <change who="HGV" when="1994-02-14">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. CE 75, 2000, S. 111-117.</p>
@@ -88,9 +102,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">1589</biblScope>
+                  <title level="s" type="abbreviated">Tyche</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="pages">S. 232</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -113,6 +128,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">BGU 7 1589</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
