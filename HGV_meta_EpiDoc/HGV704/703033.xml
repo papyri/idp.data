@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703033">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petizione</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Genua, Università DR 51 fr. A-B</idno>
+                  <placeName>
+                     <settlement>Genua</settlement>
+                  </placeName>
+                  <collection>Università</collection>
+                  <idno type="invNo">DR 51 fr. A-B</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,24 +33,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="-0250" notAfter="-0201" precision="low">2. Hälfte III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="http://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="95789"/>
+                  <biblScope type="pp">183</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,9 +73,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Episkepsis</term>
-               <term>Diebstahl (Pflanzen)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Episkepsis</term>
+               <term n="3">Diebstahl (Pflanzen)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,24 +83,22 @@
          <change who="HGV" when="2019-01-09">Record last modified</change>
          <change when="2019-01-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Neuedition: G. Baetens - W. Clarysse, ZPE 204, 2017, S. 183-184.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PUG</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">141</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">204</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 183</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tav. VI</bibl>
+               <bibl type="illustration">PUG IV, Tav. VI</bibl>
             </p>
          </div>
          <div type="figure">
@@ -98,6 +108,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PUG 4 141</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
