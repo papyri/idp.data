@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28633">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -10,15 +10,17 @@
             <idno type="filename">28633</idno>
             <idno type="TM">28633</idno>
             <idno type="ddb-perseus-style">0110;;224</idno>
-            <idno type="ddb-filename">p.fay.224</idno>
-            <idno type="ddb-hybrid">p.fay;;224</idno>
+            <idno type="ddb-filename">apf.60.170</idno>
+            <idno type="ddb-hybrid">apf;60;170</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">CG 10821</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="low">II - III</origDate>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736909 http://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="86357"/>
+                  <biblScope type="pp">94</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,34 +76,45 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Ninnaros an Zosimos</term>
-               <term>Lieferung</term>
-               <term>Geld und Waren</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Ninnaros an Zosimos</term>
+               <term n="3">Lieferung</term>
+               <term n="4">Geld und Waren</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-18T10:12:30-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-05-20T15:49:58-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-05-19T11:27:16-04:00"
+                 who="http://papyri.info/editor/users/NohaA.Salem">Submit - edited the text and updated the metadata of Archiv für Papyrusforschung 60/1, 2014</change>
          <change who="HGV" when="1996-10-18">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Descr. Neuedition: APF 60, 2014, S. 169-172. Zu Z. 10-11 vgl. Tyche 30, 2015, S. 233f., Korr. Tyche 812.</p>
+            <p>Zu Z. 10-11 vgl. Tyche 30, 2015, S. 233f., Korr. Tyche 812.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Fay.</title>
-                  <biblScope type="numbers">224</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">60</biblScope>
+                  <biblScope n="2" type="fascicle">(2014)</biblScope>
+                  <biblScope n="3" type="pages">S. 170</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 94</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -99,6 +123,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Fay. 224</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
