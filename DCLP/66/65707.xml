@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65707" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. L. Bat. 20 16</title>
@@ -14,7 +14,11 @@
             <idno type="filename">65707</idno>
             <idno type="dclp-hybrid">p.l.bat;20;16</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">9.1</width>
+                              <height unit="cm">11.2</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,22 +46,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Philadelpheia (Arsinoites, Egypt); written: Arsinoites (Egypt)</origPlace>
-                     <origDate notBefore="-0263" notAfter="-0229">263 - 229 v. Chr.</origDate>
+                     <origPlace>Fundort: Philadelpheia (Arsinoites, Egypt); Schreibort: Arsinoites, Egypt</origPlace>
+                     <origDate notBefore="-0263" notAfter="-0229">263 - 229 v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1760">Philadelpheia</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1760">Philadelpheia</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -62,50 +71,107 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>mythography</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">mythological fragment (or commentary on an epic poem?)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">mythography</term>
+               <term n="5" type="overview">mythological fragment (or commentary on an epic poem?)</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> τοῖς ἔπεσιν :
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ονα καλὰ δι
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><unclear>α</unclear> τέρ<del rend="erasure">α</del><add place="above">ε</add>μνα : <unclear>ε</unclear>ἶδος
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ς τοτὲ μὲν κυ<unclear>α</unclear>
+<lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="character"/>ος : φωνὴν καὶ μορ
+<lb n="6" break="no"/><supplied reason="lost">φὴν</supplied><gap reason="lost" extent="unknown" unit="character"/><unclear>ς</unclear> τοτὲ δ’ οἰοπόκοιο :
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>ερω τοτὲ δ’ εἴκελ<unclear>ο</unclear>ς
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">: δ</supplied><unclear>ε</unclear>σπ<unclear>οί</unclear>νη <add place="above">ι</add> λευκοι
+<lb n="9" break="no"/><gap reason="lost" extent="unknown" unit="character"/> ἄλλοτε ταύρωι <app type="editorial"><lem resp="Siegmann">:</lem><rdg/></app>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">μ</supplied>εγάλ<unclear>ω</unclear>ι τε κο<unclear>ρ</unclear>υσ
+<lb n="11" break="no"/><supplied reason="lost">σομένωι κερ</supplied>άεσσιν : ἄλλοτε
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> ἐφαίνετο <app type="editorial"><lem resp="Gehrarded">εἰς</lem><rdg resp="Siegmann">ὄις</rdg></app>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/> : ἀλλοι <gap reason="illegible" quantity="1" unit="character"/><unclear>υ</unclear>θ’ ἱ<unclear>ε</unclear>ρῶν
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><unclear>θ</unclear>ε Ζεὺς <unclear>κα</unclear>ὶ Ἀ  <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/><supplied reason="lost"><gap reason="illegible" quantity="3" unit="character"/>:</supplied><gap reason="lost" extent="unknown" unit="character"/>τομμ<gap reason="lost" quantity="1" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><unclear>σ</unclear>α<unclear>σ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2" subtype="column" type="textpart"><ab>
+<lb n="1"/>σὺν <supplied reason="lost">α</supplied>ὐτῶι κ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><unclear>Ζ</unclear>ε<unclear>ὺ</unclear><supplied reason="lost">ς</supplied> τὸν <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>τὴμ Φερσεφ<supplied reason="lost">όνην</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><unclear>σ</unclear>θαι καὶ τ<unclear>ωι</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>σαιτο ἐξ <unclear>ἀ</unclear>λ<unclear>λ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/>θεῶν ἡ δε<unclear>σ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="illegible" quantity="1" unit="character"/>ην γιγνω<supplied reason="lost">σκ</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>παρὰ τὸν ω<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>δι<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="2" unit="character"/><unclear>λε</unclear><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ρα</supplied>
+<lb n="10" break="no"/><del rend="erasure">α</del><add place="above">β</add>δο<unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/>κατα<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/>ῥάβδ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><unclear>θ</unclear>εισα<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/>ῥάβ<unclear>δ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/9505"/>
-                  <biblScope unit="number">16</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. L. Bat.</title>
-                  <biblScope unit="volume">20</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/9505"/>
+                  <biblScope n="1" unit="number">16</biblScope>
+                  <biblScope n="2" unit="volume">20</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5461"/>
+                  <biblScope n="1" unit="volume">1</biblScope>
+                  <biblScope n="2" unit="number">176</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3721"/>
+                  <biblScope n="1" unit="volume">6</biblScope>
+                  <biblScope n="2" unit="number">176</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ., pl.1</bibl>
-               <bibl type="printed">R.Seider, Paläogr. griech. Papyri II.2, pl.IV.8</bibl>
-               <bibl type="printed">P.Lugd.-Bat. 20, pl.XIV</bibl>
+               <bibl type="printed" n="1">ed. princ., pl.1</bibl>
+               <bibl type="printed" n="2">R.Seider, Paläogr. griech. Papyri II.2, pl.IV.8</bibl>
+               <bibl type="printed" n="3">P.Lugd.-Bat. 20, pl.XIV</bibl>
                <bibl type="online">
                   <ptr target="http://www.rzuser.uni-heidelberg.de/~gv0/Papyri/VBP_VI/176/VBP_VI_176.html"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
