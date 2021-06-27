@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60139" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 32 2648</title>
+            <title>P. Oxy. 32 2648 &amp; P.Oxy. 68 4653</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,14 +13,22 @@
             <idno type="LDAB">1253</idno>
             <idno type="filename">60139</idno>
             <idno type="dclp-hybrid">p.oxy;32;2648</idno>
+            <idno type="dclp-hybrid">p.oxy;68;4653</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Oxford, Sackler Library, Papyrology Rooms P. Oxy. 2648</idno>
+                  <idno>
+                     <idno type="invNo" xml:id="FR15013">Oxford, Sackler Library, Papyrology Rooms P. Oxy. 2648</idno>
+                     <idno type="invNo" xml:id="FR15014">Oxford, Sackler Library, Papyrology Rooms P. Oxy. 4653</idno> 
+                  </idno>              
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
@@ -43,39 +51,56 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
+               <additional>
+                  <adminInfo>
+                     <custodialHist>
+                        <custEvent type="imaged" corresp="#FR15013">
+                           <graphic url="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0150/cd8bf07d.dir/POxy.v0032.n2648.a.01.hires.jpg"/>
+                           <orgName>University of Oxford</orgName>
+                        </custEvent>
+                        <custEvent type="imaged" corresp="#FR15014">
+                           <graphic url="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0138/a5c0437e.dir/POxy.v0068.n4653.a.01.hires.jpg"/>
+                           <orgName>University of Oxford</orgName>
+                        </custEvent>
+                     </custodialHist>
+                  </adminInfo>
+               </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Hesiodus; Theogonia 143-149, 411-420, 681-694, 751-771</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Hesiodus; Theogonia 143-149, 411-420, 681-694, 751-771</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -84,43 +109,121 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/ekdosis/">Würzburger Zentrum für Epikureismusforschung</ref>.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="a" subtype="fragment" type="textpart" corresp="#FR15013"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ις</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><unclear>α</unclear> ποδῶν τ᾽<g type="apostrophe"/> αἰπε<hi rend="circumflex">ῖ</hi>α <hi rend="diaeresis">ἰ</hi><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><unclear>λ</unclear><add place="above"><hi rend="acute">ά</hi></add>ων τε <unclear>κ</unclear>ρατερ<hi rend="acute">ά</hi><unclear>ω</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost"><hi rend="acute"><gap reason="illegible" quantity="1" unit="character"/></hi></supplied>φεσαν στον<hi rend="acute">ό</hi>εντ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><hi rend="diaeresis">ἵ</hi>κετ᾽<g type="apostrophe"/> οὐρανὸν <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><hi rend="acute">ύ</hi>ν<hi rend="diaeresis">ι</hi>σαν μ<unclear>ε</unclear>γά<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear> ἑὸν μένος<g type="high-punctus"/> ἀ<unclear>λ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/>λ<hi rend="circumflex">ῆ</hi>ντο φρέν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/>δ᾽<g type="apostrophe"/> ἄρ᾽ ἀπ᾽ οὐραν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/>συν<hi rend="grave">ω</hi>χαδ<unclear>ό</unclear>ν<g type="high-punctus"/> <unclear>ο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/>ε καὶ ἀστεροπ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>ἱ</unclear>ερὴν φλόγα<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><hi rend="circumflex">ῖ</hi>α φερ<hi rend="acute">έ</hi>σβι<unclear>ο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>φὶ πυρ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="b" subtype="fragment" type="textpart" corresp="#FR15013"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>χεται</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>ὐδ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><g type="apostrophe"/> αἰεὶ ἑτέρη<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>ν ἐ<unclear>π</unclear>ιστρ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>νει τὴν α<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear>ὲν ἐπιχθ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>  <hi rend="asper">Ὕ</hi>π<unclear>νον</unclear> μετὰ χ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>λοή νεφέλ<unclear>η</unclear><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><unclear>α</unclear> δὲ Nυκτὸς π<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ς</unclear> φαέθων ἐ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/>νὸν εἲς ἀνιὼ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><g type="apostrophe"/> ἕτερος μ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> ἀνστρ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><unclear>σ</unclear>ιδ<unclear>ηρ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ε</unclear>ὲς ἐν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="character"/>πων<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/> θεοῦ χ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/><gap reason="lost" extent="unknown" unit="character"/>ᾶσιν δ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="18"/><gap reason="lost" extent="unknown" unit="character"/><unclear>λε</unclear><hi rend="grave">ι</hi>ής <unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="19"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear>ει<supplied reason="lost"><hi rend="asper"><gap reason="illegible" quantity="1" unit="character"/></hi></supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="19"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="1" subtype="fragment" type="textpart" corresp="#FR15014"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">Κύκλωπες δ᾽ ὄνομ᾽ ἦσαν ἐπ</supplied><hi rend="acute">ώ</hi>νυμ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost">κυκλοτερὴς ὀφθαλμὸς ἕεις</supplied> ἐνέκει<unclear>το</unclear> μ<supplied reason="lost">ετώπωι:</supplied>
+<lb n="3"/><supplied reason="lost">ἰσχὺς τ᾽ ἠδὲ βίη καὶ μηχα</supplied>να<add place="above">ὶ</add> ἦσα<unclear>ν</unclear> <unclear>ἐπ</unclear>᾽ <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><supplied reason="lost">ἄλλοι δ᾽ αὖ Γαίης τε καὶ Οὐρα</supplied><unclear>ν</unclear>οῦ ἐξεγ<unclear>ένο</unclear>ν<supplied reason="lost">το</supplied>
+<lb n="5"/><supplied reason="lost">τρεῖς παῖδες μεγάλοι καὶ <hi rend="acute">ὄ</hi></supplied><unclear>βρ</unclear>ιμοι, <unclear>οὐ</unclear>κ <unclear>ὀνο</unclear><supplied reason="lost">μαστοί</supplied>
+<lb n="6"/><supplied reason="lost">Κόττος τε Βριάρεώς τε Γύης θ᾽, ὑ</supplied><unclear>περή</unclear><supplied reason="lost">φανα</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="2" subtype="fragment" type="textpart" corresp="#FR15014"><ab>
+<lb n="1"/><supplied reason="lost">ἢ δ᾽ ὑποκυσαμένη Ἑ</supplied><unclear>κ</unclear><hi rend="acute">ά</hi>την τ<supplied reason="lost">έκε</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost">Ζεὺς Κρονίδης τίμη</supplied>σε:<g type="high-punctus"/> π<hi rend="acute">ό</hi>ρ<supplied reason="lost">εν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><supplied reason="lost">μοῖραν ἔχειν γαίης τ</supplied>ε καὶ ἀ<supplied reason="lost">τρυγέτοιο</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><supplied reason="lost">ἣ δὲ καὶ ἀστερόεντος</supplied> ἀπ᾽ οὐρ<hi rend="grave">α</hi><unclear>ν</unclear><supplied reason="lost">οῦ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><supplied reason="lost">ἀθανάτοις τε θεοῖσι <gap reason="illegible" quantity="4" unit="character"/></supplied>μ<hi rend="acute">έ</hi>νη <hi rend="grave">ἐ</hi>στ<supplied reason="lost">ὶ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><supplied reason="lost">καὶ γὰρ νῦν, ὅτε πού τις ἐ</supplied><unclear>π</unclear>ιχθον<hi rend="acute">ί</hi>ω<supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><supplied reason="lost">ἔρδων ἱερὰ καλὰ κατὰ ν<hi rend="acute">ό</hi>μο</supplied>ν <hi rend="diaeresis">ἱ</hi>λ<supplied reason="lost">άσκηται,</supplied>
+<lb n="8"/><supplied reason="lost">κικλῄσκει Ἑκάτην. πολλ</supplied>ή τ<hi rend="acute">έ</hi> οἱ <hi rend="acute"><unclear>ἕ</unclear></hi><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><supplied reason="lost">ῥεῖα μάλ᾽, ᾧ πρόφρων γε θεὰ</supplied> <hi rend="diaeresis">ὑ</hi>ποδέ<unclear>ξ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><supplied reason="lost">καί τέ οἱ ὄλβον ὀπάζει, ἐπεὶ δύναμί</supplied><unclear>ς</unclear> <unclear>γ</unclear><supplied reason="lost">ε</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/> 
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/7089"/>
-                  <biblScope unit="number">2648</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">32</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/7089"/>
+                  <biblScope n="1" unit="volume">32</biblScope>                  
+                  <biblScope n="2" unit="number">2648</biblScope>
+                  
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+                  <title level="s" type="abbreviated">P. Oxy.</title>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/17700"/>
+                  <biblScope n="1" unit="volume">68</biblScope>
+                  <biblScope n="2" unit="number">4653</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020">Hesiodus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020">Hesiodus</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/513">Theogonia</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">P. Oxy. 32 Taf. XV</bibl>
-               <bibl type="printed">P. Oxy. 68 pl.4</bibl>
+               <bibl type="printed" n="1">P. Oxy. 32 Taf. XV</bibl>
+               <bibl type="printed" n="2">P. Oxy. 68 pl.4</bibl>
                <bibl type="online">
                   <ptr target="http://163.1.169.40:8081/gsdl/cgi-bin/library?e=d-000-00---0P%2eOxy%2e--00-0-0-0prompt-10---4---Document---0-1l--1-en-50---20-about---001-001-1-0utfZz-8-0&amp;a=d&amp;c=P.Oxy.&amp;cl=CL5.1.21&amp;d=HASH37ca17306222c94b65ad0f"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
