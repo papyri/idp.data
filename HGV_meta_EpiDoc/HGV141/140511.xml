@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv140511">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Liste von Stadtvierteln und Weilern</title>
@@ -29,13 +29,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites (?)</origPlace>
+                     <origPlace>Arsinoites ?, Ägypten</origPlace>
                      <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome" cert="low">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -43,8 +43,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,17 +60,23 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>geordnet nach Stadtvierteln und Weilern</term>
+               <term n="1">Liste</term>
+               <term n="2">geordnet nach Stadtvierteln und Weilern</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-04-30T13:27:35-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-04-29T20:18:57-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - The link is correct but should be moved to the proper field.</change>
+         <change when="2021-04-29T14:36:19-04:00"
+                 who="http://papyri.info/editor/users/berkes.lajos">Submit - I've added a link to the image online.</change>
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Griechsch - koptisch - arabisch.</p>
@@ -78,8 +85,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">28</biblScope>
-                  <biblScope type="numbers">17063</biblScope>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="numbers">17063</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -88,6 +95,13 @@
                <bibl type="illustration">Sijpesteijn - Sundelin, Papyrology and the History of Early Islamic Egypt, Plate 7 und 8</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://data.onb.ac.at/rec/RZ00011963"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

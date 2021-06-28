@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22633">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Letter about Funeral Expenses</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22633</idno>
             <idno type="TM">22633</idno>
             <idno type="ddb-perseus-style">0008;;498</idno>
-            <idno type="ddb-filename">chr.wilck.498</idno>
-            <idno type="ddb-hybrid">chr.wilck;;498</idno>
+            <idno type="ddb-filename">p.nekr.18</idno>
+            <idno type="ddb-hybrid">p.nekr;;18</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 717</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oasis Magna</origPlace>
-                     <origDate notBefore="0267" notAfter="0274">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 267 - 274</origDate>
+                     <origPlace>Oasis Magna ?, Egypt</origPlace>
+                     <origDate notBefore="0260" notAfter="0275">
+                ca. 260 - 275
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
                                    ref="http://pleiades.stoa.org/places/776210 http://www.trismegistos.org/place/619">Oasis Magna</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +71,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Melas an Sarapion und Silvanos</term>
-               <term>sie sollen auch die Leiche ihres Bruders abholen und für deren Herrichtung zahlen</term>
-               <term>und nicht nur seine Sachen behalten</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Melas an Sarapion und Silvanos</term>
+               <term n="3">sie sollen auch die Leiche ihres Bruders abholen und für deren Herrichtung zahlen</term>
+               <term n="4">und nicht nur seine Sachen behalten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-26T12:45:11-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-07-09T15:10:52-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - See Sampson's comments</change>
+         <change when="2020-06-12T10:49:42-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept - Add BL image link: http://www.bl.uk/manuscripts/Viewer.aspx?ref=papyrus_717_f001r and update inventory to include 'BL Papyrus'</change>
+         <change when="2020-06-12T10:09:22-04:00"
+                 who="http://papyri.info/editor/users/LaurenTisdale">Submit - Updated metadata following republication in P.Nekr., entered from ed. pr. as part of Heidelberg’s Digital Papyrology Webinar, summer 2020.</change>
          <change who="HGV" when="1997-04-15">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Tag: 23. Mai (?). Zur Datierung vgl. BL XI, S. 87. Zu Z. 9-14 vgl. BASP 48, 2011, S. 145. Rückseite: 2. Jh. (vgl. BFLS 34, 1955 - 56, S. 186).</p>
@@ -83,18 +100,25 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">77</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">18</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">87</biblScope>
+               </bibl>
+               <bibl type="BL" n="2">
+                  <biblScope type="volume">I</biblScope>
+                  <biblScope type="pages">191</biblScope>
+               </bibl>
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">IV</biblScope>
+                  <biblScope type="pages">35</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -104,9 +128,11 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 717 descr.</bibl>
-               <bibl type="publication" subtype="other">W.Chr. 498</bibl>
-               <bibl type="publication" subtype="other">Sel. Pap. I 157</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lond. III 717 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">W.Chr. 498</bibl>
+               <bibl type="publication" subtype="other" n="3">Sel. Pap. I 157</bibl>
+               <bibl type="publication" subtype="other" n="4">P.Grenf. II, 77</bibl>
+               <bibl type="publication" subtype="other" n="5">W. Crön. SPP IV, 89</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -116,13 +142,6 @@
                <bibl type="translations">Burnet, L'Égypte ancienne (2003), Nr. 220</bibl>
             </listBibl>
          </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_717"/>
-               </figure>
-            </p>
-         </div>
       </body>
-   </text>
+  </text>
 </TEI>

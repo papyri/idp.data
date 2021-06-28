@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10850">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Penthemeros certificate on behalf of Psenyris (?)</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10850</idno>
             <idno type="TM">10850</idno>
             <idno type="ddb-perseus-style">0110;;289</idno>
-            <idno type="ddb-filename">p.fay.289</idno>
-            <idno type="ddb-hybrid">p.fay;;289</idno>
+            <idno type="ddb-filename">basp.54.77_4</idno>
+            <idno type="ddb-hybrid">basp;54;77_4</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">CG 10838</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,25 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos? (Arsinoites)</origPlace>
-                     <origDate when="0192-03-03">3. März 192</origDate>
+                     <origPlace>Euhemereia (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="0192-05-27">27. Mai 192</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   cert="low"
-                                   ref="http://pleiades.stoa.org/places/737053 http://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/675 https://pleiades.stoa.org/places/736909">Euhemereia</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/95779"/>
+                  <biblScope type="pp">77</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,43 +76,52 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Penthemeros</term>
+               <term n="1">Quittung</term>
+               <term n="2">Penthemeros</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-07T10:01:01-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-05-20T16:43:14-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-05-19T10:58:37-04:00"
+                 who="http://papyri.info/editor/users/serena.causo">Submit - Updated Metadata and Text. Issue with the date: Gregorian calendar </change>
          <change who="HGV" when="1996-10-23">Record created</change>
          <change who="HGV" when="2011-04-06">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr. Zu Ort und Datierung vgl. BL V, S. 29.</p>
-         </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">27. Febr. - 2. März 192</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref/>
-                  <date type="mentioned" notBefore="0192-02-27" notAfter="0192-03-02">27. Febr.  - 2. März 192</date>
+                  <ref>Z. 4</ref>
+                  <date type="mentioned" notBefore="0192-05-23" notAfter="0192-05-26">23. Mai 192 - 26. Mai 192</date>
                </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Fay.</title>
-                  <biblScope type="numbers">289</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">54</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 77</biblScope>
+                  <biblScope n="4" type="number">Nr. 4</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 79</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -109,6 +130,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Fay. 289</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

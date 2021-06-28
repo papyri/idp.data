@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m68950" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 68 4641</title>
+            <title>From a column of Epitrepontes</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">10220</idno>
             <idno type="filename">68950</idno>
             <idno type="dclp-hybrid">p.oxy;68;4641</idno>
+            <idno type="MP3">01300.520</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,28 +32,42 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">9 cm</width>
+                              <height unit="cm">14.2 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="22">
                            <p>papyrus roll (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>biblical uncial</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,55 +78,139 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>comedy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Menander; Epitrepontes 195-215</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">comedy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+            <handNote xml:id="m1"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-06-26T14:32:05-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-06-26T14:32:05-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-06-26T14:08:02-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Superscript ρα in l. 4; use |subst| tags in l. 6; add [.?] to end of l. 6; accent λέγοντ’ in l. 7; superscript προσάγε\ι/ν in l. 10; accent νῦν in l. 10; print αὐτὸν in l.15; σωτηρία in l. 18; no apostrophe at end of l. 21. META: remove volume # from biblio 17700; add biblio 73362 p. 220, 73483, 73838, and 78385 as a study; Menander is TLG 0541 / CWKB 981 and Epitrepontes is TM 1383 / CWKB 3362; lines 195-215 are on the papyrus; image link is (http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH013b/f3bec929.dir/POxy.v0068.n4641.a.01.hires.jpg); script type is biblical uncial; mp3 is 01300.520; Oxyrhynchus is (https://pleiades.stoa.org/places/736983). </change>
+          <change when="2021-06-26T14:08:02-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Superscript ρα in l. 4; use |subst| tags in l. 6; add [.?] to end of l. 6; accent λέγοντ’ in l. 7; superscript προσάγε\ι/ν in l. 10; accent νῦν in l. 10; print αὐτὸν in l.15; σωτηρία in l. 18; no apostrophe at end of l. 21. META: remove volume # from biblio 17700; add biblio 73362 p. 220, 73483, 73838, and 78385 as a study; Menander is TLG 0541 / CWKB 981 and Epitrepontes is TM 1383 / CWKB 3362; lines 195-215 are on the papyrus; image link is (http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH013b/f3bec929.dir/POxy.v0068.n4641.a.01.hires.jpg); script type is biblical uncial; mp3 is 01300.520; Oxyrhynchus is (https://pleiades.stoa.org/places/736983). </change>
+          <change when="2021-06-25T09:31:45-04:00"
+                 who="http://papyri.info/editor/users/PaulvdLaan">Submit - Encoded Greek text from P.Oxy.68.4641 (TM 68950). General note: unclear whether lin1, 5, 21 continue with "[.?]". Lin7: added modern Greek high dot to introduce oratio recta; lin8: *middot* or *high-punctus*? lin18: doubt whether ἕνα (with ἑκαστον="everyone") should be considerd as &lt;#number#&gt;; lin21: ἐνθάδ': added accent and apostrophe (see translation "here").</change>
+          <change when="2021-06-25T09:31:45-04:00"
+                 who="http://papyri.info/editor/users/PaulvdLaan">Submit - Encoded Greek text from P.Oxy.68.4641 (TM 68950). General note: unclear whether lin1, 5, 21 continue with "[.?]". Lin7: added modern Greek high dot to introduce oratio recta; lin8: *middot* or *high-punctus*? lin18: doubt whether ἕνα (with ἑκαστον="everyone") should be considerd as &lt;#number#&gt;; lin21: ἐνθάδ': added accent and apostrophe (see translation "here").</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Editor gives in the notes many suggestions for completing words of which only one or a few letters remain. The text is frequently corrected by deletion of letters and supralinear additions, which may or may not be by the same hand</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ουτ<gap reason="illegible" quantity="1" unit="character"/>ν <unclear>θ</unclear>υγα<unclear>τ</unclear>έρ<supplied reason="lost">α</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">τὸ</supplied> <unclear>δ</unclear>ὴ λεγόμενον η<gap reason="lost" extent="unknown" unit="character"/>  
+<lb n="3"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ε π<add place="above">ε</add>ίσηι καρτερη<unclear>σ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ν τὸ μὴ πα<add place="above">ρὰ</add> τοῦ το<unclear>ι</unclear><supplied reason="lost">ούτου</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" quantity="5" unit="character"/><unclear>ν</unclear> πεπό<del rend="erasure">ι</del>ηκε μυρίου<supplied reason="lost">ς</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="3" unit="character"/><subst><add place="inline"><unclear>ο</unclear>ν<add place="above">γ</add>ε</add><del rend="corrected"><unclear>ο</unclear>νδε</del></subst> τὸ <unclear>κ</unclear>ακόν, εἰ δεήσ<supplied reason="lost">ει</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> λέγοντ’<g type="apostrophe"/>·<g type="middot"/> ἄσωτός εἰμ’<g type="apostrophe"/>, <g type="middot"/> ο<unclear>υ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" quantity="4" unit="character"/><add place="above"><unclear>σ</unclear></add>τ<unclear>α</unclear>,<g type="middot"/> μεθύω, κραιπαλῶ,<g type="middot"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>δ</unclear>ουν <unclear>α</unclear>ὐτῶ<add place="above">ι</add> φράσω ν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><supplied reason="lost">π</supplied>εῖραν προσάγε<add place="above"><unclear>ι</unclear></add>ν,<g type="high-punctus"/> ὡς νῦν <unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" quantity="1" unit="character"/>θεις <unclear>λ</unclear>έγει τούτωι γάρ·<g type="high-punctus"/> ε<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><supplied reason="lost">ἐ</supplied>ργάζετ’<g type="apostrophe"/>·<g type="middot"/> ἐρρῶσθαι γάρ ἐ<unclear>στ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><supplied evidence="parallel" reason="undefined">ἀ</supplied><unclear>ρ</unclear>γὸς δ’ ὑγ<unclear>ια</unclear>ίνων τοῦ πυρ<supplied evidence="parallel" reason="undefined">έττοντος πολύ</supplied>
+<lb n="14"/><supplied evidence="parallel" reason="undefined">ἐ</supplied><unclear>στ</unclear>’ ἀθλιώ<unclear>τ</unclear>ερος·<g type="middot"/> διπλάσιά <unclear>γ</unclear>’ <supplied evidence="parallel" reason="undefined">ἐσθίει</supplied>
+<lb n="15"/><supplied evidence="parallel" reason="undefined">μ</supplied>άτην·<g type="middot"/> <hi rend="diaeresis">ἰ</hi>δειν βουλήσομ’ αὐ<supplied reason="lost">τὸν</supplied>.
+<lb n="16"/><supplied reason="lost">π</supplied>ρο<add place="above">σ</add>μείνατ’, ὢ δείλης μετ<unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/><supplied reason="lost">ἔρ</supplied><unclear>ρω</unclear>σο καὶ τ<add place="above">ὸ</add> κατὰ σὲ πρό<unclear>σμ</unclear><supplied reason="lost">εινον μόνον</supplied>.
+<lb n="18"/><supplied reason="lost">π</supplied><unclear>α</unclear>ρ’ <num value="1">ἕνα</num> γάρ <unclear>ἐσ</unclear>θ’ ἕκαστον ἡ σ<unclear>ω</unclear><supplied reason="lost">τηρία</supplied>.
+<lb n="19"/><supplied reason="lost">ο</supplied><unclear>ὐθὲν</unclear> λέγεις δίκαιον.<g type="dicolon"/> <handShift new="m2"/><add place="above"><expan>Συρίσκ<ex>ος</ex></expan></add> <handShift new="m1"/>οὐ μ<unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="20"/><gap reason="lost" quantity="4" unit="character"/><unclear>ε</unclear> π<unclear>ρὸ</unclear>ς τὸν δεσπότ<unclear>ην</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="21"/><gap reason="lost" quantity="5" unit="character"/><unclear>ο</unclear>ν. κ<unclear>α</unclear>τοικεῖ δ’ <unclear>ἐ</unclear>νθ<unclear>ά</unclear><supplied reason="lost">δ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="22"/><gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><unclear>μεν</unclear><g type="middot"/> <unclear>ο</unclear><add place="above">ἰ</add><unclear>κε</unclear><gap reason="illegible" quantity="2" unit="character"/><unclear>ου</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+ </ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/17700"/>
-                  <biblScope unit="number">4641</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">68</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/17700"/>
+                  <biblScope n="1" unit="number">4641</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/73362"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">220</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/73483"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/73838"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="5" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/78385"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0541">Menander</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0541 http://cwkb.org/author/id/981/rdf">Menander</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/1383">Epitrepontes</title>
+                         ref="http://www.trismegistos.org/authorwork/1383 http://cwkb.org/work/id/3362/rdf">Epitrepontes</title>
+                  <biblScope unit="line" from="195" to="215">195-215</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 68, pl.3</bibl>
+               <bibl type="online">
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH013b/f3bec929.dir/POxy.v0068.n4641.a.01.hires.jpg"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

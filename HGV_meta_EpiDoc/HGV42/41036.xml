@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv41036">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Χειρόγραφον , Empfangsbestätigung der Zahlung für zu liefernde Schafe</title>
+            <title>A contract between Aurelius Gennadius and Flavius Sarapammon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">41036</idno>
             <idno type="TM">41036</idno>
             <idno type="ddb-perseus-style">0155;6;10</idno>
-            <idno type="ddb-filename">p.lund.6.10</idno>
-            <idno type="ddb-hybrid">p.lund;6;10</idno>
+            <idno type="ddb-filename">basp.56.131</idno>
+            <idno type="ddb-hybrid">basp;56;131</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Lund</settlement>
                   </placeName>
+                  <collection>University Library</collection>
+                  <idno type="invNo">P. 26 + Ann Arbor, Michigan University, Library P. 1671</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,27 +33,39 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoiton Polis oder Kastra Skenon Mandron (Memphites)</origPlace>
+                     <origPlace>Arsinoiton Polis oder Skenai Mandrai (Memphites, Ägypten)</origPlace>
                      <origDate when="0400">400</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
                         <placeName type="ancient"
                                    ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Arsinoiton Polis</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient">Kastra Skenon Mandron</placeName>
-                        <placeName type="ancient" subtype="nome">Memphites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2149 https://pleiades.stoa.org/places/737050">Skenai Mandrai</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2714 https://pleiades.stoa.org/places/736964">Memphites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/95781"/>
+                  <biblScope type="pp">131</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,27 +80,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>Schafe</term>
-               <term>Soldat</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Schafe</term>
+               <term n="4">Soldat</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-25T10:55:43-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-06-02T11:04:50-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine.</change>
+         <change when="2021-06-02T10:11:09-04:00"
+                 who="http://papyri.info/editor/users/ElizabethNabney">Submit - Added the lower half of the text from BASP (2020) De Witt</change>
          <change who="HGV" when="1996-04-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lund.</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">10</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">56</biblScope>
+                  <biblScope n="2" type="fascicle">(2019)</biblScope>
+                  <biblScope n="3" type="pages">S. 131</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,22 +122,26 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel 3</bibl>
+               <bibl type="illustration">P.Lund VI, Tafel 3</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SB VI 9359</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lund VI 10</bibl>
+               <bibl type="publication" subtype="other" n="2">SB VI 9359</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://papyri.info/apis/lund.apis.33"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://quod.lib.umich.edu/a/apis/x-7913/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
