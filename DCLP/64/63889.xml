@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63889" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 53 3702</title>
+            <title>Mythological compendium</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5103</idno>
             <idno type="filename">63889</idno>
             <idno type="dclp-hybrid">p.oxy;53;3702</idno>
+            <idno type="MP3">02451.010</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -33,7 +38,7 @@
                         </foliation>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="2">
                            <p>papyrus roll (columns: 2, pagination: 122)</p>
                         </layout>
                      </layoutDesc>
@@ -46,17 +51,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Bahnasa) (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos (Bahnasa)</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -108,44 +118,172 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>mythography</term>
-               <term>philology catalogue</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">mythological compendium</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose</term>
+               <term n="5">mythography</term>
+               <term n="6">philology catalogue</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-06-17T17:01:31-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Finalized - Read</change>
+          <change when="2021-06-17T17:01:31-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Finalized - Read</change>
+          <change when="2021-06-17T10:10:35-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Vote - Accept-Straight-to-Finalization - Metada: Remove volume number and Side (v) from biblio 11073. Add image link: http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0155/dbc7e045.dir/POxy.v0053.n3702.a.01.hires.jpg Columns: 1 --&gt; 2. General Notes: --&gt; TM 111187 = P.Oxy. 53 3702r descr. (account). Add Pleiades georefs: https://pleiades.stoa.org/places/736982 (for Oxyrhynchites) and https://pleiades.stoa.org/places/736983 (for Oxyrhynchus)&#xD;
+&#xD;
+Text: Encode middots throughout as *middot*. Col. 1, ln 3: Πολύξεινος --&gt; Πολύξενος. L. 5-6: Enclose entire name in reg tag. L. 8: dot final nu in Ἀθηνῶ]ν. L. 10-11: enclose entire name in reg tag. L. 13: no reg tag needed; print (Φερῶ(ν)). L. 14: give reading of papyrus, ἀριστε, and record the editors †Ἀριστε† in the app. with an ed tag? L. 21: the ed. pr. doesn't not underdot any letter iin Σχεδί̣ο̣ς in the normalized text. L. 22: ed pr. has Εἰφίτ]ου not Ἰφίτ]ου. L. 25: no reg tag; instead print (Θηβῶ(ν)). Col. 2, the page number 122 (ρκβ) should occupy its own line, embedded in a num tag (but how?--as upper margin?). L. 27: record trema marks in Ιαλ̣μ̣ L. 28: give reading of papyrus, Μινύρου, and record the editors †Μινύρου† in the app. with an ed tag? Add paragraphos beetween lines 29 and 30. Ln. 31: record trema mark in Εἰκ̣αρ̣ι̣ο̣υ and capitalize the word to right of reg. Add num tag in this line and in 33 (bis) and 34. L. 32: --&gt; &lt;:ἐκ|reg|ἐγ:&gt;. L. 33: κ̣̅[δ̅·] is not what is printed in the ed. pr. L. 34 has not been entered correctly. L. 41: record apostrophe between πρὸς and γάμον; register deletion 〚Αι〛. L. 42: &lt;:Δ̣α̣ναί̈δας|reg|δαναί̈δες:&gt; does not reflect what is in the ed. pr. (corr tag needed instead); trema marks wrongly encoded. L. 46: --&gt; βρα̣χ̣ὺ̣[ν] [.?] In lines 50 and 51 add ] [.?] at line end. 53: record trema marks correctly; --&gt; Θράκης. L. 55: ed. pr. spells Ἐργεῖνος. L. 59: reg is incorrectly recorded. L. 60: --&gt; Πεί&#xD;
+</change>
+          <change when="2021-06-17T10:10:35-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Vote - Accept-Straight-to-Finalization - Metada: Remove volume number and Side (v) from biblio 11073. Add image link: http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0155/dbc7e045.dir/POxy.v0053.n3702.a.01.hires.jpg Columns: 1 --&gt; 2. General Notes: --&gt; TM 111187 = P.Oxy. 53 3702r descr. (account). Add Pleiades georefs: https://pleiades.stoa.org/places/736982 (for Oxyrhynchites) and https://pleiades.stoa.org/places/736983 (for Oxyrhynchus)&#xD;
+&#xD;
+Text: Encode middots throughout as *middot*. Col. 1, ln 3: Πολύξεινος --&gt; Πολύξενος. L. 5-6: Enclose entire name in reg tag. L. 8: dot final nu in Ἀθηνῶ]ν. L. 10-11: enclose entire name in reg tag. L. 13: no reg tag needed; print (Φερῶ(ν)). L. 14: give reading of papyrus, ἀριστε, and record the editors †Ἀριστε† in the app. with an ed tag? L. 21: the ed. pr. doesn't not underdot any letter iin Σχεδί̣ο̣ς in the normalized text. L. 22: ed pr. has Εἰφίτ]ου not Ἰφίτ]ου. L. 25: no reg tag; instead print (Θηβῶ(ν)). Col. 2, the page number 122 (ρκβ) should occupy its own line, embedded in a num tag (but how?--as upper margin?). L. 27: record trema marks in Ιαλ̣μ̣ L. 28: give reading of papyrus, Μινύρου, and record the editors †Μινύρου† in the app. with an ed tag? Add paragraphos beetween lines 29 and 30. Ln. 31: record trema mark in Εἰκ̣αρ̣ι̣ο̣υ and capitalize the word to right of reg. Add num tag in this line and in 33 (bis) and 34. L. 32: --&gt; &lt;:ἐκ|reg|ἐγ:&gt;. L. 33: κ̣̅[δ̅·] is not what is printed in the ed. pr. L. 34 has not been entered correctly. L. 41: record apostrophe between πρὸς and γάμον; register deletion 〚Αι〛. L. 42: &lt;:Δ̣α̣ναί̈δας|reg|δαναί̈δες:&gt; does not reflect what is in the ed. pr. (corr tag needed instead); trema marks wrongly encoded. L. 46: --&gt; βρα̣χ̣ὺ̣[ν] [.?] In lines 50 and 51 add ] [.?] at line end. 53: record trema marks correctly; --&gt; Θράκης. L. 55: ed. pr. spells Ἐργεῖνος. L. 59: reg is incorrectly recorded. L. 60: --&gt; Πεί&#xD;
+</change>
+          <change when="2021-05-15T12:37:12-04:00"
+                 who="http://papyri.info/editor/users/simoeis">General - Text: Encode middots throughout as *middot*. Col. 1, ln 3: Πολύξεινος --&gt; Πολύξενος. L. 5-6: Enclose entire name in reg tag. L. 8: dot final nu in Ἀθηνῶ]ν. L. 10-11: enclose entire name in reg tag. L. 13: no reg tag needed; print (Φερῶ(ν)). L. 14: give reading of papyrus, ἀριστε, and record the editors †Ἀριστε† in the app. with an ed tag? L. 21: the ed. pr. doesn't not underdot any letter iin Σχεδί̣ο̣ς in the normalized text. L. 22: ed pr. has Εἰφίτ]ου not Ἰφίτ]ου. L. 25: no reg tag; instead print (Θηβῶ(ν)). Col. 2, the page number 122 (ρκβ) should occupy its own line, embedded in a num tag (but how?--as upper margin?). L. 27: record trema marks in Ιαλ̣μ̣ L. 28: give reading of papyrus, Μινύρου, and record the editors †Μινύρου† in the app. with an ed tag? Add paragraphos beetween lines 29 and 30. Ln. 31: record trema mark in Εἰκ̣αρ̣ι̣ο̣υ and capitalize the word to right of reg. Add num tag in this line and in 33 (bis) and 34. L. 32: --&gt; &lt;:ἐκ|reg|ἐγ:&gt;. L. 33:  κ̣̅[δ̅·] is not what is printed in the ed. pr. L. 34 has not been entered correctly. L. 41: record apostrophe between πρὸς and γάμον; register deletion 〚Αι〛. L. 42: &lt;:Δ̣α̣ναί̈δας|reg|δαναί̈δες:&gt; does not reflect what is in the ed. pr. (corr tag needed instead); trema marks wrongly encoded. L. 46: --&gt; βρα̣χ̣ὺ̣[ν] [.?] In lines 50 and 51 add ] [.?] at line end. 53: record trema marks correctly; --&gt; Θράκης. L. 55: ed. pr. spells Ἐργεῖνος. L. 59: reg is incorrectly recorded. L. 60: --&gt; Πεί</change>
+          <change when="2021-05-15T12:37:12-04:00"
+                 who="http://papyri.info/editor/users/simoeis">General - Text: Encode middots throughout as *middot*. Col. 1, ln 3: Πολύξεινος --&gt; Πολύξενος. L. 5-6: Enclose entire name in reg tag. L. 8: dot final nu in Ἀθηνῶ]ν. L. 10-11: enclose entire name in reg tag. L. 13: no reg tag needed; print (Φερῶ(ν)). L. 14: give reading of papyrus, ἀριστε, and record the editors †Ἀριστε† in the app. with an ed tag? L. 21: the ed. pr. doesn't not underdot any letter iin Σχεδί̣ο̣ς in the normalized text. L. 22: ed pr. has Εἰφίτ]ου not Ἰφίτ]ου. L. 25: no reg tag; instead print (Θηβῶ(ν)). Col. 2, the page number 122 (ρκβ) should occupy its own line, embedded in a num tag (but how?--as upper margin?). L. 27: record trema marks in Ιαλ̣μ̣ L. 28: give reading of papyrus, Μινύρου, and record the editors †Μινύρου† in the app. with an ed tag? Add paragraphos beetween lines 29 and 30. Ln. 31: record trema mark in Εἰκ̣αρ̣ι̣ο̣υ and capitalize the word to right of reg. Add num tag in this line and in 33 (bis) and 34. L. 32: --&gt; &lt;:ἐκ|reg|ἐγ:&gt;. L. 33:  κ̣̅[δ̅·] is not what is printed in the ed. pr. L. 34 has not been entered correctly. L. 41: record apostrophe between πρὸς and γάμον; register deletion 〚Αι〛. L. 42: &lt;:Δ̣α̣ναί̈δας|reg|δαναί̈δες:&gt; does not reflect what is in the ed. pr. (corr tag needed instead); trema marks wrongly encoded. L. 46: --&gt; βρα̣χ̣ὺ̣[ν] [.?] In lines 50 and 51 add ] [.?] at line end. 53: record trema marks correctly; --&gt; Θράκης. L. 55: ed. pr. spells Ἐργεῖνος. L. 59: reg is incorrectly recorded. L. 60: --&gt; Πεί</change>
+          <change when="2021-05-15T11:17:08-04:00"
+                 who="http://papyri.info/editor/users/simoeis">General - Metada: Remove volume number and Side (v) from biblio 11073. Add image link: http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0155/dbc7e045.dir/POxy.v0053.n3702.a.01.hires.jpg Columns: 1 --&gt; 2. General Notes: --&gt; TM 111187 = P.Oxy. 53 3702r descr. (account). Add Pleiades georefs: https://pleiades.stoa.org/places/736982 (for Oxyrhynchites) and https://pleiades.stoa.org/places/736983 (for Oxyrhynchus)</change>
+          <change when="2021-05-15T11:17:08-04:00"
+                 who="http://papyri.info/editor/users/simoeis">General - Metada: Remove volume number and Side (v) from biblio 11073. Add image link: http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0155/dbc7e045.dir/POxy.v0053.n3702.a.01.hires.jpg Columns: 1 --&gt; 2. General Notes: --&gt; TM 111187 = P.Oxy. 53 3702r descr. (account). Add Pleiades georefs: https://pleiades.stoa.org/places/736982 (for Oxyrhynchites) and https://pleiades.stoa.org/places/736983 (for Oxyrhynchus)</change>
+          <change when="2021-05-10T09:45:13-04:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text and Meta edited for the webinar Digital Editions of Greek Literary and Paraliterary Papyri by Holger Essler.</change>
+          <change when="2021-05-10T09:45:13-04:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text and Meta edited for the webinar Digital Editions of Greek Literary and Paraliterary Papyri by Holger Essler.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart">
+<div n="1" subtype="column" type="textpart"><ab>
+<lb n="1"/><supplied reason="lost">Ἀμφίμαχ</supplied><unclear>ος</unclear> <unclear>Κτ</unclear><supplied reason="lost">ε</supplied><unclear>άτου</unclear>,
+<lb n="2"/><supplied reason="lost">Ἀμ</supplied><unclear>α</unclear>ρ<unclear>υ</unclear>γκε<unclear>ὺ</unclear>ς
+<lb n="3"/><supplied reason="lost">Πολύξενος Ἀγ</supplied><unclear>ασ</unclear>θ<unclear>έ</unclear>ν<unclear>ο</unclear>υς<g type="middot"/>
+<lb n="4"/><supplied reason="lost">ἐξ Ἤλι</supplied><unclear>δ</unclear>ος<g type="middot"/> <unclear>Μ</unclear>έ<unclear>γ</unclear>ης
+<lb n="5"/><supplied reason="lost">Φυλέως ἐκ Δουλιχίου·</supplied> <choice><reg>Ἰδομε<lb n="6" break="no"/><supplied reason="lost">νεὺς</supplied></reg><orig>Εἰδομε<lb n="6" break="no"/><supplied reason="lost">νεὺς</supplied></orig></choice> <supplied reason="lost">Δευκαλίωνος καὶ</supplied> Μηριόνη<unclear>ς</unclear>
+<lb n="7"/><supplied reason="lost">Μόλου ἐκ Κρήτης· Με</supplied><unclear>ν</unclear>εσθεὺς
+<lb n="8"/><supplied reason="lost">Πετεὼ ἐξ Ἀθηνῶ</supplied><unclear>ν</unclear>· Ἀκάμας
+<lb n="9"/><supplied reason="lost">Θησέως</supplied> Τληπό
+<lb n="10" break="no"/><supplied reason="lost">λεμος Ἡερακλέους ἐκ Ῥό</supplied>δου· <choice><reg>Νι<lb n="11" break="no"/><supplied reason="lost">ρεὺς</supplied></reg><orig>Νει<lb n="11" break="no"/><supplied reason="lost">ρεὺς</supplied></orig></choice> <supplied reason="lost">Χαρόπου ἐκ Σύμ</supplied>ης<g type="middot"/> Ἄντι
+<lb n="12" break="no"/><supplied reason="lost">φος καὶ Φείδιππος Θεσσ</supplied>αλοῦ<g type="middot"/> ἐκ
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/>ς<g type="middot"/> ἐκ <expan>Φερῶ<ex>ν</ex></expan>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> ἐξ <app type="editorial"><lem>ἀριστε</lem><rdg resp="edd.">†Ἀριστε†</rdg></app>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="character"/>ων
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/> Φιλοκτή
+<lb n="17" break="no"/><supplied reason="lost">της Ποίαντος ἐκ Μελι</supplied><unclear>β</unclear>οίας<g type="middot"/>
+<lb n="18"/><gap reason="lost" extent="unknown" unit="character"/>ς ἐκ Γυρ
+<lb n="19" break="no"/><supplied reason="lost">τώνης· Λεοντεὺς Κο</supplied><unclear>ρ</unclear>ώνου
+<lb n="20"/><supplied reason="lost">Πρόθοος</supplied> Τενθρη
+<lb n="21" break="no"/><supplied reason="lost">δόνος ἐκ Μαγνησία</supplied><unclear>ς</unclear><g type="middot"/> Σχεδ<unclear>ί</unclear>ος
+<lb n="22"/><supplied reason="lost">καὶ Ἐπίστροφος Εἰφίτ</supplied><unclear>ο</unclear>υ ἐκ Φω
+<lb n="23" break="no"/><supplied reason="lost">κίδος· Πάτροκλος Μεν</supplied><unclear>ο</unclear>ιτίου
+<lb n="24"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ς</unclear> Θέστορος<g type="middot"/>
+<lb n="25"/><gap reason="lost" extent="unknown" unit="character"/>υ ἐκ <expan>Θηβῶ<ex>ν</ex></expan>
+<lb n="26"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear>ου ἐκ Βοι
+</ab></div>
+<div n="2" subtype="column" type="textpart"><ab>
+<lb n="1,msup"/><num value="122">ρκβ</num>
+<lb n="27" break="no"/>ωτ<unclear>ίας</unclear>· Ἀσκάλαφος καὶ <hi rend="diaeresis">Ἰ</hi>ά<unclear>λμ</unclear><supplied reason="lost">ε</supplied>
+<lb n="28" break="no"/>νος Ἄρεως ἐκ <app type="editorial"><lem>μινυρου</lem><rdg resp="edd">†Μινύρου†</rdg></app><g type="middot"/> Αἰγ<supplied reason="lost">ια</supplied>
+<lb n="29" break="no"/>λεὺς Ἀδράστου ἐξ Ἄργους. <gap reason="lost" extent="unknown" unit="character"/>
+<milestone rend="diple-obelismene" unit="undefined"/>
+<lb n="30"/>Πηνελόπης μνηστῆρες <supplied reason="lost">τῆς</supplied>
+<lb n="31"/><choice><reg>Ἰκαρίου</reg><orig>Ε<hi rend="diaeresis">ἰ</hi><unclear>κ</unclear>α<unclear>ρίο</unclear>υ</orig></choice><g type="middot"/> <num value="12"><hi rend="supraline">ιβ</hi></num> καὶ Μέδων ὁ κῆ<supplied reason="lost">ρυξ</supplied>
+<lb n="32"/><unclear>κ</unclear><supplied reason="lost">αὶ</supplied> Φήμιος ὠιδός· ἐκ δ<unclear>ὲ</unclear> <unclear>Σά</unclear><supplied reason="lost">μης</supplied>
+<lb n="33"/><num value="24"><hi rend="supraline"><unclear>κ</unclear></hi><supplied reason="lost"><hi rend="supraline">δ</hi></supplied></num><supplied reason="lost">·</supplied> ἐκ Δουλιχίου <num value="52"><hi rend="supraline">νβ</hi></num><g type="middot"/> <app type="editorial"><lem resp="Van Rossum-Steenbeek"><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/><lb n="34"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/></lem><rdg><unclear>ἐ</unclear><supplied reason="lost">κ <expan>Ζακύ<ex>ν</ex></expan></supplied>
+<lb n="34" break="no"/><supplied reason="lost">θ</supplied><unclear>ου</unclear> <hi rend="supraline"><unclear>κ</unclear></hi></rdg></app> Δαναοῦ θυγα<unclear>τ</unclear><supplied reason="lost" cert="low">έρες</supplied> 
+<lb n="35"/><app type="editorial"><lem resp="Luppe"><hi rend="supraline"><unclear>ν</unclear></hi> <unclear>κ</unclear>α<unclear>ὶ</unclear> τῶν</lem><rdg>†<unclear>κ</unclear>α<gap reason="illegible" quantity="1" unit="character"/>τ<gap reason="illegible" quantity="1" unit="character"/>ων†</rdg></app> Αἰγύπτου <unclear>π</unclear>αίδ<unclear>ω</unclear><supplied reason="lost">ν ἑ</supplied>
+<lb n="36" break="no"/>κάστη ἀπέκτεινεν κ<supplied reason="lost">αὶ</supplied> διὰ <unclear>ν</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="37"/>αἰτίαν τοῦτο <choice><reg>ἐπράχθη</reg><orig>ἐπ<unclear>ρ</unclear>άκθη</orig></choice> προεκ
+<lb n="38" break="no"/>θήσομαί σοι. Αἴγ<unclear>υπ</unclear>τος γὰρ ἀπὸ τ<supplied reason="lost">ῆς</supplied>
+<lb n="39"/><choice><reg>ὁμωνύμου</reg><orig>ὁμονύμου</orig></choice> χώρ<unclear>α</unclear>ς βα<unclear>σ</unclear>ιλεὺς γε<unclear>ν</unclear><supplied reason="lost">η</supplied>
+<lb n="40" break="no"/>θεὶς προσέτασσε Δαναῶ<unclear>ι</unclear> δ<supplied reason="lost">οῦναι</supplied>
+<lb n="41"/><unclear>π</unclear>ρὸς<g type="apostrophe"/> γάμον τοῖς <del rend="erasure">Αι</del> α<supplied reason="lost">ὐτοῦ παισὶ τὰς</supplied>
+<lb n="42"/><subst><add place="inline"><unclear>Δα</unclear>να<hi rend="diaeresis">ί</hi>δας</add><del rend="corrected"><unclear>Δα</unclear>να<hi rend="diaeresis">ί</hi>δες</del></subst> μὴ βουλό<unclear>μ</unclear><supplied reason="lost">ενος δὲ τοῦτο</supplied>
+<lb n="43"/>πρᾶξαι Δαναὸς ἔφυ<supplied reason="lost">γε μετὰ τῶν</supplied>
+<lb n="44"/><unclear>θ</unclear><supplied reason="lost">υγ</supplied><unclear>α</unclear>τέρων εἰς τὴν ν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="45"/>νη<gap reason="lost" quantity="1" unit="character"/> <supplied reason="lost">Π</supplied><unclear>ε</unclear>λοπόννησο<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="46"/>βα<unclear>σιλε</unclear>ίαν <app type="editorial"><lem resp="Luppe">ἐκεῖ</lem><rdg><gap reason="illegible" quantity="2" unit="character"/>ει</rdg></app> βρ<unclear>αχὺ</unclear><supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="47" break="no"/>σας χρόνον <app type="editorial"><lem resp="Luppe">κατέ<unclear>θ</unclear><supplied reason="lost">ανεν</supplied></lem><rdg>κατ<unclear>ε</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="48"/>παραγ<unclear>ενη</unclear>θέν<unclear>τ</unclear><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="49"/>καὶ βίᾳ ταῖς Δαν<supplied reason="lost">α</supplied><unclear>ίσ</unclear><supplied reason="lost">ι</supplied>
+</ab></div>
+</div>
+<div n="2" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><supplied reason="lost">Ἄρ</supplied>γους<g type="middot"/> Περι<supplied reason="lost">κλύμενος</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>δου ἐκ Π<unclear>ύ</unclear><supplied reason="lost">λου·</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><supplied reason="lost">Ἀγκ</supplied><unclear>αῖ</unclear>ος Ποσει<unclear>δ</unclear><supplied reason="lost">ῶνος ἐκ Σάμου· Ζήτης καὶ</supplied>
+<lb n="4"/><supplied reason="lost">Κάλ</supplied><unclear>α</unclear><hi rend="diaeresis">ι</hi>ς Βορέου <unclear>ἐ</unclear><supplied reason="lost">κ Θράκης· Λυγκεὺς</supplied>
+<lb n="5"/><supplied reason="lost">καὶ</supplied> <choice><reg>Ἴδας</reg><orig>Εἴδας</orig></choice> Ἀφ<supplied reason="lost">αρέως Ἡ</supplied>
+<lb n="6" break="no"/><supplied reason="lost">ρακλ</supplied>ῆς Διὸς ἐξ <supplied reason="lost">Ἄργους· Ἐργεῖνος</supplied>
+<lb n="7"/><supplied reason="lost">Κλυ</supplied><unclear>μ</unclear>έ<unclear>ν</unclear>ου ἐξ Ὀ<supplied reason="lost">ρχομενοῦ· Ἄδμη</supplied>
+<lb n="8" break="no"/><supplied reason="lost">το</supplied><unclear>ς</unclear><unclear><g type="middot"/></unclear> <unclear>Φέ</unclear>ρητο<unclear>ς</unclear> <supplied reason="lost">ἐκ Θεσσαλίας· Εὔ</supplied>
+<lb n="9" break="no"/><supplied reason="lost">ρυτ</supplied><unclear>ος</unclear> καὶ Ἐχ<supplied reason="lost">ίων Ἑρμοῦ</supplied>
+<lb n="10"/><choice><reg><supplied reason="lost">Να</supplied><unclear>ύ</unclear>πλιος</reg><orig><supplied reason="lost">Να</supplied><unclear>ύ</unclear>πλειος</orig></choice> <unclear>Π</unclear><supplied reason="lost">οσειδῶνος ἐξ Ἄρ</supplied>
+<lb n="11" break="no"/><supplied reason="lost">γου</supplied>ς Ἱππάλ<unclear>κ</unclear><supplied reason="lost">ιμος Πέλοπος ἐκ Πεί</supplied>
+<lb n="12" break="no"/><supplied reason="lost">σης</supplied><g type="middot"/> Κάστω<unclear>ρ</unclear> <supplied reason="lost">καὶ Πολυδεύκης Διὸς</supplied>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="3" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>νοιδ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ρ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>μ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/11073"/>
-                  <biblScope unit="number">3702</biblScope>
-                  <biblScope unit="side">V</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">53</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/11073"/>
+                  <biblScope n="1" unit="number">3702</biblScope>
+                  <biblScope n="2" unit="side"/>
+                  <biblScope n="3" unit="volume"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/15453"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="number">60</biblScope>
+                  <biblScope n="3" unit="page" from="311" to="313">311-313</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/57980"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="17" to="18">17-18</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 53 pl.V</bibl>
-               <bibl type="online">
-                  <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol53/pages/3702.htm"/>
+               <bibl type="online" n="1">
+                  <ptr target="Catalogue of Paraliterary Papyri 61"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://163.1.169.40/cgi-bin/library?e=d-000-00---0POxy--00-0-0--0prompt-10---4------0-1l--1-en-50---20-about---00031-001-1-0utfZz-8-00&amp;a=d&amp;c=POxy&amp;cl=CL5.1.38&amp;d=HASH0155dbc7e0454b41af3c7f47"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>TM 111187 = P.Oxy. 53 3702r descr. (account)</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

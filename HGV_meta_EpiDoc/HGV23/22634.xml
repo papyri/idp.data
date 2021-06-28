@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22634">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Petition to the Praeses</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22634</idno>
             <idno type="TM">22634</idno>
             <idno type="ddb-perseus-style">0007;;63</idno>
-            <idno type="ddb-filename">chr.mitt.63</idno>
-            <idno type="ddb-hybrid">chr.mitt;;63</idno>
+            <idno type="ddb-filename">p.nekr.38</idno>
+            <idno type="ddb-hybrid">p.nekr;;38</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 718 + Oxford, Sackler Library, Papyrology Rooms 89A/99(b)3 + 107(b)2</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,23 +33,44 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kysis (Oasis Magna)</origPlace>
+                     <origPlace>Fundort: Kysis (Oasis Magna, Egypt) oder ; Schreibort: Hibis ? (Oasis Magna) oder</origPlace>
                      <origDate notBefore="0307-02-25" notAfter="0307-03-26">25. Febr. - 26. März 307</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                  <provenance n="1" type="found">
+                     <p n="1" xml:id="geoE4HAIC" exclude="#geoG6CJF9">
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/776191 http://www.trismegistos.org/place/2761">Kysis</placeName>
-                        <placeName type="ancient" subtype="region">Oasis Magna</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/619 https://pleiades.stoa.org/places/776173 https://pleiades.stoa.org/places/776173">Oasis Magna</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="4" type="ancient"/>
                      </p>
+                     <p n="2" xml:id="geoG6CJF9" exclude="#geoE4HAIC"/>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p n="1" xml:id="geoIJDAFC" exclude="#geoEGCI6B">
+                        <placeName n="1"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="https://pleiades.stoa.org/places/776181 https://www.trismegistos.org/place/2786">Hibis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/619 https://pleiades.stoa.org/places/776173 https://pleiades.stoa.org/places/776210">Oasis Magna</placeName>
+                     </p>
+                     <p n="2" xml:id="geoEGCI6B" exclude="#geoIJDAFC"/>
                   </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +85,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Syros an den Präfekten Satrius Arrianus</term>
-               <term>Entführung und Versklavung von Frau und Kindern</term>
-               <term>Prügel</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Syros an den Präfekten Satrius Arrianus</term>
+               <term n="3">Entführung und Versklavung von Frau und Kindern</term>
+               <term n="4">Prügel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-06-26T12:23:07-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2020-12-27T12:18:54-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-06-26T13:07:09-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept - This is fine. Remove days from date (edition says February-March); add Plate IX to printed illustrations; correct typo in 'Londo' and add Oxford, Sackler Library, Papyrology Rooms to second text in inv.#.</change>
+         <change when="2020-06-26T03:52:41-04:00"
+                 who="http://papyri.info/editor/users/mgelmaghrabi">Submit - HGV meta updated and Text encoded from ed.pr. as part of Heidelberg’s Digital Papyrology Webinar, Summer 2020.</change>
          <change who="HGV" when="1997-04-15">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL III, S. 71, BL IV, S. 35 und BL VIII, S. 143.</p>
@@ -83,22 +114,33 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">78</biblScope>
+                  <title level="s" type="abbreviated">P.Nekr.</title>
+                  <biblScope type="numbers">38</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">143</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">87</biblScope>
+               </bibl>
+               <bibl type="BL" n="3">
+                  <biblScope type="volume">I</biblScope>
+                  <biblScope type="pages">191</biblScope>
+               </bibl>
+               <bibl type="BL" n="4">
+                  <biblScope type="volume">III</biblScope>
+                  <biblScope type="pages">71</biblScope>
+               </bibl>
+               <bibl type="BL" n="5">
+                  <biblScope type="volume">IV</biblScope>
+                  <biblScope type="pages">35</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -108,8 +150,9 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 718 descr.</bibl>
-               <bibl type="publication" subtype="other">M.Chr. 63</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lond. III 718 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">M.Chr. 63</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Grenf. II 78</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -120,5 +163,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
