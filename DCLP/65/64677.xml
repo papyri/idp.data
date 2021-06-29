@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64677" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 64677</title>
+            <title>Exercise in syllabification</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">64677</idno>
             <idno type="dclp-hybrid">tm;;64677</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,21 +42,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Karanis (Arsinoites, Egypt); written: Karanis (Arsinoites, Egypt)</origPlace>
+                     <origPlace>Fundort: Karanis (Arsinoites, Egypt); Schreibort: Karanis (Arsinoites, Egypt)</origPlace>
                      <origDate notBefore="0300" notAfter="0399">300 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -61,17 +65,16 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>philology</term>
-               <term>grammar</term>
-               <term type="culture">science</term>
-               <term type="overview">exercise in syllabification</term>
+               <term n="1" type="culture">science</term>
+               <term n="2">philology</term>
+               <term n="3">grammar</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -80,10 +83,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve"> 
 
@@ -152,24 +155,33 @@
 </ab></div> </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/55162"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="edition" subtype="principal">
                   <title level="a" type="main">Four Michigan Papyri.</title>
-                  <author n="1">
-                     <surname>McNamee</surname>
-                     <forename>Kathleen</forename>
-                  </author>
-                  <date>1982</date>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/55162"/>
+                  <biblScope n="1" unit="book"/>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14384"/>
+                  <biblScope n="1" unit="number">81</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">ZPE 46 (1982), pl.4</bibl>
+               <bibl type="online">
+                  <ptr target="https://quod.lib.umich.edu/a/apis/x-1641"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
