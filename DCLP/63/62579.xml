@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62579" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 62579</title>
+            <title>Commentary on Plato, Phaedrus 265c-d and Philebus 16d-17a</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">3763</idno>
             <idno type="filename">62579</idno>
             <idno type="dclp-hybrid">tm;;62579</idno>
+            <idno type="MP3">01404.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +43,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Theadelpheia (Arsinoites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Theadelpheia (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2349">Theadelpheia</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/2349">Theadelpheia</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -77,10 +82,9 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose philosophy commentary</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Plato philosophus; Phaedrus 265c-d or Philebus 16d-17a commentary?</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose philosophy commentary</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -89,12 +93,20 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/ekdosis/">Würzburger Zentrum für Epikureismusforschung</ref>.</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/ekdosis/">Würzburger Zentrum für Epikureismusforschung</ref>
+          .
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="1" subtype="column" type="textpart" corresp="#FR10085"><ab> 
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
@@ -148,6 +160,26 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="ancientEdition">
+            <listBibl>
+               <bibl type="publication" n="1" subtype="ancientQuote">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato Phil.</author>
+                  <title type="main"
+                         level="m"
+                         xml:lang="grc"
+                         ref="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0059.tlg965">Phaedrus</title>
+               </bibl>
+               <bibl type="publication" n="2" subtype="ancientQuote">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato Phil.</author>
+                  <title type="main"
+                         level="m"
+                         xml:lang="grc"
+                         ref="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0059.tlg964">Philebus</title>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
