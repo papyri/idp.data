@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv30627">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petition to an Irenarch</title>
+            <title>Draft of a petition from the archive of Isidoros</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">30627</idno>
             <idno type="TM">30627</idno>
             <idno type="ddb-perseus-style">0088;;141</idno>
-            <idno type="ddb-filename">p.cair.isid.141</idno>
-            <idno type="ddb-hybrid">p.cair.isid;;141</idno>
+            <idno type="ddb-filename">zpe.213.210</idno>
+            <idno type="ddb-hybrid">zpe;213;210</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">JdE 57407</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
-                     <origDate notBefore="0276" notAfter="0325" precision="low">Ende III - Anfang IV</origDate>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0301" notAfter="0325" precision="low">Anfang IV</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/95829"/>
+                  <biblScope type="pp">210</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,29 +76,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Petition</term>
-               <term>Überfall</term>
-               <term>Sklave</term>
-               <term>Witwe</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Angriff bei Nacht</term>
+               <term n="3">Gewalt</term>
+               <term n="4">Archephodos</term>
+               <term n="5">Eirenarches</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-07-15T09:26:27-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-07-14T12:20:52-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-07-14T11:56:56-04:00"
+                 who="http://papyri.info/editor/users/NohaA.Salem">Submit - Editing metadata and the text of ZPE 213 (2020), p. 209-212</change>
          <change who="HGV" when="1992-03-10">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Cair. Isid.</title>
-                  <biblScope type="numbers">141</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">213</biblScope>
+                  <biblScope n="2" type="fascicle">(2020)</biblScope>
+                  <biblScope n="3" type="pages">S. 210</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -99,6 +118,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Cair. Isid. 141 descr.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
