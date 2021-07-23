@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62882" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 62882</title>
+            <title>Thucydides, Historiae 2 with scholia</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,94 +13,377 @@
             <idno type="LDAB">4073</idno>
             <idno type="filename">62882</idno>
             <idno type="dclp-hybrid">tm;;62882</idno>
+            <idno type="MP3">01516.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Berlin, Ägyptisches Museum P. 13236</idno>
+                   <idno>
+                     <idno type="invNo">Berlin, Staatliche Museen P. 13236</idno>
+                     <idno type="invNo" xml:id="FR16055">P.Berol.Inv. 13236, Seite A (verso)</idno>
+                     <idno type="invNo" xml:id="FR16056">P.Berol.Inv. 13236, Seite B (recto)</idno>
+                     <idno type="invNo" xml:id="FR16057">P.Berol.Inv. 13236, Seite C (recto)</idno>
+                     <idno type="invNo" xml:id="FR16058">P.Berol.Inv. 13236, Seite D (verso)</idno>
+                   </idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">17 cm</width>
+                              <height unit="cm">32 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
-                           <p>papyrus codex (columns: 2, pagination: 0)</p>
+                        <layout columns="8" writtenLines="60">
+                           <p>2 columns per page</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Hermopolis (El-Ashmunein) (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis (El-Ashmunein)</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
+                <additional>
+                    <adminInfo>
+                        <custodialHist>
+                            <custEvent type="imaged" corresp="#FR16055" from="2011" to="2021">
+                                <graphic url="https://berlpap.smb.museum/Original/P_13236-S-A__001.jpg"/>
+                                <orgName>BerlPap</orgName>
+                            </custEvent>
+                            <custEvent type="imaged" corresp="#FR16056" from="2011" to="2021">
+                                <graphic url="https://berlpap.smb.museum/Original/P_13236-S-B__001.jpg"/>
+                                <orgName>BerlPap</orgName>
+                            </custEvent>
+                            <custEvent type="imaged" corresp="#FR16057" from="2011" to="2021">
+                                <graphic url="https://berlpap.smb.museum/Original/P_13236-S-C__001.jpg"/>
+                                <orgName>BerlPap</orgName>
+                            </custEvent>
+                            <custEvent type="imaged" corresp="#FR16058" from="2011" to="2021">
+                                <graphic url="https://berlpap.smb.museum/Original/P_13236-S-D__001.jpg"/>
+                                <orgName>BerlPap</orgName>
+                            </custEvent>
+                        </custodialHist>
+                    </adminInfo>
+                </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose history</term>
-               <term>philology</term>
-               <term>scholia</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Thucydides; Historiae, 02.65.6-8, 65.12, 67.2, 68.1-5, 79.5-6, 80.3-6, 81.1-3, 81.8-82 with scholia</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose history</term>
+               <term n="5">philology</term>
+               <term n="6">scholia</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-07-13T11:47:17-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Revised text, added links to images.</change>
+          <change when="2021-07-13T11:47:16-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Revised text, added links to images.</change>
+          <change when="2021-07-13T10:44:35-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2021-07-13T10:44:35-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Ok.</change>
+          <change when="2021-07-08T11:36:41-04:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text revised for a Webinar by H. Essler</change>
+          <change when="2021-07-08T11:36:41-04:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text revised for a Webinar by H. Essler</change>
+          <change when="2021-07-06T10:40:45-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Return-Straight-to-Sender - Add modern punctuation. Follow page numbers of ed. pr. (without indication of recto/verso). A.1,1 ((ἐ)ς) is ἐς (both letters visible on photograph), 6.-, 7.- ||left: should be put after the hyphen (passim), 8-9 (τοὐνα(ν) 9.- τίον), ἔπραξα· -&gt; ἔπραξαν·*middot*, 10 εἶναι·*high-punctus*, 15 ἑκασ̣τῷ̣ paroxytonon, 18 καθ ί(¨´)στατο·*high-punctus*. Col. 2.1 space after [.?] (bevore complete word -&gt; passim) B.2.9.- [ρος] -&gt; 9.- [ρος] [.?], col.2,6 γενές middle sigma, 7 θαι· -&gt; θαι·*high-punctus*, 15 ἅ( ῾)υ -&gt; α(῾)ὕ, 22 ἡλληνίσ](θησα(ν)) -&gt; ([ἡλληνίσ]θησα(ν)). 3.r.1,5 τάξεις·*high-punctus*, 7 οφόροις·*high-punctus*, 9 σαν· α -&gt; σαν·*high-punctus* ἀ,Ἀ0 ἐσηκόντιζον·*high-punctus*,  〚τ〛 \δ/ε, 12 ο̣ἱ̣όν properispomenon, col.2.3 οὖσι·*high-punctus*, 10  ||left: ----ε|| -&gt; ||left: ξ|| encoded as number,  v.1.5  5 [ἐχώρουν -&gt; 5. [ἐχώρουν, 8 ἔργω iota subscript, 11 βά]ρβαροι·*high-punctus*, col. 2.3  ξυμβεβοηθηκέναι·*middot*, 5 καθιστάντων·*high-punctus*, κινηθῆναι·*high-punctus*, 7 κ(¨)α ὶ(`) -&gt; 〚καὶ〛, 8 ποιεῖν·*middot*, 13 [Στρά]του·*middot*, 14 ὑ( ῾)στεραίαι  ὑ( ῾)ποσπόνδους in both cases trema, no breathing. Margin in p.2, col. 2,10-11 belongs together: ||right: τερπόμενος .2σ̣τ̣άσει̣||, also in p. 4,col. 2: ||right: τό̣τ̣ε̣||</change>
+          <change when="2021-07-06T10:40:45-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Return-Straight-to-Sender - Add modern punctuation. Follow page numbers of ed. pr. (without indication of recto/verso). A.1,1 ((ἐ)ς) is ἐς (both letters visible on photograph), 6.-, 7.- ||left: should be put after the hyphen (passim), 8-9 (τοὐνα(ν) 9.- τίον), ἔπραξα· -&gt; ἔπραξαν·*middot*, 10 εἶναι·*high-punctus*, 15 ἑκασ̣τῷ̣ paroxytonon, 18 καθ ί(¨´)στατο·*high-punctus*. Col. 2.1 space after [.?] (bevore complete word -&gt; passim) B.2.9.- [ρος] -&gt; 9.- [ρος] [.?], col.2,6 γενές middle sigma, 7 θαι· -&gt; θαι·*high-punctus*, 15 ἅ( ῾)υ -&gt; α(῾)ὕ, 22 ἡλληνίσ](θησα(ν)) -&gt; ([ἡλληνίσ]θησα(ν)). 3.r.1,5 τάξεις·*high-punctus*, 7 οφόροις·*high-punctus*, 9 σαν· α -&gt; σαν·*high-punctus* ἀ,Ἀ0 ἐσηκόντιζον·*high-punctus*,  〚τ〛 \δ/ε, 12 ο̣ἱ̣όν properispomenon, col.2.3 οὖσι·*high-punctus*, 10  ||left: ----ε|| -&gt; ||left: ξ|| encoded as number,  v.1.5  5 [ἐχώρουν -&gt; 5. [ἐχώρουν, 8 ἔργω iota subscript, 11 βά]ρβαροι·*high-punctus*, col. 2.3  ξυμβεβοηθηκέναι·*middot*, 5 καθιστάντων·*high-punctus*, κινηθῆναι·*high-punctus*, 7 κ(¨)α ὶ(`) -&gt; 〚καὶ〛, 8 ποιεῖν·*middot*, 13 [Στρά]του·*middot*, 14 ὑ( ῾)στεραίαι  ὑ( ῾)ποσπόνδους in both cases trema, no breathing. Margin in p.2, col. 2,10-11 belongs together: ||right: τερπόμενος .2σ̣τ̣άσει̣||, also in p. 4,col. 2: ||right: τό̣τ̣ε̣||</change>
+          <change when="2021-05-19T07:08:05-04:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text and Meta edited for a webinar by Holger Essler.</change>
+          <change when="2021-05-19T07:08:05-04:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text and Meta edited for a webinar by Holger Essler.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Johannes Kern in the webinar
+          <emph rend="italics">Digital Editions of Greek Literary and Paraliterary Papyri</emph>
+          taught by Rodney Ast and Holger Essler. Revision by Holger Essler.
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="page" type="textpart">
+<div n="1" subtype="column" type="textpart" corresp="#FR16056"><ab>
+<lb n="2"/>ἐς τὸν πό<supplied reason="lost">λεμον. ὁ μὲν γὰρ ἡσυ</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="3" break="no"/>χάζοντάς <supplied reason="lost">τε καὶ τὸ ναυτικὸν</supplied>
+<lb n="4"/><supplied reason="lost">θ</supplied>εραπεύ<supplied reason="lost">οντας καὶ ἀρχὴν</supplied>
+<lb n="5"/>μὴ ἐπικτ<supplied reason="lost">ωμένους ἐν τῶι</supplied> π<supplied reason="lost">ο</supplied>
+<lb n="6" break="no"/>λέμωι. μ<supplied reason="lost">η</supplied>δὲ τῆι πό<supplied reason="lost">λει κ</supplied>ινδυ
+<lb n="7" break="no"/><add place="left"> κίνδυνον ποιοῦντας</add> νεύοντ<supplied reason="lost">α</supplied>ς ἔφη περιέσεσθαι· 
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="8"/>ο<hi rend="asper">ἱ</hi> δὲ ταῦτά τε πάντα ἐς <expan>τοὐνα<ex>ν</ex>
+<lb n="9" break="no"/><add place="left"> <supplied reason="lost">τ</supplied>ὴν Σικελίαν αἰνίττεται</add> τίον</expan> ἔπραξαν<g type="middot"/> καὶ ἄλλα ἔξωι τοῦ 
+<lb n="10"/>πολέμου δοκοῦντα εἶναι<g type="high-punctus"/> κα
+<lb n="11" break="no"/><add place="left"> φιλοδοξί<unclear>ας</unclear></add> τὰ τὰς ἰδίας φιλοτιμίας καὶ τὰ
+<lb n="12"/>ἴδιαι κέρδη<unclear>ι</unclear> κακῶς ἔς τε σφᾶς
+<lb n="13"/>αὐτοὺς <expan>κ<ex>αὶ</ex></expan> τοὺς συμμάχους ἐ
+<lb n="14" break="no"/>πολ<hi rend="acute">ί</hi>τευσαν, <hi rend="asper">ἅ</hi> κατ<supplied reason="lost">ο</supplied>ρθούμε<supplied reason="omitted">ν</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="15" break="no"/><add place="left"> <hi rend="diaeresis">ἰ</hi><unclear>δ</unclear>ίᾳ ἑκά<unclear>σ</unclear>τ<unclear>ῳ</unclear></add> α μὲν τοῖς <hi rend="lenis">ἰ</hi>διώ<supplied reason="lost">ταις τιμ</supplied>ὴ καὶ
+<lb n="16"/>ὠφ<unclear>ε</unclear>λί<add place="above">α</add> μᾶλλον <supplied reason="lost">ἦν, σφα</supplied>λέντα 
+<lb n="17"/>δὲ τῆι πόλει ἐς τὸ<supplied reason="lost">ν πόλε</supplied>μον βλά
+<lb n="18" break="no"/>βηι καθ<hi rend="diaeresis"><hi rend="acute">ί</hi></hi>στατο.<g type="high-punctus"/> <supplied reason="lost">αἴτιον δ'</supplied> ἦν <hi rend="asper">ὅ</hi>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="19" break="no"/>τι ἐκεῖνος μὲν <supplied reason="lost">δυνατὸς</supplied> ὤν
+<lb n="20"/>τῶ τε ἀξιώμ<supplied reason="lost">ατι καὶ τῆ γνώμη</supplied>
+<lb n="21"/>χρημάτων <supplied reason="lost">τε διαφανῶς ἀ</supplied>
+<lb n="22" break="no"/><add place="left"> ἀδωροδο<unclear>κήτ</unclear>ατος</add> δωρότατος <supplied reason="lost">γενόμενος κα</supplied>
+<lb n="23" break="no"/>τεῖχε τ<supplied reason="lost">ὸ πλῆθος ἐλευθέρως,</supplied>
+<lb n="24"/>καὶ οὐ<supplied reason="lost">κ ἤγετο μάλλον ὑπ' αὐ</supplied>
+<lb n="24" break="no"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="2" subtype="column" type="textpart" corresp="#FR16056"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἀν</supplied>τεῖχον τ<supplied reason="lost">οῖς τε πρότε</supplied>
+<lb n="2" break="no"/><supplied reason="lost">ρον ὑ</supplied>πάρχουσι <supplied reason="lost">πολεμίοις</supplied>
+<lb n="3"/><supplied reason="lost"><expan>κ<ex>αὶ</ex></expan> τοῖ</supplied>ς ἀπὸ Σικε<supplied reason="lost">λίας</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ξυμμά</supplied>
+<lb n="5" break="no"/>χω<supplied reason="lost">ν ἔτι τοῖς πλείοσιν ἀφεστη</supplied>
+<lb n="6" break="no"/>κόσ<supplied reason="lost">ι, Κύρῳ τε ὕστερον βασιλέ</supplied>
+<lb n="7" break="no"/>ως π<supplied reason="lost">αιδὶ προσγενομένῳ,</supplied>
+<lb n="8"/><hi rend="asper">ὅ</hi>ς π<supplied reason="lost">αρεῖχε χρήματα</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+
+<div n="2" subtype="page" type="textpart">
+<div n="1" subtype="column" type="textpart" corresp="#FR16055"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">πρέσβει</supplied>ς Λέ<del rend="erasure">ι</del>α<unclear>ρ</unclear><supplied reason="lost">χος</supplied>
+<lb n="2"/><supplied reason="lost">Καλλιμάχου κα</supplied>ὶ Ἀμεινιά<supplied reason="lost">δης</supplied>
+<lb n="3"/><supplied reason="lost">Φιλήμονος πα</supplied>ρὰ τῶι Σιτ<supplied reason="lost">άλκηι</supplied>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <expan><supplied reason="lost">Ἀθηναῖ</supplied>ο<ex>ν</ex></expan>,
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">σφ</supplied>ίσι
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ὡς β</supplied>ασι
+<lb n="8" break="no"/><supplied reason="lost">λέα</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τὸ</supplied> μέ
+<lb n="9" break="no"/><supplied reason="lost">ρος</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="2" subtype="column" type="textpart" corresp="#FR16055"><ab>
+<lb n="1"/><supplied reason="lost">καὶ τῶν βαρβάρων πο</supplied>λλο<supplied reason="lost">ὺς</supplied>
+<lb n="2"/><supplied reason="lost">ἀναστήσαντες ἐστρά</supplied>τευσαν <add place="right"> κινήσαντες εἰς μάχην</add>
+<lb n="3"/><supplied reason="lost">ἐπ' Ἄργος τὸ Ἀμφιλο</supplied>χικὸν <expan>κ<ex>αὶ</ex></expan> <expan>τὴ<ex>ν</ex></expan>
+<lb n="4"/><supplied reason="lost">ἄλλην Ἀμφιλοχία</supplied>ν. ἔχθρα δὲ <add place="right"> τὰ ἄλλα μέρη</add>
+<lb n="5"/><supplied reason="lost">π</supplied>ρὸ<supplied reason="lost">ς τοὺς Ἀρ</supplied>γε<supplied reason="lost">ίο</supplied>υ<supplied reason="lost">ς ἀ</supplied>πὸ τοῦδ<supplied reason="lost">ε</supplied>
+<lb n="6"/><supplied reason="lost">αὐ</supplied>τοῖς <supplied reason="lost">ἤρξα</supplied>το πρῶ<supplied reason="lost">το</supplied>ν γενέσ
+<lb n="7" break="no"/>θαι.<g type="high-punctus"/> Ἄ<supplied reason="lost">ρ</supplied>γος τὸ Ἀμφιλοχικὸν <expan>κ<ex>αὶ</ex></expan> 
+<lb n="8"/><supplied reason="lost">Ἀ</supplied>μφιλοχίαν τὴν ἄλλην ἔκτι
+<lb n="9" break="no"/><supplied reason="lost">σ</supplied>ε μὲν μετὰ τὰ Τρω<hi rend="diaeresis">ι</hi>κὰ οἴκα
+<lb n="10" break="no"/><supplied reason="lost">δ</supplied>ε ἀναχωρήσας <expan>κ<ex>αὶ</ex></expan> οὐκ ἀρεσκό <add place="right"> τερπόμενος <gap reason="illegible" quantity="2" unit="character"/><unclear>στ</unclear>άσε<unclear>ι</unclear></add>
+<lb n="11" break="no"/>μενος τῆι ἐν Ἄργει καταστάσι
+<lb n="12"/>Ἀμφίλοχος <hi rend="asper">ὁ</hi> Ἀμφιάρεωι ἐν τῶι
+<lb n="13"/>Ἀμπραχικῶι κόλπωι, <hi rend="asper">ὁ</hi>μώνυ
+<lb n="14" break="no"/>μον <supplied reason="lost">τ</supplied>ῆ <supplied reason="lost">ἑαυτοῦ</supplied> πατρίδι Ἄργος
+<lb n="15"/>ὀνομ<supplied reason="lost">άσας, <expan>κ<ex>αὶ</ex></expan></supplied> <hi rend="grave">ἦ</hi>ν <hi rend="asper">ἡ</hi> πόλις <hi rend="asper">α</hi>ὕ
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="16" break="no"/>τηι μεγί<supplied reason="lost">στη τῆ</supplied>ς Ἀμφιλοχίας <expan>κ<ex>αὶ</ex></expan>
+<lb n="17"/>τοὺς δυν<supplied reason="lost">ατωτ</supplied>άτους εἶχε οἰκή <add place="right"> πλουσίους</add>
+<lb n="18" break="no"/>τορας, <hi rend="asper">ὑ</hi><supplied reason="lost">πὸ ξυμφ</supplied>ορῶν δὲ <expan>πολλ<ex>αῖ</ex>ς</expan> <add place="right"> στάσεων</add>
+<lb n="19"/><supplied reason="lost">γενεαῖς ὕστερον</supplied> πιεζόμενοι 
+<lb n="20"/><supplied reason="lost">Ἀμπρακιώτας ὁμ</supplied>όρους ὄντας
+<lb n="21"/><supplied reason="lost">τῆ Ἀμφιλοχικῆ ξ</supplied>υνοίκους ἐπ <add place="right"> πολίτας ἐποίησαν</add>
+<lb n="22" break="no"/><supplied reason="lost">ηγάγοντο, <expan>κ<ex>αὶ</ex></expan></supplied> <expan><supplied reason="lost">ἡλληνίσ</supplied>θησα<ex>ν</ex></expan>
+<lb n="22"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+
+<div n="3" subtype="page" type="textpart">
+<div n="1" subtype="column" type="textpart" corresp="#FR16057"><ab>
+<lb n="1"/>πιτίθεντ<del rend="erasure">ε</del><add place="above">αι</add> αὖθις μετὰ <expan>τῶ<ex>ν</ex></expan>
+<lb n="2"/>Χαλκιδέων <hi rend="asper">ἱ</hi>ππέων <expan>κ<ex>αὶ</ex></expan> 
+<lb n="3"/><choice><reg>τῶν</reg><orig>τῶ<unclear>μ</unclear></orig></choice> <expan>προσβοηθησάντω<ex>ν</ex></expan>
+<lb n="4"/>τοῖς Ἀθηναίοις· <del rend="erasure"><expan>κ<ex>αὶ</ex></expan></del> ἀναχω
+<lb n="5" break="no"/>ροῦσι πρὸς τὰς δύο τάξεις<g type="high-punctus"/>
+<lb n="6"/>ἅς κατέλιπον παρὰ τοῖς σκευ
+<lb n="7" break="no"/>οφόροις.<g type="high-punctus"/> καὶ ὁ<add place="above">πό</add>τε μὲν ἐπί
+<lb n="8" break="no"/>οιεν οἱ <supplied reason="lost">Ἀ</supplied>θηναῖοι, ἐνεδίδο
+<lb n="9" break="no"/><add place="left"> ε<gap reason="illegible" quantity="2" unit="character"/>ρο<unclear>ν</unclear><certainty match=".." locus="name"/></add> σαν,<g type="high-punctus"/> ἀποχωροῦσι δὲ ἐπέκε<supplied reason="lost">ιν</supplied>
+<lb n="10" break="no"/>το καὶ ἐσηκόντιζον.<g type="high-punctus"/> ο<hi rend="asper">ἱ</hi> <del rend="erasure">τ</del><add place="above">δ</add>ε
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="11"/>ἱππ<unclear>ῆ</unclear>ς τῶν Χαλκιδέων 
+<lb n="12"/><add place="left"> <unclear>ᾗ</unclear> <unclear>οἷ</unclear>ον</add> προσιππεύοντες ᾗ δοκ<supplied reason="lost">οίη</supplied> 
+<lb n="13"/>ἐσέ<supplied reason="lost">βα</supplied>λλον, καὶ <supplied reason="lost">οὐχ</supplied> ἥκι<supplied reason="lost">στα φο</supplied> 
+<lb n="14" break="no"/>βή<supplied reason="lost">σ</supplied>α<supplied reason="lost">ντε</supplied>ς ἔ<supplied reason="lost">τρ</supplied>εψαν τ<supplied reason="lost">οὺς Ἀθη</supplied> 
+<lb n="15" break="no"/>ναί<supplied reason="lost">ους καὶ ἐπεδίωξαν ἐπ</supplied>ὶ
+<lb n="16"/>πολύ. <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="2" subtype="column" type="textpart" corresp="#FR16057"><ab>
+<lb n="1"/>οι ξυ<supplied reason="lost">μπροθυμούμενοι μάλι</supplied>
+<lb n="2" break="no"/>στα το<supplied reason="lost">ῖς</supplied> Ἀμ<supplied reason="lost">πρακιώταις ἀποί</supplied>
+<lb n="3" break="no"/>κοις οὖσι.<g type="high-punctus"/> καὶ τὸ μὲ<supplied reason="lost">ν ναυτικὸν</supplied> 
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="4"/>ἔκ τε Κορίνθο<supplied reason="lost">υ καὶ Σικυῶνος</supplied> 
+<lb n="5"/>καὶ τῶν ταύτη<supplied reason="lost">ι χωρίων ἐν</supplied> 
+<lb n="6"/>παρασκευῆι ἦ<supplied reason="lost">ν, τὸ δ' ἐκ Λευκά</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="7" break="no"/>δος καὶ Ἀνακτ<supplied reason="lost">ορίου καὶ Ἀμπρα</supplied> 
+<lb n="8" break="no"/>κίας πρότερο<supplied reason="lost">ν ἀφικόμενον</supplied>
+<lb n="9"/>ἐν Λευκάδι <supplied reason="lost">περιέμενεν.</supplied>
+<lb n="10"/><add place="left"> <num value="1400">ξ</num></add> Κνῆμος δὲ <supplied reason="lost">καὶ οἱ μετ' αὐτοῦ χί</supplied>
+<lb n="11" break="no"/>λιοι ὁπλ<supplied reason="lost">ῖται ἐπειδὴ ἐπεραιώ</supplied> 
+<lb n="12" break="no"/>θησα<supplied reason="lost">ν λαθόντες Φορμίωνα,</supplied>
+<lb n="13"/>ὃς ἦρχε <supplied reason="lost">τῶν εἴκοσι νεῶν τῶν</supplied> 
+<lb n="14"/>Ἀττικῶν α<supplied reason="lost">ἳ περὶ Ναύπακτον</supplied>
+<lb n="15"/>ἐφρούρ<supplied reason="lost">ουν, εὐθὺς παρεσκευά</supplied> 
+<lb n="16" break="no"/>ζοντο τ<supplied reason="lost">ὴν κατὰ γῆν στρατείαν.</supplied> 
+<lb n="17"/>καὶ αὐτ<supplied reason="lost">ῶι παρῆσαν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
+
+<div n="4" subtype="page" type="textpart">
+<div n="1" subtype="column" type="textpart" corresp="#FR16058"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">Ναύπακτον ἐρήμην ἀ</supplied>πολι
+<lb n="2" break="no"/><supplied reason="lost">πεῖν. οἱ δὲ Πελοποννήσ</supplied>ιοι
+<lb n="3"/><supplied reason="lost">καὶ οἱ ξύμμαχοι τρία τ</supplied>έληι
+<lb n="4"/><supplied reason="lost">ποιήσαν</supplied>τες σφῶν <expan>αὐτῶ<ex>ν</ex></expan>
+<lb n="5"/><supplied reason="lost">ἐχώρουν πρὸ</supplied>ς τὴν τῶν Στρα
+<lb n="6" break="no"/><supplied reason="lost">τίων πόλιν, ὅ</supplied>πως ἐγγὺς στρα
+<lb n="7" break="no"/><supplied reason="lost">τοπεδευσάμ</supplied>ενοι, εἰ μὴ λό
+<lb n="8" break="no"/><supplied reason="lost">γοις πείθοιεν,</supplied> ἔργῳ <expan>πειρ<hi rend="circumflex">ῶ</hi><ex>ν</ex>
+<lb n="9" break="no"/><supplied reason="lost">το</supplied></expan> <supplied reason="lost">τοῦ τείχους.</supplied> <expan>κ<ex>αὶ</ex></expan> μέσον <expan>μὲ<ex>ν</ex></expan>
+<lb n="10"/><supplied reason="lost">ἔχοντες προσῆ</supplied>εσαν Χάο
+<lb n="11" break="no"/><supplied reason="lost">νες καὶ οἱ ἄλλοι βά</supplied>ρβαροι,<g type="high-punctus"/> ἐκ
+<lb n="12"/><supplied reason="lost">δεξιᾶς δ' αὐτῶν Λευ</supplied>κάδιοι <add place="right"> <supplied reason="lost">ἐνδ</supplied>έξι<unclear>ο</unclear><supplied reason="lost">ι</supplied></add>
+<lb n="13"/><supplied reason="lost">καὶ Ἀνακτόριοι καὶ οἱ</supplied> μετὰ
+<lb n="14"/><supplied reason="lost">τούτων, ἐν ἀριστερ</supplied>ᾶ<del rend="erasure">ι</del> δὲ Κνῆ
+<lb n="15" break="no"/><supplied reason="lost">μος καὶ οἱ Πελοπονν</supplied>ήσιοι <expan>κ<ex>αὶ</ex></expan>
+<lb n="16"/><supplied reason="lost">Ἀμπρακιῶται· διεῖ</supplied>χον δὲ
+<lb n="17"/><supplied reason="lost">πολὺ απ' ἀλλήλων καὶ ἔσ</supplied>τι ὅτε
+<lb n="17"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="2" subtype="column" type="textpart"><ab>
+<lb n="1"/>σφίσι τῶν Στρατ<supplied reason="lost" corresp="#FR16058">ί</supplied>ων διὰ τὸ
+<lb n="2"/>μήπωι τοὺς ἄλλους Ἀκαρνᾶνας
+<lb n="3"/>ξυμβεβοηθηκέναι,<g type="middot"/> ἄπωθεν
+<lb n="4"/>δὲ σφενδον<hi rend="circumflex">ώ</hi>ντων <expan>κ<ex>αὶ</ex></expan> ἐς ἀπο
+<lb n="5" break="no"/>ρίαν καθιστάντων·<g type="high-punctus"/> οὐ γὰρ <expan>ἦ<ex>ν</ex></expan>
+<lb n="6"/>ἄνευ <hi rend="asper">ὅ</hi>πλων κινηθῆναι.<g type="high-punctus"/> δο <add place="right"> οπλ<gap reason="lost" extent="unknown" unit="character"/></add>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="7" break="no"/>κοῦσι δὲ <del rend="erasure">καὶ</del> οἱ Ἀκαρνᾶνες κρά
+<lb n="8" break="no"/>τιστοι εἶναι τοῦτο ποιεῖν.<g type="middot"/> ἐπειδὴ <add place="right"> τ<unclear>ότε</unclear></add>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="9"/>δὲ νὺξ ἐγένετο, ἀναχωρήσας
+<lb n="10"/><supplied reason="lost">ὁ</supplied> Κνῆμος τῆι στρ<supplied reason="lost">α</supplied>τιᾶι κα ατά 
+<lb n="11" break="no"/>χος ἐπὶ τὸν Ἄναπον ποταμὸν,
+<lb n="12"/>ὅς ἀπέχει σταδίους ὀγδοήκοντα
+<lb n="13"/><supplied reason="lost">Στρά</supplied>του,<g type="middot"/> τούς τε νεκροὺς <supplied reason="lost">κο</supplied>μί 
+<lb n="14"/><supplied reason="lost">ζεται</supplied> τῆ <hi rend="diaeresis">ὑ</hi>στεραίαι <hi rend="diaeresis">ὑ</hi>ποσπόνδους,
+<lb n="15"/><supplied reason="lost">καὶ Οἰν</supplied>ιαδ<hi rend="circumflex">ῶ</hi>ν ξ<supplied reason="lost">υμπαρα</supplied>γενο
+<lb n="16" break="no"/><supplied reason="lost">μένων κατὰ φιλίαν ἀ</supplied>ναχω
+<lb n="17" break="no"/>ρε<supplied reason="lost">ῖ παρ' αὐτοὺς πρὶν τὴ</supplied>ν ξυμ
+<lb n="18" break="no"/>β<supplied reason="lost">οήθειαν ἐλθεῖν.</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="18"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div></div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0003">Thucydides</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0003">Thucydides</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/1394">Historiae</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ. p.2 and 4</bibl>
-               <bibl type="printed">G. Cavallo, Dalla parte del libro (2002), pl.18</bibl>
+               <bibl type="printed" n="1">ed. princ. p.3 and 5</bibl>
+               <bibl type="printed" n="2">G. Cavallo, Dalla parte del libro (2002), pl.18</bibl>
+               <bibl type="online">
+                  <ptr target="CPP 418"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Thucydides, Historiae 2.65.6-8, 65.12, 67.2, 68.1-5, 79.5-6, 80.3-6, 81.1-3, 81.8-82 with scholia</p>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/19701"/>
+                  <biblScope n="1" unit="number">1516</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="444" to="447">444-447</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/41003"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="37" to="38">37-38</biblScope>
+               </bibl>
+               <bibl n="3" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95778"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60850" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60850</title>
+            <title>A Reused Protokollon From a Roll of Iliad 2</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1978</idno>
             <idno type="filename">60850</idno>
             <idno type="dclp-hybrid">tm;;60850</idno>
+            <idno type="MP3">00625.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">27.4 cm</width>
+                              <height unit="cm">26.4 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,17 +47,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Karanis (Arsinoites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Karanis (Arsinoites, Egypt) - 1924; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found" when="1924">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1008 https://pleiades.stoa.org/places/736932">Karanis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,18 +70,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 02.1-42 with title at the beginning</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,42 +89,190 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-07-08T14:57:20-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-07-08T14:57:19-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-07-08T14:44:39-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Text is fine. Check biblio, delete legacy title, add passage and CWKB details, accession # and date, and Pleiades ref for Karanis (https://pleiades.stoa.org/places/736932)</change>
+          <change when="2021-07-08T14:44:39-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Text is fine. Check biblio, delete legacy title, add passage and CWKB details, accession # and date, and Pleiades ref for Karanis (https://pleiades.stoa.org/places/736932)</change>
+          <change when="2021-07-08T14:35:10-04:00"
+                 who="http://papyri.info/editor/users/maebeme">Submit - Submitted as part of the research project "The Books of Karanis": principal investigator C.M. Sampson. </change>
+          <change when="2021-07-08T14:35:10-04:00"
+                 who="http://papyri.info/editor/users/maebeme">Submit - Submitted as part of the research project "The Books of Karanis": principal investigator C.M. Sampson. </change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> 
+
+<div n="i" subtype="column" type="textpart"><ab> 
+
+<lb n="1" rend="centered"/> <hi rend="supraline-underline">Ἰλιάδος</hi> 
+
+<lb n="2" rend="centered"/> <num value="2"><hi rend="supraline-underline">Β</hi></num> 
+
+</ab></div> 
+
+<div n="ii" subtype="column" type="textpart"><ab> 
+
+<lb n="1"/>ἄλλοι <unclear>μ</unclear>έ<supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="2"/>ε<unclear>ὗ</unclear>δ<unclear>ον</unclear> <unclear>πα</unclear><supplied reason="lost">ννύχιοι,</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="3"/>ἀλλ’ <unclear>ὅ</unclear> <unclear>γε</unclear> <unclear>με</unclear><supplied reason="lost">ρμήριζε</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="4"/>τι<unclear>μήσῃ</unclear>, <unclear>ὀ</unclear><supplied reason="lost">λέσῃ</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="5"/>ἥ<unclear>δε</unclear> <unclear>δέ</unclear> <unclear>οἱ</unclear> <unclear>κ</unclear><supplied reason="lost">ατὰ</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="6"/>πέμψαι ἐ<supplied reason="lost">π’</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="7"/>και <unclear>μιν</unclear> <unclear>φ</unclear><supplied reason="lost">ωνησας</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="8"/>β<unclear>άσκ</unclear>’ <unclear>ἴθ</unclear><supplied reason="lost">ι</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="9"/>ἐλθ<unclear>ὼν</unclear> <unclear>ἐ</unclear><supplied reason="lost">ς</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="10"/>π<unclear>άντα</unclear> μ<supplied reason="lost">άλ’</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="11"/>θω<unclear>ρῆξαί</unclear> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="12"/>πα<unclear>νσυδί</unclear><supplied reason="lost">ῃ·</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="13"/>Τρώ<unclear>ων</unclear> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="14"/><unclear>ἀθά</unclear>να<unclear>τοι</unclear> <unclear>φ</unclear><supplied reason="lost">ράζονται·</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="15"/><unclear>Ἥρη</unclear> <unclear>λισσ</unclear><supplied reason="lost">ομένη,</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="16"/><unclear>ὣς</unclear> <unclear>φάτο</unclear>, <unclear>βῆ</unclear> <gap reason="lost" extent="unknown" unit="character"/>  
+
+<lb n="17"/>κ<unclear>αρπαλίμ</unclear><supplied reason="lost">ως</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="18"/>β<unclear>ῆ</unclear> <unclear>δ</unclear>’ <unclear>ἄρ</unclear>’ <unclear>ἐπ</unclear>’ <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="19"/>εὕ<unclear>δοντ</unclear>’ <unclear>ἐ</unclear><supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="20"/><add place="left"><num value="20">κ</num></add> στῆ <unclear>δ</unclear>’ <unclear>ἄρ</unclear>’ ὑ<supplied reason="lost">πὲρ</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="21"/>Ν<unclear>έ</unclear>σ<unclear>το</unclear>ρ<unclear>ι</unclear>, <unclear>τό</unclear><supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="22"/>τῷ μ<unclear>ι</unclear>ν <unclear>ἐ</unclear>ε<supplied reason="lost">ισάμενος</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="23"/>εὕδεις Ἀτρ<unclear>έ</unclear><supplied reason="lost">ος</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="24"/>ο<unclear>ὐ</unclear> <unclear>χρὴ</unclear> <unclear>πα</unclear>νν<supplied reason="lost">ύχιον</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="25"/>ᾧ λαοί τ’ ἐπι<supplied reason="lost">τετράφαται</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="26"/>νῦν <unclear>δ</unclear>’ <unclear>ἐ</unclear>μέθε<supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="27"/>ὃς <unclear>σεύ</unclear> ἄνε<unclear>υ</unclear><supplied reason="lost">θεν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="28"/>θω<unclear>ρῆξαί</unclear> <unclear>σε</unclear> <gap reason="lost" extent="unknown" unit="character"/>  
+
+<lb n="29"/>πα<unclear>νσυδ</unclear><hi rend="acute">ι</hi>ῃ· <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="30"/>Τρ<unclear>ώων</unclear>· οὐ <unclear>γ</unclear><supplied reason="lost">ὰρ</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="31"/>ἀ<unclear>θάνατοι</unclear> φρ<unclear>ά</unclear><supplied reason="lost">ζονται</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="32"/>Ἥ<unclear>ρη</unclear> <unclear>λισσο</unclear>μ<supplied reason="lost">ένη</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="33"/>ἐκ <unclear>Διός</unclear>· ἀλλ<unclear>ὰ</unclear> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="34"/>αἱρει<unclear>τω</unclear> <unclear>εὖτ</unclear>’ ἄν <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="35"/>ὣς <unclear>ἄρα</unclear> φωνή<supplied reason="lost">σας</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="36"/>τὰ φρονέον<supplied reason="lost">τ’</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="37"/>φῆ <unclear>γὰρ</unclear> <unclear>ὅ</unclear> <unclear>γ</unclear>’ αἱρή<unclear>σ</unclear><supplied reason="lost">ειν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="38"/>νήπιος, οὐδὲ <unclear>τ</unclear><supplied reason="lost">ὰ</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="39"/>θήσειν γὰρ ἔ<unclear>τ</unclear>’ <unclear>ἔ</unclear><supplied reason="lost">μελλεν</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="40"/>Τρωσί τε καὶ Δ<unclear>α</unclear><supplied reason="lost">ναοῖσι</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="41"/>ἔγρε<unclear>το</unclear> <unclear>δ</unclear>’ ἐξ ὕπν<supplied reason="lost">ου</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+<lb n="42"/><add place="left"><num>κ</num></add> ἕζε<unclear>το</unclear> δ’ ὀρθ<unclear>ω</unclear><supplied reason="lost">θείς</supplied> <gap reason="lost" extent="unknown" unit="character"/> 
+
+</ab></div> </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">2</biblScope>
+                  <biblScope n="2" unit="line" from="1" to="42">1-42</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Caroli, Il titolo iniziale nel rotolo librario, pl. 32 a</bibl>
+               <bibl type="printed" n="1">Caroli, Il titolo iniziale nel rotolo librario, pl. 32 a</bibl>
+               <bibl type="printed" n="2">Liège</bibl>
+               <bibl type="online">
+                  <ptr target="https://quod.lib.umich.edu/a/apis/x-1696"/>
+               </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">458</biblScope>
+                  <biblScope n="1" unit="number">458</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/73124"/>
+                  <biblScope n="1" unit="generic">Appendix</biblScope>
+                  <biblScope n="2" unit="number">I</biblScope>
+                  <biblScope n="3" unit="page" from="79" to="81">79-81</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/19552"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="269" to="271">269-271</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/81454"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">66</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/4164"/>
+                  <biblScope n="1" unit="number">390</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Accession number 24-5006E2-A. Re-used as <ref target="https://papyri.info/hgv/12197">TM 12197</ref>.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
