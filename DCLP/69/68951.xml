@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m68951" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 68 4642</title>
@@ -14,7 +14,11 @@
             <idno type="filename">68951</idno>
             <idno type="dclp-hybrid">p.oxy;68;4642</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +31,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">10.8 cm</width>
+                              <height unit="cm">12 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="2" writtenLines="16">
                            <p>papyrus roll (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -38,17 +46,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,55 +70,101 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>comedy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Menander?; Kitharistes?</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">comedy</term>
+               <term n="5" type="overview">Menander?; Kitharistes?</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Only in line 5 the two speakers, Φανίας and Παρμένων, are identified on the papyrus with notae personarum. The other changes in the dialogue, in lines 5, 7, 8, 9 have been left unmentioned.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart"><ab> 
+<lb n="1"/><gap reason="lost" quantity="7" unit="line"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/>.<unclear>1</unclear>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> 
+<div n="ii" subtype="column" type="textpart"><ab> 
+<lb n="1"/><supplied reason="lost">γλ</supplied>αφ<unclear>υ</unclear>ρ<unclear>ός</unclear> τίς ἐστιν οὗτος. <unclear>ο</unclear>ὐκ ἐγὼ ᾽<unclear>λ</unclear><supplied reason="lost">εγον;</supplied>
+<lb n="2"/><supplied reason="lost">ν</supplied>αί· πρα<unclear>γμ</unclear>α<unclear>τ</unclear>οκο<unclear>π</unclear>εῖ Φανίας ὁ διδά<unclear>σ</unclear><supplied reason="lost">καλος.</supplied>
+<lb n="3"/><supplied reason="lost">ἅπ</supplied>αν<unclear>τά</unclear> γ᾽<g type="apostrofe"/><hi rend="acute">ἄ</hi><unclear>ν</unclear> τις ὡς ἀλ<unclear>η</unclear>θῶς ἐλ<unclear>πί</unclear>σ<supplied reason="lost">αι</supplied>
+<lb n="4"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/> <unclear>τος</unclear> ἡμῖν αὐ<unclear>τ</unclear>ὸν ο<gap reason="illegible" quantity="3" unit="character"/>θ<gap reason="illegible" quantity="1" unit="character"/><unclear>ς</unclear> ἴσο<unclear>ν</unclear>.
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="5"/><add place="left"><expan><supplied reason="lost">Φ</supplied>ανί<ex>ας</ex></expan></add> ἑό<unclear>ρα</unclear>κας; <add place="above"><expan><unclear>Π</unclear>αρμ<ex>ένων</ex></expan></add> εἶδον. ὦ πολ<unclear>υ</unclear>τίμητο<supplied reason="lost">ι θεοί</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="6"/>καὶ φ<supplied reason="lost">ί</supplied><unclear>λ</unclear>τατε Ζεῦ Σώτ<unclear>ε</unclear>ρ, ὡς πολλὴ χ<supplied reason="lost">άρις.</supplied>
+<lb n="7"/>τί οὖν; ὑγιαίνουσιν μέν; <unclear>ὅ</unclear>σα γ᾽ οὕτω<unclear>ς</unclear> <supplied reason="lost">ἰδεῖν.</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="8"/>τὴν αἰτίαν τίν᾽ ἔλεγον εἶνα<unclear>ι</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="9"/><add place="left"><g type="slanting-stroke"/></add> τὸ πλ<unclear>οῖ</unclear>ον εἰς Κ<unclear>ρή</unclear>την κατε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>ἐκ<unclear>ρι</unclear>θ<unclear>η</unclear><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>μ<gap reason="illegible" quantity="2" unit="character"/><unclear>ν</unclear> καὶ διενε<unclear>γ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> ξένος τι<unclear>ς</unclear> αὐ<gap reason="lost" quantity="8" unit="character" precision="low"/><unclear>ε</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><unclear>χ</unclear>θησ<unclear>α</unclear>ν προδοσίας <unclear>γε</unclear>ν<unclear>ομ</unclear><supplied reason="lost">ένης</supplied>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>σμ᾽<g type="apostrofe"/> ἐπέπλευσε γάρ τι<unclear>ς</unclear> <gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> οὗτος πάλιν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> ἤκουσεν α<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/>η<unclear>σ</unclear>α<unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/17700"/>
-                  <biblScope unit="number">4642</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">68</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/17700"/>
+                  <biblScope n="1" unit="number">4642</biblScope>
+                  <biblScope n="2" unit="volume">68</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/84751"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">162</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0541">Menander</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0541">Menander</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/870">Kitharistes</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 68, pl.4</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
