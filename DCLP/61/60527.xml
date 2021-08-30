@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60527" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60527</title>
+            <title>Fragments of Iliad 2 split between Ann Arbor and Aberdeen</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,16 +13,21 @@
             <idno type="LDAB">1419</idno>
             <idno type="filename">60527</idno>
             <idno type="dclp-hybrid">tm;;60527</idno>
+            <idno type="MP3">00657.010</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Aberdeen, King's College 7 p</idno>
-                     <idno type="invNo">Cairo, Egyptian Museum number unknown</idno>
+                     <idno type="invNo" n="1">Aberdeen, King's College 7 p</idno>
+                     <idno type="invNo" n="2">Cairo, Egyptian Museum number unknown</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -30,6 +35,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">6.8 cm</width>
+                              <height unit="cm">23.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -41,18 +50,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Karanis (Arsinoites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Karanis (= Kom Aushim) (Arsinoites, Egypt) - 1932; Schreibort: Egypt; erworben: Egypt - 1887</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found" when="1932">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1008 https://pleiades.stoa.org/places/736932">Karanis</placeName>
+                        <placeName n="4" type="modern">Kom Aushim</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
+                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="acquired" when="1887">
+                     <p xml:id="geoBIAH81">
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
@@ -62,18 +79,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 02.476-532</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,54 +98,241 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-08-16T21:34:08-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-08-16T21:34:07-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-08-16T20:31:49-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Text is fine. Review metadata before finalization</change>
+          <change when="2021-08-16T20:31:49-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Text is fine. Review metadata before finalization</change>
+          <change when="2021-08-16T17:47:49-04:00"
+                 who="http://papyri.info/editor/users/maebeme">Submit - Submitted as part of the research project "The Books of Karanis": principal investigator C.M. Sampson.</change>
+          <change when="2021-08-16T17:47:49-04:00"
+                 who="http://papyri.info/editor/users/maebeme">Submit - Submitted as part of the research project "The Books of Karanis": principal investigator C.M. Sampson.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> 
+
+<div n="PAberd-145" type="textpart"><div n="x/xi" subtype="column" type="textpart"><ab>  
+
+<lb n="1"/><gap reason="lost" quantity="32" unit="line" precision="low"/> 
+
+<lb n="1"/><supplied reason="lost">ὣς τοὺς ἡγ</supplied><unclear>εμ</unclear><supplied reason="lost">όνες διεκόσμεον ἔνθα καὶ ἔνθα</supplied>
+<lb n="2"/><supplied reason="lost">ὑσμίνην</supplied> <unclear>δ</unclear>’ <unclear>ἰ</unclear><supplied reason="lost">έναι, μετὰ δὲ κρείων Ἀγαμέμνων</supplied>
+<lb n="3"/><supplied reason="lost">ὄμματα</supplied> <unclear>καὶ</unclear> <unclear>κ</unclear><supplied reason="lost">εφαλὴν ἴκελος Διὶ τερπικεραύνῳ,</supplied>
+<lb n="4"/><supplied reason="lost">Ἄρεϊ δὲ ζώ</supplied><unclear>νην</unclear>, <supplied reason="lost">στέρνον δὲ Ποσειδάωνι.</supplied>
+<lb n="5"/><supplied reason="lost">ἠΰτε βοῦς</supplied> <unclear>ἀγέ</unclear>λ<unclear>η</unclear><supplied reason="lost">φι μέγ’ ἔξοχος ἔπλετο πάντων</supplied>
+<lb n="6"/><supplied reason="lost">ταῦρος· ὃ γά</supplied><unclear>ρ</unclear> <unclear>τε</unclear> <supplied reason="lost">βόεσσι μεταπρέπει ἀγρομένῃσι·</supplied>
+<lb n="7"/><supplied reason="lost">τοῖον ἄρ’ Ἀτ</supplied><unclear>ρ</unclear>ε<unclear>ΐ</unclear><supplied reason="lost">δην θῆκε Ζεὺς ἤματι κείνωι</supplied> 
+
+<lb n="8"/><supplied reason="lost">ἐκπρεπέ’ ἐ</supplied><unclear>ν</unclear> πολ<unclear>λ</unclear><supplied reason="lost">οῖσι καὶ ἔξοχον ἡρώεσσιν.</supplied> 
+
+<lb n="9"/><supplied reason="lost">ἔσπετε νῦ</supplied><unclear>ν</unclear> μοι <unclear>Μ</unclear><supplied reason="lost">οῦσαι Ὀλύμπια δώματ’ ἔχουσαι·</supplied> 
+
+<lb n="10"/><supplied reason="lost">ὑμεῖς γὰρ θ</supplied>εαί ἐσ<unclear>τ</unclear><supplied reason="lost">ε πάρεστέ τε ἴστέ τε πάντα,</supplied> 
+
+<lb n="11"/><supplied reason="lost">ἡμεῖς δὲ κλ</supplied>έος ο<supplied reason="lost">ἶον ἀκούομεν οὐδέ τι ἴδμεν·</supplied> 
+
+<lb n="12"/><supplied reason="lost">οἵ τινες ἡγε</supplied>μόν<supplied reason="lost">ες Δαναῶν καὶ κοίρανοι ἦσαν·</supplied> 
+
+</ab></div></div> 
+
+<div n="PMichInv" subtype="6239" type="textpart"><div n="xi/xii" subtype="column" type="textpart"><ab> 
+
+<lb n="1" xml:id="div3-div3-lb1"/><supplied reason="lost">πληθὺν δ’ οὐ</supplied>κ’<g type="diastole"/> ἂν ἐγὼ <del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/></del> μ<hi rend="supraline">υ</hi>θ<supplied reason="lost">ήσομαι οὐδ’ ὀνομήνω,</supplied> 
+
+<lb n="2"/><supplied reason="lost">οὐδ’ εἴ μοι</supplied> <num value="10"><supplied reason="lost">δέ</supplied>κα</num> μὲν γλ<hi rend="circumflex">ῶ</hi>σσα<supplied reason="lost">ι, <num value="10">δέκα</num> δὲ στόματ’ εἶεν,</supplied> 
+
+<lb n="3"/><supplied reason="lost">φωνὴ δ’ ἄρρ</supplied>ηκτος,<g type="high-punctus"/> χ<hi rend="acute">ά</hi>λκεον <supplied reason="lost">δέ μοι ἦτορ ἐνείη,</supplied> 
+
+<lb n="4"/><supplied reason="lost">εἰ μὴ</supplied> Ὀλυμπι<hi rend="acute">ά</hi>δες κο<hi rend="circumflex">ῦ</hi>ραι Δ<supplied reason="lost">ιὸς αἰγιόχοιο</supplied> 
+
+<lb n="5"/><supplied reason="lost">θυγα</supplied>τέρες <subst><add place="inline">μνησα<hi rend="acute">ί</hi>α<add place="above">θ’<g type="apostrophe"/></add></add><del rend="corrected">μνησαίατ</del></subst> <hi rend="asper"><hi rend="acute">ὅ</hi></hi>σοι ὑ<supplied reason="lost">πὸ Ἴλιον ἦλθον·</supplied> 
+
+<lb n="6"/><supplied reason="lost">ἀ</supplied>ρχοὺς <supplied reason="lost">αὖ νη</supplied><hi rend="circumflex">ῶ</hi>ν <subst><add place="inline">ἐρ<hi rend="acute">έ</hi>ω</add><del rend="corrected">ερεων</del></subst> νῆ<supplied reason="lost">άς τε προπάσας.</supplied> 
+
+<lb n="7"/><supplied reason="lost">Β</supplied>οιωτ<supplied reason="lost">ῶν μ</supplied>ὲν Πην<hi rend="acute">έ</hi>λεω<supplied reason="lost">ς καὶ Λήϊτος ἦρχον</supplied> 
+
+<lb n="8"/><supplied reason="lost">Ἀ</supplied>ρκεσ<hi rend="acute">ί</hi>λ<supplied reason="lost">αός τ</supplied>ε Προθο<hi rend="acute">ή</hi>νωρ <supplied reason="lost">τε Κλονίος τε,</supplied> 
+
+<lb n="9"/><supplied reason="lost">οἵ</supplied> θ’<g type="apostrophe"/> <hi rend="asper"><hi rend="diaeresis">Ὕ</hi></hi>ρ<hi rend="acute">ί</hi>η<supplied reason="lost">ν ἐν</supplied>έμοντο καὶ Α<unclear>ὐ</unclear><supplied reason="lost">λίδα πετρήεσσαν</supplied> 
+
+<lb n="10" xml:id="div3-div3-lb10"/><supplied reason="lost">Σ</supplied>χοῖνό<supplied reason="lost">ν τε Σ</supplied>κ<hi rend="circumflex">ῶ</hi>λ<hi rend="acute">ό</hi>ν τε πολ<hi rend="acute">ύ</hi><supplied reason="lost">κνημόν τ’ Ἐτεωνόν,</supplied> 
+
+<lb n="11" xml:id="div3-div3-lb11"/><supplied reason="lost">Θέ</supplied>σπεια<supplied reason="lost">ν Γραῖ</supplied>αν τε καὶ εὐρ<hi rend="acute">ύ</hi>χ<supplied reason="lost">ορον Μυκαλησσόν,</supplied> 
+
+<lb n="12"/><supplied reason="lost">οἵ τ</supplied>’<g type="apostrophe"/> ἀμφ’<g type="apostrophe"/> <hi rend="asper">Ἅ</hi><supplied reason="lost">ρμ’ ἐν</supplied><hi rend="acute">έ</hi>μοντο καὶ <unclear>Ε</unclear><supplied reason="lost">ἰλέσιον καὶ Ἐυρυθράς,</supplied> 
+
+<lb n="13"/><supplied reason="lost">οἵ</supplied> <app type="editorial"><lem resp="papyrus">θ’<g type="apostrophe"/> <hi rend="asper">Ἐ</hi>λε<hi rend="circumflex">ῶ</hi><supplied reason="lost">ν’</supplied></lem><rdg resp="mss.">τ’ Ἐλεῶν’</rdg></app> <supplied reason="lost">εἶχο</supplied>ν ἠδ’<g type="apostrophe"/> <hi rend="asper"><hi rend="diaeresis">Ὕ</hi></hi>λην καὶ Πετεῶνα, 
+
+<lb n="14"/><supplied reason="lost">Ὠ</supplied>καλ<hi rend="acute">έ</hi>ην <supplied reason="lost">Μεδ</supplied>ε<hi rend="circumflex">ῶ</hi>ν<hi rend="acute">ά</hi> τ’<g type="apostrophe"/> <hi rend="grave">ἐ</hi><hi rend="diaeresis">ϋ</hi>κτ<hi rend="acute">ί</hi>μενον πτο<supplied reason="lost">λίεθρον,</supplied> 
+
+<lb n="15"/><supplied reason="lost">Κ</supplied>ώπας Εὔ<supplied reason="lost">τηρησ<hi rend="acute">ί</hi></supplied>ν τε π<hi rend="grave">ο</hi>λυτ<hi rend="acute">ή</hi>ρων<hi rend="acute">ά</hi> τε Θίσ<supplied reason="lost">βην,</supplied> 
+
+<lb n="16"/><supplied reason="lost">οἵ τε Κο</supplied>ρώ<supplied reason="lost">νεια</supplied>ν καὶ <subst><add place="inline">ποι<hi rend="acute">ή</hi>εν<add place="above">θ’<g type="apostrophe"/></add> </add><del rend="corrected">ποιήεντ’<g type="apostrophe"/></del></subst> <hi rend="asper">Ἁ</hi>λ<hi rend="acute">ί</hi><hi rend="lenis">α</hi>ρτον,<g type="high-punctus"/> 
+
+<lb n="17" xml:id="div3-div3-lb17"/><supplied reason="lost">οἵ τε Πλ</supplied>άτα<supplied reason="lost">ιαν ἔ</supplied>χον <hi rend="lenis">ἠ</hi>δ’<g type="apostrophe"/> <hi rend="asper">ο</hi>ἳ Γλ<hi rend="supraline">ι</hi>σ<hi rend="circumflex">ᾶ</hi>ντ’<g type="apostrophe"/> ἐνέμο<unclear>ν</unclear><supplied reason="lost">το,</supplied> 
+
+<lb n="18"/><supplied reason="lost">οἵ θ’ Ὑποθήβας ε</supplied><hi rend="circumflex">ἶ</hi>χον <hi rend="grave">ἐ</hi><hi rend="diaeresis">ϋ</hi>κτ<hi rend="acute">ί</hi>μενον πτολ<hi rend="acute">ί</hi><supplied reason="lost">εθρον,</supplied> 
+
+<lb n="19"/><supplied reason="lost">Ὀγχηστόν θ’ ἱερὸ</supplied>ν Ποσιδ<hi rend="acute">ή</hi><hi rend="diaeresis">ϊ</hi>ον <hi rend="grave">ἀ</hi>γλαὸν <hi rend="asper">ἄ</hi>λσ<supplied reason="lost">ος,</supplied> 
+
+<lb n="20"/><supplied reason="lost">οἵ τε πολυστάφυλο</supplied>ν <hi rend="lenis"><hi rend="acute">Ἄ</hi></hi>ρνην <hi rend="acute">ἔ</hi>χον,<hi rend="asper"><hi rend="acute">ο</hi></hi>ἵ τε Μ<hi rend="acute">ί</hi>δ<supplied reason="lost">ειαν</supplied> 
+
+<lb n="21"/><supplied reason="lost">Νῖσαν τε ζαθέη</supplied>ν Ἀνθηδ<hi rend="acute">ό</hi>ν<hi rend="acute">α</hi> τ’<g type="apostrophe"/> ἐσχατ<hi rend="acute">ό</hi>ωσ<supplied reason="lost">αν·</supplied> 
+
+<lb n="22"/><supplied reason="lost">τῶν μὲν</supplied> <num value="50"><supplied reason="lost">πεντή</supplied>κοντα</num> ν<hi rend="acute">έ</hi>ες κ<hi rend="acute">ί</hi>ον,<g type="high-punctus"/> <hi rend="lenis">ἐ</hi>ν δὲ ἑ<unclear>κ</unclear><supplied reason="lost">άστηι</supplied> 
+
+<lb n="23"/><supplied reason="lost">κοῦροι Βοιωτῶ</supplied>ν <num value="100"><hi rend="asper">ἑ</hi>κατὸν</num> καὶ <num value="20">εἴκοσι</num> βα<hi rend="circumflex">ῖ</hi>ν<supplied reason="lost">ον.</supplied> 
+
+<lb n="24"/><supplied reason="lost">οἳ δ’ Ἀσπληδόνα ν</supplied>α<hi rend="circumflex">ῖ</hi>ον <hi rend="lenis"><hi rend="grave">ἰ</hi></hi>δ’<g type="apostrophe"/> Ὀρχομενὸν Μιν<supplied reason="lost">ύειον,</supplied> 
+
+<lb n="25"/><supplied reason="lost">τῶν ἦρχ’ Ἀσκάλα</supplied>φος καὶ <hi rend="lenis">Ἰ</hi><hi rend="acute">ά</hi>λμενος <hi rend="asper"><hi rend="circumflex">υ</hi></hi>ἷες <hi rend="lenis"><hi rend="acute">Ἄ</hi></hi><supplied reason="lost">ρηος</supplied> 
+
+<lb n="26"/><supplied reason="lost">οὓς τέκεν Ἀστυ</supplied>όχη δ<hi rend="acute">ό</hi>μωι Ἄκτορος Ἀζε<hi rend="acute">ΐ</hi><supplied reason="lost">δαο,</supplied> 
+
+<lb n="27"/><supplied reason="lost">παρθένος αἰδοί</supplied>η <hi rend="asper">ὑ</hi>περ<hi rend="acute">ώ</hi><hi rend="diaeresis">ϊ</hi>ον εἰσαναβ<hi rend="circumflex">ᾶ</hi>σα 
+
+<lb n="28"/><supplied reason="lost">Ἄρηϊ κρατερῶι· ὅ</supplied> δ<hi rend="acute">έ</hi> <hi rend="asper">ο</hi>ἱ παρ<g type="apostrophe"/>ελέξατο λ<hi rend="acute">ά</hi>θρη<supplied reason="lost">ι·</supplied> 
+
+<lb n="29"/><supplied reason="lost">τοῖς δὲ</supplied> <num value="30"><supplied reason="lost">τριήκο</supplied>ντα</num> γλαφ<hi rend="grave">υ</hi>ραὶ ν<hi rend="acute">έ</hi>ες ἐστιχό<supplied reason="lost">ωντο.</supplied> 
+
+<lb n="30"/><supplied reason="lost">αὐτὰρ Φωκήων</supplied> Σχεδ<hi rend="acute">ί</hi>ος καὶ Ἐπ<hi rend="acute">ί</hi>στροφος <hi rend="lenis"><hi rend="circumflex">ἦ</hi></hi><supplied reason="lost">ρχον</supplied> 
+
+<lb n="31"/><supplied reason="lost">υἷες Ἰφίτου μεγ</supplied>αθ<hi rend="acute">ύ</hi>μου Ναυβ<supplied reason="lost">ο</supplied>λ<hi rend="acute">ί</hi>δαο, 
+
+<lb n="32"/><supplied reason="lost">οἳ Κυπάρισσον ἔ</supplied>χον Πυθ<hi rend="circumflex">ῶ</hi>ν<hi rend="acute">ά</hi> τε πετρή<supplied reason="lost">εσσαν</supplied> 
+
+<lb n="33"/><supplied reason="lost">Κρῖσάν τε ζαθέην καὶ Δαυλίδ</supplied>α καὶ Παν<supplied reason="lost">οπῆα,</supplied> 
+
+<lb n="34"/><supplied reason="lost">οἵ τ’ Ἀνεμώρειαν</supplied> καὶ Ὑάμπο<unclear>λ</unclear><supplied reason="lost">ιν ἀμφενέμοντο,</supplied> 
+
+<lb n="35"/><supplied reason="lost">οἵ τ’ ἄρα πὰρ ποταμ</supplied>ὸν Κηφ<supplied reason="lost"><hi rend="grave">ὶ</hi></supplied>σ<supplied reason="lost">ὸν δῖον ἔναιον,</supplied> 
+
+<lb n="36"/><supplied reason="lost">οἵ τε Λίλαιαν ἔχον</supplied> πηγ<hi rend="circumflex">ῇ</hi>ς ἔπ<supplied reason="lost">ι Κηφισοῖο·</supplied> 
+
+<lb n="37"/><supplied reason="lost">τοῖς δ’ ἅμα</supplied> <num value="40"><supplied reason="lost">τεσσάρακ</supplied>οντα</num> μέλ<unclear>α</unclear><supplied reason="lost">ιναι νῆες ἕποντο.</supplied> 
+
+<lb n="38"/><supplied reason="lost">οἳ</supplied> <unclear>μ</unclear><supplied reason="lost">ὲ</supplied><unclear>ν</unclear> Φ<supplied reason="lost">ωκήων</supplied> στίχας <hi rend="asper"><hi rend="acute">ἵ</hi></hi>στ<supplied reason="lost">ασαν ἀμφιέποντες,</supplied> 
+
+<lb n="39"/><supplied reason="lost">Β</supplied>οιωτ<hi rend="circumflex">ῶ</hi><supplied reason="lost">ν δ’</supplied> <unclear>ἔμ</unclear>π<supplied reason="lost">λ</supplied><unclear>η</unclear>ν ἐπ’ ἀρ<hi rend="grave">ι</hi>σ<supplied reason="lost">τερὰ θωρήσσαντο.</supplied> 
+
+<lb n="40"/><supplied reason="lost">Λ</supplied>οκ<unclear>ρ</unclear><hi rend="circumflex">ῶ</hi>ν <supplied reason="lost">δ’</supplied><g type="apostrophe"/> ἡ<supplied reason="lost">γ</supplied>εμόνευεν Ὀϊλῆ<supplied reason="lost">ος ταχὺς Αἴας</supplied> 
+
+<lb n="41"/><supplied reason="lost">με</supplied><hi rend="acute">ί</hi>ω<supplied reason="lost">ν, οὔ</supplied> τι τ<hi rend="acute">ό</hi><supplied reason="lost">σ</supplied>ος γε <supplied reason="lost">ὅσος Τελεμώνιος Αἴας</supplied> 
+
+<lb n="42"/><supplied reason="lost">ἀλλ</supplied>ὰ π<hi rend="grave">ο</hi>λὺ μείων· ὀλ<supplied reason="lost">ί</supplied>γ<supplied reason="lost">ος</supplied> μὲν ἔ<unclear>η</unclear>ν <supplied reason="lost">λινοθώρηξ,</supplied> 
+
+<lb n="43"/><supplied reason="lost">ἐγχ</supplied>ε<hi rend="acute">ί</hi><supplied reason="lost">ηι</supplied> δ’<g type="apostrophe"/> ἐκ<hi rend="acute">έ</hi>καστο Πανέλληνα<supplied reason="lost">ς καὶ Ἀχαιούς·</supplied> 
+
+<lb n="44"/><supplied reason="lost">οἳ</supplied> <unclear>Κ</unclear><hi rend="circumflex">ῦ</hi>νόν τ’<g type="apostrophe"/> ἐνέμοντ’<g type="apostrophe"/> <subst><add place="inline"><hi rend="lenis">Ὀ</hi>π<hi rend="acute">ό</hi><add place="above">ε</add>ν<supplied reason="lost">τ</supplied><hi rend="acute">ά</hi></add><del rend="corrected">Ὀπόαν<supplied reason="lost">τ</supplied>α</del></subst> τ<supplied reason="lost">ε Καλλίαρον τε</supplied> 
+
+<lb n="45"/><supplied reason="lost">Βῆ</supplied><unclear>σ</unclear>σ<hi rend="acute">ά</hi>ν τε Σκάρφην τε <unclear>κ</unclear>αὶ Α<unclear>ὐ</unclear><supplied reason="lost">γειὰς ἐρατεινὰς</supplied> 
+
+</ab></div></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div3-div3-lb1" xml:space="preserve">
+            <ref>1</ref>
+            <p>The scribe has indicated the quantity of the vowel using a supralinear stroke.</p>
+          </item>
+               <item corresp="#div3-div3-lb10" xml:space="preserve">
+            <ref>10</ref>
+            <p>The scribe has indicated the quantity of hypsilon with a brevis.</p>
+          </item>
+               <item corresp="#div3-div3-lb11" xml:space="preserve">
+            <ref>11</ref>
+            <p>The scribe has indicated the quantity of the hypsilon with a brevis.</p>
+          </item>
+               <item corresp="#div3-div3-lb17" xml:space="preserve">
+            <ref>17</ref>
+            <p>The scribe has indicated the quantity of the iota using a supralinear stroke.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">2</biblScope>
+                  <biblScope n="2" unit="line" from="476" to="532">476-532</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">P.Aberdeen pl.III</bibl>
-               <bibl type="printed">Comunicazioni dell' Istituto Papirologico G. Vitelli 4 (2001), pl. 2</bibl>
+               <bibl type="printed" n="1">P.Aberdeen pl.III</bibl>
+               <bibl type="printed" n="2">Comunicazioni dell' Istituto Papirologico G. Vitelli 4 (2001), pl. 2</bibl>
+               <bibl type="online">
+                  <ptr target="https://quod.lib.umich.edu/a/apis/x-2775"/>
+               </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">667</biblScope>
+                  <biblScope n="1" unit="number">667</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="2" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">690</biblScope>
+                  <biblScope n="1" unit="number">690</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/11613"/>
+                  <biblScope n="1" unit="number">2</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/69748"/>
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="40" to="41">40-41</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3909"/>
+                  <biblScope n="1" unit="number">145</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="6" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/61475"/>
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Michigan accession number 32-219*-M (16) + 32-C63N-A (1). The listed dimensions are for the Michigan fragment; the Aberdeen fragment measures 1.9 cm x 7.3 cm.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
