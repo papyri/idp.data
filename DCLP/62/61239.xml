@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61239" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Sorb. 1 4</title>
+            <title>A fragment of Iliad 12 from cartonnage</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2379</idno>
             <idno type="filename">61239</idno>
             <idno type="dclp-hybrid">p.sorb;1;4</idno>
+            <idno type="MP3">00895.200</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +43,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Magdola (Arsinoites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v. Chr.</origDate>
+                     <origPlace>Fundort: Magdola (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1284">Magdola</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1284 https://pleiades.stoa.org/places/736956">Magdola</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,18 +66,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 012.228-229, 231-232, 234, 238, 246-265</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,41 +85,63 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-10-05T14:08:20-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-10-05T13:21:44-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Add also http://www.papyrologie.paris-sorbonne.fr/photos/2012265.jpg for the recto. Review metadata before finalization.</change>
+         <change when="2021-10-05T12:58:46-04:00"
+                 who="http://papyri.info/editor/users/Laudenbach">Submit - Corrected the web link to the image</change>
+         <change when="2021-10-05T12:58:38-04:00"
+                 who="http://papyri.info/editor/users/Laudenbach">Commit - Corrected the web link to the image</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/6844"/>
-                  <biblScope unit="number">4</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Sorb.</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="catalogue">
                   <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/6844"/>
+                  <biblScope n="1" unit="number">4</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">496</biblScope>
+                  <biblScope n="1" unit="number">496</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">12</biblScope>
+                  <biblScope n="2" unit="line" from="228" to="229">228-229</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="book">12</biblScope>
+                  <biblScope n="5" unit="line" from="231" to="232">231-232</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
+                  <biblScope n="7" unit="book">12</biblScope>
+                  <biblScope n="8" unit="line">234</biblScope>
+                  <biblScope n="9" unit="generic">and</biblScope>
+                  <biblScope n="10" unit="book">12</biblScope>
+                  <biblScope n="11" unit="line">238</biblScope>
+                  <biblScope n="12" unit="generic">and</biblScope>
+                  <biblScope n="13" unit="book">12</biblScope>
+                  <biblScope n="14" unit="line" from="246" to="265">246-265</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -122,10 +150,13 @@
             <listBibl>
                <bibl type="printed">P.Sorb. 01 pl.2</bibl>
                <bibl type="online">
-                  <ptr target="http://www.papyrologie.paris4.sorbonne.fr/photos/1022265.jpg"/>
+                  <ptr target="http://www.papyrologie.paris-sorbonne.fr/photos/2012265.jpg"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Reused as cartonnage.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
