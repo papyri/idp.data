@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65561" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Bkt. 9 191</title>
+            <title>Symposion Rules</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6812</idno>
             <idno type="filename">65561</idno>
             <idno type="dclp-hybrid">bkt;9;191</idno>
+            <idno type="MP3">01957.910</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">28 cm</width>
+                              <height unit="cm">21.4 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,19 +47,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Bousiris (Herakleopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0100" notAfter="0100" precision="low">I v. Chr. - I n. Chr.</origDate>
+                     <origPlace>Fundort: Bousiris (Herakleopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0100" notAfter="0100" precision="low">I v.Chr. - I</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/471">Bousiris</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/471 https://pleiades.stoa.org/places/736900">Bousiris</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,12 +71,9 @@
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="imaged"
-                                   corresp="#FR10849"
-                                   xml:id="GR10849.01"
-                                   from="2010"
-                                   to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21285-Text-01_R_3_001.jpg"/>
+                        <custEvent type="imaged" corresp="#FR10849" when="2011">
+                           <graphic url="https://berlpap.smb.museum/Original/P_21285-Text-01_R_3_001.jpg"/>
+                           <orgName>BerlPap</orgName>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -81,41 +90,82 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry comedy (?)</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">trimeters? symposion rules</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry comedy (?)</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-11-12T13:24:23-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-11-12T13:24:22-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-11-06T20:34:44-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Text is accurate but could be articulated and regularized further; review all metadata before finalization.</change>
+          <change when="2021-11-06T20:34:44-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Text is accurate but could be articulated and regularized further; review all metadata before finalization.</change>
+          <change when="2021-04-29T09:07:11-04:00"
+                 who="http://papyri.info/editor/users/OliverD.">Submit - In order to prevent a Leiden+ error, I added the subtype "fragment" to recto. Please remove subtype="fragment" in the XML &lt;div&gt; tags after you are done revising the transcription.</change>
+          <change when="2021-04-29T09:07:11-04:00"
+                 who="http://papyri.info/editor/users/OliverD.">Submit - In order to prevent a Leiden+ error, I added the subtype "fragment" to recto. Please remove subtype="fragment" in the XML &lt;div&gt; tags after you are done revising the transcription.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/ekdosis/">Würzburger Zentrum für Epikureismusforschung</ref>
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" subtype="fragment" type="textpart" corresp="#FR10849"><ab> 
+<lb n="1"/>ὁ συμβολε<unclear>υ</unclear>τὰς οἶνος <choice><reg>ἁμὶν</reg><orig>ἁμεν</orig></choice> <choice><reg>ἔκκριτος</reg><orig><app type="editorial"><lem resp="BKT 9">εκκρ<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>τος</lem><rdg resp="Austin">ἔκκρ<supplied reason="lost">ε</supplied>ιτος</rdg></app></orig></choice>
+<lb n="2"/>οὐκ ἐς θεῶν ἀριθμὸν ἀθροΐζεται
+<lb n="3"/>ἄλλ’ <choice><reg>ἰσομοίρων</reg><orig>εισομοιραν</orig></choice> ἐμ <choice><reg>μέθαι</reg><orig>μεθα</orig></choice> τὸ <choice><reg>δεύτερον</reg><orig>δε<unclear>ιε</unclear>τυρ<unclear>η</unclear></orig></choice>
+<lb n="4"/><choice><reg cert="low">τρίτον </reg><orig>τρυρ<unclear>αν</unclear></orig></choice> τέταρτ<supplied reason="lost">ο</supplied>ν <app type="editorial"><lem resp="pap.">ὤφελες</lem><rdg resp="Austin">ὤφελες <supplied reason="omitted">λαβεῖν</supplied></rdg></app> βία Διὸς
+<lb n="5"/>καὶ πέμπτον Ἥρα<supplied reason="omitted">ς</supplied> τὸ ἕκτον δ' <expan>Ἑρμηρακλ<ex>έους</ex></expan>
+<lb n="6"/>τὸ <supplied reason="omitted">δ’</supplied> ἕβδομον Δάματ<supplied reason="omitted">ρος</supplied>, <choice><reg>ὄγδοον</reg><orig>οβδων</orig></choice> <supplied reason="omitted">δὲ</supplied> τᾶς <choice><reg><expan>Ἀφρ<supplied reason="lost">ο</supplied>δίτ<ex>ας</ex></expan></reg><orig><expan>Ἀφ<unclear>ρ</unclear><supplied reason="lost">ο</supplied><unclear>δ</unclear>είτ<ex>ας</ex></expan></orig></choice>
+</ab></div>
+</div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/14433"/>
-                  <biblScope unit="number">191</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BKT</title>
-                  <biblScope unit="volume">9</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope n="1" unit="number">191</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/58986"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Pap. Congr. Athens, p. 111 pl.1</bibl>
-               <bibl type="printed">BKT 9, pl.78</bibl>
+               <bibl type="printed" n="1">Pap. Congr. Athens, p. 111 pl.1</bibl>
+               <bibl type="printed" n="2">BKT 9, pl.78</bibl>
                <bibl type="online">
                   <ptr target="http://berlpap.smb.museum/04480"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
