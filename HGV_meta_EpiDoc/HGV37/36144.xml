@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv36144">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ricevuta di danaro anticipato per vino etc.</title>
@@ -31,13 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites</origPlace>
-                     <origDate notBefore="0601" notAfter="0700" cert="low" precision="low">VII (?)</origDate>
+                     <origPlace>Oxyrhynchites, Ägypten</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0601"
+                               notAfter="0700"
+                               cert="low"
+                               precision="low">VII (?)</origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notBefore="0651"
+                               notAfter="0652"
+                               cert="low">651 - 652 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,11 +72,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Lieferungskauf</term>
-               <term>Bäckerei</term>
-               <term>Wein</term>
-               <term>Kleinvieh</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Lieferungskauf</term>
+               <term n="3">Bäckerei</term>
+               <term n="4">Wein</term>
+               <term n="5">Kleinvieh</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +85,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zum Ort vgl. ZPE 89, 1991, S. 98. Vgl. BASP 45, 2008, S. 19. Zur Datierung, zu Z. 2, 4, 6, 9-10 und zur Rückseite vgl. vgl. Tyche 30, 2015, S. 227-229, Korr. Tyche 802.</p>
@@ -84,8 +95,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">10</biblScope>
-                  <biblScope type="numbers">1122</biblScope>
+                  <biblScope n="1" type="volume">10</biblScope>
+                  <biblScope n="2" type="numbers">1122</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,11 +106,11 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/36144"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">406</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">236</biblScope>
                </bibl>
@@ -114,7 +125,7 @@
                   <graphic url="http://www.psi-online.it/documents/psi;10;1122"/>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
