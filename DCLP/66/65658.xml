@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65658" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 65658</title>
+            <title>Anthology of epigrams from Hawara</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6911</idno>
             <idno type="filename">65658</idno>
             <idno type="dclp-hybrid">tm;;65658</idno>
+            <idno type="MP3">01603.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">10.5 cm</width>
+                              <height unit="cm">15 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,17 +47,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Haueris (Arsinoites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0200" notAfter="-0101" precision="low">II v. Chr.</origDate>
+                     <origPlace>Fundort: Haueris (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0200" notAfter="-0101" precision="low">II v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/747">Haueris</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/747 https://pleiades.stoa.org/places/736918">Haueris</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,40 +70,51 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>lyric</term>
-               <term>epigram</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">anthology of epigrams</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">lyric</term>
+               <term n="5">epigram</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-11-18T19:39:04-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2021-11-18T19:33:58-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Ok. Review metadata before finalization</change>
+         <change when="2021-11-18T12:52:15-05:00"
+                 who="http://papyri.info/editor/users/EleonoraBascherini">Submit - Corrected the link to the digital image.</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/39594"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="a" type="main">Two Greek Epigrams.</title>
-                  <author n="1">
-                     <surname>Turner</surname>
-                     <forename>Eric G.</forename>
-                  </author>
-                  <date>1950</date>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/39594"/>
+                  <biblScope n="1" unit="book"/>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/10252"/>
+                  <biblScope n="1" unit="number">986</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
@@ -101,10 +123,10 @@
             <listBibl>
                <bibl type="printed">JJP 4, pl. ii</bibl>
                <bibl type="online">
-                  <ptr target="http://www.ucl.ac.uk/GrandLat/hawara/papydata/ppet_O_2.htm"/>
+                  <ptr target="https://www.ucl.ac.uk/GrandLatMisc/hawara/papydata/ppet_O_2.htm"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
