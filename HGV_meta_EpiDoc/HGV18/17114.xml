@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv17114">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettre d’Héliodore à Séléné</title>
@@ -31,9 +31,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria (?)</origPlace>
+                     <origPlace>Alexandria ?</origPlace>
                      <origDate when="0108-05-02">
-                        <certainty locus="value" match="../year-from-date(@when)"/>2. Mai 108 (Jahr unsicher)</origDate>
+                2. Mai 108 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -47,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,11 +66,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Heliodoros an Selene</term>
-               <term>Fest</term>
-               <term>Gebet</term>
-               <term>Wechselkurs (Gold, Silber)</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Heliodoros an Selene</term>
+               <term n="3">Fest</term>
+               <term n="4">Gebet</term>
+               <term n="5">Wechselkurs (Gold, Silber)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,8 +79,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. P.Sarap. 90.</p>
@@ -86,13 +89,16 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Sarap.</title>
-                  <biblScope type="numbers">89</biblScope>
-                  <biblScope type="generic">c</biblScope>
+                  <biblScope n="1" type="numbers">89</biblScope>
+                  <biblScope n="2" type="generic">c</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Orakelsprüche, Magie und Horoskope, S. 85, Abb. 23</bibl>
+            </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
@@ -108,5 +114,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
