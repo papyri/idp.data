@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv44588b">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Dated Fragment</title>
+            <title>Letter</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">44588</idno>
             <idno type="TM">44588</idno>
             <idno type="ddb-perseus-style">0187;2;12</idno>
-            <idno type="ddb-filename">p.petr.2.12_4_4-10</idno>
-            <idno type="ddb-hybrid">p.petr;2;12_4_4-10</idno>
+            <idno type="ddb-filename">p.petr.kleon.69</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;69</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">Ms. Gr. class d 24</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0254-07-20">
-                        <certainty locus="value" match="../year-from-date(@when)"/>20. Juli 254 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0253-07-19">
-                        <certainty locus="value" match="../year-from-date(@when)"/>19. Juli 253 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate when="-0253-07-19">19. Juli 253 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,32 +67,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Ziegel</term>
-               <term>Preis</term>
-               <term>Geld</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Ziegel</term>
+               <term n="4">Preis</term>
+               <term n="5">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-12-31T06:54:59-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-12-19T13:57:26-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-12-10T09:52:38-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Updated text and metadata according to reedition as P.Petr.Kleon 69 </change>
          <change who="HGV" when="1998-03-16">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 19. Juli 253 v. Chr. Datierung nach dem makedonischen Regierungsjahr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">12</biblScope>
-                  <biblScope type="generic">(4) Fragment 2</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">69</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -99,9 +103,10 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 E (1)</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. III 42 E (1) Z. 4-10</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. II 12 (4) Z. 4-10</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
