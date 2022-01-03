@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7645">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Correspondence of Kleon, Commissioner of Public Works</title>
+            <title>Letter containing a copy of a letter by Nikeratos</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7645</idno>
             <idno type="TM">7645</idno>
             <idno type="ddb-perseus-style">0187;2;13</idno>
-            <idno type="ddb-filename">p.petr.2.13_4</idno>
-            <idno type="ddb-hybrid">p.petr;2;13_4</idno>
+            <idno type="ddb-filename">p.petr.kleon.56</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;56</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap. 533</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0256-08-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Aug. 256 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0255-08-18">
-                        <certainty locus="value" match="../year-from-date(@when)"/>18. Aug. 255 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate when="-0255-08-18">18. Aug. 255 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,38 +67,43 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Gefängnis (baufällig)</term>
-               <term>Gefangene (?)</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Gefängnis (baufällig)</term>
+               <term n="4">Gefangene (?)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-03T07:18:49-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-01-02T12:32:44-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-01-02T05:31:28-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Updated text and metadata according to reedition as P.Petr. Kleon 56. Apparatus checked against P.Petr. II, III and BL I. At l. 4, the lacuna was already not indicated in P.Petr. II.</change>
          <change who="HGV" when="1998-03-16">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Gehört zum Kleon - Archiv. Alternativdatierung: 18. Aug. 255 v. Chr. Datierung nach dem makedonischen Regierungsjahr.</p>
-         </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original" subtype="X">Z. 5 - 12: Abschrift eines Dokuments vom 17. Aug. 256 v. Chr.</note>
             <note type="original" subtype="Y">Z. 5 -12: Abschrift eines Dokuments vom 17. Aug. 255 v. Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
-                  <ref>(4), Z. 5 - 12</ref>
-                  <date type="mentioned" when="-0256-08-17">17. Aug. 256 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+               <item n="1">
+                  <ref>Z. 5 - 12</ref>
+                  <date type="mentioned" when="-0255-08-17">
+              17. Aug. 255 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
-                  <ref>(4), Z. 5 -12</ref>
-                  <date type="mentioned" when="-0255-08-17">17. Aug. 255 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+               <item n="2">
+                  <date type="mentioned">
+                     <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>
@@ -103,10 +111,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">13</biblScope>
-                  <biblScope type="generic">(4)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">56</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -116,8 +122,9 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 C (9)</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 533 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. III 42 C (9)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. II 13 (4)</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Lond. III 533 descr.</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -128,5 +135,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
