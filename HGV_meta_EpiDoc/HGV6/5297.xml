@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5297">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the Strategus from an Embalmer</title>
@@ -31,19 +31,31 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" notAfter="-0083-11-30">
-                        <certainty locus="value" match="../year-from-date(@notAfter)"/>
-                        <offset type="before" n="1">vor</offset> 30. Nov. 83 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notAfter="-0136-12-19" cert="low">
-                        <offset type="before" n="1">vor</offset> 19. Dez. 136 v.Chr. (?)</origDate>
-                     <origDate xml:id="dateAlternativeZ" notAfter="-0147-12-16" cert="low">
-                        <offset type="before" n="1">vor</offset> 16. Dez. 147 v.Chr. (?)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" notAfter="-0083-11-30">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                        <offset n="1" type="before">vor</offset>
+                30. Nov. 83 v.Chr. (Jahr unsicher)
+              </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notAfter="-0136-12-19"
+                               cert="low">
+                        <offset n="1" type="before">vor</offset>
+                19. Dez. 136 v.Chr. (?)
+              </origDate>
+                     <origDate n="3"
+                               xml:id="dateAlternativeZ"
+                               notAfter="-0147-12-16"
+                               cert="low">
+                        <offset n="1" type="before">vor</offset>
+                16. Dez. 147 v.Chr. (?)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -51,8 +63,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,11 +80,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Petesuchos an den Strategen Asklepiades</term>
-               <term>Eigentum</term>
-               <term>Entscheidung in der Schwebe</term>
-               <term>Tempel</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Petesuchos an den Strategen Asklepiades</term>
+               <term n="3">Eigentum</term>
+               <term n="4">Entscheidung in der Schwebe</term>
+               <term n="5">Tempel</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -80,8 +93,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Mooren, Aulic Titulature, S. 103 und BL VI, S. 123. Alternativdatierungen: vor 16. Dez. 147 v. Chr. und vor 19. Dez. 136 v. Chr.</p>
@@ -93,19 +106,25 @@
             <note type="original" subtype="Z">Z. 22: 16. Dez. 147 v. Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 22</ref>
-                  <date type="mentioned" when="-0147-12-16">16. Dez. 147 v.Chr.<certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  <date type="mentioned" when="-0147-12-16">
+              16. Dez. 147 v.Chr.
+              <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 22</ref>
-                  <date type="mentioned" when="-0136-12-19">19. Dez. 136 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0136-12-19">
+              19. Dez. 136 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 22</ref>
-                  <date type="mentioned" when="-0083-11-30">30. Nov. 83 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0083-11-30">
+              30. Nov. 83 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>
@@ -114,14 +133,21 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">577</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">577</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/s/96a8dg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
