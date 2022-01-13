@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11471">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Zensusdeklaration</title>
+            <title>Completing (almost) a census declaration: P.Heid. IV 298 + P.Lund inv. 177</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">11471</idno>
             <idno type="TM">11471</idno>
-            <idno type="ddb-perseus-style">0131;4;298</idno>
-            <idno type="ddb-filename">p.heid.4.298</idno>
-            <idno type="ddb-hybrid">p.heid;4;298</idno>
+            <idno type="ddb-filename">.2</idno>
+            <idno type="ddb-hybrid">;;2</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Heidelberg</settlement>
                   </placeName>
+                  <collection>Institut für Papyrologie</collection>
+                  <idno type="invNo">G. 1696</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,13 +33,16 @@
                <history>
                   <origin>
                      <origPlace>Theadelphia (Arsinoites)</origPlace>
-                     <origDate notBefore="0104" notAfter="0105">104 - 105</origDate>
+                     <origDate notBefore="0104-12-13" notAfter="0104-12-13">
+                        <certainty locus="value" match="../day-from-date(@notBefore)"/>13. Dez. 104 (Tag unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
                                    ref="http://pleiades.stoa.org/places/737081 http://www.trismegistos.org/place/2349">Theadelphia</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
@@ -47,8 +51,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -72,6 +75,7 @@
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2022-01-13">Xwalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,16 +83,21 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Heid.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">298</biblScope>
+                  <title level="s" type="abbreviated">P.Capasso</title>
+                  <biblScope type="numbers">2</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel VI</bibl>
+               <bibl type="illustration">P.Heid. IV 298, Tafel VI</bibl>
             </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Heid. IV 298</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>
