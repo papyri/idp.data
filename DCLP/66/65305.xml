@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65305" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 65305</title>
+            <title>Ein christliches Diptychon</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">65305</idno>
             <idno type="dclp-hybrid">tm;;65305</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,18 +47,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
+                     <origPlace>Fundort: Arsinoites, Egypt; Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0601" notAfter="0650" precision="low">1. Hälfte VII</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -92,43 +97,96 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term>ligturgy</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">diptychon</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
+               <term n="4">ligturgy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2021-10-28T09:01:11-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-10-28T09:01:11-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2021-10-27T20:55:56-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Add lost.?lin above l. 1; *high-punctus* in l. 3; fix |ed| tags in l. 4; regularize in l. 5. META: 36211 is ed.pr (number I); add 8932 #866 descr. (catalog); add 16237 pp. 133-134 as a study; image link is (https://berlpap.smb.museum/01131/); photo in Mihálykó, The christian liturgical papyri (Studien zur Antike und Christentum 114), p. 432; Arsinoites is Pleiades (https://pleiades.stoa.org/places/736893)</change>
+          <change when="2021-10-27T20:55:56-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Add lost.?lin above l. 1; *high-punctus* in l. 3; fix |ed| tags in l. 4; regularize in l. 5. META: 36211 is ed.pr (number I); add 8932 #866 descr. (catalog); add 16237 pp. 133-134 as a study; image link is (https://berlpap.smb.museum/01131/); photo in Mihálykó, The christian liturgical papyri (Studien zur Antike und Christentum 114), p. 432; Arsinoites is Pleiades (https://pleiades.stoa.org/places/736893)</change>
+          <change when="2021-07-16T12:14:01-04:00"
+                 who="http://papyri.info/editor/users/FamNix">Submit - This papyrus has not been encoded so far.</change>
+          <change when="2021-07-16T12:14:01-04:00"
+                 who="http://papyri.info/editor/users/FamNix">Submit - This papyrus has not been encoded so far.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"> <ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/>κου <g type="slanting-stroke"/><g type="slanting-stroke"/> κ<supplied reason="lost">αὶ τῆς παναγίας</supplied>
+<lb n="2"/> Μαρίας καὶ <supplied reason="lost">πάντων τῶν</supplied>
+<lb n="3"/> ἁγίων <g type="high-punctus"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="4"/><choice><reg>Ἰωάννου ἐπισκό<supplied reason="lost">που</supplied></reg><orig>Ἰωάννης ἐπίσκο<supplied reason="lost">πος</supplied></orig></choice> <supplied reason="lost">τὸ</supplied> <choice><reg><supplied reason="lost">εὐ</supplied><lb n="5" break="no"/>χαριστηρίον</reg><orig><supplied reason="lost">εὐ</supplied>
+<lb n="5" break="no"/>χαριστηρίων</orig></choice><g type="slanting-stroke"/><g type="slanting-stroke"/> καὶ ὑ<supplied reason="lost">πὲρ τῆς</supplied>
+<lb n="6"/> <choice><reg>κοιμησέως</reg><orig>κοιμησέος</orig></choice> τῶν θεοφ<supplied reason="lost">ιλεστάτων</supplied>
+<lb n="7"/> πατέρων ἡμῶν <add place="above">ὀρθοδόξον</add> ἀρχιεπισκ<supplied reason="lost">ό</supplied>
+<lb n="8" break="no"/>πων <g type="slanting-stroke"/><g type="slanting-stroke"/> Μάρκου ἀποστόλ<supplied reason="lost">ο</supplied>υ κ<supplied reason="lost">αὶ</supplied>
+<lb n="9"/>εὐαγγελίστου <g type="slanting-stroke"/><g type="slanting-stroke"/> 
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="10"/>Πέτρου Ἀχίλλα<g type="high-punctus"/> Ἀλεξάνδρου
+<lb n="11"/>Ἀθανασίου<g type="slanting-stroke"/><g type="slanting-stroke"/> Πέτρου<g type="slanting-stroke"/><g type="slanting-stroke"/> Τιμοθέου
+<lb n="12"/>Θεοφίλου<g type="slanting-stroke"/><g type="slanting-stroke"/> Κυρίλλου<g type="slanting-stroke"/><g type="slanting-stroke"/> Διοσκό
+<lb n="13" break="no"/>ρου<g type="slanting-stroke"/><g type="slanting-stroke"/> Τιμοθέου <g type="slanting-stroke"/><g type="slanting-stroke"/> Πέτρου Ἀθα
+<lb n="14" break="no"/>νασίο<add place="above">υ</add><g type="slanting-stroke"/><g type="slanting-stroke"/> Ἰωάννου Ἰωαννου<g type="slanting-stroke"/><g type="slanting-stroke"/> Διοσ
+<lb n="15" break="no"/>κόρου<g type="slanting-stroke"/> Τιμοθέου<g type="slanting-stroke"/> Θεωδωσίου
+<lb n="16"/> Πέτρου<g type="slanting-stroke"/><g type="slanting-stroke"/> Δαμιάνου<g type="slanting-stroke"/><g type="slanting-stroke"/> Ἀναστασίου 
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/36211"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="a" type="main">Christliche Texte aus der Berliner Papyrussammlung.</title>
-                  <author n="1">
-                     <surname>Stegmüller</surname>
-                     <forename>Otto</forename>
-                  </author>
-                  <date>1937</date>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/36211"/>
+                  <biblScope n="1" unit="number">I</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope n="1" unit="number">866</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/16237"/>
+                  <biblScope n="1" unit="page" from="133" to="134">133-134</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="online">
+               <bibl type="printed">Mihálykó, The christian liturgical papyri, p. 432</bibl>
+               <bibl type="online" n="1">
                   <ptr target="http://berlpap.smb.museum/01131"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="https://relicta.org/cpp/detail.php?CPP=0411"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

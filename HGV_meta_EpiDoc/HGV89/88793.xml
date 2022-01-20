@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv88793">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittung über Geldzahlung</title>
@@ -35,11 +35,11 @@
                      <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
                         <placeName type="ancient"
                                    ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Arsinoiton Polis</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
                         <placeName type="ancient"
                                    ref="http://pleiades.stoa.org/places/736920 http://www.trismegistos.org/place/799">Herakleopolis</placeName>
                      </p>
@@ -49,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,18 +66,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuer (Geld)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer (Geld)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-11-28T10:53:50-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-11-28T08:33:08-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine. https://collections.louvre.fr/en/ark:/53355/cl010041662</change>
+         <change when="2021-11-26T11:21:52-05:00"
+                 who="http://papyri.info/editor/users/berkes.lajos">Submit - Adding link tot the digital image: https://collections.louvre.fr/en/ark:/53355/cl010041662; christogramm corrected into staurogram (entry error)</change>
          <change who="HGV" when="2006-02-08">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Tag: 28.(29.) Febr.</p>
@@ -85,8 +92,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Louvre</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">127</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">127</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,6 +102,13 @@
                <bibl type="illustration">Tafel 34d</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://collections.louvre.fr/en/ark:/53355/cl010041662"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
