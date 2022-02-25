@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63461" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Psi. 14 1398</title>
+            <title>Mythological prose on the death of Tiresias</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">4670</idno>
             <idno type="filename">63461</idno>
             <idno type="dclp-hybrid">psi;14;1398</idno>
+            <idno type="MP3">02451.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +43,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,45 +67,103 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>mythography</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">mythology (?): the death of Tiresias</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">mythography</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Christina Kecht and Holger Essler as part of a workshop on digital editions of papyri within the
+          <ref target="http://epikur-wuerzburg.de/encode/">Encode project</ref>
+          . Revision by Holger Essler.
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="column" type="textpart"><ab> 
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">οἱ δὲ ἐπὶ τὰ</supplied>ς</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/>ς</rdg></app> <app type="editorial"><lem resp="Lloyd-Jones">ἁμά<supplied reason="lost">ξας τοὺς παῖδας</supplied></lem><rdg resp="Bartoletti">α<unclear>μα</unclear><gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="2"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">καὶ τὰς γυ</supplied>ναῖκας</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">γυ</supplied>ναῖκας</rdg></app> <app type="editorial"><lem resp="Lloyd-Jones">ἀναβι<supplied reason="lost">βάσαντες</supplied></lem><rdg resp="Bartoletti">ἀναβι<gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="3"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">ἔφευγον ἀπὸ</supplied> τῆς</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/> τῆς</rdg></app> πόλεως <app type="editorial"><lem resp="Lloyd-Jones"><unclear>ὁ</unclear> <supplied reason="lost">δὲ ʼΑπό</supplied><unclear>λλ</unclear><supplied reason="lost">ων</supplied></lem><rdg resp="Bartoletti"><unclear>ο</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><unclear>ν</unclear><gap reason="lost" quantity="2" unit="character"/></rdg></app>
+<lb n="4"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">πρὸς Δία παραγενό</supplied>μενος</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/>μενος</rdg></app> ἀναγγέλλει τ<supplied reason="lost">οὺς</supplied>
+<lb n="5"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">ὑπὸ Τειρεσίου ῥηθέν</supplied>τας</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/>τας</rdg></app> λόγους, Ζεὺς δὲ <app type="editorial"><lem resp="Lloyd-Jones">δ<supplied reason="lost">ιὰ</supplied></lem><rdg resp="Bartoletti">δ<gap reason="lost" quantity="2" unit="character"/></rdg></app>
+<lb n="6"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">τούτους ὀργιζόμ</supplied>ενος</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/>ενος</rdg></app> ἐμβάλλει λήθην
+<lb n="7"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">τῶν ἁπάντων αὐτῷ. οἱ δὲ</supplied></lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/></rdg></app> φεύγοντες ἀφικνοῦν
+<lb n="8" break="no"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">ται ἐπὶ τὴν λεγομένην</supplied></lem><rdg resp="Bartoletti"><supplied reason="lost">ται</supplied> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost" cert="low">εἰς τὴν</supplied></rdg></app> κρήνην Τέλεφουσσαν
+<lb n="9"/><app type="editorial"><lem resp="Lloyd-Jones"><supplied reason="lost">ἐκεῖ δὲ ὁ Τειρεσίας κα</supplied>τα<supplied reason="lost">σ</supplied>τρέφει</lem><rdg resp="Bartoletti"><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">κα</supplied><unclear>τ</unclear>α<supplied reason="lost">σ</supplied>τρέφει</rdg></app> τὸν βίον, θα
+<lb n="10" break="no"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ο</unclear>ι<unclear>α</unclear>ν οἱ Θηβαῖοι 
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>κα</unclear><supplied reason="lost">ὶ</supplied> τοῦ σή 
+<lb n="12" break="no"/><supplied reason="lost">ματος</supplied> <gap reason="lost" extent="unknown" unit="character"/><unclear>δ</unclear><gap reason="lost" quantity="1" unit="character"/>ον αὐτοῖς
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ι</unclear><supplied reason="lost">ά</supplied>ζειν ἐστὶ
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τ</supplied><unclear>α</unclear>ῦ<unclear>τ</unclear>α καθο
+<lb n="15" break="no"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τ</supplied><unclear>ὸ</unclear> τεῖχος
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/>ρομε
+<lb n="17" break="no"/><gap reason="lost" extent="unknown" unit="character"/>ουκα
+<lb n="18" break="no"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> 
+<div n="2" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>μα<unclear>λ</unclear>ε<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>θυγατ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/>λουσν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>κευθ<unclear>ω</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/>ουδε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/>τοστο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>υτ<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>σ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>φιλο<unclear>χ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/>δροκο<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/>τοξωι<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><unclear>π</unclear>λ<unclear>η</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/5513"/>
-                  <biblScope unit="number">1398</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope unit="volume">14</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5513"/>
+                  <biblScope n="1" unit="number">1398</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/24113"/>
+                  <biblScope n="1" unit="page" from="113" to="114">113-114</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">PSI 14, pl.III</bibl>
+               <bibl type="printed" n="1">PSI 14, pl.III</bibl>
+               <bibl type="printed" n="2">http://www.psi-online.it/documents/psi;14;1398</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
