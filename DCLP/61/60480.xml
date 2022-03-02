@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60480" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60480</title>
+            <title>Paraphrase of Ilias 9.128ff. or Ilias 19.245ff.</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1603</idno>
             <idno type="filename">60480</idno>
             <idno type="dclp-hybrid">tm;;60480</idno>
+            <idno type="MP3">01187.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -77,58 +82,98 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term>philology</term>
-               <term>paraphrase</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus, Homerica; Ilias 09.128- or Ilias 019.245- paraphrase</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
+               <term n="6">philology</term>
+               <term n="7">paraphrase</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Afe Alabi and revised by Holger Essler as part of a workshop on digital editions of papyri within the
+          <ref target="http://epikur-wuerzburg.de/encode/">Encode project</ref>
+          .
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><app type="editorial"><lem>κα</lem><rdg resp="Henrichs"><supplied reason="lost">ἡνί</supplied>
+<lb n="1" break="no"/>κα</rdg></app> Λέσβος ἑάλω·<g type="middot"/> τὸ δὲ
+<lb n="2"/>κεφάλαιον ἁπάντων
+<lb n="3"/>τούτων αὐτὴν τὴν
+<lb n="4"/><choice><reg>Βρισηΐδα</reg><orig>Βρειση<hi rend="diaeresis">ΐ</hi>δα</orig></choice> καὶ ὅρκους <app type="editorial"><lem>ε</lem><rdg resp="Henrichs">ἔ
+<lb n="5" break="no"/><supplied reason="lost">λαβεν ὁ Ἀχιλλεὺς</supplied>
+<lb n="6"/><supplied reason="lost">παρὰ Ἀγαμέμνονος</supplied></rdg></app>
+</ab>
+</div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/46467"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="edition" subtype="principal">
                   <title level="a" type="main">Iliasparaphrase zu Il. 9, 128 ff. bzw. 19, 245 ff. (P. Colon. inv. 1755).</title>
-                  <author n="1">
-                     <surname>Henrichs</surname>
-                     <forename>Albert</forename>
-                  </author>
-                  <date>1967</date>
-                  <!-- ignore - stop -->
-               </bibl>
-               <bibl type="reference" subtype="catalogue">
                   <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/46467"/>
+                  <biblScope n="1" unit="book"/>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">h16</biblScope>
+                  <biblScope n="1" unit="number">h16</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8842"/>
+                  <biblScope n="1" unit="number">46</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="https://papyri.uni-koeln.de/stueck/tm60480"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="https://relicta.org/cpp/detail.php?CPP=0201"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="ancientEdition">
+            <listBibl>
+               <bibl type="publication" subtype="ancientQuote">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <title type="main"
+                         level="m"
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
