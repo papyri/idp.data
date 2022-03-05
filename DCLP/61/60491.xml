@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60491" xml:lang="en">
-   <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60491">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Koeln. 7 298</title>
+            <title>Homerus; Ilias 02.41-43 school text, exercise in calligraphy?</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1614</idno>
             <idno type="filename">60491</idno>
             <idno type="dclp-hybrid">p.koeln;7;298</idno>
+            <idno type="MP3">00628.010</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +32,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">19</width>
+                              <height unit="cm">4</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="3">
                            <p>papyrus roll (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -43,15 +52,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,73 +71,81 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 02.41-43 school text, exercise in calligraphy?</term>
+               <term n="1" type="description">epic</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
             </keywords>
          </textClass>
          <langUsage>
-            <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1" xml:id="lb1"/>ἔγρετο δ’ ἐξ ὕπνου, θείη δέ μιν ἀμφέχ<supplied reason="lost">υ</supplied>τ’ ὀ<supplied reason="lost">μφή.</supplied>
+<lb n="2"/>ἕζετο δ’ ὀρθ<unclear>ω</unclear><supplied reason="lost">θ</supplied>εὶς, <unclear>μ</unclear>αλα<unclear>κ</unclear><supplied reason="lost">ὸ</supplied><unclear>ν</unclear> δ' ἔνδυν<supplied reason="lost">ε</supplied> <unclear>χι</unclear><supplied reason="lost">τῶνα</supplied>
+<lb n="3"/><supplied reason="lost">καλὸν νηγάτεον, π</supplied><unclear>ε</unclear><supplied reason="lost">ρὶ δ</supplied>ὲ μ<supplied reason="lost">έγα βάλλετο φᾶρος·</supplied>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb1" xml:space="preserve">
+            <ref>1</ref>
+            <p>Above the Homeric text is written in large, calligraphic letters ] ̣ ̣ ̣ ΟΦΟΡΟΝΑΝ, under which twice Ο with spiritus lenis is practised, to the left-hand side of which stands ] ̣ ̣Ν with traces of ink above and below.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/12431"/>
-                  <biblScope unit="number">298</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Köln Gr.</title>
-                  <biblScope unit="volume">7</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <title level="s" type="short-Checklist" n="1">P.Köln 7</title>
+                  <author n="1">
+                     <forename>Michael</forename>
+                     <surname>Gronewald</surname>
                   </author>
+                  <pubPlace n="1">Opladen</pubPlace>
+                  <date>1991</date>
                   <!-- ignore - stop -->
-                  <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">685</biblScope>
+                  <ptr target="http://papyri.info/biblio/12431"/>
+                  <biblScope n="1" unit="number">298</biblScope>
+                  <biblScope n="2" unit="volume">7</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P.Köln 7, pl.VIIIa</bibl>
                <bibl type="online">
-                  <ptr target="https://papyri.uni-koeln.de/stueck/tm60491"/>
+                  <ptr target="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/PKoeln/PK3602v.jpg"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
