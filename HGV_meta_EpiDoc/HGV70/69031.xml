@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv69031">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ende eines medizinischen Rezepts</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Paris, Académie des Inscriptions et Belles-Lettres, P.Acad. Inv. Nr. 6b</idno>
+                  <placeName>
+                     <settlement>Paris</settlement>
+                  </placeName>
+                  <collection>Académie des Inscriptions et Belles-Lettres</collection>
+                  <idno type="invNo">P.Acad. Inv. Nr. 6b</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -43,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,32 +64,41 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Rezept</term>
-               <term>Fragment</term>
+               <term n="1">Rezept</term>
+               <term n="2">Fragment</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-15T16:56:26-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-03-15T16:05:33-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine. This should become a DCLP only record.</change>
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">28</biblScope>
-                  <biblScope type="numbers">17137</biblScope>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="numbers">17137</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Andorlini, Testi medici su papiro, Tav. XI (Fig. 3)</bibl>
+               <bibl type="illustration">Andorlini, P.TestiMed., Tav. XI (Fig. 3)</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.TestiMed., pp. 179-80</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
