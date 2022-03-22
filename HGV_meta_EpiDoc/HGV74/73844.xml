@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv73844">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Kopfsteuer (λαογραφία)</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Sydney</settlement>
                   </placeName>
+                  <collection>Chau Chak Wing Museum</collection>
+                  <idno type="invNo">NM36.27</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ta Memnoneia (Theben)</origPlace>
+                     <origPlace>Ta Memnoneia (Theben) (Ägypten)</origPlace>
                      <origDate when="0111-10-31">31. Okt. 111</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/786067 http://www.trismegistos.org/place/1341">Ta Memnoneia (Theben)</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,18 +66,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuern</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-22T08:46:01-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-03-21T16:47:52-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-03-21T05:25:15-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - entered collection, inv.no. and digital image</change>
          <change who="HGV" when="1999-03-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL II 1, S. 15.</p>
@@ -83,23 +93,23 @@
             <note type="original">Z. 5: 5. Apr. 111, 7. Mai 111; Z. 6: 9. Juni 111; Z. 7: 9. Okt. 111; Z. 8: 17. Okt. 111</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>a Z. 5</ref>
                   <date type="mentioned" when="0111-04-05">5. Apr. 111</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>a Z. 5</ref>
                   <date type="mentioned" when="0111-05-07">7. Mai 111</date>
                </item>
-               <item>
+               <item n="3">
                   <ref>a Z. 6</ref>
                   <date type="mentioned" when="0111-06-09">9. Juni 111</date>
                </item>
-               <item>
+               <item n="4">
                   <ref>a Z. 7</ref>
                   <date type="mentioned" when="0111-10-09">9. Okt. 111</date>
                </item>
-               <item>
+               <item n="5">
                   <ref>a Z. 8</ref>
                   <date type="mentioned" when="0111-10-17">17. Okt. 111</date>
                </item>
@@ -109,14 +119,21 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">O.Deiss.</title>
-                  <biblScope type="numbers">30</biblScope>
-                  <biblScope type="generic">a</biblScope>
+                  <biblScope n="1" type="numbers">30</biblScope>
+                  <biblScope n="2" type="generic">a</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.sydney.edu.au/museums/collections_search/?record=ecatalogue.35098"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
