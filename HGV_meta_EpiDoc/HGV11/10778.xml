@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10778">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Gemellus to Sabinus</title>
@@ -31,16 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
                      <origDate notAfter="0100-12-14">
-                        <offset type="before" n="1">vor</offset> 14. Dez. 100</origDate>
+                        <offset n="1" type="before">vor</offset>
+                14. Dez. 100
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736909 http://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,19 +68,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Lukios Bellenos Gemellos an Sabinos</term>
-               <term>Ausdünnung eines Hains (Oliven)</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Lukios Bellenos Gemellos an Sabinos</term>
+               <term n="3">Ausdünnung eines Hains (Oliven)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-23T11:15:42-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-03-23T09:36:53-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes.</change>
+         <change when="2022-03-23T07:45:05-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - Added German translation with correct publication year 2014 (note: this translation had already been entered into HGV but with wrong publication year 2013)</change>
          <change who="HGV" when="1996-10-18">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Gemellus - Archiv.</p>
@@ -105,7 +115,8 @@
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="de">
                <head xml:lang="de">Deutsch:</head>
-               <bibl type="translations">Olsson, Papyrusbriefe (1925) 55.</bibl>
+               <bibl type="translations" n="1">Olsson, Papyrusbriefe (1925) 55.</bibl>
+               <bibl type="translations" n="2">Arzt-Grabner, 2. Korinther (2014), S. 132f. (Z. 3-15)</bibl>
             </listBibl>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
@@ -120,5 +131,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
