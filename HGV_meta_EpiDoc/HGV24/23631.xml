@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23631">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ammon’s Letter to his Mother</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Alexandria</origPlace>
                      <origDate notBefore="0348-05-26" notAfter="0348-06-24">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>26. Mai - 24. Juni 348 (Jahr unsicher)</origDate>
+                26. Mai - 24. Juni 348 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,13 +65,13 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Ammon an seine Mutter Senpetechensis</term>
-               <term>Vermögen der Familie</term>
-               <term>Priesteramt für den Neffen</term>
-               <term>Bezug auf ein Reskript Diokletians</term>
-               <term>Kontakt zu Äthiopien</term>
-               <term>diakritische Zeichen</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Ammon an seine Mutter Senpetechensis</term>
+               <term n="3">Vermögen der Familie</term>
+               <term n="4">Priesteramt für den Neffen</term>
+               <term n="5">Bezug auf ein Reskript Diokletians</term>
+               <term n="6">Kontakt zu Äthiopien</term>
+               <term n="7">diakritische Zeichen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,8 +80,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. P. Ammon I, S. 5-6 mit Anm. 12 gegen BL X, S. 43 (zu P. Congr. XV 22). Vgl., u.a. zur Datierung, P.Lugd. Bat. XXXI, S. 187-195. Zu Kol. IV 22 vgl. Van Nuffelen, Faces of Hellenism, S. 176.</p>
@@ -88,19 +91,25 @@
             <note type="original">Kol. III 10: 16. März 348 (Tag unsicher); Kol. III 11: 25. Apr. 348; Kol. IV 10: 28. Apr. 348</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Kol. III, Z. 10</ref>
-                  <date type="mentioned" when="0348-03-16">16. März 348 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when="0348-03-16">
+              16. März 348 (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Kol. III, Z. 11</ref>
-                  <date type="mentioned" when="0348-04-25">25. Apr. 348 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when="0348-04-25">
+              25. Apr. 348 (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Kol. IV, Z. 10</ref>
-                  <date type="mentioned" when="0348-04-28">28. Apr. 348 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when="0348-04-28">
+              28. Apr. 348 (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
             </list>
@@ -109,8 +118,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ammon</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">3</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">3</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -120,15 +129,15 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/23631"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">5</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">4</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">5/6</biblScope>
                </bibl>
@@ -136,8 +145,8 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plates XV - XVI</bibl>
-               <bibl type="illustration">P.XV. Congr. Pl. XI (Kol. IV, 1 - 31) und XII (Kol. V, 7 - 37)</bibl>
+               <bibl type="illustration" n="1">Plates XV - XVI</bibl>
+               <bibl type="illustration" n="2">P.XV. Congr. Pl. XI (Kol. IV, 1 - 31) und XII (Kol. V, 7 - 37)</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -153,6 +162,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="de">
+               <bibl type="translations">Arzt-Grabner, 2. Korinther (2014), S. 57f. (Kol. II 8-20) und 58f. (Kol. V 5-18)</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
