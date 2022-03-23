@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2294">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Drafts of five letters from Zenon</title>
@@ -31,9 +31,11 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Palästina (?)</origPlace>
+                     <origPlace>Palästina ?</origPlace>
                      <origDate notBefore="-0258-09-06">
-                        <offset type="after" n="1">nach</offset> 6. Sept. 258 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                6. Sept. 258 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -47,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,21 +66,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Entwurf</term>
-               <term>Abschrift</term>
-               <term>Akte</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Entwurf</term>
+               <term n="4">Abschrift</term>
+               <term n="5">Akte</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-23T10:14:47-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-03-23T09:22:05-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2022-03-23T07:43:28-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - Added German translation with correct publication year 2014 (note: this translation had already been entered into HGV but with wrong publication year 2013)</change>
          <change who="HGV" when="1994-04-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Scholl, Corpus I, S. 153.</p>
@@ -86,20 +95,20 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Cair. Zen.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">59015</biblScope>
-                  <biblScope type="side">V</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">59015</biblScope>
+                  <biblScope n="3" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">77</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">49</biblScope>
                </bibl>
@@ -107,16 +116,16 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Pl. V (Z. 26 - 48)</bibl>
-               <bibl type="illustration">Seider, Paläographie III, 1, II Abb. 30, S. 191 (Z. 26- 30)</bibl>
+               <bibl type="illustration" n="1">Pl. V (Z. 26 - 48)</bibl>
+               <bibl type="illustration" n="2">Seider, Paläographie III, 1, II Abb. 30, S. 191 (Z. 26- 30)</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SB III 6782</bibl>
-               <bibl type="publication" subtype="other">C.Ptol.Sklav. I 39</bibl>
-               <bibl type="publication" subtype="other">C.Zen.Palestine 42</bibl>
+               <bibl type="publication" subtype="other" n="1">SB III 6782</bibl>
+               <bibl type="publication" subtype="other" n="2">C.Ptol.Sklav. I 39</bibl>
+               <bibl type="publication" subtype="other" n="3">C.Zen.Palestine 42</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -129,7 +138,10 @@
                <head xml:lang="de">Französisch:</head>
                <bibl type="translations">Orrieux, Les papyrus de Zenon (1983), S. 48</bibl>
             </listBibl>
+            <listBibl xml:lang="de">
+               <bibl type="translations">Arzt-Grabner, 2. Korinther (2014), S. 129f.</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
