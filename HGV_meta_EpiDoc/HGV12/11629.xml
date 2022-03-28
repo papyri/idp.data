@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11629">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Declaration of Property</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">11629</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 146</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,22 +33,33 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Karanis (Arsinoites)</origPlace>
                      <origDate when="0074-04-06">6. Apr. 74</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1008 https://pleiades.stoa.org/places/736932">Karanis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/95803"/>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,7 +74,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Erklärung (Eid) zum Kauf von Land</term>
+               <term n="1">Deklaration</term>
+               <term n="2">Besitz</term>
+               <term n="3">βιβλιοθήκη ἐγκτήσεων</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -70,19 +85,16 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">68 - 69</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref/>
+                  <ref>Z. 7</ref>
                   <date type="mentioned" notBefore="0068" notAfter="0069">68 - 69</date>
                </item>
             </list>
@@ -90,10 +102,11 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">146</biblScope>
-                  <biblScope type="pages">(S. XIV)</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">57</biblScope>
+                  <biblScope n="2" type="fascicle">(2020)</biblScope>
+                  <biblScope n="3" type="pages">S. 21</biblScope>
+                  <biblScope n="4" type="generic">Nr. 1</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -105,11 +118,13 @@
                <figure>
                   <graphic url="https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_146"/>
                </figure>
-               <figure>
-                  <graphic url="https://archives.bge-geneve.ch/ark:/17786/vta4c94a6ee83b7fd3d"/>
-               </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. 146 descr. (p. xiv)</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
