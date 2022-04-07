@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv70341">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittung über die Verladung von Weizen für die annona civica</title>
@@ -31,17 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites oder Hermopolites</origPlace>
+                     <origPlace>Antinoites, Ägypten oder Hermopolites, Ägypten</origPlace>
                      <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2973 https://pleiades.stoa.org/places/756517">Antinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,29 +72,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Naukleros (Schiffer, Schiffseigner)</term>
-               <term>Weizen</term>
-               <term>Verladung (embole)</term>
-               <term>Transport</term>
-               <term>annona civica</term>
+               <term n="1">Quittung</term>
+               <term n="2">Naukleros (Schiffer</term>
+               <term n="3">Schiffseigner)</term>
+               <term n="4">Weizen</term>
+               <term n="5">Verladung (embole)</term>
+               <term n="6">Transport</term>
+               <term n="7">annona civica</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-04-07T07:04:03-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-10-25T12:05:51-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes, confirmed provenance with the ÖNB digital record.</change>
+         <change when="2021-10-24T17:07:20-04:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - HGV Meta: corrected 'Arsinoites' to 'Antinoites' in Provenance (TM record also requires correction). || DDbDP Text: lin4 κα̣θ̣α[ρ]π̣ῦ =&gt; κα̣θ̣α[ρ]ο̣ῦ; lin6 Δι’ &amp; Συμφ(ωνῶ) now written in lower case.</change>
          <change who="HGV" when="2003-07-14">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">CPR</title>
-                  <biblScope type="volume">24</biblScope>
-                  <biblScope type="numbers">23</biblScope>
+                  <biblScope n="1" type="volume">24</biblScope>
+                  <biblScope n="2" type="numbers">23</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -104,5 +118,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
