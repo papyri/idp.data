@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv19107">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Aktenstück über den Verkauf eines aufgelassenen Kultortes</title>
@@ -9,10 +9,9 @@
          <publicationStmt>
             <idno type="filename">19107</idno>
             <idno type="TM">19107</idno>
-            <idno type="ddb-perseus-style">0239;6;9598</idno>
             <idno type="ddb-filename">p.hoogendijk.38</idno>
             <idno type="ddb-hybrid">p.hoogendijk;;38</idno>
-            </publicationStmt>
+         </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
@@ -33,12 +32,14 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis ?</origPlace>
+                     <origPlace>Hermopolis (?)</origPlace>
                      <origDate when="0430" precision="medium">ca. 430</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geoJCBGDF">
-                        <placeName type="ancient" cert="low">Hermopolis</placeName>
+                     <p>
+                        <placeName type="ancient"
+                                   cert="low"
+                                   ref="http://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,9 +47,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>
-        This file encoded to comply with EpiDoc Guidelines and Schema version 8
-        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,8 +62,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Anordnung eines kaiserlichen Sekretärs</term>
-               <term n="2">betr. Verkauf (Grundstück)</term>
+               <term>Anordnung eines kaiserlichen Sekretärs</term>
+               <term>betr. Verkauf (Grundstück)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,12 +77,21 @@
          <change who="HGV" when="1994-07-26">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2022-01-13">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL X, S. 201.</p>
+         <div type="commentary" subtype="mentionedDates">
+            <head>Erwähnte Daten</head>
+            <note type="original">Z. 6: 427-428 oder 442-443</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 6</ref>
+                  <date type="mentioned" notBefore="0427" notAfter="0443">427-428 oder 442-443</date>
+               </item>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -93,20 +101,16 @@
                </bibl>
             </listBibl>
          </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>
-                  <biblScope type="pages">201</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-          keine
-          <bibl type="illustration">S. 176</bibl>
+               <bibl type="illustration">S. 176</bibl>
             </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">SB VI 9598</bibl>
+            </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>
@@ -122,11 +126,6 @@
                </figure>
             </p>
          </div>
-         <div type="bibliography" subtype="otherPublications">
-            <listBibl>
-               <bibl type="publication" subtype="other">SB VI 9598</bibl>
-            </listBibl>
-         </div>
       </body>
-  </text>
+   </text>
 </TEI>

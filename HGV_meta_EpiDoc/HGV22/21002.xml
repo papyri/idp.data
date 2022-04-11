@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21002">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Briefanfang</title>
@@ -36,9 +36,10 @@
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/687968 http://www.trismegistos.org/place/3148">Masada</placeName>
-                        <placeName type="ancient" subtype="region">Palästina</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Palästina</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,28 +64,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Abaskantos an Judas</term>
-               <term>Begleitbrief</term>
-               <term>Waren</term>
-               <term>Namen</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Abaskantos an Judas</term>
+               <term n="3">Begleitbrief</term>
+               <term n="4">Waren</term>
+               <term n="5">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-26T13:24:47-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-03-26T12:36:14-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-03-25T05:10:05-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added print illustration</change>
          <change who="HGV" when="2004-03-02">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">24</biblScope>
-                  <biblScope type="numbers">15988</biblScope>
+                  <biblScope n="1" type="volume">24</biblScope>
+                  <biblScope n="2" type="numbers">15988</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -98,8 +106,9 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">P.Masada, Plate 8</bibl>
-               <bibl type="illustration">Crisci, Scrivere greco, Tav. XXXVII c</bibl>
+               <bibl type="illustration" n="1">P.Masada, Plate 8</bibl>
+               <bibl type="illustration" n="2">Crisci, Scrivere greco, Tav. XXXVII c</bibl>
+               <bibl type="illustration" n="3">Donati, Dalla terra alle genti (1996), nr. 239</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -109,5 +118,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

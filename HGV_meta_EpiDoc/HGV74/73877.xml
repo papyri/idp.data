@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv73877">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Inventar von Haushaltungsstücken</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Sydney</settlement>
                   </placeName>
+                  <collection>Chau Chak Wing Museum</collection>
+                  <idno type="invNo">NM36.57</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,10 +34,14 @@
                <history>
                   <origin>
                      <origPlace>Apollonopolis</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0187-09-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Sept. 187 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0163-09-10">
-                        <certainty locus="value" match="../year-from-date(@when)"/>10. Sept. 163 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0187-09-16">
+                16. Sept. 187 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0163-09-10">
+                10. Sept. 163 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -48,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,18 +71,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Inventar</term>
-               <term>Haushalt</term>
+               <term n="1">Inventar</term>
+               <term n="2">Haushalt</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-22T12:10:24-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-03-22T11:44:35-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-03-22T07:32:08-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - entered collection, inv.no. and digital image</change>
          <change who="HGV" when="1999-03-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 10. Sept. 163 v. Chr.</p>
@@ -106,6 +119,13 @@
                <bibl type="publication" subtype="other">C.Ptol.Sklav. II 259</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.sydney.edu.au/museums/collections_search/?record=ecatalogue.40783"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

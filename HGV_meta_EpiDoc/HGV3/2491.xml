@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2491">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Zenon to Kleon</title>
@@ -10,15 +10,17 @@
             <idno type="filename">2491</idno>
             <idno type="TM">2491</idno>
             <idno type="ddb-perseus-style">0229;;B</idno>
-            <idno type="ddb-filename">p.zen.pestm.B</idno>
-            <idno type="ddb-hybrid">p.zen.pestm;;B</idno>
+            <idno type="ddb-filename">p.petr.kleon.19</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;19</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 539</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0256-10-13">
-                        <certainty locus="value" match="../year-from-date(@when)"/>13. Okt. 256 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0255-10-13">
-                        <certainty locus="value" match="../year-from-date(@when)"/>13. Okt. 255 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Schreibort: Arsinoites; Fundort: Gurob</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0256-10-13">
+                13. Okt. 256 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0255-10-13">
+                13. Okt. 255 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoIFHEC4">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +61,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,19 +78,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (Geschäfts-)</term>
-               <term>Zenon an Kleon</term>
-               <term>Bewässerung</term>
+               <term n="1">Brief (Geschäfts-)</term>
+               <term n="2">Zenon an Kleon</term>
+               <term n="3">Bewässerung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-02-04T05:59:55-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2020-12-22T07:23:19-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2020-12-22T05:26:10-05:00"
+                 who="http://papyri.info/editor/users/LisaVanoppr%C3%A9">Submit - Entering translation and changing metadata and text for P. Petr. Kleon 19.&#xD;
+Line 4 is indented, please use correct markup.</change>
          <change who="HGV" when="1991-02-04">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 13. Okt. 255 v.Chr. Datierung nach dem makedonischen Regierungsjahr. Zur Datierung vgl. AncSoc 35, 2005, S. 119-128.</p>
@@ -87,15 +108,19 @@
             <note type="original" subtype="Y">Empfangsvermerk Z. 6: 15. Okt. 255 v.Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>B (S. 266) Z. 6</ref>
                   <note type="comment">Empfangsvermerk</note>
-                  <date type="mentioned" when="-0256-10-15">15. Okt. 256 v.Chr.<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="-0256-10-15">
+              15. Okt. 256 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>B (S. 266) Z. 6</ref>
-                  <date type="mentioned" when="-0255-10-15">15. Okt. 255 v.Chr.<certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="-0255-10-15">
+              15. Okt. 255 v.Chr.
+              <certainty locus="value" given="#dateAlternativeY" degree="1"/>
                   </date>
                </item>
             </list>
@@ -103,9 +128,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Zen. Pestm.</title>
-                  <biblScope type="generic">B</biblScope>
-                  <biblScope type="pages">(S. 266)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">19</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -129,9 +153,10 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. II 13 (11)</bibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 A</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 539 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. II 13 (11)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. III 42 A</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Lond. III 539 descr.</bibl>
+               <bibl type="publication" subtype="other" n="4">P. L. Bat. 20 Suppl. B</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -142,8 +167,8 @@
             </listBibl>
             <listBibl xml:lang="fr">
                <head xml:lang="de">Französisch:</head>
-               <bibl type="translations">Orrieux, Les papyrus de Zenon (1983), S. 98</bibl>
-               <bibl type="translations">Burnet, L'Égypte ancienne (2003), Nr. 49</bibl>
+               <bibl type="translations" n="1">Orrieux, Les papyrus de Zenon (1983), S. 98</bibl>
+               <bibl type="translations" n="2">Burnet, L'Égypte ancienne (2003), Nr. 49</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -154,5 +179,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

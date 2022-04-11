@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20346">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Order for Delivery of Wine</title>
+            <title>Order for delivery of wine</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">20346</idno>
@@ -32,10 +32,14 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0267-06-11">
-                        <certainty locus="value" match="../year-from-date(@when)"/>11. Juni 267 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0235-06-11">
-                        <certainty locus="value" match="../year-from-date(@when)"/>11. Juni 235 (Jahr unsicher)</origDate>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0267-06-11">
+                11. Juni 267 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0235-06-11">
+                11. Juni 235 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -48,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,19 +69,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Anweisung</term>
-               <term>Zahlung</term>
-               <term>Wein</term>
+               <term n="1">Anweisung</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Wein</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-11T05:28:20-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-01-11T05:12:25-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-01-11T05:06:56-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Added image link</change>
          <change who="HGV" when="1996-06-05">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 11. Juni 235. Zur Datierung vgl. BL XI, S. 146.</p>
@@ -85,19 +96,19 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">1055</biblScope>
+                  <biblScope n="1" type="volume">7</biblScope>
+                  <biblScope n="2" type="numbers">1055</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">146</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">137</biblScope>
                </bibl>
@@ -106,6 +117,13 @@
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://collections.library.yale.edu/catalog/17147582"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

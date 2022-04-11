@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12027">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Document Concerning the Education of Orphans</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0181" notAfter="0182">181 - 182</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,39 +65,45 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Ausbildung von Waisen</term>
-               <term>Regelungen</term>
+               <term n="1">Ausbildung von Waisen</term>
+               <term n="2">Regelungen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-23T08:29:39-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-03-23T08:18:00-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2022-03-23T07:03:37-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - Notes/Bemerkungen: The correct publication year of "Arzt-Grabner, 2. Korinther" is 2014.</change>
          <change who="HGV" when="1994-02-18">Record created</change>
          <change who="HGV" when="2011-02-03">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Vgl. Lembke, Tradition and Transformation, S. 467f. Zu Z. 6 vgl. Arzt-Grabner, 2. Korinther (2013), S. 388, Anm. 690.</p>
+            <p>Vgl. Lembke, Tradition and Transformation, S. 467f. Zu Z. 6 vgl. Arzt-Grabner, 2. Korinther (2014), S. 388, Anm. 690.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Mich.</title>
-                  <biblScope type="volume">9</biblScope>
-                  <biblScope type="numbers">532</biblScope>
+                  <biblScope n="1" type="volume">9</biblScope>
+                  <biblScope n="2" type="numbers">532</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">215</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">161/162</biblScope>
                </bibl>
@@ -114,5 +122,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

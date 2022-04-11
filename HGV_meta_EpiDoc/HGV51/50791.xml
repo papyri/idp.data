@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv50791">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Receipt for barley</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">50791</idno>
             <idno type="TM">50791</idno>
-            <idno type="ddb-perseus-style">0050;;1336</idno>
-            <idno type="ddb-filename">o.wilck.1336</idno>
-            <idno type="ddb-hybrid">o.wilck;;1336</idno>
+            <idno type="ddb-filename">p.hoogendijk.9</idno>
+            <idno type="ddb-hybrid">p.hoogendijk;;9</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Museum</collection>
+                  <idno type="invNo">EA 12640</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
-                     <origDate when="-0270-07-12">
-                        <certainty locus="value" match="../year-from-date(@when)"/>12. Juli 270 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Theben (?)</origPlace>
+                     <origDate notBefore="-0232-07-02" notAfter="-0232-07-02">2. Juli 232 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
+                                   cert="low"
                                    ref="http://pleiades.stoa.org/places/991398 http://www.trismegistos.org/place/2983 http://www.trismegistos.org/place/1281">Theben</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
@@ -47,8 +48,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,7 +64,7 @@
          <textClass>
             <keywords scheme="hgv">
                <term>Quittung</term>
-               <term>Getreide</term>
+               <term>Gerste</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -72,32 +72,48 @@
          <change who="HGV" when="1998-12-17">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2022-01-13">Xwalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Griechisch - demotisch. Demotischer Text: RevEg 4, 1885 - 1886, S. 184.</p>
+            <p>Demotsich - griechisch.</p>
+         </div>
+         <div type="commentary" subtype="mentionedDates">
+            <head>Erwähnte Daten</head>
+            <note type="original">Z. 1: 02.07.232 v. Chr.</note>
+            <note type="source">HGV.fp7</note>
+            <list>
+               <item>
+                  <ref>Z. 1</ref>
+                  <date type="mentioned" when="-0232">02. 07. 232 v. Chr.</date>
+               </item>
+            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">O.Wilck.</title>
-                  <biblScope type="numbers">1336</biblScope>
-               </bibl>
-               <bibl>
-                  <title>DAHT</title>
-                  <biblScope>50791</biblScope>
+                  <title level="s" type="abbreviated">P.Hoogendijk</title>
+                  <biblScope type="numbers">9</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+               <bibl type="illustration">S. 47</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">O. Wilck. 1336</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="https://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=175322&amp;partId=1"/>
+                  <graphic url="https://www.britishmuseum.org/collection/object/Y_EA12640"/>
                </figure>
             </p>
          </div>

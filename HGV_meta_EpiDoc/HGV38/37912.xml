@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv37912">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Account of Arrears of Corn</title>
+            <title>Account of arrears of corn</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">37912</idno>
@@ -32,7 +32,8 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0576" notAfter="0600" precision="low">spätes VI</origDate>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0531">531</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0546">546</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -45,8 +46,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,30 +63,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Rechnung</term>
-               <term>Getreide</term>
-               <term>Rückstand</term>
-               <term>Zahlung</term>
+               <term n="1">Rechnung</term>
+               <term n="2">Getreide</term>
+               <term n="3">Rückstand</term>
+               <term n="4">Zahlung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-12-27T11:56:12-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-12-26T12:41:44-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-12-24T09:28:44-05:00"
+                 who="http://papyri.info/editor/users/AminBenaissa">Submit - Corrected date (531 or 546) on basis of P.Oxy. 84.5457.1 n.</change>
          <change who="HGV" when="1994-01-05">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung: ca. 9. Indiktion. Vgl. BASP 46, 2009, S. 149f.</p>
+            <p>Datierung: ca. 9. Indiktion. Vgl. BASP 46, 2009, S. 149f. Zur Datierung vgl. P.Oxy. LXXXIV 5457, Anm. zu Z. 1.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">16</biblScope>
-                  <biblScope type="numbers">2023</biblScope>
+                  <biblScope n="1" type="volume">16</biblScope>
+                  <biblScope n="2" type="numbers">2023</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -99,5 +107,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

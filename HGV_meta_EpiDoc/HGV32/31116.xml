@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv31116">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Privatbrief</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Sydney</settlement>
                   </placeName>
+                  <collection>Chau Chak Wing Museum</collection>
+                  <idno type="invNo">NM36.59</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
+                     <origPlace>Theben (Ägypten)</origPlace>
                      <origDate notBefore="0201" notAfter="0300" cert="low" precision="low">III (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="http://pleiades.stoa.org/places/991398 http://www.trismegistos.org/place/2983 http://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,25 +66,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Pakysis (Sohn des Patsebthis) an seinen Sohn</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Pakysis (Sohn des Patsebthis) an seinen Sohn</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-03-22T13:47:21-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-03-22T12:09:58-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-03-22T07:19:40-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - entered collection, inv.no. and digital image</change>
          <change who="HGV" when="1995-03-02">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">9633</biblScope>
+                  <biblScope n="1" type="volume">6</biblScope>
+                  <biblScope n="2" type="numbers">9633</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,8 +111,8 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SB I 4254</bibl>
-               <bibl type="publication" subtype="other">O.Deiss. 64</bibl>
+               <bibl type="publication" subtype="other" n="1">SB I 4254</bibl>
+               <bibl type="publication" subtype="other" n="2">O.Deiss. 64</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -112,6 +122,13 @@
                <bibl type="translations">Burnet, L'Égypte ancienne (2003), Nr. 193</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.sydney.edu.au/museums/collections_search/?record=ecatalogue.40784"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

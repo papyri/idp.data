@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7658">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Correspondence of Kleon. Complaint from Demetrios</title>
+            <title>Petition from Demetrios to Kleon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7658</idno>
             <idno type="TM">7658</idno>
             <idno type="ddb-perseus-style">0187;2;4</idno>
-            <idno type="ddb-filename">p.petr.2.4_7</idno>
-            <idno type="ddb-hybrid">p.petr;2;4_7</idno>
+            <idno type="ddb-filename">p.petr.kleon.58</idno>
+            <idno type="ddb-hybrid">p.petr.kleon;;58</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap. 516</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="-0255-01-24" cert="low">
+                        <offset n="1" type="after">nach</offset>
+                24. Jan. 255 v.Chr. (?)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,46 +70,49 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Demetrios an Kleon</term>
-               <term>Bedrängnis</term>
-               <term>Arbeiter</term>
-               <term>Aufenthalt im Gefängnis</term>
-               <term>Bitte um Befreiung</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Demetrios an Kleon</term>
+               <term n="3">Bedrängnis</term>
+               <term n="4">Arbeiter</term>
+               <term n="5">Aufenthalt im Gefängnis</term>
+               <term n="6">Bitte um Befreiung</term>
+               <term n="7">Eingabe</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-01-02T12:55:10-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-01-02T12:28:20-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-01-02T04:56:32-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Text and metadata updated according to reedition as P.Petr. Kleon 58. Apparatus checked against P.Petr. II, P.Petr. III and BL I.</change>
          <change who="HGV" when="1998-03-02">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Gehört zum Kleon - Archiv. Datierung nach dem Rahmen des Kleon - Archivs.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">4</biblScope>
-                  <biblScope type="generic">(7)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">58</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">II, (1)</bibl>
+               <bibl type="illustration">P.Petr. II, Taf. II (1)</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 G (2)</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 516 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. III 42 G (2)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Lond. III 516 descr.</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Petr. II 4 (7)</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -111,5 +123,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

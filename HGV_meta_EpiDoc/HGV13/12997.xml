@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12997">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Receipt for Poll - tax</title>
+            <title>Poll tax receipt</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">12997</idno>
             <idno type="TM">12997</idno>
             <idno type="ddb-perseus-style">0198;2;361</idno>
-            <idno type="ddb-filename">p.ryl.2.361</idno>
-            <idno type="ddb-hybrid">p.ryl;2;361</idno>
+            <idno type="ddb-filename">cde.95.300_3</idno>
+            <idno type="ddb-hybrid">cde;95;300_3</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Manchester</settlement>
                   </placeName>
+                  <collection>John Rylands Library</collection>
+                  <idno type="invNo">P.Ryl. II 361</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,23 +34,34 @@
                <history>
                   <origin>
                      <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
-                     <origDate when="0162">162</origDate>
+                     <origDate when="0162-08-23">23. Aug. 162</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/327 https://pleiades.stoa.org/places/736948">Ptolemais Euergetis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient"/>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/95921"/>
+                  <biblScope type="pp">300</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,33 +76,54 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung (Steuer)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer (Kopfsteuer)</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2021-12-28T07:35:49-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-12-25T14:10:33-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Add other publication info.</change>
+         <change when="2021-12-24T14:36:28-05:00"
+                 who="http://papyri.info/editor/users/williamsieving">Submit - Updated metadata, added transcription and translation from CdE 95 (2020).</change>
          <change who="HGV" when="1994-11-28">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">361</biblScope>
+                  <title level="s" type="abbreviated">CdE</title>
+                  <biblScope n="1" type="volume">95</biblScope>
+                  <biblScope n="2" type="fascicle">(2020)</biblScope>
+                  <biblScope n="3" type="pages">S. 300</biblScope>
+                  <biblScope n="4" type="number">Nr. 3</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          <bibl type="illustration">S. 306</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/view/search?q=metadata_schema=12997"/>
+               </figure>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Ryl. II 361</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

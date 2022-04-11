@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18751">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittierung des Kaufpreises für eine aufgelassene Kultstätte</title>
@@ -9,7 +9,6 @@
          <publicationStmt>
             <idno type="filename">18751</idno>
             <idno type="TM">18751</idno>
-            <idno type="ddb-perseus-style">0240;20;143</idno>
             <idno type="ddb-filename">p.hoogendijk.37</idno>
             <idno type="ddb-hybrid">p.hoogendijk;;37</idno>
          </publicationStmt>
@@ -33,13 +32,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolites, Ägypten</origPlace>
-                     <origDate when="0435" precision="medium">ca. 435</origDate>
+                     <origPlace>Hermopolis</origPlace>
+                     <origDate when="0430" precision="medium">ca. 430</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName n="1" type="ancient" subtype="nome">Hermopolites</placeName>
-                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   ref="http://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,9 +46,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>
-        This file encoded to comply with EpiDoc Guidelines and Schema version 8
-        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,9 +61,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Quittung</term>
-               <term n="2">Geld</term>
-               <term n="3">Kauf eines Tempels</term>
+               <term>Quittung</term>
+               <term>Geld</term>
+               <term>Kauf eines Tempels</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -80,13 +77,11 @@
          <change who="HGV" when="1994-12-05">Record created</change>
          <change who="HGV" when="2009-07-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2022-01-13">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL II 2, S. 165 und BL VI, S. 196.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
@@ -95,20 +90,17 @@
                </bibl>
             </listBibl>
          </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope>
-                  <biblScope type="pages">277</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration" n="1">SPP XX, S. 104 (Z. 1 - 2)</bibl>
-               <bibl type="illustration" n="2">S. 173</bibl>
+               <bibl type="illustration">SPP XX, S. 104 (Z. 1 - 2)</bibl>
+               <bibl type="illustration">S. 173</bibl>
             </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">SPP XX 143</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>
@@ -117,11 +109,6 @@
                </figure>
             </p>
          </div>
-         <div type="bibliography" subtype="otherPublications">
-            <listBibl>
-               <bibl type="publication" subtype="other">SPP XX 143</bibl>
-            </listBibl>
-         </div>
       </body>
-  </text>
+   </text>
 </TEI>
