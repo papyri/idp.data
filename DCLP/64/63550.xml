@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63550" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 63550</title>
@@ -14,7 +14,11 @@
             <idno type="filename">63550</idno>
             <idno type="dclp-hybrid">pgm.2;2;69</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +42,12 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
+                     <origPlace>Oxyrhynchos ?</origPlace>
+                     <origDate notBefore="0101" notAfter="0125" precision="low">Anfang II</origDate>
                   </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                     </p>
-                  </provenance>
-                  <provenance type="composed">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                  <provenance type="located">
+                     <p xml:id="geoCBJG19">
+                        <placeName type="ancient" cert="low">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -57,57 +56,64 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>magic</term>
-               <term type="culture">religion</term>
-               <term type="religion">Egyptian</term>
-               <term type="overview">Old Testament; victory spell?</term>
+               <term n="1" type="religion">Egyptian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">magic</term>
+               <term n="4" type="overview">Old Testament; victory spell?</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="edition" xml:space="preserve"/>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+    <lb n="1"/><app type="editorial"><lem>Φνουνεβεη<hi rend="supraline">β</hi></lem><rdg resp="Bonner">Φνουνεβεη <num value="2"><hi rend="supraline">β</hi></num></rdg></app> δός μοί σου τὴν ἰσχὺν ιω <app type="editorial"><lem><unclear>Α</unclear>βρ<unclear>α</unclear>σ<supplied reason="lost">α</supplied><unclear>ξ</unclear></lem><rdg resp="Bonner"><unclear>Α</unclear>βρ<unclear>α</unclear>σ<supplied reason="lost">αξ</supplied></rdg></app>
+
+    <lb n="2"/>δός μοί σου τὴν ἰς χύν· ἐγὼ γάρ εἰμι Αβρασαξ. λέγε <app type="editorial"><lem>δ<supplied reason="lost">ὶς</supplied></lem><rdg resp="Bonner"><num value="4"><hi rend="supraline">δ</hi></num></rdg><rdg resp="Preisendanz"><num value="7" rend="tick">ζ</num></rdg></app>
+
+    <lb n="3"/>κρατῶν τοὺς δύο <app type="editorial"><lem>ἀντίχειρας</lem><rdg resp="Preisendanz">ἀντίχειράς σο<supplied reason="lost">υ</supplied></rdg></app>.
+<milestone rend="paragraphos" unit="undefined"/>
+    <lb n="4"/><del rend="erasure"><gap reason="illegible" quantity="9" unit="character"/> <unclear>σ</unclear></del>
+
+    <lb n="4"/><gap reason="lost" extent="unknown" unit="line"/> 
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="translation">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="translation">
                   <title level="m" type="main">The Greek Magical Papyri in Translation, Including the Demotic Spells. Second Edition.</title>
-                  <author n="1">
-                     <forename>Hans Dieter</forename>
-                     <surname>Betz</surname>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/12669"/>
-                  <biblScope unit="page" from="297">297</biblScope>
+                  <biblScope n="1" unit="page" from="297">297</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="principal">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="2" type="reference" subtype="principal">
                   <title level="m" type="main">Papyri Graecae Magicae. Die griechischen Zauberpapyri. II. Zweite verbesserte Auflage mit Ergänzungen von Karl Preisendanz und Ernst Heitsch. Durchgesehen und herausgegeben von Albert Henrichs. (Sammlung wissenschaftlicher Kommentare.)</title>
-                  <author n="1">
-                     <forename>Karl</forename>
-                     <surname>Preisendanz</surname>
-                  </author>
-                  <editor n="1">
-                     <forename>Albert</forename>
-                     <surname>Henrichs</surname>
-                  </editor>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/8361"/>
-                  <biblScope unit="number">69</biblScope>
+                  <biblScope n="1" unit="number">69</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
