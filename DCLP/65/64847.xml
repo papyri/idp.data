@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64847" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 64847</title>
@@ -14,7 +14,11 @@
             <idno type="filename">64847</idno>
             <idno type="dclp-hybrid">tm;;64847</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -60,14 +64,14 @@
                                    xml:id="GR10799.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21232_R_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21232_R.jpg"/>
                         </custEvent>
                         <custEvent type="imaged"
                                    corresp="#FR10798"
                                    xml:id="GR10798.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21232_V_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21232_V.jpg"/>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -84,45 +88,73 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>theology</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">christian</term>
-               <term type="overview">theologic text on trinity</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose</term>
+               <term n="5">theology</term>
+               <term n="6" type="overview">theologic text on trinity</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+
+<div n="r" type="textpart">
+<ab>
+<lb n="1"/><space extent="unknown" unit="line"/>
+<lb n="1"/>ερεσις αρχε<unclear>ι</unclear> την τρ<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>να τα<add place="above"><unclear>ε</unclear></add>· αρια<unclear>τ</unclear>ικ<unclear>ο</unclear>ς κα.<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>ομοτοξον <unclear>αγια</unclear>ν τρι<unclear>α</unclear><supplied reason="lost">δα<gap reason="illegible" extent="unknown" unit="character"/></supplied>
+<lb n="4"/>ειχει ον .<gap reason="lost" quantity="3" unit="character"/>οθις καρ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>πο<unclear>σ</unclear>σας απ<unclear>ο</unclear><supplied reason="lost">.</supplied><unclear>η</unclear>τος οτη χ.<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/>κυσεν: στ<unclear>αυ</unclear>ρο<unclear>τ</unclear>ις και<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/>τει υμες<gap reason="illegible" quantity="2" unit="character"/>τη <unclear>ο</unclear>υ τις μα<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>ενετειλ<supplied reason="lost">α</supplied><unclear>τ</unclear>ω· βαπτισε <unclear>π</unclear><supplied reason="lost">αντα τα ε</supplied>
+<lb n="9" break="no"/>θνη εις το <supplied reason="lost">τ</supplied><unclear>ο</unclear>υ πατρος o<unclear>νο</unclear>μα<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>και του υιου και του αγιου πν<unclear>ε</unclear><supplied reason="lost">υ</supplied>
+<lb n="11" break="no"/><unclear>μ</unclear>ατο<unclear>ς</unclear> του προς πασιν <g type="cross"/>
+</ab>
+</div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/45719"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="a" type="main">Mithratates' March from Pergamum to Alexandria in 48 B.C.</title>
-                  <author n="1">
-                     <surname>Sijpesteijn</surname>
-                     <forename>P.J.</forename>
-                  </author>
-                  <date>1965</date>
-                  <!-- ignore - stop -->
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope unit="number">136</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8748"/>
+                  <biblScope n="1" unit="number">7</biblScope>
+                  <biblScope n="2" unit="page">124</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">BKT 9, pl.60</bibl>
                <bibl type="online">
-                  <ptr target="http://berlpap.smb.museum/04428"/>
+                  <ptr target="https://berlpap.smb.museum/04428/"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
