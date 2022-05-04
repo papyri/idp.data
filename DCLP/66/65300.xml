@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65300" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 65300</title>
+            <title>Prayer to Virgin Mary</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">65300</idno>
             <idno type="dclp-hybrid">tm;;65300</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>paper</material>
+                           <dimensions>
+                              <width unit="cm">16.3 cm</width>
+                              <height unit="cm">5.8 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,15 +46,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -60,14 +68,14 @@
                                    xml:id="GR10882.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21233_S1_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21233_R.jpg"/>
                         </custEvent>
                         <custEvent type="imaged"
                                    corresp="#FR10881"
                                    xml:id="GR10881.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21233_S2_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21233_V.jpg"/>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -84,43 +92,96 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">prayer to Mary</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2022-05-02T03:19:40-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-05-02T03:19:40-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2020-06-12T15:40:57-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Add biblio 14433 # 137 as principal edition; there is also printed plate (#14) in APF 24/25 (1976); change biblio 45719 to 51729 and make ‘previous’ edition; Update title to “Prayer to the Virgin Mary”; update Berlin image link (https://berlpap.smb.museum/04429/); add dimension 5.8 cm (h) x 16.3 (w). Text: remove recto/verso division; line 1 is .1[.1].1; modern diacriticals need to be added and scribal ones encoded; lost.?lin at lines 1 and 7</change>
+          <change when="2020-06-12T15:40:57-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Add biblio 14433 # 137 as principal edition; there is also printed plate (#14) in APF 24/25 (1976); change biblio 45719 to 51729 and make ‘previous’ edition; Update title to “Prayer to the Virgin Mary”; update Berlin image link (https://berlpap.smb.museum/04429/); add dimension 5.8 cm (h) x 16.3 (w). Text: remove recto/verso division; line 1 is .1[.1].1; modern diacriticals need to be added and scribal ones encoded; lost.?lin at lines 1 and 7</change>
+          <change when="2020-06-12T08:04:04-04:00"
+                 who="http://papyri.info/editor/users/JohannesNussbaum">Submit - Text entered as part of the Heidelberg Digital Papyrology Webinar summer 2020.&#xD;
+&#xD;
+Questions:&#xD;
+ - If verso is blank, do I need a &lt;D=.r ?&#xD;
+ - The edition is diplomatic, but adds an acute on θεο͂τοκε (line 3). I ignored it.&#xD;
+</change>
+          <change when="2020-06-12T08:04:04-04:00"
+                 who="http://papyri.info/editor/users/JohannesNussbaum">Submit - Text entered as part of the Heidelberg Digital Papyrology Webinar summer 2020.&#xD;
+&#xD;
+Questions:&#xD;
+ - If verso is blank, do I need a &lt;D=.r ?&#xD;
+ - The edition is diplomatic, but adds an acute on θεο͂τοκε (line 3). I ignored it.&#xD;
+</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <choice><reg>δέσποινα</reg><orig>δέσπινα</orig></choice><g type="high-punctus"/> παναγία<g type="high-punctus"/>
+<lb n="3"/>θε<hi rend="circumflex">ο</hi>τόκε<g type="middot"/> <choice><reg>σῶζε</reg><orig>σῶσε</orig></choice> τὴν <choice><reg>σὴν</reg><orig>συν</orig></choice> <choice><reg>ποίμνην</reg><orig>πημνην</orig></choice><g type="dipunct"/><g rend="extension" type="filler"/>
+<lb n="4"/><hi rend="asper">Ἁ</hi>γ<hi rend="acute">ί</hi>αν ἁγιάσματος<g type="middot"/> δεύτερον τῶν
+<lb n="5"/><hi rend="asper">ἁ</hi>γ<hi rend="acute">ί</hi>ων σου <choice><reg>σκηνὴ</reg><orig>σκυνη</orig></choice><g type="middot"/> χορήγησον <choice><reg>τὸν</reg><orig>τῶ</orig></choice> <choice><reg>ἁγι<lb n="6" break="no"/>ασμὸν</reg><orig>ἁγι
+<lb n="6" break="no"/>ασμοῦ</orig></choice><g type="middot"/> πάντων τῶν <gap reason="illegible" quantity="5" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/>Ν<hi rend="acute">ύ</hi>μφην σο<unclear>υ</unclear> <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab>
+
+</div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb4" xml:space="preserve">
+            <ref>3</ref>
+            <p>At the end of the line, there is a colon followed by a sign similar to a capital letter L turned 90 degrees to the left.</p>
+          </item>
+               <item corresp="#div1-lb8" xml:space="preserve">
+            <ref>7</ref>
+            <p>The acute on the Y consists of two parallel strokes.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/45719"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="a" type="main">Mithratates' March from Pergamum to Alexandria in 48 B.C.</title>
-                  <author n="1">
-                     <surname>Sijpesteijn</surname>
-                     <forename>P.J.</forename>
-                  </author>
-                  <date>1965</date>
-                  <!-- ignore - stop -->
+               <bibl n="1" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/51729"/>
+                  <biblScope n="1" unit="number">8</biblScope>
+                  <biblScope n="2" unit="page" from="126" to="127">126-127</biblScope>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope unit="number">137</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">BKT 9, pl.61</bibl>
+               <bibl type="printed" n="1">BKT 9, pl.61</bibl>
+               <bibl type="printed" n="2">APF 24/25 (1976), pl.14</bibl>
                <bibl type="online">
-                  <ptr target="http://berlpap.smb.museum/04429"/>
+                  <ptr target="https://berlpap.smb.museum/04429/"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
