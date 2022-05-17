@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7647a">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Correspondence of Kleon, Commissioner of Public Works</title>
+            <title>Letter by the foremen of the stonecutters to Kleon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7647</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 530</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0256-07-11">
-                        <certainty locus="value" match="../year-from-date(@when)"/>11. Juli 256 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0255-07-11">
-                        <certainty locus="value" match="../year-from-date(@when)"/>11. Juli 255 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Schreibort: Arsinoites; Zielort: Arsinoites; Fundort: Gurob</origPlace>
+                     <origDate when="-0255-07-12">12. Juli 255 v.Chr.</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="sent">
+                     <p xml:id="geoGADF60">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="found">
+                     <p xml:id="geoJGC9FI">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +61,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,12 +78,12 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>Arbeiter (Steinbruch) an Kleon</term>
-               <term>Sendung</term>
-               <term>Geräte</term>
-               <term>Nahrung</term>
-               <term>sonst tritt vielleicht Arbeitsverweigerung ein</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">Arbeiter (Steinbruch) an Kleon</term>
+               <term n="3">Sendung</term>
+               <term n="4">Geräte</term>
+               <term n="5">Nahrung</term>
+               <term n="6">sonst tritt vielleicht Arbeitsverweigerung ein</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,8 +92,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 11. Juli 255 v. Chr. Datierung nach dem makedonischen Regierungsjahr. Gehört zum Kleon - Archiv.</p>
@@ -87,10 +101,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">13</biblScope>
-                  <biblScope type="generic">(1)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">55</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -109,16 +121,21 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 C (12)</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 530 descr.</bibl>
-               <bibl type="publication" subtype="other">C.Ptol.Sklav. II 218</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. II 13 (1)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. III 42 C (12)</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Lond. III 530 descr.</bibl>
+               <bibl type="publication" subtype="other" n="4">C.Ptol.Sklav. II 218</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">Lewis, Greeks in Ptolemaic Egypt (1986), S. 43-44</bibl>
+               <bibl type="translations" n="1">Lewis, Greeks in Ptolemaic Egypt (1986), S. 43-44</bibl>
+               <bibl type="translations" n="2">Bagnall - Derow, The Hellenistic Period: Historical Sources in Translation, S. 169</bibl>
+            </listBibl>
+            <listBibl xml:lang="fr">
+               <bibl type="translations">Bouché-Leclercq, REG 21 (1908), S. 138</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -129,5 +146,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
