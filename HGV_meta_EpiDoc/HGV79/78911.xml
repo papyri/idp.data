@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv78911">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Rest eines Berichts über die Amtsführung von C. Rabirius Postumus als Dioiketes</title>
@@ -31,28 +31,28 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt (Arsinoites oder Oxyrhynchites?)</origPlace>
-                     <origDate notBefore="-0075" notAfter="0075" precision="low">Mitte I v.Chr. - Mitte I n.Chr.</origDate>
+                     <origPlace>oder Oxyrhynchites) ?; Fundort: unbekannt</origPlace>
+                     <origDate notBefore="-0075" notAfter="0075" precision="low">Mitte I v.Chr. - Mitte I</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2"/>
-                     <p xml:id="geog_2" exclude="#geog_1">
+                  <provenance n="1" type="located">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2"/>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
                         <placeName type="ancient" cert="low">Oxyrhynchites)</placeName>
                      </p>
                   </provenance>
-                  <provenance type="found">
+                  <provenance n="2" type="found">
                      <p>
-                        <placeName>unbekannt</placeName>
+                        <placeName type="ancient">unbekannt</placeName>
                      </p>
                   </provenance>
-                  
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,10 +67,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>C. Rabirius Postumus</term>
-               <term>Dioiketes</term>
-               <term>Amtsmißbrauch</term>
-               <term>Korruption</term>
+               <term n="1">C. Rabirius Postumus</term>
+               <term n="2">Dioiketes</term>
+               <term n="3">Amtsmißbrauch</term>
+               <term n="4">Korruption</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -79,8 +79,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Unsicher, ob dokumentarisch oder literarisch. Rückseite: SB XXII 15204. Vgl. JJP 40, 2010, S. 205-217.</p>
@@ -89,8 +89,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">22</biblScope>
-                  <biblScope type="numbers">15203</biblScope>
+                  <biblScope n="1" type="volume">22</biblScope>
+                  <biblScope n="2" type="numbers">15203</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -122,6 +122,11 @@
                <bibl type="translations">Bagnall &amp; Derow, The Hellenistic Period (2004), Nr. 62</bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">JJP 40 (2010) 208</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
