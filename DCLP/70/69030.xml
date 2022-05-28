@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m69030" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Sb. 28 17136</title>
+            <title>Medical prescription</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,13 +13,19 @@
             <idno type="LDAB">10301</idno>
             <idno type="filename">69030</idno>
             <idno type="dclp-hybrid">sb;28;17136</idno>
+            <idno type="MP3">2410.13</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
+                  <collection type="ancient" ref="https://www.trismegistos.org/archive/434">Doctor’s library</collection>
                   <idno type="invNo">Paris, Académie des Inscriptions et des Belles Lettres pap. 6 d</idno>
                </msIdentifier>
                <physDesc>
@@ -27,10 +33,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">5.8 cm</width>
+                              <height unit="cm">3.3 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout columns="1" writtenLines="3">
                            <p>papyrus sheet (pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -38,18 +48,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Lykopolites (Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0400" notAfter="0499">400 - 499</origDate>
+                     <origPlace>Fundort: Lykopolites, Egypt; Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0401" notAfter="0500" precision="low">V</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/3027">Lykopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -60,48 +71,82 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>medicine</term>
-               <term type="culture">science</term>
-               <term type="overview">medical prescription</term>
+               <term n="1" type="culture">science</term>
+               <term n="2" type="culture">medicine</term>
+               <term n="3">prescription</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <head xml:lang="en"/>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Medical recipe. Fragment (5.8 x 3.3. cm) of a papyrus sheet broken at the left, bottom and right sides. On the <emph rend="italics">verso</emph>, the scrap preserves very scanty remains of three lines of writing (<emph rend="italics">recto</emph> is blank). The brevity and the lacunosity of this fragment make the positive determination of its meaning extremely difficult, but the mention of a dose expressed in ounces (l. 2) and the sequence -ροκλ- ([ἐντε]ροκήλ[.?]; [ὑδ]ροκήλ[.?], l. 3, see below) suggest the papyrus should contain at least one recipe. The space intentionally left blank after l. 3 may indicate the end of the sheet, but it may also be used to separate two or more receipts. The text was copied in a cursive hand assignable to the 5th cent. AD.</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Medical recipe. Fragment (5.8 x 3.3. cm) of a papyrus sheet broken at the left, bottom and right sides. The scrap preserves very scanty remains of three lines of writing on the verso (recto is blank). The brevity and the lacunosity of this fragment make the positive determination of its meaning extremely difficult, but the mention of a dose expressed in ounces (l. 2) and the sequence -ροκηλ- possibly referring to diseases like e.g. ἐντεροκήλη or ὑδροκήλη (l. 3) suggest that the papyrus could have contained at least one medical recipe. The space intentionally left blank after l. 3 may indicate the end of the sheet, but it may have also been used to separate two or more recipes. The text was copied in a cursive hand assignable to the 5th cent. AD.</p>
+        <p>
+          <note type="footnote" xml:lang="en">This papyrus has been digitally edited by Luca Iori, with former contributions by Mara Conti and Valentina Riccò, as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous edition (J.-L. Fournet, P.TestiMed., pp. 177-9 = SB XXVIII 17136). Revised by Nicola Reggiani in the framework of the PRIN 2017 Project "Greek and Latin Literary Papyri from Graeco-Roman and Late Antique Fayum (4th BC – 7th AD): Texts, Contexts, Readers" funded by the Italian Ministry of Research (P.I. Prof. Lucio Del Corso, University of Cassino; Local Research Unit at the University of Parma, coordinator: Prof. Nicola Reggiani).</note>
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><num value="1">α̅</num><gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><expan>ο<ex>ὐ</ex>γ<ex>κία</ex></expan> <num value="1">α̅</num>
-<lb n="3" xml:id="lb4"/><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/>ροκηλ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ἐντε</supplied>ροκήλ<supplied reason="lost">-<gap reason="illegible" extent="unknown" unit="character"/></supplied></rdg><rdg><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ὑδ</supplied>ροκήλ<supplied reason="lost">-<gap reason="illegible" extent="unknown" unit="character"/></supplied></rdg></app>
-<lb n="4"/>vacat
+<lb n="1" xml:id="lb2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><app type="editorial"><lem resp="PN N. Reggiani from photo"><app type="alternative"><lem>α<gap reason="illegible" quantity="1" unit="character"/></lem><rdg><num value="1">α̅</num></rdg></app></lem><rdg><num value="1">α</num></rdg></app><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <expan>ο<ex>ὐ</ex>γ<ex>κία</ex></expan> <num value="1">α̅</num>
+<lb n="3" xml:id="lb4"/><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/>ροκηλ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἐντε</supplied>ροκήλ<gap reason="lost" extent="unknown" unit="character"/></rdg><rdg><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ὑδ</supplied>ροκήλ<gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="4"/><space extent="unknown" unit="character"/>
 <lb n="4"/><gap reason="lost" extent="unknown" unit="line"/>
 </ab>
 </div>
          <div type="commentary" subtype="linebyline">
             <list>
-               <item corresp="#lb4" xml:space="preserve"><ref>3</ref> <p>For the supplements [ἐντε]ροκήλ[-], [ὑδ]ροκήλ[-] see Gal. <emph rend="italics">Def.med.</emph> 423 (19, 447.9-10 K) and <listBibl><bibl><ref target="http://papyri.info/biblio/73110">Fournet 2004</ref></bibl></listBibl>, 178 </p></item>
+               <item corresp="#lb2" xml:space="preserve">
+            <ref>1</ref>
+            <p>α or α̅: the sign after α can be an overstroke but also part of a following character.</p>
+          </item>
+               <item corresp="#lb4" xml:space="preserve">
+            <ref>3</ref>
+            <p>
+              For these kinds of diseases (various types of tumours of the scrotum) cf. [Gal.]
+              <emph rend="italics">Introd.</emph>
+              XIV 788.7-10 K. τῶν δὲ περὶ ὄσχεον συνισταμένων ὄγκων εἴδη εἰσὶν ἑπτὰ, ὑδροκήλη, πωροκήλη, στεατοκήλη, σαρκοκήλη, ἐπιπλοκήλη, κιρσοκήλη, ἐντεροκήλη; [Gal.]
+              <emph rend="italics">Def.med.</emph>
+              XIX 447.8ff. K. ὄγκοι ἐν ὀσχέῳ ἐννέα συνίστανται ὑδροκήλη, ἐντεροκήλη, ὑδρεντεροκήλη, κιρσοκήλη, πωροκήλη, ἐπιπλοκήλη, ἐντεροεπιπλοκήλη, ἐντεροπωροκήλη, ὑδροκιρσοκήλη. ὑδροκήλη ἐστὶν ἀργοῦ ὑγροῦ σύστασις κατὰ μέρος τοῦ ὀσχέου. ἐντεροκήλη ἐστὶν ἐντέρου κατολίσθησις εἰς τὸ ὄσχεον κατὰ βραχὺ ἢ ἀθρόως. αἰτίαι δὲ ἐντεροκήλης ἡ προκαταρκτικὴ ἔντασις ἢ πληγὴ, συνεκτικὴ δὲ ἀπέκτασις ἢ ῥῆξις τοῦ περιτοναίου. ὑδρεντεροκήλη ἐστὶν ἐντέρου κατολίσθησις καὶ ἀργοῦ ὑγροῦ συλλογὴ κατὰ τὸν ὄσχεον. κιρσοκήλη ἐστὶν ἀνευρυσμὸς καὶ μεγεθοποίησίς τινων ἢ πάντων τῶν τρεφόντων τὸν δίδυμον ἀγγείων. ὑδροκιρσοκήλη ἐστὶν ἀνευρυσμὸς τῶν τρεφόντων τὸν δίδυμον ἀγγείων καὶ ἀργοῦ ὑγροῦ συλλογὴ κατά τι μέρος τοῦ ὀσχέου. πωροκήλη ἐστὶ πώρων σύστασις κατά τι μέρος τοῦ ὀσχέου. ἐπιπλοκήλη ἐστὶν ὀλίσθησις ἐπίπλου κατὰ τὸ μέρος τοῦ ὀσχέου. ἐντεροεπιπλοκήλη ἐστὶν ὀλίσθησις ἐντέρου τε καὶ ἐπίπλου κατὰ τὸ μέρος τοῦ ὀσχέου. κήλη ἐστὶν ὄγκος περιεκτικός τινος τῶν προειρημένων· πᾶς γὰρ ὄγκος ἐν ὀσχέῳ κήλη λέγεται.
+            </p>
+          </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope unit="volume">28</biblScope>
-                  <biblScope unit="number">17136</biblScope>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95274"/>
+                  <biblScope n="1" unit="volume">28</biblScope>
+                  <biblScope n="2" unit="number">17136</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/17911"/>
+                  <biblScope n="1" unit="page" from="177" to="179">177-179</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
@@ -111,5 +156,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
