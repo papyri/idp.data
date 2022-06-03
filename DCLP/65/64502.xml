@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64502" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>O. Bodl. 2 2183</title>
+            <title>Medical prescription</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5728</idno>
             <idno type="filename">64502</idno>
             <idno type="dclp-hybrid">o.bodl;2;2183</idno>
+            <idno type="MP3">2426</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -30,33 +35,35 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>pottery sheet (columns: 0, pagination: 0)</p>
+                        <layout columns="1" writtenLines="10">
+                           <p>pottery sheet</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Dios Polis (Peri Thebas, Egypt); written: Dios Polis (Peri Thebas, Egypt)</origPlace>
-                     <origDate notBefore="0300" notAfter="0399">300 - 399</origDate>
+                     <origPlace>Fundort: Dios Polis (Peri Thebas, Egypt); Schreibort: Dios Polis (Peri Thebas, Egypt)</origPlace>
+                     <origDate notBefore="0301" notAfter="0400" precision="low">IV</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/1690">Peri Thebas</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/576">Dios Polis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/576">Dios Polis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/1690">Peri Thebas</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/576">Dios Polis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/576">Dios Polis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -65,26 +72,41 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>medicine</term>
-               <term type="culture">science</term>
-               <term type="overview">medical prescription</term>
+               <term n="1" type="culture">science</term>
+               <term n="2" type="culture">medicine</term>
+               <term n="3">prescriptions</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Medical prescriptions. The recto seems to preserve parts of three recipes; the first two remedies are potions against internal corrosive processes, probably inflammatory diseases of the digestive tract (recipe 1; ll. 1-3) and catarrh or haemorrhage (recipe 2; ll. 4-6). Only few unreadable traces of the third remedy survive (ll. 7 ff.). It is not possible to asses the exact number of letters lost at the beginning of each line. The verso is blank.</p><p><note type="footnote" xml:lang="en">This papyrus has been digitally edited by Luca Iori, with former contributions by ANgelica Brunazzi, as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous editions (ed.pr. = C. Préaux, O.Bodl. II 2183; ed.alt. = C. Préaux, CE 31, 1956, pp. 141-2).</note></p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          Medical prescriptions O.Bodl. II 2183).
+          <emph rend="italics">Ostrakon</emph>
+          belonging to the Theban medical dossier (
+          <ref target="http://papyri.info/biblio/41878">Préaux 1956</ref>
+          . The recto preserves parts of three recipes; the first two remedies are potions against internal corrosive processes, probably inflammatory diseases of the digestive tract (recipe 1; ll. 1-3) and catarrh or haemorrhage (recipe 2; ll. 4-6). Only few unreadable traces of the third remedy survive (ll. 7 ff.). It is not possible to asses the exact number of letters lost at the beginning of each line. The verso is blank.
+        </p>
+        <p>
+          <note type="footnote" xml:lang="en">This papyrus has been digitally edited by Luca Iori, with former contributions by ANgelica Brunazzi, as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous editions (ed.pr. = C. Préaux, O.Bodl. II 2183; ed.alt. = C. Préaux, CE 31, 1956, pp. 141-2). Revised by Nicola Reggiani in the framework of the PRIN 2017 Project "Greek and Latin Literary Papyri from Graeco-Roman and Late Antique Fayum (4th BC – 7th AD): Texts, Contexts, Readers" funded by the Italian Ministry of Research (P.I. Prof. Lucio Del Corso, University of Cassino; Local Research Unit at the University of Parma, coordinator: Prof. Nicola Reggiani).</note>
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
@@ -101,16 +123,34 @@
       </div>
          <div type="commentary" subtype="linebyline">
             <list>
-               <item corresp="#lb4" xml:space="preserve"><ref>4</ref> <p>Title of a new remedy.</p></item>
-               <item corresp="#lb7" xml:space="preserve"><ref>7</ref> <p>A new remedy possibly begins.</p></item>
+               <item corresp="#lb4" xml:space="preserve">
+            <ref>4</ref>
+            <p>Title of a new remedy.</p>
+          </item>
+               <item corresp="#lb7" xml:space="preserve">
+            <ref>7</ref>
+            <p>A new remedy possibly begins.</p>
+          </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="reference" subtype="previous">
                   <title level="s" type="abbreviated">O. Bodl.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <biblScope unit="number">2183</biblScope>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5277"/>
+                  <biblScope n="1" unit="volume">2</biblScope>
+                  <biblScope n="2" unit="number">2183</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/41878"/>
+                  <biblScope n="1" unit="number">2183</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
@@ -120,5 +160,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
