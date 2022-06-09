@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv87983">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Quittung über Steuerzuschlag (προσθήκη)</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">London, UC Inv. Nr. 32045</idno>
+                  <placeName>
+                     <settlement>London</settlement>
+                  </placeName>
+                  <collection>University College</collection>
+                  <idno type="invNo">Inv. Nr. 32045</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,14 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ta Memnoneia (Theben)</origPlace>
-                     <origDate when="0723-02-19">19. Febr. 723</origDate>
+                     <origPlace>Ta Memnoneia (Theben) (Ägypten)</origPlace>
+                     <origDate when="0725-02-14">14. Febr. 725</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/786067 https://www.trismegistos.org/place/1341">Ta Memnoneia (Theben)</placeName>
-                        <placeName type="ancient" subtype="region" key="Aegyptus">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/786067 http://www.trismegistos.org/place/1341">Ta Memnoneia (Theben)</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,18 +66,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuer (prostheke)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer (prostheke)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-06-09T09:57:17-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-06-09T08:23:49-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-02-15T05:29:35-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Korrektur der Datierung nach A. Delattre – J.-L. Fournet, APF 59 (2013) 167.</change>
          <change who="HGV" when="2012-10-29">Record created</change>
          <change who="HGV" when="2013-03-28">Record last modified</change>
          <change when="2013-04-05" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Dossier des Steuereinnehmers Psyros. Zu Z. 3 und zur Datierung vgl. APF 59, 2013, S. 167.</p>
@@ -98,10 +110,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://petriecat.museums.ucl.ac.uk/dispatcher.aspx?action=search&amp;database=ChoiceUCLPC&amp;search=accession_number=%20%27UC32045%27"/>
+                  <graphic url="https://www.ucl.ac.uk/museums-static/ave/detail/details/index_no_login.php?objectid=UC__32045__"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
