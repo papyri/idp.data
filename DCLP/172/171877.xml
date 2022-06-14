@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m171877" xml:lang="en">
-   <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m171877">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 78 5130</title>
+            <title>Alcidamas; laus paupertatis (enkomion penias), with colophon</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">171877</idno>
             <idno type="filename">171877</idno>
             <idno type="dclp-hybrid">p.oxy;78;5130</idno>
+            <idno type="MP3">00077.110</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">11.5 cm</width>
+                              <height unit="cm">18 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -43,20 +52,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Oxyrhynchos (Oxyrhynchites, Egypt)</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Oxyrhynchos (Oxyrhynchites, Egypt)</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -65,53 +79,183 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Alcidamas; laus paupertatis (enkomion penias), with colophon</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">oratory</term>
             </keywords>
          </textClass>
          <langUsage>
-            <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2022-06-06T20:31:26-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-06-06T20:15:18-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Superscript δε in ii.5; .1ος in ii.9; remove lunate sigmas throughout; check xml for lacunose dots in ii.13; dot second tau in ii.15; check apostrophe in ii.16; add word spaces in ii.19; fix word-wrap in ii.23-24; use lost.1lin in ii.25; fix fr. 6 superscript. Review meta before finalization.</change>
+         <change when="2022-05-06T06:48:33-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Originally submitted to litpap.info 2017.04.27 by Lucia Vannini. Submission has been transferred to papyri.info. Submission notes were: "Entered text and translation of POxy LXXVIII 5130 (From Alcidamas, "Praise of poverty)"&#xD;
+</change>
+          <change when="2022-06-06T20:31:25-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-06-06T20:15:18-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Superscript δε in ii.5; .1ος in ii.9; remove lunate sigmas throughout; check xml for lacunose dots in ii.13; dot second tau in ii.15; check apostrophe in ii.16; add word spaces in ii.19; fix word-wrap in ii.23-24; use lost.1lin in ii.25; fix fr. 6 superscript. Review meta before finalization.</change>
+          <change when="2022-05-06T06:48:33-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Originally submitted to litpap.info 2017.04.27 by Lucia Vannini. Submission has been transferred to papyri.info. Submission notes were: "Entered text and translation of POxy LXXVIII 5130 (From Alcidamas, "Praise of poverty)"&#xD;
+</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+
+<div n="r" type="textpart">
+
+<div n="1" subtype="fragment" type="textpart"><div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>η 
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ζ</unclear>η 
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><unclear>η</unclear><gap reason="illegible" quantity="1" unit="character"/>με<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>παρασκε<unclear>υ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>των με<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <add place="above">δε</add>τωνα
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear>δετων 
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ιαν <unclear>δε</unclear>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ουτον
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ος γ<unclear>ι</unclear>     
+<lb n="10"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear>ατων
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/>φθειρει   
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ω</unclear>σδου<unclear>κ</unclear>
+<lb n="13"/><unclear>α</unclear><gap reason="illegible" quantity="1" unit="character"/>ο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="illegible" quantity="2" unit="character"/><unclear>νμ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character"/><unclear>λ</unclear>α<unclear>ι</unclear><gap reason="illegible" quantity="2" unit="character"/>
+<lb n="14"/>ἐπαινεῖν τοὺς πλ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>ου μά
+<lb n="15" break="no"/>λιστα κα<unclear>τ</unclear>απεφρο<supplied reason="lost">ν</supplied>ηκότας
+<lb n="16"/>μὴ φρονεῖν δ’ ἐκ<unclear>ε</unclear><supplied reason="lost">ίν</supplied>οις ὅμοια.
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="17"/>ἐγὼ μὲν οὖν ἱκ<supplied reason="lost">αν</supplied>ῶς ἐβοή
+<lb n="18" break="no"/>θησα ταῖς ἀνθρωπείοις πλά
+<lb n="19" break="no"/>ναις· εἰ δέ τις <del rend="erasure">ἀπιστεῖ</del> δυσπεί
+<lb n="20" break="no"/>στως ἔχει, τὸν ἴσον χρόνον
+<lb n="21"/>τῶι λόγωι διατρίψας ὃν καὶ
+<lb n="22"/>τῆι συνηθείαι δεδούλευ
+<lb n="23" break="no"/><supplied reason="lost">κεν ο</supplied>ὕτω ποιείσθω τὴν κρί
+<lb n="24" break="no"/><supplied reason="lost">σιν.</supplied>
+<lb n="25"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="26"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>ἐ</unclear>κ τοῦ Ἀλκιδάμαντος
+<lb n="27"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>Π</unclear>ενίας Ἐγκωμίου
+</ab></div></div>
+
+<div n="2" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>ναλλι<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear>τοισ<hi rend="diaeresis">ι</hi><gap reason="illegible" quantity="1" unit="character"/><unclear>ρο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>τον πλουτο<gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear>αναιρω<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear>ενουν<gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>ν</unclear>α<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="3+4" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ρ<unclear>οπ</unclear>ων <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ο<unclear>δ</unclear>οκιμ<unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="1" unit="character"/><unclear>ιμ</unclear>ενε<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>αυξειδερ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>δε<unclear>κ</unclear><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="1" unit="character"/>τερ<gap reason="lost" extent="unknown" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"><certainty match=".." locus="name"/></gap><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="5" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>φικ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ε<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="6" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ν
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ις
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ιμ</unclear><add place="above">η</add>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="7" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α<unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>π<unclear>ω</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="8" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>θ<unclear>ο</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>ω<unclear>τ</unclear>ο<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="9" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ω</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">78</biblScope>
-                  <biblScope unit="number">5130</biblScope>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95258"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="number">5130</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0610">Alcidamas</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0610">Alcidamas</author>
+                  <title type="main"
+                         level="m"
+                         ref="http://www.trismegistos.org/authorwork/2160">Opus incertum</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 78, pl. 2</bibl>
+               <bibl type="online">
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0111/44f14102.dir/POxy.v0078.n5130.a.01.hires.jpg"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

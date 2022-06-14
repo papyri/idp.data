@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv36261">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Anfang einer Quittung</title>
+            <title>Another “Curious Prescript”</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">36261</idno>
             <idno type="TM">36261</idno>
             <idno type="ddb-perseus-style">0239;14;12098</idno>
-            <idno type="ddb-filename">sb.14.12098</idno>
-            <idno type="ddb-hybrid">sb;14;12098</idno>
+            <idno type="ddb-filename">basp.55.301</idno>
+            <idno type="ddb-hybrid">basp;55;301</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -31,23 +31,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kerkesucha (Arsinoites)</origPlace>
+                     <origPlace>Kerkesucha (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Kerkesucha</placeName>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1067 https://pleiades.stoa.org/places/741493">Kerkesucha</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96003"/>
+                  <biblScope type="pp">301</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,25 +74,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Land (?)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Land (?)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-06-01T08:42:00-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-06-01T07:31:48-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-02-28T16:05:50-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Submit - Updated meta and text following BASP 55 (2018) 301</change>
          <change who="HGV" when="1990-09-19">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">12098</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">55</biblScope>
+                  <biblScope n="2" type="fascicle">(2018)</biblScope>
+                  <biblScope n="3" type="pages">S. 301</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,6 +120,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB XIV 12098</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

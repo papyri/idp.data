@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60847" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60847</title>
+            <title>The first column of Iliad 3 on the back of two documents pasted together</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,20 +13,29 @@
             <idno type="LDAB">1975</idno>
             <idno type="filename">60847</idno>
             <idno type="dclp-hybrid">tm;;60847</idno>
+            <idno type="MP3">00680.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Ann Arbor, Michigan University, Library P. 1318</idno>
+                  <idno type="invNo">Ann Arbor, Michigan University, Library P. 1318 Vo</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">10.5 cm</width>
+                              <height unit="cm">13.5</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,16 +47,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt; erworben: Egypt - 1924</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
+                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="acquired" when="1924">
+                     <p xml:id="geoI8HGCB">
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
@@ -57,18 +71,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 03.1-25</term>
+               <term n="1" type="description">epic</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">poetry</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -77,42 +90,125 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2022-05-19T10:35:18-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-05-19T10:35:18-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-05-04T06:44:56-04:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Implement changes requested by Sampson and change the apostrophes. </change>
+          <change when="2022-05-04T06:44:56-04:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Implement changes requested by Sampson and change the apostrophes. </change>
+          <change when="2019-09-11T15:23:09-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Text-Meta - Some housekeeping needed: in l.2 --&gt; τ’ ἴ]σαν AND --&gt; ὄρνειθες; in l.5 --&gt; &lt;:ἀπ’|ed|ἐπ’=mss:&gt;; in l.8 ἴσας is the ed.pr. supplement; in l.11 --&gt; φ]ίλην; in l.11 the comment about mss. should be expanded in commentary (i.e., ἀμείνων Ve1 and sch. A, as a variant; ἀμείνω cet.); in l.12 --&gt; τόσσον τίς; in l.12 I don't see the superscript epsilon on the image (delete the markup?); in l.13 --&gt; ὄ]χεσφι AND --&gt;κονείσαλος AND --&gt; ὤρνυτ*apostrophe*' (variants from ed.pr. apparatus should go in the commentary); in l.21 --&gt; ἀρη ΐ(¨)φιλος; in l.22 --&gt; βιβών[τα]. Metadata: add pages (71-72) to biblio 55262; add passage range (3.1-25) to Author &amp; Work; add lines (25) to Physical description. Acquired January 1924 with a Nahman lot. Note for finalization: this is michigan.apis.1386.</change>
+          <change when="2019-09-11T15:23:09-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Text-Meta - Some housekeeping needed: in l.2 --&gt; τ’ ἴ]σαν AND --&gt; ὄρνειθες; in l.5 --&gt; &lt;:ἀπ’|ed|ἐπ’=mss:&gt;; in l.8 ἴσας is the ed.pr. supplement; in l.11 --&gt; φ]ίλην; in l.11 the comment about mss. should be expanded in commentary (i.e., ἀμείνων Ve1 and sch. A, as a variant; ἀμείνω cet.); in l.12 --&gt; τόσσον τίς; in l.12 I don't see the superscript epsilon on the image (delete the markup?); in l.13 --&gt; ὄ]χεσφι AND --&gt;κονείσαλος AND --&gt; ὤρνυτ*apostrophe*' (variants from ed.pr. apparatus should go in the commentary); in l.21 --&gt; ἀρη ΐ(¨)φιλος; in l.22 --&gt; βιβών[τα]. Metadata: add pages (71-72) to biblio 55262; add passage range (3.1-25) to Author &amp; Work; add lines (25) to Physical description. Acquired January 1924 with a Nahman lot. Note for finalization: this is michigan.apis.1386.</change>
+          <change when="2019-06-18T09:48:23-04:00"
+                 who="http://papyri.info/editor/users/SophiaElzie">Submit - Entered text from ZPE 46 no. 8</change>
+          <change when="2019-06-18T09:48:23-04:00"
+                 who="http://papyri.info/editor/users/SophiaElzie">Submit - Entered text from ZPE 46 no. 8</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+
+<lb n="1"/><supplied reason="lost">αὐτὰρ</supplied> <unclear>ἐπεὶ</unclear> <unclear>κ</unclear><supplied reason="lost">όσμηθεν ἅμʼ ἡγ</supplied>εμόνεσσιν ἕκαστοι,<g type="high-punctus"/>
+
+<lb n="2"/><supplied reason="lost">Τρῶες μὲν κλα</supplied>γγῇ <add place="above">τʼ</add> ἐν<supplied reason="lost">οπῇ τʼ ἴ</supplied>σαν <choice><reg>ὄρνιθες</reg><orig>ὄρνειθες</orig></choice> ὣς
+
+<lb n="3"/><supplied reason="lost">ἠΰτε περ κλαγγ</supplied>ὴ γερά<unclear>νων</unclear> <supplied reason="lost">π</supplied>έλει οὐρανόθι πρό·
+
+<lb n="4"/><supplied reason="lost">αἵ τʼ ἐπεὶ οὖν χει</supplied>μῶνα φύγον κα<supplied reason="lost">ὶ</supplied> ἀθέσφατον ὄμβρον
+
+<lb n="5"/><supplied reason="lost">κλαγγῇ ταί γε π</supplied>έτονται <app type="editorial"><lem>ἀπʼ</lem><rdg resp="mss">επʼ</rdg></app> Ὠκεανοῖο ῥοάων<g type="high-punctus"/>
+
+<lb n="6"/><supplied reason="lost">ἀνδράσι Πυγμαί</supplied>οισι φόνον καὶ κῆρα <subst><add place="inline">φέρουσαι</add><del rend="corrected">φέρουσα</del></subst>· <g type="low-punctus"/>
+
+<lb n="7"/><supplied reason="lost">ἠέριαι δʼ ἄρα ταί</supplied> γε κακὴν ἔριδα προφέρονται. <g type="high-punctus"/>
+
+<lb n="8"/><supplied reason="lost">οἳ δʼ ἄρʼ ἴσαν σιγῇ</supplied> μένεα πνείοντες Ἀχαιοὶ
+
+<lb n="9"/><supplied reason="lost">ἐν θυμῷ μεμαῶ</supplied>τες ἀλεξέμεν ἀλλήλοισιν.<g type="highdot"/>
+
+<lb n="10"/><supplied reason="lost">εὖτʼ ὄρεος κορυφ</supplied>ῇσι Νότος κατέχευεν ὀμίχλην
+
+<lb n="11"/><supplied reason="lost">ποιμέσιν οὔ τι φ</supplied>ίλην,<g type="high-punctus"/> κλέπτῃ δέ τε νυκτὸς ἀμείνων,<g type="high-punctus"/>
+
+<lb n="12"/><supplied reason="lost">τόσσον τίς τʼ ἐπι</supplied>λεύσσει ὅσον τʼ ἐπὶ λᾶαν <hi rend="diaeresis">ἵ</hi>ησιν·<g type="high-punctus"/>
+
+<lb n="13"/><supplied reason="lost">ὣς ἄρα τῶν</supplied> <app type="editorial"><lem><supplied reason="lost">ὑπʼ ὄ</supplied>χεσφι</lem><rdg resp="mss">ὑπὸ ποσσὶ</rdg></app> <choice><reg>κονίσαλος</reg><orig>κονείσαλος</orig></choice> ὤρνυτʼ<g type="apostrophe"/> ἀελλὴς
+
+<lb n="14"/><supplied reason="lost">ἐρχομένων·</supplied> μάλα δʼ ὦκα διέπρησσον πεδίοιο.<g type="high-punctus"/>
+
+<lb n="15"/><supplied reason="lost">οἳ δʼ ὅτε δὴ σχεδ</supplied>ὸν ἦσαν ἐπʼ ἀλλήλοισιν <hi rend="diaeresis">ἰ</hi>όντες, <g type="high-punctus"/>
+
+<lb n="16"/><supplied reason="lost">Τρωσὶν μὲν πρ</supplied>ομάχιζεν Ἀλέξαν<supplied reason="lost">δ</supplied>ρος θεοειδὴς
+
+<lb n="17"/><supplied reason="lost">παρδαλέην ὤμ</supplied>οισιν ἔχων καὶ καμπύλα τόξα
+
+<lb n="18"/><supplied reason="lost">καὶ ξίφος· αὐτὰ</supplied>ρ δοῦρε δύω<surplus>ι</surplus> κεκο<supplied reason="lost">ρ</supplied>υθμένα χαλκῶι<g type="high-punctus"/>
+
+<lb n="19"/><supplied reason="lost">πάλλων Ἀργείων</supplied> προκαλίζετο πά<supplied reason="lost">ν</supplied>τας ἀρίστους
+
+<lb n="20"/><supplied reason="lost">ἀντίβιον μαχέσ</supplied>ασθαι ἐν αἰνῇ δη<supplied reason="lost">ϊο</supplied>τῆτι.<g type="high-punctus"/>
+
+<lb n="21"/><supplied reason="lost">τὸν δʼ ὡς οὖν ἐνό</supplied>ησε<supplied reason="lost">ν</supplied> ἀρη<hi rend="diaeresis">ΐ</hi>φιλος Μενέλαος
+
+<lb n="22"/><supplied reason="lost">ἐρχόμενον προπάροιθ</supplied>εν ὁμίλ<supplied reason="lost">ο</supplied>υ μακρὰ βιβών<supplied reason="lost">τα</supplied>, 
+
+<lb n="23"/><supplied reason="lost">ὥς τε λέων ἐχάρη μεγά</supplied>λῳ ἐπὶ σώ<supplied reason="lost">μα</supplied>τι κύρσας
+
+<lb n="24"/><supplied reason="lost">εὑρὼν ἢ ἔλαφον κεραὸν</supplied> ἢ ἄγρ<supplied reason="lost">ι</supplied>ον <supplied reason="lost">αἶγα</supplied>
+
+<lb n="25"/><supplied reason="lost">πεινάων· μάλα γάρ τε κατ</supplied><unclear>ε</unclear><supplied reason="lost">σθίει, εἴ περ ἂν α</supplied><unclear>ὐτὸ</unclear><supplied reason="lost">ν</supplied>
+
+<lb n="25"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">3</biblScope>
+                  <biblScope n="2" unit="line" from="1" to="25">1-25</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
+               <bibl type="online">
+                  <ptr target="http://quod.lib.umich.edu/a/apis/x-1386"/>
+               </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
-                  <!-- ignore - stop -->
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/55262"/>
+                  <biblScope n="1" unit="number">8</biblScope>
+                  <biblScope n="2" unit="page" from="71" to="72">71-72</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">553</biblScope>
+                  <biblScope n="1" unit="number">553</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>The upper margin measures 1.5 cm. The recto is unpublished: the text is written on the back of two documents pasted together. Acquired from Nahman in January 1924.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

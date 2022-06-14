@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60949" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60949</title>
+            <title>Page from a codex of Iliad 1, torn in two horizontally</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2079</idno>
             <idno type="filename">60949</idno>
             <idno type="dclp-hybrid">tm;;60949</idno>
+            <idno type="MP3">00588.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">7.2 cm</width>
+                              <height unit="cm">16.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -35,19 +44,29 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>cursive unical</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt; erworben: Egypt - 1925</origPlace>
                      <origDate notBefore="0200" notAfter="0399">200 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
+                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="acquired" when="1925">
+                     <p xml:id="geoEBFJ14">
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
@@ -57,18 +76,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 01.212-267</term>
+               <term n="1" type="description">epic</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">poetry</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -77,42 +95,148 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2022-05-20T08:30:34-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-05-20T08:30:33-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-05-04T06:53:56-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Text-Meta - In order to speed up processing, I am voting this through by depending upon Sampson's comments (agreed in discussion 4.5.2022)</change>
+          <change when="2022-05-04T06:53:56-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Text-Meta - In order to speed up processing, I am voting this through by depending upon Sampson's comments (agreed in discussion 4.5.2022)</change>
+          <change when="2019-08-31T17:42:19-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Text-Meta - Fine, generally. Text: r.10 &gt; Οὔλυ[μπόνδε ?;  in r.15,19 and v.3, 10, 12 make adscript subscript? (but cf. r.27); can the various apostrophes be moved to after the *apostrophe* markup? (if not, the app. crit. regularly attributes two apostrophes to the scribe). On v.22, something is odd: the ed.pr. says the right side of the trema is visible, but the Leiden+ adds a dotted letter (when the trema was probably on a lacunose iota). I wish the commentary from the ZPE edition (especially re: textual matters and athetization) were fully incorporated (cf. comm. on v.24). For finalization: cross-reference apis.michigan.1974. Acquired May 2, 1925 according to APIS.</change>
+          <change when="2019-08-31T17:42:19-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Text-Meta - Fine, generally. Text: r.10 &gt; Οὔλυ[μπόνδε ?;  in r.15,19 and v.3, 10, 12 make adscript subscript? (but cf. r.27); can the various apostrophes be moved to after the *apostrophe* markup? (if not, the app. crit. regularly attributes two apostrophes to the scribe). On v.22, something is odd: the ed.pr. says the right side of the trema is visible, but the Leiden+ adds a dotted letter (when the trema was probably on a lacunose iota). I wish the commentary from the ZPE edition (especially re: textual matters and athetization) were fully incorporated (cf. comm. on v.24). For finalization: cross-reference apis.michigan.1974. Acquired May 2, 1925 according to APIS.</change>
+          <change when="2019-06-28T15:09:35-04:00"
+                 who="http://papyri.info/editor/users/KarinaCooper">Submit - Entered edition from ZPE 46 no. 4.</change>
+          <change when="2019-06-28T15:09:35-04:00"
+                 who="http://papyri.info/editor/users/KarinaCooper">Submit - Entered edition from ZPE 46 no. 4.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"> <ab>
+<lb n="1"/><supplied reason="lost">ὧδε γὰρ ἐξερέω, τὸ δὲ καὶ</supplied> τετελ<supplied reason="lost">εσμένον ἔσται·</supplied>
+<lb n="2"/><supplied reason="lost">καί ποτέ τοι τρὶς τόσσα</supplied> παρέ<supplied reason="lost">σσεται ἀγλαὰ δῶρα</supplied>
+<lb n="3"/><supplied reason="lost">ὕβρι</supplied>ο<supplied reason="lost">ς εἵνεκα τῆσδ</supplied>ε· σὺ δʼ<g type="apostrophe"/> ἴ<supplied reason="lost">σχεο, πείθεο δʼ ἡμῖν.</supplied>
+<lb n="4"/>τὴ<supplied reason="lost">ν δʼ ἀπαμει</supplied>βόμενος προσ<supplied reason="lost">έφη πόδας ὠκὺς Ἀχιλλεύς·</supplied>
+<lb n="5"/>χρὴ μὲ<supplied reason="lost">ν σφ</supplied>ω<hi rend="diaeresis">ΐ</hi>τερόν γε, θ<supplied reason="lost">εὰ, ἔπος εἰρύσσασθαι,</supplied>
+<lb n="6"/><supplied reason="lost">κα</supplied>ὶ μ<supplied reason="lost">άλα π</supplied>ε<supplied reason="lost">ρ</supplied> θυμῷ κεχολ<supplied reason="lost">ωμένον· ὧς γὰρ ἄμεινον.</supplied>
+<lb n="7"/><supplied reason="lost">ὅ</supplied>ς κε θε<supplied reason="lost">ο</supplied>ῖς ἐπ<supplied reason="lost">ι</supplied>πείθηται μ<supplied reason="lost">άλα τʼ ἔκλυον αὐτοῦ.</supplied>
+<lb n="8"/><supplied reason="lost">ἦ,</supplied> καὶ ἐπʼ ἀργυρέῃ κώπῃ σ<supplied reason="lost">χέθε χεῖρα βαρεῖαν,</supplied>
+<lb n="9"/><supplied reason="lost">ἂ</supplied>ψ δʼ<g type="apostrophe"/> ἐς κ<supplied reason="lost">ο</supplied>υλεὸν ὦσε μέγα ξ<supplied reason="lost">ίφος, οὐδʼ ἀπίθησε</supplied>
+<lb n="10"/>μύθῳ Ἀθηναίης· ἣ δʼ<g type="apostrophe"/> Οὔλυ<supplied reason="lost">μπόνδε βεβήκει</supplied>
+<lb n="11"/><supplied reason="lost">δ</supplied>ώμ<supplied reason="lost">ατʼ</supplied> ἐς αἰγιόχοιο Διὸς με<supplied reason="lost">τὰ δαίμονας ἄλλους.</supplied>
+<lb n="12"/>Πηλεΐδης δʼ<g type="apostrophe"/> ἐξαῦτις ἀταρτ<supplied reason="lost">ηροῖς ἐπέεσσιν</supplied>
+<lb n="13"/><supplied reason="lost">Ἀ</supplied>τρεΐδην προσέειπε, καὶ <supplied reason="lost">οὔ πω λῆγε χόλοιο·</supplied>
+<lb n="14"/><supplied reason="lost">ο</supplied>ἰνοβαρές, κυνὸς ὄμματʼ <supplied reason="lost">ἔχων, κραδίην δʼ ἐλάφοιο,</supplied>
+<lb n="15"/><supplied reason="lost">ο</supplied>ὔτέ ποτʼ<g type="apostrophe"/> ἐς πόλεμον ἅμ<supplied reason="lost">α λαῶι θωρηχθῆναι</supplied>
+<lb n="16"/><supplied reason="lost">οὔ</supplied>τε λόχονδʼ<g type="apostrophe"/> ἰέναι σὺν ἀ<supplied reason="lost">ριστήεσσιν Ἀχαιῶν</supplied>
+<lb n="17"/>τέτληκας θυμῷ· τὸ δέ τοι κ<supplied reason="lost">ὴρ εἴδεται εἶναι.</supplied>
+<lb n="18"/>ἦ πολὺ λώ<hi rend="diaeresis">ϊ</hi>όν ἐστι κατὰ σ<supplied reason="lost">τρατὸν εὐρὺν Ἀχαιῶν</supplied>
+<lb n="19"/>δῶρʼ<g type="apostrophe"/> ἀποαιρεῖσθαι, ὅς τι<supplied reason="lost">ς σέθεν ἀντίον εἴπηι·</supplied>
+<lb n="20"/><supplied reason="lost">δ</supplied>ημοβόρος βασιλεὺς, ἐ<supplied reason="lost">πεὶ οὐτιδανοῖσιν ἀνάσσεις·</supplied>
+<lb n="21"/>ἦ γὰρ ἂν, Ἀτρεΐδη, νῦν <hi rend="diaeresis">ὕ</hi>στα<supplied reason="lost">τα</supplied> λω<supplied reason="lost">βήσαιο.</supplied>
+<lb n="22"/>ἀλλʼ<g type="apostrophe"/> ἔκ τοι ἐρέω, καὶ ἐπὶ μ<supplied reason="lost">έγ</supplied>αν ὅρκ<supplied reason="lost">ον ὀμοῦμαι·</supplied>
+<lb n="23"/>ναὶ μὰ τόδε σκ<supplied reason="lost">ῆπ</supplied>τρον· τὸ <supplied reason="lost">μ</supplied>ὲν οὔ π<supplied reason="lost">οτε φύλλα καὶ ὄζους</supplied>
+<lb n="24"/><supplied reason="lost">φ</supplied>ύσει, ἐπεὶ δὴ πρῶτα τομὴν ἐν <supplied reason="lost">ὄρεσσι λέλοιπεν,</supplied>
+<lb n="25"/><supplied reason="lost">ο</supplied>ὐδʼ<g type="apostrophe"/> ἀναθηλήσει· περὶ γάρ ῥά ἑ <subst><add place="inline">χα<supplied reason="lost">λκὸς</supplied></add><del rend="corrected">κα<supplied reason="lost">λκὸς</supplied></del></subst> <supplied reason="lost">ἔλεψεν</supplied>
+<lb n="26"/>φύλλά τε καὶ φλοιόν·<g type="high-punctus"/> νῦν αὖτέ μ<supplied reason="lost">ιν υἷες Ἀχαιῶν</supplied>
+<lb n="27"/><supplied reason="lost">ἐ</supplied>ν παλάμηις φορέουσι δικασπ<supplied reason="lost">όλοι, οἵ τε θέμιστας</supplied>
+<lb n="28"/>πρὸς Διὸς εἰρύαται· ὃ δέ τοι μέγας <supplied reason="lost">ἔσσεται ὅρκος·</supplied>
+<lb n="29"/>ἦ ποτʼ<g type="apostrophe"/> Ἀχιλλῆος ποθὴ <hi rend="diaeresis">ἵ</hi>ξεται <hi rend="diaeresis">υ</hi>ἷας Ἀ<supplied reason="lost">χαιῶν</supplied> 
+</ab></div>
+
+ 
+<div n="v" type="textpart"><ab> 
+<lb n="1"/><supplied reason="lost">σύμπαντας· τότε δʼ οὔ τι δυ</supplied>νή<supplied reason="lost">σεαι ἀχνύμενός</supplied> πε<supplied reason="lost">ρ</supplied>
+<lb n="2"/><supplied reason="lost">χραισμεῖν, εὖτʼ ἂν πολλοὶ</supplied> ὑφʼ <supplied reason="lost">Ἕκτορος ἀνδ</supplied>ροφ<supplied reason="lost">ό</supplied>νοι<supplied reason="lost">ο</supplied>
+<lb n="3"/><supplied reason="lost">θνήισκοντες πίπτωσι·</supplied> σὺ δʼ <supplied reason="lost">ἔνδοθι θυμ</supplied>ὸν ἀμύξ<supplied reason="lost">εις</supplied>
+<lb n="4"/><supplied reason="lost">χωόμενος, ὅ τʼ ἄριστον</supplied> Ἀχαι<supplied reason="lost">ῶ</supplied>ν <supplied reason="lost">οὐδὲν</supplied> <app type="editorial"><lem><supplied reason="lost">ετ</supplied>εισας</lem><rdg resp="mss">ἔτισας</rdg></app>.
+<lb n="5"/><supplied reason="lost">ὣς φάτο Πηλεΐδης, πο</supplied>τὶ δὲ <supplied reason="lost">σκ</supplied>ῆπ<supplied reason="lost">τρον</supplied> βάλε γαίῃ
+<lb n="6"/><supplied reason="lost">χρυσείοις ἥλοισι πε</supplied>παρ<supplied reason="lost">μ</supplied>ένον, ἕζετο δʼ<g type="apostrophe"/> αὐτός·
+<lb n="7"/><supplied reason="lost">Ἀτρεΐδης δʼ ἑτέρωθεν</supplied> ἐμήνιε. τοῖ<supplied reason="lost">σ</supplied>ι δὲ Νέστωρ
+<lb n="8"/><supplied reason="lost">ἡδυεπὴς ἀνόρουσε, λι</supplied>γὺς Πυλίων ἀγορητής,
+<lb n="9"/><supplied reason="lost">τοῦ καὶ ἀπὸ γλώσσης μ</supplied>έλι<supplied reason="lost">τος γ</supplied>λ<supplied reason="lost">υκ</supplied>ίων ῥέεν αὐδ<supplied reason="lost">ή.</supplied>
+<lb n="10"/><supplied reason="lost">τῶι δʼ ἤδη δύο μὲν γενε</supplied>αὶ μ<supplied reason="lost">ε</supplied>ρόπων ἀνθρώπω<supplied reason="lost">ν</supplied>
+<lb n="11"/><supplied reason="lost">ἐφθίαθʼ, οἵ οἱ πρόσθεν ἅ</supplied>μα <supplied reason="lost">τ</supplied>ράφεν ἠδʼ<g type="apostrophe"/> ἐγένοντο
+<lb n="12"/><supplied reason="lost">ἐν Πύλωι ἠγαθέηι, μετὰ δ</supplied>ὲ τριτάτοισιν ἄνασσεν·
+<lb n="13"/><supplied reason="lost">ὅ σφιν ἔϋ φρονέων ἀγορ</supplied>ήσατο καὶ μετέειπεν·
+<lb n="14"/><supplied reason="lost">ὦ πόποι, ἦ μέγα πένθο</supplied>ς Ἀχαι<hi rend="diaeresis">ΐ</hi>δα γαῖαν <hi rend="diaeresis">ἱ</hi>κάνει.
+<lb n="15"/><supplied reason="lost">ἦ κεν γηθήσαι Πρίαμος</supplied> Πρι<supplied reason="lost">ά</supplied>μοιό τε παῖδες,<g type="high-punctus"/>
+<lb n="16"/><supplied reason="lost">ἄλλοι τε Τρῶες μέγα κεν</supplied> κεχαροία<supplied reason="lost">τ</supplied>ο θυμῷ,
+<lb n="17"/><supplied reason="lost">εἰ σφῶϊν τάδε πάντα πυθοία</supplied>το μαρναμένοι<hi rend="diaeresis">ι</hi>ν,
+<lb n="18"/><supplied reason="lost">οἳ περὶ μὲν βουλὴν Δαναῶν, π</supplied>ερὶ δʼ<g type="apostrophe"/> <supplied reason="lost">ἐστ</supplied>ὲ μάχεσθαι.
+<lb n="19"/><supplied reason="lost">ἀλλὰ πίθεσθʼ· ἄμ</supplied>φω δὲ νεω<supplied reason="lost">τέρω</supplied> ἐστὸν ἐμε<hi rend="circumflex">ῖ</hi>ο.
+<lb n="20"/><supplied reason="lost">ἤδη γάρ ποτʼ ἐγὼ</supplied> καὶ ἀρείο<supplied reason="lost">σιν ἠ</supplied>έ περ ὑμῖν
+<lb n="21"/><supplied reason="lost">ἀνδράσιν ὡμίλ</supplied>ησα, καὶ <supplied reason="lost">οὔ</supplied> πο<supplied reason="lost">τέ</supplied> μʼ<g type="apostrophe"/> <supplied reason="lost">ο</supplied>ἵ γʼ<g type="apostrophe"/> ἀθέριζον.
+<lb n="22" xml:id="div2-lb22"/><supplied reason="lost">οὐ γάρ πω τοίους <hi rend="diaeresis">ἴ</hi></supplied>δον <supplied reason="lost">ἀ</supplied>νέρ<supplied reason="lost">α</supplied>ς οὐδὲ <hi rend="diaeresis">ἴ</hi>δωμαι,
+<lb n="23"/><supplied reason="lost">οἷον Πειρίθοόν</supplied> τε <choice><reg>Δρύ<supplied reason="lost">αν</supplied>τά</reg><orig><unclear>Τ</unclear>ρύ<supplied reason="lost">αν</supplied>τά</orig></choice> τε ποιμένα λαῶν<g type="high-punctus"/>
+<lb n="24" xml:id="div2-lb24"/><supplied reason="lost">Καινέα τʼ Ἐξάδιόν</supplied> τε καὶ ἀντίθεον Πολύφημον.
+<lb n="25"/><supplied reason="lost">κάρτιστοι δὴ κεῖν</supplied>οι ἐπιχθονίων τράφεν ἀνδρῶ<supplied reason="lost">ν·</supplied>
+<lb n="26"/><supplied reason="lost">κάρτιστοι μὲν ἔσα</supplied>ν καὶ καρτίστοις ἐμάχοντο,
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div2-lb22" xml:space="preserve">
+            <ref>22</ref>
+            <p>The right dot of the trema is extant.</p>
+          </item>
+               <item corresp="#div2-lb24" xml:space="preserve">
+            <ref>24</ref>
+            <p>Line 265 is omitted by the scribe, similar to many codd. The following line is 266</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">1</biblScope>
+                  <biblScope n="2" unit="line" from="212" to="264">212-264</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="book">1</biblScope>
+                  <biblScope n="5" unit="line" from="266" to="267">266-267</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
+               <bibl type="online">
+                  <ptr target="http://quod.lib.umich.edu/a/apis/x-1974"/>
+               </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
-                  <!-- ignore - stop -->
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/55262"/>
+                  <biblScope n="1" unit="number">4</biblScope>
+                  <biblScope n="2" unit="page" from="56" to="58">56-58</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">529</biblScope>
+                  <biblScope n="1" unit="number">529</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Recto and verso of papyrus codex preserved in two fragments torn horizontally with some lines partially preserved on both fragments. Frag. (a) dimensions are 7.2 cm x 16.5 cm and Frag. (b) is 9.4 cm x 10.4 cm. Frag. (b) has a lower margin of 1.9 cm on the recto and 2.2 cm on the verso. A kollesis 3.4 cm from the left edge is on both fragments. The recto contains lines 212-240 with lines 212-233 on Frag. (a) and 230-240 on Frag. (b). The verso contains lines 241-267 with lines 241-259 on Frag. (a) and 257-267 on Frag. (b). Line 265 is omitted by the scribe. Acquired May 2, 1925.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv169816">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Quittung?</title>
+            <title>Quittung</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">169816</idno>
             <idno type="TM">169816</idno>
             <idno type="ddb-perseus-style">;;556</idno>
-            <idno type="ddb-filename">o.petr.mus.556</idno>
-            <idno type="ddb-hybrid">o.petr.mus;;556</idno>
+            <idno type="ddb-filename">apf.59.164</idno>
+            <idno type="ddb-hybrid">apf;59;164</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">London, UC Inv. Nr. 62527</idno>
+                  <placeName>
+                     <settlement>London</settlement>
+                  </placeName>
+                  <collection>University College</collection>
+                  <idno type="invNo">Inv. Nr. 62527</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -30,15 +34,22 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
+                     <origDate when="0717-08-19">19. Aug. 717</origDate>
                   </origin>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/86350"/>
+                  <biblScope type="pp">164</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -53,28 +64,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuer</term>
-               <term>Geld (?)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-06-09T10:05:33-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-06-09T08:24:13-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-02-15T05:23:33-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Anpassung der Metadaten, Ergänzung des Textes durch Interpunktion sowie Eingabe einer Übersetzung nach APF 59 (2013) 164.</change>
          <change who="HGV" when="2012-10-29">Record created</change>
          <change who="HGV" when="2013-03-28">Record last modified</change>
          <change when="2013-04-05" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Neuedition: APF 59, 2013, S. 164f.; zur Datierung vgl. ebenda.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">O.Petr. Mus.</title>
-                  <biblScope type="numbers">556</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">59</biblScope>
+                  <biblScope n="2" type="fascicle">(2013)</biblScope>
+                  <biblScope n="3" type="pages">S. 164</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -86,10 +102,15 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://petriecat.museums.ucl.ac.uk/dispatcher.aspx?action=search&amp;database=ChoiceUCLPC&amp;search=accession_number=%20%27UC62527%27"/>
+                  <graphic url="https://www.ucl.ac.uk/museums-static/ave/detail/details/index_no_login.php?objectid=UC__62527__"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">O.Petr. Mus. 556</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

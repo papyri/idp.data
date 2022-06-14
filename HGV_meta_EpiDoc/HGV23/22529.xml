@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22529">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Business Letter</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
                      <origDate notBefore="0026" notAfter="0028" cert="low">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 26 - 28 (?)</origDate>
+                ca. 26 - 28 (?)
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,20 +65,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief</term>
-               <term>τρακτορία</term>
-               <term>τοπαρχία</term>
-               <term>διάστρωμα</term>
+               <term n="1">Brief</term>
+               <term n="2">τοπαρχία</term>
+               <term n="3">διάστρωμα</term>
+               <term n="4">πρακτορία</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-05-09T15:46:51-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-05-09T15:29:03-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Indeed</change>
+         <change when="2022-05-04T07:14:51-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - HGV Inhalt: I guess, instead of τρακτορία the term should read πρακτορία</change>
+         <change when="2022-05-04T07:14:02-04:00"
+                 who="http://papyri.info/editor/users/pag">Commit - HGV Inhalt: I guess, instead of τρακτορία it should read πρακτορία</change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. Kruse, Der Königliche Schreiber, S. 1076-1081. Vgl. P.Oxy. LXXVIII 5174,11 Anm.</p>
@@ -84,19 +95,19 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">55</biblScope>
-                  <biblScope type="numbers">3807</biblScope>
+                  <biblScope n="1" type="volume">55</biblScope>
+                  <biblScope n="2" type="numbers">3807</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">205</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">155</biblScope>
                </bibl>
@@ -113,5 +124,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
