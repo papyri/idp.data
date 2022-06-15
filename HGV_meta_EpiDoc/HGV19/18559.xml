@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18559">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Verpachtung einer Bäckerei, Alexandrien</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Alexandria</origPlace>
                      <origDate notBefore="-0003-04-26" notAfter="-0003-05-25">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 26. Apr. - 25. Mai 3 v.Chr.</origDate>
+                ca. 26. Apr. - 25. Mai 3 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,26 +65,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Miete</term>
-               <term>Bäckerei</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Miete</term>
+               <term n="3">Bäckerei</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-06-15T10:37:22-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-06-06T13:18:21-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-06-06T11:27:13-04:00"
+                 who="http://papyri.info/editor/users/dkaltsas">Submit - Added bibliographical reference under „Bemerkungen“. </change>
          <change who="HGV" when="1994-10-28">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1117</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1117</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -117,6 +126,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 16 s. W.G. Claytor – P. van Minnen, ZPE 217 (2021) 163 (zu Z. 22–25).</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
