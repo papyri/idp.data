@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv38353">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Vereinbarte Öllieferung?</title>
@@ -31,14 +31,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Antinoopolis (?)</origPlace>
+                     <origPlace>Antinoopolis ?; Hermonthis ?</origPlace>
                      <origDate notBefore="0501" notAfter="0700" precision="low">VI - VII</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
-                                   ref="https://pleiades.stoa.org/places/756518 https://www.trismegistos.org/place/2774">Antinoopolis</placeName>
+                                   ref="http://pleiades.stoa.org/places/756518 http://www.trismegistos.org/place/2774">Antinoopolis</placeName>
+                        <placeName n="2" type="ancient"/>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="located">
+                     <p xml:id="geoEDCI4">
+                        <placeName type="ancient" cert="low">Hermonthis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,9 +70,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf (Lieferung)</term>
-               <term>Öl</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf (Lieferung)</term>
+               <term n="3">Öl</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -73,8 +81,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Diethart - Worp, Notarsunterschriften, S. 44. Zum Ort vgl. BL IX, S. 240 und ZPE 140, 2002, S. 152-153, mit Anm. 10. Datierung: 1. Indiktion.</p>
@@ -83,8 +91,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">4683</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">4683</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,11 +102,11 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/38353"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">240</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">192</biblScope>
                </bibl>
@@ -108,5 +116,5 @@
             <p>keine</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
