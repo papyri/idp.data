@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18048">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Brief</title>
@@ -31,19 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Konstantinopel oder Aphrodites Kome (Antaiopolites)</origPlace>
-                     <origDate when="0551" precision="medium">ca. 551</origDate>
+                     <origPlace>Konstantinopel oder Aphrodites Kome (Antaiopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0548-07" notAfter="0548-12">
+                ca. 2. Hälfte 548
+                <precision match="../@notBefore" degree="0.1"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
                         <placeName type="ancient">Konstantinopel</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient">Aphrodites Kome</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/3020 https://pleiades.stoa.org/places/756516">Antaiopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1" type="ancient">Aphrodites Kome</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Antaiopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -51,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,11 +69,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>N.N. an N.N.</term>
-               <term>Reise eines Dioskoros nach Konstantinopel</term>
-               <term>Rechtsstreit</term>
-               <term>Empfehlung</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Reise eines Dioskoros nach Konstantinopel</term>
+               <term n="4">Rechtsstreit</term>
+               <term n="5">Empfehlung</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -80,8 +82,8 @@
          <change who="HGV" when="2011-01-16">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Dioskoros. Zur Datierung vgl. Azzarello, Domus divina, S. 83, Anm. 250. Vgl. Feissel - Gascou, La pétition à Byzance, S. 84f. Zur Rückseite vgl. Fournet, Des villageois en quête, S. 258, Anm. 18.</p>
@@ -90,8 +92,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">7438</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">7438</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,19 +103,19 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/18048"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">247</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">202</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">188</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="4">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">196</biblScope>
                </bibl>
@@ -121,9 +123,9 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Z. 5 - 8: Seider, Paläographie I, Tafel 35, 55, nach S. 102</bibl>
-               <bibl type="illustration">New Pal. Soc., 2nd Ser., Part XII - XIII, Series II, Plate 183</bibl>
-               <bibl type="illustration">Crisci, Scrivere greco, Tav. XCII</bibl>
+               <bibl type="illustration" n="1">Z. 5 - 8: Seider, Paläographie I, Tafel 35, 55, nach S. 102</bibl>
+               <bibl type="illustration" n="2">New Pal. Soc., 2nd Ser., Part XII - XIII, Series II, Plate 183</bibl>
+               <bibl type="illustration" n="3">Crisci, Scrivere greco, Tav. XCII</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -141,20 +143,20 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.ville-ge.ch/musinfo/imageZoom/?iip=bgeiip/papyrus/pgen210-ri.ptif"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://www.misha.fr/papyrus_bipab/pages_html/SB_IV_7438.html"/>
                </figure>
-               <figure>
+               <figure n="3">
                   <graphic url="https://archives.bge-geneve.ch/ark:/17786/vta39c3735fbb51bf72"/>
                </figure>
-               <figure>
+               <figure n="4">
                   <graphic url="https://archives.bge-geneve.ch/ark:/17786/vta098add2491348395"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
