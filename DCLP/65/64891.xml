@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64891" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 64891</title>
+            <title>Mathematical tables + sententia</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6130</idno>
             <idno type="filename">64891</idno>
             <idno type="dclp-hybrid">tm;;64891</idno>
+            <idno type="MP3">02704.870</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>wood</material>
+                           <dimensions>
+                              <width unit="cm">32 cm</width>
+                              <height unit="cm">8.7 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,15 +47,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,19 +66,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>mathematics</term>
-               <term>wisdom</term>
-               <term type="culture">science</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">mathematical tables + sententia</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">science</term>
+               <term n="3" type="culture">literature</term>
+               <term n="4">mathematics</term>
+               <term n="5">wisdom</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -78,10 +86,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="outer" subtype="side" type="textpart">
@@ -162,37 +170,53 @@
 </ab></div></div>
          <div type="commentary" subtype="linebyline">
             <list>
-               <item corresp="#div1-div2-lb16" xml:space="preserve"><ref>16-iii 8</ref> <p>The thousands are indicated with a diagonal tick at lower-left of the digit. </p></item>
-               <item corresp="#div1-div4-lb1" xml:space="preserve"><ref>1-2</ref> <p>These two lines lie next to lines 11 and 12 of column iii.</p></item>
+               <item corresp="#div1-div2-lb16" xml:space="preserve">
+            <ref>16-iii 8</ref>
+            <p>The thousands are indicated with a diagonal tick at lower-left of the digit.</p>
+          </item>
+               <item corresp="#div1-div4-lb1" xml:space="preserve">
+            <ref>1-2</ref>
+            <p>These two lines lie next to lines 11 and 12 of column iii.</p>
+          </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl n="1" type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/62751"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="edition" subtype="principal">
                   <title level="a" type="main">A Schooltablet in the University of Michigan Collection.</title>
-                  <author n="1">
-                     <surname>VAN MINNEN</surname>
-                     <forename>Peter</forename>
-                  </author>
-                  <date>1992</date>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/62751"/>
+                  <biblScope n="1" unit="book"/>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
                <bibl n="2" type="reference" subtype="catalogue">
-                 <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                 <!-- ignore - stop -->
-                 <ptr target="http://papyri.info/biblio/14384"/>
-                 <biblScope unit="number">158</biblScope>
-                 <biblScope unit="generic">descr.</biblScope>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14384"/>
+                  <biblScope n="1" unit="number">158</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/69786"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">ZPE 93, pl.VIII-IX</bibl>
+               <bibl type="online">
+                  <ptr target="https://quod.lib.umich.edu/a/apis/x-1737"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
