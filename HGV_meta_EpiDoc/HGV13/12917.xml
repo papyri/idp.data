@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12917">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the Strategus</title>
@@ -31,18 +31,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0031-03-12">
-                        <offset type="after" n="1">nach</offset> 12. März 31</origDate>
+                        <offset n="1" type="after">nach</offset>
+                12. März 31
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736909 https://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,9 +71,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Stratege</term>
-               <term>Sachschaden</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Stratege</term>
+               <term n="3">Sachschaden</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,8 +82,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -95,8 +100,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">131</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">131</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -111,12 +116,19 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 5</bibl>
-               <bibl type="illustration">Schubart, Griechische Paläographie, Abb. 28, S. 53 (Z. 1 - 12)</bibl>
-               <bibl type="illustration">Seider, Paläographie I, Tafel 16, 24, vor S. 63 (Z. 1 - 14)</bibl>
-               <bibl type="illustration">Sigalas, Historia (1934), S. 186 und Sigalas, Historia (1974), S. 208 (Z. 2 - 6)</bibl>
+               <bibl type="illustration" n="1">Plate 5</bibl>
+               <bibl type="illustration" n="2">Schubart, Griechische Paläographie, Abb. 28, S. 53 (Z. 1 - 12)</bibl>
+               <bibl type="illustration" n="3">Seider, Paläographie I, Tafel 16, 24, vor S. 63 (Z. 1 - 14)</bibl>
+               <bibl type="illustration" n="4">Sigalas, Historia (1934), S. 186 und Sigalas, Historia (1974), S. 208 (Z. 2 - 6)</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/s/dl6u95"/>
+               </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
