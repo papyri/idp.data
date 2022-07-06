@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv869405">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Receipt for beer tax</title>
@@ -18,14 +18,14 @@
                   <placeName>
                      <settlement>New York</settlement>
                   </placeName>
-                  <collection>Special Collections</collection>
-                  <idno type="invNo">O.NYU Inv. 48</idno>
+                  <collection>New York University, Fales Library</collection>
+                  <idno type="invNo">Inv. 48</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <material>Papyrus</material>
+                           <material>Ostrakon</material>
                         </support>
                      </supportDesc>
                   </objectDesc>
@@ -33,17 +33,15 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate when="-0131-06-15">
-                15. Juni 131 v.Chr. (Jahr unsicher)
-                <certainty locus="value" match="../year-from-date(@when)"/>
-                     </origDate>
+                     <origDate notBefore="-0131-06-15" notAfter="-0131-06-15">15. Juni 131 v.Chr.</origDate>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8</p>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         </p>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -57,9 +55,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Quittung</term>
-               <term n="2">Steuer</term>
-               <term n="3">Bier</term>
+               <term>Quittung</term>
+               <term>Steuer</term>
+               <term>Bier</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,9 +69,10 @@
          <change when="2022-02-04T09:12:27-05:00"
                  who="http://papyri.info/editor/users/james.cowey">Submit - Entered O.NYU 1</change>
          <change when="2022-02-04T09:01:46-05:00" who="http://papyri.info/editor">Automated creation from template</change>
+         <change who="HGV" when="2022-07-06">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -89,5 +88,5 @@
             </p>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
