@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62901" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 61 4104</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">4092</idno>
             <idno type="filename">62901</idno>
             <idno type="dclp-hybrid">p.oxy;61;4104</idno>
+            <idno type="MP3">01526.110</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">2.6</width>
+                              <height unit="cm">2.4</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -43,17 +52,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -84,50 +96,66 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose history</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Thucydides; Historiae, 05 50</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose history</term>
+               <term n="4" type="overview">Thucydides; Historiae, 05 50</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">ἐθ</supplied>έω<supplied reason="lost">ρουν πλὴν</supplied>
+<lb n="2"/>Λεπρε<unclear>α</unclear><supplied reason="lost">τῶν<g type="middot"/> ὅ</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="3" break="no"/>μ<del rend="erasure">οι</del><unclear>ς</unclear> <unclear>δ</unclear><supplied reason="lost">ὲ οἱ Ἠλεῖ</supplied>
+<lb n="4" break="no"/>οι δε<unclear>δ</unclear><supplied reason="lost">οίτες μὴ</supplied>
+<lb n="5"/><unclear>βία</unclear>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/13946"/>
-                  <biblScope unit="number">4104</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">61</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/13946"/>
+                  <biblScope n="1" unit="number">4104</biblScope>
+                  <biblScope n="2" unit="volume">61</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0003">Thucydides</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0003">Thucydides</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/1394">Historiae</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 61 pl.IX</bibl>
                <bibl type="online">
-                  <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol61/pages/4104.htm"/>
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH01f9/f13d03d1.dir/POxy.v0061.n4104.a.01.hires.jpg"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
