@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv9152">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,23 +31,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia (Arsinoites) oder Aphroditopolites</origPlace>
-                     <origDate when="0313-11-22">22. Nov. 313</origDate>
+                     <origPlace>Philadelphia (Arsinoites, Ägypten) oder Aphroditopolites, Ägypten</origPlace>
+                     <origDate when="0315-11-22">22. Nov. 315</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
-                        <placeName type="ancient"
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737008 https://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient"
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2724 https://pleiades.stoa.org/places/736890">Aphroditopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -55,8 +58,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -71,9 +75,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Zins (Pacht)</term>
-               <term>Getreide</term>
+               <term n="1">Quittung</term>
+               <term n="2">Zins (Pacht)</term>
+               <term n="3">Getreide</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -82,11 +86,11 @@
          <change who="HGV" when="2009-07-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL I, S. 44, BL VII, S. 11 und BL VIII, S. 26. Zu Z. 11 vgl.  Aiôn, S. 235. Gehört zum Archiv um Hatres und Isas; vgl. CE 79, 2004, S. 237-240.</p>
+            <p>Zur Datierung vgl. BL I, S. 44, BL VII, S. 11, BL VIII, S. 26, und ZPE 222, 2022, S. 191. Zu Z. 11 vgl. Aiôn, S. 235. Zum Schreiber vgl. ZPE 222, 2022, S. 189. Gehört zum Archiv um Hatres und Isas; vgl. CE 79, 2004, S. 237-240 und ZPE 222, 2022, S. 184-192.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -95,7 +99,7 @@
             <list>
                <item>
                   <ref>Z. 11</ref>
-                  <date type="mentioned" notBefore="0313-08-29" notAfter="0313-11-22">29. Aug.  - 22. Nov. 313</date>
+                  <date type="mentioned" notBefore="0313-08-29" notAfter="0313-11-22">29. Aug. 313 - 22. Nov. 313</date>
                </item>
             </list>
          </div>
@@ -103,19 +107,19 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">408</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">408</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">26</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">13</biblScope>
                </bibl>
@@ -141,5 +145,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
