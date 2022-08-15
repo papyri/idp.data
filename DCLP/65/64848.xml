@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64848" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 64848</title>
+            <title>Medical prescription</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6086</idno>
             <idno type="filename">64848</idno>
             <idno type="dclp-hybrid">tm;;64848</idno>
+            <idno type="MP3">2394.02</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +32,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">13 cm</width>
+                              <height unit="cm">9.7 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout columns="1" writtenLines="6">
                            <p>papyrus fragment (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -38,19 +47,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -64,14 +74,14 @@
                                    xml:id="GR10755.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21272_R_2_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21272_R_2.jpg"/>
                         </custEvent>
                         <custEvent type="imaged"
                                    corresp="#FR10754"
                                    xml:id="GR10754.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21272_V_2_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21272_V_2.jpg"/>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -88,40 +98,71 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>medicine</term>
-               <term type="culture">science</term>
-               <term type="overview">medical prescription</term>
+               <term n="1" type="culture">science</term>
+               <term n="2" type="culture">medicine</term>
+               <term n="3">prescription</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Medical recipe. Fragment (9.7 x 13 cm) from the upper right hand side of a papyrus sheet written on the recto along the fibers. The reverse side is blank. Lower (3.9 cm), upper (0.5 cm), and right margins are preserved, the left margin is lost. According to the title at the top of the text, the fragment contains a remedy for a wound; the ingredients listed in the papyrus suggest that we are dealing with a prescription specifically intended for alleviating eye ailments. The dicolon separates different ingredients and the diplè obelismene marks the end of the recipe. 
-The text is written in a black ink; the semi-literary script, similar to that of O.Berol 364, can be assigned to the 5th-6th c. AD. The papyrus was found at Hermoupolis.</p><p><note type="footnote" xml:lang="en">This papyrus has been digitally edited by Francesca Corazza as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous editions (ed.pr. = W.M. Brashear, JAC 5, 1989, pp. 151-8; ed.alt. = H.G. Ioannidou, BKT IX 176).</note></p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Papyrus fragment (13x9.7 cm) from the upper right-hand side of a papyrus sheet written in a black ink on the recto along the fibers in a slanting semi-literary hand similar to that of <ref target="http://papyri.info/dclp/64852">P.Berol. inv. 364</ref> (Upper Egypt, 5th-6th cent. AD). The lower (3.9 cm), upper (0.5 cm), and right-hand (variable width) margins are preserved, the left-hand margin is lost. The verso is blank. It was unearthed during Otto Rubensohn's excavations at Ashmunein (Hermoupolis) in January 1905 (cf. <ref target="http://https://berlpap.smb.museum/04465">Berl.Pap. 4465</ref> ). The title, occupying the first line except for a blank space at the end, and the ingredients listed in the following lines, separated by <emph rend="italics">dikola</emph> from each other, already allowed the first editor, William Brashear, who published the text in 1990 with crucial suggestions by Isabella Andorlini (<ref target="http://papyri.info/biblio/60436">Brashear 1990</ref>), to recognize a medical recipe for eye wounds, particularly of the typology called πιλάριον. A small <emph rend="italics">diple obelismene</emph> closes the text before the lower margin. Similar graphical devices (<emph rend="italics">dikola</emph> dividing the ingredients and a closing <emph rend="italics">diple obelismene</emph>) are found in another medical fragment from 5th-6th AD: <ref target="http://papyri.info/dclp/64855">BKT III, pp. 32-3</ref> (parchment).</p><p><note type="footnote" xml:lang="en">This papyrus has been digitally edited by Francesca Corazza as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous editions (ed.pr. = W.M. Brashear, JAC 5, 1989, pp. 151-8; ed.alt. = H.G. Ioannidou, BKT IX 176). Revised and commented by Nicola Reggiani in the framework of the PRIN 2017 Project "Greek and Latin Literary Papyri from Graeco-Roman and Late Antique Fayum (4th BC – 7th AD): Texts, Contexts, Readers" funded by the Italian Ministry of Research (P.I. Prof. Lucio Del Corso, University of Cassino; Local Research Unit at the University of Parma, coordinator: Prof. Nicola Reggiani).</note></p></div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> εἰς τὸ τραῦμα <supplied reason="lost">τ</supplied>οῦτο
-<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ου <g type="dipunct"/> κρόκου <g type="dipunct"/> ὄπιου <g type="dipunct"/> <unclear>τρ</unclear>αγακάνθης
-<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ης <g type="dipunct"/> ἀνὰ <expan><ex>οὐγκίας</ex></expan> <num value="1/2"><expan><ex>ἥμισυ</ex></expan></num> <g type="dipunct"/> <app type="editorial"><lem><choice><reg>ἀμύλου</reg><orig>ἀμύλλου</orig></choice></lem><rdg resp="ed.pr.">ἀμύλου</rdg></app> <gap reason="lost" quantity="1" unit="character"/> <num value="1"><hi rend="supraline">α</hi></num>
-<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> : ἀνάλα<supplied reason="lost">βε</supplied> καὶ ποίησ<supplied reason="lost">ον</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <abbr><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ρα</abbr> <num>.<hi rend="supraline">1</hi></num> <gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="4" unit="character"/>ηχ<gap reason="lost" extent="unknown" unit="character"/>
-<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><app type="alternative"><lem><unclear>λ</unclear>α</lem><rdg><unclear>κ</unclear>α</rdg><rdg><unclear>χ</unclear>α</rdg></app> καὶ χ<unclear>ρ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1" xml:id="lb1"/><gap reason="lost" extent="unknown" unit="character"/> εἰς τὸ τραῦμα <supplied reason="lost">τ</supplied><unclear>ο</unclear>ῦτο <space extent="unknown" unit="character"/>
+<lb n="2" xml:id="lb2"/><app type="editorial"><lem resp="PN N. Reggiani from photo"><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">χαλ</supplied><unclear>κ</unclear>οῦ</lem><rdg><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ου</rdg></app> <g type="dipunct"/> κρόκου <g type="dipunct"/> ὄπιου <g type="dipunct"/> <unclear>τρ</unclear>αγακάνθης
+<lb n="3" xml:id="lb3"/><app type="editorial"><lem resp="PN N. Reggiani"><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ζμύρ</supplied><unclear>ν</unclear>ης</lem><rdg><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">καδμίας κεκαυμέ</supplied><unclear>ν</unclear>ης</lem><rdg><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ζμύρ</supplied><unclear>ν</unclear>ης</rdg></app></rdg></app> <g type="dipunct"/> ἀνὰ <expan><ex>οὐγκίας</ex></expan> <num value="1/2">𐅵</num> <g type="dipunct"/> <app type="editorial"><lem resp="ed.pr.">ἀμύλου</lem><rdg resp="ed.alt."><choice><reg>ἀμύλου</reg><orig>ἀμύλλου</orig></choice></rdg></app> <supplied reason="lost"><expan><ex>οὐγκίαν</ex></expan></supplied> <num value="1" rend="tick">α</num>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> <g type="dipunct"/> <app type="alternative"><lem>ἀνάλα<supplied reason="lost">βε</supplied></lem><rdg><expan>ἀναλα<supplied reason="lost">β<ex>ὼν</ex></supplied></expan></rdg></app> καὶ ποίησ<supplied reason="lost">ον</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5" xml:id="lb5"/><gap reason="lost" extent="unknown" unit="character"/> <abbr><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ρα</abbr> <num><hi rend="supraline"><gap reason="illegible" quantity="1" unit="character"/></hi></num> <gap reason="lost" quantity="3" unit="character"/><app type="editorial"><lem resp="PN N. Reggiani from photo"><gap reason="illegible" quantity="3" unit="character"/> <unclear>τ</unclear>ηχ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg><gap reason="illegible" quantity="4" unit="character"/>ηχ<gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="6"/><app type="editorial"><lem resp="PN N. Reggiani from photo"><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><app type="alternative"><lem><unclear>κ</unclear>α</lem><rdg><unclear>λ</unclear>α</rdg></app></lem><rdg resp="ed.alt."><gap reason="lost" extent="unknown" unit="character"/><app type="alternative"><lem><gap reason="illegible" quantity="1" unit="character"/><unclear>λ</unclear>α</lem><rdg><gap reason="illegible" quantity="1" unit="character"/><unclear>κ</unclear>α</rdg><rdg><gap reason="illegible" quantity="1" unit="character"/><unclear>χ</unclear>α</rdg></app></rdg><rdg resp="ed.pr."><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>λ</unclear>α</rdg></app> καὶ <app type="alternative"><lem>χ<unclear>ρ</unclear><supplied reason="lost">ῷ</supplied> <gap reason="lost" extent="unknown" unit="character"/></lem><rdg>χ<unclear>ρ</unclear><supplied reason="lost">ῆσις</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg></app>.
 <lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> <g type="diple-obelismene"/>
 </ab>
       </div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb1" xml:space="preserve"><ref>1</ref> <p>It is possible that the name or the reference to the typology of the medicament was indicated in the lost part of the line. The ingredients lead to think of a so-called πιλάριον ("compress"), an ophthalmic remedy of the κολλύριον type. Medical attestations of πιλάρια are not frequent. They are not mentioned by Galen, while we find some references in the later authors (Paul. IV 14.3.4-5 ποιεῖ δὲ πρὸς τὰ αὐτὰ καὶ τὸ πιλάριον τὸ δι' ἑλκύσματος καὶ ἡ δι' ᾠῶν ὁμοίως; VII 16.11.1 πιλάριον πρὸς ἕλκη; 17.16.1 = Orib. <emph rend="italics">Ecl.</emph> 89.23.1-2 = Aet. XV 39 πιλάριον δι' ἑλκύσματος πρὸς ἀποσύρματα καὶ τὰ ὅμοια; Aet. VI 1.44-5 ὠοβραχὲς δὲ ἔριον ἐπιτιθέσθω καὶ πιλαρίῳ σκεπάσθω τὸ κεφάλαιον; XV 12.37-8 πτύγμα ἐρίου ὠοβραχὲς ἐπιτιθέσθω καὶ πιλαρίῳ σκεπέσθω ἡ κεφαλή. In particular, there are strong similarities with the recipe of πιλάριον πρὸς ἕλκη provided by Paul. VII 16.11 (πιλάριον πρὸς ἕλκη· καδμίας, ψιμυθίου ἀνὰ 𐅻 κδ, ἀκακίας, ὀπίου ἀνὰ 𐅻 ιη, κόμμεως, τραγακάνθης, ἀμύλου ἀνὰ 𐅻 θ, σμύρνης 𐅻 γ, χαλκοῦ, κρόκου ἀνὰ 𐅻 α 𐅵ʹ· ὕδατι ἐκλείου) and with those preserved by <ref target="http://papyri.info/dclp/64889">SB XIV 11964</ref> (5th-6th AD), cf. <ref target="http://papyri.info/biblio/51166">Youtie 1975</ref>. Most intertesting is the documentary attestation of πιλάρια in a private letter from the Arsinoites (?) dated to the 2nd cent. AD: <ref target="http://papyri.info/ddbdp/psi;15;1541">PSI XV 1541</ref>.2 πεμ]φθῆναί σοι τάχειον τὰ πειλάρια, though it must be noted that there existed the part of an irrigation machine called after the same name, cf. <ref target="http://papyri.info/ddbdp/sb;20;14402">SB XX 14402</ref>r.3, 9, v.3, 21 πιλαρ(ίων) (cf. <ref target="http://papyri.info/biblio/61931">Worp 1991</ref>, 260-2) and that πιλάριον can be understood also as a small felt cap (S. Russo <emph rend="italics">ap.</emph> PSI XV 1541, 2 n.).</p></item>
+               <item corresp="#lb2" xml:space="preserve"><ref>2</ref> <p>χαλ]κ̣οῦ: despite the first editor's doubts, the traces visible on the edge of the lacuna are fully compatible with κ as traced in this papyrus, so that the supplement of "copper", one of the standard ingredients of the parallel πιλάρια, is almost certain.</p></item>
+               <item corresp="#lb3" xml:space="preserve"><ref>3</ref> <p>Between the two possible alternatives proposed in the ed.pr., καδμίας κεκαυμέ]ν̣ης is not attested in the parallel formulations of πιλάρια, so that ζμύρ]ν̣ης looks like the most probable integration here.</p><p>ἀμύλου: ed.alt. prints double λ but a single λ is clearly visible on the papyrus, so that the transcription of ed.pr. is to be restored.</p></item>
+               <item corresp="#lb5" xml:space="preserve"><ref>5</ref> <p>] ̣ρα( ): after the lacuna, traces of a horizontal stroke in the upper part of the line were already noted by the ed.pr.</p><p>τ̣ηχ[ in this context certainly points to a form of the verb τήκω "melt", since it was the usual way of using πιλάρια (and κολλύρια in general). Perhaps it was preceded by the indication of substance with which the compound had to be melted, see e.g. Dsc. <emph rend="italics">MM</emph> II 171.2.7-8 σὺν ἐλαίῳ ζεσθὲν ἢ σὺν ῥητίνῃ τηχθὲν ἐπιτίθεται. The traces before τ̣ may be compatible with ω̣.</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ.</bibl>
-               <bibl type="printed">BKT 9, pl.74</bibl>
+               <bibl type="printed" n="1">ed. princ.</bibl>
+               <bibl type="printed" n="2">BKT 9, pl.74</bibl>
                <bibl type="online">
-                  <ptr target="http://berlpap.smb.museum/04465"/>
+                  <ptr target="http://smb.museum/berlpap/index.php/04465/"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/60436"/>
+                  <biblScope n="1" unit="page">154</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope n="1" unit="volume">9</biblScope>
+                  <biblScope n="2" unit="number">176</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
