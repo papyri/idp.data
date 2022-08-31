@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18498">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Vertrag über ein Darlehn</title>
@@ -32,13 +32,15 @@
                <history>
                   <origin>
                      <origPlace>Alexandria</origPlace>
-                     <origDate notAfter="-0013-03-27">
-                        <offset type="before" n="1">vor</offset> 27. März 13 v.Chr.</origDate>
+                     <origDate notAfter="-0013-03-31">
+                        <offset n="1" type="before">vor</offset>
+                31. März 13 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727070 https://www.trismegistos.org/place/100">Alexandria</placeName>
+                                   ref="http://pleiades.stoa.org/places/727070 http://www.trismegistos.org/place/100">Alexandria</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -73,18 +76,18 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: BGU IV 1055. Zum Ort vgl. BGU IV, S. 161. </p>
+            <p>Rückseite: BGU IV 1055. Zum Ort vgl. BGU IV, S. 161.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1054</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1054</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -93,14 +96,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=BGU&amp;vVol=4&amp;vNum=1054"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://berlpap.smb.museum/00401/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
