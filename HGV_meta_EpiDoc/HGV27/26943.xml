@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv26943">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Pachtangebot auf ein Haus</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Staatliche Museen</collection>
+                  <idno type="invNo">P. 21503</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
-                     <origDate notBefore="0201" notAfter="0225" precision="low">Anfang III</origDate>
+                     <origPlace>Ptolemais Euergetis (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0212">
+                        <offset n="1" type="after">nach</offset>
+                212
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736948 https://www.trismegistos.org/place/327 https://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,21 +70,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Antrag</term>
-               <term>Pacht</term>
-               <term>Haus und Hof</term>
-               <term>hohe Miete</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Antrag</term>
+               <term n="3">Pacht</term>
+               <term n="4">Haus und Hof</term>
+               <term n="5">hohe Miete</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-09-07T15:52:16-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-09-06T10:03:27-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2021-08-05T04:44:22-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Added Korr. Tyche 615</change>
          <change who="HGV" when="1992-02-06">Record created</change>
          <change who="HGV" when="2010-05-17">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Tage: 26. Mai - 24. Juni. Zu Z. 1, 6, 7, 9 und 11 sowie zur Datierung (nach 212) vgl. Tyche 24, 2009, S. 216f., Korr. Tyche 615.</p>
@@ -88,8 +99,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">11</biblScope>
-                  <biblScope type="numbers">2034</biblScope>
+                  <biblScope n="1" type="volume">11</biblScope>
+                  <biblScope n="2" type="numbers">2034</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -104,5 +115,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
