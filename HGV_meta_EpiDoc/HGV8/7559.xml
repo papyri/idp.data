@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7559">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Confiscated Farms</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. class. e. 29 (P) Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="-0244" notAfter="-0243">244 - 243 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,31 +67,38 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Land</term>
-               <term>Einziehung</term>
-               <term>Aussaat</term>
-               <term>Weizen</term>
-               <term>Eid</term>
+               <term n="1">Land</term>
+               <term n="2">Einziehung</term>
+               <term n="3">Aussaat</term>
+               <term n="4">Weizen</term>
+               <term n="5">Eid</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-09-14T11:04:31-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-09-05T11:10:22-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good</change>
+         <change when="2022-01-19T09:59:24-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Updated according to Fati, in Aegyptus 93 (2013). The text does not change. Information about Collection retrieved from TM. </change>
          <change who="HGV" when="1998-01-29">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. Uebel, Kleruchen, S. 116. Verwandte Texte: P.Petr. III  105 V, 106 a + b V. Rückseite: P.Petr. II 29 (a). Vgl. Aegyptus 93, 2013, S. 19-41.</p>
+            <p>Zur Datierung vgl. Uebel, Kleruchen, S. 116. Verwandte Texte: P.Petr. III 105 V, 106 a + b V. Rückseite: P.Petr. II 29 (a). Vgl. Aegyptus 93, 2013, S. 19-41.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">104</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">104</biblScope>
+                  <biblScope n="3" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,13 +108,21 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. II 29 (b)</bibl>
-               <bibl type="publication" subtype="other">W.Chr. 334</bibl>
-               <bibl type="publication" subtype="other">Sel. Pap. II 392</bibl>
-               <bibl type="publication" subtype="other">C.Pap. Hengstl 125</bibl>
-               <bibl type="publication" subtype="other">P.Bodl. I MS. Gr. class. c. 18 (P) descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Petr. II 29 (b)</bibl>
+               <bibl type="publication" subtype="other" n="2">W.Chr. 334</bibl>
+               <bibl type="publication" subtype="other" n="3">Sel. Pap. II 392</bibl>
+               <bibl type="publication" subtype="other" n="4">C.Pap. Hengstl 125</bibl>
+               <bibl type="publication" subtype="other" n="5">P.Bodl. I MS. Gr. class. c. 18 (P) descr.</bibl>
+            </listBibl>
+         </div>
+         <div type="figure"/>
+         <div type="bibliography" subtype="citations">
+            <listBibl>
+               <bibl>
+                  <ptr target="https://papyri.info/biblio/87035"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
