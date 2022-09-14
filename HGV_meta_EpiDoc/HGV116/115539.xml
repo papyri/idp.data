@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv115539">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>A letter from Klodios</title>
@@ -16,6 +16,10 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
+                  <placeName>
+                     <settlement>Naqlun</settlement>
+                  </placeName>
+                  <collection>Polish excavations</collection>
                   <idno type="invNo">P.Naqlun inv. 7/88</idno>
                </msIdentifier>
                <physDesc>
@@ -29,17 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Naqlun (Arsinoites)</origPlace>
-                     <origDate notBefore="0601" notAfter="0700" precision="low">VII</origDate>
+                     <origPlace>Naqlun (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0601" notAfter="0650" precision="low">1. Hälfte VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736975 https://www.trismegistos.org/place/1418">Naqlun</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/736975 http://www.trismegistos.org/place/1418">Naqlun</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,21 +67,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>N.N. an N.N. (seinen "Herrn" und "Vater")</term>
-               <term>Bericht von einer Reise (?)</term>
-               <term>Schiffe</term>
-               <term>Höflichkeiten</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">N.N. an N.N. (seinen "Herrn" und "Vater")</term>
+               <term n="3">Bericht von einer Reise (?)</term>
+               <term n="4">Schiffe</term>
+               <term n="5">Höflichkeiten</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-09-07T16:46:47-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-09-07T16:22:25-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2021-08-13T04:33:25-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Added Korr. Tyche 620</change>
          <change who="HGV" when="2008-10-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung sowie zu Z. 8 und 12 vgl. BASP 46, 2009, S. 223. Zu Z. 12 vgl. Tyche 24, 2009, S. 219, Korr. Tyche 620 und ZPE 173, 2010, S. 132.</p>
@@ -86,8 +96,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Naqlun</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">29</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">29</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,5 +107,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv14854">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Liste mit Namen und Geldleistungen (Aufzeichnungen für eine Steuerliste?)</title>
@@ -31,19 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theadelphia? (Arsinoites)</origPlace>
+                     <origPlace>Theadelphia ? (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0185-11-01">
-                        <offset type="after" n="1">nach</offset> 1. Nov. 185</origDate>
+                        <offset n="1" type="after">nach</offset>
+                1. Nov. 185
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
-                                   ref="https://pleiades.stoa.org/places/737081 https://www.trismegistos.org/place/2349">Theadelphia</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   ref="http://pleiades.stoa.org/places/737081 http://www.trismegistos.org/place/2349">Theadelphia</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -51,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,42 +69,52 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
-               <term>Zahlungen</term>
-               <term>Geld</term>
-               <term>Steuern (Kopf?)</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
+               <term n="3">Zahlungen</term>
+               <term n="4">Geld</term>
+               <term n="5">Steuern (Kopf?)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-09-14T10:29:03-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go</change>
+         <change when="2021-01-23T14:06:06-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2021-01-21T19:55:48-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Added link to digital image.</change>
          <change who="HGV" when="1997-09-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 6: 2. Sept. 185; Z. 30: 12. oder 2. Okt. 185; Z. 62: 1. Nov. 185</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 30</ref>
-                  <date type="mentioned" when="0185-10-02">2. Okt. 185 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when="0185-10-02">
+              2. Okt. 185 (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 30</ref>
-                  <date type="mentioned" when="0185-10-12">12. Okt. 185 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when="0185-10-12">
+              12. Okt. 185 (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 6</ref>
                   <date type="mentioned" when="0185-09-02">2. Sept. 185</date>
                </item>
-               <item>
+               <item n="4">
                   <ref>Z. 62</ref>
                   <date type="mentioned" when="0185-11-01">1. Nov. 185</date>
                </item>
@@ -112,8 +124,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">14223</biblScope>
+                  <biblScope n="1" type="volume">20</biblScope>
+                  <biblScope n="2" type="numbers">14223</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -134,5 +146,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
