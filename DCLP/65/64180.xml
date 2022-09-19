@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64180" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 49 3434</title>
+            <title>Prose - hypothesis to tragedy ?</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5399</idno>
             <idno type="filename">64180</idno>
             <idno type="dclp-hybrid">p.oxy;49;3434</idno>
+            <idno type="MP3">02861.200</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +43,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -79,38 +87,77 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose philology (?)</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">prose</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose philology (?)</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited and revised by Holger Essler as part of the course on Digital Editions of Fragmentary Texts at Ca'Foscari University of Venice.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>    
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" atLeast="1" atMost="2" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>λλ<del rend="erasure">α</del><add place="above">ο</add><del rend="erasure">χο</del><gap reason="lost" atLeast="0" atMost="1" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>ποτε
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>τουτετα<unclear>υ</unclear>
+<lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="character"/><app type="alternative"><lem>πεξε<unclear>ρ</unclear> <lb n="6" break="no"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg><supplied reason="lost">υ</supplied>πεξε<unclear>ρ</unclear> <lb n="6" break="no"/><supplied reason="lost">χ</supplied></rdg><rdg><supplied reason="lost">ε</supplied>πεξε<unclear>ρ</unclear> <lb n="6" break="no"/><supplied reason="lost">χ</supplied></rdg></app>
+ <supplied reason="lost">Ε</supplied><unclear>κα</unclear><del rend="erasure">β</del><add place="above">λ</add>ηι
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>εσ<gap reason="illegible" quantity="2" unit="character"/>ταυ
+<lb n="8" break="no"/><gap reason="lost" extent="unknown" unit="character"/><app type="alternative"><lem>αποτροι <lb n="9" break="no"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg>ἀπò Τροί <lb n="9" break="no"/><supplied reason="lost">ας</supplied></rdg><rdg>ἀπὸ Τροι <lb n="9" break="no"/><supplied reason="lost">ζῆνος</supplied></rdg></app>
+<gap reason="illegible" quantity="1" unit="character"/>σασεις
+<lb n="10" break="no"/><gap reason="lost" extent="unknown" unit="character"/><app type="alternative"><lem><gap reason="illegible" quantity="1" unit="character"/>γνο<unclear>ο</unclear>υ</lem><rdg>αγνο<unclear>ο</unclear>υ</rdg></app>
+<lb n="11" break="no"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem><unclear>ε</unclear>κμορ
+<lb n="12" break="no"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Luppe">εκ μορ <lb n="12" break="no"/><supplied reason="lost">φῆς</supplied></rdg></app>
+<gap reason="lost" quantity="1" unit="character"/><unclear>μ</unclear>ενη
+<lb n="13"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>θ<unclear>η</unclear><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="14"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/><unclear>τ</unclear>ρυι<unclear>ας</unclear></lem><rdg resp="Bülow-Jacobsen"><supplied reason="lost">μη</supplied><unclear>τ</unclear>ρυι<unclear>ας</unclear></rdg></app>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>γαρ
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="2" unit="character"/>ε<gap reason="illegible" quantity="2" unit="character"/>
+<lb n="17"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/><unclear>π</unclear>οκ<unclear>τ</unclear>ει
+<lb n="18" break="no"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Bülow-Jacobsen"><supplied reason="lost">α</supplied><unclear>π</unclear>οκ<unclear>τ</unclear>ει <lb n="18" break="no"/><supplied reason="lost">ν</supplied></rdg></app><gap reason="illegible" quantity="2" unit="character"/>επι
+<lb n="19"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>
+<lb n="19"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/9970"/>
-                  <biblScope unit="number">3434</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">49</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/9970"/>
+                  <biblScope n="1" unit="number">3434</biblScope>
+                  <biblScope n="2" unit="volume">49</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/61664"/>
+                  <biblScope n="1" unit="page">90</biblScope>
+                  <biblScope n="2" unit="page"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
                <bibl type="online" n="1">
-                  <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol49/pages/3434.htm"/>
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH015d/1ea4811c.dir/POxy.v0049.n3434.a.01.hires.jpg"/>
                </bibl>
                <bibl type="online" n="2">
                   <ptr target="https://relicta.org/cpp/detail.php?CPP=0217"/>
@@ -118,5 +165,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
