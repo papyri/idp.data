@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60911" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 44 3160</title>
+            <title>Scholia and hypothesis to Homer, Odyssey 1-3</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,16 +13,21 @@
             <idno type="LDAB">2041</idno>
             <idno type="filename">60911</idno>
             <idno type="dclp-hybrid">p.oxy;44;3160</idno>
+            <idno type="MP3">01207.300</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Oxford, Sackler Library, Papyrology Rooms 37 3B 87/K (14) f Vo</idno>
-                     <idno type="invNo">Strasbourg, Bibliothèque Nationale P. gr. 1401</idno>
+                     <idno type="invNo" n="1">Oxford, Sackler Library, Papyrology Rooms 37 3B 87/K (14) f Vo</idno>
+                     <idno type="invNo" n="2">Strasbourg, Bibliothèque Nationale P. gr. 1401</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -33,7 +38,7 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="43">
                            <p>papyrus roll (columns: 4, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -46,21 +51,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Oxyrhynchos (Oxyrhynchites, Egypt)</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Oxyrhynchos (Oxyrhynchites, Egypt)</origPlace>
                      <origDate notBefore="0200" notAfter="0250">200 - 250</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -89,57 +100,245 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term>philology</term>
-               <term>scholia</term>
-               <term>hypothesis</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus, Homerica; Odyssea 01.441-444 scholia; Odyssea 02 hypothesis; Odyssea 02.1-434 scholia; Odyssea 03 hypothesis</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
+               <term n="6">philology</term>
+               <term n="7">scholia</term>
+               <term n="8">hypothesis</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Holger Essler as part of the teaching in papyrology at Ca' Foscari, Venice.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" quantity="3" unit="line"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>
+<lb n="5"/><gap reason="lost" quantity="10" unit="line"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><unclear>κ</unclear>ου
+<lb n="16"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="18"/><gap reason="lost" extent="unknown" unit="character"/> <expan>ψυχή<ex>ν</ex></expan>
+<lb n="18"/><gap reason="lost" quantity="4" unit="line"/>
+<lb n="23"/><gap reason="lost" extent="unknown" unit="character"/><unclear>σαι</unclear>
+<lb n="24"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear>ου
+<lb n="25"/><gap reason="lost" extent="unknown" unit="character"/><unclear>τ</unclear>οι
+<lb n="25"/><gap reason="lost" quantity="3" unit="line"/>
+<lb n="29"/><gap reason="lost" extent="unknown" unit="character"/><unclear>σι</unclear>
+<lb n="29"/><gap reason="lost" quantity="4" unit="line"/>
+<lb n="34"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>
+<lb n="35"/><gap reason="lost" extent="unknown" unit="character"/> <expan><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear>έλαβε<ex>ν</ex></expan>
+<lb n="35"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="37"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear>α
+<lb n="38"/><gap reason="lost" extent="unknown" unit="character"/>θαι
+<lb n="39"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>σκε
+<lb n="40"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ηκ</unclear>λειν<unclear>η</unclear>
+<lb n="41"/><gap reason="lost" extent="unknown" unit="character"/>ς διὰ τὸ
+<lb n="42"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ι</unclear>σ<unclear>ο</unclear>υς
+</ab></div>
+<div n="2" subtype="column" type="textpart"><ab>
+<lb n="1"/>κορώνῃ   <unclear>ν</unclear>ῦν τῷ κ<unclear>ρ</unclear><supplied reason="lost">ίκῳ</supplied>
+<lb n="2"/>κληεῖδα   νῦν τὸ κλ<supplied reason="lost">εῖθρο</supplied>ν
+<lb n="3"/><app type="editorial"><lem><choice><reg>ἀρέσθαι</reg><orig>ἀρέσθε</orig></choice></lem><rdg resp="susp. M. Haslam">pro ἐτάνυσσεν</rdg></app>   <supplied reason="lost">ἐ</supplied><unclear>φ</unclear>είλ<unclear>ξ</unclear><supplied reason="lost">ατο</supplied>
+<lb n="4"/>οἰὸς   ἀώ<unclear>τ</unclear><supplied reason="lost">ῳ</supplied> τῷ <app type="editorial"><lem resp="Luppe"><unclear>πλόκ</unclear><supplied reason="lost" cert="low">ῳ   τοῦ ἐρίου </supplied></lem><rdg/></app>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="5"/><app type="editorial"><lem resp="Luppe"><supplied reason="lost">πέφ</supplied><unclear>ραδ</unclear>’   <supplied reason="lost">ἔ</supplied><unclear>φρ</unclear>ασ’</lem><rdg/></app>
+<lb n="6"/><app type="editorial"><lem><unclear>δ</unclear><gap reason="lost" quantity="4" unit="character"/><unclear>ρ</unclear>α</lem><rdg resp="Luppe"><unclear>δ</unclear><supplied reason="lost">ευτ</supplied><unclear>έρ</unclear>α</rdg></app><g type="dash"/>
+<lb n="7"/>ἦμος δ ’ <unclear>ἠρ</unclear><supplied evidence="parallel" reason="lost">ιγ</supplied><unclear>έν</unclear>εια φάν<unclear>η</unclear> <supplied evidence="parallel" reason="lost">ῥοδ</supplied>ο
+<lb n="8" break="no"/>δάκτυλος Ἠ<unclear>ώς</unclear> — ἅμα <unclear>ἡ</unclear><supplied reason="lost">μέ</supplied>
+<lb n="9" break="no"/><supplied reason="lost">ρ</supplied>ᾳ Τηλέμα<unclear>χ</unclear>ο<unclear>ς</unclear> τοὺς <hi rend="diaeresis">Ἰ</hi>θα<unclear>κ</unclear><supplied reason="lost">ησίο</supplied><unclear>υ</unclear>ς
+<lb n="10"/><supplied reason="lost">ε</supplied><unclear>ἰ</unclear>ς ἐκκλησία<unclear>ν</unclear> συναγαγ<unclear>ὼ</unclear><supplied reason="lost">ν</supplied> <unclear>κ</unclear>ε
+<lb n="11" break="no"/><supplied reason="lost">λ</supplied><unclear>ε</unclear>ύει ἐξ<hi rend="diaeresis">ι</hi>ένα<supplied reason="lost">ι</supplied> ἐκ τοῦ οἴκου α<supplied reason="lost">ὐ</supplied>τοῦ.
+<lb n="12" break="no"/><unclear>μ</unclear>ὴ πεισθέντ<unclear>ω</unclear>ν δὲ ἀποπλ<unclear>εῖ</unclear> <unclear>εἰ</unclear>ς
+<lb n="13"/>Πύλον καὶ εἰς Λακεδαίμονα καὶ
+<lb n="14"/>πορευθεὶς πεύθεται περὶ τοῦ
+<lb n="15"/>πατρὸς καὶ εἰ μὲν <choice><reg>ζῶντα</reg><orig>ζωῶντα</orig></choice>
+<lb n="16"/>αὐτὸν πύθοιτο, ἀνέξασθαι ἄλ
+<lb n="17" break="no"/>λον ἐνιαυτό<unclear>ν</unclear>, εἰ δὲ ἀποθανό<supplied reason="omitted">ν</supplied>τα
+<lb n="18"/><choice><reg>κενοτάφιον</reg><orig>καινοτάφιον</orig></choice> αὐτῷ κατασκευ
+<lb n="19" break="no"/>άσαι καὶ τὴν μητέρα ἀποπέμψαι
+<lb n="20"/>εἰς τὸν τοῦ πατρὸς αὐτῆς <hi rend="diaeresis">Ἰ</hi>καρίου
+<lb n="21"/><subst><add place="inline">οἶκον</add><del rend="corrected">οἴκου</del></subst> ὅπως αὐτὴν ἐκδώσει ᾧ
+<lb n="22"/>βούλεται. <choice><reg>διασκωφθεὶς</reg><orig>διασκωπτεὶς</orig></choice> δὲ <hi rend="diaeresis">ὑ</hi>πὸ
+<lb n="23"/>τῶν μνηστήρων ἐπὶ τούτο<unclear>ις</unclear>
+<lb n="24"/><choice><reg>συμπραττού<unclear>ση</unclear>ς</reg><orig>συνπρατ<g type="apostrophe"/>τού<unclear>ση</unclear>ς</orig></choice> ᾿Αθηνᾶς<unclear> </unclear> <unclear><g rend="diple" type="filler"/></unclear>
+<lb n="25"/>ναῦ<supplied reason="omitted">ν</supplied> καὶ ἐρέτας συναγαγὼν <unclear>ἀ</unclear>πο<unclear>π</unclear><add place="above">λε<supplied reason="lost">ῖ</supplied></add>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="26"/>εὐνῆφιν   ἐκ τῆς κοίτης
+<lb n="27"/>θηεῦντο   ἐθαύμαζον
+<lb n="28"/>θώκῳ   τῇ καθέδρᾳ
+<lb n="29"/>κυφός   κυρτός
+<lb n="30"/>ὡπλίσσατο   παρεσκευά<unclear>σα</unclear>το
+<lb n="31"/>ὀνήμενος     ὄνησι<unclear>ν</unclear> ἐχ<unclear>ω</unclear>ν
+<lb n="32"/>χρεῖος   πρᾶγμα   δή<unclear>μ</unclear><supplied reason="lost">ιο</supplied>ν   <expan>δ<unclear>η</unclear>μόσιο<ex>ν</ex></expan>
+<lb n="33"/>δοιά   διχῶς
+<lb n="34"/>ἐπ<unclear>έ</unclear>χραεν   ἐπέβ<unclear>α</unclear><supplied reason="lost">ιν</supplied>εν
+<lb n="35"/>ἐε<unclear>δ</unclear>νώσαιτο   ἐκδώ<supplied reason="lost">σ</supplied><unclear>ε</unclear>ι μετὰ προι<add place="above">κός</add>
+<lb n="36"/>πωλεύμενοι   ἐρχόμενοι
+<lb n="37"/>κατάνεται   κατ<g type="apostrophe"/>αναλίσκεται
+<lb n="38"/>ἀρήν   βλαβήν
+<lb n="39"/>δεδαηκότες   μεμαθηκότες
+<lb n="40"/><supplied reason="omitted">οὐκ</supplied> ἀ<supplied reason="omitted">ν</supplied>σχετά   ἀν<hi rend="diaeresis">υ</hi>πομενητά
+<lb n="41"/><choice><reg>νεμεσσήθητε</reg><orig>νεμεσσήθηται</orig></choice>   μέμψεως ἄξιον
+<lb n="42" rend="indent"/> <choice><reg>ἡγήσετε</reg><orig>ἡγήσεται</orig></choice>
+<lb n="43"/>περικτίονες   περίοικοι
+</ab></div>
+<div n="3" subtype="column" type="textpart"><ab>
+<lb n="1"/>δυσμενέω<unclear>ν</unclear>   <unclear>δ</unclear><supplied reason="lost">υσμενὴς ἤτοι</supplied>
+<lb n="2" rend="indent"/> ἐχθρῶς   <choice><reg>διακείμενος</reg><orig>διακίμενος</orig></choice> 
+<lb n="3"/>πρόβασιν   τ<unclear>ὴν</unclear> <supplied reason="lost">τετραπό</supplied>
+<lb n="4" rend="indent" break="no"/> δων κτῆσιν <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>τίσις   ἀπόδ<unclear>ο</unclear><supplied reason="lost">σις</supplied>
+<lb n="6"/><choice><reg>ποτιπτυσσοίμ<unclear>ε</unclear><supplied reason="lost">θα</supplied></reg><orig>ποτιπτοισσοίμ<unclear>ε</unclear><supplied reason="lost">θα</supplied></orig></choice> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/>οἶκτος   ἔλεο<supplied reason="lost">ς</supplied>
+<lb n="8"/>μῶμον   <unclear>ψ</unclear><supplied reason="lost">όγον</supplied>
+<lb n="9"/>ἀνάψαι   προ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>ἔλπεται   εἰς <unclear>ελ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/>ἀτέμβει στ<supplied reason="lost">ερίσκει</supplied>
+<lb n="12"/>περίμετρον <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/>ταφήιον   ε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/>σπείρου   <hi rend="diaeresis">ἱ</hi><unclear>μ</unclear><supplied reason="lost">ατίου</supplied>
+<lb n="15"/>κτεατίσσας <supplied reason="lost">κτησάμενος</supplied>
+<lb n="16"/>ἐυστέφανος <supplied reason="lost">καλὴν στεφά</supplied>
+<lb n="17" rend="indent" break="no"/> <unclear>ν</unclear>ην ἔχουσ<supplied reason="lost">α· στεφάνη</supplied>
+<lb n="18"/>δέ ἐστιν κόσ<unclear>μ</unclear><supplied reason="lost">ος περικεφαλαί</supplied>
+<lb n="19" break="no"/>ας <choice><reg>γυναικείας</reg><orig>γυναικίας</orig></choice> 
+<lb n="20"/><choice><reg>ἀλεγύνετε</reg><orig>ἀλεγύνεται</orig></choice> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="21"/><unclear>δρ</unclear>υψαμέν<unclear>ω</unclear> <gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="22"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" quantity="3" unit="character"/>ον  <unclear>κ</unclear><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="23" rend="indent"/> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>μέν<unclear>η</unclear><supplied reason="lost">ν</supplied>
+<lb n="24"/>ἀνίη λύπη <gap reason="lost" quantity="5" unit="character"/>εις <expan><supplied reason="lost">ἀ</supplied>δημονεῖ<ex>ς</ex></expan> 
+<lb n="25"/>ἐμπαζόμεθα <unclear>ἐ</unclear><supplied reason="lost">π</supplied><unclear>ισ</unclear>τρεφόμεθα
+<lb n="26"/>τρυχόμενος <expan>κατα<unclear>π</unclear><supplied reason="lost">ο</supplied>νούμενο<ex>ς</ex></expan> 
+<lb n="27"/><choice><reg>κτερείξω</reg><orig>κτερείσσω</orig></choice> θάψω
+<lb n="28"/>ἀγανός ἡδύς ἠπίου πραέου
+<lb n="29"/>ἠλεέ <choice><reg>μάταιε</reg><orig>μάτεε</orig></choice> ἄρσον ἅ<unclear>ρ</unclear>μοσ<unclear>ο</unclear>ν
+<lb n="30"/>ὑπερηνορέοντο αὐθαδιζομένου
+<lb n="31"/><choice><reg>ὁμίλει</reg><orig>ὁμείλει</orig></choice> συνάθροιζε
+<lb n="32"/><choice><reg>κακείους</reg><orig>κακίους</orig></choice> κρείους
+<lb n="33"/>ἤ<hi rend="diaeresis">ι</hi>α    τὰ πρὸς ἐ<unclear>κ</unclear>δ<supplied reason="lost">ημία</supplied>ν <choice><reg>ἐπιτήδ<add place="above">εια</add></reg><orig>ἐπιτήδ<add place="above">ια</add></orig></choice> 
+<lb n="34"/>ἀμφιφορεῦσι τοῖς <unclear>μ</unclear>ετρηταῖς
+<lb n="35"/><choice><reg>χηλοῖσι</reg><orig>χηιλοῖσι</orig></choice> κιβωτοῖς
+<lb n="36"/>ἐνήσομεν ἐμβαλοῦμεν
+<lb n="37"/><choice><reg>ἐξέτους</reg><orig>ἐξαίτους</orig></choice> <choice><reg>ἐξαιρέτου<supplied reason="omitted">ς</supplied></reg><orig>ἐξερέτου<supplied reason="omitted">ς</supplied></orig></choice>
+<lb n="38"/>εὕοντας φλέγοντας
+</ab>
+</div>
+<div n="4" subtype="column" type="textpart">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>β<unclear>οε</unclear><supplied reason="lost">ῦσιν</supplied>
+<lb n="3"/><g type="dash"/> πε<unclear>ῖ</unclear><supplied reason="lost">ρε</supplied>
+<lb n="4"/>Ἠ<unclear>έ</unclear><supplied evidence="parallel" reason="lost">λι</supplied>ος δ ἀνό<unclear>ρ</unclear><supplied evidence="parallel" reason="lost">ουσε λιπὼν πε</supplied>
+<lb n="5" break="no"/>ρικαλλέ<unclear>α</unclear> <unclear>λίμ</unclear><supplied evidence="parallel" reason="lost">νην.</supplied>
+<lb n="6"/>ἅμα <unclear>ἡ</unclear>μέραι Τηλ<supplied reason="lost">έμαχος σὺν Ἀθη</supplied>
+<lb n="7" break="no"/>νᾷ κατάγ<unclear>ει</unclear> τ<unclear>ῇ</unclear> <supplied reason="lost">Πύλῳ</supplied>
+<lb n="8"/><gap reason="lost" quantity="2" unit="character"/> <unclear>κ</unclear>αταλαμβά<unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><unclear>π</unclear><supplied reason="lost">ά</supplied>ντ<unclear>ας</unclear> <gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>θύοντας κα<unclear>ὶ</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/>παρ’ αὐτῷ. πυν<supplied reason="lost">θαν</supplied><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/>Τη<unclear>λ</unclear><supplied reason="lost">εμ</supplied><unclear>άχ</unclear>ου α<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/>Ὀδυσσέως αὐ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/>εἰδέναι φησὶν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/><unclear>ε</unclear>ἰ δὲ αὐτῷ εἰς <unclear>Λ</unclear><supplied reason="lost">ακεδαίμονα</supplied>
+<lb n="16"/>πρὸς Μενέλαο<supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/>εἴτε ἐπ<unclear>ὶ</unclear> νεὼ<unclear>ς</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="18"/>ἀλλὰ καὶ α<gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <choice><reg><supplied reason="lost">ὑπ</supplied>
+<lb n="19" break="no"/>ισχνεῖται</reg><orig><supplied reason="lost">ὑπ</supplied>
+<lb n="19" break="no"/>ισχνῖται</orig></choice> <gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl n="1" type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/8777"/>
-                  <biblScope unit="number">3160</biblScope>
-                  <biblScope unit="side">V</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">44</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8777"/>
+                  <biblScope n="1" unit="number">3160</biblScope>
+                  <biblScope n="2" unit="side"/>
+                  <biblScope n="3" unit="volume"/>
                </bibl>
-               <bibl n="2" type="reference" subtype="catalogue">
-                 <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                 <!-- ignore - stop -->
-                 <ptr target="http://papyri.info/biblio/14384"/>
-                 <biblScope unit="number">335</biblScope>
-                 <biblScope unit="generic">descr.</biblScope>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/52077"/>
+                  <biblScope n="1" unit="page"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/15453"/>
+                  <biblScope n="1" unit="page" from="255" to="257">255-257</biblScope>
+                  <biblScope n="2" unit="number">39</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/20975"/>
+                  <biblScope n="1" unit="plate">7</biblScope>
+                  <biblScope n="2" unit="volume">1</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="5" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/47558"/>
+                  <biblScope n="1" unit="page" from="175" to="176">175-176</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ZPE 27, pl. IV</bibl>
-               <bibl type="printed">L. del Corso - O. Pecere, Libri di scuola e pratiche didattiche, Convegno Cassino, 2010, Tav. 7</bibl>
+               <bibl type="printed" n="1">ZPE 27, pl. IV</bibl>
+               <bibl type="printed" n="2">L. del Corso, O. Pecere, vol. I, Tav. 7</bibl>
                <bibl type="online" n="1">
-                  <ptr target="https://relicta.org/cpp/detail.php?CPP=0042"/>
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH954b/ddce9a3a.dir/POxy.v0044.n3160.a.01.hires.jpg"/>
                </bibl>
                <bibl type="online" n="2">
-                  <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol44/pages/3160.htm"/>
+                  <ptr target="https://relicta.org/cpp/detail.php?CPP=0042"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="ancientEdition">
+            <listBibl>
+               <bibl type="publication" subtype="ancientQuote">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <title type="main"
+                         level="m"
+                         xml:lang="grc"
+                         ref="http://www.trismegistos.org/authorwork/512">Odyssea</title>
+                  <biblScope n="1" unit="book">1</biblScope>
+                  <biblScope n="2" unit="line" from="441" to="444">441-444</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="generic">and</biblScope>
+                  <biblScope n="5" unit="book">2</biblScope>
+                  <biblScope n="6" unit="line" from="1" to="434">1-434</biblScope>
+                  <biblScope n="7" unit="generic">and</biblScope>
+                  <biblScope n="8" unit="book">3</biblScope>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
