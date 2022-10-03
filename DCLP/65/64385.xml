@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64385" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 64385</title>
+            <title>Acrostic Hymn</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">64385</idno>
             <idno type="dclp-hybrid">tm;;64385</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0300" notAfter="0399">300 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -55,19 +59,13 @@
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="imaged"
-                                   corresp="#FR10789"
-                                   xml:id="GR10789.01"
-                                   from="2010"
-                                   to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_08299_R_3_001.jpg"/>
+                        <custEvent type="imaged" corresp="#FR10789" when="2011">
+                           <graphic url="https://berlpap.smb.museum/Original/P_08299_R_3_001.jpg"/>
+                           <orgName>BerlPap</orgName>
                         </custEvent>
-                        <custEvent type="imaged"
-                                   corresp="#FR10788"
-                                   xml:id="GR10788.01"
-                                   from="2010"
-                                   to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_08299_V_3_001.jpg"/>
+                        <custEvent type="imaged" corresp="#FR10788" when="2011">
+                           <graphic url="https://berlpap.smb.museum/Original/P_08299_V_3_001.jpg"/>
+                           <orgName>BerlPap</orgName>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -84,21 +82,64 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry lyric hymn</term>
-               <term type="culture">literature</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">acrostic hymn</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">poetry lyric hymn</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="edition" xml:space="preserve"/>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project <ref target="http://epikur-wuerzburg.de/encode">Encode</ref>.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="folio" type="textpart" corresp="#FR10788"><ab>
+<lb n="1"/>ἄρνα ἐπ᾽ ὄμου
+<lb n="2"/>λαβὼν σῇ <unclear>πο</unclear>ί
+<lb n="3" break="no"/>μνῃ <choice><corr>ἑνώσας</corr><sic>σνωσας</sic></choice>
+<milestone rend="diple-obelismene" unit="undefined"/>
+<lb n="4"/><hi rend="supraline">υ</hi>ἱὸν νομέα ν
+<lb n="5" break="no"/>ῦν ἐπέγν<unclear>ω</unclear>
+<lb n="6" break="no"/>ν νῦν ἔσχα 
+<lb n="7"/>νομὴν πα
+</ab></div>
+<div n="2" subtype="folio" type="textpart" corresp="#FR10789"><ab>
+<lb n="8" break="no"/>τρῴαν <g type="diple-obelismene"/>
+<lb n="9"/><hi rend="supraline">φ</hi>οβερὰς δυ
+<lb n="10" break="no"/><choice><reg>νάμεις</reg><orig>νάμις</orig></choice> διο
+<lb n="11" break="no"/>δεύσω μη
+<lb n="12" break="no"/>δέν τι παθ
+<lb n="13" break="no"/>ὼν ἀπὸ τού
+<lb n="14" break="no"/>των <g type="cross"/>
+</ab></div>
+<div n="3" subtype="folio" type="textpart" corresp="#FR10789"><ab>
+<lb n="15"/><hi rend="supraline">χ</hi>άρις <unclear>τ</unclear>ε <choice><reg cert="low">σοι</reg><orig>σ<unclear>υ</unclear></orig></choice>
+<lb n="16"/>μάκαρ ἀπο
+<lb n="17" break="no"/>βλέψας ἀπο
+<lb n="18" break="no"/>φεύξομαι
+<lb n="19"/>τῶν <choice><reg>ἐπιβού</reg><orig>ἐπιβο</orig></choice>
+<lb n="20" break="no"/><add place="left"><g type="obelos"/></add>λων <g type="diple-obelismene"/>
+<lb n="21"/><hi rend="supraline">ψ</hi>αλ<del rend="erasure"><unclear>τη</unclear></del>τήρι
+<lb n="22" break="no"/>ά σοὶ ἀνε
+</ab></div>
+<div n="4" subtype="folio" type="textpart" corresp="#FR10788"><ab>
+<lb n="23" break="no"/><choice><reg>γείρω</reg><orig><unclear>γ</unclear>ιρω</orig></choice> <unclear>α</unclear>γίο<unclear>υ</unclear><supplied reason="omitted">ς</supplied> δ<unclear>ὲ</unclear>
+<lb n="24"/>χοροὺς χο
+<lb n="25" break="no"/>ρεύσω <g type="diple-obelismene"/>
+<lb n="26"/><hi rend="supraline">ὦ</hi> λόγε πα
+<lb n="27" break="no"/><choice><reg>τρὸς</reg><orig>τρως</orig></choice> <choice><reg>ἀπο</reg><orig>ἀπε</orig></choice>
+<lb n="28" break="no"/><choice><reg>ρρήτου</reg><orig>ρε<unclear>ιτου</unclear></orig></choice> <choice><reg>σοὶ</reg><orig>συ</orig></choice> <choice><reg>δό</reg><orig>δω</orig></choice>
+<lb n="29" break="no"/>ξα, κράτος
+<lb n="30"/>εὶ<supplied reason="omitted">ς</supplied> <choice><reg>αἰῶνας</reg><orig>ε<unclear>ο</unclear>νας</orig></choice>
+</ab></div></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
@@ -106,6 +147,19 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl type="publication" subtype="principal">
+                  <title level="s" type="abbreviated">BKT 6</title>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95053"/>
+                  <biblScope n="1" unit="number">8</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
