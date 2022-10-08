@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65403" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 65403</title>
+            <title>Prayer</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">65403</idno>
             <idno type="dclp-hybrid">tm;;65403</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,53 +42,103 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0799">600 - 799</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
+                <additional>
+                  <adminInfo>
+                     <custodialHist>
+                        <custEvent type="imaged" corresp="#FR15017">
+                           <graphic url="https://berlpap.smb.museum/Original/P_03281_R_001.jpg"/>
+                           <orgName>BerlPap</orgName>
+                        </custEvent>
+                     </custodialHist>
+                  </adminInfo>
+               </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">prayer</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="edition" xml:space="preserve"/>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project <ref target="http://epikur-wuerzburg.de/encode">Encode</ref>.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart" corresp="#FR15017"><ab>
+<lb n="1"/><choice><reg>νόσους</reg><orig>νώσους</orig></choice> <choice><reg>ἡμῶ<supplied reason="lost">ν</supplied></reg><orig>ὑμῶ<supplied reason="lost">ν</supplied></orig></choice> <gap reason="lost" quantity="5" unit="character"/>
+<lb n="2"/>θε<g type="unintelligible"/><g type="high-punctus"/> τωμμ<unclear>ε</unclear><gap reason="lost" quantity="6" unit="character"/>
+<lb n="3"/>θων<g type="high-punctus"/> <choice><reg>Χριστὸν</reg><orig>Χριστὼν</orig></choice> <choice><reg>τὸν</reg><orig>τ<unclear>ὼν</unclear></orig></choice> <unclear>κύρ</unclear><supplied reason="lost">ι</supplied>
+<lb n="4" break="no"/><choice><reg>ον</reg><orig>ων</orig></choice> <choice><reg>ἡμῶν</reg><orig>εἱμῶν</orig></choice> <g type="diple-obelismene"/>
+<lb n="5"/>τί <app type="editorial"><lem resp="pap.">ἐπάζηως τί<unclear>ς</unclear></lem><rdg resp="Brinkmann and Maas">ἐπάζίως τῆς</rdg></app> ὑμῶν
+<lb n="6"/><app type="editorial"><lem resp="pap.">ἀρετὶ</lem><rdg resp="Brinkmann and Maas">ἀρετῆς</rdg></app> πρωσάζωμεν
+<lb n="7"/><app type="editorial"><lem resp="pap.">ὑμῆν</lem><rdg resp="Brinkmann and Maas">ὑμῖν</rdg></app><g type="unintelligible"/> <app type="editorial"><lem resp="pap.">ακηε</lem><rdg resp="Brinkmann">ἅγιοι</rdg></app><g type="unintelligible"/><g type="high-punctus"/> ἀπω
+<lb n="8" break="no"/>λοῦμεν <unclear>δ</unclear>ιὰ καρπὼς
+<lb n="9"/>ὑμῶν <unclear>δ</unclear>ι᾽ἀμμάτων θευ
+<lb n="10" break="no"/>ὼν τωζάσετε<g type="unintelligible"/><g type="high-punctus"/> <choice><reg>καὶ</reg><orig>κὲ</orig></choice> ὡ ἐ<supplied reason="omitted">x</supplied>
+<lb n="11" break="no"/><choice><reg>θρὸς</reg><orig>θρὼς</orig></choice><g type="high-punctus"/> <choice><corr>καταισχύνε</corr><sic>κατεσκήνε</sic></choice>
+<lb n="12" break="no"/><supplied reason="lost">ται</supplied> <g type="unintelligible"/> ν<gap reason="illegible" quantity="1" unit="character"/><add place="above">σ</add><gap reason="lost" quantity="3" unit="character"/>ωσθε
+<lb n="13"/><gap reason="lost" quantity="7" unit="character"/><unclear>τ</unclear>ε θλιβου
+<lb n="14" break="no"/><gap reason="lost" quantity="4" unit="character"/>ων παρακαλῖ
+<lb n="15"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><add place="above">β</add><gap reason="illegible" quantity="4" unit="character"/><unclear>ην</unclear><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="16"/><gap reason="lost" quantity="2" unit="character"/> <unclear>δι</unclear>θινε<g type="high-punctus"/> <choice><reg>καὶ</reg><orig>κὲ</orig></choice> <choice><reg cert="low">νῦν</reg><orig>νῆμ</orig></choice> πρε<unclear>σ</unclear>
+<lb n="17" break="no"/>βεύσαντες<g type="high-punctus"/> <choice><reg>Χριστὸν</reg><orig>Χριστὼν</orig></choice>
+<lb n="18"/><choice><reg>τῆς</reg><orig>τῖς</orig></choice> <choice><reg>ἐπηγγελμένης</reg><orig>ἐπηκηλμένης</orig></choice>
+<lb n="19"/>ὠρκῆς<g type="high-punctus"/> ῥησθῖνε αἱ
+<lb n="20" break="no"/>μᾶς<g type="high-punctus"/> κατὰ τὼν
+<lb n="21"/>μέκα αὐτοῦ ἔλεως
+</ab></div></div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
-                  <ptr target="http://berlpap.smb.museum/01122"/>
+                  <ptr target="https://berlpap.smb.museum/01122/"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl type="publication" subtype="principal">
+                  <title level="s" type="abbreviated">BKT 6</title>                  
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95053"/>
+                  <biblScope n="1" unit="number">6</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
