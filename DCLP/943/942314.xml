@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m140303" xml:lang="en">
     <teiHeader>
         <fileDesc>
@@ -88,19 +88,33 @@
                 </keywords>
             </textClass>
             <langUsage>
-                <language ident="en">English</language>
-                <language ident="la">Latin</language>
-            </langUsage>
+            <language ident="en">English</language>
+            <language ident="la">Latin</language>
+         </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change when="2021-03-07" who="http://papyri.info/editor/users/HolgerEssler">Created first metadata entry.</change>
-        </revisionDesc>
+          <change when="2021-03-07" who="http://papyri.info/editor/users/HolgerEssler">Created first metadata entry.</change>
+      </revisionDesc>
     </teiHeader>
     <text>
         <body>
-            <div xml:lang="la" type="edition" xml:space="preserve"><ab>
+         <div type="commentary" subtype="frontmatter">
+            <p>This papyrus has been digitally edited by Valentina Rossi and has been revised by prof. Holger Essler as part of the course on Digital Editions of Fragmentary Texts at Ca' Foscari University of Venice.</p>
+         </div>
+         <div xml:lang="la" type="edition" xml:space="preserve">
+<div n="1" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" quantity="11" unit="line"/>
 </ab></div>
-            <div type="bibliography" subtype="principalEdition">
+<div n="2" subtype="fragment" type="textpart"><ab>
+<lb n="1"/>navi <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="6" unit="line"/>
+<lb n="8"/>idem <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" quantity="3" unit="line"/>
+<lb n="12"/>isse dixisset <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><gap reason="lost" quantity="4" unit="line"/>
+</ab></div>
+</div>
+         <div type="bibliography" subtype="principalEdition">
                 <listBibl>
                     <bibl type="reference" subtype="partial">
                         <!-- ignore - start, i.e. SoSOL users may not edit this -->
@@ -110,13 +124,13 @@
                     </bibl>
                 </listBibl>
             </div>
-            <div type="bibliography" subtype="illustrations">
+         <div type="bibliography" subtype="illustrations">
                 <listBibl>
                     <bibl type="online">
                         <ptr target="http://www.chartes.it/index.php?r=document/view&amp;id=477"/>
                     </bibl>
                 </listBibl>
             </div>
-        </body>
+      </body>
     </text>
 </TEI>
