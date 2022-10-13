@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv702542">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Pachtvertrag über Ländereien</title>
+            <title>Pachtvertrag über Ländereien der Südkirche von Hermupolis</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">702542</idno>
             <idno type="TM">702542</idno>
-            <idno type="ddb-filename">p.gascou.40</idno>
-            <idno type="ddb-hybrid">p.gascou;;40</idno>
+            <idno type="ddb-filename">p.louvre.3.208</idno>
+            <idno type="ddb-hybrid">p.louvre;3;208</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -19,7 +19,7 @@
                      <settlement>Paris</settlement>
                   </placeName>
                   <collection>Louvre</collection>
-                  <idno type="invNo">E 11090 a/69 + E 10239</idno>
+                  <idno type="invNo">E 11090 a / 69 + E 10239</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,10 +33,10 @@
                <history>
                   <origin>
                      <origPlace>Hermopolites</origPlace>
-                     <origDate when="0556-09-19">19. Sept. 556</origDate>
+                     <origDate notBefore="0556-09-19" notAfter="0556-09-19">19. Sept. 556</origDate>
                   </origin>
-                  <provenance>
-                     <p xml:id="geoC22EJ9">
+                  <provenance type="located">
+                     <p>
                         <placeName type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
@@ -48,7 +48,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8</p>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         </p>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -62,9 +63,7 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Pachtvertrag</term>
-               <term n="2">Ländereien</term>
-               <term n="3">Südkirche von Hermupolis</term>
+               <term>Pachtvertrag; Ländereien; Südkirche von Hermupolis</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -85,40 +84,41 @@ https://collections.louvre.fr/en/ark:/53355/cl010435062</change>
          <change when="2020-04-20T03:58:48-04:00"
                  who="http://papyri.info/users/lils.ionio">Submit - Entered metadata for P.Gascou 40</change>
          <change when="2020-04-20T02:39:53-04:00" who="http://papyri.info/editor">Automated creation from template</change>
+         <change who="HGV" when="2022-10-13">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Gascou</title>
-                  <biblScope type="numbers">40</biblScope>
+                  <title level="s" type="abbreviated">P.Louvre</title>
+                  <biblScope type="volume">3</biblScope>
+                  <biblScope type="numbers">208</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration" n="1">S. 244</bibl>
-               <bibl type="illustration" n="2">S. 245</bibl>
+               <bibl type="illustration">Tafel 33</bibl>
             </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
+            <listBibl>
+               <bibl type="publication" subtype="other">P. Gascou 40</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>
-               <figure n="1">
-                  <graphic url="https://collections.louvre.fr/en/ark:/53355/cl010435061"/>
+               <figure>
+                  <graphic url="https://collections.louvre.fr/ark:/53355/cl010435061"/>
                </figure>
                <figure>
-                  <graphic url="https://collections.louvre.fr/en/ark:/53355/cl010432768"/>
-               </figure>
-               <figure>
-                  <graphic url="https://collections.louvre.fr/en/ark:/53355/cl010435062"/>
-               </figure>
-               <figure>
-                  <graphic url="https://collections.louvre.fr/en/ark:/53355/cl010049003"/>
+                  <graphic url="https://collections.louvre.fr/ark:/53355/cl010435062"/>
                </figure>
             </p>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
