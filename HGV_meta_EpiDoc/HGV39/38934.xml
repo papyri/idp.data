@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv38934">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Un altro registro alfabetico (dell'archivio di Flavius Atias?)</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">38934</idno>
             <idno type="TM">38934</idno>
             <idno type="ddb-perseus-style">0240;10;62</idno>
-            <idno type="ddb-filename">stud.pal.10.62</idno>
-            <idno type="ddb-hybrid">stud.pal;10;62</idno>
+            <idno type="ddb-filename">zpe.189.218</idno>
+            <idno type="ddb-hybrid">zpe;189;218</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 12062</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0601" notAfter="0700" precision="low">VII</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="0676" notAfter="0700" precision="low">Ende VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/86815"/>
+                  <biblScope type="pp">218</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,34 +73,42 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Ortsnamen</term>
+               <term n="1">Liste</term>
+               <term n="2">Ortsnamen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-10-14T10:11:49-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-10-07T08:33:14-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Add SB Id details</change>
+         <change when="2022-10-07T06:18:57-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Eingabe/ Ersetzung/ Ergänzung des Textes nach sowie Anpassung der Metadaten an ZPE 189, 2014, S. 218. Die Übersetzung kann wieder gelöscht werden (keine eingegeben).</change>
          <change who="HGV" when="1996-01-15">Record created</change>
          <change who="HGV" when="2011-02-03">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört vielleicht zum Archiv des Flavius Atias. Neuedition: ZPE 189, 2014, S. 218-224; zur Datierung vgl. ebenda.</p>
+            <p>Gehört vielleicht zum Archiv des Flavius Atias.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SPP</title>
-                  <biblScope type="volume">10</biblScope>
-                  <biblScope type="numbers">62</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">189</biblScope>
+                  <biblScope n="2" type="fascicle">(2014)</biblScope>
+                  <biblScope n="3" type="pages">S. 218</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 36 (Z. 4)</bibl>
+               <bibl type="illustration" n="1">SPP 10 62, S. 36 (Z. 4)</bibl>
+               <bibl type="illustration" n="2">ZPE 189, 2014, S. 219</bibl>
             </p>
          </div>
          <div type="figure">
@@ -100,6 +118,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SPP 10 62</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
