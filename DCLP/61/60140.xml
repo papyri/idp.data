@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60140" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 32 2649</title>
@@ -14,7 +14,11 @@
             <idno type="filename">60140</idno>
             <idno type="dclp-hybrid">p.oxy;32;2649</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,39 +42,52 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
+               <additional>
+                  <adminInfo>
+                     <custodialHist>
+                        <custEvent type="imaged" corresp="#FR15011">
+                           <graphic url="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0162/cd9bf07e.dir/POxy.v0032.n2649.a.01.hires.jpg"/>
+                           <orgName>University of Oxford</orgName>
+                        </custEvent>
+                     </custodialHist>
+                  </adminInfo>
+               </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Hesiodus; Theogonia 731-740</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Hesiodus; Theogonia 731-740</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,42 +96,67 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/ekdosis/">Würzburger Zentrum für Epikureismusforschung</ref>
+          .
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart" corresp="#FR15011"><ab> 
+<lb n="1"/>χώρω ἐν εὐρ<hi rend="acute">ώ</hi>εντ<unclear>ι</unclear>, π<unclear>ε</unclear>λώ<gap reason="illegible" quantity="3" unit="character"/> ἔσχατα γαίης.<g type="high-punctus"/>
+<lb n="2"/>τῶν οὐκ ἐξιτόν ἐστι,<g type="high-punctus"/> θύρας δ᾽ ἐπ<hi rend="acute">έ</hi>θηκε Ποσειδ<del rend="erasure">έ</del>ων
+<lb n="3"/>χαλκείας,<g type="high-punctus"/> τεῖχος δὲ πεληλαται ἀμφοτέρωθεν.<gap reason="lost" atLeast="0" atMost="1" unit="character"/>
+<lb n="4"/>ἔνθα Γύγης Κόττος τε καὶ Ὀβρι<hi rend="acute">ά</hi>ρεως μεγάθυμος
+<lb n="5"/>ναίουσιν, φύλακες πιστοὶ Διὸς αἰγιόχοιο.<g type="high-punctus"/>
+<lb n="6"/><gap reason="lost" quantity="1" unit="character"/>νθα δὲ γ<hi rend="circumflex">ῆ</hi>ς δνοφ<hi rend="acute">ε</hi><supplied reason="omitted">ρ</supplied>ῆς καὶ Ταρτ<hi rend="acute">ά</hi>ρου ἠερ<hi rend="acute">ό</hi>εντος
+<lb n="7"/>π<gap reason="lost" quantity="1" unit="character"/>ντ<gap reason="lost" quantity="1" unit="character"/>υ τ᾽<g type="apostrophe"/> ἀ<unclear>τ</unclear>ρυγ<unclear>έτο</unclear>ι<unclear>ο</unclear> καὶ οὐραν<unclear>ο</unclear>ῦ ἀστερ<hi rend="acute">ό</hi>εντο<unclear>ς</unclear>
+<lb n="8"/><gap reason="lost" quantity="7" unit="character" precision="low"/>άντων πηγαὶ καὶ πεί<unclear>ρ</unclear>α<unclear>τ</unclear>᾽ <gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character" precision="low"/>
+<lb n="9"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="10"/><gap reason="lost" atLeast="34" atMost="36" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" atLeast="0" atMost="2" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div> </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/7089"/>
-                  <biblScope unit="number">2649</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">32</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/7089"/>
+                  <biblScope n="1" unit="number">2649</biblScope>
+                  <biblScope n="2" unit="volume">32</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020">Hesiodus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020">Hesiodus</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/513">Theogonia</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
                <bibl type="online">
-                  <ptr target="http://163.1.169.40:8081/gsdl/cgi-bin/library?e=d-000-00---0P%2eOxy%2e--00-0-0-0prompt-10---4---Document---0-1l--1-en-50---20-about---001-001-1-0utfZz-8-0&amp;a=d&amp;c=P.Oxy.&amp;cl=CL5.1.21&amp;d=HASH404a17706222c94b6f2d0f"/>
+                  <ptr target="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0162/cd9bf07e.dir/POxy.v0032.n2649.a.01.hires.jpg"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
