@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv31638">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Surrender of a Lease of Royal Land</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oslo</settlement>
                   </placeName>
+                  <collection>University Library</collection>
+                  <idno type="invNo">P. 465</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736932 https://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/736932 http://www.trismegistos.org/place/1008">Karanis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,33 +67,42 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Kündigung</term>
-               <term>Pacht</term>
-               <term>Vertrag</term>
-               <term>Land</term>
+               <term n="1">Kündigung</term>
+               <term n="2">Pacht</term>
+               <term n="3">Vertrag</term>
+               <term n="4">Land</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-10-20T09:59:55-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-09-05T11:51:12-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Change Commentary to standardised German.</change>
+         <change when="2021-12-01T08:38:08-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Metadata updated according to R. Mascellari, APF 64, 2018</change>
          <change who="HGV" when="1992-12-17">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oslo</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">137</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">137</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung (vielleicht früher) cf. APF 64, 2018, S. 301.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
