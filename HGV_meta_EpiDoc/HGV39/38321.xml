@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv38321">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>To Georgius from a ‘brother’</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">38321</idno>
             <idno type="TM">38321</idno>
             <idno type="ddb-perseus-style">0154;3;1325</idno>
-            <idno type="ddb-filename">p.lond.3.1325</idno>
-            <idno type="ddb-hybrid">p.lond;3;1325</idno>
+            <idno type="ddb-filename">apf.67.96</idno>
+            <idno type="ddb-hybrid">apf;67;96</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 1325</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,25 +33,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0643" notAfter="0644">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 643 - 644</origDate>
+                     <origPlace>Hermopolites, Ägypten</origPlace>
+                     <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance>
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   ref="https://www.trismegistos.org/place/2720 https://pleiades.stoa.org/places/736922">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="96185"/>
+                  <biblScope type="pp">96</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,35 +73,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Schreiben (amtlich)</term>
-               <term>Erwähnung des comes Kallinikos</term>
+               <term n="1">Brief</term>
+               <term n="2">comes Kallinikos</term>
+               <term n="3">scholasticus</term>
+               <term n="4">domesticus</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-10-25T14:00:56-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go. Idnos updated: Greek text begins on S. 96.</change>
+         <change when="2022-10-25T10:02:21-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good</change>
+         <change when="2022-10-22T10:04:02-04:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Entered text and metadata from APF 67 (2021) 95ff. There is no biblio. ID. — I have deleted the note, ‘Descr. Gehört zum Senuthios - Archiv. Zum Ort und zur Datierung vgl. CPR XXX, S. 235.’, because this stems from an old mistake; it has nothing to do with the Senuthios archive.</change>
          <change who="HGV" when="1995-09-18">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr. Gehört zum Senuthios - Archiv. Zum Ort und zur Datierung vgl. CPR XXX, S. 235.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1325</biblScope>
-                  <biblScope type="pages">(S. LXXIII)</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">67</biblScope>
+                  <biblScope n="2" type="fascicle">(2021)</biblScope>
+                  <biblScope n="3" type="pages">S. 96</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 97</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. 3 1325 (S. LXXIII)</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
