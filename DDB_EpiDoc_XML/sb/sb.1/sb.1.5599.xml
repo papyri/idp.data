@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     n="0239;1;5599"
-     xml:id="sb.1.5599"
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="0239;1;5599" xml:id="sb.1.5599"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -27,18 +25,28 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+            <handNote xml:id="m3"/>
+            <handNote xml:id="m4"/>
+            <handNote xml:id="m5"/>
+            <handNote xml:id="m1"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-          <change when="2011-12-14" who="https://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
-          <change when="2011-12-14" who="https://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
-          <change when="2011-10-04" who="https://papyri.info/editor/users/Faith">Automatically updated revision description</change>
-          <change when="2011-09-20" who="https://papyri.info/editor/users/Faith">Automated transfer of accents across reg-orig pairs</change>
-          <change when="2011-03-02" who="https://papyri.info/editor/users/gabrielbodard">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
-          <change when="2010-05-05" who="https://papyri.info/editor/users/gabrielbodard">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
-          <change when="2009-11-12" who="https://papyri.info/editor/users/gabrielbodard">Added language la-Grek</change>
-          <change when="2009-06-27" who="https://papyri.info/editor/users/gabrielbodard">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
+          <change when="2013-12-31T13:41:17.494-05:00"
+                 who="http://papyri.info/editor/users/Georg">Coptic text added</change>
+          <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">rationalized languages in langUsage</change>
+          <change when="2011-12-14" who="http://papyri.info/editor/users/gabrielbodard">changed editor names to URIs</change>
+          <change when="2011-10-04" who="http://papyri.info/editor/users/Faith">Automatically updated revision description</change>
+          <change when="2011-09-20" who="http://papyri.info/editor/users/Faith">Automated transfer of accents across reg-orig pairs</change>
+          <change when="2011-03-02" who="http://papyri.info/editor/users/gabrielbodard">batch converted all tei:sic to tei:orig and tei:corr to tei:reg</change>
+          <change when="2010-05-05" who="http://papyri.info/editor/users/gabrielbodard">changed schema; added xml:space=preserve; indented; moved title/@n to idno</change>
+          <change when="2009-11-12" who="http://papyri.info/editor/users/gabrielbodard">Added language la-Grek</change>
+          <change when="2009-06-27" who="http://papyri.info/editor/users/gabrielbodard">Converted from TEI P4 (EpiDoc DTD v. 6) to P5 (EpiDoc RNG schema)</change>
           <change when="2008-12-23" who="http://papyri.info/about">Automated split from transcoder files</change>
       </revisionDesc>
    </teiHeader>
@@ -48,15 +56,64 @@
             <date>AD734</date>
             <placeName>Thebes</placeName>
          </head>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="A" type="textpart"><ab>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>SB I 5599 = P.KRU 88
+four lines of Arabic in red ink before line 1</p></div>
+         <div xml:lang="cop" type="edition" xml:space="preserve"> <div n="r" type="textpart"><ab> 
 
-    <lb n="1"/><gap reason="ellipsis" quantity="4" unit="line"><desc>Arabic</desc></gap> 
+    <lb n="1"/> <foreign xml:lang="grc">ἐν ὀνόματι <choice><reg>τῆς</reg><orig>δῆς</orig></choice> ἁγίας <choice><reg><expan>ζωοπο<ex>ιοῦ</ex></expan></reg><orig>ζωυ<add place="above">πο</add></orig></choice> <choice><reg>ὁμοουσίου</reg><orig>ὡμωσίου</orig></choice> <choice><reg>τριάδος</reg><orig>δριάτος</orig></choice> πα<add place="above">τ</add>ρὸς <choice><reg>καὶ</reg><orig>γαὶ</orig></choice> <choice><reg>τοῦ</reg><orig>τω</orig></choice> <choice><reg>υἱοῦ</reg><orig>ὑῶ</orig></choice> <choice><reg>καὶ</reg><orig>γαὶ</orig></choice> <choice><reg>τοῦ</reg><orig>δοῦ</orig></choice> <choice><reg>ἁγίου</reg><orig>ἁγιον</orig></choice> <expan>πν<ex>εύμ</ex>α<ex>τος</ex></expan>. <expan>μ<ex>ηνὸς</ex></expan> Φαμενὼθ <num value="12">ιβ</num>, <expan><ex>ἰν</ex>δ<ex>ικτίωνος</ex></expan> <num value="2">β</num> <g type="stauros"/> 
 
-    <lb n="2"/>ἐν ὀνόματι <choice><reg>τῆς</reg><orig>δῆς</orig></choice> ἁγίας <choice><reg><expan>ζωοπο<ex>ιοῦ</ex></expan></reg><orig>ζωυ<add place="above">πο</add></orig></choice> <choice><reg>ὁμοουσίου</reg><orig>ὡμωσίου</orig></choice> <choice><reg>τριάδος</reg><orig>δριάτος</orig></choice> πα<add place="above">τ</add>ρὸς <choice><reg>καὶ</reg><orig>γαὶ</orig></choice> <choice><reg>τοῦ</reg><orig>τω</orig></choice> <choice><reg>υἱοῦ</reg><orig>ὑῶ</orig></choice> <choice><reg>καὶ</reg><orig>γαὶ</orig></choice> <choice><reg>τοῦ</reg><orig>δοῦ</orig></choice> <choice><reg>ἁγίου</reg><orig>ἁγιον</orig></choice> <expan>πν<ex>εύμ</ex>α<ex>τος</ex></expan>. <expan>μ<ex>ηνὸς</ex></expan> Φαμενὼθ <num value="12">ιβ</num>, <expan><ex>ἰν</ex>δ<ex>ικτίωνος</ex></expan> <num value="2">β</num> <g type="stauros"/> 
-</ab></div><div n="B" type="textpart"><ab>
+    <lb n="2"/>σύν <expan>θ<ex>εῷ</ex></expan></foreign>ⲁⲛⲟⲕ ⲑⲉⲱⲇⲱⲣⲟⲥ ⲡⲉⲕⲱⲧ ⲡϣⲏⲣⲉ  ⲛϩⲁⲣⲱⲛ ⲉⲓⲥϩⲁⲓ ϩⲙⲡⲟⲟⲩ ⲛϩⲟⲟⲩ ϣⲁⲉⲛⲉϩ ⲛⲟⲩⲟⲉⲓϣ ϩⲓⲱⲕ ⲛⲧⲟⲕ ⲡⲉⲧⲣⲟⲥ ⲡⲉ
 
-    <lb n="1"/><g type="stauros"/> <choice><reg>διʼ</reg><orig>δειʼ</orig></choice> ἐμοῦ Εἰὼβ Ἀλεξ <choice><reg>ἐγράφη</reg><orig>ἐγράψα</orig></choice> <g type="stauros"/> 
-</ab></div></div>
+    <lb n="3" break="no"/><choice><reg xml:lang="grc">προεστώς</reg><orig>ⲡⲣⲟⲱⲉⲓⲥⲧⲟⲥ</orig></choice> ⲙ<choice><reg xml:lang="grc">ἄγιος</reg><orig>ⲫⲁⲅⲓⲟⲥ</orig></choice> ⲁⲡⲁ ⲫⲟⲓⲃⲁⲙⲱⲛ ⲙⲡⲧⲟⲟⲩ ⲛϫⲉⲙⲏ ⲉⲣⲉ<choice><reg xml:lang="grc">κύριος</reg><orig>ⲕⲩⲣⲱ</orig></choice> ⲭⲁⲏⲗ ⲙⲯⲙⲱ ⲱ ⲛ<choice><reg xml:lang="grc">διοικητής</reg><orig>ⲇⲓⲏⲕⲩⲧⲏⲥ</orig></choice> ⲉⲡ<choice><reg xml:lang="grc">κάστρον</reg><orig>ⲕⲁⲥⲧⲣⲟⲛ</orig></choice> ϫⲉⲙ ϩⲓⲧⲛⲡⲟⲩ
+
+    <lb n="4" break="no"/>ⲱϣ ⲙⲡⲛⲟⲩⲧⲉ ⲡ<choice><reg xml:lang="grc">παντοκράτωρ</reg><orig>ⲡⲁⲛⲧⲱⲕⲣⲁⲧⲱⲣ</orig></choice> ⲁⲛⲟⲕ ⲑⲉⲱⲇⲱⲣⲟⲥ <app type="editorial"><lem resp="H. Förster, GM 179 (2000) 112">ⲉⲓⲥϩⲁⲓ ϩ<hi rend="supraline">ⲙ</hi>ⲡⲟⲟⲩ</lem><rdg>ⲉⲓⲥϩⲁⲓ ⲙⲡⲟⲟⲩ</rdg></app> ⲛϩⲟⲟⲩ ⲉⲓ<choice><reg xml:lang="grc">δωρίζειν</reg><orig>ⲧⲱⲣⲓⲍⲉ</orig></choice> ⲛⲥⲟⲛⲭⲏⲙ ⲡⲁϣⲏⲣⲉ
+
+    <lb n="5"/>ⲛⲧⲁⲓϫⲡⲟϥ ⲉⲃⲟⲗ ϩⲛⲛⲁ<choice><reg xml:lang="grc">μέλος</reg><orig>ⲙⲉⲗⲟⲥ</orig></choice> ⲙⲛⲧⲉϥⲙⲁⲁⲩ ⲙⲁⲣⲓⲁ ⲉⲓ<choice><reg xml:lang="grc">δωρίζειν</reg><orig>ⲇⲱⲣⲓⲍⲉ</orig></choice> ⲙⲙⲟϥ ⲁⲩⲱ ⲉⲓϯ ⲙⲙⲟϥ ⲛⲉⲣⲏⲧ ⲉϩⲟⲩⲛ ⲉⲡ
+
+    <lb n="6" break="no"/><choice><reg xml:lang="grc">τόπος</reg><orig>ⲧⲱⲡⲟⲥ</orig></choice> ⲉⲧⲟⲩⲁⲁⲃ ⲙ<choice><reg xml:lang="grc">ἅγιος</reg><orig>ⲫⲁⲅⲓⲟⲥ</orig></choice> ⲁⲡⲁ ⲫⲟⲩⲃⲁⲙⲱⲛ ⲙⲡⲧⲟⲟⲩ ⲛϫⲉⲙⲏ ⲛⲛⲉϥϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲙⲡⲉϥⲱⲛϩ ϫⲉⲕⲁⲥ ⲉϥⲛⲁϣⲱⲡⲉ
+
+    <lb n="7"/>ⲉϥⲱ ⲙⲡⲉϥϫⲟⲉⲓⲥ ⲛⲛⲉϥϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲙⲡⲉϥⲱⲛϩ ⲉϥⲱ ⲛϩⲙϩⲁⲗ ⲛⲁϥ ⲛϥϣⲱⲡⲉ ⲉϥϯ ⲙⲡⲉϥϩⲓⲥⲉ ⲉϩⲟⲩⲛ ⲉⲣⲟϥ
+
+    <lb n="8"/>ⲛⲛⲉϩⲟⲟⲩ ⲧⲩⲣⲟⲩ ⲙⲡⲉϥⲱⲛϩ ⲉⲃⲟⲗ ϫⲉⲁⲡⲛⲟⲩⲧⲉ ⲉⲓⲛⲉ ⲛⲟⲩϣⲱⲛⲏ ⲉϫⲱϥ <choice><reg xml:lang="grc">κατά</reg><orig>ⲕⲁⲧⲁ</orig></choice> ⲡⲉϥⲟⲩⲱϣ ϫⲓⲛⲧⲉϥⲙⲛⲧⲕⲟⲩⲓ
+
+    <lb n="9"/>ⲁⲓⲧⲁⲗⲟϥ ⲁⲓϫⲓⲧϥ ⲉⲡ<choice><reg xml:lang="grc">τόπος</reg><orig>ⲇⲱⲡⲟⲥ</orig></choice> ⲙ<choice><reg xml:lang="grc">ἅγιος</reg><orig>ⲫⲁⲅⲓⲟⲥ</orig></choice> ⲁⲡⲁ ⲫⲟⲩⲃⲁⲙⲱⲛ ⲁⲓⲕⲱ ⲉⲓ<choice><reg xml:lang="grc">παρακαλεῖν</reg><orig>ⲡⲁⲣⲁⲕⲁⲗⲉ</orig></choice> ⲙⲙⲟϥ ⲁϥ<choice><reg xml:lang="grc">παρακαλεῖν</reg><orig>ⲡⲁⲣⲁⲕⲁⲗⲉ</orig></choice> ⲙⲡⲛⲟⲩⲧⲉ
+
+    <lb n="10"/>ⲁϥ<choice><reg xml:lang="grc">χαρίζειν</reg><orig>ⲭⲁⲣⲓⲍⲉ</orig></choice> ⲛⲁϥ ⲙⲡⲟⲩϫⲁⲓ ⲁⲓϫⲟⲟϥ ϩⲙⲡⲁ<choice><reg xml:lang="grc">συνείδησις</reg><orig>ⲥⲉⲛⲏⲇⲱⲥⲓⲥ</orig></choice> ⲙⲙⲓⲛ ⲉⲙⲙⲟⲓ ⲙⲛⲧⲉϥⲙⲁⲁⲩ ⲙⲁⲣⲓⲁ ⲉⲧⲣⲉⲛ<choice><reg xml:lang="grc">δωρίζειν</reg><orig>ⲇⲱⲍⲉ</orig></choice> ⲙⲙⲟϥ ⲛ<choice><reg xml:lang="grc">δῶρον</reg><orig>ⲇⲱ
+
+    <lb n="11" break="no"/>ⲣⲱⲛ</orig></choice> ⲉϩⲟⲩⲛ ⲉⲡ<choice><reg xml:lang="grc">τόπος</reg><orig>ⲇⲱⲡⲟⲥ</orig></choice> ⲉⲧⲟⲩⲁⲁⲃ ⲙ<choice><reg xml:lang="grc">ἅγιος</reg><orig>ⲫⲁⲅⲓⲟⲥ</orig></choice> ⲁⲡⲁ ⲫⲟⲩⲃⲁⲙⲱⲛ ⲧⲁⲣⲉϥϣⲱⲡⲉ ⲛⲁϥ ⲙϩⲙϩⲁⲗ ϣⲁⲉⲛⲉϩ ⲛⲟⲩⲟⲉⲧϣ
+
+    <lb n="12"/>ϫⲉⲕⲁⲥ ⲉϥⲛⲁϯ ⲙⲡⲉϥϩⲓⲥⲉ ⲧⲩⲣϥ ⲉⲧⲉⲣⲉⲡⲛⲟⲩⲧⲉ ⲛⲁⲧⲟϣϥ ⲉⲣⲟϥ ⲉϩⲟⲩⲛ ⲉⲡⲉ<choice><reg xml:lang="grc">μαρτύριον</reg><orig>ⲙⲁⲣⲧⲩⲣⲓⲟⲛ</orig></choice> ⲉⲧⲟⲩⲁⲁⲃ ⲁⲩⲱ
+
+    <lb n="13"/>ⲗⲁⲁⲩ ⲛⲣⲱⲙⲉ ⲉϥⲛⲁ<choice><reg xml:lang="grc">τολμᾶν</reg><orig>ⲧⲟⲗⲙⲁ</orig></choice> ⲛϥ<choice><reg xml:lang="grc">ἐνάγειν</reg><orig>ⲏⲛⲉⲅⲉ</orig></choice> <choice><reg xml:lang="grc">ἤ</reg><orig>ⲏ</orig></choice> ⲛϥⲉⲓ ⲉⲃⲟⲗ ⲛⲡⲉⲓ<choice><reg xml:lang="grc">τόπος</reg><orig>ⲇⲱⲡⲟⲥ</orig></choice> ⲛϥ<choice><reg xml:lang="grc">ἐνάγειν</reg><orig>ⲏⲛⲉⲅⲉ</orig></choice> ϩⲁⲥⲟⲛⲭⲏⲙ ⲡⲁϣⲏⲣⲉ <choice><reg xml:lang="grc">ἤ</reg><orig>ⲏ</orig></choice> ⲛϥ<choice><reg xml:lang="grc">τολμᾶν</reg><orig>ⲧⲟⲗⲙⲁ</orig></choice> <choice><reg xml:lang="grc">ὅλος</reg><orig>ϩⲟⲗⲟⲥ</orig></choice>
+
+    <lb n="14"/>ⲉⲡⲉⲓϩⲱⲃ ⲛⲧⲉⲙⲓⲛⲉ ⲛⲛⲁϩⲣⲛ<choice><reg xml:lang="grc">ἐξουσία</reg><orig>ⲉⲝⲟⲩⲥⲓⲁ</orig></choice> <choice><reg xml:lang="grc">ἤ</reg><orig>ⲏ</orig></choice> ϩⲛϯⲙⲉ ⲏ ϩⲛ<choice><reg xml:lang="grc">πόλις</reg><orig>ⲡⲱⲗⲓⲥ</orig></choice> <choice><reg xml:lang="grc">ἤ</reg><orig>ⲩ</orig></choice> ϩⲛ<choice><reg xml:lang="grc">πραιτώριον</reg><orig>ⲡⲣⲁⲓⲇⲱⲣⲓⲟⲛ</orig></choice> <choice><reg xml:lang="grc">ἤ</reg><orig>ⲩ</orig></choice> ⲙⲡⲃⲟⲗ ⲙ<choice><reg xml:lang="grc">πραιτώριον</reg><orig>ⲡⲣⲁⲓⲇⲱⲣⲓⲟⲛ</orig></choice> ϣⲟⲣⲡ ⲙⲛ ⲛⲛⲉⲡⲣⲱⲙⲉ ⲉ
+
+    <lb n="15" break="no"/>ⲉⲧⲙⲙⲁⲩ ϯ ϩⲏⲩ ⲛⲗⲁⲁⲩ ⲁⲗⲗⲁ ⲉϥⲛⲁϣⲱⲡⲉ ⲉϥⲱ ⲛϣⲙⲙⲟ ⲉⲡⲉⲓⲱⲧ ⲙⲛⲡϣⲏⲣⲉ ⲙⲛⲡ <choice><reg xml:lang="grc">πνεῦμα</reg><orig><hi rend="supraline"><expan>ⲡⲛ<ex>ⲉⲩⲙ</ex>ⲁ</expan></hi></orig></choice> ⲉⲧⲟⲩⲁⲁⲃ ⲛϥϫⲓ ⲧ<choice><reg xml:lang="grc">μερίς</reg><orig>ⲙⲉⲣⲓⲥ</orig></choice> ⲛⲓⲟⲩⲇⲁⲥ
+
+    <lb n="16"/>ⲛϥϫⲓ ⲧ<choice><reg xml:lang="grc">μερίς</reg><orig>ⲙⲉⲣⲓⲥ</orig></choice> ⲛⲁⲛⲁⲛⲓⲁⲥ ⲙⲛⲥⲁⲡⲡⲉⲓⲣⲁ ⲧⲉϥⲥϩⲓⲙⲉ ⲁⲩⲱ ⲛⲧⲉⲡⲛⲟⲩⲧⲉ ⲙ<choice><reg xml:lang="grc">ἅγιος</reg><orig>ⲫⲁⲅⲓⲟⲥ</orig></choice> ⲙ<choice><reg xml:lang="grc">μάρτυρος</reg><orig>ⲙⲁⲣⲧⲩⲣⲟⲥ</orig></choice> ⲁⲡⲁ ⲫⲟⲩⲃⲁⲙⲱⲛ
+
+    <lb n="17"/>ϫⲓ ⲕⲃⲁ ⲙⲙⲟϥ ϫⲉⲁϥ<choice><reg xml:lang="grc">τολμᾶν</reg><orig>ⲧⲟⲗⲙⲁ</orig></choice> <choice><reg xml:lang="grc">ὅλος</reg><orig>ϩⲱⲗⲟⲥ</orig></choice> ⲁϥϩⲱⲛ ⲉϩⲟⲩⲛ ⲉⲡⲙⲁ ⲉⲧⲟⲩⲁⲁⲃ ⲉϥⲱⲣϫ <choice><reg xml:lang="grc">οὖν</reg><orig>ⲟⲩⲛ</orig></choice> ⲁⲛⲟⲕ ⲑⲉⲱⲇⲱ ⲙⲛⲙⲁⲣⲓⲁ ⲧⲉϥⲥⲓⲙⲉ
+
+    <lb n="18"/>ⲁⲛⲥⲙⲛ ⲡⲉⲓ<choice><reg xml:lang="grc">δωρεαστικόν</reg><orig>ⲇⲱⲣⲓⲁⲥⲧⲇⲓⲕⲱⲛ</orig></choice> ⲛⲁⲕ ⲛⲧⲟⲕ ⲡ<choice><reg xml:lang="grc">εὐλαβέστατος</reg><orig>ⲉⲩⲗⲁⲃⲉⲥⲧⲁⲇⲟⲥ</orig></choice> ⲡⲉⲧⲣⲟⲥ ⲡⲉ<choice><reg xml:lang="grc">προεστώς</reg><orig>ⲡⲣⲱⲉⲓⲥⲧⲟⲥ</orig></choice> ⲙ<choice><reg xml:lang="grc">ἅγιος</reg><orig>ⲫⲁⲅⲓⲟⲥ</orig></choice> ⲁⲡⲁ ⲫⲟⲩⲃⲁⲙⲱⲛ ⲁⲓϯ <choice><reg xml:lang="grc">μάρτυρος</reg><orig>ⲙⲁⲣⲧⲩⲣⲟⲥ</orig></choice>
+
+    <lb n="19"/>ⲉⲣⲟϥ ⲁⲩⲱ ⲧⲛ<choice><reg xml:lang="grc">στοιχεῖν</reg><orig>ⲥⲧⲉⲭⲏ</orig></choice> ⲉⲣⲟϥ <g type="stauros"/> <g type="stauros"/> <g type="stauros"/> <handShift new="m2"/>ⲁⲛⲟⲕ ⲡⲁⲡⲁⲥ ⲡϣⲏⲣⲉ <supplied reason="lost">ⲥⲧⲉ</supplied>ⲫⲁⲛⲟⲥ ϯⲱ ⲙⲛⲧⲣⲉ <g type="stauros"/> <g type="stauros"/> <handShift new="m3"/>ⲁⲛⲟⲕ ⲩⲙⲁⲓ ⲡϣⲏⲣⲉ ⲛⲍⲁⲏⲗ ϯⲱ ⲙⲛⲧⲣⲉ <g type="stauros"/>
+
+    <lb n="20" xml:id="div1-lb20"/><g type="stauros"/> <handShift new="m4"/>ⲁⲛⲟⲕ ⲡⲁⲩⲗⲉ ⲡϣⲏⲣⲉ ⲕⲁⲛⲁϩ ⲡⲣⲙⲣⲟⲙⲟⲟⲩ ϯⲱ ⲙⲛⲧⲣⲉ  <g type="stauros"/> <handShift new="m5"/>ⲁⲛⲟⲕ ⲥⲟⲩⲁⲓ ⲡϣⲏⲣⲉ ⲛⲅⲉⲱⲣⲅⲓⲟⲥ ⲡⲣⲙϯⲙⲉϣⲟⲣ ϯⲱ ⲙⲛⲧⲣⲉ <g type="stauros"/>
+
+    <lb n="21"/><handShift new="m1"/><g type="stauros"/> ⲁⲛⲟⲕ ⲉⲓⲱⲃ <del rend="erasure">...</del> <g type="stauros"/>
+
+</ab></div> 
+
+<div n="v" type="textpart"><ab> 
+
+    <lb n="22"/><foreign xml:lang="grc"><g type="stauros"/> <choice><reg>διʼ</reg><orig>δειʼ</orig></choice> ἐμοῦ Εἰὼβ Ἀλεξ <choice><reg>ἐγράφη</reg><orig>ἐγράψα</orig></choice> <g type="stauros"/></foreign> 
+
+</ab></div> </div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-lb20" xml:space="preserve"><ref>20</ref> <p>m4 und m5 von H. Förster, GM 179 (2000) 112.</p></item>
+            </list>
+         </div>
       </body>
    </text>
 </TEI>
