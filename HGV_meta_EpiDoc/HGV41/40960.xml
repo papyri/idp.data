@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv40960">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Anfang eines Vertrages (?)</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 39960</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,13 +34,15 @@
                <history>
                   <origin>
                      <origPlace>Arsinoiton Polis</origPlace>
-                     <origDate when="0605-09-30">
-                        <certainty locus="value" match="../day-from-date(@when)"/>30. Sept. 605 (Tag unsicher)</origDate>
+                     <origDate when="0606-09-30">
+                30. Sept. 606 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736948 https://www.trismegistos.org/place/327 https://www.trismegistos.org/place/1343">Arsinoiton Polis</placeName>
+                                   ref="http://pleiades.stoa.org/places/736948 http://www.trismegistos.org/place/327 http://www.trismegistos.org/place/1343">Arsinoiton Polis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,18 +67,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag (Anfang)</term>
-               <term>Anrufungsformel</term>
+               <term n="1">Vertrag (Anfang)</term>
+               <term n="2">Anrufungsformel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-10-31T11:40:33-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-09-02T06:29:20-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-02-10T03:45:38-05:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Change of date: 30.9.606&#xD;
+Corrections in ll. 7, 9, 10, 12&#xD;
+Please insert underdots under: &#xD;
+l.7: Epsilon in ἐν; Alpha in Ἀρ(  ) &#xD;
+l.12: Iota and Omega in υἱῷ &#xD;
+S. Kovarik, Tyche 34 (2019) 248 (KorrTyche 915)&#xD;
+</change>
          <change who="HGV" when="1990-07-18">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -104,6 +121,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 7, 9, 10, 12 u. 13 und zum Ort vgl. Tyche 34, 2019, S. 248, Korr. Tyche 915.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
