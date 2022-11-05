@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv29625">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Mitteilung</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Narmuthis (Arsinoites)</origPlace>
+                     <origPlace>Narmuthis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0101" notAfter="0300" precision="low">II - III</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736972 https://www.trismegistos.org/place/1421">Narmuthis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,26 +68,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Notiz</term>
-               <term>Miitteilung</term>
-               <term>Aussage</term>
+               <term n="1">Notiz</term>
+               <term n="2">Mitteilung</term>
+               <term n="3">Aussage</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-11-05T10:36:04-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-11-05T08:07:18-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-11-03T09:53:54-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Corrected tiping mistake in Keywords (Miitteilung &gt; Mitteilung)</change>
          <change who="HGV" when="2006-08-01">Record created</change>
          <change who="HGV" when="2010-06-24">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">26</biblScope>
-                  <biblScope type="numbers">16406</biblScope>
+                  <biblScope n="1" type="volume">26</biblScope>
+                  <biblScope n="2" type="numbers">16406</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,5 +109,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
