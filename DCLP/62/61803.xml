@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61803" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 64 4406</title>
@@ -14,7 +14,11 @@
             <idno type="filename">61803</idno>
             <idno type="dclp-hybrid">p.oxy;64;4406</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +31,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">3.2 cm</width>
+                              <height unit="cm">5.5 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="14">
                            <p>papyrus codex (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -38,19 +46,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -61,21 +70,21 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>bible</term>
-               <term>gospel</term>
-               <term>magic amulet</term>
-               <term type="culture">literature</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">New Testament, Mattheus; gospel Mt 27.62-64, 28.2-5; no doubt amulet</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">prose</term>
+               <term n="5">bible</term>
+               <term n="6">gospel</term>
+               <term n="7">magic amulet</term>
+               <term n="8" type="overview">New Testament, Mattheus; gospel Mt 27.62-64, 28.2-5; no doubt amulet</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -86,29 +95,58 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τ</supplied><unclear>ὴ</unclear>ν <unclear>π</unclear>α<unclear>ρ</unclear><supplied reason="lost">ασκευήν</supplied>, 
+<lb n="2"/><supplied reason="lost">συνήχθησαν ο</supplied>ἱ ἀρχιερ<supplied reason="lost">εῖς καὶ οἱ</supplied>
+<lb n="3"/><supplied reason="lost">Φαρισαῖοι πρὸς</supplied> <app type="editorial"><lem resp="pap"><unclear>τ</unclear>ὸν</lem><rdg resp="om.mss"/></app> <choice><reg>Πι<supplied reason="lost">λᾶτον</supplied></reg><orig><unclear>Π</unclear>ε<unclear>ι</unclear><supplied reason="lost">λᾶτον</supplied></orig></choice>
+<lb n="4"/><supplied reason="lost">λέγοντες· <expan><hi rend="supraline">κ</hi><ex>ύρι</ex><hi rend="supraline">ε</hi></expan>, ἐμ</supplied>ν<unclear>ή</unclear>σθη<unclear>μ</unclear><supplied reason="lost">εν ὅτι ἐκεῖ</supplied>
+<lb n="5" break="no"/><supplied reason="lost">νος ὁ πλάνος</supplied> <unclear>εἶπ</unclear>εν ἔτ<unclear>ι</unclear> <supplied reason="lost">ζῶν· μετὰ</supplied>
+<lb n="6"/><supplied reason="lost"><num value="3">τρεῖς</num> ἡμέρας</supplied> <unclear>ἐ</unclear>γείρο<unclear>μα</unclear><supplied reason="lost">ι</supplied>. <supplied reason="lost">κέλευσον</supplied>
+<lb n="7"/><supplied reason="lost">οὖν ἀσφαλισθ</supplied><unclear>ῆ</unclear>να<unclear>ι</unclear> <unclear>τὸν</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἐπάν</supplied>ω αὐ<unclear>το</unclear><supplied reason="lost">ῦ. ἦν δὲ ἡ <choice><reg>ἰδέα</reg><orig>εἰδέα</orig></choice></supplied>
+<lb n="9"/><supplied reason="lost">αὐτοῦ ὡς ἀστρ</supplied><unclear>α</unclear>πὴ καὶ <unclear>τ</unclear><supplied reason="lost">ὸ ἔνδυμα</supplied>
+<lb n="10"/><supplied reason="lost">αὐτοῦ λευκὸν</supplied> <unclear>ὡς</unclear> <choice><reg>χιώ<supplied reason="lost">ν</supplied></reg><orig>χειών</orig></choice>. <supplied reason="lost">ἀπὸ δὲ</supplied>
+<lb n="11"/><supplied reason="lost">τοῦ φόβου αὐτ</supplied><unclear>ο</unclear>ῦ <choice><reg>ἐσείσθ<supplied reason="lost">ησαν</supplied></reg><orig>ἐσίσθ<supplied reason="lost">ησαν</supplied></orig></choice> <supplied reason="lost">οἱ τη</supplied>
+<lb n="12" break="no"/><supplied reason="lost">ροῦντες καὶ</supplied> <unclear>ἐ</unclear>γενήθ<unclear>η</unclear><supplied reason="lost">σαν ὡς νεκ</supplied>
+<lb n="13" break="no"/><supplied reason="lost">ροί. ἀποκριθεὶς</supplied> <unclear>δὲ</unclear> ὁ <unclear>ἄ</unclear><supplied reason="lost">γγελος εἶπεν</supplied>
+<lb n="14"/><supplied reason="lost">ταῖς γυναιξίν· μ</supplied><unclear>ὴ</unclear> φο<supplied reason="lost">βεῖσθε</supplied>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/14804"/>
-                  <biblScope unit="number">4406</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">64</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="study">
                   <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14804"/>
+                  <biblScope n="1" unit="number">4406</biblScope>
+                  <biblScope n="2" unit="volume">64</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="study">
                   <title level="a" type="main">Greek Amulets and Formularies from Egypt Containing Christian Elements: A Checklist of Papyri, Parchments, Ostraka, and Tablets. Avec résumé en anglais.</title>
-                  <author n="1">
-                     <forename>Theodore S.</forename>
-                     <surname>De Bruyn</surname>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/79961"/>
-                  <biblScope unit="number">122</biblScope>
+                  <biblScope n="1" unit="number">122</biblScope>
+                  <biblScope n="2" unit="page" from="202" to="203">202-203</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95680"/>
+                  <biblScope n="1" unit="page" from="127" to="130">127-130</biblScope>
+                  <biblScope n="2" unit="number">15</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
@@ -122,21 +160,20 @@
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 64 pl.I, II</bibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="http://csntm.org/Manuscript/View/GA_P105"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol64/pages/4406.htm"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="3">
                   <ptr target="https://doi.org/10.25446/oxford.21178708"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
