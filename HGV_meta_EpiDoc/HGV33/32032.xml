@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32032">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Aus einem Inspektionsbericht wie 7</title>
+            <title>Fragment d’un rapport d’inspection cadastrale</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">32032</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibiothek</collection>
+                  <idno type="invNo">G 12485</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,7 +34,10 @@
                <history>
                   <origin>
                      <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
+                     <origDate notBefore="0261" notAfter="0268">
+                ca. 261 - 268
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -45,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,8 +67,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Auszug</term>
-               <term>Kataster</term>
+               <term n="1">Auszug</term>
+               <term n="2">Kataster</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,8 +77,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Kongr. XVII, S. 807 und Kongr. XVIII.2, S. 229.</p>
@@ -80,15 +86,30 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SPP</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">43</biblScope>
+                  <title level="s" type="abbreviated">CPR</title>
+                  <biblScope n="1" type="volume">35</biblScope>
+                  <biblScope n="2" type="numbers">76</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Planche 63</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SPP 5 43</bibl>
+            </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://data.onb.ac.at/rec/RZ00010254"/>
+               </figure>
+            </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
