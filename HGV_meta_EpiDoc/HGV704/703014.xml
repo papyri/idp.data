@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703014">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ricevuta di pagamento εἰς λόγον νομαρχίας</title>
+            <title>Receipt for ἐγκύκλιον</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">703014</idno>
@@ -28,19 +28,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
-                     <origDate when="0161-07-27">
-                        <certainty locus="value" match="../month-from-date(@when)"/>
-                        <certainty locus="value" match="../day-from-date(@when)"/>27. Juli 161 (Monat und Tag unsicher)</origDate>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0161-08-16">
+                16. Aug. 161 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0161-08-19">
+                19. Aug. 161 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,34 +72,54 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuer</term>
-               <term>Geld</term>
-               <term>Kauf</term>
-               <term>Haus</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer</term>
+               <term n="3">Geld</term>
+               <term n="4">Kauf</term>
+               <term n="5">Haus</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-11-28T09:20:23-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-11-28T09:03:59-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Looks good.</change>
+         <change when="2022-11-28T08:42:18-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Updated text and meta (+ link to image) after P.Yale IV 166.</change>
          <change who="HGV" when="2020-05-28">Record last modified</change>
          <change when="2020-05-28" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Bastianini</title>
-                  <biblScope type="numbers">20</biblScope>
+                  <title level="s" type="abbreviated">P.Yale</title>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">166</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 133</bibl>
+               <bibl type="illustration" n="1">P.Yale 4, Plate 38</bibl>
+               <bibl type="illustration" n="2">P.Bastianini, S. 133</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://hdl.handle.net/10079/digcoll/2758671"/>
+               </figure>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Bastianini 20</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
