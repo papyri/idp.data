@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv697550">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petizione all’epistates phylakiton</title>
@@ -29,18 +29,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aueris (?) (Arsinoites)</origPlace>
+                     <origPlace>Aueris ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0013-04-08">8. Apr. 13</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/736918 https://www.trismegistos.org/place/747">Aueris</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,18 +67,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Soterichos an Q. Pacilius Euxinus (ἐπιστάτης φυλακιτῶν). Beschwerde über Beschädigung und Schändung einer Grabanlage durch Totengräber</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Soterichos an Q. Pacilius Euxinus (ἐπιστάτης φυλακιτῶν). Beschwerde über Beschädigung und Schändung einer Grabanlage durch Totengräber</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-11-27T10:43:58-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-11-27T10:24:13-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2022-11-26T21:29:16-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Added link to digital image.</change>
          <change who="HGV" when="2016-03-21">Record created</change>
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -90,6 +99,13 @@
                <bibl type="illustration">Tavole XI-XII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.psi-online.it/documents/p-coles-14"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

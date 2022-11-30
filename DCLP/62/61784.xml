@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61784" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 34 2683, P. Oxy. 64 4405</title>
+            <title>Codex Fragments of Matthew</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -12,9 +12,13 @@
             <idno type="TM">61784</idno>
             <idno type="LDAB">2937</idno>
             <idno type="filename">61784</idno>
-            <idno type="dclp-hybrid">tm;;61784</idno>
+            <idno type="dclp-hybrid">p.oxy;64;4405</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,10 +31,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">8</width>
+                              <height unit="cm">8.2</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
+                        <layout columns="1" writtenLines="32">
                            <p>papyrus codex (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -43,19 +51,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0250" notAfter="0299">250 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                                   ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -66,49 +77,173 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>bible</term>
-               <term>gospel</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">New Testament, Mattheus; gospel Mt 23.30-39</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">bible</term>
+               <term n="5">gospel</term>
             </keywords>
          </textClass>
          <langUsage>
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+            <handNote xml:id="m1"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2022-11-12T11:36:37-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-11-12T10:19:26-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Looks good. Dot second nu of r.2; horizontal lines are paragraphoi; add dots in r.10 and v.30; dot phi in r.11; check |reg| tags in v.19; outdent v.22 and correct accent on participle; remove space in final |reg| tags in v.25-6; regularize at end of v.26 instead of |ed| tags; add accent at end of v.27; add  ο( ῾) in v.29; check apostrophes throughout; add [.?] to end of v.32. Review all metadata before finalization.</change>
+         <change when="2022-11-11T10:25:30-05:00"
+                 who="http://papyri.info/editor/users/PaulvdLaan">Submit - Entered Greek text from P.Oxy 64.4405 = TM 61784. NB: lin 10 and 30: underdotting with diaeresis break Leiden+</change>
+          <change when="2022-11-12T11:36:36-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2022-11-12T10:19:26-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Looks good. Dot second nu of r.2; horizontal lines are paragraphoi; add dots in r.10 and v.30; dot phi in r.11; check |reg| tags in v.19; outdent v.22 and correct accent on participle; remove space in final |reg| tags in v.25-6; regularize at end of v.26 instead of |ed| tags; add accent at end of v.27; add  ο( ῾) in v.29; check apostrophes throughout; add [.?] to end of v.32. Review all metadata before finalization.</change>
+          <change when="2022-11-11T10:25:30-05:00"
+                 who="http://papyri.info/editor/users/PaulvdLaan">Submit - Entered Greek text from P.Oxy 64.4405 = TM 61784. NB: lin 10 and 30: underdotting with diaeresis break Leiden+</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>The recto has been written against the fibres</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="illegible" quantity="3" unit="character"/>μ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="16" unit="character" precision="low"/> <supplied reason="lost">πα</supplied>
+<lb n="2" break="no"/>τέρων ἡμῶ<unclear>ν</unclear>, <supplied reason="lost">οὐκ ἂν ἤμεθα κοινω</supplied>
+<lb n="3" break="no"/>νοὶ αὐτῶν ἐν τ<supplied reason="lost">ῷ αἵματι τῶν προφη</supplied>
+<lb n="4" break="no"/>τῶν. <hi rend="asper">ὥ</hi>στε μαρ<supplied reason="lost">τυρεῖτε ἑαυτοῖς ὅτι</supplied>
+<lb n="5"/>υἱοί ἐστε τῶν φ<supplied reason="lost">ονευσάντων τοὺς</supplied>
+<lb n="6"/>προφήτας.<g type="middot"/> καὶ <hi rend="diaeresis">ὑ</hi><supplied reason="lost">μεῖς πληρώσατε</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="7"/>τὸ μέτρον τῶν <supplied reason="lost">πατέρων ὑμῶν</supplied>.
+<lb n="8"/>ὄφεις, γεννήμ<supplied reason="lost">ατα ἐχιδνῶν, πῶς</supplied>
+<lb n="9"/>φύγητε ἀπὸ τῆ<supplied reason="lost">ς</supplied> <unclear>κρίσε</unclear><supplied reason="lost">ως τῆς γεέν</supplied>
+<lb n="10" break="no"/>νης;<g type="middot"/> διὰ τοῦτ<supplied reason="lost">ο</supplied> <hi rend="diaeresis"><unclear>ἰ</unclear></hi><unclear>δ</unclear>οὺ <unclear>ἐ</unclear>γὼ <unclear>ἀ</unclear>πο<unclear>σ</unclear><supplied reason="lost">τέλλω</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="11"/>πρ<supplied reason="lost">ὸς ὑμᾶς προ</supplied><unclear>φ</unclear>ή<unclear>τ</unclear>ας καὶ σοφ<supplied reason="lost">οὺς</supplied>
+<lb n="12"/><unclear>κ</unclear>αὶ <supplied reason="lost">γραμματεῖ</supplied><unclear>ς</unclear>, ἐ<unclear>ξ</unclear> <unclear>α</unclear>ὐτῶν ἀπο<unclear>κ</unclear><supplied reason="lost">τε</supplied>
+<lb n="13" break="no"/><unclear>ν</unclear><supplied reason="lost">εῖτε καὶ σταυρ</supplied><unclear>ώσετ</unclear>ε, <unclear>κα</unclear><supplied reason="lost">ὶ ἐ</supplied><unclear>ξ</unclear> αὐ<supplied reason="lost">τῶν</supplied>
+<lb n="14"/><supplied reason="lost">μαστιγώσετε ἐν τ</supplied><unclear>αῖς</unclear> <supplied reason="lost">σ</supplied><unclear>υ</unclear><supplied reason="lost">ναγ</supplied><unclear>ω</unclear>γα<supplied reason="lost">ῖς</supplied>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="v" type="textpart"><ab>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="3" unit="character"/>
+<lb n="17"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">Βαρα</supplied>χίου,<g type="middot"/> <hi rend="asper">ὅ</hi>ν ἐφονεύ
+<lb n="18" break="no"/><supplied reason="lost">σατε μεταξὺ τοῦ</supplied> ναοῦ καὶ τοῦ θυσι
+<lb n="19" break="no"/><supplied reason="lost">αστηρίου. ἀμὴ</supplied>ν λέγω <choice><reg>ὑμῖν</reg><orig><hi rend="diaeresis">ὑ</hi>μεῖν</orig></choice>, ἥξει
+<lb n="20"/><supplied reason="lost">ταῦτα πάντα ἐ</supplied>πὶ τὴν γενεὰν ταύ
+<lb n="21" break="no"/><supplied reason="lost">την. <space extent="unknown" unit="character"/> </supplied> <space extent="unknown" unit="character"/> 
+<lb n="22" rend="outdent"/> <supplied reason="lost">Ἰερουσαλὴμ Ἰερουσ</supplied>αλήμ,<g type="middot"/> ἡ ἀποκτιν
+<lb n="23" break="no"/><supplied reason="lost">νύουσα</supplied> <supplied reason="lost">τοὺς προ</supplied>φήτας καὶ λιθοβο
+<lb n="24" break="no"/><supplied reason="lost">λοῦσα τοὺς ἀπεστ</supplied>αλμένους πρὸς α<supplied reason="lost">ὐ</supplied>
+<lb n="25" break="no"/><supplied reason="lost">τὴ</supplied><unclear>ν</unclear>, <supplied reason="lost">πο</supplied><unclear>σ</unclear>άκι<supplied reason="lost">ς</supplied> <choice><corr><supplied reason="lost">ἠ</supplied>θέλησα</corr><sic><subst><add place="inline"><supplied reason="lost">ἠ</supplied>θέληκα</add><del rend="corrected"><supplied reason="lost">ἠ</supplied>θέλ<unclear>ει</unclear>κα</del></subst></sic></choice> <app type="editorial"><lem resp="pap"><choice><reg>ἐπισυνά<lb n="26" break="no"/><supplied reason="lost">ξ</supplied>αι</reg><orig>ἐπεισυν<unclear>ά</unclear>
+<lb n="26" break="no"/><supplied reason="lost">ξ</supplied><unclear>α</unclear>ι</orig></choice></lem><rdg resp="mss.">ἐπισυνα<lb n="26" break="no" xml:id="div2-lb14"/>γαγείν</rdg></app> τ<unclear>ὰ</unclear> τέκνα σο<supplied reason="lost">υ, ὃ</supplied><unclear>ν</unclear> τρόπον <choice><reg>ὄρνις</reg><orig>ὄρν<unclear>ι</unclear>ξ</orig></choice>
+<lb n="27"/><supplied reason="lost">ἐ</supplied><unclear>π</unclear>ισυνάγει τὰ <unclear>ν</unclear><supplied reason="lost">οσ</supplied><unclear>σ</unclear><supplied reason="lost">ία αὐ</supplied>τῆς <hi rend="diaeresis">ὑ</hi><unclear>πὸ</unclear>
+<lb n="28"/><unclear>τ</unclear>ὰς πτέρυγας, <add place="above"><handShift new="m2"/>καὶ</add> <handShift new="m1"/>οὐ<supplied reason="lost">κ ἠθελήσατ</supplied><unclear>ε</unclear>. <hi rend="diaeresis">ἰ</hi>δ<unclear>ο</unclear><supplied reason="lost">ὺ</supplied>
+<lb n="29" xml:id="div2-lb17"/><choice><reg>ἀφίεται</reg><orig><unclear>ἀ</unclear>φείεται</orig></choice> <hi rend="diaeresis">ὑ</hi>μῖν <hi rend="asper">ο</hi><gap reason="lost" quantity="8" unit="character" precision="low"/><gap reason="illegible" quantity="1" unit="character"/>. λέ
+<lb n="30" break="no"/><supplied reason="lost">γω γ</supplied><unclear>ὰρ</unclear> <hi rend="diaeresis"><unclear>ὑ</unclear></hi>μῖν, ο<unclear>ὐ</unclear> μή <supplied reason="lost">με ἴδητε ἀπ’</supplied> 
+<lb n="31"/><supplied reason="lost">ἄρτι ἕ</supplied><unclear>ως</unclear> <supplied reason="lost">ἂν εἴ</supplied><unclear>π</unclear>ητ<unclear>ε</unclear>· <supplied reason="lost">εὐλογημένος</supplied>
+<lb n="32"/><supplied reason="lost">ὁ ἐρχόμενος ἐν ὀν</supplied>ό<supplied reason="lost">ματι</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="32"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div2-lb14" xml:space="preserve">
+            <ref>26</ref>
+            <p>There is unsufficient room to read [γαγει]ν at the start of line 26. The reading [ξ]αι possibly is borrowed from the parallel passage in Luke 13.34</p>
+          </item>
+               <item corresp="#div2-lb17" xml:space="preserve">
+            <ref>29</ref>
+            <p>Most mss have ὁ οἶκος ὑμῶν ἔρημος. The trace before λε is much easier to reconcile with sigma than with nu, which suggests [ἔρημο]ς. In that case there must be an error in the lacuna: either οἶκος or ὑμῶν may have been omitted.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="partial">
+               <bibl n="1" type="reference" subtype="partial">
+                  <title level="s" type="abbreviated">P. Oxy.</title>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/7198"/>
-                  <biblScope unit="number">2683</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">34</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">2683</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/14804"/>
-                  <biblScope unit="number">4405</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="2" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">64</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14804"/>
+                  <biblScope n="1" unit="number">4405</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95567"/>
+                  <biblScope n="1" unit="number">4</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/19433"/>
+                  <biblScope n="1" unit="number">1.3</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="232" to="246">232-246</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/84786"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="195" to="209">195-209</biblScope>
+               </bibl>
+               <bibl n="6" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/15677"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="599" to="601">599-601</biblScope>
+               </bibl>
+               <bibl n="7" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope n="1" unit="number">372</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="8" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8744"/>
+                  <biblScope n="1" unit="number">77</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="number"/>
                </bibl>
             </listBibl>
          </div>
@@ -119,29 +254,31 @@
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/3059">Evangelium secundum Matthaeum</title>
+                  <biblScope n="1" unit="chapter">23</biblScope>
+                  <biblScope n="2" unit="part" from="30" to="39">30-39</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">P. Oxy. 34 pl.I, IV+ P. Oxy. 64 pl.I, II</bibl>
-               <bibl type="printed">Segno e Testo 3 (2005), pl. 10</bibl>
-               <bibl type="printed">Comfort, Encountering the manuscripts, 2005, p. 154</bibl>
-               <bibl type="online">
+               <bibl type="printed" n="1">P. Oxy. 34 pl.I, IV+ P. Oxy. 64 pl.I, II</bibl>
+               <bibl type="printed" n="2">Segno e Testo 3 (2005), pl. 10</bibl>
+               <bibl type="printed" n="3">Comfort, Encountering the manuscripts, 2005, p. 154</bibl>
+               <bibl type="printed" n="4">S.D. Charlesworth, Early Christian gospels, Pap. Flor. 47, pl. 2</bibl>
+               <bibl type="online" n="1">
                   <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol64/pages/4405.htm"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="http://csntm.org/Manuscript/View/GA_P77"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="3">
                   <ptr target="https://doi.org/10.25446/oxford.21165619"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="4">
                   <ptr target="https://doi.org/10.25446/oxford.21178705"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
