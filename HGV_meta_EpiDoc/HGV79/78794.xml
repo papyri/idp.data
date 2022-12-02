@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv78794">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Instanza agli ἐπιτηρηαὶ ξενικῆς πρακτορείας</title>
+            <title>Instanza agli ἐπιτηρηταὶ ξενικῆς πρακτορείας</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">78794</idno>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
                      <origDate notBefore="0183-05-03">
-                        <offset type="after" n="1">nach</offset> 3. Mai 183</origDate>
+                        <offset n="1" type="after">nach</offset>
+                3. Mai 183
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,18 +65,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Akten</term>
-               <term>Pfändungsverfahren (ἐνεχυρασία)</term>
+               <term n="1">Akten</term>
+               <term n="2">Pfändungsverfahren (ἐνεχυρασία)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-12-02T16:06:53-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-12-02T11:51:20-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2022-12-02T08:01:45-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Meta: added links to digital image and another reproduction, and corrected ἐπιτηρηαὶ to ἐπιτηρηταὶ in title. Text: Removed division (no ‘1). Diereses at 12, 14, 23 were treated with |reg|; sorted now, but ὑ̣(¨) at 12 had to lose the dot. Simplified (|Φλα|^υ^||) at 7; changed ἵνα|reg to  ἵνʼ|reg and added elision mark at 17; fixed adscripts at 22 (ῶ̣`) and  26 (ω̣`); added |reg| for συνκέκριται (6). More importantly, the noncommittal treatment of line-ends in the edition, without closing brackets, had resulted in some superfluous [.?], now tacitly removed (19, 21, 28 29; cf. translation and parallels). Lines 28ff. are more or less complete at the right. For 28–29, this was already obvious in the edition, in spite of the lack of a closing bracket. In 29–30, nothing is lost between κυρίου (29) and [ἀργυρίο]υ̣ (30). The only change that required a PN correction was that at 30–31, printed δραχ̣[μιαίου | [  ἑκ]άστης, now δραχ̣-| [μιαίου ἑκ]άστης.</change>
          <change who="HGV" when="2001-09-15">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -84,8 +93,18 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Comunicazioni Vitelli 9 (2011), Tav. XI</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.psi-online.it/documents/pthomas-13"/>
+               </figure>
+            </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
