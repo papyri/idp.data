@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv8842">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Antrag auf Kopfsteuerermäßigung</title>
@@ -31,18 +31,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kerkesucha Orus (Arsinoites)</origPlace>
+                     <origPlace>Kerkesucha Orus (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0185-10-17">
-                        <certainty locus="value" match="../day-from-date(@when)"/>17. Okt. 185 (Tag unsicher)</origDate>
+                17. Okt. 185 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/741494 https://www.trismegistos.org/place/1070">Kerkesucha Orus</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,9 +71,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Antrag auf die Ermäßigung der Steuer (Kopf-) für zwei zum Tierkampf verurteilte Verwandte</term>
-               <term>Vermerk (Weitergabe)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Antrag auf die Ermäßigung der Steuer (Kopf-) für zwei zum Tierkampf verurteilte Verwandte</term>
+               <term n="3">Vermerk (Weitergabe)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,8 +82,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. Kruse, Der Königliche Schreiber, S. 168-170.</p>
@@ -88,13 +93,15 @@
             <note type="original">Z. 10 - 13: 184 - 185; Z. 25 - 26: 17. (?) Okt. 185</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 10-13</ref>
                   <date type="mentioned" notBefore="0184" notAfter="0185">184 - 185</date>
                </item>
-               <item>
-                  <ref>Z.  25-26</ref>
-                  <date type="mentioned" when="0185-10-17">17. Okt. 185 (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+               <item n="2">
+                  <ref>Z. 25-26</ref>
+                  <date type="mentioned" when="0185-10-17">
+              17. Okt. 185 (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
             </list>
@@ -118,8 +125,8 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel III</bibl>
-               <bibl type="illustration">CPGr II, Tav. LXXX</bibl>
+               <bibl type="illustration" n="1">Tafel III</bibl>
+               <bibl type="illustration" n="2">CPGr II, Tav. LXXX</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -130,11 +137,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/PPetaus/petaus_009.html"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm8842"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
