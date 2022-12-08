@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12952">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Offer to Lease a Mill</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0039-09-01">1. Sept. 39</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736909 https://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,26 +68,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Angebot</term>
-               <term>Pacht (Mühle)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Angebot</term>
+               <term n="3">Pacht (Mühle)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2022-12-08T09:55:50-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2022-11-07T12:10:39-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-11-07T08:58:44-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added links to digital images. Two different documents added, cf. P.Ryl. II 167, p. 199: "The document survives in two copies by the same hand. That printed we term A, while a collation with the second (B) is to be found in the textual notes". Added this remark to the general remarks</change>
          <change who="HGV" when="1994-11-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">167</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">167</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -115,6 +124,19 @@
                <bibl type="translations">Johnson, Roman Egypt (1936), S. 372, Nr. 216</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/s/7tv9ie"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/s/o860vt"/>
+               </figure>
+            </p>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Zwei Kopien von demselben Text vorhanden, nur die erste (167A) würde publiziert, vgl. der Hersaugeber (P.Ryl. II, S. 199): "The document survives in two copies by the same hand. That printed we term A, while a collation with the second (B) is to be found in the textual notes"</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
