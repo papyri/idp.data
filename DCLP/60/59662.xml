@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59662" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 31 2549</title>
@@ -14,7 +14,11 @@
             <idno type="filename">59662</idno>
             <idno type="dclp-hybrid">p.oxy;31;2549</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,42 +47,53 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
+               <additional>
+                  <adminInfo>
+                     <custodialHist>
+                        <custEvent type="imaged" corresp="#FR15008">
+                           <graphic url="http://163.1.169.40/gsdl/collect/POxy/index/assoc/HASH0146/c17ae3b5.dir/POxy.v0031.n2549.a.01.hires.jpg"/>
+                           <orgName>University of Oxford</orgName>
+                        </custEvent>
+                     </custodialHist>
+                  </adminInfo>
+               </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>oratory</term>
-               <term>letter</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Demosthenes; epistula 1 4</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">oratory</term>
+               <term n="5">letter</term>
+               <term n="6" type="overview">Demosthenes; epistula 1 4</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -89,40 +104,65 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/ekdosis/">Würzburger Zentrum für Epikureismusforschung</ref>
+          .
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="i" subtype="column" type="textpart" corresp="#FR15008"><ab> 
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="10" unit="character" precision="low"/><supplied reason="lost">πέμπ</supplied><unclear>ε</unclear>ι<unclear>ν</unclear>
+<lb n="2"/><supplied reason="lost"><gap reason="illegible" quantity="4" unit="character"/> τ</supplied><unclear>υ</unclear>γχάνω καὶ δ<supplied reason="lost">ι’</supplied> 
+<lb n="3"/><supplied reason="lost">ἐμπει</supplied>ρίαν καὶ τὸ παρη
+<lb n="4" break="no"/><supplied reason="lost">κολουθ</supplied>ηκέναι τοῖς πρ<unclear>ά</unclear>
+<lb n="5" break="no"/><supplied reason="lost">γμασι</supplied><unclear>ν</unclear> <unclear>εἰ</unclear><supplied reason="lost">δ</supplied><unclear>ώ</unclear>ς ταῦτ’<g type="apostrophe"/> ἐ
+<lb n="6" break="no"/><supplied reason="lost">βουλή</supplied>θ<unclear>ην</unclear> <unclear>τ</unclear>οῖς μὲν π<unclear>ρ</unclear><supplied reason="lost">ο</supplied>
+<lb n="7" break="no"/><supplied reason="lost">αιρου</supplied>μένοις λέγειν ἐ<unclear>μ</unclear>
+<lb n="8" break="no"/><supplied reason="lost">φανῆ</supplied> ποιή<unclear>σ</unclear><supplied reason="lost">α</supplied>ς ἀφθόνο<add place="above"><unclear>υ</unclear><supplied reason="lost">ς</supplied></add>
+<lb n="9"/><supplied reason="lost">ἀφορ</supplied><unclear>μ</unclear>ὰς ὧ<supplied reason="lost">ν ὑ</supplied><unclear>π</unclear>ολαμ
+<lb n="10" break="no"/><supplied reason="lost">βάνω σ</supplied>υμφέρειν ὑμῖν
+<lb n="11"/><supplied reason="lost">δοῦναι το</supplied>ῖς δὲ πολλ<unclear>ο</unclear><supplied reason="lost">ῖς</supplied>
+<lb n="12"/><supplied reason="lost">ῥᾳδίαν τ</supplied>ὴν τῶν <app type="alternative"><lem>βελ<unclear>τ</unclear><supplied reason="lost">ί</supplied></lem><rdg>βελ<unclear>τ</unclear><supplied reason="lost">ίστων</supplied></rdg></app> 
+</ab></div>
+</div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/6821"/>
-                  <biblScope unit="number">2549</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">31</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/6821"/>
+                  <biblScope n="1" unit="number">2549</biblScope>
+                  <biblScope n="2" unit="volume">31</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0014">Demosthenes</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0014">Demosthenes</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/693">Epistulae</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
-               <bibl type="online">
-                  <ptr target="https://doi.org/10.25446/oxford.21165181"/>
-               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
