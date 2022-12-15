@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61423" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Bkt. 9 15</title>
+            <title>Joannes Chrysostomus, In Epistulam I ad Corinthios</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">61423</idno>
             <idno type="dclp-hybrid">bkt;9;15</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">32.1 cm</width>
+                              <height unit="cm">26 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,18 +46,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Arsinoites ?, Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0500" notAfter="0699">500 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
+                                   cert="low"
                                    ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -63,14 +73,14 @@
                                    xml:id="GR10308.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21115_V_4_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21115_V_4.jpg"/>
                         </custEvent>
                         <custEvent type="imaged"
                                    corresp="#FR10307"
                                    xml:id="GR10307.01"
                                    from="2010"
                                    to="2015">
-                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21115_R_4_001.jpg"/>
+                           <graphic url="http://ww2.smb.museum/berlpap/Original/P_21115_R_4.jpg"/>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -87,11 +97,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>oratory</term>
-               <term>homily</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">Johannes Chrysostomus; In epistulam I ad Corinthios</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">oratory</term>
+               <term n="4">homily</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -100,42 +109,158 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2022-12-15T03:53:17-05:00"
+                 who="http://papyri.info/editor/users/simoeis">Finalized - Requested changes made. Ready</change>
+          <change when="2022-12-15T03:53:16-05:00"
+                 who="http://papyri.info/editor/users/simoeis">Finalized - Requested changes made. Ready</change>
+          <change when="2022-12-15T03:39:23-05:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Meta: change in Biblio 95693 to 95692; record in Display Name: Joannes Chrysostomus, In Epistulam I ad Corinthios; delete Legacy Display. The text looks fine.</change>
+          <change when="2022-12-15T03:39:23-05:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Meta: change in Biblio 95693 to 95692; record in Display Name: Joannes Chrysostomus, In Epistulam I ad Corinthios; delete Legacy Display. The text looks fine.</change>
+          <change when="2020-07-27T11:20:00-04:00"
+                 who="http://papyri.info/editor/users/PaulvdLaan">Submit - Encoded Greek text from BKT 9.15, as part of Heidelbergs Digital Webinar Summer 2020.&#xD;
+Recto Fr.1lin1: not sure whether christian symbol should be read as a christogram (*chi-rho*); lin6: no underdot τες (from photo); lin8: no underdot διαβάντα (from photo).&#xD;
+Fr.2 lin2: added &lt;τῶν&gt;, so Joh.Chr., is in lacuna, so no varia lectio, but ‘forgotten’ by Ioannides? lin6: encoded {οὐ}, before lin7 [ο]ὔ̣[τ]ε̣; lin7-8: encoded κατα 8.- [σκευῆς] (BKT has κατα 8.- [κατασκευῆς],  typo in lacuna; lin8: encoded {οὐ};&#xD;
+Verso fr.2 lin9: added [.?]; lin11: added [.?]&#xD;
+</change>
+          <change when="2020-07-27T11:20:00-04:00"
+                 who="http://papyri.info/editor/users/PaulvdLaan">Submit - Encoded Greek text from BKT 9.15, as part of Heidelbergs Digital Webinar Summer 2020.&#xD;
+Recto Fr.1lin1: not sure whether christian symbol should be read as a christogram (*chi-rho*); lin6: no underdot τες (from photo); lin8: no underdot διαβάντα (from photo).&#xD;
+Fr.2 lin2: added &lt;τῶν&gt;, so Joh.Chr., is in lacuna, so no varia lectio, but ‘forgotten’ by Ioannides? lin6: encoded {οὐ}, before lin7 [ο]ὔ̣[τ]ε̣; lin7-8: encoded κατα 8.- [σκευῆς] (BKT has κατα 8.- [κατασκευῆς],  typo in lacuna; lin8: encoded {οὐ};&#xD;
+Verso fr.2 lin9: added [.?]; lin11: added [.?]&#xD;
+</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Four fragments of this papyrus sheet survive, containing, as the editor says, "a rather mixed up version of Joannes Chrysostomus' In epistulam I ad Corinthios." In relation to Migne PG 61 the order of the several text elements seems at random, moreover on some places the scribe's text departs from the Migne text. The text on the verso is written upside down in relation to the text on the recto. The order in which the text is presented is therefore unusual: the front sides of fragments 1 and 2, followed by the back sides of fragments 2 and 1. The editor has joined the second and third fragments to create ‘fragment 2’, which the fourth and final fragment is unplaced and has been named ‘fragment 3’ for this purposes of its DCLP transcription.”</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+
+<div n="r" type="textpart">
+<div n="i" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><add place="left"><g type="chi-rho"/></add> <unclear>τὴ</unclear>ν ψυχή<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>πνευματικη<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><expan>κ<ex>αὶ</ex></expan> πάντα δ<unclear>η</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/>εἰς τὸν <app type="editorial"><lem resp="PN P. van der Laan (from photo)">Μ<unclear>ωϋσ</unclear><supplied reason="lost">ῆν</supplied> <supplied reason="lost">ἐβαπτίσαντο</supplied></lem><rdg>κ<gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/></rdg></app> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><expan>κ<ex>αὶ</ex></expan> τῇ <app type="editorial"><lem resp="PN P. van der Laan (from photo)">ἀναστ<unclear>ά</unclear><supplied reason="lost">σει αὐτοῦ, βαπτιζόμεθα ὡς καὶ αὐτοὶ τῶν αὐτῶν μυστηρίων κοινωνήσαν</supplied> <lb n="6" break="no"/>τες</lem><rdg>ἀνα<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6" break="no"/>τε<unclear>ς</unclear></rdg></app><g type="high-punctus"/> ἐργαζ<unclear>ο</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><app type="editorial"><lem resp="BKT">οὗτοι ἐκεῖ<supplied reason="lost">νοι</supplied></lem><rdg resp="Migne">οὕτω κἀκεῖνοι</rdg></app> <supplied reason="lost">θαῤῥήσαντες τῷ Μω<unclear>ϋ</unclear>σεῖ, τουτέστιν, ἰδόντες αὐτὸν</supplied>
+<lb n="8"/>διαβάντα <unclear>π</unclear><supplied reason="lost">ρῶτον, κατετόλμησαν καὶ αὐτ<unclear>ο</unclear>ὶ τῶν ὑδάτων. ἀλλ' ἐπειδὴ</supplied>
+<lb n="9"/>βούλεται <unclear>τ</unclear><supplied reason="lost">ὸν τύπον ἐγγὺς τῆς ἀληθείας ἀγαγεῖν, οὐ λέγει οὕτως</supplied>
+
+</ab> </div>
+<div n="ii" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> <gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<lb n="2"/>τῆς μελλούσης <expan>κ<ex>αὶ</ex></expan> γὰρ κο<unclear>ρ</unclear>ών<supplied reason="lost">η καὶ τὸ <supplied reason="omitted">τῶν</supplied> ἐλεφάντων γένος καὶ πολλὰ</supplied>
+<lb n="3"/>ἕτερα πλείονα χρόνον <unclear>ἀπο</unclear><supplied reason="lost">λαύει τῆς παρούσης ζωῆς. ἡμῖν</supplied> <unclear>δε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><expan>κ<ex>αὶ</ex></expan> βραχὺς <expan>κ<ex>αὶ</ex></expan> ἐπίπονος ὁ <unclear>βίο</unclear>ς <expan>κ<ex>αὶ</ex></expan><gap reason="lost" extent="unknown" unit="character"/>μ<unclear>εθ</unclear>α ἀγαθὸν <unclear>α</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="5"/><app type="editorial"><lem resp="PN P. van der Laan (from photo)">προσαπολ<supplied reason="lost">ο</supplied>ῦμεν</lem><rdg><app type="alternative"><lem>προσαπο<unclear>λ</unclear><supplied reason="lost">ο</supplied>ῦμεν</lem><rdg>προσαπο<unclear>δ</unclear><supplied reason="lost">ο</supplied>ῦμεν <certainty match=".." locus="value"/></rdg></app></rdg></app> μήτοι <gap reason="illegible" quantity="3" unit="character" precision="low"/> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἀ</supplied><unclear>λλ</unclear>ὰ σπουδάσατ<unclear>ε</unclear> <supplied reason="lost">ἀ</supplied>ναδεῖ
+<lb n="6" break="no"/>ξαι ἑαυτοὺ<supplied reason="lost">ς</supplied> <unclear>ἐρ</unclear>γάτας ἀνεπι<unclear>λ</unclear><supplied reason="lost">ήπτους ἵνα ἐ</supplied><unclear>ν</unclear> τῷ <expan><hi rend="supraline">Χ</hi><ex>ριστ</ex><hi rend="supraline">ῶ</hi>ͅ</expan> ἀ<unclear>πο</unclear>λαύσηται. <surplus>οὐ</surplus>
+<lb n="7"/><supplied reason="lost">ο</supplied>ὔ<supplied reason="lost">τ</supplied><unclear>ε</unclear> γ<supplied reason="lost">ὰ</supplied><unclear>ρ</unclear> <supplied reason="lost">ἱματίο</supplied><unclear>υ</unclear> ἐ<unclear>δ</unclear>εῖτο ὁ Ἀδά<supplied reason="lost">μ, οὐκ ὀρό</supplied><unclear>φου</unclear>, ο<unclear>ὔ</unclear><supplied reason="lost">τ</supplied>ε ἄλλης <app type="editorial"><lem resp="BKT">τινός</lem><rdg resp="Migne">τοιαύτης τινός</rdg></app> κατα
+<lb n="8" break="no" xml:id="div1-div2-lb9"/><supplied reason="lost">σκευῆς</supplied>, <app type="editorial"><lem resp="BKT"><supplied reason="lost">ἀλ</supplied><unclear>λ</unclear>' οὐκ ἀγγέλ<supplied reason="lost">οις</supplied></lem><rdg resp="Migne"><supplied reason="lost">ἀλ</supplied>λ' ἀγγέλ<supplied reason="lost">οις</supplied></rdg></app> <supplied reason="lost">μᾶλλο</supplied>ν ἐῴκει <expan>κ<ex>αὶ</ex></expan> πολλὰ τῶν μελλόν 
+<lb n="9" break="no"/><supplied reason="lost">των προῄδει καὶ σοφίας ἐπεπλήρωτο</supplied> <unclear>πολλῆς</unclear> <expan>κ<ex>αὶ</ex></expan> ὃ λ<unclear>άθρα</unclear> ἐποίησεν
+<lb n="10"/><supplied reason="lost">ὁ Θεός, τοῦτο ἐκεῖνος ἔγνω, τὸ περὶ τῆς γυναι</supplied><unclear>κός</unclear>· διὸ <app type="editorial"><lem resp="BKT">μ'</lem><rdg resp="Migne">καί</rdg></app> ἔλεγ<unclear>ε</unclear>· <supplied reason="lost">τοῦτο νὺν</supplied>
+<lb n="11"/><supplied reason="lost">ὀστοῦν ἐκ τῶν ὀστῶν μου καὶ σὰρξ ἐκ τῆς</supplied> σαρκός μου. <supplied reason="lost">ὁ δὲ πόνος ὕστερον</supplied> 
+<lb n="12"/><supplied reason="lost">γέγονεν, ὕστερον ἱδρῶς, ὕστερον αἰσ</supplied><unclear>χ</unclear>ύνη <expan>κ<ex>αὶ</ex></expan> <unclear>ἡ</unclear>  <supplied reason="lost">δειλία καὶ τὸ ἀπαῤῥησία</supplied>
+<lb n="13" break="no"/>στον· <gap reason="lost" extent="unknown" unit="character"/>ειχεν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab> </div>
+</div>
+<div n="v" type="textpart">
+<div n="ii" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">δ</supplied>όγμασιν <gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost">τὴν χάριν τοῦ Θεοῦ τὴν δοθεῖσαν μοι, ὡς σο</supplied>φὸς ἀρχιτ<supplied reason="lost">έκτων, θεμέλιον</supplied>
+<lb n="3"/><supplied reason="lost">τέθεικα. σοφὸν ἑαυτὸν ἐκάλεσεν ἐνταῦθα,</supplied> οὐκ <choice><reg>ἐπαίρων</reg><orig>ἐπαίρο<unclear>ν</unclear></orig></choice> <supplied reason="lost">ἑαυτὸν ἀλλὰ</supplied>
+<lb n="4"/>τύπο<supplied reason="lost">ν</supplied> α<supplied reason="lost">ὐτοῖς</supplied> διδ<unclear>οὺς</unclear> <expan>κ<ex>αὶ</ex></expan> δεικ<supplied reason="lost">νὺς ὅτι τοῦ</supplied><unclear>τ</unclear><supplied reason="lost">ό</supplied> ἐστιν σοφοῦ, τ<supplied reason="lost">ὸ <num value="1">ἕνα</num> θεῖναι</supplied>
+<lb n="5"/>θεμέ<unclear>λ</unclear><supplied reason="lost">ιο</supplied><unclear>ν</unclear>. <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> γὰρ <unclear>τ</unclear>ὸ πεσεῖν ο<supplied reason="lost" cert="low">ὐ </supplied> <supplied reason="lost">χαλεπὸ</supplied><unclear>ν</unclear> ὡς <unclear>τ</unclear>ὸ <unclear>π</unclear>εσόντα κ<supplied reason="lost" cert="low">εῖσθαι </supplied> <supplied reason="lost" cert="low">ἐν </supplied>
+<lb n="6" break="no"/>νό<unclear>η</unclear><supplied reason="lost">σο</supplied>ν <app type="editorial"><lem resp="BKT">γ<unclear>ὰ</unclear>ρ</lem><rdg resp="Μigne">γοῦν</rdg></app> <app type="editorial"><lem resp="BKT"><supplied reason="lost">μένει ἐν τῷ θ</supplied><unclear>α</unclear>νάτῳ</lem><rdg resp="Migne">ἐν τῷ θ<unclear>α</unclear>νάτῳ μένει</rdg></app> διὰ <num value="1">μίαν</num> ἁμαρτίαν
+<lb n="7"/>τὸ <supplied reason="lost">γ</supplied><unclear>έν</unclear><supplied reason="lost">ο</supplied>ς τὸ ἡμέτερον. <num value="5000">πεν<unclear>τ</unclear>α<unclear>κ</unclear><supplied reason="lost">ισχίλια</supplied></num> <supplied reason="lost">ἔτη</supplied> <app type="editorial"><lem resp="BKT">παρ<unclear>ῆ</unclear>λθον <expan>κ<ex>αὶ</ex></expan> πλείω ἔτι δέ</lem><rdg resp="Migne">καὶ πλείω παρῆλθε</rdg></app>
+<lb n="8" xml:id="div4-div4-lb9"/><expan>κ<ex>αὶ</ex></expan> ἄ<unclear>λλ</unclear><supplied reason="lost">α</supplied> <num value="4000"><supplied reason="lost">τετ</supplied>ρακισχί<supplied reason="omitted">λι</supplied>α</num> ἔτη εἰσὶν εξ<gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="5" unit="character"/> <expan>κ<ex>αὶ</ex></expan> ὁ θάνατος οὐδέπω
+<lb n="9"/><unclear>λέλ</unclear><supplied reason="lost">υται</supplied> <unclear>δ</unclear>ιὰ <num value="1">μίαν</num> ἁμαρτίαν. <expan>κ<ex>αὶ</ex></expan> <supplied reason="lost">οὐδὲ ἔχομεν</supplied> εἰπεῖν, ὅτι προφητῶν
+<lb n="10"/><supplied reason="lost">ἤκουσεν ὁ Ἀ</supplied>δὰμ <gap reason="illegible" quantity="3" unit="character"/> <unclear>ο</unclear>ὐδὲ <unclear>τ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/><unclear>τι</unclear>ας τοῦ <expan><hi rend="supraline">Χ</hi><ex>ριστο</ex><hi rend="supraline">ῦ</hi></expan> ημε<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α<gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="line"/>
+
+</ab></div>
+<div n="i" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/>καταφ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>μετέπε<supplied reason="lost">σεν. οὐδεὶς ἀπὸ τοῦ φθείρεσθαι ἐπὶ τὸ μὴ φθείρεσθαι, οὐδεὶς ἀπὸ τοῦ</supplied>
+<lb n="4"/><add place="left"><g type="diple"/></add> <app type="editorial"><lem resp="P. van der Laan (from photo)">πεινῆν</lem><rdg>πεινεῖν</rdg></app> ἐ<unclear>π</unclear><supplied reason="lost">ὶ τὸ μηδέποτε τοῦτο πάσχειν. διὰ τοῦτο οὐδὲ ἐγκλήματα ταῦτα</supplied>
+<lb n="5"/><add place="left"><g type="diple"/></add> εἰμί Παύλο<supplied reason="lost">υ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><add place="left"><g type="diple"/></add> περὶ Πέτρου <supplied reason="lost">οὐδὲ περὶ Ἀπολλὼ ἔλεγον· ἀλλὰ δείκνυσιν ὅτι εἰ τούτοις</supplied>
+<lb n="7"/>ἐπερείδεσθ<supplied reason="lost">αι οὐ χρή, πολλῷ μᾶλλον ἑτέροις. ὅτι γὰρ οὔτε περὶ αὐτῶν</supplied>
+<lb n="8"/><add place="left"><g type="diple"/></add> ἔλεγον, πρ<unclear>ο</unclear><supplied reason="lost">ϊών φησι· ταῦτα δὲ μετεσχημάτισα εἰς ἐμαυτὸν καὶ Ἀπολλώ,</supplied>
+<lb n="9"/><add place="left"><g type="diple"/></add> <hi rend="diaeresis">ἵ</hi>να ἐν ἡμ<unclear>ῖν</unclear> <unclear>μ</unclear><supplied reason="lost">άθητε τὸ μὴ ὑπὲρ ὃ γέγραπται φρονεῖν.</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><add place="left"><g type="diple"/></add> διὰ τῶν ἐξῆ<unclear>ς</unclear> <unclear>ἐ</unclear><supplied reason="lost">δήλωσεν εἰπών· μεμέρισται ὁ Χριστός; ὃ δὲ λέγει, τοιοῦτόν</supplied>
+<lb n="11"/><supplied reason="lost">ἐσ</supplied><unclear>τι</unclear>· <app type="editorial"><lem resp="BKT">κατατέμ<unclear>ετ</unclear><supplied reason="lost">ε</supplied></lem><rdg resp="Migne">κατετέμετε</rdg></app> <supplied reason="lost">τὸν Χριστὸν καὶ διείλετε αὐτοῦ τὸ σῶμα.</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+</ab></div>
+<div n="iii" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>ως<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>ε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div1-div2-lb9" xml:space="preserve">
+            <ref>8</ref>
+            <p>Erroneously scribe writes οὐκ, which illogically departs from what Johannes Chrysostomus says (see Migne's text)</p>
+          </item>
+               <item corresp="#div4-div4-lb9" xml:space="preserve">
+            <ref>8</ref>
+            <p>καὶ ἄλλα τετρακισχίλια ἔτη εἰσὶν εξ[.?].5 is missing in Migne</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/14433"/>
-                  <biblScope unit="number">15</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title level="s" type="abbreviated">BKT</title>
-                  <biblScope unit="volume">9</biblScope>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="number">15</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95692"/>
+                  <biblScope n="1" unit="number">4428</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2062">Johannes Chrysostomus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2062">Johannes Chrysostomus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/2326">commentarius in Paulum</title>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">BKT 9 pl.10-11</bibl>
                <bibl type="online">
-                  <ptr target="http://berlpap.smb.museum/04325"/>
+                  <ptr target="https://berlpap.smb.museum/04325/"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
