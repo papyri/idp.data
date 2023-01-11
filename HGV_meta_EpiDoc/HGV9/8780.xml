@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv8780">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ein Fall von Grenzverletzung</title>
@@ -31,16 +31,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0187" cert="low">187 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0186" cert="low">186 (?)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0187" cert="low">187 (?)</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0186" cert="low">186 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,22 +66,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>Stratege Apollotas an den Dorfschreiber von Syron Kome</term>
-               <term>Auftrag</term>
-               <term>Untersuchung</term>
-               <term>Grenzen (Acker)</term>
-               <term>Abschrift eines anderen Dokuments desselben Vorgangs</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">Stratege Apollotas an den Dorfschreiber von Syron Kome</term>
+               <term n="3">Auftrag</term>
+               <term n="4">Untersuchung</term>
+               <term n="5">Grenzen (Acker)</term>
+               <term n="6">Abschrift eines anderen Dokuments desselben Vorgangs</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-01-11T11:00:44-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-01-11T10:32:10-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2023-01-11T05:55:36-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Changed image link to permalink of new Cologne online database: https://papyri.uni-koeln.de/stueck/tm8780</change>
          <change who="HGV" when="1990-08-24">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 186. Tage: 26. Jan. - 24. Febr. oder 26. Apr. - 25. Mai.</p>
@@ -98,10 +106,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/PPetaus/petaus_024.html"/>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm8780"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
