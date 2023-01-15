@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32043">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Fragments d'un compte rendu de séance(s) du Conseil (?)</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">32043</idno>
             <idno type="TM">32043</idno>
             <idno type="ddb-perseus-style">0240;5;100</idno>
-            <idno type="ddb-filename">stud.pal.5.100</idno>
-            <idno type="ddb-hybrid">stud.pal;5;100</idno>
+            <idno type="ddb-filename">cpr.35.89</idno>
+            <idno type="ddb-hybrid">cpr;5;89</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 12540 + 20211</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0253" notAfter="0268">253 - 268</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,18 +70,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Ausgaben</term>
+               <term n="1">Bericht</term>
+               <term n="2">Ausgaben</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-01-15T07:44:34-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-01-15T06:48:43-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good</change>
+         <change when="2023-01-11T05:41:30-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Anpassung der Metadaten und der Texte an CPR 35 89:&#xD;
+Rechtschreibfehler (nicht Lesefehler! s. Photo) und Akzentfehler in Fragment b, Z. 2 wurden korrigiert.</change>
          <change who="HGV" when="1997-07-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Kongr. XVII, S. 807 und Kongr. XVIII.2, S. 229.</p>
@@ -80,22 +96,33 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SPP</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">100</biblScope>
+                  <title level="s" type="abbreviated">CPR</title>
+                  <biblScope n="1" type="volume">35</biblScope>
+                  <biblScope n="2" type="numbers">89</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Pl. 66</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://data.onb.ac.at/rec/RZ00008338"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://data.onb.ac.at/rec/RZ00187396"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SPP 5 100</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
