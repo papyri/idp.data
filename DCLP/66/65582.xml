@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65582" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 65582</title>
+            <title>Paraphrase of the Trojan legend</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6833</idno>
             <idno type="filename">65582</idno>
             <idno type="dclp-hybrid">tm;;65582</idno>
+            <idno type="MP3">02651.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,58 +62,80 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>mythography</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">paraphrase of the Trojan legend</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">mythography</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+            <handNote xml:id="m1"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/>δὲ Ποσιδῶνος
+<lb n="2"/>καὶ Ἀπόλλων
+<lb n="3" break="no"/>ος ἀνείλκυσαν
+<lb n="4"/>τὰς ναῦς ἐκ τ
+<lb n="5" break="no"/>ῆς θαλάσης
+<lb n="6"/>ἀνθεσθεριανος
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/><handShift new="m2"/><gap reason="illegible" quantity="1" unit="character"/>ε<gap reason="illegible" quantity="1" unit="character"/>μασι<unclear>ν</unclear>
+<lb n="2"/>ἐφέρετο ἐπὶ
+<lb n="3"/>τὴν Τροίαν
+<lb n="4"/><handShift new="m1"/>Ὡς δὲ αὐτοῖς
+<lb n="5"/>δυσάλωτος ἡ <hi rend="diaeresis">Ἰ</hi>
+<lb n="6" break="no"/>λιος ἐφαίνετο δι
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl n="1" type="reference" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/44385"/>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <title level="a" type="main">Papyrus homériques (III). (Nos 33-40.)</title>
-                  <author n="1">
-                     <surname>Schwartz</surname>
-                     <forename>Jacques</forename>
-                  </author>
-                  <date>1962</date>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/44385"/>
+                  <biblScope n="1" unit="book"/>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
                <bibl n="2" type="reference" subtype="catalogue">
-                 <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                 <!-- ignore - stop -->
-                 <ptr target="http://papyri.info/biblio/14384"/>
-                 <biblScope unit="number">280</biblScope>
-                 <biblScope unit="generic">descr.</biblScope>
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14384"/>
+                  <biblScope n="1" unit="number">280</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Cribiore 280, pl.33</bibl>
-               <bibl type="online" n="1">
+               <bibl type="online">
                   <ptr target="https://relicta.org/cpp/detail.php?CPP=0156"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
