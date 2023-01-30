@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23011">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Papyrusrolle Col. IV. Liquidationsgesuch des Pankratiasten Aurel. Leucadius</title>
+            <title>Demande de versement d'une pension d'athlète</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">23011</idno>
             <idno type="TM">23011</idno>
             <idno type="ddb-perseus-style">0240;5;52/`56</idno>
-            <idno type="ddb-filename">stud.pal.5.52_56_4</idno>
-            <idno type="ddb-hybrid">stud.pal;5;52_56_4</idno>
+            <idno type="ddb-filename">cpr.35.49</idno>
+            <idno type="ddb-hybrid">cpr;35;49</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 19</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0267-02-25" notAfter="0267-03-26">25. Febr. - 26. März 267</origDate>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0267-02" notAfter="0267-03">Febr. - März 267</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,29 +70,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liquidationsgesuch</term>
-               <term>zweite von drei Ausfertigungen</term>
+               <term n="1">Liquidationsgesuch</term>
+               <term n="2">zweite von drei Ausfertigungen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-01-30T11:39:01-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-01-30T09:52:58-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2023-01-25T10:16:20-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Anpassung der Metadaten und des Textes an sowie Eingabe einer Übersetzung nach CPR 35 49:&#xD;
+In Z. 11 gehen die Klammern nicht auf.&#xD;
+In Z. 13 habe ich eine „regularization“ eingefügt.</change>
          <change who="HGV" when="1997-07-22">Record created</change>
          <change who="HGV" when="2010-06-26">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Duplikate: SPP V  52 - 56 III und V.</p>
+            <p>Duplikate: CPR 35 48 und 50.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SPP</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">52</biblScope>
-                  <biblScope type="generic">- 56 IV</biblScope>
+                  <title level="s" type="abbreviated">CPR</title>
+                  <biblScope n="1" type="volume">35</biblScope>
+                  <biblScope n="2" type="numbers">49</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,12 +113,16 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Pl. 48</bibl>
+            </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">Sel. Pap. II 306</bibl>
+               <bibl type="publication" subtype="other" n="1">Sel. Pap. II 306</bibl>
+               <bibl type="publication" subtype="other" n="2">SPP 5 52 - 56 IV</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -112,6 +132,13 @@
                <bibl type="translations">Johnson, Roman Egypt (1936), S. 697, Nr. 429</bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://data.onb.ac.at/rec/RZ00004740"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
