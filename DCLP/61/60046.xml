@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60046" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Palaurib. Lit. 10</title>
+            <title>Codex Fragments of Herodotus Book 1</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,14 +13,22 @@
             <idno type="LDAB">1160</idno>
             <idno type="filename">60046</idno>
             <idno type="dclp-hybrid">p.palaurib.lit;;10</idno>
+            <idno type="MP3">00469.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Barcelona, Palau-Ribes 60</idno>
+                  <idno>
+                     <idno type="invNo" n="1">Barcelona, Palau-Ribes 60</idno>
+                     <idno type="invNo" n="2">Florence, Istituto Papirologico 'G. Vitelli' PSI inv. 4196</idno>
+                  </idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="codex">
@@ -30,8 +38,8 @@
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout writtenLines="30 31">
-                           <p>parchment codex (columns: 0, written lines: [30, 31], pagination: 0)</p>
+                        <layout>
+                           <p>parchment codex</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
@@ -43,17 +51,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="0450" notAfter="0550">450 - 550</origDate>
+                     <origPlace>Fundort: Antinoopolis (Hermopolites, Egypt); Schreibort: Antinoopolis (Hermopolites, Egypt)</origPlace>
+                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
                   </origin>
-                  <provenance type="found">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                  <provenance n="1" type="found">
+                     <p xml:id="geoHGCF76">
+                        <placeName n="1" type="ancient">Antinoopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
-                     <p>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoCE2DHJ">
+                        <placeName n="1" type="ancient">Antinoopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -62,18 +74,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>history</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Herodotus; Historiae 01.196</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">history</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,42 +93,134 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2023-02-05T11:56:12-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-01-05T13:47:37-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Review transcriptions carefully (see lunate sigma in v.5, and the faulty document division), and review all metadata before finalization.</change>
+         <change when="2023-01-05T10:42:09-05:00"
+                 who="http://papyri.info/editor/users/Marzia%20D'Angelo">Submit - Since PSI 17 1660 is a fragment of the same codex of P. Palaurib. Lit. 10, I have worked on the already existing record of P. Palaurib. Lit. 10, adding the texts of both papyri and the new metadata for PSI. &#xD;
+In the metadata section, I have changed the Display Name from “P. Palaurib. Lit. 10” to “P. Palaurib. Lit. 10 + PSI 17 1660” but I am not sure if the sign “+” goes well. I have specified which passages are transmitted by which papyri in the “General notes” section.</change>
+         <change when="2023-01-05T10:39:32-05:00"
+                 who="http://papyri.info/editor/users/Marzia%20D'Angelo">Commit - Since PSI 17 1660 is a fragment of the same codex of P. Palaurib. Lit. 10, I have worked on the already existing record of P. Palaurib. Lit. 10, adding the texts of both papyri and the new metadata for PSI. In the metadata section, I have changed the Display Name from “P. Palaurib. Lit. 10” to “P. Palaurib. Lit. 10 + PSI 17 1660” but I am not sure if the sign “+” goes well. I have specified which passages are transmitted by which papyri in the "General notes" section.</change>
+          <change when="2023-02-05T11:56:12-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2023-01-05T13:47:37-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Review transcriptions carefully (see lunate sigma in v.5, and the faulty document division), and review all metadata before finalization.</change>
+          <change when="2023-01-05T10:42:09-05:00"
+                 who="http://papyri.info/editor/users/Marzia%20D'Angelo">Submit - Since PSI 17 1660 is a fragment of the same codex of P. Palaurib. Lit. 10, I have worked on the already existing record of P. Palaurib. Lit. 10, adding the texts of both papyri and the new metadata for PSI. &#xD;
+In the metadata section, I have changed the Display Name from “P. Palaurib. Lit. 10” to “P. Palaurib. Lit. 10 + PSI 17 1660” but I am not sure if the sign “+” goes well. I have specified which passages are transmitted by which papyri in the “General notes” section.</change>
+          <change when="2023-01-05T10:39:32-05:00"
+                 who="http://papyri.info/editor/users/Marzia%20D'Angelo">Commit - Since PSI 17 1660 is a fragment of the same codex of P. Palaurib. Lit. 10, I have worked on the already existing record of P. Palaurib. Lit. 10, adding the texts of both papyri and the new metadata for PSI. In the metadata section, I have changed the Display Name from “P. Palaurib. Lit. 10” to “P. Palaurib. Lit. 10 + PSI 17 1660” but I am not sure if the sign “+” goes well. I have specified which passages are transmitted by which papyri in the "General notes" section.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+
+<div n="PSI" type="textpart">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><supplied reason="lost">ὑπὸ τοῦ σ</supplied>οῦ δούλου 
+<lb n="2"/><supplied reason="lost">βο</supplied>υ<supplied reason="lost">κό</supplied>λου δὲ παιδὸ<unclear>ς</unclear> 
+<lb n="3"/>ὧδε περιυβρίσµε<supplied reason="lost">θα</supplied> 
+<lb n="4"/>δεικνὺς τοῦ πα<unclear>ι</unclear><supplied reason="lost">δὸς</supplied>
+<lb n="5"/><unclear>τ</unclear>ο<unclear>ὺ</unclear>ς ὤµ<unclear>ο</unclear>υς·<g type="high-punctus"/> <unclear>ἀ</unclear><supplied reason="lost">κούσας</supplied> 
+<lb n="6"/><supplied reason="lost">δὲ</supplied> <unclear>κ</unclear>αὶ ἰδ<unclear>ὼν</unclear> <unclear>Ἀ</unclear><supplied reason="lost">στυάγης</supplied>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/> 
+</ab></div>
+
+<div n="v" type="textpart"><ab>
+<lb n="1"/><supplied reason="lost">ἐ</supplied><unclear>π</unclear>ιτασσόµ<unclear>ε</unclear><supplied reason="lost">να ἐπ</supplied>
+<lb n="2" break="no"/><supplied reason="lost">ετ</supplied><unclear>έ</unclear>λεον·<g type="high-punctus"/> οὗτ<supplied reason="lost">ος δὲ</supplied> 
+<lb n="3"/><choice><reg><supplied reason="lost">ἀν</supplied>ηκούστεε</reg><orig><supplied reason="lost">ἀν</supplied>ηκούσταιε</orig></choice> τε καὶ 
+<lb n="4"/><supplied reason="lost">λόγ</supplied>ον εἶχε <app type="alternative"><lem>ο<hi rend="diaeresis">ὐ</hi>δέν<unclear>α</unclear></lem><rdg>οὐδέν<unclear>α</unclear></rdg></app> 
+<lb n="5"/><supplied reason="lost">ἐς ὃ ἔ</supplied><unclear>λ</unclear>α<unclear>βε</unclear> τὴν δίκη<unclear>ν</unclear> 
+<lb n="6"/><supplied reason="lost">εἰ ὦν δὴ</supplied> <app type="editorial"><lem resp="pap."><supplied reason="lost">τού</supplied>το<unclear>υ</unclear></lem><rdg resp="mss.">τοῦδε</rdg></app> <unclear>ε</unclear><supplied reason="lost">ἵνε</supplied>
+<lb n="6" break="no"/><gap reason="lost" extent="unknown" unit="line"/> 
+</ab></div></div>
+
+<div n="PalauRib" type="textpart">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">εὑ</supplied><unclear>ρ</unclear><supplied reason="lost">οῦσα</supplied> <unclear>χ</unclear><supplied reason="lost">ρυσίον</supplied> 
+<lb n="2"/><supplied reason="lost">π</supplied><unclear>ο</unclear>λλὸν πρηθ<unclear>ε</unclear><supplied reason="lost">ίη, ἄλ</supplied>
+<lb n="3" break="no"/>λην ἀνεκήρυσσ<unclear>ε</unclear> <supplied reason="lost">ἣ</supplied> 
+<lb n="4"/><unclear>μ</unclear>ετ’ ἐκεί<unclear>ν</unclear>ην ἔ<unclear>σ</unclear><supplied reason="lost">κε</supplied>
+<lb n="5"/><supplied reason="lost">εὐειδεστά</supplied><unclear>τ</unclear><supplied reason="lost">η. ἐπω</supplied>
+<lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">κειτο· τὸ δὴ ὦν χ</supplied><unclear>ρυ</unclear>
+<lb n="2" break="no"/><supplied reason="lost">σίον</supplied> ἐγίνετο ἀπ<supplied reason="lost">ὸ τῶν</supplied> 
+<lb n="3"/><supplied reason="lost">εὐ</supplied>ειδέων <del rend="erasure">ἐγίνετο</del> 
+<lb n="4"/><supplied reason="lost">παρ</supplied><unclear>θ</unclear>ένων, καὶ οὕ<unclear>τ</unclear><supplied reason="lost">ως</supplied> 
+<lb n="5"/><supplied reason="lost">αἱ ε</supplied><unclear>ὔ</unclear><supplied reason="lost">μορφοι τὰς ἀμόρ</supplied>
+<lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/13296"/>
-                  <biblScope unit="number">10</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">P. Palau Rib. Lit.</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/13296"/>
+                  <biblScope n="1" unit="number">10</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95687"/>
+                  <biblScope n="1" unit="number">1660</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/52123"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016">Herodotus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0016 http://cwkb.org/author/id/915/rdf">Herodotus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/176">Historiae</title>
+                         ref="http://www.trismegistos.org/authorwork/176 http://cwkb.org/work/id/2691/rdf">Historiae</title>
+                  <biblScope n="1" unit="book">1</biblScope>
+                  <biblScope n="2" unit="chapter">196</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="book">1</biblScope>
+                  <biblScope n="5" unit="chapter" from="114" to="115">114-115</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ed. princ., p.78</bibl>
-               <bibl type="printed">P.Lit. Palau Rib. pl.IX</bibl>
-               <bibl type="online">
+               <bibl type="printed" n="1">ed. princ., p.78</bibl>
+               <bibl type="printed" n="2">P.Lit. Palau Rib. pl.IX</bibl>
+               <bibl type="printed" n="3">PSI 17, pl. 9</bibl>
+               <bibl type="online" n="1">
                   <ptr target="http://dvctvs.upf.edu/catalogo/ductus.php?operacion=introduce&amp;ver=1&amp;nume=198"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://www.psi-online.it/documents/psi;17;1660"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>P.Palau.Rib 10: Hdt., Hist. I 196, 2.3; PSI 117 1660: Hdt., Hist. I 114,5-115,1; 115,3</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
