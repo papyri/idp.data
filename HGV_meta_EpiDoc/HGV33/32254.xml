@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32254">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Account</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Manchester</settlement>
                   </placeName>
+                  <collection>John Rylands Library</collection>
+                  <idno type="invNo">Gr. 397 Vo</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Theadelpheia ? (Arsinoites)</origPlace>
                      <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoGIEA0J">
+                        <placeName n="1"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2349 https://pleiades.stoa.org/places/737081">Theadelpheia</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,12 +72,18 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-02-21T08:58:05-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-02-21T08:52:33-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - There is some confusion in PN currently about this file (32254) which is described both in P.Ryl. II and in P.Hamb. IV, and the obverse text (41549) which was described in the former but published in the latter. It is correct to delete both the BL entry from HGV and the transcription from DDB, the latter of which at present is erroneously the recto text printed as P.Ryl. II 276 descr. and which has been superseded by the Hamburg edition. The Hamburg and Rylands DDB files for that recto text would benefit from dummy headers redirecting to one another.</change>
+         <change when="2023-01-26T17:52:04-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - DbDDP: deleted Greek text, as it has been republished as P.Hamb. IV 276. HGV: Deleted reference to BL XI 189: it only reports that the publication of text on the other side as P.Hamb. IV 276.</change>
          <change who="HGV" when="1999-03-29">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Descr. Rückseite: P.Hamb. IV 276.</p>
@@ -74,24 +92,18 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">397</biblScope>
-                  <biblScope type="side">V</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">397</biblScope>
+                  <biblScope n="3" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>
-                  <biblScope type="pages">189</biblScope>
-               </bibl>
-            </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

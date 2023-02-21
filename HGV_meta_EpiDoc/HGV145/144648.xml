@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv144648">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Comptes</title>
@@ -16,13 +16,13 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">O.Did. inv. 49 + 51</idno>
+                  <idno type="invNo">Did. inv. 49 + 51</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <material>Ostrakon</material>
+                           <material>Papyrus</material>
                         </support>
                      </supportDesc>
                   </objectDesc>
@@ -32,8 +32,11 @@
                      <origPlace>Didymoi</origPlace>
                      <origDate notBefore="0125" notAfter="0140">
                         <precision match="../@notBefore" degree="0.5"/>
-                        <offset type="before" n="1">vor (?)</offset>
-                        <certainty locus="value" match="../offset[@type='before']"/> ca. 125 - 140</origDate>
+                        <certainty locus="value" match="../offset[@type='before']"/>
+                        <offset n="1" type="before">vor (?)</offset>
+                ca. 125 -
+                140
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,19 +66,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aufstellung</term>
-               <term>Waren</term>
-               <term>Lebensmittel</term>
+               <term n="1">Aufstellung</term>
+               <term n="2">Waren</term>
+               <term n="3">Lebensmittel</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-02-21T08:53:27-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-02-21T08:36:44-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2023-02-20T04:03:14-05:00"
+                 who="http://papyri.info/editor/users/simoeis">Submit - This is a papyrus, not an ostrakon. I've thus changed the entry under 'material' and removed 'O." from the inventory number (the edition has simply D49+D51). I've left the publication siglum as O.Did., however.</change>
          <change who="HGV" when="2012-10-15">Record created</change>
          <change who="HGV" when="2013-03-28">Record last modified</change>
          <change when="2013-04-05" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Rückseite: literarisch (Scholia minora zur Odyssee).</p>
@@ -98,5 +108,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
