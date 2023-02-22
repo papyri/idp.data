@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv47023">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Naturaldarlehen</title>
@@ -31,7 +31,9 @@
                   <origin>
                      <origPlace>Hermopolis</origPlace>
                      <origDate when="0507-11-25">
-                        <certainty locus="value" match="../year-from-date(@when)"/>25. Nov. 507 (Jahr unsicher)</origDate>
+                25. Nov. 507 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -44,8 +46,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,26 +63,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Darlehen</term>
-               <term>Öl (Rettich)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Öl (Rettich)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-02-21T09:14:35-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-02-10T08:52:29-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2023-02-10T08:18:30-05:00"
+                 who="http://papyri.info/editor/users/anetaskalec">Submit - I added link to the digital image of the second fragment of Papyrus P. Hamb. 4 266</change>
+         <change when="2023-02-10T08:18:22-05:00"
+                 who="http://papyri.info/editor/users/anetaskalec">Commit - I added link to the digital image of the second fragment of Papyrus P. Hamb. 4 266</change>
          <change who="HGV" when="2016-04-25">Record created</change>
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">28</biblScope>
-                  <biblScope type="numbers">16858</biblScope>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="numbers">16858</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,31 +105,31 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">APF 48, 2002, S. 144</bibl>
-               <bibl type="illustration">P.Hamb. IV, Tafel XXVI</bibl>
-               <bibl type="illustration">BGU XVII, Tafel XVI</bibl>
+               <bibl type="illustration" n="1">APF 48, 2002, S. 144</bibl>
+               <bibl type="illustration" n="2">P.Hamb. IV, Tafel XXVI</bibl>
+               <bibl type="illustration" n="3">BGU XVII, Tafel XVI</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Hamb. IV 266</bibl>
-               <bibl type="publication" subtype="other">BGU XVII 2688</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Hamb. IV 266</bibl>
+               <bibl type="publication" subtype="other" n="2">BGU XVII 2688</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://berlpap.smb.museum/03359/"/>
                </figure>
-               <figure>
-                  <graphic url="http://ww2.smb.museum/berlpap/index.php/03359/"/>
+               <figure n="2">
+                  <graphic url="https://resolver.sub.uni-hamburg.de/goobi/HANSh588"/>
                </figure>
-               <figure>
-                  <graphic url="http://resolver.sub.uni-hamburg.de/goobi/HANSh588"/>
+               <figure n="3">
+                  <graphic url="https://resolver.sub.uni-hamburg.de/kitodo/HANSh4225"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
