@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv118522">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Letter from Ammonios to Hermaiskos</title>
+            <title>Letter from Ammonios to Hermaiskos concerning stomoma</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">118522</idno>
@@ -20,7 +20,7 @@
                      <settlement>Qift</settlement>
                   </placeName>
                   <collection>Archaeological storeroom</collection>
-                  <idno type="invNo">Claud., 7312 + 7559</idno>
+                  <idno type="invNo">Claud. 7312 + 7559</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,23 +33,34 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Mons Claudianus</origPlace>
-                     <origDate notBefore="0138" notAfter="0161">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 138 - 161</origDate>
+                     <origPlace>Mons Claudianus (Ägypten)</origPlace>
+                     <origDate notBefore="0150" notAfter="0154">
+                ca. 150 - 154
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/766348 https://www.trismegistos.org/place/2783">Mons Claudianus</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="papyri.info/biblio/82116"/>
+                  <biblScope type="pp">219</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,9 +75,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>Ammonios an Hermaiskos (tabularius)</term>
-               <term>Antwort auf eine Nachricht über Verbrauch von Kohle für Stahl (Schmiede)</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">Ammonios an Hermaiskos (tabularius)</term>
+               <term n="3">Antwort auf eine Nachricht über Verbrauch von Kohle für Stahl (Schmiede)</term>
+               <term n="4">Bitte um Schärfung der Werkzeuge (Eisen); private Lieferungen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,24 +87,26 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 2 vgl. BASP 48, 2011, S. 261. Gehört zu O.Claud. IV 895: Neuedition: ZPE 183, 2012, S. 219-221.</p>
+            <p>Zu Z. 2 vgl. BASP 48, 2011, S. 261.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">O.Claud.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">870</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">183</biblScope>
+                  <biblScope n="2" type="fascicle">(2012)</biblScope>
+                  <biblScope n="3" type="pages">S. 219</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 357</bibl>
+               <bibl type="illustration" n="1">O.Claud. 4 870, S. 357</bibl>
+               <bibl type="illustration" n="2">ZPE 183, 2012, S. 219-221</bibl>
             </p>
          </div>
          <div type="figure">
@@ -102,6 +116,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">O.Claud. 4 870</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
