@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703398">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Beginning of a Document Copied as School Exercise</title>
@@ -30,14 +30,20 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0056-01-27"
                                notAfter="0056-02-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>27. Jan. - 25. Febr. 56 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                27. Jan. - 25. Febr. 56 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0066-01-27"
                                notAfter="0066-02-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>27. Jan. - 25. Febr. 66 (Jahr unsicher)</origDate>
+                27. Jan. - 25. Febr. 66 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -50,8 +56,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,18 +73,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Schreibübung</term>
-               <term>Präskript</term>
-               <term>Agoranomos</term>
+               <term n="1">Schreibübung</term>
+               <term n="2">Präskript</term>
+               <term n="3">Agoranomos</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-03-04T16:39:32-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-03-04T16:34:20-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2023-01-29T11:13:23-05:00"
+                 who="http://papyri.info/editor/users/pag">Submit - Added digital image</change>
+         <change when="2023-01-29T11:13:17-05:00"
+                 who="http://papyri.info/editor/users/pag">Commit - Added digital image</change>
          <change who="HGV" when="2018-08-23">Record last modified</change>
          <change when="2018-08-23" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 27. Jan. – 25. Feb. 66.</p>
@@ -86,8 +101,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">15</biblScope>
-                  <biblScope type="numbers">613</biblScope>
+                  <biblScope n="1" type="volume">15</biblScope>
+                  <biblScope n="2" type="numbers">613</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -96,6 +111,13 @@
                <bibl type="illustration">Tafel XIIa</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703398"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

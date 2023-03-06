@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv15178">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Fragment einer Aufstellung von Dörfern und Getreidebeträgen</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="0126" notAfter="0175" precision="low">Mitte II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,20 +65,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Ortsnamen</term>
-               <term>Weizen</term>
-               <term>Gerste</term>
+               <term n="1">Liste</term>
+               <term n="2">Ortsnamen</term>
+               <term n="3">Weizen</term>
+               <term n="4">Gerste</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-03-04T16:24:16-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go</change>
+         <change when="2023-03-04T16:21:56-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2023-03-03T11:03:22-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Added link to digital image.</change>
          <change who="HGV" when="1991-05-28">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Rückseite: SB XII 11146. Zur Datierung vgl. Tyche 23, 2008, S. 229, Korr. Tyche 597.</p>
@@ -85,8 +93,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">11147</biblScope>
+                  <biblScope n="1" type="volume">12</biblScope>
+                  <biblScope n="2" type="numbers">11147</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,6 +103,13 @@
                <bibl type="illustration">SIFC 43, 1971, 2 B nach S. 172</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://www.psi-online.it/documents/psi-silloge-2-b"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
