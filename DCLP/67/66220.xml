@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m66220" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 66220</title>
@@ -14,7 +14,11 @@
             <idno type="filename">66220</idno>
             <idno type="dclp-hybrid">tm;;66220</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,17 +47,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Catharina Monastery (Sinai, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Catharina Monastery (Sinai, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0700" notAfter="0899">700 - 899</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Sinai</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3347">Catharina Monastery</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Sinai</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3347">Catharina Monastery</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -64,20 +68,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>patrology</term>
-               <term>oratory</term>
-               <term>homily</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">(1) Johannes Chrysostomus; (2) Proclus; (3) Severianus of Gabala; (1) on theophany (5 homilies); (2) mystagogia of baptism (3) on theophany</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">patrology</term>
+               <term n="5">oratory</term>
+               <term n="6">homily</term>
+               <term n="7" type="overview">(1) Johannes Chrysostomus; (2) Proclus; (3) Severianus of Gabala; (1) on theophany (5 homilies); (2) mystagogia of baptism (3) on theophany</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -88,24 +92,26 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2062">Johannes Chrysostomus</author>
+               <bibl type="publication" n="1" subtype="ancient">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2062">Johannes Chrysostomus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/1398">Homiliae</title>
                </bibl>
-               <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg4036">Proclus Constantinopolitanus</author>
+               <bibl type="publication" n="2" subtype="ancient">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg4036">Proclus Constantinopolitanus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/2602">Mystagogia of Baptism</title>
                </bibl>
-               <bibl type="publication" subtype="ancient">
+               <bibl type="publication" n="3" subtype="ancient">
                   <author>Severianus of Gabala</author>
                   <title type="main"
                          level="m"
@@ -117,8 +123,11 @@
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Scriptorium 34, pl.2a</bibl>
+               <bibl type="online">
+                  <ptr target="https://www.loc.gov/item/00279382341-ms/"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
