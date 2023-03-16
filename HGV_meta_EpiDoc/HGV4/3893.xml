@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3893">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Petition of a Basilikos Georgos</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">3893</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berkeley</settlement>
                   </placeName>
+                  <collection>Bancroft Library</collection>
+                  <idno type="invNo">Crocodile 17.2</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,26 +33,36 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
-                     <origDate notBefore="-0125" notAfter="-0101" precision="low">spätes II v.Chr.</origDate>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0115-05-19">19. Mai 115 v.Chr.</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0115-06-18">18. Juni 115 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96221"/>
+                  <biblScope type="pp">313</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,8 +77,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Petition</term>
-               <term>Bauer (König)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Bauer (König)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,18 +87,16 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">264</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">59</biblScope>
+                  <biblScope n="2" type="fascicle">(2022)</biblScope>
+                  <biblScope n="3" type="pages">S. 313</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,6 +110,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Tebt. I 264 descr.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
