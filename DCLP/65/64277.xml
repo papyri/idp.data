@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64277" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Harris. 1 49</title>
+            <title>List of Greek festivals</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">5497</idno>
             <idno type="filename">64277</idno>
             <idno type="dclp-hybrid">p.harris;1;49</idno>
+            <idno type="MP3">02475.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0399">200 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,48 +62,79 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>mythography catalogue</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">school text: list of Greek festivals, mythological compendium</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">mythography catalogue</term>
+               <term n="5">school text</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+            <handNote xml:id="m1"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2023-03-28T18:58:38-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2023-03-28T18:58:38-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2023-02-16T03:58:18-05:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Meta: change the title to 'List of Greek festivals', put the rest in the keywords and/or add a comment in General Notes.&#xD;
+Text: line 5: &lt;:[κ]αλεῖται|reg|[κ]αλῖται:&gt; take out square brackets in the regularized reading, i.e. καλεῖται.</change>
+          <change when="2023-02-16T03:58:18-05:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Meta: change the title to 'List of Greek festivals', put the rest in the keywords and/or add a comment in General Notes.&#xD;
+Text: line 5: &lt;:[κ]αλεῖται|reg|[κ]αλῖται:&gt; take out square brackets in the regularized reading, i.e. καλεῖται.</change>
+          <change when="2023-01-11T12:47:37-05:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text added for Encode (Holger Essler).</change>
+          <change when="2023-01-11T12:47:37-05:00"
+                 who="http://papyri.info/editor/users/JohannesKern">Submit - Text added for Encode (Holger Essler).</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><unclear>α</unclear>θνας <unclear>εκμιλε</unclear>
+<lb n="2"/>εἰς Μέγαρα
+<lb n="3"/>Κόρινθος
+<lb n="4"/><choice><reg>Νέμεια</reg><orig>Νέμια</orig></choice> <handShift new="m2"/>τῆς <subst><add place="inline">Ἑλλάδος</add><del rend="corrected"><handShift new="m1" cert="low"/>Ελλεδος</del></subst>.
+<lb n="5"/><handShift new="m1"/>ὁ ἀγὼν δὲ <choice><reg><supplied reason="lost">κ</supplied>αλεῖται</reg><orig><supplied reason="lost">κ</supplied>αλῖται</orig></choice> Διονύσια
+<lb n="6"/>Ἡράκλεια
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/3522"/>
-                  <biblScope unit="number">49</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Harris</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3522"/>
+                  <biblScope n="1" unit="number">49</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
-               <bibl type="online" n="1">
+               <bibl type="online">
                   <ptr target="https://relicta.org/cpp/detail.php?CPP=0333"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
