@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv24381">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Formulaire de déclaration familiale</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Brussels</settlement>
                   </placeName>
+                  <collection>Musées Royaux</collection>
+                  <idno type="invNo">E 396</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,27 +34,36 @@
                <history>
                   <origin>
                      <origPlace>Oberägypten</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0038"
                                notAfter="0039"
                                cert="low">38 - 39 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0042"
                                notAfter="0043"
                                cert="low">42 - 43 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Oberägypten</placeName>
+                        <placeName type="ancient" ref="www.trismegistos.org/place/2766">Oberägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/78321"/>
+                  <biblScope type="pp">126</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,9 +78,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Formular</term>
-               <term>Deklaration</term>
-               <term>Epikrisis</term>
+               <term n="1">Formular</term>
+               <term n="2">Deklaration</term>
+               <term n="3">Epikrisis</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,11 +89,11 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 42 - 43. Zu Z. 7 vgl. Kruse, Der Königliche Schreiber, S. 174, Anm. 341.</p>
+            <p>Zu Z. 7 vgl. Kruse, Der Königliche Schreiber, S. 174, Anm. 341.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -92,7 +103,9 @@
             <list>
                <item>
                   <ref>Z. 5</ref>
-                  <date type="mentioned" notBefore="0033" notAfter="0034">33 - 34<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" notBefore="0033" notAfter="0034">
+              33 - 34
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>
@@ -100,14 +113,21 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">O.Brux.</title>
-                  <biblScope type="numbers">14</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">56</biblScope>
+                  <biblScope n="2" type="fascicle">(2010)</biblScope>
+                  <biblScope n="3" type="pages">S. 126</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">O.Brux. 14</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
