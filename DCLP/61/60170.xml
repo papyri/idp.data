@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60170" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60170</title>
+            <title>Hierocles Stoicus; Ethike Stoicheiosis with title at the front and marginalia</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">60170</idno>
             <idno type="dclp-hybrid">tm;;60170</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,19 +42,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0150" notAfter="0250">150 - 250</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -151,18 +156,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-            This file encoded to comply with EpiDoc Guidelines and Schema version 8
-            <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Hierocles Stoicus; Ethike Stoicheiosis with title at the front and marginalia</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -170,12 +174,17 @@
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
          <change when="2016-05-12" who="Ch. Sailer">Entered Greek text from reference edition</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="frontmatter" xml:space="preserve">
-            <p>This papyrus has been digitally edited by Christian Sailer and revised by Vincenzo Damiani as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref></p>
-         </div>
+        <p>
+          This papyrus has been digitally edited by Christian Sailer and revised by Vincenzo Damiani as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="title" type="textpart" corresp="#FR7567"><ab>
 <lb n="1"/>Ἱεροκλέους
@@ -914,7 +923,8 @@
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1429">Hierocles Stoicus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1429">Hierocles Stoicus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/797">Ethike Stoicheiosis</title>
@@ -923,14 +933,14 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">R.Seider, Paläogr. griech. Papyri II.2, pl.XIX.39</bibl>
-               <bibl type="printed">CPF IV.2, pl.15-17</bibl>
-               <bibl type="printed">M. Caroli, Il titolo iniziale nel rotolo librario, pl. 26-27</bibl>
+               <bibl type="printed" n="1">R.Seider, Paläogr. griech. Papyri II.2, pl.XIX.39</bibl>
+               <bibl type="printed" n="2">CPF IV.2, pl.15-17</bibl>
+               <bibl type="printed" n="3">M. Caroli, Il titolo iniziale nel rotolo librario, pl. 26-27</bibl>
                <bibl type="online">
                   <ptr target="http://berlpap.smb.museum/02727"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
