@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10851">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Notice of Death</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Euhemeria (Arsinoites)</origPlace>
+                     <origPlace>Euhemeria (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0037-08-07">7. Aug. 37</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736909 https://www.trismegistos.org/place/675">Euhemeria</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,18 +68,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Anzeige</term>
-               <term>Tod</term>
+               <term n="1">Anzeige</term>
+               <term n="2">Tod</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-05-12T13:12:06-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-05-12T13:08:17-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - HGVAccept - Yes</change>
+         <change when="2023-04-17T09:43:23-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Updated link to digital image</change>
          <change who="HGV" when="1996-10-11">Record created</change>
          <change who="HGV" when="2010-09-01">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -85,7 +94,7 @@
             <list>
                <item>
                   <ref>Z. 10</ref>
-                  <date type="mentioned" notBefore="0037-07-25" notAfter="0037-08-07">25. Juli  - 7. Aug. 37</date>
+                  <date type="mentioned" notBefore="0037-07-25" notAfter="0037-08-07">25. Juli 37 - 7. Aug. 37</date>
                </item>
             </list>
          </div>
@@ -112,17 +121,17 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">CPGr II 4</bibl>
-               <bibl type="publication" subtype="other">C.Pap. Hengstl 26</bibl>
+               <bibl type="publication" subtype="other" n="1">CPGr II 4</bibl>
+               <bibl type="publication" subtype="other" n="2">C.Pap. Hengstl 26</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://sceti.library.upenn.edu/pages/index.cfm?so_id=4114"/>
+                  <graphic url="https://www.penn.museum/collections/object/117344"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
