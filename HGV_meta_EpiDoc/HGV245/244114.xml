@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv244114">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ioannakis a Senouthios anystes. Contro la requisizione di lana per igonachia</title>
+            <title>Ioannakis a Senouthios anystes. Contro la requisizione di lana per i gonachia</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">244114</idno>
@@ -32,16 +32,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolites</origPlace>
+                     <origPlace>Hermopolites, Ägypten</origPlace>
                      <origDate notBefore="0643" notAfter="0644">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 643 - 644</origDate>
+                ca. 643 - 644
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,7 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,26 +69,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>Ioannakios an Senuthios</term>
-               <term>betrifft Wolle für gonachia</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">Ioannakios an Senuthios</term>
+               <term n="3">betrifft Wolle für gonachia</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-05-31T06:56:45-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-05-31T06:32:01-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-05-22T14:35:51-04:00"
+                 who="http://papyri.info/editor/users/theilemann.conrad">Submit - new text from CPR 36 234-235.&#xD;
+I am unsure how about the position of the superscripted stauroi</change>
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
          <change who="HGV" when="2023-05-04">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">CPR</title>
-                  <biblScope type="volume">36</biblScope>
-                  <biblScope type="numbers">40</biblScope>
+                  <biblScope n="1" type="volume">36</biblScope>
+                  <biblScope n="2" type="numbers">40</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,5 +118,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
