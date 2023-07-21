@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65224" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Mon. Epiph. 594</title>
@@ -14,7 +14,11 @@
             <idno type="filename">65224</idno>
             <idno type="dclp-hybrid">p.mon.epiph;;594</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,25 +42,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Memnoneia - Djeme (Peri Thebas, Egypt); written: Memnoneia - Djeme (Peri Thebas, Egypt)</origPlace>
+                     <origPlace>Fundort: Memnoneia - Djeme (Peri Thebas, Egypt); Schreibort: Memnoneia - Djeme (Peri Thebas, Egypt)</origPlace>
                      <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/1690">Peri Thebas</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/1690">Peri Thebas</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1341">Memnoneia - Djeme</placeName>
                      </p>
                   </provenance>
                </history>
@@ -65,39 +71,96 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry lyric hymn</term>
-               <term type="culture">literature</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">hymn to an ascete or martyr</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">poetry lyric hymn</term>
+               <term n="5" type="overview">hymn to an (unnamed) ascete or martyr</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2023-07-21T06:31:31-04:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Finalized - Ready</change>
+         <change when="2023-06-23T06:55:52-04:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Multiple changes need to be done in the text!!! Meta: change display title to "Hymn(s) to an ascete or martyr", delete legacy.&#xD;
+Text: l.1, reverse &lt;:ὅς|reg|ὥς:&gt;, as ος is on the ostr.&#xD;
+L. 2: change the markup of the line &lt;:φιλέρημος||alt||φιρηλήμων|φαιδρύνων:&gt; καὶ πρὸ τοῦ &lt;:Stelle offensichtlich korrupt:&gt;. First, &lt;:φιλέρημος=Crum, P. Mon. Epiph. p. 314|ed|φιρηλημων:&gt;; then add in the commentary 'φαιδρύνων may have been meant (White)'.&#xD;
+L. 5: &lt;:μητοίχομεν ὑμεῖν|alt|μετέχομεν ὕμνων (?):&gt; Use the reg markup, delete accentuation in the text on the ostracon.&#xD;
+L. 6. Change &lt;:ὑῶ̣ν|alt|ὕμνον:&gt; to |reg| with (?), for the ostracon text, give υμω̣ν.&#xD;
+L. 9. The markup is wrong for the entire line. Record the ostracon text without diacritics and offer proposed regularizations with reg tags.&#xD;
+L. 11: delete all diacritics on ὐξοτομία.&#xD;
+Verso, l. 3: change accent to grave in  ζημειωθείς.&#xD;
+L. 5: ἐ̣π̣άγω: change to ἐ̣π̣’ ἀ̣γ&lt;αθ&gt;ῷ dotting  pi and alpha; τὸν ψήχον ἡμῶν: delete accents, regularize only if done so in the notes on p. 394 or add commentaries with possible parallels. Mark up the *dash*. </change>
+         <change when="2023-02-16T04:50:50-05:00"
+                 who="http://papyri.info/editor/users/Jannis">Submit - I submit to P. Mon. Epiph. 594, proofread print edition. </change>
+          <change when="2023-07-21T06:31:31-04:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Finalized - Ready</change>
+          <change when="2023-06-23T06:55:52-04:00"
+                 who="http://papyri.info/editor/users/j.lougovaya.ast">Vote - Accept-Straight-to-Finalization - Multiple changes need to be done in the text!!! Meta: change display title to "Hymn(s) to an ascete or martyr", delete legacy.&#xD;
+Text: l.1, reverse &lt;:ὅς|reg|ὥς:&gt;, as ος is on the ostr.&#xD;
+L. 2: change the markup of the line &lt;:φιλέρημος||alt||φιρηλήμων|φαιδρύνων:&gt; καὶ πρὸ τοῦ &lt;:Stelle offensichtlich korrupt:&gt;. First, &lt;:φιλέρημος=Crum, P. Mon. Epiph. p. 314|ed|φιρηλημων:&gt;; then add in the commentary 'φαιδρύνων may have been meant (White)'.&#xD;
+L. 5: &lt;:μητοίχομεν ὑμεῖν|alt|μετέχομεν ὕμνων (?):&gt; Use the reg markup, delete accentuation in the text on the ostracon.&#xD;
+L. 6. Change &lt;:ὑῶ̣ν|alt|ὕμνον:&gt; to |reg| with (?), for the ostracon text, give υμω̣ν.&#xD;
+L. 9. The markup is wrong for the entire line. Record the ostracon text without diacritics and offer proposed regularizations with reg tags.&#xD;
+L. 11: delete all diacritics on ὐξοτομία.&#xD;
+Verso, l. 3: change accent to grave in  ζημειωθείς.&#xD;
+L. 5: ἐ̣π̣άγω: change to ἐ̣π̣’ ἀ̣γ&lt;αθ&gt;ῷ dotting  pi and alpha; τὸν ψήχον ἡμῶν: delete accents, regularize only if done so in the notes on p. 394 or add commentaries with possible parallels. Mark up the *dash*. </change>
+          <change when="2023-02-16T04:50:50-05:00"
+                 who="http://papyri.info/editor/users/Jannis">Submit - I submit to P. Mon. Epiph. 594, proofread print edition. </change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><g type="stauros"/> <choice><reg>ὡς</reg><orig>ὁς</orig></choice> ὁ ἥλιος
+<lb n="2"/><app type="editorial"><lem>φιρηλήμων</lem><rdg resp="H.G.E. White in P.Mon.Epiph. p. 314"><choice><corr>φαιδρύνων</corr><sic>φιρηλήμων</sic></choice></rdg><rdg resp="W.E. Crum in P.Mon.Epiph. p. 314"><choice><corr>φιλέρημος</corr><sic>φιρηλήμων</sic></choice></rdg><rdg resp="J. Diethart and C. Grassien in APF 50 (2004) pp. 97-98"><choice><corr>φιλελεήμων</corr><sic>φιρηλήμων</sic></choice></rdg></app> καὶ πρὸ τοῦ
+<lb n="3"/>δικαστηρίου, μάρτυρε,
+<lb n="4"/>ἐν δικαστηρίῳ <choice><reg>ὑπερβάλλων</reg><orig>ὑπερβάλλον</orig></choice> <app type="alternative"><lem>με<app type="alternative"><lem><gap reason="illegible" quantity="1" unit="character"/></lem><rdg>ε</rdg><rdg>θ</rdg></app></lem><rdg>με<unclear>τ</unclear><supplied reason="lost">ά</supplied></rdg></app>
+<lb n="5"/>μαρτύροις ἦ<unclear>ν</unclear> <choice><reg>μετέχομεν</reg><orig>μητοίχομεν</orig></choice> <choice><reg cert="low">ὕμνων </reg><orig>ὕμειν</orig></choice>
+<lb n="6"/><choice><reg>εἰς</reg><orig>ε<hi rend="diaeresis">ὐ</hi>ς</orig></choice> τὰς <choice><reg>εὐλογίας</reg><orig>εὐλογήας</orig></choice> σου, μάρτυρε. <g type="stauros"/>
+<lb n="6"/><milestone rend="horizontal-rule" unit="undefined"/>
+<lb n="7"/>καταξίωσον <choice><reg cert="low">ὕμνον </reg><orig><hi rend="diaeresis">ὕ</hi>μ<unclear>ω</unclear>ν</orig></choice> ἐν τῷ τόπῳ σου
+<lb n="8"/><choice><reg>ἡμεῖς</reg><orig><hi rend="diaeresis">ὑ</hi>μεῖ<unclear>ς</unclear></orig></choice> <gap reason="illegible" quantity="1" unit="character"/>τ<gap reason="illegible" quantity="2" unit="character"/><unclear>η</unclear>θ<unclear>ερ</unclear>ναι, ὦ ἀθλοφόρε μάρτυρε,
+<lb n="9"/><choice><reg>παραιτησόμεθα</reg><orig>παρη<unclear>θησό</unclear>μεθα</orig></choice> μ<gap reason="illegible" quantity="1" unit="character"/> μὴ <choice><reg>ἐλαττονεῖν</reg><orig>ἐλαττονᾶν</orig></choice>
+<lb n="10"/>πρὸς τὰ κατορθώματά σου
+<lb n="11"/>ἀλλὰ <choice><reg>συλλογίζου</reg><orig>συλλογίζω</orig></choice> υξυτομια,
+<lb n="12"/>μάρτυρε. <g type="stauros"/>
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/>τῆς ἀσκουμένης <choice><reg>ἀσ
+<lb n="2" break="no"/>κητά</reg><orig>ἀσ<lb n="2" break="no"/>κετὰ</orig></choice> καὶ στρατιῶτα ἀθλητά,
+<lb n="3"/><choice><reg>ὁ</reg><orig>ὡ</orig></choice> τὰ πάντα <choice><reg>ζημιωθείς</reg><orig>ζημανωθεὶς</orig></choice> ἕως ἄν
+<lb n="4"/>τὸν <choice><reg>Χριστόν</reg><orig>Χρηστὸν</orig></choice> <choice><reg>κερδάνῃς</reg><orig>ἐκερδάνῃς</orig></choice> πρεσβ
+<lb n="5"/><choice><corr>ἐπ’ ἀγαθῷ</corr><sic><unclear>ἐπ</unclear>αγω</sic></choice> <hi rend="diaeresis">ὑ</hi>πὲρ <choice><reg>τῶν</reg><orig>τὸν</orig></choice> <choice><reg>ψυχῶν</reg><orig>ψηχν</orig></choice> ἡμῶν,
+<lb n="6"/>ἅγιε μάρτυρε. <g type="stauros"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/95215"/>
-                  <biblScope unit="number">594</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Mon. Epiph.</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95215"/>
+                  <biblScope n="1" unit="number">594</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
@@ -106,5 +169,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
