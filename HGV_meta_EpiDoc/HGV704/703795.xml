@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703795">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Register mit Beschreibungen von Liegenschaften</title>
@@ -32,16 +32,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites (?)</origPlace>
+                     <origPlace>Arsinoites ?, Ägypten</origPlace>
                      <origDate notBefore="-0200" notAfter="-0101" precision="low">II v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    cert="low"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,7 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,23 +67,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Liegenschaften</term>
+               <term n="1">Register</term>
+               <term n="2">Liegenschaften</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-07-21T06:51:31-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-07-21T06:17:22-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-07-21T06:15:29-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - Entered during Digital Papyrolgy at the University of Heidelberg.&#xD;
+The interlinear and supplied οἰκί- is meant to be at the end of line 9a!</change>
          <change who="HGV" when="2023-03-02">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">17</biblScope>
-                  <biblScope type="numbers">665</biblScope>
+                  <biblScope n="1" type="volume">17</biblScope>
+                  <biblScope n="2" type="numbers">665</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,10 +102,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703736"/>
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm703795"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
