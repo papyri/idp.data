@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22780">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Lease of Rooms</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">22780</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 1009</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
+                     <origPlace>Hermopolis (= El-Ahmunein)</origPlace>
                      <origDate when="0602-07-25">25. Juli 602</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="modern">El-Ahmunein</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,9 +66,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Miete</term>
-               <term>Haus</term>
+               <term n="1">Vertrag/contract</term>
+               <term n="2">Miete</term>
+               <term n="3">Haus</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -72,8 +77,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL II 2, S. 82 (irrtümlich Aegyptus 33 statt 3) und BL VIII, S. 183. Descr.</p>
@@ -82,9 +87,9 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1009</biblScope>
-                  <biblScope type="pages">(S. LII)</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">1009</biblScope>
+                  <biblScope n="3" type="pages">(S. LII)</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -98,8 +103,22 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">ZPE 223 (2022), p. 166-167</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">P. Lond. 3 p. LII no. 1009 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">ZPE 223 (2022), p. 164-169 no. 14 (2022)</bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations">In the name of our lord and master Jesus Christ, our God and saviour, in the reign of our most godly master Flavius Mauricius, New Tiberius, the eternal Augustus (and) Imperator, year twentieth, on the first of Mesore, in the sixth indiction. ‘To Aurelia Anastasia daughter of N.N., originating from this (city) of Hermopolites, for the two-thirds part of the dining room and for the whole exedra, and to Pouroush son of Cal- linicus for the third part of the dining room, from Georgius son of Paulus, bucellarius of the most extraordinary former prefect, residing in this city of Hermopolis. I acknowledge freely and of my own will to have leased from you for as long a time as I occupy them, reckoned from the first day of the present month Mesore of the present sixth indiction, the dining room belong- ing to you in the second floor facing south and one exedra facing north above the staircase, with the proportionate share of the well, the courtyard, and the roof and every right, out of a house situated in the (city) of Hermopolites on the street of the archangel Gabriel …’ Back: ‘Lease made by Georgius son of Paulus, bucellarius …’</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
