@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv38245">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Lease of a Cow(?) with Rent in Cheese</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">38245</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 1030</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Hermopolis (= El-Ashmunein)</origPlace>
                      <origDate notBefore="0501" notAfter="0700" precision="low">VI - VII</origDate>
                   </origin>
+                  <provenance>
+                     <p xml:id="geoBFCIHJ">
+                        <placeName n="1" type="ancient">Hermopolis</placeName>
+                        <placeName n="2" type="modern">El-Ashmunein</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,8 +64,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Pacht</term>
+               <term n="1">contract lease</term>
+               <term n="2">Pacht</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -65,8 +74,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Descr.</p>
@@ -75,14 +84,17 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1030</biblScope>
-                  <biblScope type="pages">(S. LIII)</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">1030</biblScope>
+                  <biblScope n="3" type="pages">(S. LIII)</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">ZPE 215 (2020), p. 265</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -91,6 +103,16 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">ZPE 215 (2020), p. 264-268 no. 4 (Benaissa, Amin - 2020)</bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations">… the rent (misthophoria) for this (being) each year two hundred choice “landlord’s” cheeses, which rent [I shall pay to you on the] month [of N.N.] each year without delay, and (I agree) thus to bring you the same gratuity (synetheia) to your home [in Hermopolis with my own animals] without delay. The lease is normative and secure, and upon being asked the formal question I gave my assent.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
