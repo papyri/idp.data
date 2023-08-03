@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv44623">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe, das Dienstverhältnis eines Mädchens betreffend, und Urteil der Archonten</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Herakleopolis</origPlace>
                      <origDate notAfter="-0134-06-14">
-                        <offset type="before" n="1">vor</offset> 14. Juni 134 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                14. Juni 134 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,13 +65,13 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Archonten</term>
-               <term>Pflege des kranken Schwagers</term>
-               <term>Dienstverhältnis des Mädchens bei dem Petenten</term>
-               <term>Schulden (?)</term>
-               <term>Entfernung aus dem Dienst durch die Mutter</term>
-               <term>Entscheidung der Archonten</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Archonten</term>
+               <term n="3">Pflege des kranken Schwagers</term>
+               <term n="4">Dienstverhältnis des Mädchens bei dem Petenten</term>
+               <term n="5">Schulden (?)</term>
+               <term n="6">Entfernung aus dem Dienst durch die Mutter</term>
+               <term n="7">Entscheidung der Archonten</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,8 +80,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. Kongr. XXV, S. 387-395.</p>
@@ -88,24 +91,26 @@
             <note type="original">Z. 24: Bearbeitungsvermerk vom 14. Juni 134 v.Chr.; Z. 25: Bearbeitungsvermerk vom 16. Juni 134 v.Chr.; Z. 26: Bearbeitungsvermerk vom 13. Juli 134 v.Chr.; Z. 26: 24. Mai - 22. Juni 134 v.Chr.; Z. 28: Bearbeitungsvermerk vom 18. Juli 134 v.Chr. (Tag unsicher)</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 25</ref>
                   <note type="comment">Bearbeitungsvermerk vom</note>
                   <date type="mentioned" when="-0134-06-16">16. Juni 134 v.Chr.</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 26</ref>
                   <note type="comment">Bearbeitungsvermerk vom</note>
                   <date type="mentioned" when="-0134-07-13">13. Juli 134 v.Chr.</date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 26</ref>
-                  <date type="mentioned" notBefore="-0134-05-24" notAfter="-0134-06-22">24. Mai  - 22. Juni 134 v.Chr.</date>
+                  <date type="mentioned" notBefore="-0134-05-24" notAfter="-0134-06-22">24. Mai 134 - 22. Juni 134 v.Chr.</date>
                </item>
-               <item>
+               <item n="4">
                   <ref>Z. 28</ref>
                   <note type="comment">Bearbeitungsvermerk vom</note>
-                  <date type="mentioned" when="-0134-07-18">18. Juli 134 v.Chr. (Tag unsicher)<certainty locus="value" match="../date/day-from-date(@when)"/>
+                  <date type="mentioned" when="-0134-07-18">
+              18. Juli 134 v.Chr. (Tag unsicher)
+              <certainty locus="value" match="../date/day-from-date(@when)"/>
                   </date>
                </item>
             </list>
@@ -141,11 +146,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/PPolitIud/PPolitIud_007.html"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm44623"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
