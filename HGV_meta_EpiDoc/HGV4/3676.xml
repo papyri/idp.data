@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3676">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition of a Tax - Farmer</title>
@@ -31,18 +31,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kerkeosiris (Arsinoites)</origPlace>
+                     <origPlace>Kerkeosiris (Arsinoites, Ägypten)</origPlace>
                      <origDate notAfter="-0117-02-01">
-                        <offset type="before" n="1">vor</offset> 1. Febr. 117 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                1. Febr. 117 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736936 https://www.trismegistos.org/place/1057 https://www.trismegistos.org/place/1078 https://www.trismegistos.org/place/1082">Kerkeosiris</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,20 +71,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Petition</term>
-               <term>Pächter (Steuern)</term>
-               <term>Pnepheros an Amenneus (königlicher Schreiber)</term>
-               <term>Bitte um Protektion</term>
+               <term n="1">Petition</term>
+               <term n="2">Pächter (Steuern)</term>
+               <term n="3">Pnepheros an Amenneus (königlicher Schreiber)</term>
+               <term n="4">Bitte um Protektion</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-03T09:14:50-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-08-03T08:48:26-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-08-03T05:10:31-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added new link to digital image</change>
          <change who="HGV" when="1997-02-06">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zu Z. 3 vgl. Armoni, Studien, S. 218, Anm. 163.</p>
@@ -89,15 +100,15 @@
             <note type="original">Empfangsvermerk Z. 1: 3. Febr. 117 v. Chr.; Z. 23 - 26: Bearbeitungsvermerk vom 1. Febr. 117 v. Chr.; Z. 6: 118 - 117 v. Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 1</ref>
                   <date type="mentioned" when="-0117-02-03">3. Febr. 117 v.Chr.</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 23 - 26</ref>
                   <date type="mentioned" when="-0117-02-01">1. Febr. 117 v.Chr.</date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 6</ref>
                   <date type="mentioned" notBefore="-0118" notAfter="-0117">118 - 117 v.Chr.</date>
                </item>
@@ -107,8 +118,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">40</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">40</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -136,11 +147,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=324&amp;item=1"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://digicoll.lib.berkeley.edu/record/231610"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
