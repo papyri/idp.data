@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65233" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Ant. 3 126 </title>
+            <title>Medical Encyclopedia with Marginalia</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">6475</idno>
             <idno type="filename">65233</idno>
             <idno type="dclp-hybrid">p.ant;3;126</idno>
+            <idno type="MP3">02362.300</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">11.5</width>
+                              <height unit="cm">18.3</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -35,22 +44,30 @@
                         </layout>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>informal sloping</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Antinoopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Antinoopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0500" notAfter="0699">500 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2774">Antinoopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2774 https://pleiades.stoa.org/places/756518">Antinoopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -61,19 +78,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>medicine</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">medical encyclopedia with marginalia</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose</term>
+               <term n="5">medicine</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,84 +98,114 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2023-07-13T07:20:47-04:00"
+         <change when="2023-07-13T07:20:47-04:00"
                  who="http://papyri.info/editor/users/simoeis">Finalized - Ready</change>
-          <change when="2023-07-13T07:19:03-04:00"
+         <change when="2023-07-13T07:19:03-04:00"
                  who="http://papyri.info/editor/users/simoeis">Vote - Accept-Straight-to-Finalization - Looks fine now.</change>
-          <change when="2023-07-13T07:18:09-04:00"
-                 who="http://papyri.info/editor/users/simoeis">Submit - Text was in XML but not displaying in HTML.  Trying to run it through again so that it displays properly.</change>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2023-07-13T07:18:09-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Submit - Text was in XML but not displaying in HTML. Trying to run it through again so that it displays properly.</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Fragment of a medical encyclopaedia. The papyrus scraps (18,3 x 11,5 cm), jointed from the bottom of a page from a papyrus codex, are written both on the recto along the fibres and on the verso along the fibres and preserve additions in the lower margin. Presumably, the heading in fr. A, ll. 1-9 (marked with a paragraphos before the title χειρουργία ἀντιάδων), is puzzling, since the text which follows prescribes not surgery but medical treatment. The content could be paralleled by Aet. 8.51 [CMG 8.2, 485.16ff. Oliv.]. Kudlien and Barns suggest that the text could be from Oribasius’ lost chapter on ἀντιάδες (only mentioned in <emph rend="italics">Coll.med.</emph> 21.1-2 [CMG 6.2.2, 192.12-8 Raed.]). The main text is written in an informal sloping book hand, whereas the marginalia, probably copied by the same scribe, in a documentary cursive, much smaller.</p><p>This papyrus has been digitally edited by Francesca Bertonazzi as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous edition (J.W.B. Barns, P.Ant. III 126).</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          Fragment of a medical encyclopaedia. The papyrus scraps (18,3 x 11,5 cm), jointed from the bottom of a page from a papyrus codex, are written both on the recto along the fibres and on the verso along the fibres and preserve additions in the lower margin. Presumably, the heading in fr. A, ll. 1-9 (marked with a paragraphos before the title χειρουργία ἀντιάδων), is puzzling, since the text which follows prescribes not surgery but medical treatment. The content could be paralleled by Aet. 8.51 [CMG 8.2, 485.16ff. Oliv.]. Kudlien and Barns suggest that the text could be from Oribasius’ lost chapter on ἀντιάδες (only mentioned in
+          <emph rend="italics">Coll.med.</emph>
+          21.1-2 [CMG 6.2.2, 192.12-8 Raed.]). The main text is written in an informal sloping book hand, whereas the marginalia, probably copied by the same scribe, in a documentary cursive, much smaller.
+        </p>
+        <p>This papyrus has been digitally edited by Francesca Bertonazzi as part of the Project "DIGMEDTEXT - Online Humanities Scholarship: A Digital Medical Library based on Ancient Texts" (ERC-AdG-2013, Grant Agreement no. 339828) funded by the European Research Council at the University of Parma (Principal Investigator: Prof. Isabella Andorlini). The digital edition is mostly based on the previous edition (J.W.B. Barns, P.Ant. III 126).</p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="a" subtype="fragment" type="textpart">
 <ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>ι</unclear> <gap reason="illegible" quantity="1" unit="character"/> τ <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/>
-<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
-<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>
-<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> αλλον του κ <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>ε</unclear>ουσων αυτ <gap reason="lost" extent="unknown" unit="character"/> 
-<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/> μειατα <unclear>ε</unclear> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ε</supplied><unclear>ι</unclear>ρημενα <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <milestone rend="paragraphos" unit="undefined"/> χειρουρ<unclear>γι</unclear>α αντ<supplied reason="lost">ι</supplied><unclear>α</unclear>δων
-<lb n="10"/><supplied reason="lost">ει</supplied> μεν εν φλεγμονη <unclear>ειη</unclear>σαν αι αντιαδε<unclear>ς</unclear> <unclear>β</unclear>οηθημα 
-<lb n="11"/><supplied reason="lost">τ</supplied><unclear>α</unclear> <unclear>π</unclear>αραλαμβανεσθω τ<supplied reason="lost">α πε</supplied><unclear>ρι</unclear> των εν φλ<supplied reason="lost">ε</supplied>γμονη <unclear>π</unclear><supplied reason="lost">α</supplied><unclear>ρ</unclear>
-<lb n="12"/><supplied reason="lost">ι</supplied>σθμιω<unclear>ν</unclear> ειρημενα κ<supplied reason="lost">αι τα</supplied> αναγαργαρ<supplied reason="lost">ι</supplied><unclear>σ</unclear>ματα και
-<lb n="13,minf"/><supplied reason="lost">α</supplied>ζυμου ε <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="4" unit="character"/><unclear>λ</unclear>ων του ξηριου <gap reason="lost" quantity="15" unit="character"/> <supplied reason="lost">ε</supplied>πιχεε θερμον
-<lb n="14,minf"/><supplied reason="lost">υ</supplied>δωρ και λει<supplied reason="lost">οτριβε</supplied> καλως μετα <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="15" unit="character"/> <supplied reason="lost">ε</supplied>λαι<unclear>ο</unclear>υ καταπ<unclear>λ</unclear>ασσε
-<lb n="15,minf"/><gap reason="lost" quantity="4" unit="character"/><unclear>αρ</unclear>του <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="2" unit="character"/> ουσπε <gap reason="illegible" quantity="3" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">πλ</supplied>ασσων το κατα
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ι</unclear><gap reason="illegible" quantity="1" unit="character"/>τ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>αλλον τοῦ κ<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ε</unclear>ουσων αυτ<gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>μειατα <unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">ε</supplied><unclear>ι</unclear>ρημενα<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <g type="dash"/> χειρουρ<unclear>γί</unclear>α ἀντ<supplied reason="lost">ι</supplied><unclear>ά</unclear>δων
+<lb n="10"/><supplied reason="lost">εἰ</supplied> μὲν ἐν φλεγμονῇ <unclear>εἴη</unclear>σαν αἱ ἀντιάδε<unclear>ς</unclear> <unclear>β</unclear>οήθημα 
+<lb n="11"/><supplied reason="lost">τ</supplied><unclear>ὰ</unclear> <unclear>π</unclear>αραλαμβανέσθω τ<supplied reason="lost">ὰ πε</supplied><unclear>ρὶ</unclear> τῶν ἐν φλ<supplied reason="lost">ε</supplied>γμονῇ <unclear>π</unclear><supplied reason="lost">α</supplied><unclear>ρ</unclear>
+<lb n="12" break="no"/><supplied reason="lost">ι</supplied>σθμίω<unclear>ν</unclear> εἰρημένα κ<supplied reason="lost">αὶ τὰ</supplied> ἀναγαργαρ<supplied reason="lost">ί</supplied><unclear>σ</unclear>ματα καὶ
+<lb n="13,minf"/><supplied reason="lost">ἀ</supplied>ζύμου ε<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="4" unit="character"/><unclear>λ</unclear>ων τοῦ ξηρίου <gap reason="lost" quantity="15" unit="character"/> <supplied reason="lost">ἐ</supplied>πίχεε θερμὸν
+<lb n="14,minf"/><supplied reason="lost">ὕ</supplied>δωρ καὶ λει<supplied reason="lost">ότριβε</supplied> καλῶς μετα<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="15" unit="character"/> <supplied reason="lost">ἐ</supplied>λαί<unclear>ο</unclear>υ κατάπ<unclear>λ</unclear>ασσε
+<lb n="15,minf"/><gap reason="lost" quantity="4" unit="character"/><unclear>αρ</unclear>του <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>ουσπε<gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">πλ</supplied>άσσων τὸ κατά
 <lb n="16,minf" break="no"/><supplied reason="lost">πλασμα</supplied> <gap reason="lost" extent="unknown" unit="character"/>
 </ab>
 </div>
 <div n="b" subtype="fragment" type="textpart">
 <ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
-<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
 <lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> βοηθ<unclear>η</unclear><supplied reason="lost">μα</supplied> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>
-<lb n="4"/><supplied reason="lost">κ</supplied><unclear>α</unclear>τ αρχας υπ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="5"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <unclear>ενε</unclear>ος ειη ὁ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
-<lb n="6"/><gap reason="lost" quantity="3" unit="character"/> ομια εν δε <app type="editorial"><lem><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/>
-<lb n="7" break="no"/>ρ<unclear>ισ</unclear>ματα</lem><rdg><supplied reason="lost">διαχ</supplied><lb n="7" break="no"/>ρίσματα</rdg></app></lem><rdg resp="Kudlien"><supplied reason="lost">ἀναγαργα</supplied><lb n="7" break="no" xml:id="div2-lb10"/>ρίσματα</rdg></app> <gap reason="illegible" quantity="1" unit="character"/> <unclear>ε</unclear> <gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">φοι</supplied> 
-<lb n="8" break="no"/>ν<unclear>ικων</unclear> <expan>κ<ex>αι</ex></expan> τα μελ <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" quantity="2" unit="character"/> <app type="alternative"><lem><unclear>ξ</unclear> <gap reason="illegible" quantity="1" unit="character"/> <unclear>ο</unclear><gap reason="illegible" quantity="4" unit="character"/></lem><rdg>ξιοις το</rdg></app> γλυκυ<supplied reason="lost">ρ</supplied> 
-<lb n="9" break="no"/>ριζης αφεψημα διαχρ<unclear>ειστος</unclear> <unclear>τε</unclear> η δια μορων <unclear>κ</unclear><supplied reason="lost">αι</supplied>
-<lb n="10"/><unclear>η</unclear> Αιγυπτια <unclear>δι</unclear>α τουτων κ<supplied reason="lost">ατ</supplied><unclear>α</unclear> το πλειστον <unclear>ἡ</unclear> φλεγμ<unclear>ο</unclear>
-<lb n="11" break="no"/>νη λυεται <supplied reason="lost">ο</supplied><unclear>ι</unclear>ς μη λυθ<unclear>ε</unclear><supplied reason="lost">ισα</supplied> εις αποστημα τρεπετα<supplied reason="lost">ι</supplied> 
-<lb n="12,minf"/>επιτιθει πολλακ<supplied reason="lost">ις</supplied> <gap reason="lost" quantity="13" unit="character"/> <app type="alternative"><lem><gap reason="illegible" quantity="3" unit="character"/></lem><rdg>ου</rdg></app> τον ως μαλ<supplied reason="lost">ιστα</supplied><gap reason="lost" quantity="3" unit="character"/><unclear>α</unclear>μενος αυ<unclear>τ</unclear> <gap reason="lost" extent="unknown" unit="character"/> 
-<lb n="13,minf"/>απο χαμαιμη<unclear>λ</unclear><supplied reason="lost">ων</supplied><gap reason="lost" quantity="14" unit="character"/><unclear>εια</unclear> λαβ<unclear>ω</unclear>ν ψ <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="5" unit="character"/> <unclear>ε</unclear>πι τρια <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/> 
-<lb n="14,minf"/>ειτα λειοτριβης <unclear>με</unclear><supplied reason="lost">τα</supplied><gap reason="lost" quantity="17" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <unclear>πο</unclear>θη<gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="4"/><supplied reason="lost">κ</supplied><unclear>α</unclear>τ’ ἀρχὰς ὑπ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ενε</unclear>ος εἴη <hi rend="asper">ὁ</hi> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="3" unit="character"/>ομια ἐν δὲ <app type="editorial"><lem><app type="alternative"><lem><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7" break="no"/>ρ<unclear>ισ</unclear>ματα</lem><rdg><supplied reason="lost">διαχ</supplied><lb n="7" break="no"/>ρίσματα</rdg></app></lem><rdg resp="Kudlien"><supplied reason="lost">ἀναγαργα</supplied><lb n="7" break="no" xml:id="div2-lb10"/>ρίσματα</rdg></app> <gap reason="illegible" quantity="1" unit="character"/><unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">φοι</supplied> 
+<lb n="8" break="no"/>ν<unclear>ίκων</unclear> <expan>κ<ex>αὶ</ex></expan> τὰ μελ<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="8" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="2" unit="character"/><app type="alternative"><lem><unclear>ξ</unclear><gap reason="illegible" quantity="1" unit="character"/><unclear>ο</unclear><gap reason="illegible" quantity="4" unit="character"/></lem><rdg>ξιοις τὸ<certainty match=".." locus="value"/></rdg></app> γλυκυ<supplied reason="lost">ρ</supplied> 
+<lb n="9" break="no"/>ρίζης ἀφέψημα <choice><reg>διάχριστός</reg><orig>διάχρ<unclear>ειστός</unclear></orig></choice> <unclear>τε</unclear> ἡ διὰ μόρων <unclear>κ</unclear><supplied reason="lost">αὶ</supplied>
+<lb n="10"/><unclear>ἡ</unclear> Αἰγυπτία <unclear>δι</unclear>ὰ τούτων κ<supplied reason="lost">ατ</supplied><unclear>ὰ</unclear> τὸ πλεῖστον <hi rend="asper">ἡ</hi> φλεγμ<unclear>ο</unclear>
+<lb n="11" break="no"/>νή λύεται <supplied reason="lost">ο</supplied><unclear>ἷ</unclear>ς μὴ λυθ<unclear>ε</unclear><supplied reason="lost">ῖσα</supplied> εἰς ἀπόστημα τρέπετα<supplied reason="lost">ι</supplied> 
+<lb n="12,minf"/>ἐπιτίθει πόλλακ<supplied reason="lost">ις</supplied> <gap reason="lost" quantity="13" unit="character"/> <app type="alternative"><lem><gap reason="illegible" quantity="3" unit="character"/></lem><rdg>ου<certainty match=".." locus="value"/></rdg></app> τὸν ὡς μάλ<supplied reason="lost">ιστα</supplied> <gap reason="lost" quantity="3" unit="character"/><unclear>ά</unclear>μενος αυ<unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="13,minf"/>ἀπὸ χαμαιμή<unclear>λ</unclear><supplied reason="lost">ων</supplied><gap reason="lost" quantity="14" unit="character"/><unclear>εια</unclear> λαβ<unclear>ὼ</unclear>ν ψ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="5" unit="character"/> <unclear>ἐ</unclear>πὶ τρια<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="14,minf"/>εἶτα λειοτρίβῃς <unclear>με</unclear><supplied reason="lost">τα</supplied><gap reason="lost" quantity="17" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <unclear>πο</unclear>θη<gap reason="lost" quantity="7" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
 </ab>
 </div></div>
          <div type="commentary" subtype="linebyline">
             <list>
-               <item corresp="#div2-lb10" xml:space="preserve"><ref>b.7-8</ref> <p>For the supplement of φοινίκων see Orib. <emph rend="italics">Coll.med.</emph> 19.2 [CMG 6.2.2, 191.27-8 Raed.].</p></item>
+               <item corresp="#div2-lb10" xml:space="preserve">
+            <ref>b.7-8</ref>
+            <p>
+              For the supplement of φοινίκων see Orib.
+              <emph rend="italics">Coll.med.</emph>
+              19.2 [CMG 6.2.2, 191.27-8 Raed.].
+            </p>
+          </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/7037"/>
-                  <biblScope unit="number">126</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Ant.</title>
-                  <biblScope unit="volume">3</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/7037"/>
+                  <biblScope n="1" unit="number">126</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/9722"/>
+                  <biblScope n="1" unit="number">48</biblScope>
+                  <biblScope n="2" unit="generic">descr,</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/19701"/>
+                  <biblScope n="1" unit="number">2362.3</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">McNamee, Annotations (ASP 45, 2007), pl. 33</bibl>
-               <bibl type="online" n="1">
+               <bibl type="online">
                   <ptr target="https://relicta.org/cpp/detail.php?CPP=0429"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
