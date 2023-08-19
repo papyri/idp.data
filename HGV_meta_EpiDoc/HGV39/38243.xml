@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv38243">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Sale on delivery of hay</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">38243</idno>
             <idno type="TM">38243</idno>
             <idno type="ddb-perseus-style">0154;3;1026</idno>
-            <idno type="ddb-filename">p.lond.3.1026</idno>
-            <idno type="ddb-hybrid">p.lond;3;1026</idno>
+            <idno type="ddb-filename">zpe.215.257_1</idno>
+            <idno type="ddb-hybrid">zpe;3;257_1</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 1026 a</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
+                     <origPlace>Hermopolis ?</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0482-01-12">12. Jan. 482</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0497-01-12">12. Jan. 497</origDate>
+                     <origDate n="3" xml:id="dateAlternativeZ" when="0527-01-13">13. Jan. 527</origDate>
                   </origin>
+                  <provenance>
+                     <p xml:id="geoJ99DFC">
+                        <placeName type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/816 https://pleiades.stoa.org/places/756574">Hermopolis</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96063"/>
+                  <biblScope type="pp">257</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,35 +73,43 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Schiffer</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Lieferung</term>
+               <term n="4">Heu</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-19T10:04:15-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-07-27T11:24:30-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Put the translation elsewhere</change>
+         <change when="2023-07-14T06:23:04-04:00"
+                 who="http://papyri.info/editor/users/Jannis">Submit - I submit ZPE 215 (2020), p. 257-259 no. 1, proofread print edition</change>
          <change who="HGV" when="1995-08-15">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Datierung: 12. (13.) Jan. Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">1026</biblScope>
-                  <biblScope type="generic">a</biblScope>
-                  <biblScope type="pages">(S. LIII)</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">215</biblScope>
+                  <biblScope n="2" type="fascicle">(2020)</biblScope>
+                  <biblScope n="3" type="pages">S. 257</biblScope>
+                  <biblScope n="4" type="number">Nr. 1</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 258</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -92,6 +118,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. 3 1026 a (S. LIII) descr.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
