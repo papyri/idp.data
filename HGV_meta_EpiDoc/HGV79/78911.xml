@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv78911">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Rest eines Berichts über die Amtsführung von C. Rabirius Postumus als Dioiketes</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Milan</settlement>
                   </placeName>
+                  <collection>Università Cattolica</collection>
+                  <idno type="invNo">P. Med. 68.53</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,30 +33,37 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt (Arsinoites oder Oxyrhynchites?)</origPlace>
-                     <origDate notBefore="-0075" notAfter="0075" precision="low">Mitte I v.Chr. - Mitte I n.Chr.</origDate>
+                     <origPlace>Arsinoites ?, Ägypten; Oxyrhynchites ?, Ägypten</origPlace>
+                     <origDate notBefore="-0075" notAfter="0075" precision="low">Mitte I v.Chr. - Mitte I</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
-                        <placeName type="ancient" subtype="nome" cert="low" ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                     </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient" subtype="nome" cert="low" ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                  <provenance n="1" type="located">
+                     <p xml:id="geog_2">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
-                  <provenance type="found">
+                  <provenance n="2" type="located">
                      <p>
-                        <placeName>unbekannt</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
-                  
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -69,30 +78,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>C. Rabirius Postumus</term>
-               <term>Dioiketes</term>
-               <term>Amtsmißbrauch</term>
-               <term>Korruption</term>
+               <term n="1">C. Rabirius Postumus</term>
+               <term n="2">Dioiketes</term>
+               <term n="3">Amtsmißbrauch</term>
+               <term n="4">Korruption</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-23T04:14:56-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2022-05-23T11:13:18-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - I suspect that we should call this publication JJP.</change>
+         <change when="2022-04-25T04:25:43-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Eingabe einer Übersetzung nach JJP 40 (2010) 210 sowie Ergänzung der Metadaten um diese Publikation.</change>
          <change who="HGV" when="2002-01-14">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Unsicher, ob dokumentarisch oder literarisch. Rückseite: SB XXII 15204. Vgl. JJP 40, 2010, S. 205-217.</p>
+            <p>Unsicher, ob dokumentarisch oder literarisch. Rückseite: SB XXII 15204. Vgl. Neudruck JJP 40, 2010, S. 205-217.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">22</biblScope>
-                  <biblScope type="numbers">15203</biblScope>
+                  <biblScope n="1" type="volume">22</biblScope>
+                  <biblScope n="2" type="numbers">15203</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -110,7 +125,8 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Aegyptus 73, 1993, S. 5</bibl>
+               <bibl type="illustration" n="1">Aegyptus 73, 1993, S. 5</bibl>
+               <bibl type="illustration" n="2">JJP 40, 2010, S. 209</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="translations">
@@ -124,6 +140,7 @@
                <bibl type="translations">Bagnall &amp; Derow, The Hellenistic Period (2004), Nr. 62</bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="otherPublications"/>
       </body>
-   </text>
+  </text>
 </TEI>
