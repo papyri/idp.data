@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18504">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Vertrag über den Kauf einer Sklavin</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Ägyptisches Museum und Papyrussammlung</collection>
+                  <idno type="invNo">P. 13058 Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria</origPlace>
-                     <origDate notBefore="-0030" notAfter="0014">30 v.Chr. - 14 n.Chr.</origDate>
+                     <origPlace>Alexandria (Ägypten)</origPlace>
+                     <origDate notAfter="-0013-04-07">
+                        <certainty locus="value" match="../offset[@type='before']"/>
+                        <offset n="1" type="before">vor (?)</offset>
+                7. Apr. 13 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727070 https://www.trismegistos.org/place/100">Alexandria</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/727070 http://www.trismegistos.org/place/100">Alexandria</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,29 +70,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>Sklavin</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Sklavin</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-24T08:53:11-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2022-09-06T04:58:22-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2022-06-23T04:46:29-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Corrections in ll. 4, 17, 21, 22, 24, 26, 28&#xD;
+P. van Minnen, Tyche 35 (2020) 234 (KorrTyche 986)</change>
          <change who="HGV" when="1994-10-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: BGU IV 1129 und 1149. Zum Ort vgl. BGU IV, S. 161. </p>
+            <p>Rückseite: BGU IV 1129 und 1149. Zum Ort vgl. BGU IV, S. 161. Zur Datierung vgl. P. van Minnen, Tyche 35, 2020, S. 234 (KorrTyche 986).</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1059</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1059</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -92,17 +108,17 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://berlpap.smb.museum/00498/"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://berlpap.smb.museum/16865/"/>
                </figure>
-               <figure>
+               <figure n="3">
                   <graphic url="http://berlpap.smb.museum/16866/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
