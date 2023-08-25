@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2486">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petôys an Apollonios</title>
+            <title>Petition to the oikonomos Apollonios by the oil seller Petoys</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">2486</idno>
             <idno type="TM">2486</idno>
             <idno type="ddb-perseus-style">0144;6;261</idno>
-            <idno type="ddb-filename">p.koeln.6.261</idno>
-            <idno type="ddb-hybrid">p.koeln;6;261</idno>
+            <idno type="ddb-filename">jjp.50.72_33</idno>
+            <idno type="ddb-hybrid">jjp;50;72_33</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Stanford</settlement>
                   </placeName>
+                  <collection>University Libraries</collection>
+                  <idno type="invNo">Pap. Class. 17 + Pap. Class. 37 + Cologne Pap. inv. 20350 - 10 + Cologne Pap. inv. 20350 - 17</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Oxyrhyncha (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0213-03-11">11. März 213 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                     <p xml:id="geoGCDIEF">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/741540 www.trismegistos.org/place/1523">Oxyrhyncha</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   ref="https://pleiades.stoa.org/places/736893 www.trismegistos.org/place/332">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/95893"/>
+                  <biblScope type="pp">72</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,22 +76,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Kriegsgefangene</term>
-               <term>Öl</term>
-               <term>Raub</term>
-               <term>Verarbeitung</term>
-               <term>Oikonomos (Metrodoros)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Kriegsgefangene</term>
+               <term n="3">Öl</term>
+               <term n="4">Raub</term>
+               <term n="5">Verarbeitung</term>
+               <term n="6">Oikonomos (Metrodoros)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-25T06:03:19-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-02-09T06:52:45-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Metadata looks good.</change>
+         <change when="2022-02-08T16:56:49-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Updated according to reedition as P.Stan. Class. 33 (=JJP 50 (2020) S. 70 Nr. 33). This entry should be joint with http://papyri.info/apis/stanford.apis.7482 and http://papyri.info/ddbdp/jjp;42;74_1, and the following entry should be separated: https://papyri.info/apis/oslo.apis.41. The fragments are not correctly placed in the APIS image: should this be indicated in the HGV entry? Concerning the transcription, l. 9 I had to decide where to close the square brackets, and at l. 13 I added a missing accent. </change>
          <change who="HGV" when="1990-02-26">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Archiv des Oikonomos Apollonios.</p>
@@ -86,24 +105,39 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">261</biblScope>
+                  <title level="s" type="abbreviated">JJP</title>
+                  <biblScope n="1" type="volume">50</biblScope>
+                  <biblScope n="2" type="fascicle">(2020)</biblScope>
+                  <biblScope n="3" type="pages">S. 72</biblScope>
+                  <biblScope n="4" type="number">Nr. 33</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel XXXIV</bibl>
+               <bibl type="illustration" n="1">S. 71</bibl>
+               <bibl type="illustration" n="2">P. Köln VI Tafel XXXIV</bibl>
             </p>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/Karte/VI_261.html"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://papyri.info/apis/stanford.apis.7482"/>
+               </figure>
+               <figure n="3">
+                  <graphic url="https://papyri.info/apis/stanford.apis.7499"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">JJP 42 (2012) S. 74 Nr. 18</bibl>
+               <bibl type="publication" subtype="other" n="2">P. Köln VI 261</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
