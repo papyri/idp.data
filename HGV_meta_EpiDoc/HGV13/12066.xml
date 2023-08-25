@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12066">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Letter to President and Members of a Guild</title>
+            <title>Letter to president and members of a guild</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">12066</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Ann Arbor</settlement>
                   </placeName>
+                  <collection>Michigan University, Library</collection>
+                  <idno type="invNo">P. 5374</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Karanis (Arsinoites)</origPlace>
-                     <origDate when="0184-07-25">25. Juli 184</origDate>
+                     <origPlace>Karanis (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0006-07-25">25. Juli 6 v.Chr.</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0090-08-11">11. Aug. 90 v.Chr.</origDate>
+                     <origDate n="3" xml:id="dateAlternativeZ" when="-0157-08-27">27. Aug. 157 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736932 https://www.trismegistos.org/place/1008">Karanis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/1008 http://pleiades.stoa.org/places/736932">Karanis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,26 +72,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Epiodoros an Thrax und die anderen Zunftkollegen</term>
-               <term>Austritt wegen Verarmung</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Epiodoros an Thrax und die anderen Zunftkollegen</term>
+               <term n="3">Austritt wegen Verarmung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-25T06:43:38-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2021-12-29T06:31:17-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Change to German. Fine.</change>
+         <change when="2021-12-01T08:25:29-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Updated metadata according to R. Mascellari, APF 64, 2018, and added some bibliography</change>
          <change who="HGV" when="1994-02-18">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Mich.</title>
-                  <biblScope type="volume">9</biblScope>
-                  <biblScope type="numbers">575</biblScope>
+                  <biblScope n="1" type="volume">9</biblScope>
+                  <biblScope n="2" type="numbers">575</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -98,6 +111,11 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung vgl. R. Mascellari, APF 64, 2018, S. 300.
+Zur Bedeutung des Verbs νέμειν vgl. J. Liu, Group Membership, S. 210, n. 41.
+Vgl. Kloppenborg, Greco-Roman Associations III, S. 344-347.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
