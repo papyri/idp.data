@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35730">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Frammenti di conti</title>
+            <title>P.Flor. I 78: una riedizione</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">35730</idno>
             <idno type="TM">35730</idno>
             <idno type="ddb-perseus-style">0111;1;78</idno>
-            <idno type="ddb-filename">p.flor.1.78</idno>
-            <idno type="ddb-hybrid">p.flor;1;78</idno>
+            <idno type="ddb-filename">aegyptus.95.47</idno>
+            <idno type="ddb-hybrid">aegyptus;95;47</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">P. Flor. 78</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolites</origPlace>
+                     <origPlace>Hermopolites, Ägypten</origPlace>
                      <origDate notBefore="0451" notAfter="0500" precision="low">2. Hälfte V</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/87056"/>
+                  <biblScope type="pp">47</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,20 +73,26 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Geld</term>
-               <term>Steuern</term>
-               <term>Kodex</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Geld</term>
+               <term n="3">Steuern</term>
+               <term n="4">Kodex</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-25T05:57:49-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2022-08-30T15:06:58-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2022-08-29T09:34:41-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Ersetzung des Textes nach Aegyptus 95, 2015, 47 ff. sowie Anpassung der Metadaten an Neuedition: In Z. 9, 10, 63 und 65 wurde bei der Eingabe ein Zahlzeichen als Sampi interpretiert und in Z. 56 und 68 wurden Fragezeichen zur Kenntlichmachung unsicherer Lesungen ignoriert.</change>
          <change who="HGV" when="1997-09-01">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL IX, S. 84.</p>
@@ -84,35 +100,37 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Flor.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">78</biblScope>
+                  <title level="s" type="abbreviated">Aegyptus</title>
+                  <biblScope n="1" type="volume">95</biblScope>
+                  <biblScope n="2" type="fascicle">(2015)</biblScope>
+                  <biblScope n="3" type="pages">S. 47</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">84</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">69</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
-         </div>
-         <div type="figure">
             <p>
-               <figure>
-                  <graphic url="http://www.psi-online.it/documents/p-flor-i-78"/>
-               </figure>
+          keine
+          <bibl type="illustration">S. 48, 50-51, 53</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Flor. 1 78</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
