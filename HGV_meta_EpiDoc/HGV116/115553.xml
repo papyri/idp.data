@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv115553">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Register</title>
+            <title>Riedizione di P.Worp 22: registro di contratti</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">115553</idno>
             <idno type="TM">115553</idno>
             <idno type="ddb-perseus-style">0299;;22</idno>
-            <idno type="ddb-filename">p.worp.22</idno>
-            <idno type="ddb-hybrid">p.worp;;22</idno>
+            <idno type="ddb-filename">aegyptus.96.19</idno>
+            <idno type="ddb-hybrid">aegyptus;96;19</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Oxy. sine numero (inv. 41 A8)</idno>
+                  <placeName>
+                     <settlement>New York</settlement>
+                  </placeName>
+                  <collection>Union Theological Seminary</collection>
+                  <idno type="invNo">41 A8</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,22 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0101" notAfter="0200" cert="low" precision="low">II (?)</origDate>
+                     <origPlace>Oxyrhynchos (Oxyrynchites, Ägypten)</origPlace>
+                     <origDate notBefore="0001" notAfter="0100" precision="low">I</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736983">Oxyrhynchos</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrynchites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96146"/>
+                  <biblScope type="pp">19</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,36 +76,50 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Auszüge aus Verträgen (?)</term>
-               <term>Beschreibung von Landstücken</term>
+               <term n="1">Register</term>
+               <term n="2">Auszüge aus Verträgen (?)</term>
+               <term n="3">Beschreibung von Landstücken</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-08-25T09:09:33-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2022-08-30T15:12:00-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2022-08-29T05:54:27-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Ersetzung des Textes und Eingabe einer Übersetzung nach Aegyptus 96, 2016, 19 f. sowie Anpassung der Metadaten an Neuedition.</change>
          <change who="HGV" when="2008-11-18">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 6 vgl. CE 84, 2009, S. 363. Zu Z. 8 vgl. APF 56, 2010, S. 180.</p>
+            <p>Zu Z. 6 vgl. CdE 84, 2009, S. 363. Zu Z. 8 vgl. APF 56, 2010, S. 180.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Worp</title>
-                  <biblScope type="numbers">22</biblScope>
+                  <title level="s" type="abbreviated">Aegyptus</title>
+                  <biblScope n="1" type="volume">96</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="pages">S. 19</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 163</bibl>
+               <bibl type="illustration" n="1">S. 25</bibl>
+               <bibl type="illustration" n="2">P.Worp S. 163</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Worp 22</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
