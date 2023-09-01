@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18639">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Ägyptisches Museum und Papyrussammlung</collection>
+                  <idno type="invNo">P. 13066 Ro [2]</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria</origPlace>
-                     <origDate notBefore="-0030" notAfter="0014">30 v.Chr. - 14 n.Chr.</origDate>
+                     <origPlace>Alexandria (Ägypten)</origPlace>
+                     <origDate notBefore="-0030" notAfter="0014">30 v.Chr. - 14</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727070 https://www.trismegistos.org/place/100">Alexandria</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/100 http://pleiades.stoa.org/places/727070">Alexandria</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,27 +66,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Entwurf</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-01T05:44:34-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-09-02T09:30:56-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-03-03T03:33:25-05:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Correction: general: BGU IV 1183 not on verso of BGU IV 1050, but below.&#xD;
+P. van Minnen, Tyche 35 (2020) 231 (KorrTyche 978)</change>
          <change who="HGV" when="1994-11-07">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Descr. Rückseite: BGU IV 1050.</p>
+            <p>Descr. Auf demselben Papyrusblatt steht BGU IV 1050 (oberhalb von BGU IV 1183). Vgl. van Minnen, Tyche 35, S. 231.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1183</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1183</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -91,10 +104,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://berlpap.smb.museum/00515/"/>
+                  <graphic url="https://berlpap.smb.museum/16881/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
