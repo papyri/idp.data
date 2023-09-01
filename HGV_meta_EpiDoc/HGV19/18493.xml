@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18493">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ehevertrag</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Ägyptisches Museum und Papyrussammlung</collection>
+                  <idno type="invNo">P. 13066 Ro [1]</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria</origPlace>
-                     <origDate notBefore="-0012" notAfter="-0011">12 - 11 v.Chr.</origDate>
+                     <origPlace>Alexandria (Ägypten)</origPlace>
+                     <origDate notBefore="-0030" notAfter="0014">30 v.Chr. - 14</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727070 https://www.trismegistos.org/place/100">Alexandria</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/727070 http://www.trismegistos.org/place/100">Alexandria</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,22 +71,33 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-01T05:45:44-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2022-09-02T09:31:31-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2022-03-03T03:46:50-05:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Corrections in ll. 3, 11, 17;&#xD;
+General: notes: BGU IV 1183 below BGU IV 1050, not on verso; &#xD;
+Date: 12 BC is questionable; &#xD;
+Problems: two small verso texts are missing; dating error in Trismegistos; &#xD;
+P. van Minnen, Tyche 35 (2020) 231 (KorrTyche 978)</change>
          <change who="HGV" when="1994-10-26">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. Pestman, New Primer, S. 102, Anm. zu Z. 31. Rückseite: BGU IV 1183  descr.</p>
+            <p>Auf demselben Papyrusblatt steht BGU IV 1183 (unterhalb von BGU IV 1050). Zur Datierung vgl. Pestman, New Primer, S. 102, Anm. zu Z. 31;
+Zur Datierung und zum Verso: vgl. van Minnen, Tyche 35, S. 231 (KorrTyche 978).</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1050</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1050</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -91,11 +107,11 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/18493"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">25</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">30</biblScope>
                </bibl>
@@ -103,17 +119,17 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Schubart, Griechische Paläographie, Abb. 25, S. 49 (Z. 15 - 29)</bibl>
-               <bibl type="illustration">Facsimile 26 (S. 129, Z. 15 - 30)</bibl>
-               <bibl type="illustration">New Pal. Soc. &lt;1st Ser.&gt;, Part VIII, Plate 176 b</bibl>
-               <bibl type="illustration">Propyläen Weltgeschichte 2 (1931) nach S. 360</bibl>
+               <bibl type="illustration" n="1">Schubart, Griechische Paläographie, Abb. 25, S. 49 (Z. 15 - 29)</bibl>
+               <bibl type="illustration" n="2">Facsimile 26 (S. 129, Z. 15 - 30)</bibl>
+               <bibl type="illustration" n="3">New Pal. Soc. &lt;1st Ser.&gt;, Part VIII, Plate 176 b</bibl>
+               <bibl type="illustration" n="4">Propyläen Weltgeschichte 2 (1931) nach S. 360</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">M.Chr. 286</bibl>
-               <bibl type="publication" subtype="other">Jur. Pap. 19</bibl>
+               <bibl type="publication" subtype="other" n="1">M.Chr. 286</bibl>
+               <bibl type="publication" subtype="other" n="2">Jur. Pap. 19</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -125,14 +141,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://berlpap.smb.museum/00514/"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://berlpap.smb.museum/16881/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
