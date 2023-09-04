@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv30104">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Mumientäfelchen</title>
+            <title>“Goldfinger” on a Leiden Mummy Label?</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">30104</idno>
             <idno type="TM">30104</idno>
             <idno type="ddb-perseus-style">0239;14;11993</idno>
-            <idno type="ddb-filename">sb.14.11993</idno>
-            <idno type="ddb-hybrid">sb;14;11993</idno>
+            <idno type="ddb-filename">basp.50.257</idno>
+            <idno type="ddb-hybrid">basp;50;257</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Leiden</settlement>
                   </placeName>
+                  <collection>National Museum of Antiquities</collection>
+                  <idno type="invNo">AH. 159</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -36,11 +38,17 @@
                   </origin>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <biblScope type="pp">257</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,39 +63,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Name</term>
-               <term>Amt</term>
+               <term n="1">Name</term>
+               <term n="2">Spitzname</term>
+               <term n="3">Mumienetikett</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-04T02:38:47-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2023-03-13T13:14:05-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good</change>
+         <change when="2023-03-13T06:47:23-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Anpassung der Metadaten und des Textes an sowie Eingabe einer Übersetzung nach BASP 50, 2013, 257:&#xD;
+Da es sich bei dem dritten Wort in Z. 1 dem Kommentar zufolge entweder um einen Spitznamen, Patronymikon oder Alias handelt, habe ich es groß geschrieben.</change>
          <change who="HGV" when="1990-09-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL IX, S. 278. Neuedition: BASP 50 (2013) 255-260.</p>
+            <p>Zur Datierung vgl. BL IX, S. 278.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">11993</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">50</biblScope>
+                  <biblScope n="2" type="fascicle">(2013)</biblScope>
+                  <biblScope n="3" type="pages">S. 257</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">278</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">211</biblScope>
                </bibl>
@@ -95,15 +112,16 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">OMRL 55, 1974, Pl. XXVIII, 1</bibl>
-               <bibl type="illustration">Leben und Tod, S. 96, Nr. 179</bibl>
+               <bibl type="illustration" n="1">OMRL 55, 1974, Pl. XXVIII, 1</bibl>
+               <bibl type="illustration" n="2">Leben und Tod, S. 96, Nr. 179</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SB V 8694</bibl>
-               <bibl type="publication" subtype="other">C.Étiq. Mom. 643</bibl>
+               <bibl type="publication" subtype="other" n="1">SB V 8694</bibl>
+               <bibl type="publication" subtype="other" n="2">C.Étiq. Mom. 643</bibl>
+               <bibl type="publication" subtype="other" n="3">SB 14 11993</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -113,13 +131,7 @@
                <bibl type="translations">P.J. Sijpesteijn, OMRL 55, 1974, S. 221</bibl>
             </listBibl>
          </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="http://www.globalegyptianmuseum.org/detail.aspx?id=13970"/>
-               </figure>
-            </p>
-         </div>
+         <div type="figure"/>
       </body>
-   </text>
+  </text>
 </TEI>
