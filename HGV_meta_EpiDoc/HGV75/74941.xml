@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv74941">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ricevuta</title>
+            <title>keiner</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">74941</idno>
             <idno type="TM">74941</idno>
             <idno type="ddb-perseus-style">0032;;6</idno>
-            <idno type="ddb-filename">o.medin.madi.6</idno>
-            <idno type="ddb-hybrid">o.medin.madi;;6</idno>
+            <idno type="ddb-filename">analpap.28.85_11</idno>
+            <idno type="ddb-hybrid">analpap;28;85_11</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">TR 1/4/69/9 Cat. 65</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,26 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Narmuthis (Arsinoites)</origPlace>
+                     <origPlace>Narmuthis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0301" notAfter="0400" precision="low">IV</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736972 https://www.trismegistos.org/place/1421">Narmuthis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1421 https://pleiades.stoa.org/places/736972">Narmuthis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96415"/>
+                  <biblScope type="pp">85</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,18 +76,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Geld</term>
+               <term n="1">Quittung</term>
+               <term n="2">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-12T09:17:36-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-09-12T05:18:57-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good. Please change idnos, check and make relevant changes. Then finalize.</change>
+         <change when="2023-09-11T10:57:32-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Anpassung von Metadaten und Text an sowie Eingabe einer Übersetzung nach AnalPap 28, 2016, S. 85 Nr. 11.</change>
          <change who="HGV" when="1999-05-19">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL VII, S. 286. Tag: 1. (2.) Dez.</p>
@@ -84,16 +101,25 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">O.Medin. Madi</title>
-                  <biblScope type="numbers">6</biblScope>
+                  <title level="s" type="abbreviated">AnalPap</title>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="pages">S. 85</biblScope>
+                  <biblScope n="4" type="number">Nr. 11</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">MM 68 Tav. XXXIII, S.99</bibl>
+               <bibl type="illustration" n="1">S. 85</bibl>
+               <bibl type="illustration" n="2">MM 68 Tav. XXXIII, S.99</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">O.Medin. Madi 6</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
