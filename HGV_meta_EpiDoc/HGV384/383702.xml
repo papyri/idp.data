@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv383702">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Prozeßprotokoll</title>
@@ -29,12 +29,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Lykopolites bzw. Arsinoites</origPlace>
+                     <origPlace>Fundort: Lykopolites; Schreibort: Antinoopolis ?</origPlace>
                      <origDate when="0451" precision="medium">ca. 451</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient">Lykopolites bzw. Arsinoites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/3027">Lykopolites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="composed">
+                     <p xml:id="geoFGAI66">
+                        <placeName type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2774 https://pleiades.stoa.org/places/756518">Antinoopolis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -42,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -58,17 +68,23 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Protokoll</term>
-               <term>Prozeß vor comes Fl. Caesarius</term>
+               <term n="1">Protokoll</term>
+               <term n="2">Prozeß vor comes Fl. Caesarius</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-14T06:25:03-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-09-14T06:02:28-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Change to found and written entry for provenance.</change>
+         <change when="2023-09-13T12:07:00-04:00"
+                 who="http://papyri.info/editor/users/simoeis">Submit - This corrects a typo under 'provenance' originating in SB 28, where "geschrieben wohl im Arsinoites [= Fayum]" appears. The editor said that it was probably written in Antinoopolis, not Arsinoites.</change>
          <change who="HGV" when="2016-06-09">Record last modified</change>
          <change when="2016-06-15" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Griechisch - lateinisch. Vgl., u.a. zur Datierung, Gascou, Fiscalité et société, S. 431-439 .</p>
@@ -77,8 +93,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">28</biblScope>
-                  <biblScope type="numbers">17147</biblScope>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="numbers">17147</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -88,5 +104,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
