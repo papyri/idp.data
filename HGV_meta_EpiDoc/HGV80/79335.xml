@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv79335">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an den Epistrategen</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>New Haven</settlement>
                   </placeName>
+                  <collection>Yale University, Beinecke Rare Book &amp; Manuscript Library</collection>
+                  <idno type="invNo">P.CtYBR inv. 4609</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,27 +33,37 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tinteris (Herakleopolites)</origPlace>
+                     <origPlace>Tinteris (Herakleopolites, Ägypten)</origPlace>
                      <origDate notAfter="-0137-07-07">
-                        <offset type="before" n="1">vor</offset> 7. Juli 137 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                7. Juli 137 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737090 https://www.trismegistos.org/place/3061">Tinteris</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="16134"/>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,8 +78,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Streit um Miteigentum des Hauses des Petenten</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Streit um Miteigentum des Hauses des Petenten</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,20 +88,20 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 3: Bearbeitungsvermerk vom 8. Juli 137 v.Chr.; Z. 21: Bearbeitungsvermerk vom 7. Juli 137 v.Chr.</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 3</ref>
                   <note type="comment">Bearbeitungsvermerk vom</note>
                   <date type="mentioned" when="-0137-07-08">8. Juli 137 v.Chr.</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 21</ref>
                   <note type="comment">Bearbeitungsvermerk vom</note>
                   <date type="mentioned" when="-0137-07-07">7. Juli 137 v.Chr.</date>
@@ -99,15 +111,16 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">24</biblScope>
-                  <biblScope type="numbers">16134</biblScope>
+                  <title level="s" type="abbreviated">P.Yale</title>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">145</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Festschrift H. Görgemanns, S. 212, 214</bibl>
+               <bibl type="illustration" n="1">Festschrift H. Görgemanns, S. 212, 214</bibl>
+               <bibl type="illustration" n="2">P.Yale IV, Taf. 12-13</bibl>
             </p>
          </div>
          <div type="figure">
@@ -118,5 +131,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
