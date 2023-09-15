@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv694">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petition from Zoilos to Apollonios</title>
+            <title>The epistolary rhetoric of Zoilos of Aspendos and the early cult of Sarapis</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">694</idno>
             <idno type="TM">694</idno>
             <idno type="ddb-perseus-style">0092;1;59034</idno>
-            <idno type="ddb-filename">p.cair.zen.1.59034</idno>
-            <idno type="ddb-hybrid">p.cair.zen;1;59034</idno>
+            <idno type="ddb-filename">zpe.177.172</idno>
+            <idno type="ddb-hybrid">zpe;177;172</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">CG 59034</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,24 +33,59 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria (?)</origPlace>
+                     <origPlace>Schreibort: Alexandria ? (Ägypten); Zielort: Berenikes Hormos (Heliopolites, Ägypten); Fundort: Philadelpheia (Arsinoites, Ägypten)</origPlace>
                      <origDate notAfter="-0257-02-13">
-                        <offset type="before" n="1">vor</offset> 13. Febr. 257 v.Chr.</origDate>
+                        <offset n="1" type="before">vor</offset>
+                13. Febr. 257 v.Chr.
+              </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/727070 https://www.trismegistos.org/place/100">Alexandria</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="sent">
+                     <p xml:id="geoHJFE47">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="www.trismegistos.org/place/425 https://pleiades.stoa.org/places/730097">Berenikes Hormos</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/3088">Heliopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="found">
+                     <p xml:id="geoBEG1H">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="www.trismegistos.org/place/1760 https://pleiades.stoa.org/places/737008">Philadelpheia</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/79211"/>
+                  <biblScope type="pp">172</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,25 +100,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Zoilos an Apollonios</term>
-               <term>Bittschrift</term>
-               <term>Tempel</term>
-               <term>Gründung</term>
-               <term>Krankheit</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Zoilos an Apollonios</term>
+               <term n="3">Bittschrift</term>
+               <term n="4">Tempel</term>
+               <term n="5">Gründung</term>
+               <term n="6">Krankheit</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-15T06:54:44-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-09-15T06:30:04-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good</change>
+         <change when="2022-11-02T05:30:25-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Ersetzung des Textes und Eingabe einer Übersetzung nach sowie Anpassung der Metadaten an ZPE 177, 2011, S. 172.</change>
          <change who="HGV" when="1994-05-04">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Vgl. GRBS 41, 2001, S. 117-124. Neuedition: ZPE 177, 2011, S. 169-200.</p>
+            <p>Vgl. GRBS 41, 2001, S. 117-124.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -97,24 +140,25 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Cair. Zen.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">59034</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">177</biblScope>
+                  <biblScope n="2" type="fascicle">(2011)</biblScope>
+                  <biblScope n="3" type="pages">S. 172</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">77</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">49</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">36</biblScope>
                </bibl>
@@ -122,17 +166,19 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Pl. XII</bibl>
-               <bibl type="illustration">Deissmann, Licht vom Osten, Abb. 19 - 20, S. 406, 408 (R und V)</bibl>
-               <bibl type="illustration">Clarysse - Vandorpe, Zenon, S. 81</bibl>
+               <bibl type="illustration" n="1">S. 171 u. 173</bibl>
+               <bibl type="illustration" n="2">P.Cair. Zen. 1, Pl. XII</bibl>
+               <bibl type="illustration" n="3">Deissmann, Licht vom Osten, Abb. 19 - 20, S. 406, 408 (R und V)</bibl>
+               <bibl type="illustration" n="4">Clarysse - Vandorpe, Zenon, S. 81</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">PSI IV 435</bibl>
-               <bibl type="publication" subtype="other">SB III 6713</bibl>
-               <bibl type="publication" subtype="other">C.Zen.Palestine 31</bibl>
+               <bibl type="publication" subtype="other" n="1">PSI IV 435</bibl>
+               <bibl type="publication" subtype="other" n="2">SB III 6713</bibl>
+               <bibl type="publication" subtype="other" n="3">C.Zen.Palestine 31</bibl>
+               <bibl type="publication" subtype="other" n="4">P.Cair. Zen. 1 59034</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -143,20 +189,20 @@
             </listBibl>
             <listBibl xml:lang="fr">
                <head xml:lang="de">Französisch:</head>
-               <bibl type="translations">Orrieux, Les papyrus de Zenon (1983), S. 52</bibl>
-               <bibl type="translations">Clarysse - Vandorpe, Zenon (1995), S. 79</bibl>
+               <bibl type="translations" n="1">Orrieux, Les papyrus de Zenon (1983), S. 52</bibl>
+               <bibl type="translations" n="2">Clarysse - Vandorpe, Zenon (1995), S. 79</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Cair.Zen.&amp;vVol=1&amp;vNum=59034"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://www.psi-online.it/documents/psi;4;435"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
