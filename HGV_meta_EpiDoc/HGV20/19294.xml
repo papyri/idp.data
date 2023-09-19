@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv19294">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Rapporto di episkepsis</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">18007 Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,20 +33,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
-                     <origDate xml:id="dateAlternativeX"
-                               notBefore="0085"
-                               notAfter="0086"
-                               cert="low">85 - 86 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
-                               notBefore="0101"
-                               notAfter="0102"
-                               cert="low">101 - 102 (?)</origDate>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0089"
+                               notAfter="0090">89 - 90</origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notBefore="0105"
+                               notAfter="0106">105 - 106</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/816 https://pleiades.stoa.org/places/727122">Hermopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -52,8 +60,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,10 +77,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Episkepsis (unbebautes Ackerland)</term>
-               <term>Namen</term>
-               <term>Beschreibung (Lage)</term>
+               <term n="1">Bericht</term>
+               <term n="2">Episkepsis (unbebautes Ackerland)</term>
+               <term n="3">Namen</term>
+               <term n="4">Beschreibung (Lage)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -80,18 +89,19 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 101 - 102. Vgl. Kruse, Der Königliche Schreiber, S. 294-299.</p>
+            <p>Rückseite: AnalPap 28, 2016, S.68.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">448</biblScope>
+                  <title level="s" type="abbreviated">AnalPap</title>
+                  <biblScope n="1" type="volume">28</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="pages">S. 61</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -105,6 +115,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI 5 448</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
