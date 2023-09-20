@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv703047">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Elenco di katoikoi hippeis archaioi</title>
+            <title>apomoira für die Rachegöttinnen</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">703047</idno>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Genua, Università DR 25 Ro</idno>
+                  <placeName>
+                     <settlement>Genua</settlement>
+                  </placeName>
+                  <collection>Università</collection>
+                  <idno type="invNo">DR 25 Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,15 +33,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0200" notAfter="-0101" precision="low">II v.Chr.</origDate>
+                     <origPlace>Herakleopolites ?, Ägypten</origPlace>
+                     <origDate notBefore="-0200" notAfter="-0076" precision="low">II - Anfang I v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,8 +68,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste (katoikoi hippeis archaioi)</term>
-               <term>Register</term>
+               <term n="1">Liste (katoikoi hippeis archaioi)</term>
+               <term n="2">Register</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -70,8 +77,8 @@
          <change who="HGV" when="2019-01-09">Record last modified</change>
          <change when="2019-01-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. G. Baetens - W. Clarysse, ZPE 204, 2017, S. 185.</p>
@@ -79,9 +86,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PUG</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">155</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">56</biblScope>
+                  <biblScope n="2" type="fascicle">(2019)</biblScope>
+                  <biblScope n="3" type="pages">S. 237</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,6 +105,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PUG 4 155</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
