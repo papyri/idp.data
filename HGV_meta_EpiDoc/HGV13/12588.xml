@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12588">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the prefect Lucius Munatius Felix</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0150" notAfter="0151">150 - 151</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="0150" notAfter="0154">
+                ca. 150 - 154
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Miete von Kamelen</term>
-               <term>Protokoll (Prozeß)</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Miete von Kamelen</term>
+               <term n="3">Protokoll (Prozeß)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +76,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Rückseite: P.Oxf. 2. Zur Datierung vgl. Tyche 27, 2012, S. 224, Korr. Tyche 730.</p>
@@ -102,13 +104,6 @@
                <bibl type="illustration">IV</bibl>
             </p>
          </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="https://digital.bodleian.ox.ac.uk/objects/bc0b2ed6-aa30-4f0f-9563-4c6cf3347f74/"/>
-               </figure>
-            </p>
-         </div>
       </body>
-   </text>
+  </text>
 </TEI>
