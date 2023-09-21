@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2482">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Anzeige eines Felddiebstahls</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Moithymis (Memphites)</origPlace>
+                     <origPlace>Moithymis (Memphites, Ägypten)</origPlace>
                      <origDate when="-0209-04-26">26. Apr. 209 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736968 https://www.trismegistos.org/place/1386">Moithymis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2714 https://pleiades.stoa.org/places/736964">Memphites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,9 +68,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Anzeige</term>
-               <term>Diebstahl</term>
-               <term>Weizen</term>
+               <term n="1">Anzeige</term>
+               <term n="2">Diebstahl</term>
+               <term n="3">Weizen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,8 +79,8 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL XI, S. 104. Vgl. Harrauer, Paläographie, Textband, S. 177f., Nr. 3.</p>
@@ -86,8 +89,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Köln</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">216</biblScope>
+                  <biblScope n="1" type="volume">5</biblScope>
+                  <biblScope n="2" type="numbers">216</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -102,17 +105,20 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel VIII</bibl>
-               <bibl type="illustration">Harrauer, Paläographie, Tafelband, Abb. 3</bibl>
+               <bibl type="illustration" n="1">Tafel VIII</bibl>
+               <bibl type="illustration" n="2">Harrauer, Paläographie, Tafelband, Abb. 3</bibl>
             </p>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.uni-koeln.de/phil-fak/ifa/NRWakademie/papyrologie/Karte/V_216.html"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://papyri.uni-koeln.de/stueck/tm2482"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
