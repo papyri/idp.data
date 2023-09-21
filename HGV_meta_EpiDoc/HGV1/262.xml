@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv262">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Pathyrites</origPlace>
+                     <origPlace>Pathyrites, Ägypten</origPlace>
                      <origDate when="-0170-09-30">30. Sept. 170 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2849">Pathyrites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Pokas an den Archisomatophylax Numen</term>
-               <term>Prügelei mit einem Priester</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Pokas an den Archisomatophylax Numen</term>
+               <term n="3">Prügelei mit einem Priester</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +76,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL III, S. 70.</p>
@@ -84,8 +86,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Grenf.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">38</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">38</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,11 +102,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_634"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100143129050.0x000001"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
