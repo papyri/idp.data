@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv44326">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Fragment einer misthosis</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Vindob. Inv. Nr. G 21239</idno>
+                  <placeName>
+                     <settlement>Vienna</settlement>
+                  </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 21239</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,21 +33,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites oder Herakleopolites</origPlace>
+                     <origPlace>Hermopolites ?, Ägypten</origPlace>
                      <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
-                        <placeName type="ancient"
+                     <p xml:id="geoJB991E">
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
-                     </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -51,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,29 +68,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag (Pacht oder Miete)</term>
-               <term>Unterschriften</term>
-               <term>Fragment</term>
+               <term n="1">Vertrag (Pacht oder Miete)</term>
+               <term n="2">Unterschriften</term>
+               <term n="3">Fragment</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-21T10:34:04-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2023-09-21T10:28:15-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - OK.</change>
+         <change when="2021-09-24T10:36:48-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Changed provenance to Hermopolites.&#xD;
+S. Kovarik, Tyche 33 (2018) 245 (KorrTyche 879)</change>
          <change who="HGV" when="2006-08-23">Record created</change>
          <change who="HGV" when="2011-03-24">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zu Z. 1 und 5 vgl. Tyche 19, 2004, S. 257, Nr. 511. Vgl. SB XXVII, S. 51.</p>
+            <p>Zu Z. 1 und 5 vgl. Tyche 19, 2004, S. 257, Nr. 511. Vgl. SB XXVII, S. 51. Zum Ort vgl. Tyche 33, 2018, S. 244f., Korr. Tyche 879.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">26</biblScope>
-                  <biblScope type="numbers">16488</biblScope>
+                  <biblScope n="1" type="volume">26</biblScope>
+                  <biblScope n="2" type="numbers">16488</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -113,7 +121,7 @@
                   <graphic url="http://data.onb.ac.at/rec/RZ00004780"/>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
