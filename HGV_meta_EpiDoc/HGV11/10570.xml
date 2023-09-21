@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10570">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Offre de prise à bail d’une terre (Anaphorion)</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0165-07-26">26. Juli 165</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,11 +68,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Pacht (Land)</term>
-               <term>Pachtzins</term>
-               <term>Zahlungsbedingungen</term>
-               <term>Namen</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Pacht (Land)</term>
+               <term n="3">Pachtzins</term>
+               <term n="4">Zahlungsbedingungen</term>
+               <term n="5">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,21 +81,31 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Coll. Youtie</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">27</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">27</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure n="1">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Varia-bw/300dpi/P.Coll.Youtie27r.jpg"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://ipap.csad.ox.ac.uk/Varia-bw/300dpi/P.Coll.Youtie27v.jpg"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
