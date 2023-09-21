@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35900">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Mietsvertrag</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 25912</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolis</origPlace>
-                     <origDate notBefore="0501" notAfter="0700" precision="low">VI - VII</origDate>
+                     <origPlace>Herakleopolis (Herakleopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0626" notAfter="0675" precision="low">Mitte VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736920 https://www.trismegistos.org/place/799">Herakleopolis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://www.trismegistos.org/place/799 http://pleiades.stoa.org/places/736920">Herakleopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,29 +70,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Mietvertrag (Veranda) auf unbestimmte Zeit</term>
-               <term>Mietbetrag</term>
-               <term>Namen</term>
+               <term n="1">Mietvertrag (Veranda) auf unbestimmte Zeit</term>
+               <term n="2">Mietbetrag</term>
+               <term n="3">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-21T10:43:42-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2023-09-21T10:36:32-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - OK.</change>
+         <change when="2021-09-24T11:07:38-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Corrections in ll.18,19,14,20,21; please insert underdot under ὡ of&#xD;
+ὡ[ς π](ρ̣(όκειται)) in l.17.&#xD;
+S. Kovarik, Tyche 33 (2018) 245 (KorrTyche 880)</change>
          <change who="HGV" when="1990-10-11">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung: 7. Indiktion.</p>
+            <p>Datierung: 7. Indiktion. Zur Datierung vgl. Tyche 33, 2018, S. 245, Korr. Tyche 880.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">CPR</title>
-                  <biblScope type="volume">8</biblScope>
-                  <biblScope type="numbers">69</biblScope>
+                  <biblScope n="1" type="volume">8</biblScope>
+                  <biblScope n="2" type="numbers">69</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,5 +117,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
