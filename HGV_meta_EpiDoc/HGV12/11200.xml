@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11200">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>List of Tax - Payments</title>
@@ -31,15 +31,14 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Tebtynis ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0180-04-30">30. Apr. 180</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" cert="low">Tebtynis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +46,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,10 +63,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
-               <term>Steuern</term>
-               <term>Berufe</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
+               <term n="3">Steuern</term>
+               <term n="4">Berufe</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,18 +75,18 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zum Ort vgl. BL VI, S. 40. Rückseite: P.Fouad I  26. Zum Ort und zu Z. 26 vgl. Comunicazioni 9, 2011, S. 59 zu Z. 2. Zu Z. 23 vgl BASP 50, 2013, S. 284f. Zu Z. 6 vgl. Tyche 30, 2015, S. 216, Korr. Tyche 776.</p>
+            <p>Zum Ort vgl. BL VI, S. 40. Rückseite: P.Fouad I 26. Zum Ort und zu Z. 26 vgl. Comunicazioni 9, 2011, S. 59 zu Z. 2. Zu Z. 23 vgl BASP 50, 2013, S. 284f. Zu Z. 6 vgl. Tyche 30, 2015, S. 216, Korr. Tyche 776.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Fouad</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">68</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">68</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -96,11 +96,11 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/11200"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">77</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">98</biblScope>
                </bibl>
@@ -117,5 +117,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
