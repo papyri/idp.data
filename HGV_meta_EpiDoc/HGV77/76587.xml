@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv76587">
   <teiHeader>
       <fileDesc>
@@ -32,10 +32,17 @@
                <history>
                   <origin>
                      <origPlace>Elephantine oder Syene</origPlace>
-                     <origDate notBefore="0029-02-25" notAfter="0029-03-26">
-                25. Feb. - 26. März 29 (Jahr unsicher)
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0029-02-25"
+                               notAfter="0029-03-26">
+                25. Febr. - 26. März 29 (Jahr unsicher)
                 <certainty locus="value" match="../year-from-date(@notBefore)"/>
                      </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notBefore="0027-02-25"
+                               notAfter="0027-03-26">25. Febr. - 26. März 27</origDate>
                   </origin>
                   <provenance type="located">
                      <p n="1" xml:id="geog_1" exclude="#geog_2">
