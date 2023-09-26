@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv114322">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettera di Dionysios ad Athenodoros</title>
@@ -29,12 +29,30 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Thosbis (?) (Oxyrhynchites) bzw. Herakleopolites</origPlace>
+                     <origPlace>Thosbis ? (Oxyrhynchites, Egypt); Fundort: Herakleopolites ?, Egypt</origPlace>
                      <origDate notBefore="-0025" notAfter="-0001" precision="low">Ende I v.Chr.</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="located">
                      <p>
-                        <placeName type="ancient" cert="low">Thosbis (Oxyrhynchites) bzw. Herakleopolites</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/2911 https://pleiades.stoa.org/places/741635">Thosbis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoDCEH4A">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -42,8 +60,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -58,9 +77,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat?)</term>
-               <term>Dionysios an Athenodoros; Bitte</term>
-               <term>einem Dorfschreiber Hilfe zu gewähren (Empfehlung)</term>
+               <term n="1">Brief (privat?)</term>
+               <term n="2">Dionysios an Athenodoros; Bitte</term>
+               <term n="3">einem Dorfschreiber Hilfe zu gewähren (Empfehlung)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -69,8 +88,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört vielleicht zum Athenodoros - Archiv. Vgl. APF 56, 2010, S. 334f.</p>
@@ -79,8 +98,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">15</biblScope>
-                  <biblScope type="numbers">1539</biblScope>
+                  <biblScope n="1" type="volume">15</biblScope>
+                  <biblScope n="2" type="numbers">1539</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,7 +114,7 @@
                   <graphic url="http://www.psi-online.it/documents/psi;15;1539"/>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
