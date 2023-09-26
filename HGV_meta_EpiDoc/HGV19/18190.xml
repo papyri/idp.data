@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18190">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Abrechnung über Pferdefutter</title>
+            <title>Payment Order for Cavalry Fodder</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">18190</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Washington</settlement>
                   </placeName>
+                  <collection>Catholic University of America</collection>
+                  <idno type="invNo">P. Hyvernat 372</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,25 +33,28 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aphrodites Kome (Antaiopolites)</origPlace>
-                     <origDate when="0587-12-31">31. Dez. 587</origDate>
+                     <origPlace>Ägypten</origPlace>
+                     <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Aphrodites Kome</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/3020 https://pleiades.stoa.org/places/756516">Antaiopolites</placeName>
                         <placeName type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="papyri.info/biblio/86883"/>
+                  <biblScope type="pp">246</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,9 +69,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Futter</term>
-               <term>Pferde</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Futter</term>
+               <term n="3">Pferde</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,26 +80,30 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Neuedition: ZPE 193, 2015, S. 244-248; zum Ort und zur Datierung vgl. ebenda.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">14</biblScope>
-                  <biblScope type="numbers">12116</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">193</biblScope>
+                  <biblScope n="2" type="fascicle">(2015)</biblScope>
+                  <biblScope n="3" type="pages">S. 246</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">ZPE 25, 1977, Tafel IV</bibl>
+               <bibl type="illustration" n="1">ZPE 25, 1977, Tafel IV</bibl>
+               <bibl type="illustration" n="2">ZPE 193, 2015, S. 245</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB 14 12116</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
