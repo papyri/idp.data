@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv100078">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Entwurf eines Vertrags über den Verkauf von Sklaven</title>
+            <title>Vertrag über den Verkauf von Sklaven des Harpokration</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">100078</idno>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">PSI inv. 3800 V</idno>
+                  <placeName>
+                     <settlement>Florence</settlement>
+                  </placeName>
+                  <collection>Istituto Papirologico ’G. Vitelli’</collection>
+                  <idno type="invNo">PSI inv. 3800 Vo</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,24 +33,47 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Alexandria (?) bzw. Panopolis</origPlace>
+                     <origPlace>Schreibort: Alexandria ? (Ägypten); Fundort: Panopolis (Panopolites, Ägypten)</origPlace>
                      <origDate notBefore="0348-12-09">
-                        <offset type="after" n="1">nach</offset> 9. Dez. 348</origDate>
+                        <offset n="1" type="after">nach</offset>
+                9. Dez. 348
+              </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
-                                   ref="https://pleiades.stoa.org/places/756613 https://www.trismegistos.org/place/1589">Alexandria bzw. Panopolis</placeName>
+                                   ref="www.trismegistos.org/place/100 https://pleiades.stoa.org/places/727070">Alexandria</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="found">
+                     <p xml:id="geoDFJCE9">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="www.trismegistos.org/place/1589 https://pleiades.stoa.org/places/756613">Panopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2719 https://pleiades.stoa.org/places/756614">Panopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="papyri.info/biblio/86884"/>
+                  <biblScope type="pp">235</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,9 +88,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag (Entwurf)</term>
-               <term>Aur. Ammon mit N.N.</term>
-               <term>Verkauf mehrerer Sklaven</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Aur. Ammon mit N.N.</term>
+               <term n="3">Verkauf mehrerer Sklaven</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -72,26 +99,33 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: P.Ammon 31. Erweiterte Neuedition: ZPE 193, 2015, S. 231-240.</p>
+            <p>Rückseite: P.Ammon 31.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Ammon</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">48</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">193</biblScope>
+                  <biblScope n="2" type="fascicle">(2015)</biblScope>
+                  <biblScope n="3" type="pages">S. 235</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tafel XIX</bibl>
+               <bibl type="illustration" n="1">S. 234</bibl>
+               <bibl type="illustration" n="2">P.Ammon 2 48 Tafel XIX</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Ammon 2 48</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
