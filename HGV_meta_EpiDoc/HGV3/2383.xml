@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv2383">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 2093</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,7 +35,9 @@
                   <origin>
                      <origPlace>Alexandria</origPlace>
                      <origDate notBefore="-0257-03" notAfter="-0257-04">
-                        <precision match="../@notBefore" degree="0.5"/>ca. März - Apr. 257 v.Chr.</origDate>
+                ca. März - Apr. 257 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,26 +67,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Getreide</term>
-               <term>Transport (Schiff)</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Getreide</term>
+               <term n="3">Transport (Schiff)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-09-27T12:12:54-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-09-27T12:08:34-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-09-27T12:06:16-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Linnk to new BL</change>
          <change who="HGV" when="1991-12-16">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">1940</biblScope>
+                  <biblScope n="1" type="volume">7</biblScope>
+                  <biblScope n="2" type="numbers">1940</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -90,11 +101,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_2093"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100147467182.0x000001"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
