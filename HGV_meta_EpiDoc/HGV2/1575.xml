@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv1575">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,18 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia? (Arsinoites)</origPlace>
+                     <origPlace>Philadelphia ? (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0244-10-28">28. Okt. 244 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/737008 https://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,9 +69,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (Geschäfts-)</term>
-               <term>Demetrios an Zenon</term>
-               <term>Bank</term>
+               <term n="1">Brief (Geschäfts-)</term>
+               <term n="2">Demetrios an Zenon</term>
+               <term n="3">Bank</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,8 +80,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Mitthof .</p>
@@ -87,8 +90,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">2013</biblScope>
+                  <biblScope n="1" type="volume">7</biblScope>
+                  <biblScope n="2" type="numbers">2013</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,11 +100,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_2346"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100147467725.0x000001"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
