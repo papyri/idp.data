@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv29268">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Soumaios to Yonathes and Masabala in Ein Gedi</title>
@@ -17,8 +17,9 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Jerusalem</settlement>
                   </placeName>
+                  <collection>Hebrew University, Library</collection>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +32,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Judaea</origPlace>
+                     <origPlace>Nahal Hever (Iudaea)</origPlace>
                      <origDate notBefore="0135-09" notAfter="0135-10">Sept. - Okt. 135</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/687934 https://www.trismegistos.org/place/936">Judaea</placeName>
+                        <placeName n="1" type="ancient">Nahal Hever</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="province"
+                                   ref="www.trismegistos.org/place/936 https://pleiades.stoa.org/places/687934">Iudaea</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,11 +66,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Sumaios an Jonathes und Masabala</term>
-               <term>Holz</term>
-               <term>Obst</term>
-               <term>Fest (jüdisch)</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Sumaios an Jonathes und Masabala</term>
+               <term n="3">Holz</term>
+               <term n="4">Obst</term>
+               <term n="5">Fest (jüdisch)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,18 +79,19 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Vgl. SCI 26, 2007, S. 254-256 und BASP 51, 2014, S. 183-186 .</p>
+            <p>Vgl. SCI 26, 2007, S. 254-256.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Yadin</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">52</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">51</biblScope>
+                  <biblScope n="2" type="fascicle">(2014)</biblScope>
+                  <biblScope n="3" type="pages">S. 185</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -103,15 +109,17 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Aegyptus 42, 1962, nach S. 256</bibl>
-               <bibl type="illustration">P.Yadin II, S. 352</bibl>
-               <bibl type="illustration">P.Yadin Plates, Plate 90</bibl>
+               <bibl type="illustration" n="1">Aegyptus 42, 1962, nach S. 256</bibl>
+               <bibl type="illustration" n="2">P.Yadin II, S. 352</bibl>
+               <bibl type="illustration" n="3">P.Yadin Plates, Plate 90</bibl>
+               <bibl type="illustration" n="4">BASP 51, 2014, S. 187</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">SB VIII 9843</bibl>
+               <bibl type="publication" subtype="other" n="1">SB VIII 9843</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Yadin 2 52</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -129,5 +137,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
