@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61242" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Giss. Univ. 4 39</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">2382</idno>
             <idno type="filename">61242</idno>
             <idno type="dclp-hybrid">p.giss.univ;4;39</idno>
+            <idno type="MP3">01215.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">7.5 cm &amp; 8.4 cm</width>
+                              <height unit="cm">9 cm &amp; 5.9 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,18 +47,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v. Chr.</origDate>
+                     <origPlace>Fundort: Arsinoites, Egypt; Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -60,42 +70,76 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term>dialogue</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus, Homerica; school text? dialogue on Odyssee; same composition as LDAB 2286</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
+               <term n="6">dialogue</term>
+               <term n="7" type="overview">Homerus, Homerica; school text? dialogue on Odyssee; same composition as LDAB 2286</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Dimitrios Mouzakitis and revised by Holger Essler as part of the course on Digital Editions of Fragmentary Texts at Ca'Foscari University of Venice.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="A" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="2"/>καὶ τὰ <supplied reason="lost">λεγ</supplied>όμενα δὲ τού<unclear>τω</unclear>ι μ<unclear>α</unclear><gap reason="lost" quantity="2" unit="character"/> κ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>ἔδει δεδ<supplied reason="lost">ιέν</supplied>αι τὸ φάρμακ<supplied reason="lost">ο</supplied>ν εἰδυῖαν, ὅτι <unclear>ἕ</unclear><supplied reason="lost">τερον</supplied>
+<lb n="4"/>οὐθέν ἐσ<supplied reason="lost">τιν</supplied> δυνατὸν ἢ καταμέμπε<unclear>ι</unclear><supplied reason="lost">ν,</supplied>
+<lb n="5"/><unclear>γειγν</unclear><supplied reason="lost">ώσκ</supplied>ουσαν, ὅτι μένειν οὐδ’ οὕτ<unclear>ως</unclear>
+<lb n="6"/>θελήσε<unclear>ι</unclear><gap reason="lost" extent="unknown" unit="character"/> ἀλλὰ δῆλον, ὅτι μαντικὴ<unclear>ν</unclear> <unclear>μὲ</unclear>ν
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="7"/>οὐ κεκτη<supplied reason="lost">μένη</supplied> ἦν, ὦ Θεόφανες. συχνὰ δὲ καὶ τ<supplied reason="lost">ὰ</supplied>
+<lb n="8"/>πρ<unclear>ο</unclear>αγό<unclear>μ</unclear><supplied reason="lost">ενα</supplied> πρὸς ἐκεῖνα. δοκεῖ δέ μοι συνουσί<unclear>α</unclear><supplied reason="lost">ς</supplied>
+<lb n="9"/>γεγενη<unclear>μ</unclear><supplied reason="lost">έν</supplied>ης τῆι Κίρκηι πρὸς τὸν ʼΟδυσσέα
+<lb n="10"/>καὶ ταύ<supplied reason="lost"><unclear>τ</unclear>ης</supplied> οἰκείας τε καὶ προσπαθοῦς ο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="B" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ς μαντικῆς πρῶτον: ταπ<unclear>α</unclear>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> ἐστιν <add place="above">τε</add> ἡδῖα τῆ<add place="above">ι</add> <del rend="erasure"><unclear>ν</unclear></del> Κίρκη<add place="above">ι</add> <del rend="erasure">ν</del> τι
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> γὰρ αὖ μὴ μέτεστι<add place="above">ν</add> πολύ
+<lb n="5"/><gap reason="illegible" quantity="3" unit="character"/>ατη
+<lb n="5"/><gap reason="illegible" quantity="7" unit="line"><desc>vestiges</desc></gap>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/3358"/>
-                  <biblScope unit="number">39</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Giss. Univ.</title>
-                  <biblScope unit="volume">4</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3358"/>
+                  <biblScope n="1" unit="number">39</biblScope>
+                  <biblScope n="2" unit="volume">4</biblScope>
+                  <biblScope n="3" unit="page">56</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P.Giss.Univ. 4 pl.VI</bibl>
@@ -108,5 +152,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
