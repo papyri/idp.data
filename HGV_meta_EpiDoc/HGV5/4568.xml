@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv4568">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Zugeständnis des Steuerpächters an zwei Dattelbauern</title>
+            <title>Ἀπόμοιρα-Quittung mit Ernteerlaubnis</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">4568</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Ägyptisches Museum und Papyrussammlung</collection>
+                  <idno type="invNo">P. 12484</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,27 +33,39 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tentyrites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0145-07-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Juli 145 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0134-07-14">
-                        <certainty locus="value" match="../year-from-date(@when)"/>14. Juli 134 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Tentyrites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0145-07-16">
+                16. Juli 145 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0134-07-14">
+                14. Juli 134 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2997 https://pleiades.stoa.org/places/756656">Tentyrites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/86329"/>
+                  <biblScope type="pp">84</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,9 +80,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vereinbarung eines Steuerpächters mit zwei Pächtern (Dattelhain)</term>
-               <term>Zahlung der fälligen Steuer</term>
-               <term>festgelegter Betrag</term>
+               <term n="1">Vereinbarung eines Steuerpächters mit zwei Pächtern (Dattelhain)</term>
+               <term n="2">Zahlung der fälligen Steuer</term>
+               <term n="3">festgelegter Betrag</term>
+               <term n="4">Quittung</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,18 +92,20 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL XI, S. 27. Alternativdatierung: 14. Juli 134 v. Chr.</p>
+            <p>Zur Datierung vgl. BL XI, S. 27.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">6</biblScope>
-                  <biblScope type="numbers">1311</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">59</biblScope>
+                  <biblScope n="2" type="fascicle">(2013)</biblScope>
+                  <biblScope n="3" type="pages">S. 84</biblScope>
+                  <biblScope n="4" type="number">Nr. 2</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -102,7 +119,10 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 85</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -111,6 +131,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">BGU 6 1311</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
