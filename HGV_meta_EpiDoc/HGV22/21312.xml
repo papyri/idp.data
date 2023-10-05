@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21312">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Draft Declaration</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Dublin</settlement>
                   </placeName>
+                  <collection>Chester Beatty Library</collection>
+                  <idno type="invNo">unknown</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -37,7 +39,7 @@
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                                   ref="http://pleiades.stoa.org/places/736983 http://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,21 +64,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Deklaration</term>
-               <term>Einkommen</term>
-               <term>Kaiserkult</term>
-               <term>Prozession</term>
-               <term>Priesterin</term>
+               <term n="1">Deklaration</term>
+               <term n="2">Einkommen</term>
+               <term n="3">Kaiserkult</term>
+               <term n="4">Prozession</term>
+               <term n="5">Priesterin</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-10-05T09:15:50-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-10-05T09:07:19-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2016-07-07T08:29:10-04:00"
+                 who="http://papyri.info/editor/users/pheilpor">Submit - Tried updating the text with the important corrections in BL VI (and VIII). Some problems might remain (see comments).&#xD;
+BL VI was not mentioned in HGV.</change>
+         <change when="2016-07-07T07:33:03-04:00"
+                 who="http://papyri.info/editor/users/pheilpor">Commit - Added BL VI 73 to Bibliography</change>
          <change who="HGV" when="1992-02-28">Record created</change>
          <change who="HGV" when="2010-01-20">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zu Z. 9 vgl. Tyche 23, 2008, S. 228, Korr. Tyche 591.</p>
@@ -84,18 +96,19 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Merton</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">73</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">73</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL-online">
-                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/21312"/>
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VI</biblScope>
+                  <biblScope type="pages">73</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">208</biblScope>
                </bibl>
@@ -114,5 +127,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
