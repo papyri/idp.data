@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5038">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petition From a Prisoner: New Evidence on Ptolemy Philometor’s Accession</title>
+            <title>Ein Asebieverfahren vor den Chrematisten?</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">5038</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berkeley</settlement>
                   </placeName>
+                  <collection>Bancroft Library</collection>
+                  <idno type="invNo">UC 1583</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Krokodilopolis (Arsinoites)</origPlace>
+                     <origPlace>Schreibort: Krokodilopolis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="-0177">177 v.Chr.</origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance type="composed">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736948 https://www.trismegistos.org/place/327 https://www.trismegistos.org/place/1343">Krokodilopolis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/327 https://pleiades.stoa.org/places/736948">Krokodilopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,13 +70,13 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>N.N. (Gefangener) an N.N.</term>
-               <term>Vertragsbruch (τελώνης?)</term>
-               <term>Straffreiheit</term>
-               <term>Beschwerde wegen Komplotts</term>
-               <term>Gefängnis</term>
-               <term>Namen</term>
+               <term n="1">Eingabe</term>
+               <term n="2">N.N. (Gefangener) an N.N.</term>
+               <term n="3">Vertragsbruch (τελώνης?)</term>
+               <term n="4">Straffreiheit</term>
+               <term n="5">Beschwerde wegen Komplotts</term>
+               <term n="6">Gefängnis</term>
+               <term n="7">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -80,36 +85,28 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 7: 2. Sept. - 1. Okt. 180 v. Chr.; Z. 16: 181 - 180 v. Chr.</note>
             <note type="source">MentionedDates.fp7</note>
-            <list>
-               <item>
-                  <ref>Z. 16</ref>
-                  <date type="mentioned" notBefore="-0181" notAfter="-0180">181 - 180 v.Chr.</date>
-               </item>
-               <item>
-                  <ref>Z. 7</ref>
-                  <date type="mentioned" notBefore="-0180-09-02" notAfter="-0180-10-01">2. Sept.  - 1. Okt. 180 v.Chr.</date>
-               </item>
-            </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Coll. Youtie</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">12</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">203</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 217</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate V</bibl>
+               <bibl type="illustration" n="1">S. 218</bibl>
+               <bibl type="illustration" n="2">P.Coll. Youtie 1 12, Plate V</bibl>
             </p>
          </div>
          <div type="figure">
@@ -118,7 +115,12 @@
                   <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=113&amp;item=1"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Coll. Youtie 1 12</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
