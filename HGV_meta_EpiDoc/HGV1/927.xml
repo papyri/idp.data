@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv927">
   <teiHeader>
       <fileDesc>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">CG 59283</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,12 +33,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Fundort: Philadelpheia (Arsinoites, Ägypten)</origPlace>
                      <origDate notAfter="-0250-03-14">
                         <offset n="1" type="before">vor</offset>
                 14. März 250 v.Chr.
               </origDate>
                   </origin>
+                  <provenance type="found">
+                     <p xml:id="geoFCDBIA">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="www.trismegistos.org/place/1760 https://pleiades.stoa.org/places/737008">Philadelpheia</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
@@ -95,9 +109,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Cair. Zen.</title>
-                  <biblScope n="1" type="volume">2</biblScope>
-                  <biblScope n="2" type="numbers">59283</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">201</biblScope>
+                  <biblScope n="2" type="fascicle">(2017)</biblScope>
+                  <biblScope n="3" type="pages">S. 217</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -111,8 +126,10 @@
                </figure>
             </p>
          </div>
-         <div type="commentary" subtype="general">
-            <p>Siehe L. Ferretti, P. Schubert, M. Tomcik, ZPE 201 (2017) 217–218.</p>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Cair. Zen. 2 59283</bibl>
+            </listBibl>
          </div>
       </body>
   </text>
