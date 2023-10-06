@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv79251">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Quittungs(?)-Fragment</title>
+            <title>Quittung über Bezahlung oder Empfang von Getreide</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">79251</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Ägyptisches Museum und Papyrussammlung</collection>
+                  <idno type="invNo">P. 25484</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
-                     <origDate notBefore="0001" notAfter="0400" precision="low">I - IV</origDate>
+                     <origPlace>Theben (Ägypten)</origPlace>
+                     <origDate notBefore="0001" notAfter="0200" precision="low">I - II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/991398 https://www.trismegistos.org/place/2983 https://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,7 +66,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung (?)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Getreide</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,15 +76,16 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">24</biblScope>
-                  <biblScope type="numbers">15947</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">64</biblScope>
+                  <biblScope n="2" type="fascicle">(2018)</biblScope>
+                  <biblScope n="3" type="pages">S. 64</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,7 +100,12 @@
                   <graphic url="http://berlpap.smb.museum/05276/"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB 24 15947</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
