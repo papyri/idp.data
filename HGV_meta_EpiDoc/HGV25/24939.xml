@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv24939">
-   <teiHeader>
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv24939">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Brief</title>
@@ -31,15 +30,13 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Lykopolites</origPlace>
+                     <origPlace>Lykopolites, Ägypten</origPlace>
                      <origDate notBefore="0001" notAfter="0200" precision="low">I - II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/3027">Lykopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Lykopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +44,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,28 +61,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Klage über langes Ausbleiben der Antwort</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Klage über langes Ausbleiben der Antwort</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2012-07-09T04:57:51.314-04:00"
+                 who="http://papyri.info/editor/users/toniasarri">I added the text of the Verso, according to BL IX 7, and I added a relevant comment in HGV</change>
          <change who="HGV" when="1990-09-30">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung und zum Ort vgl. BL IX, S. 7.</p>
+            <p>Zum Verso, zur Datierung und zum Ort vgl. BL IX, S. 7.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Amst.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">90</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">90</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -103,5 +103,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
