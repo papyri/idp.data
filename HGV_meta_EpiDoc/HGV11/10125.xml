@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10125">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ὑπόμνημα περὶ μισθώσεως ἀγροτικοῦ ἀκινήτου</title>
@@ -31,16 +31,18 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites (?)</origPlace>
-                     <origDate notBefore="0223-08-30" notAfter="0224-05-25">30. Aug. 223 - 25. Mai 224</origDate>
+                     <origPlace>Arsinoites ?, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0224-05-07">7. Mai 224</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0224-06-06">6. Juni 224</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    cert="low"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,23 +67,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Antrag</term>
-               <term>Pacht</term>
-               <term>Land (Garten)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Antrag</term>
+               <term n="3">Pacht</term>
+               <term n="4">Land (Garten)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-10-10T03:21:53-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-10-09T05:53:31-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-10-09T05:03:40-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Änderungen in Z. 4,5,6,8,10,11,13,18; Änderung des Datums&#xD;
+ZPE 226 (2023) 123f</change>
          <change who="HGV" when="1992-11-19">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL VII, S. 229 und Z. 5. Zum Ort vgl. Z. 3.</p>
+            <p>Zur Datierung vgl. BL VII, S. 229 und Z. 5. Zum Ort vgl. Z. 3.
+Zur Datierung und zu Z. 18 vgl. ZPE 226 (2023), S. 124.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -94,5 +105,5 @@
             <p>keine</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
