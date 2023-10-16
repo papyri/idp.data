@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv33056">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Privatbiref</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Ägyptisches Museum und Papyrussammlung</collection>
+                  <idno type="invNo">P. 7939</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Ägypten</origPlace>
                      <origDate notBefore="0301" notAfter="0400" precision="low">IV</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoEI8484">
+                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,11 +63,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Aron</term>
-               <term>Sarapammon und Apphus an N.N.</term>
-               <term>Androhung einer Strafe (Geld)</term>
-               <term>wenn bestimmte Bitten nicht erfüllt werden</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Aron</term>
+               <term n="3">Sarapammon und Apphus an N.N.</term>
+               <term n="4">Androhung einer Strafe (Geld)</term>
+               <term n="5">wenn bestimmte Bitten nicht erfüllt werden</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -68,8 +76,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zu Z. 1-3 vgl. Arzt-Grabner, 2. Korinther, S. 207, Anm. 116.</p>
@@ -77,16 +85,17 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1044</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">212</biblScope>
+                  <biblScope n="2" type="fascicle">(2019)</biblScope>
+                  <biblScope n="3" type="pages">S. 197</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Schubart, Papyri Graecae Berolinenses, 41</bibl>
-               <bibl type="illustration">Février, Histoire de l'écriture, pl. X, Nr. 2 (nach S. 432, Ausschnitt)</bibl>
+               <bibl type="illustration" n="1">Schubart, Papyri Graecae Berolinenses, 41</bibl>
+               <bibl type="illustration" n="2">Février, Histoire de l'écriture, pl. X, Nr. 2 (nach S. 432, Ausschnitt)</bibl>
             </p>
          </div>
          <div type="figure">
@@ -96,6 +105,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">BGU 4 1044</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
