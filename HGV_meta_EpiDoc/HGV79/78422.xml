@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv78422">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Fragment de plainte (?)</title>
+            <title>keiner</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">78422</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>IFAO</collection>
+                  <idno type="invNo">P. 193</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Ägypten</origPlace>
                      <origDate notBefore="-0100" notAfter="-0001" precision="low">I v.Chr.</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoFB5AH0">
+                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,8 +63,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Schreiben</term>
-               <term>Klage (?)</term>
+               <term n="1">Schreiben</term>
+               <term n="2">Klage (?)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -65,8 +73,8 @@
          <change who="HGV" when="2010-09-01">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zu Z. 1-2 vgl. Festschrift L. Limme, S. 219.</p>
@@ -74,17 +82,24 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.IFAO</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">45</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">211</biblScope>
+                  <biblScope n="2" type="fascicle">(2019)</biblScope>
+                  <biblScope n="3" type="pages">S. 166</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Pl. XIX, A</bibl>
+               <bibl type="illustration" n="1">P.IFAO 3 45, Pl. XIX, A</bibl>
+               <bibl type="illustration" n="2">ZPE 211, 2019, S. 162</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.IFAO 3 45</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
