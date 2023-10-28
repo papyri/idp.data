@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60486" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Koeln. 1 32</title>
+            <title>Homerus, Ilias 10.319-326</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">1609</idno>
             <idno type="filename">60486</idno>
             <idno type="dclp-hybrid">p.koeln;1;32</idno>
+            <idno type="MP3">00863.200</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
-                     <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -84,11 +89,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 010.319-326</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -97,45 +101,64 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/> <q><hi rend="acute">Ἕ</hi>κτ<supplied reason="lost">ορ ἔμʼ ὀτρύνει κραδίη καὶ θυμὸς ἀγήνωρ</supplied>
+<lb n="2"/>νηῶ<unclear>v</unclear> <supplied reason="lost">ὠκυπόρων σχεδὸν ἐλθέμεν ἔκ τε πυθέσθαι·</supplied>
+<lb n="3"/>ἀλλʼ <hi rend="acute">ἄ</hi>γε <supplied reason="lost">μοι τὸ σκῆπτρον ἀνάσχεο καί μοι ὄμοσσον,</supplied>
+<lb n="4"/>ἦ μὲν το<supplied reason="lost">ὺς ἵππους τε καὶ ἅρματα ποικίλα χαλκῶι</supplied>
+<lb n="5"/>δωσ<hi rend="acute">έ</hi>με<supplied reason="lost">ν, οἳ φορέουσιν ἀμύμονα Πηλείωνα,</supplied>
+<lb n="6"/>σοὶ δʼ ἐγὼ <unclear>ο</unclear><supplied reason="lost">ὐχ ἅλιος σκοπὸς ἔσσομαι οὐδʼ ἀπὸ δόξης·</supplied>
+<lb n="7"/>τ<hi rend="acute">ό</hi>φρα γὰρ ἐ<supplied reason="lost">ς στρατὸν εἶμι διαμπερὲς, ὄφρʼ ἂν ἵκωμαι</supplied>
+<lb n="8" xml:id="lb9"/><supplied reason="lost">νῆʼ</supplied> Ἀγαμ<supplied reason="lost">εμνονέην, ὅθι που μέλλουσιν ἄριστοι</supplied> </q>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb9" xml:space="preserve"><ref>8</ref> <p>The quoted speech actually ends in l. 327 in West.</p></item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/8842"/>
-                  <biblScope unit="number">32</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Köln Gr.</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="catalogue">
                   <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8842"/>
+                  <biblScope n="1" unit="number">32</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">608</biblScope>
+                  <biblScope n="1" unit="number">608</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
+                  <biblScope n="1" unit="book">10</biblScope>
+                  <biblScope n="2" unit="line" from="319" to="326">319-326</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online">
@@ -144,5 +167,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
