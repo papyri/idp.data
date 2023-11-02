@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35065">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Verbale di udienza del praeses provinciae Arcadiae</title>
+            <title>Un dibattito processuale, al cospetto del praeses d'Arcadia</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">35065</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">SR 3796 25/1/55/2 (22)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,22 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
+                     <origPlace>Oxyrhynchos (Oxyrynchites, Ägypten)</origPlace>
+                     <origDate notBefore="0401" notAfter="0450" precision="low">1. Hälfte V</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/1524 https://pleiades.stoa.org/places/736982">Oxyrhynchos</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrynchites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/86237"/>
+                  <biblScope type="pp">32</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,8 +76,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Protokoll</term>
-               <term>Prozeß</term>
+               <term n="1">Protokoll</term>
+               <term n="2">Prozeß</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,29 +86,30 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Griechisch - lateinisch. Zur Datierung (eher 1. Hälfte V) vgl. Haensch, Statthalterarchive der Spätantike, S. 343, Anm. 38. Neuedition und Erstedition der Rückseite (LDAB 6095 = TM 64857): AnalPap 25, 2013, S. 23-52.</p>
+            <p>Griechisch - lateinisch. Zur Datierung vgl. Haensch, Statthalterarchive der Spätantike, S. 343, Anm. 38. Erstedition der Rückseite (LDAB 6095 = TM 64857): AnalPap 25, 2013, S. 33-52.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">13</biblScope>
-                  <biblScope type="numbers">1309</biblScope>
+                  <title level="s" type="abbreviated">AnalPap</title>
+                  <biblScope n="1" type="volume">25</biblScope>
+                  <biblScope n="2" type="fascicle">(2013)</biblScope>
+                  <biblScope n="3" type="pages">S. 32</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">248</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">251</biblScope>
                </bibl>
@@ -101,17 +117,18 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Norsa, Scritture documentarie, Tav. XXVI</bibl>
-               <bibl type="illustration">ChLA XLII, S. 68, 69, 71</bibl>
-               <bibl type="illustration">Sirat - Irigoin - Poulle, L´Ecriture, S. 356</bibl>
-               <bibl type="illustration">Cavallo, Il calamo e il papiro, Tav. XIV</bibl>
+               <bibl type="illustration" n="1">Norsa, Scritture documentarie, Tav. XXVI</bibl>
+               <bibl type="illustration" n="2">ChLA XLII, S. 68, 69, 71</bibl>
+               <bibl type="illustration" n="3">Sirat - Irigoin - Poulle, L´Ecriture, S. 356</bibl>
+               <bibl type="illustration" n="4">Cavallo, Il calamo e il papiro, Tav. XIV</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">ChLA XLII 1226</bibl>
-               <bibl type="publication" subtype="other">CPL, Annexe 17 (Auszüge)</bibl>
+               <bibl type="publication" subtype="other" n="1">ChLA XLII 1226</bibl>
+               <bibl type="publication" subtype="other" n="2">CPL, Annexe 17 (Auszüge)</bibl>
+               <bibl type="publication" subtype="other" n="3">PSI 13 1309</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -120,7 +137,7 @@
                   <graphic url="http://www.psi-online.it/documents/psi;13;1309"/>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
