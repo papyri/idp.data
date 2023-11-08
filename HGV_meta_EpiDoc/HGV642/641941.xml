@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv641941">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter? Fifth century?</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Inv. 59002 = 2010.26</idno>
+                  <placeName>
+                     <settlement>Bender el-Kebir</settlement>
+                  </placeName>
+                  <collection>Archaeological storeroom</collection>
+                  <idno type="invNo">59002</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,12 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Berenike</origPlace>
+                     <origPlace>Berenike (Ägypten)</origPlace>
                      <origDate notBefore="0401" notAfter="0500" precision="low">V</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient" ref="https://pleiades.stoa.org/places/746700">Berenike</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="www.trismegistos.org/place/416 https://pleiades.stoa.org/places/746700">Berenike</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -42,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,20 +74,23 @@
          <change who="HGV" when="2017-03-29">Record last modified</change>
          <change when="2017-03-31" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">O.Ber.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">272</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">272</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">ZPE 215, 2020, S. 156</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -88,6 +99,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 2 vgl. ZPE 215, 2020, S. 156.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
