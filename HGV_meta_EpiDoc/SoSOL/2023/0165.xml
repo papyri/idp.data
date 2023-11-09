@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
@@ -114,15 +114,17 @@
                <item n="1">
                   <ref>Fr. A, Kol. I, Z. 14</ref>
                   <date type="mentioned" when="-0148-10-01" cert="low">
-              1. Okt. 148 v.Chr. (?)
-              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+              1. Okt. 148 v.Chr. (Jahr unsicher)
+              <certainty locus="value" n="1" given="#dateAlternativeX" degree="1"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@when)"/>
                   </date>
                </item>
                <item n="2">
                   <ref>Fr. A, Kol. I, Z. 14</ref>
                   <date type="mentioned" when="-0137-09-28" cert="low">
-              28. Sept. 137 v.Chr. (?)
-              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+              28. Sept. 137 v.Chr. (Jahr unsicher)
+              <certainty locus="value" n="1" given="#dateAlternativeX" degree="1"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@when)"/>
                   </date>
                </item>
             </list>
