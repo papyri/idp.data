@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv128331">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>An early Ptolemaic bank register from the Arsinoite nome</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Sorbonne inv. 371</idno>
+                  <placeName>
+                     <settlement>Paris</settlement>
+                  </placeName>
+                  <collection>Sorbonne</collection>
+                  <idno type="invNo">Institut de Papyrologie 371</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,26 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Krokodilopolis (Arsinoites)</origPlace>
-                     <origDate notBefore="-0235" notAfter="-0234">235 - 234 v.Chr.</origDate>
+                     <origPlace>Krokodilopolis (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="-0235-10-21" notAfter="-0234-10-20">21. 235 - 20. Okt. 234 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736948 https://www.trismegistos.org/place/327 https://www.trismegistos.org/place/1343">Krokodilopolis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/327 https://pleiades.stoa.org/places/736948">Krokodilopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="http://papyri.info/biblio/79710"/>
+                  <biblScope type="pp">39</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +76,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Steuern (Geld)</term>
-               <term>Bank</term>
+               <term n="1">Register</term>
+               <term n="2">Steuern (Geld)</term>
+               <term n="3">Bank</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,17 +87,16 @@
          <change who="HGV" when="2010-06-24">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Neuedition: APF 57, 2011, S. 35-54.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Poethke</title>
-                  <biblScope type="numbers">8</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">57</biblScope>
+                  <biblScope n="2" type="fascicle">(2011)</biblScope>
+                  <biblScope n="3" type="pages">S. 39</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -93,6 +105,11 @@
                <bibl type="illustration">Tafeln X - XII</bibl>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Poethke 8</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
