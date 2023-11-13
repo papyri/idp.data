@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv16357">
   <teiHeader>
       <fileDesc>
@@ -31,19 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis ? (Ägypten)</origPlace>
+                     <origPlace>Arsinoites ?; Hermopolites ?</origPlace>
                      <origDate when="0065-04-26">
                 26. Apr. 65 (Jahr unsicher)
                 <certainty locus="value" match="../year-from-date(@when)"/>
                      </origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName n="1"
-                                   type="ancient"
+                  <provenance n="1" type="located">
+                     <p xml:id="geoC22JEB">
+                        <placeName type="ancient"
+                                   subtype="nome"
                                    cert="low"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Hermopolis</placeName>
-                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="located">
+                     <p xml:id="geoI8HDEC">
+                        <placeName type="ancient" subtype="nome" cert="low">Hermopolites</placeName>
                      </p>
                   </provenance>
                </history>
@@ -78,12 +82,6 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2023-10-30T13:13:11-04:00"
-                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
-         <change when="2023-10-30T12:50:29-04:00"
-                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
-         <change when="2023-10-30T04:25:14-04:00"
-                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Änderung der Herkunft von Arsinoites (?) zu Hermopolis Mario C. D. Paganini, ZPE 223 (2022), S. 160</change>
          <change who="HGV" when="1990-07-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
@@ -92,7 +90,7 @@
   <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zum Ort vgl. ZPE 223 (2022), S. 160.</p>
+            <p>Vgl., auch zum Ort, Kruse, Der Königliche Schreiber, S. 1028f. mit Anm. 237 und 238 und S. 1114f. und Paganini, ZPE 223 (2022) S. 160</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -114,11 +112,8 @@
          </div>
          <div type="figure">
             <p>
-               <figure n="1">
+               <figure>
                   <graphic url="https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_1224"/>
-               </figure>
-               <figure n="2">
-                  <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100147464623.0x000001"/>
                </figure>
             </p>
          </div>
