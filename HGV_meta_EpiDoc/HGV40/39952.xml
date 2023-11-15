@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv39952">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Quittung über Preis für gelieferte Waren</title>
+            <title>Neuedition von SPP III2 46 + SPP III 420</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">39952</idno>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Vindob. G 11046</idno>
+                  <placeName>
+                     <settlement>Wien</settlement>
+                  </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 11046 + G 11324</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,13 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolis</origPlace>
-                     <origDate notBefore="0701" notAfter="0750" precision="low">1. Hälfte VIII</origDate>
+                     <origPlace>Herakleopolis (Ägypten)</origPlace>
+                     <origDate notBefore="0601" notAfter="0800" precision="low">VII - VIII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736920 https://www.trismegistos.org/place/799">Herakleopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -43,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,9 +66,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Preis für gelieferte Waren</term>
-               <term>Kauf</term>
+               <term n="1">Quittung</term>
+               <term n="2">Preis für gelieferte Waren</term>
+               <term n="3">Kauf</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -70,16 +77,17 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SPP</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="fascicle">2.1</biblScope>
-                  <biblScope type="numbers">46</biblScope>
+                  <title level="s" type="abbreviated">Tyche</title>
+                  <biblScope n="1" type="volume">35</biblScope>
+                  <biblScope n="2" type="fascicle">(2020)</biblScope>
+                  <biblScope n="3" type="pages">S. 68</biblScope>
+                  <biblScope n="4" type="null">D</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -99,11 +107,20 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://data.onb.ac.at/rec/RZ00000201"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="http://data.onb.ac.at/rec/RZ00007301"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">SPP 3 2.1 46</bibl>
+               <bibl type="publication" subtype="other" n="2">SPP 3 420</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
