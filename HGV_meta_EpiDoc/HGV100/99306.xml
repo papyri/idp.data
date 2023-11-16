@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv99306">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter or Minute of Audience (?)</title>
@@ -32,12 +32,15 @@
                <history>
                   <origin>
                      <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0401" notAfter="0500" precision="low">V</origDate>
+                     <origDate notAfter="0436">
+                        <offset n="1" type="before">vor</offset>
+                436
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                                   ref="http://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,8 +65,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Fragment</term>
-               <term>Brief oder Protokoll (Anhörung)?</term>
+               <term n="1">Fragment</term>
+               <term n="2">Brief oder Protokoll (Anhörung)?</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -71,8 +75,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Lateinisch - griechisch.</p>
@@ -81,9 +85,9 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">ChLA</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">213</biblScope>
-                  <biblScope type="side">R</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">213</biblScope>
+                  <biblScope n="3" type="side">R</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,13 +105,6 @@
                <bibl type="illustration">S. 105 (a)</bibl>
             </p>
          </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100147470590.0x000001"/>
-               </figure>
-            </p>
-         </div>
       </body>
-   </text>
+  </text>
 </TEI>
