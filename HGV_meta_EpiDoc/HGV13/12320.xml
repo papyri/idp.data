@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12320">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Penthemeros-Certificate</title>
@@ -31,24 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
-                               notBefore="0069"
-                               notAfter="0070"
-                               cert="low">69 - 70 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
-                               notBefore="0077"
-                               notAfter="0078"
-                               cert="low">77 - 78 (?)</origDate>
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0090" notAfter="0091">90 - 91</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/737053 https://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/737053 http://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -56,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -72,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Penthemeros</term>
-               <term>Arbeit am Deich</term>
+               <term n="1">Quittung</term>
+               <term n="2">Penthemeros</term>
+               <term n="3">Arbeit am Deich</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -83,18 +76,15 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 77 - 78 n. Chr. </p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Mich.</title>
-                  <biblScope type="volume">15</biblScope>
-                  <biblScope type="numbers">690</biblScope>
+                  <biblScope n="1" type="volume">15</biblScope>
+                  <biblScope n="2" type="numbers">690</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -120,5 +110,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
