@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28100">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,17 +31,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
-                     <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0193-11-29">29. Nov. 193</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0217-11-29">29. Nov. 217</origDate>
+                     <origDate n="3" xml:id="dateAlternativeZ" when="0218-11-29">29. Nov. 218</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737053 https://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,28 +70,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Torzoll</term>
+               <term n="1">Quittung</term>
+               <term n="2">Torzoll</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-11-25T15:11:18-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-10-20T06:59:39-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-10-20T06:22:16-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added the journal artical correction from N. Gonis regarding line 4;&#xD;
+changed the date in the metadata accordingly</change>
          <change who="HGV" when="1995-11-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zum Ort vgl. BL IX, S. 23. Tag: 29. (30.) Nov.</p>
+            <p>Zum Ort vgl. BL IX, S. 23. Zur Datierung und zu Z. 1 vgl. ZPE 225, 2023, S. 225.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">867</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">867</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -110,5 +122,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
