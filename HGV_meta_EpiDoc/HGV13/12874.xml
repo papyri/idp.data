@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12874">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Reçu d’impôt</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Soknopaiu Nesos (Arsinoites)</origPlace>
-                     <origDate when="0177-07-03">3. Juli 177</origDate>
+                     <origPlace>Soknopaiu Nesos (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="0173-07-03">3. Juli 173</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737053 https://www.trismegistos.org/place/2157">Soknopaiu Nesos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,9 +68,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
-               <term>Geld</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuern</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,15 +79,15 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Rein.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">45</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">45</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,10 +97,22 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://www.papyrologie.paris-sorbonne.fr/menu1/collections/pgrec/preinach.htm"/>
+                  <graphic url="https://api.nakala.fr/data/10.34847/nkl.81e0uw6l/8479cb017e164d4fdabd0bf06251218ea284c488"/>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="mentionedDates">
+            <list>
+               <item>
+                  <ref>l. 1</ref>
+                  <date type="mentioned" when="0173-07-03">
+              3. Juli 173
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+                  <note type="annotation">cf. BASP 60 (2023) 308</note>
+               </item>
+            </list>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
