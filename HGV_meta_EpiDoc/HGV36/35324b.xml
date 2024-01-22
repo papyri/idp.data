@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35324b">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Wein-Lieferungskauf</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolites</origPlace>
+                     <origPlace>Hermopolites, Ägypten</origPlace>
                      <origDate notBefore="0426" notAfter="0475" precision="low">Mitte V</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +65,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Soldaten</term>
-               <term>Wein</term>
-               <term>Lieferung</term>
+               <term n="1">Lieferung</term>
+               <term n="2">Kauf</term>
+               <term n="3">Wein</term>
+               <term n="4">Soldaten</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +77,8 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL VIII, S. 383. Gehört zu CPR IX 25. Vgl. ZPE 65, 1986, S. 91. Zu Z. 4-5 vgl. ZPE 159, 2007, S. 272.</p>
@@ -84,8 +87,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">16</biblScope>
-                  <biblScope type="numbers">12489</biblScope>
+                  <biblScope n="1" type="volume">16</biblScope>
+                  <biblScope n="2" type="numbers">12489</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -95,19 +98,23 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/35324b"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
+                  <biblScope type="volume">VIII</biblScope>
+                  <biblScope type="pages">116</biblScope>
+               </bibl>
+               <bibl type="BL" n="2">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">383</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">284</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="4">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">214</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="5">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">213</biblScope>
                </bibl>
@@ -132,6 +139,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">CPR 9 25</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
