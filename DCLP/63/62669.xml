@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62669" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Mpern. S. 3 35</title>
+            <title>Tryphon</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">62669</idno>
             <idno type="dclp-hybrid">mper.ns;3;35</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -23,34 +27,45 @@
                   <idno type="invNo">Vienna, Nationalbibliothek G 29332</idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="codex">
+                  <objectDesc form="roll">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">11 cm</width>
+                              <height unit="cm">15 cm</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="1">
-                           <p>papyrus codex (columns: 1, pagination: 0)</p>
+                        <layout columns="1" writtenLines="28">
+                           <p>papyrus roll (columns: 1, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0350" notAfter="0499">350 - 499</origDate>
+                     <origPlace>Fundort: Hermopolis ? (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0350" notAfter="0450">
+                350 - 450 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -61,17 +76,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>philology</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Gregorius Magnus; Corinthius, De tropis 3</term>
+               <term n="1" type="description">grammar</term>
+               <term n="2" type="religion">classical</term>
+               <term n="3">philology</term>
+               <term n="4">grammar</term>
+               <term n="5" type="overview">Tryphon, περὶ τρόπων</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -80,36 +96,83 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart"><ab>
+<lb n="1"/>λ.
+<lb n="2"/><supplied reason="lost">ἄ</supplied><unclear>λ</unclear>λο<unclear>θεν</unclear> <gap reason="illegible" quantity="2" unit="character"/> ὑπέρ<unclear>β</unclear><supplied reason="lost">ατ</supplied><unclear>α</unclear> <unclear>ποι</unclear><supplied reason="lost">οῦ</supplied>σ<unclear>ι</unclear><supplied reason="lost">ν</supplied>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>ου</unclear> Δήμ<unclear>η</unclear><supplied reason="lost">τ</supplied><unclear>ρ</unclear>ος τὴν <unclear>τ</unclear><supplied reason="lost">ε</supplied>λευταία<supplied reason="lost">ν</supplied>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/> το γὰρ ἐξ<unclear>ῆς</unclear> οὕ<unclear>τω</unclear><supplied reason="lost">ς ἀπ</supplied>οδίδοται
+<lb n="5"/><supplied reason="lost">Ἑρμῆν τόνδ</supplied>ε ἀνέθηκεν Δη<supplied reason="lost">μήτ</supplied><unclear>ρ</unclear>ιος ὅρθια
+<lb n="6"/><supplied reason="lost">δ'ούκ ἐν προθ</supplied><unclear>υ</unclear>ροῖς Δή<unclear>μ</unclear>ητρος <unclear>ο</unclear> <gap reason="illegible" quantity="2" unit="character"/> .<unclear>ιο</unclear> κ<unclear>αὶ</unclear> μαθ<unclear>ω</unclear> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><supplied reason="lost"><g type="swungdash"/></supplied> <supplied reason="lost">Ἀ</supplied>ναστροφή <g type="swungdash"/>
+<lb n="8"/><supplied reason="lost">Ἀναστροφ</supplied>ὴ δέ ἐστ<unclear>ιν</unclear> φράσις<supplied reason="omitted">ἢ</supplied>λέξις, ἤν χρή
+<lb n="9"/><supplied reason="lost">προηγεῖσθαι</supplied> τῆς σημαινομένης ἐπινοίας
+<lb n="10"/><supplied reason="lost">δευτέραν ἔχ</supplied>ουσαν <gap reason="lost" quantity="3" unit="character"/> δὲ καὶ ἐπί πλειόν<supplied reason="lost">ων</supplied>
+<lb n="11"/><supplied reason="lost">λόγου μερῶν <g type="middot"/></supplied> ἐν μὲν προθέσει ὤς <g type="middot"/> ὧι ἔ<supplied reason="lost">π</supplied><unclear>ι</unclear> <unclear>π</unclear>ο<supplied reason="lost">λλ'</supplied>
+<lb n="12"/><supplied reason="lost">ἐμόγησα ἀν</supplied>τ<unclear>ὶ</unclear> τοῦ <g type="middot"/> ἐφ'<unclear>ὧ</unclear> <unclear>πολλ</unclear>' ἐκακοπάθη<supplied reason="lost">σα</supplied><gap reason="lost" quantity="1" unit="character"/>
+<lb n="13"/><supplied reason="lost">ἐν δὲ ἐπιρρή</supplied>ματι <unclear>οὔτως</unclear> <g type="middot"/> τὰ<supplied reason="lost">ς</supplied> Εύμηλος ἔλ<supplied reason="lost">αυνε</supplied>
+<lb n="14"/><supplied reason="lost">ποδώκεας ὄρ</supplied>νιθας ὤς <g type="middot"/> ἀντὶ τοῦ  ὡσ ὄρνιθ<supplied reason="lost">ας</supplied>
+<lb n="15"/><supplied reason="lost">ἐν δὲ συνδε</supplied><unclear>σ</unclear>μοῖς <g type="middot"/> ἤτοι μὲν τρηχεῖα κα<supplied reason="lost">ὶ</supplied>
+<lb n="16"/><supplied reason="lost">οὐχ ἱππήλατός</supplied>ἐστιν <g type="middot"/> οὐδὲ λίην λυπρή, α<supplied reason="lost">ὖ</supplied>
+<lb n="17" break="no"/><supplied reason="lost">ταρ δὲ εὐρεί</supplied>α <supplied reason="lost">τ</supplied><unclear>ε</unclear>τύκτ<supplied reason="lost">αι</supplied> <g type="middot"/> συνδε <gap reason="lost" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="18"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="19"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="20"/><gap reason="lost" quantity="3" unit="line" precision="low"/>
+<lb n="21"/><supplied reason="lost">ζ'. Συνεκδοχή</supplied>
+<lb n="22"/><gap reason="lost" quantity="6" unit="line" precision="low"/>
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/><supplied reason="lost">καὶ</supplied> ἀπὸ συμ<supplied reason="lost">βό</supplied><unclear>λω</unclear>ν τὸ κ<supplied reason="lost">ύριο</supplied>ν. ἀπ<supplied reason="lost">ὸ μὲν οὖν</supplied>
+<lb n="2"/>μέρους τὸ <gap reason="lost" atLeast="4" atMost="5" unit="character"/> <unclear>ὅ</unclear>λον, οἷον <g type="middot"/> Θεά <unclear>λ</unclear><supplied reason="lost">ευκώλενος</supplied>
+<lb n="3"/><unclear>Ἥρη</unclear>, <supplied reason="omitted">ᾐ</supplied><unclear>ρ</unclear>ημ<unclear>έν</unclear>η γὰρ ἀπὸ <supplied reason="lost">μέ</supplied>ρους <supplied reason="lost">τοῦ βραχίονος</supplied>
+<lb n="4"/>τὴν ὅλην <unclear>λ</unclear>ευκήν. ἀπὸ δὲ τοῦ <supplied reason="lost">ὅλου τὸ μέρος, οἷον <g type="middot"/></supplied>
+<lb n="5"/><unclear>Οἱ</unclear> δ' ἰθύς πρ<supplied reason="lost">ό</supplied>ς τεῖχος ἐύδ<unclear>μη</unclear>τον β<supplied reason="lost">όας αὔας</supplied>
+<lb n="6"/><unclear>νῦν</unclear> γὰρ <g type="stauros"/><unclear>βασα</unclear><g type="stauros"/>, ἔ<unclear>π</unclear>ειτα ἀσ<unclear>πι</unclear>δας ἐ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><unclear>τ</unclear>ων εἰσί. μέρος δὲ τοῦ ὅλου <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>ἀπὸ <unclear>δὲ</unclear> συμβαίνοντος προ<unclear>η</unclear><supplied reason="lost">γούμενον, οἷον</supplied>
+<lb n="9"/><supplied reason="lost">Ἑζό</supplied><unclear>μ</unclear>ενοι λεύκαινον ὕδωρ <supplied reason="lost">ξεστῇσ ἐλάτῃσ</supplied>
+<lb n="10"/><supplied reason="lost">τὸ</supplied> λεύκαινον γὰρ εἶπεν <supplied reason="lost">ἀντὶ τοῦ</supplied>
+<lb n="11"/><supplied reason="lost">συντόν</supplied>ως ἤρεσσον. <supplied reason="omitted">συμ</supplied>βαίνει γὰρ <supplied reason="lost">ἐκ</supplied>
+<lb n="12"/><gap reason="lost" quantity="6" unit="character"/> <gap reason="illegible" quantity="3" unit="character"/><unclear>πτ</unclear>ομεν. <unclear>κωπηλ</unclear><supplied reason="lost">ατεῖσθαι τὸ λευ</supplied>
+<lb n="13" break="no"/><supplied reason="lost">καίνεσθ</supplied>αι. ἀπὸ δὲ συμβόλου τὸ κ<supplied reason="lost">ύριον, οἷον</supplied>
+<lb n="14"/><supplied reason="lost">Σκῆπτρο</supplied>ν μέντοι δῶκε τετιμ<supplied reason="lost">ῆσθαι περὶ πάντων.</supplied>
+<lb n="15"/><gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost">τὸ</supplied> σύμβολον γὰρ εἶπε ἀντὶ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">σκῆ</supplied>πτρο<supplied reason="lost">ν</supplied> <unclear>του</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="17"/><gap reason="lost" quantity="2" unit="line" precision="low"/>
+<lb n="18"/><supplied reason="lost"><g type="swungdash"/></supplied> <supplied reason="lost">ὀνο</supplied>ματοπ<supplied reason="lost">οιία</supplied> <supplied reason="lost"><g type="swungdash"/></supplied>
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/3889"/>
-                  <biblScope unit="number">35</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">MPER N.S.</title>
-                  <biblScope unit="volume">3</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3889"/>
+                  <biblScope n="1" unit="number">35</biblScope>
+                  <biblScope n="2" unit="volume">3</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author>Gregorius Corinthius</author>
+                  <author>Tryphon</author>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Liège</bibl>
+               <bibl type="online">
+                  <ptr target="https://digital.onb.ac.at/RepViewer/viewer.faces?doc=DOD_%2BZ232899305&amp;order=1&amp;view=SINGLE"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
