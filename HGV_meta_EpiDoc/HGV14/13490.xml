@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13490">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the Strategus</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berkeley</settlement>
                   </placeName>
+                  <collection>Bancroft Library</collection>
+                  <idno type="invNo">P. Tebt. 331</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0126" notAfter="0132">126 - 132</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,12 +70,12 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Akus an den Strategen Andromachos</term>
-               <term>Überfall</term>
-               <term>Prügel</term>
-               <term>Diebstahl von Textilien</term>
-               <term>Vorladung</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Akus an den Strategen Andromachos</term>
+               <term n="3">Überfall</term>
+               <term n="4">Prügel</term>
+               <term n="5">Diebstahl von Textilien</term>
+               <term n="6">Vorladung</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -79,18 +84,20 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. Bastianini - Whitehorne, Strategi, S. 45. Tage: 29. (30.) Aug. - 27. (28.) Sept. Zu Z. 9 vgl. Tyche 27, 2012, S. 225, Korr. Tyche 732.</p>
+            <p>Zur Datierung vgl. Bastianini - Whitehorne, Strategi, S. 45. Tage: 29. (30.) Aug. - 27. (28.) Sept.
+Zu Z. 7 vgl. CdE 91, 2016, S. 217 (Papyrologica 19).
+Zu Z. 9 vgl. Tyche 27, 2012, S. 225 (Korr. Tyche 732).</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">331</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">331</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -114,5 +121,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
