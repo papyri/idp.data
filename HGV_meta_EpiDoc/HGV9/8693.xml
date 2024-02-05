@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv8693">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Viehbestandsdeklaration (wohl aus einem τόμος συγκολλήσιμος)</title>
@@ -31,27 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt (Oberägypten)</origPlace>
-                     <origDate notBefore="0142" notAfter="0143">142 - 143</origDate>
+                     <origPlace>Fundort: Hawara</origPlace>
+                     <origDate when="0143-01-29">29. Jan. 143</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient" subtype="region">Oberägypten</placeName>
-                     </p>
-                  </provenance>
                   <provenance type="found">
-                     <p>
-                        <placeName>unbekannt</placeName>
+                     <p xml:id="geoIGBD68">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/747 https://pleiades.stoa.org/places/736918">Hawara</placeName>
                      </p>
                   </provenance>
-                  
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,28 +62,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Deklaration</term>
-               <term>Viehbestand</term>
+               <term n="1">Deklaration</term>
+               <term n="2">Viehbestand</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-05T08:34:54-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-02-05T07:26:35-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2024-02-04T14:13:39-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - [HGV] Changed date, added ‘und ZPE 219, 2021, 157-160’ to the notes, and changed Fundort to ‘Hawara’. [DDPDP ] Entered published corrections to lines 3, 5, 10, 11. [xml] Changed date to 143.</change>
          <change who="HGV" when="1994-05-24">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zum Ort und zur Datierung vgl. ZPE 21, 1976, S. 165-167.</p>
+            <p>Zum Ort und zur Datierung vgl. ZPE 21, 1976, S. 165-167 und ZPE 219, 2021, S. 157-160.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">18</biblScope>
-                  <biblScope type="numbers">13241</biblScope>
+                  <biblScope n="1" type="volume">18</biblScope>
+                  <biblScope n="2" type="numbers">13241</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -102,5 +104,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
