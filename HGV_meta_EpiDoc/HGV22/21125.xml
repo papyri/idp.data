@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21125">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Letter from Besodorus to Theophanes</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Manchester</settlement>
                   </placeName>
+                  <collection>John Rylands Library</collection>
+                  <idno type="invNo">P. Herm. 6</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis (?)</origPlace>
+                     <origPlace>Hermupolis ? (Hermopolites, Ägypten)</origPlace>
                      <origDate notBefore="0317" notAfter="0323">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 317 - 323</origDate>
+                ca. 317 - 323
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
-                                   ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                                   ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermupolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +57,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,11 +74,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (privat)</term>
-               <term>Besodorus an Theophanes</term>
-               <term>Wünsche</term>
-               <term>Reise</term>
-               <term>Rückkehr</term>
+               <term n="1">Brief (privat)</term>
+               <term n="2">Besodorus an Theophanes</term>
+               <term n="3">Wünsche</term>
+               <term n="4">Reise</term>
+               <term n="5">Rückkehr</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,11 +87,11 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört zum Theophanes - Archiv. Zur Datierung vgl. P.Ryl. IV, S. 105. Zu Z. 10 vgl. JJP 43, 2013, S. 152.</p>
+            <p>Gehört zum Theophanes - Archiv. Zur Datierung vgl. P.Ryl. IV, S. 105. Neudruck mit leichten Veränderungen in Z. 3, 10, 15, 19 und 21: JJP 43, 2013, S. 147; zur Interpretation vgl. ebd.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -104,8 +115,8 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate V</bibl>
-               <bibl type="illustration">Matthews, The Journey of Theophanes, S. 26, Fig. 2.6</bibl>
+               <bibl type="illustration" n="1">Plate V</bibl>
+               <bibl type="illustration" n="2">Matthews, The Journey of Theophanes, S. 26, Fig. 2.6</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="translations">
@@ -126,6 +137,7 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications"/>
       </body>
-   </text>
+  </text>
 </TEI>
