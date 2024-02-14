@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv17671">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Mutuo di generi</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">18728</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,13 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0085" notAfter="0086">85 - 86</origDate>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
+                     <origDate when="0085-12-30">30. Dez. 85</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,26 +70,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Miete</term>
-               <term>Pacht</term>
-               <term>Getreide (?)</term>
+               <term n="1">Miete</term>
+               <term n="2">Pacht</term>
+               <term n="3">Getreide (?)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-12-28T04:02:36-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2023-12-28T03:59:23-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Looks good.</change>
+         <change when="2019-09-22T10:46:26-04:00"
+                 who="http://papyri.info/editor/users/Bianca%20Borrelli">Submit - Corrections to ll. 1 and 6 (discussed in a previous contribution); moreover a BL correction and an alternate reading of the ed. pr. have been added.&#xD;
+New date (discussed in a previous contribution, quoted in the Commentary).</change>
          <change who="HGV" when="1993-08-01">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">7</biblScope>
-                  <biblScope type="numbers">802</biblScope>
+                  <biblScope n="1" type="volume">7</biblScope>
+                  <biblScope n="2" type="numbers">802</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -93,7 +109,10 @@
                   <graphic url="http://www.psi-online.it/documents/psi;7;802"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung vgl. AnalPap 30, 2018, S. 45-46.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

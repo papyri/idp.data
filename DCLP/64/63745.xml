@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63745" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Aberd. 12</title>
+            <title>Hipparchean Astronomy</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -13,8 +13,13 @@
             <idno type="LDAB">4956</idno>
             <idno type="filename">63745</idno>
             <idno type="dclp-hybrid">p.aberd;;12</idno>
+            <idno type="MP3">02002.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">6</width>
+                              <height unit="cm">5.2</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,17 +47,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Soknopaiou Nesos (Arsinoites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Soknopaiou Nesos (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2157">Soknopaiou Nesos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2157 https://pleiades.stoa.org/places/737053">Soknopaiou Nesos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -59,45 +70,110 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>astronomy</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">treatise concerning northern constellations</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose</term>
+               <term n="5">astronomy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2023-12-28T11:26:58-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2023-12-28T11:24:13-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Yes</change>
+         <change when="2023-12-28T11:23:47-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Submit - This is good to go.</change>
+          <change when="2023-12-28T11:26:57-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+          <change when="2023-12-28T11:24:13-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Yes</change>
+          <change when="2023-12-28T11:23:47-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Submit - This is good to go.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">μο</supplied><unclear>ί</unclear>ρ<unclear>ας</unclear> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost">πρὸς τὸν</supplied> <choice><reg>βόρειο<supplied reason="lost">ν</supplied></reg><orig>βόρ<unclear>ι</unclear>ο<supplied reason="lost">ν</supplied></orig></choice> <supplied reason="lost">ἡ</supplied> ἄ<unclear>ρ</unclear><supplied reason="lost">κτος μικρά ἔχει ἀστέρας <num value="7"><hi rend="supraline">ζ</hi></num></supplied>·
+<lb n="3"/><supplied reason="lost">ὁ</supplied> <choice><reg><supplied reason="lost">βόρειο</supplied>ς</reg><orig><supplied reason="lost">βόριο</supplied><unclear>ς</unclear></orig></choice> <num value="2">δύο</num> τ<unclear>ῶ</unclear>ν ἡγου<unclear>μ</unclear><supplied reason="lost">ένων ἀστέρων λαμπ</supplied>
+<lb n="4"/>- <supplied reason="lost">ρῶν τῶ</supplied><unclear>ν</unclear> <unclear>ἐ</unclear>ν <choice><reg>πλινθίῳ</reg><orig>πλινθείῳ</orig></choice>, ὅς <supplied reason="lost">ἐστιν ἐπὶ κεφαλῆς, ἀπέ</supplied>
+<lb n="5" break="no"/><supplied reason="lost">χει τοῦ</supplied> <unclear>π</unclear>όλου μ<unclear>ο</unclear>ίρας <num value="8"><hi rend="supraline">η</hi></num> <choice><reg cert="low">λειπ<supplied reason="lost">ούσας</supplied> </reg><orig>λ<unclear>ιπ</unclear><supplied reason="lost">ούσας</supplied></orig></choice> <supplied reason="lost">μικρῷ· ὁ νοτι</supplied>
+<lb n="6" break="no"/><supplied reason="lost">ώτατ</supplied><unclear>ο</unclear>ς δ<unclear>ὲ</unclear> ὁ <supplied reason="omitted">ἐν</supplied> ἄκρᾳ τῇ οὐ<unclear>ρᾷ</unclear> <supplied reason="lost">ἀστήρ, ὅς ἐστιν</supplied>
+<lb n="7"/><supplied reason="lost">ἔσχατο</supplied><unclear>ς</unclear>, ἀπέχει τοῦ <choice><reg>βορείου</reg><orig><unclear>β</unclear>ο<unclear>ρ</unclear>ίου</orig></choice> <supplied reason="lost">πόλου μοίρας <num value="12"><hi rend="supraline">ιβ</hi></num></supplied>
+<lb n="8"/><supplied reason="lost">καὶ <num value="2">δύο</num></supplied> <choice><reg><supplied reason="lost">π</supplied>εμτημόρ<supplied reason="lost">ι</supplied>α</reg><orig><supplied reason="lost">π</supplied>εντημόρ<supplied reason="lost">ι</supplied>α</orig></choice>. <space extent="unknown" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/><supplied reason="lost">μετὰ δὲ</supplied> ὁ διὰ τῶν ἄρκτων <unclear>ὄ</unclear><supplied reason="lost">φις ἔχει τὴν οὐράν</supplied>
+<lb n="10"/><supplied reason="lost">διὰ τῶ</supplied><unclear>ν</unclear> ἄρκτων φερο<supplied reason="lost">μένην, νεύουσαν δὲ τὴν κε</supplied>
+<lb n="11" break="no"/><supplied reason="lost">φαλήν ἕ</supplied><unclear>ω</unclear>ς <choice><reg>ἔμπροσθ<supplied reason="lost">ε</supplied></reg><orig>ἔν<unclear>προσθ</unclear><supplied reason="lost">ε</supplied></orig></choice> <supplied reason="lost" cert="low">τοῦ ἐνγούνασι </supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="11"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/3909"/>
-                  <biblScope unit="number">12</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="reference" subtype="previous">
                   <title level="s" type="abbreviated">P. Aberdeen</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/3909"/>
+                  <biblScope n="1" unit="number">12</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96555"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">265</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/44301"/>
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/45192"/>
+                  <biblScope n="1" unit="number">101</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="5" type="reference" subtype="study">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/79321"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="151" to="152">151-152</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">P.Aberdeen pl.III</bibl>
+               <bibl type="printed" n="1">P.Aberdeen pl.III</bibl>
+               <bibl type="printed" n="2">BASP 60 (2023), p. 296</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

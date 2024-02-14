@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv38234">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>A Room with a View – A Lease from the Noble Landlady Theodote</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">38234</idno>
             <idno type="TM">38234</idno>
             <idno type="ddb-perseus-style">0154;3;872</idno>
-            <idno type="ddb-filename">p.lond.3.872</idno>
-            <idno type="ddb-hybrid">p.lond;3;872</idno>
+            <idno type="ddb-filename">basp.60.201</idno>
+            <idno type="ddb-hybrid">basp;60;201</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Papyrus 872</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0501" notAfter="0700" precision="low">VI - VII</origDate>
+                     <origPlace>Arsinoe (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0601" notAfter="0650" precision="low">1. Hälfte VII</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoFCG2IA">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/327 https://pleiades.stoa.org/places/736948">Arsinoe</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96554"/>
+                  <biblScope type="pp">201</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,36 +76,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Pacht</term>
-               <term>Haus</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Pacht</term>
+               <term n="3">Haus</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2023-12-27T03:18:33-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2023-12-27T03:09:40-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - OK.</change>
+         <change when="2023-12-20T16:39:36-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Submit - Updated metadata following BASP 60</change>
          <change who="HGV" when="1995-07-24">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">872</biblScope>
-                  <biblScope type="pages">(S. XLI)</biblScope>
+                  <title level="s" type="abbreviated">BASP</title>
+                  <biblScope n="1" type="volume">60</biblScope>
+                  <biblScope n="2" type="fascicle">(2023)</biblScope>
+                  <biblScope n="3" type="pages">S. 201</biblScope>
+                  <biblScope n="4" type="number">Nr. 2</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 202-203</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. III 872 descr. (S. XLI)</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

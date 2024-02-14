@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv699475">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Receipt for γεωμετρία φοινικῶνος</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">O.Bankes inv. 160</idno>
+                  <placeName>
+                     <settlement>Wimborne Minster</settlement>
+                  </placeName>
+                  <collection>Private collection Bankes</collection>
+                  <idno type="invNo">160</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,14 +33,18 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Elephantine</origPlace>
+                     <origPlace>Elephantine (Ägypten)</origPlace>
                      <origDate when="0156-10-28">
-                        <certainty locus="value" match="../day-from-date(@when)"/>28. Okt. 156 (Tag unsicher)</origDate>
+                28. Okt. 156 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/786021 https://www.trismegistos.org/place/621">Elephantine</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -44,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,18 +69,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuer (Landvermessungssteuer, geometria phoinikonos)</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuer (Landvermessungssteuer, geometria phoinikonos)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-01-19T10:22:21-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2024-01-19T10:20:49-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Looks good.</change>
+         <change when="2024-01-18T08:51:56-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Submit - Eingabe eines Verweises in den Metadaten auf Papyrologica 18 sowie Standardisierung der entsprechenden Verweise in den Korrekturen im Text (CE → CdE; Nennung des Papyrologica-Eintrags).</change>
          <change who="HGV" when="2016-03-19">Record created</change>
          <change who="HGV" when="2016-08-10">Record last modified</change>
          <change when="2016-09-16" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -93,6 +108,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 4, 5 und 8 vgl. CdE 91, 2016, S. 216f. (Papyrologica 18).</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

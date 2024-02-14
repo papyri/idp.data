@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv27882">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>List of Work - people</title>
@@ -31,16 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Delta</origPlace>
                      <origDate notBefore="0176" notAfter="0300" precision="low">Ende II - III</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoGDHC23">
+                        <placeName type="ancient"
+                                   ref="https://pleiades.stoa.org/places/730105 https://www.trismegistos.org/place/544">Delta</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,28 +62,35 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste (Arbeiter)</term>
-               <term>beneficiarius</term>
+               <term n="1">Liste (Arbeiter)</term>
+               <term n="2">beneficiarius</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-08T09:47:52-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2024-02-08T09:43:42-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - OK.</change>
+         <change when="2024-01-26T06:31:21-05:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Changed provenance to Delta&#xD;
+ZPE 215 (2020), 178-180</change>
          <change who="HGV" when="1994-11-21">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung nach römischem und ägyptischen Kalender. Tag: 22. Mai.</p>
+            <p>Datierung nach römischem und ägyptischen Kalender. Tag: 22. Mai. Zur Provenienz vgl. ZPE 215, 2020, S. 178-180.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Ryl.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">92</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">92</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -84,5 +98,5 @@
             <p>keine</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

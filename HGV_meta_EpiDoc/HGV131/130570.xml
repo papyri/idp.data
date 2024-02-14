@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv130570">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Affitto della terza parte di un palmizio</title>
+            <title>A Lease of a Palm Grove in Duplicate</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">130570</idno>
             <idno type="TM">130570</idno>
             <idno type="ddb-perseus-style">;3;245</idno>
-            <idno type="ddb-filename">p.prag.3.245</idno>
-            <idno type="ddb-hybrid">p.prag;3;245</idno>
+            <idno type="ddb-filename">zpe.220.215</idno>
+            <idno type="ddb-hybrid">zpe;220;215</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -29,25 +29,33 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aphrodites Berenikes Polis (Arsinoites)</origPlace>
-                     <origDate notBefore="0141" notAfter="0142" cert="low">141 - 142 (?)</origDate>
+                     <origPlace>Aphrodites Berenikes Polis (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="0141">141</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Aphrodites Berenikes Polis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1" type="ancient" ref="www.trismegistos.org/place/232">Aphrodites Berenikes Polis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/96205"/>
+                  <biblScope type="pp">215</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,33 +70,41 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag (Pacht)</term>
-               <term>Angebot</term>
-               <term>Mystharion an Sarapias</term>
-               <term>ein Drittel eines Dattelpalmenhaines mit Zwischenfrucht</term>
+               <term n="1">Vertrag (Pacht)</term>
+               <term n="2">Angebot</term>
+               <term n="3">Mystharion an Sarapias</term>
+               <term n="4">ein Drittel eines Dattelpalmenhaines mit Zwischenfrucht</term>
+               <term n="5">Duplikat</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-12T04:32:52-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Ready.</change>
+         <change when="2024-02-12T04:28:33-05:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - OK.</change>
+         <change when="2024-02-11T16:48:20-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Updates Meta and Text from ZPE 220 (2021) 214ff. (Text: indent lin2.)</change>
          <change who="HGV" when="2011-05-10">Record created</change>
          <change who="HGV" when="2012-02-07">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Prag.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">245</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">220</biblScope>
+                  <biblScope n="2" type="fascicle">(2021)</biblScope>
+                  <biblScope n="3" type="pages">S. 215</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tav. XLIV - XLV</bibl>
+               <bibl type="illustration">P.Prag. 3, Tav. XLIV - XLV</bibl>
             </p>
          </div>
          <div type="figure">
@@ -98,6 +114,14 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Prag. 3 245</bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Duplikat: ZPE 220, 2021, S. 218 .</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
