@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv130536">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Sworn declaration of land</title>
@@ -29,18 +29,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theadelphia (?) (Arsinoites)</origPlace>
-                     <origDate notBefore="0298" notAfter="0305">298 - 305</origDate>
+                     <origPlace>Theadelphia ? (Arsinoites, Ägypten)</origPlace>
+                     <origDate when="0298">298</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/737081 https://www.trismegistos.org/place/2349">Theadelphia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,27 +67,33 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Deklaration</term>
-               <term>Zensus</term>
-               <term>Land</term>
-               <term>Eid</term>
+               <term n="1">Deklaration</term>
+               <term n="2">Zensus</term>
+               <term n="3">Land</term>
+               <term n="4">Eid</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-15T09:14:58-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-10-31T07:23:11-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-10-31T07:19:19-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added the journal article corrections from N. Gonis (ZPE 220 (2021)), changed the metadata (date) accordingly</change>
          <change who="HGV" when="2011-04-27">Record created</change>
          <change who="HGV" when="2012-02-07">Record last modified</change>
          <change when="2012-02-09" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Prag.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">211</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">211</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,6 +109,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung und zu Z. 10, 12 u. 14 vgl. ZPE 220, 2021, S. 189.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
