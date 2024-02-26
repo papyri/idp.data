@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv36168">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettera</title>
@@ -31,16 +31,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Aphrodites Kome (Antaiopolites)</origPlace>
+                     <origPlace>Aphrodites Kome (Antaiopolites, Ägypten)</origPlace>
                      <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Aphrodites Kome</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1" type="ancient">Aphrodites Kome</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/3020 https://pleiades.stoa.org/places/756516">Antaiopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,21 +66,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>Fleisch</term>
-               <term>Versorgung</term>
-               <term>Beamte</term>
-               <term>annona</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">Fleisch</term>
+               <term n="3">Versorgung</term>
+               <term n="4">Beamte</term>
+               <term n="5">annona</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-26T11:11:10-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-12-10T12:18:38-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-11-08T12:36:56-05:00"
+                 who="http://papyri.info/editor/users/RueyLinChang">Submit - Digital image link update. None of the two recorded http://www.psi-online.it links shows any image.</change>
          <change who="HGV" when="1993-02-03">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Dioskoros - Archiv.</p>
@@ -87,8 +95,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">8</biblScope>
-                  <biblScope type="numbers">938</biblScope>
+                  <biblScope n="1" type="volume">8</biblScope>
+                  <biblScope n="2" type="numbers">938</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,14 +105,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.psi-online.it/documents/psi;8;938"/>
                </figure>
-               <figure>
-                  <graphic url="http://www.psi-online.it/documents/938"/>
+               <figure n="2">
+                  <graphic url="http://bipab.aphrodito.info/images/grandes_images/PSI_VIII_938.jpg"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
