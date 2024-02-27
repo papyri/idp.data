@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35298">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="0601" notAfter="0625" precision="low">Anfang VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,26 +65,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief</term>
-               <term>N.N. an N.N.</term>
-               <term>Begutachtung von Gemüse</term>
+               <term n="1">Brief</term>
+               <term n="2">N.N. an N.N.</term>
+               <term n="3">Begutachtung von Gemüse</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-02-27T14:50:19-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-12-10T12:19:45-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2023-11-17T05:46:08-05:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - changed the metadata according to the journal article from N. Gonis (ZPE 213 (2020))</change>
          <change who="HGV" when="1996-02-02">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">643</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">643</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -103,6 +111,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung u. zu Z. 2 u. 3-4, vgl. ZPE 213, 2020, S. 203.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
