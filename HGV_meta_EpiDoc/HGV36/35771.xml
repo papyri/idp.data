@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35771">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Abrechnung über Gerste</title>
@@ -31,16 +31,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Arsinoites ?</origPlace>
                      <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoEABJI4">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,26 +64,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Lieferungen</term>
-               <term>Gerste</term>
+               <term n="1">Liste</term>
+               <term n="2">Lieferungen</term>
+               <term n="3">Gerste</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-03-01T06:32:42-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2023-12-10T12:41:13-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2023-12-01T11:03:41-05:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added the journal article corrections from N. Gonis (ZPE 208 (2018))</change>
          <change who="HGV" when="1998-05-26">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">14672</biblScope>
+                  <biblScope n="1" type="volume">20</biblScope>
+                  <biblScope n="2" type="numbers">14672</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -83,6 +98,9 @@
                <bibl type="illustration">Tyche 3, 1988, Tafel 2</bibl>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zum Ort u. zu Z. 6 vgl. ZPE 208, 2018, S. 192.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
