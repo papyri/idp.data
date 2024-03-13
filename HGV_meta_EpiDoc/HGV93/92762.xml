@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv92762">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ordre de restitution adressé à un magistrat</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Gen. inv. 400 recto</idno>
+                  <placeName>
+                     <settlement>Geneva</settlement>
+                  </placeName>
+                  <collection>Bibliothèque</collection>
+                  <idno type="invNo">P. Gr. 400 Ro</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -29,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate when="0360">360</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,9 +67,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>N.N. an Poseidonios (προπολιτευόμενος)</term>
-               <term>Auftrag zur Rückgabe von Besitz</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">N.N. an Poseidonios (προπολιτευόμενος)</term>
+               <term n="3">Auftrag zur Rückgabe von Besitz</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -72,8 +78,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Rückseite: P.Gen. I (2e éd.) 80. Zu Z. 1, 2 und 3 vgl. APF 59, 2013, S. 229. Zu Z. 1 vgl. ZPE 191, 2014, S. 198f.</p>
@@ -82,8 +88,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Gen.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">176</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">176</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -94,14 +100,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.ville-ge.ch/musinfo/imageZoom/?iip=bgeiip/papyrus/pgen400-ri.ptif"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="https://archives.bge-geneve.ch/ark:/17786/vtadb1e48ff35046a9e"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
