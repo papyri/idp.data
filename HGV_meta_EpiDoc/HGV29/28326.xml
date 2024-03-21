@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28326">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Liste d’imposition</title>
@@ -31,16 +31,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Panopolites (?)</origPlace>
+                     <origPlace>Panopolites ?, Ägypten</origPlace>
                      <origDate notBefore="0176" notAfter="0200" precision="low">Ende II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    cert="low"
                                    ref="https://www.trismegistos.org/place/2719 https://pleiades.stoa.org/places/756614">Panopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,10 +66,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
-               <term>Aruren</term>
-               <term>Steuern</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
+               <term n="3">Aruren</term>
+               <term n="4">Steuern</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,11 +78,11 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: koptisch, literarisch: 135 B 1 (Exodus I 1 - II 2) BIFAO 8, 1911, S. 50 - 53, 135 B 3 (Exodus IV 2 - 15) BIFAO 8, 1911, S. 56 - 58.</p>
+            <p>Rückseite: koptisch, literarisch: 135 B 1 (Exodus I 1 - II 2) BIFAO 8, 1911, S. 50 - 53, 135 B 3 (Exodus IV 2 - 15) BIFAO 8, 1911, S. 56 - 58. Vgl. CdE 95, 2020, S. 182 (Papyrologica 99).</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -96,15 +98,15 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/28326"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">3</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">2/3</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">3</biblScope>
                </bibl>
@@ -114,5 +116,5 @@
             <p>keine</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
