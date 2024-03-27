@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11292">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Document adressé au logiste d’Arsinoïte</title>
@@ -31,15 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate when="0417-05-08">8. Mai 417</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,8 +65,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe (?)</term>
-               <term>N.N. an den Logistes des Arsinoites</term>
+               <term n="1">Eingabe (?)</term>
+               <term n="2">N.N. an den Logistes des Arsinoites</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -73,11 +75,11 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL VII, S. 61.</p>
+            <p>Zur Datierung vgl. BL VII, S. 61. Zu Z. 5 vgl. AnalPap 30, 2018, S. 211.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -93,11 +95,11 @@
                <bibl type="BL-online">
                   <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/11292"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">85</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">103</biblScope>
                </bibl>
@@ -114,5 +116,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
