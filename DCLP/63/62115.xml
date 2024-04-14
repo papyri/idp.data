@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62115" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 62115</title>
+            <title>Possible Amulet with Psalm 36</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">62115</idno>
             <idno type="dclp-hybrid">tm;;62115</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,21 +61,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>bible</term>
-               <term>amulet</term>
-               <term>phylakterion</term>
-               <term>magic</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">Old Testament; Psalm 036, 25-26; possibly amulet</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">bible</term>
+               <term n="5">amulet</term>
+               <term n="6">phylakterion</term>
+               <term n="7">magic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,20 +85,30 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost"><expan>κ<ex>αὶ</ex></expan> οὐκ εἶδον δίκαιον ἐγκαταλελειμ</supplied><unclear>μ</unclear>έν<supplied reason="lost">ον ο</supplied><unclear>ὐ</unclear><supplied reason="lost">δὲ</supplied>
+<lb n="2"/><supplied reason="lost">τὸ σπέρμα αὐτοῦ ζητοῦν ἄρτους·</supplied> ὅλην <unclear>τ</unclear><supplied reason="lost">ὴν ἡμέραν</supplied>
+<lb n="3"/><supplied reason="lost">ἐλεᾷ <expan>κ<ex>αὶ</ex></expan> δανείζει <expan>κ<ex>αὶ</ex></expan> τὸ σπέρμα αὐτοῦ εἰς εὐλ</supplied>ογίαν ἔ<supplied reason="lost">σται.</supplied>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/545">Psalmi</title>
+                  <biblScope n="1" unit="poem">36</biblScope>
+                  <biblScope n="2" unit="part" from="25" to="26">25-26</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">ZPE 116, pl.I.2</bibl>
@@ -106,19 +119,33 @@
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="study">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="a" type="main">Greek Amulets and Formularies from Egypt Containing Christian Elements: A Checklist of Papyri, Parchments, Ostraka, and Tablets. Avec résumé en anglais.</title>
-                  <author n="1">
-                     <forename>Theodore S.</forename>
-                     <surname>De Bruyn</surname>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/79961"/>
-                  <biblScope unit="number">186</biblScope>
+                  <biblScope n="1" unit="number">186</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/67003"/>
+                  <biblScope n="1" unit="number">2</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="62" to="63">62-63</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/18263"/>
+                  <biblScope n="1" unit="number">2203</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
