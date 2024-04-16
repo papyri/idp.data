@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv901309">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Liste de noms</title>
@@ -28,24 +28,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>unbekannt</origPlace>
                      <origDate notBefore="0001" notAfter="0200" precision="low">I - II</origDate>
                   </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
-                     </p>
-                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,18 +53,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
-               <term>Juden</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
+               <term n="3">Juden</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-04-16T10:59:30-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-04-16T10:45:02-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2023-04-21T06:05:49-04:00"
+                 who="http://papyri.info/editor/users/gclaytor">Submit - Entered Pylon corrections, both text and meta. As instructed, used the Privateidentifier (in this case, 1, the first article submitted) to denote the particular contribution to Pylon vol. 2, although it's unclear to me how a user would know that Pylon 2 (2022) 1 refers to "Notes on Papyri" (the last contribution listed in the table of contents)</change>
          <change who="HGV" when="2021-01-20">Record last modified</change>
          <change when="2021-01-21" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -86,6 +85,9 @@
                <bibl type="illustration">Tavola XXVII</bibl>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zum Ort vgl. Pylon 2 article 1 (2022) §1.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
