@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv19788">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Agreement concerning land (surrender?)</title>
+            <title>Cession of Land</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">19788</idno>
             <idno type="TM">19788</idno>
             <idno type="ddb-perseus-style">0154;5;1898</idno>
-            <idno type="ddb-filename">p.lond.5.1898</idno>
-            <idno type="ddb-hybrid">p.lond;5;1898</idno>
+            <idno type="ddb-filename">zpe.228.239_21</idno>
+            <idno type="ddb-hybrid">zpe;228;239_21</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 1669</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,22 +33,34 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0594" notAfter="0595" cert="low">594 - 595 (?)</origDate>
+                     <origPlace>Hermupolis (Hermopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0591" notAfter="0601">591 - 601</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727122 https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/816 https://pleiades.stoa.org/places/727122">Hermupolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <biblScope type="pp">239</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -61,29 +75,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Übertragung (?)</term>
-               <term>Land</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Übertragung</term>
+               <term n="3">Land</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-04-19T08:49:29-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-04-19T08:33:24-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Titel und Seitenzahl korrigieren. Nummer innerhalb des Aufsatzes, Sammlung und Abbildung ergänzen. Provenienz vervollständigen.</change>
+         <change when="2024-04-05T06:15:48-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Neuedition aus ZPE 228 (2023) 239 mit Übersetzung</change>
          <change who="HGV" when="1995-09-20">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr. Zur Datierung vgl. BL VIII, S. 194.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Lond.</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">1898</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">228</biblScope>
+                  <biblScope n="2" type="fascicle">(2023)</biblScope>
+                  <biblScope n="3" type="numbers">239</biblScope>
+                  <biblScope n="4" type="number">Nr. 21</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,8 +116,16 @@
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 238</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Lond. V 1898 descr.</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
