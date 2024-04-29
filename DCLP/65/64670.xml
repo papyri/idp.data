@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64670" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Hymn to the virgin</title>
@@ -14,7 +14,11 @@
             <idno type="filename">64670</idno>
             <idno type="dclp-hybrid">o.camb;;118</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0300" notAfter="0699">300 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,16 +61,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry lyric hymn</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">lyric</term>
+               <term n="5">hymn</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -75,16 +81,16 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2022-06-08T06:21:26-04:00"
+         <change when="2022-06-08T06:21:26-04:00"
                  who="http://papyri.info/editor/users/andrea.bernini82">Finalized - Ready</change>
-          <change when="2022-06-08T06:08:54-04:00"
+         <change when="2022-06-08T06:08:54-04:00"
                  who="http://papyri.info/editor/users/andrea.bernini82">Vote - Accept-Straight-to-Finalization - Ready</change>
-          <change when="2022-06-08T05:50:09-04:00"
-                 who="http://papyri.info/editor/users/Jannis">Submit - I submit to O.Camb. 118, proofread against the print edition </change>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2022-06-08T05:50:09-04:00"
+                 who="http://papyri.info/editor/users/Jannis">Submit - I submit to O.Camb. 118, proofread against the print edition</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
@@ -105,12 +111,22 @@
 </ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">O. Camb.</title>
-                  <biblScope unit="number">118</biblScope>
+                  <biblScope n="1" unit="number">118</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8932"/>
+                  <biblScope n="1" unit="number">832</biblScope>
+                  <biblScope n="2" unit="generic">descr.</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
