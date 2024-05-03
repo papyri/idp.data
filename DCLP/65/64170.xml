@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64170" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>six different magical spells</title>
@@ -14,7 +14,11 @@
             <idno type="filename">64170</idno>
             <idno type="dclp-hybrid">suppl.mag;2;79</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,19 +42,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -81,60 +86,108 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>magic</term>
-               <term type="culture">religion</term>
-               <term type="religion">Egyptian</term>
+               <term n="1" type="religion">Egyptian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">magic</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart">
+<div n="i" subtype="column" type="textpart">
+<ab>
+<lb n="1"/>ἐπὶ ἐκκρίμμ<unclear>ατος</unclear>, καλόν.
+<lb n="2"/><choice><reg>συγγενόμενος</reg><orig>συνγενόμενος</orig></choice> λέγε·
+<lb n="3"/><unclear>ἐ</unclear>κκέχ<unclear>υ</unclear>κα τὸ <choice><reg>αἷμα</reg><orig>῟<unclear>ε</unclear>μα</orig></choice>
+<lb n="4"/>τοῦ <hi rend="supraline">Α<unclear>β</unclear>ρανιαου</hi> εἰς τὴν
+<lb n="5"/>φύσιν τ<unclear>ῆ</unclear>ς <expan>δ<ex>εινα</ex></expan><unclear> </unclear>
+<lb n="6"/><expan>αλ<ex>λο</ex></expan> 
+<lb n="7"/><supplied reason="lost">δ</supplied><unclear>ὸς</unclear> σοῦ τὴν <expan>ἡδον<hi rend="supraline">ὴ</hi><ex>ν</ex></expan>
+<lb n="8"/><unclear>τῷ</unclear> <expan><unclear>δ</unclear><ex>ε</ex>ῖνα</expan> · <unclear>με</unclear>τέδωκά σοι
+<lb n="9"/>τὴν ἐμὴν ἡδονήν, ἡ <expan>δ<ex>ε</ex>ῖ<ex>να</ex></expan>
+<lb n="10"/>ἐν δὲ τῇ κ<unclear>ο</unclear>ιλίᾳ σου ἔχ<unclear>ευσα</unclear>
+<lb n="11"/>τὸ <unclear>αἷ</unclear>μα τοῦ Β̅<unclear>α</unclear>̅<unclear>β</unclear>̅ρ̅α̅ω̅<unclear>θ</unclear>̅.
+</ab>
+</div>
+
+<div n="ii" subtype="column" type="textpart">
+<ab>
+<lb n="12"/>ὄνειρον <hi rend="diaeresis">ἰ</hi><unclear>δ</unclear>εῖν <choice><reg>ἀληθι <lb n="13" break="no"/>νόν</reg><orig>ἀληθει
+<lb n="13" break="no"/>νόν</orig></choice> κοιμώμενος
+<lb n="14"/>λέγε ἁγνὰ φαγών·
+<lb n="15"/><hi rend="supraline">νὴ</hi> <hi rend="supraline">Νειθ</hi>, ϊ <hi rend="supraline">Νειεθ</hi>
+<lb n="16"/>εἰ ἐπιτυγχάνω τοῦ
+<lb n="17"/>δεῖνα πράγμα<unclear>τοϲ</unclear>, δεῖξον
+<lb n="18"/>μοι <hi rend="diaeresis">ὕ</hi>δωρ, εἰ δὲ μή, πῦρ·
+<lb n="19"/>θυμοκάτοχον.
+<lb n="20"/>προσερχόμενος πρὸϲ αὐτὸν
+<lb n="21"/>λέγε· μή μοι ὀργίζου, ὁ <expan>δ<ex>ε</ex>ῖ<ex>να</ex></expan>
+<lb n="22"/>ἀλλὰ μεταστράφητι· ἐγώ εἰμι
+<lb n="23"/>ὁ θεὸς ὁ ἐν οὐρανῷ, Αφ<hi rend="supraline">φου</hi>
+<lb n="24"/>α<hi rend="supraline"><unclear>χ</unclear></hi><unclear> </unclear><gap reason="lost" quantity="2" unit="character"/> Α<hi rend="supraline">βρασ</hi><supplied reason="lost"><hi rend="supraline">α</hi></supplied><hi rend="supraline">ξ</hi> ·<space quantity="1" unit="character"/>λῆ<unclear>ξ</unclear>ον
+<lb n="25"/>ὁργήν, ὁ <expan>δ<ex>ε</ex>ῖ<ex>να</ex></expan>, εἰς ἐμέ, τὸν <expan>δ<ex>ε</ex>ῖ<ex>να</ex></expan>.
+<lb n="26"/>ἐπὶ <unclear>ἀ</unclear><supplied reason="lost">ν</supplied><hi rend="superscript">τι</hi>δίκ<unclear>ο</unclear><supplied reason="lost">υ</supplied> <choice><reg>νικητικόν</reg><orig>νεικητικ<supplied reason="lost">όν</supplied></orig></choice>.
+<lb n="27"/>ἀποβλέπων τὴν ἀκτ<supplied reason="lost">ῖνα τοῦ</supplied>
+<lb n="28"/>θεοῦ λέγε· <hi rend="supraline">σισισρω</hi> <unclear> </unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="29"/><hi rend="supraline">θιανοηρ</hi> <hi rend="supraline">Αβρασαξ</hi>, ἐ<supplied reason="lost">ναντι-</supplied>
+<lb n="30"/>ώθητε ἐν τῇ σήμ<supplied reason="lost">ερον ἡμέ-</supplied>
+<lb n="31"/>ρᾳ <unclear>τ</unclear>ῷ <expan>δ<ex>ε</ex>ῖ<ex>να</ex></expan>, ἐπὶ ἀντίδικ<supplied reason="lost">ός ἐστι</supplied>
+<lb n="32"/>τοῦ <supplied reason="lost">θ</supplied><unclear>εοῦ</unclear>.
+<lb n="33"/><choice><reg>ἐπεί</reg><orig>ἐπὶ</orig></choice> πυρετοῦ.
+<lb n="34"/><gap reason="lost" quantity="12" unit="character" precision="low"/>νθης <gap reason="illegible" quantity="3" unit="character"/>
+</ab>
+</div>
+</div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/12729"/>
-                  <biblScope unit="number">79</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">Suppl.Mag.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
-               </bibl>
-               <bibl type="reference" subtype="principal">
                   <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/12729"/>
+                  <biblScope n="1" unit="number">79</biblScope>
+                  <biblScope n="2" unit="volume">2</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/96044"/>
                   <biblScope n="1" unit="number">35</biblScope>
                   <biblScope n="2" unit="chapter"/>
                   <biblScope n="3" unit="page"/>
                </bibl>
-               <bibl type="reference" subtype="principal">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="3" type="reference" subtype="principal">
                   <title level="m" type="main">Supplementum Magicum. Vol. II.</title>
-                  <editor n="1">
-                     <forename>Robert W.</forename>
-                     <surname>Daniel</surname>
-                  </editor>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/12729"/>
-                  <biblScope unit="number">79</biblScope>
+                  <biblScope n="1" unit="number">79</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol56/pages/3834.htm"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="https://doi.org/10.25446/oxford.21176482"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
