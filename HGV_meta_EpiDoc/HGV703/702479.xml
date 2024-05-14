@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv702479">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Request to supply wheat to a monastery</title>
@@ -29,17 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
+                     <origPlace>Oxyrhynchos (Oxyrhynchites, Ägypten)</origPlace>
                      <origDate notBefore="0501" notAfter="0600" precision="low">VI</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,10 +66,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Antrag</term>
-               <term>Lieferung</term>
-               <term>Weizen</term>
-               <term>Kloster</term>
+               <term n="1">Antrag</term>
+               <term n="2">Lieferung</term>
+               <term n="3">Weizen</term>
+               <term n="4">Kloster</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,21 +77,28 @@
          <change who="HGV" when="2019-02-07">Record last modified</change>
          <change when="2019-02-08" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">82</biblScope>
-                  <biblScope type="numbers">5342</biblScope>
+                  <biblScope n="1" type="volume">82</biblScope>
+                  <biblScope n="2" type="numbers">5342</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://doi.org/10.25446/oxford.21186313.v2"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
