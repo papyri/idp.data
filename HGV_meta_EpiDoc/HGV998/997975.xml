@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv997975">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lettre administrative de nature fiscale</title>
@@ -32,12 +32,18 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermoupolis</origPlace>
+                     <origPlace>Hermopolis (Hermopolites)</origPlace>
                      <origDate notBefore="0676" notAfter="0700" precision="low">Ende VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient">Hermoupolis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/816 https://pleiades.stoa.org/places/756574">Hermopolis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2720 https://pleiades.stoa.org/places/756575">Hermopolites</placeName>
                      </p>
                   </provenance>
                </history>
@@ -45,7 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,25 +68,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (amtlich)</term>
-               <term>Expedition</term>
-               <term>Fluß</term>
-               <term>Requirierung</term>
+               <term n="1">Brief (amtlich)</term>
+               <term n="2">Expedition</term>
+               <term n="3">Fluß</term>
+               <term n="4">Requirierung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-14T10:30:38-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-05-12T11:55:20-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-05-10T11:19:53-04:00"
+                 who="http://papyri.info/editor/users/GAJC%20v%20Loon">Submit - - Nome hinzugefügt&#xD;
+- Text eingetragen nach der Edition</change>
+         <change when="2024-05-10T10:31:55-04:00"
+                 who="http://papyri.info/editor/users/GAJC%20v%20Loon">Commit - Nome added</change>
+         <change when="2024-05-10T10:31:41-04:00"
+                 who="http://papyri.info/editor/users/GAJC%20v%20Loon">Commit - Nome added</change>
          <change who="HGV" when="2024-04-18">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">21</biblScope>
-                  <biblScope type="numbers">2904</biblScope>
+                  <biblScope n="1" type="volume">21</biblScope>
+                  <biblScope n="2" type="numbers">2904</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -88,5 +107,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
