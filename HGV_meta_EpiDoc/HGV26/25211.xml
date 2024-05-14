@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv25211">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Frammento di un’ordinanza dello strategos dell’Oasis</title>
+            <title>Ein Brief des Präfekten Q. Maecius Laetus an die Strategen der Heptanomia und des Arsinoites mit Aufforderung zur Deklaration von Schiffen – eine Neuedition von PSI X 1155</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">25211</idno>
-            <idno type="TM">25211</idno>
             <idno type="ddb-perseus-style">0238;10;1155</idno>
-            <idno type="ddb-filename">psi.10.1155</idno>
-            <idno type="ddb-hybrid">psi;10;1155</idno>
+            <idno type="ddb-filename">zpe.220.445</idno>
+            <idno type="ddb-hybrid">zpe;220;445</idno>
+            <idno type="TM">25211</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Biblioteca Medicea Laurenziana</collection>
+                  <idno type="invNo">19958</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,35 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0200" notAfter="0203">200 - 203</origDate>
+                     <origPlace>Fundort: Tebtynis (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="0200-05-13" notAfter="0203-08-28">13. Mai 200 - 28. Aug. 203</origDate>
                   </origin>
+                  <provenance type="found">
+                     <p xml:id="geoFID3A0">
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="www.trismegistos.org/place/2287 https://pleiades.stoa.org/places/737072">Tebtynis</placeName>
+                        <placeName n="2"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
+            <listBibl>
+               <bibl type="SB">
+                  <ptr target="https://papyri.info/biblio/86989"/>
+                  <biblScope type="pp">445</biblScope>
+               </bibl>
+            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -60,12 +81,19 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-14T10:30:40-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-05-14T10:14:14-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Überarbeiten und fertigstellen.</change>
+         <change when="2024-05-13T06:35:55-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Neuedition: ZPE 200 (2016) 445&#xD;
+Bitte die Eintragungen bei HGV überprüfen</change>
          <change who="HGV" when="1993-03-18">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. BL IX, S. 320.</p>
@@ -73,9 +101,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">PSI</title>
-                  <biblScope type="volume">10</biblScope>
-                  <biblScope type="numbers">1155</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">200</biblScope>
+                  <biblScope n="2" type="fascicle">(2016)</biblScope>
+                  <biblScope n="3" type="pages">S. 445</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,7 +126,12 @@
                   <graphic url="http://www.psi-online.it/documents/psi;10;1155"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI 10 1155</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
