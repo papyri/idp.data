@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv10859">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Abschrift einer Erheberquittung über die Zahlung der Kopfsteuer</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">10859</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">CG 10844</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philoteris (Arsinoites)</origPlace>
+                     <origPlace>Philoteris (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0155" precision="medium">ca. 155</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/737010 https://www.trismegistos.org/place/1779 https://www.trismegistos.org/place/1780">Philoteris</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/737010 https://www.trismegistos.org/place/1780">Philoteris</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,33 +70,39 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
-               <term>Geld</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuern</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-23T10:10:59-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-05-23T09:34:34-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good</change>
+         <change when="2024-05-23T09:01:15-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Updated this to P.Cair.Gad 5</change>
          <change who="HGV" when="1996-10-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr. Zur Datierung vgl. P.Fay. 278.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Fay.</title>
-                  <biblScope type="numbers">303</biblScope>
+                  <title level="s" type="abbreviated">P.Cair.Gad</title>
+                  <biblScope type="numbers">5</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">Tafel IV</bibl>
+            </p>
          </div>
          <div type="figure">
             <p>
@@ -100,6 +111,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Fay. 303</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
