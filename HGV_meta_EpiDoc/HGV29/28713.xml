@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28713">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Report of Proceedings in Senate</title>
+            <title>Proceedings of a City Council</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">28713</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Birmingham</settlement>
                   </placeName>
+                  <collection>Cadbury Research Library</collection>
+                  <idno type="invNo">58 d</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,16 +33,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0101" notAfter="0300" precision="low">II - III</origDate>
+                     <origPlace>Oxyrhynchos ? (Oxyrhynchites)</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoH7J9G">
+                        <placeName n="1" type="ancient" cert="low">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,8 +64,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Protokoll</term>
-               <term>Prozeß</term>
+               <term n="1">Bericht</term>
+               <term n="2">Rat</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -65,24 +74,32 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Harr.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">129</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">260</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 46</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Harr. 1 129</bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Rückseite: P.Harr. 3 315.</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
