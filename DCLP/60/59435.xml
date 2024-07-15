@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59435" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P.Herc. Stub</title>
+            <title>Philosophical text (P.Herc. 1115)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">59435</idno>
             <idno type="dclp-hybrid">p.herc;;1115</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,17 +42,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Herculaneum (Campania, Italy); written: Italy</origPlace>
-                     <origDate notBefore="-0200" notAfter="0079">-200 v. Chr. - 79 n. Chr.</origDate>
+                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy</origPlace>
+                     <origDate notBefore="-0200" notAfter="0079">200 v.Chr. - 79</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Campania</placeName>
-                        <placeName type="ancient" subtype="region">Italy</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Campania</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Italy</placeName>
                      </p>
@@ -80,11 +84,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Carneiscus; Philista (Comparetti)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -93,12 +96,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-11-26" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
+         <change when="2014-11-26" who="http://papyri.info/about">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Jörg Engelbrecht and revised by Holger Essler as part of a course on Herculaneum Papyrology at the University of Würzburg.</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Jörg Engelbrecht and revised by Holger Essler as part of a course on Herculaneum Papyrology at the University of Würzburg.</p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="scorza" subtype="fragment" type="textpart"><ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
@@ -156,25 +161,21 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="reference" subtype="principal">
+                  <title level="a" type="main">Altre falsificazioni negli apografi ercolanesi</title>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83405"/>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
-                  <title type="main" level="a">Altre falsificazioni negli apografi ercolanesi</title>
-                  <author n="1">
-                     <surname>Capasso</surname>
-                     <forename>Mario</forename>
-                  </author>
-                  <date>1986</date>
-                  <!--ignore - stop-->
+                  <biblScope n="1" unit="page" from="152" to="153">152-153</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1244">Carneiscus</author>
-                  <title type="main"
-                         level="m"
-                         ref="http://www.trismegistos.org/authorwork/660">Philista</title>
+                  <author xml:lang="grc"/>
+                  <title type="main" level="m" xml:lang="grc"/>
                </bibl>
             </listBibl>
          </div>
@@ -186,5 +187,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
