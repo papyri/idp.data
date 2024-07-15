@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv28713">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Proceedings of a City Council</title>
@@ -9,7 +9,6 @@
          <publicationStmt>
             <idno type="filename">28713</idno>
             <idno type="TM">28713</idno>
-            <idno type="ddb-perseus-style">0129;1;129</idno>
             <idno type="ddb-filename">p.harr.3.260</idno>
             <idno type="ddb-hybrid">p.harr;3;260</idno>
          </publicationStmt>
@@ -20,26 +19,27 @@
                      <settlement>Birmingham</settlement>
                   </placeName>
                   <collection>Cadbury Research Library</collection>
-                  <idno type="invNo">58 d</idno>
+                  <idno type="invNo">58d</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <material>Papyrus</material>
+                           <material/>
                         </support>
                      </supportDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos ? (Oxyrhynchites)</origPlace>
+                     <origPlace>Oxyrhynchos (?)</origPlace>
                      <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geoH7J9G">
-                        <placeName n="1" type="ancient" cert="low">Oxyrhynchos</placeName>
-                        <placeName n="2" type="ancient" subtype="nome">Oxyrhynchites</placeName>
+                     <p>
+                        <placeName type="ancient"
+                                   cert="low"
+                                   ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,9 +47,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>
-        This file encoded to comply with EpiDoc Guidelines and Schema version 8
-        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,8 +62,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Bericht</term>
-               <term n="2">Rat</term>
+               <term>Bericht</term>
+               <term>Rat</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -79,33 +77,28 @@
          <change who="HGV" when="1992-09-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2024-07-15">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
+         <div type="commentary" subtype="general">
+            <p>Rückseite: P.Harr. 3 315.</p>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Harr.</title>
-                  <biblScope n="1" type="volume">3</biblScope>
-                  <biblScope n="2" type="numbers">260</biblScope>
+                  <biblScope type="volume">3</biblScope>
+                  <biblScope type="numbers">260</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-          keine
-          <bibl type="illustration">S. 46</bibl>
+               <bibl type="illustration">S. 46</bibl>
             </p>
          </div>
-         <div type="bibliography" subtype="otherPublications">
-            <listBibl>
-               <bibl type="publication" subtype="other">P.Harr. 1 129 descr.</bibl>
-            </listBibl>
-         </div>
-         <div type="commentary" subtype="general">
-            <p>Rückseite: P.Harr. 3 315.</p>
-         </div>
       </body>
-  </text>
+   </text>
 </TEI>
