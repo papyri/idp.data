@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65739" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Hib. 2 189</title>
@@ -13,9 +13,13 @@
             <idno type="LDAB">6993</idno>
             <idno type="filename">65739</idno>
             <idno type="dclp-hybrid">p.hib;2;189</idno>
-            <idno type="MP3">02568.000</idno>
+            <idno type="MP3">2568</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,19 +43,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Ankyropolis (Herakleopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v. Chr.</origDate>
+                     <origPlace>Fundort: Ankyropolis (Herakleopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0300" notAfter="-0201" precision="low">III v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/182">Ankyropolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/182">Ankyropolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,40 +67,95 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">on forms of propositions in logic</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
+               <term n="5" type="overview">on forms of propositions in logic</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Sabrina de Salvo, Tommaso Spirito within F. Nicolardi's class on Tecniche e Metodologie Digitali per la Papirologia (Università degli Studi di Napoli Federico II) and revised by C. Vergara as part of the project INTEGRATION INTEllectual miGRATION: circulation of philosophical books and ideas around the ancient Mediterranean through the evidence of Graeco-Roman papyri (CUP B53D23023140006).</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="a" subtype="fragment" type="textpart"><ab>
+<lb n="1"/>1,msup <handShift new="m2"/>αθυ<unclear>ρ</unclear>
+<lb n="1"/><app type="editorial"><lem><supplied reason="lost">ο</supplied>ἵ</lem><rdg resp="ed.pr."><unclear>ο</unclear>ἵ</rdg></app> τε χρόνοι εἰσὶ κατὰ τ<supplied reason="lost">ὰς</supplied> 
+<lb n="2"/>λέξεις, ὧν ὁ παρ<unclear>ὼ</unclear>ν <app type="editorial"><lem>ἐναρ<lb n="3" break="no"/>γής,</lem><rdg resp="ed.pr.">ἐνα<unclear>ρ</unclear><lb n="3" break="no"/>γής,</rdg></app>
+<lb n="3"/>ὁ παρεληλυθὼς οὔ
+<lb n="4" break="no"/>κ ἐστιν.
+<app type="editorial"><lem> </lem><rdg resp="ed.pr."><supplied reason="lost"><milestone rend="paragraphos" unit="undefined"/></supplied></rdg></app>
+<lb n="5"/><app type="editorial"><lem><supplied reason="lost">τὸ</supplied></lem><rdg resp="ed.pr."><supplied reason="lost">τ</supplied><unclear>ὸ</unclear></rdg></app> ἄνθρωπον εἶναι ἕτε
+<lb n="6" break="no"/>ρόν ἐστιν τῷ τοῦτον
+<lb n="7"/>ἄνθρωπον εἶναι· καὶ <unclear>τυ</unclear>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="8" break="no"/>χὸν τοῦτον εἶναι <space extent="unknown" unit="character"/>  
+<lb n="9"/><supplied reason="lost">oὐ</supplied><unclear>κ</unclear> ἒστιν ἕτερον εἶναι.
+<app type="editorial"><lem> </lem><rdg resp="ed.pr."><supplied reason="lost"><milestone rend="paragraphos" unit="undefined"/></supplied></rdg></app>
+<lb n="10"/>εἰ γάρ ἐστιν, ἔστιν τὸ <unclear>μ</unclear><supplied reason="lost">ὴ</supplied>
+<lb n="11"/>τοῦτον εἶναι <app type="editorial"><lem><add place="above"><unclear>μήθε</unclear></add></lem><rdg resp="ed.pr."><add place="above"><gap reason="illegible" quantity="3" unit="character"/><unclear>τ</unclear><gap reason="illegible" quantity="3" unit="character"/></add></rdg></app> <app type="editorial"><lem>ἔ<unclear>στ</unclear>ιν</lem><rdg resp="ed.pr.">ε<unclear>πι</unclear>ν<gap reason="illegible" quantity="2" unit="character"/>, ε<unclear>πτ</unclear>ν or ε<unclear>ιπ</unclear>ν</rdg></app> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><milestone rend="paragraphos" unit="undefined"/> <add place="interlinear"> ἀλλ' αὐτὰ καθ' αὑτὰ</add>
+<lb n="13"/><unclear>ἢ</unclear> οὐθεις κ<gap reason="illegible" quantity="5" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="b" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> περὶ ἀδη<unclear>λ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>π</unclear>ερὶ συ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>  
+<div n="c" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> τῶ<unclear>ν</unclear> <gap reason="lost" extent="unknown" unit="character"/> 
+<lb n="2"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/><unclear>τ</unclear>ιν<unclear>ες</unclear></lem><rdg resp="ed.pr."><gap reason="lost" extent="unknown" unit="character"/> <unclear>τ</unclear>ιν<unclear>ες</unclear></rdg></app> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem><gap reason="illegible" quantity="2" unit="character"/>ουσ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="ed.pr.">μους <gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>νειων<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/>η<app type="editorial"><lem><unclear>μ</unclear></lem><rdg resp="ed.pr.">μ</rdg></app><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ν</unclear>αι <space extent="unknown" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>   
+</ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/5284"/>
-                  <biblScope unit="number">189</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Hibeh</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5284"/>
+                  <biblScope n="1" unit="number">189</biblScope>
+                  <biblScope n="2" unit="volume">2</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96748"/>
+                  <biblScope n="1" unit="volume">II.1*</biblScope>
+                  <biblScope n="2" unit="number">14</biblScope>
+                  <biblScope n="3" unit="page" from="93" to="96">93-96</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Studi e testi per il corpus dei papiri filosofici greci e latini 16, Miscellanea di Sudi 6 (2011), p. 226</bibl>
@@ -105,5 +165,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
