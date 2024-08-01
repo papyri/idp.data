@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m59203" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 59203</title>
@@ -13,8 +13,13 @@
             <idno type="LDAB">298</idno>
             <idno type="filename">59203</idno>
             <idno type="dclp-hybrid">tm;;59203</idno>
+            <idno type="MP3">01218.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -43,19 +48,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -83,13 +89,13 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term>philology</term>
-               <term>lexicography</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
+               <term n="6">philology</term>
+               <term n="7">lexicography</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -98,12 +104,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project <ref target="http://epikur-wuerzburg.de/encode">Encode</ref>.</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This text has been digitally edited by Oliver Donath and revised by Holger Essler as part of the Project
+          <ref target="http://epikur-wuerzburg.de/encode">Encode</ref>
+          .
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="1" subtype="column" type="textpart" corresp="#FR12796"><ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/> 
@@ -135,16 +147,20 @@
 </ab></div></div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+               <bibl type="publication" n="1" subtype="ancient">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/512">Odyssea</title>
                </bibl>
-               <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1168">Apollonius Sophista</author>
+               <bibl type="publication" n="2" subtype="ancient">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg1168">Apollonius Sophista</author>
                   <title type="main"
                          level="m"
+                         xml:lang="grc"
                          ref="http://www.trismegistos.org/authorwork/616">Lexicon Homericum</title>
                </bibl>
             </listBibl>
@@ -162,18 +178,16 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">h101</biblScope>
+                  <biblScope n="1" unit="number">h101</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
