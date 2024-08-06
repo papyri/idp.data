@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18579">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Abzahlung eines Eranos - Darlehens, Alexandrien</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Alexandria</origPlace>
                      <origDate when="-0010-04-11">
-                        <certainty locus="value" match="../year-from-date(@when)"/>11. Apr. 10 v.Chr. (Jahr unsicher)</origDate>
+                11. Apr. 10 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,9 +65,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Rückzahlung</term>
-               <term>Eranos - Darlehen</term>
+               <term n="1">Quittung</term>
+               <term n="2">Rückzahlung</term>
+               <term n="3">Eranos - Darlehen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -73,8 +76,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -91,8 +94,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1135</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1135</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,14 +104,17 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=BGU&amp;vVol=4&amp;vNum=1135"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://berlpap.smb.museum/00592/"/>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 2-3, 5, 10-11 und 19 vgl. Tyche 36, 2021, S. 202, Korr. Tyche 1065.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
