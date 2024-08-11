@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv1127">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Memorandum to Zenon from Paris</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia (Arsinoites)</origPlace>
+                     <origPlace>Philadelphia (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737008 https://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,37 +68,44 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Mitteilung</term>
-               <term>Paris an Zenon</term>
-               <term>Beschwerde</term>
-               <term>Bittschrift</term>
-               <term>Anweisung</term>
-               <term>Bezahlung</term>
-               <term>Diebstahl</term>
-               <term>Aufwendungen</term>
-               <term>Joch</term>
-               <term>Geschirr</term>
-               <term>Seil</term>
+               <term n="1">Mitteilung</term>
+               <term n="2">Paris an Zenon</term>
+               <term n="3">Beschwerde</term>
+               <term n="4">Bittschrift</term>
+               <term n="5">Anweisung</term>
+               <term n="6">Bezahlung</term>
+               <term n="7">Diebstahl</term>
+               <term n="8">Aufwendungen</term>
+               <term n="9">Joch</term>
+               <term n="10">Geschirr</term>
+               <term n="11">Seil</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-08-09T10:06:48-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-08-09T10:06:04-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Zeilenverweis korrigieren.</change>
+         <change when="2024-07-22T09:12:29-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added the journal article correction from Tyche 36 (Korr. Tyche 997), added a line of commentary to l. 7</change>
          <change who="HGV" when="1994-01-20">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung nach dem Rahmen des Zenon - Archivs.</p>
+            <p>Datierung nach dem Rahmen des Zenon - Archivs.
+Zu Z. 7 vgl. Tyche 36, 2021, S. 183, Korr. Tyche 997.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Cair. Zen.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">59489</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">59489</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -110,5 +120,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

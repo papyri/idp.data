@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv12794">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lista nominale (κατ᾿ἄνδρα) di tasse in grano</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Ptolemais Euergetis (Arsinoites)</origPlace>
+                     <origPlace>Ptolemais Euergetis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0222-02-25" notAfter="0222-03-26">25. Febr. - 26. März 222</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736948 https://www.trismegistos.org/place/327 https://www.trismegistos.org/place/1343">Ptolemais Euergetis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,34 +68,40 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Steuern</term>
-               <term>Getreide</term>
-               <term>Namen</term>
+               <term n="1">Register</term>
+               <term n="2">Steuern</term>
+               <term n="3">Getreide</term>
+               <term n="4">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-08-09T09:58:10-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-08-09T09:56:45-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Sieht gut aus.</change>
+         <change when="2024-07-22T09:23:25-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added a general note about the information in Tyche 36 (Korr. Tyche 1025)</change>
          <change who="HGV" when="1996-11-18">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite (von Frg. Gr. I 52 B): SB VI  9411 (gehört zum Heroninos - Archiv). Vgl. Harrauer, Paläographie, Textband, S. 358f., Nr. 169.</p>
+            <p>Rückseite (von Frg. Gr. I 52 B): SB VI 9411 (gehört zum Heroninos - Archiv). Vgl. Harrauer, Paläographie, Textband, S. 358f., Nr. 169.
+Zu Z. 60 vgl. Tyche 36, 2021, S. 190, Korr. Tyche 1025.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 7: 220 - 221; passim: 26. Apr. - 27. Dez. 221</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
-                  <ref/>
-                  <date type="mentioned" notBefore="0221-04-26" notAfter="0221-12-27">26. Apr.  - 27. Dez. 221</date>
+               <item n="1">
+                  <date type="mentioned" notBefore="0221-04-26" notAfter="0221-12-27">26. Apr. 221 - 27. Dez. 221</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 7</ref>
                   <date type="mentioned" notBefore="0220" notAfter="0221">220 - 221</date>
                </item>
@@ -102,8 +111,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Prag.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">137</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">137</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -121,8 +130,8 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Tav. XIII - XIV</bibl>
-               <bibl type="illustration">Harrauer, Paläographie, Tafelband, Abb. 154</bibl>
+               <bibl type="illustration" n="1">Tav. XIII - XIV</bibl>
+               <bibl type="illustration" n="2">Harrauer, Paläographie, Tafelband, Abb. 154</bibl>
             </p>
          </div>
          <div type="figure">
@@ -133,5 +142,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
