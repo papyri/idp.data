@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20594">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Lease of Land</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">20594</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">807</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,26 +33,30 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0006-09-28" notAfter="0006-10-27">28. Sept. - 27. Okt. 6</origDate>
+                     <origPlace>Oxyrhynchos (19th Upper Egyptian, Egypt) oder</origPlace>
+                     <origDate when="0006-10-10">10. Okt. 6</origDate>
                   </origin>
                   <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
+                     <p n="1" xml:id="geoJDFG33" exclude="#geoJH7IF8">
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                                   ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">19th Upper Egyptian</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Egypt</placeName>
                      </p>
+                     <p n="2" xml:id="geoJH7IF8" exclude="#geoJDFG33"/>
                   </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,9 +71,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Pacht</term>
-               <term>Land</term>
+               <term n="1">Contract</term>
+               <term n="2">Lease</term>
+               <term n="3">Land</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,30 +82,34 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">374</biblScope>
+                  <title level="s" type="abbreviated">ZPE</title>
+                  <biblScope n="1" type="volume">229</biblScope>
+                  <biblScope n="2" type="fascicle">(2024)</biblScope>
+                  <biblScope n="3" type="pages">S. 161</biblScope>
+                  <biblScope n="4" type="number">Nr. 1</biblScope>
+                  <biblScope n="5" type="generic">R</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">S. 162</bibl>
+            </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Lond. III 807 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Lond. III 807 descr.</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Oxy. 2 374</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
