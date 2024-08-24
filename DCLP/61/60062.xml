@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60062" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60062</title>
+            <title>Five Partial Columns from Hesiod's Catalog</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">tm;;60062</idno>
             <idno type="MP3">00526.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -28,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">78.5</width>
+                              <height unit="cm">10.5</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -39,20 +47,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
+                     <origPlace>Schreibort: Egypt; Fundort: Arsinoites, Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="composed">
+                  <provenance n="1" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="found">
+                  <provenance n="2" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -102,18 +111,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Hesiodus; Catalogus 1 (The Suitors of Helen)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -122,15 +130,20 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2016-08-12" who="dclp">set date for change log</change>
-          <change who="Ch. Sailer">Entered Greek text from reference edition</change>
+         <change when="2016-08-12" who="dclp">set date for change log</change>
+         <change who="Ch. Sailer">Entered Greek text from reference edition</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="frontmatter" xml:space="preserve">
-            <p>This papyrus has been digitally edited by Christian Sailer and revised by Vincenzo Damiani as part of the Project <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref> and the <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref></p>
-         </div>
+        <p>
+          This papyrus has been digitally edited by Christian Sailer and revised by Vincenzo Damiani as part of the Project
+          <ref target="http://www.kallimachos.de/kallimachos/index.php/Anagnosis:Main">Anagnosis</ref>
+          and the
+          <ref target="http://epikur-wuerzburg.de/aktivitaeten/thv/">Würzburger Zentrum für Epikureismusforschung</ref>
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="196" subtype="fragment" type="textpart" corresp="#FR6667"><ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>της ἀγὸς ἀνδρ<hi rend="circumflex">ῶ</hi>ν <supplied reason="lost">αἰχμ</supplied>ητάων
@@ -197,7 +210,8 @@
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020">Hesiodus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0020 http://cwkb.org/author/id/917/rdf">Hesiodus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/794">Catalogus</title>
@@ -206,15 +220,15 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Sitzungsber. Berlin 1900, pl.V</bibl>
-               <bibl type="printed">Schubart, PGB tab. 19a</bibl>
-               <bibl type="printed">Merkelbach-West, pl.IV</bibl>
-               <bibl type="printed">R.Seider, Paläogr. griech. Papyri II.2, pl.XII.22</bibl>
+               <bibl type="printed" n="1">Sitzungsber. Berlin 1900, pl.V</bibl>
+               <bibl type="printed" n="2">Schubart, PGB tab. 19a</bibl>
+               <bibl type="printed" n="3">Merkelbach-West, pl.IV</bibl>
+               <bibl type="printed" n="4">R.Seider, Paläogr. griech. Papyri II.2, pl.XII.22</bibl>
                <bibl type="online">
                   <ptr target="http://berlpap.smb.museum/02696"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
