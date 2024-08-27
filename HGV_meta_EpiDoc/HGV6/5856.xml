@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5856">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Gebot des Phatres</title>
@@ -31,16 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Apollonopolites</origPlace>
+                     <origPlace>Apollonopolites, Ägypten</origPlace>
                      <origDate notBefore="-0223" notAfter="-0222">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 223 - 222 v.Chr.</origDate>
+                ca. 223 - 222 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2717">Apollonopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,24 +68,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Kauf</term>
-               <term>Versteigerung</term>
-               <term>Angebot</term>
-               <term>Häuser</term>
-               <term>Einkünfte (Priester)</term>
+               <term n="1">Kauf</term>
+               <term n="2">Versteigerung</term>
+               <term n="3">Angebot</term>
+               <term n="4">Häuser</term>
+               <term n="5">Einkünfte (Priester)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-08-27T07:39:47-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-08-22T08:30:13-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-08-06T11:34:41-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added correction from Ferretti, in Pylon 5, 2024. Unsure how to encode the correction of the handshift, tried something, please review. Thanks! </change>
          <change who="HGV" when="1996-07-25">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Gehört zum Archiv des Praktors Milon.</p>
+            <p>Gehört zum Archiv des Praktors Milon. Zum Handwechsel, vgl. L. Ferretti, in Pylon 5 (2024) 9 § 29.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -96,14 +106,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://ipap.csad.ox.ac.uk/4DLink4/4DACTION/IPAPwebquery?vPub=P.Eleph.&amp;vVol=&amp;vNum=24"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://berlpap.smb.museum/03749/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
