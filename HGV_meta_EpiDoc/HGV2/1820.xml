@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv1820">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Hypomnema Postscript to a Letter of Zenon</title>
@@ -31,18 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Philadelphia? (Arsinoites)</origPlace>
+                     <origPlace>Philadelphia ? (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/737008 https://www.trismegistos.org/place/1760">Philadelphia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,10 +69,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Notiz</term>
-               <term>Zenon an Aigyptos</term>
-               <term>Korb</term>
-               <term>Stoff</term>
+               <term n="1">Notiz</term>
+               <term n="2">Zenon an Aigyptos</term>
+               <term n="3">Korb</term>
+               <term n="4">Stoff</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,18 +81,19 @@
          <change who="HGV" when="2011-04-06">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung nach dem Rahmen des Zenon - Archivs.</p>
+            <p>Datierung nach dem Rahmen des Zenon - Archivs.
+Zu Z. 1 und zum Schreiber vgl. Tyche 36, 2021, S. 183-184, Korr. Tyche 999.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Col.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">107</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">107</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -104,5 +108,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
