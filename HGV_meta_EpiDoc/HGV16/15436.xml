@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv15436">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Neue Wiener Papyri zur byzantinischen Chronologie</title>
@@ -31,15 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolites</origPlace>
-                     <origDate notBefore="0459-08-30" notAfter="0459-12-31">30. Aug. - 31. Dez. 459</origDate>
+                     <origPlace>Herakleopolites, Ägypten</origPlace>
+                     <origDate notBefore="0459-08-30" notAfter="0460-08-31">
+                30. Aug. 459 - Ende Aug. 460
+                <precision match="../@notAfter"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +68,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Haus</term>
-               <term>Miete (?)</term>
-               <term>Verkauf (?)</term>
+               <term n="1">Haus</term>
+               <term n="2">Miete (?)</term>
+               <term n="3">Verkauf (?)</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +79,8 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -97,6 +102,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung vgl. P.Oxy. 85 5519.1-2 n.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
