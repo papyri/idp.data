@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35734">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Conclusione di un contratto</title>
@@ -31,18 +31,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos (?)</origPlace>
-                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
+                     <origPlace>Oxyrhynchos ? (Oxyrhynchites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0499">499</origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0500">500</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,10 +70,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Schluß</term>
-               <term>Namen</term>
-               <term>Notarsunterschrift</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Schluß</term>
+               <term n="3">Namen</term>
+               <term n="4">Notarsunterschrift</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,8 +82,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -100,6 +104,9 @@
                <bibl type="publication" subtype="other">SB XII 10937</bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung und zu Z.4 vgl. P.Oxy. 83 5367.8 (ii)n.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
