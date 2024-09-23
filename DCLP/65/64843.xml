@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64843" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 64843</title>
+            <title>Anaphora</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">64843</idno>
             <idno type="dclp-hybrid">tm;;64843</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>parchment</material>
+                           <dimensions>
+                              <width unit="cm">10</width>
+                              <height unit="cm">10.2</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,15 +46,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0400" notAfter="0599">400 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -57,18 +65,21 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>liturgy</term>
-               <term>prayer</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">anaphora with trishagion</term>
+               <term n="1" type="description">prayer</term>
+               <term n="2" type="description">liturgical</term>
+               <term n="3" type="religion">christian</term>
+               <term n="4" type="culture">religion</term>
+               <term n="5">liturgy</term>
+               <term n="6">prayer</term>
+               <term n="7">anaphora</term>
+               <term n="8" type="overview">anaphora with trishagion</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -79,8 +90,8 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="r" type="textpart">
@@ -124,14 +135,42 @@
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Archiv 21, pl.6b</bibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="http://ww2.smb.museum/berlpap/Original/P_17032_R_4.jpg"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="http://ww2.smb.museum/berlpap/Original/P_17032_V_4.jpg"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/48643"/>
+                  <biblScope n="1" unit="number">8</biblScope>
+                  <biblScope n="2" unit="page" from="72" to="74">72-74</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/15607"/>
+                  <biblScope n="1" unit="number">12</biblScope>
+                  <biblScope n="2" unit="page" from="151" to="155">151-155</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96418"/>
+                  <biblScope n="1" unit="number">302</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
