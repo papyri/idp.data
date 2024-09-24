@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18584">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe an den Statthalter, Alexandrien</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Alexandria</origPlace>
                      <origDate when="-0004-02-14">
-                        <certainty locus="value" match="../day-from-date(@when)"/>14. Febr. 4 v.Chr. (Tag unsicher)</origDate>
+                14. Febr. 4 v.Chr. (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,23 +65,30 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Helenos an den Präfekten Gaius Tyrannius</term>
-               <term>Helenos versucht als Jude</term>
-               <term>der Kopfsteuer unter Hinweis auf sein Bürgerrecht und sein Alter zu entgehen</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Helenos an den Präfekten Gaius Tyrannius</term>
+               <term n="3">Helenos versucht als Jude</term>
+               <term n="4">der Kopfsteuer unter Hinweis auf sein Bürgerrecht und sein Alter zu entgehen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-09-24T10:15:48-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-09-20T07:35:36-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-09-20T07:34:42-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added the journal article correction by P. van Minnen (Tyche 36, Korr. Tyche 1070), added a corresponding general note</change>
          <change who="HGV" when="1994-11-04">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Auf derselben Seite: Duplikat zu BGU IV 1130. Zur Datierung vgl. ebenda. </p>
+            <p>Auf derselben Seite: Duplikat zu BGU IV 1130. Zur Datierung vgl. ebenda.
+Zu Z. 2-3 und 12-13 vgl. Tyche 36, 2021, S. 203-204, Korr. Tyche 1070.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -95,8 +105,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">1140</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1140</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -115,8 +125,8 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">W.Chr. 58</bibl>
-               <bibl type="publication" subtype="other">C.Pap.Jud. II 151</bibl>
+               <bibl type="publication" subtype="other" n="1">W.Chr. 58</bibl>
+               <bibl type="publication" subtype="other" n="2">C.Pap.Jud. II 151</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -128,14 +138,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://berlpap.smb.museum/00562/"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="http://berlpap.smb.museum/16989/"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
