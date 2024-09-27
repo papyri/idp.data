@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv9325">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>Frammento di registro di edifici sottoposti a vincolo</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">9325</idno>
@@ -31,16 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="0235-06" notAfter="0235-08-29">
-                        <certainty locus="value" match="../day-from-date(@notBefore)"/>Juni - 29. Aug. 235 (Tag unsicher)</origDate>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
+                     <origDate notBefore="0235-06" notAfter="0235-08-29">Juni 235 - 29. Aug. 235</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,8 +65,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Register</term>
-               <term>Häuser und Land</term>
+               <term n="1">Register</term>
+               <term n="2">Häuser und Land</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,8 +75,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. ZPE 62, 1986, S. 108 - 109.</p>
@@ -83,9 +84,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">735</biblScope>
+                  <title level="s" type="abbreviated">Aegyptus</title>
+                  <biblScope n="1" type="volume">103</biblScope>
+                  <biblScope n="2" type="fascicle">(2023)</biblScope>
+                  <biblScope n="3" type="generic">S. 69</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -108,6 +110,22 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="mentionedDates">
+            <list>
+               <item>
+                  <date type="mentioned" notBefore="0228" notAfter="0234">
+              228 - 234
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+            </list>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">BGU 3, 735</bibl>
+               <bibl type="publication" subtype="other" n="2">ZPE 62, 1986, S. 108 - 109. (Datierung)</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
