@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv832258">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Account of Arrears in Grain</title>
@@ -32,17 +32,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0501" notAfter="0600" precision="low">Ende VI</origDate>
+                     <origPlace>Oxyrhynchos (Oxyrhynchites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
+                               notBefore="0573"
+                               notAfter="0574">573 - 574</origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
+                               notBefore="0588"
+                               notAfter="0589">588 - 589</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,7 +59,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,9 +76,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung</term>
-               <term>Getreide</term>
-               <term>Rückstände</term>
+               <term n="1">Abrechnung</term>
+               <term n="2">Getreide</term>
+               <term n="3">Rückstände</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,15 +86,15 @@
          <change who="HGV" when="2021-11-30">Record created</change>
          <change who="HGV" when="2021-12-02">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">84</biblScope>
-                  <biblScope type="numbers">5468</biblScope>
+                  <biblScope n="1" type="volume">84</biblScope>
+                  <biblScope n="2" type="numbers">5468</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,6 +108,9 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung vgl. P.Oxy. 87 5622.2 n.</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
