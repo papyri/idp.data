@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv16202">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Legal Proceedings Concerning Sheep and Goats</title>
@@ -31,17 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites (?)</origPlace>
+                     <origPlace>Oxyrhynchites ?, Ägypten</origPlace>
                      <origDate notBefore="0027" notAfter="0037">
-                        <precision match="../@notBefore" degree="0.5"/>ca. 27 - 37 (?)</origDate>
+                ca. 27 - 37
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    cert="low"
                                    ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,42 +69,48 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Akten (Gericht)</term>
-               <term>Schafe</term>
-               <term>Namen</term>
+               <term n="1">Akten (Gericht)</term>
+               <term n="2">Schafe</term>
+               <term n="3">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-10-08T04:11:38-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-10-08T04:05:31-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-10-08T04:04:27-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Added new link</change>
          <change who="HGV" when="1991-01-29">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Z. 2: 24 - 25; Z. 3: 25 - 26; Z. 4: 26 - 27 und 27 - 28; Z. 8: 24 - 25</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 2</ref>
                   <date type="mentioned" notBefore="0024" notAfter="0025">24 - 25</date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 3</ref>
                   <date type="mentioned" notBefore="0025" notAfter="0026">25 - 26</date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 4</ref>
                   <date type="mentioned" notBefore="0026" notAfter="0027">26 - 27</date>
                </item>
-               <item>
+               <item n="4">
                   <ref>Z. 4</ref>
                   <date type="mentioned" notBefore="0027" notAfter="0028">27 - 28</date>
                </item>
-               <item>
+               <item n="5">
                   <ref>Z. 8</ref>
                   <date type="mentioned" notBefore="0024" notAfter="0025">24 - 25</date>
                </item>
@@ -110,8 +120,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Wash. Univ.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">1</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">1</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -131,11 +141,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
+                  <graphic url="https://web.archive.org/web/20200924190039/http://omeka.wustl.edu/omeka/exhibits/show/papyri-collection/papyri-publication/publicationp1"/>
+               </figure>
+               <figure n="2">
                   <graphic url="http://omeka.wustl.edu/omeka/items/show/8046"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
