@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35760">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Darlehensvertrag</title>
@@ -31,24 +31,32 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origPlace>Oxyrhynchos (Oxyrhynchites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0467-07-25"
                                notAfter="0467-08-23">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>25. Juli - 23. Aug. 467 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                25. Juli - 23. Aug. 467 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0497-07-25"
                                notAfter="0497-08-23">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>25. Juli - 23. Aug. 497 (Jahr unsicher)</origDate>
+                25. Juli - 23. Aug. 497 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -56,8 +64,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -72,10 +81,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Aur. Petros mit N.N.</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Aur. Petros mit N.N.</term>
+               <term n="3">Darlehen</term>
+               <term n="4">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -84,8 +93,8 @@
          <change who="HGV" when="2011-03-24">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 25. Juli - 23. Aug. 497. Vgl. SB XXVII, S. 55.</p>
@@ -94,23 +103,23 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">26</biblScope>
-                  <biblScope type="numbers">16756</biblScope>
+                  <biblScope n="1" type="volume">26</biblScope>
+                  <biblScope n="2" type="numbers">16756</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">230</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">371</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">247</biblScope>
                </bibl>
@@ -124,20 +133,23 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Wash. Univ. I 16 = SB XX 14641</bibl>
-               <bibl type="publication" subtype="other">P.Wash. Univ. I 23</bibl>
+               <bibl type="publication" subtype="other" n="1">P.Wash. Univ. I 16 = SB XX 14641</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Wash. Univ. I 23</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
-               <figure>
-                  <graphic url="http://omeka.wustl.edu/omeka/items/show/8064"/>
+               <figure n="1">
+                  <graphic url="https://web.archive.org/web/20170924233647/http://omeka.wustl.edu/omeka/exhibits/show/papyri-collection/item/8051"/>
                </figure>
-               <figure>
+               <figure n="2">
+                  <graphic url="https://web.archive.org/web/20170924233740/http://omeka.wustl.edu/omeka/exhibits/show/papyri-collection/item/8064"/>
+               </figure>
+               <figure n="3">
                   <graphic url="http://omeka.wustl.edu/omeka/items/show/8081"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
