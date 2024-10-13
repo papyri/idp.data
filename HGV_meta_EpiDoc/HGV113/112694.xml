@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv112694">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -33,14 +33,14 @@
                <history>
                   <origin>
                      <origPlace>Krokodilopolis</origPlace>
-                     <origDate xml:id="dateAlternativeX"
-                               notBefore="-0178-02-25"
-                               notAfter="-0178-02-25">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>25. Febr. 178 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY"
-                               notBefore="-0167-02-22"
-                               notAfter="-0167-02-22">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>22. Febr. 167 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0178-02-25">
+                25. Febr. 178 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0167-02-22">
+                22. Febr. 167 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -53,7 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,18 +70,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Bericht</term>
-               <term>Gericht</term>
-               <term>Chrematisten</term>
-               <term>Krankheit</term>
+               <term n="1">Bericht</term>
+               <term n="2">Gericht</term>
+               <term n="3">Chrematisten</term>
+               <term n="4">Krankheit</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="HGV" when="2024-10-09">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -92,6 +94,11 @@
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="bibliography" subtype="translations">
+            <listBibl xml:lang="en">
+               <bibl type="translations">(l. 1) Year 3, Tybi 22 in Krokodilon polis of the Arsinoites. The chrematists - - royal affairs Theoxenos [son of NN], Sarapion son of Philostratos, who [judge the royal and] fiscal and private affairs. [Because the third one] Apollonios is ill.</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
