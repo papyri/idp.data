@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv22169">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Account of Receipts from and Expenditure on Estates</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
+                     <origPlace>Oxyrhynchos (Oxyrhynchites, Ägypten)</origPlace>
                      <origDate notBefore="0576" notAfter="0577" cert="low">576 - 577 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,10 +68,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnungen</term>
-               <term>Ländereien</term>
-               <term>Quittungen</term>
-               <term>Ausgaben</term>
+               <term n="1">Abrechnungen</term>
+               <term n="2">Ländereien</term>
+               <term n="3">Quittungen</term>
+               <term n="4">Ausgaben</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,11 +80,11 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. BL IX, S. 194 (anders BL XI, S. 160). Zu Z. 24 vgl. P.Oxy. LXX 4789,11 Anm.</p>
+            <p>Zur Datierung vgl. BL IX, S. 194 (anders BL XI, S. 160); Datierung von BL IX bestätigt durch P.Oxy. 83 5396.3 n. Zu Z. 24 vgl. P.Oxy. LXX 4789,11 Anm.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -90,7 +93,7 @@
             <list>
                <item>
                   <ref>Z. 108</ref>
-                  <date type="mentioned" cert="low" notBefore="0562" notAfter="0563">562 - 563 (?)</date>
+                  <date type="mentioned" notBefore="0562" notAfter="0563" cert="low">562 - 563 (?)</date>
                </item>
             </list>
          </div>
@@ -98,27 +101,27 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">18</biblScope>
-                  <biblScope type="numbers">2195</biblScope>
+                  <biblScope n="1" type="volume">18</biblScope>
+                  <biblScope n="2" type="numbers">2195</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">255</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">194</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">160</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="4">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">144</biblScope>
                </bibl>
@@ -135,5 +138,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
