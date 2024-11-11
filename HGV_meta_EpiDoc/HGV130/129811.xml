@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv129811">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Contrat passé entre deux femmes</title>
@@ -29,17 +29,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Leukogion (Herakleopolites)</origPlace>
+                     <origPlace>Leukogion (Herakleopolites, Ägypten)</origPlace>
                      <origDate notBefore="0601" notAfter="0700" precision="low">VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/741509 https://www.trismegistos.org/place/1248">Leukogion</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +66,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Tamene und Lacher</term>
-               <term>Inhalt unbestimmbar</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Tamene und Lacher</term>
+               <term n="3">Inhalt unbestimmbar</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,18 +77,18 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Griechisch - Koptisch. Datierung: 8. Mai, 15. Indiktion.  Vgl. ZPE 177, 2011, S. 237-239.  Zu Z. 16 vgl. BASP 50, 2013, S. 326. Zu Z. 12 vgl. Tyche 30, 2015, S. 219, Korr. Tyche 782; zu Z. 3 vgl. ebenda, Anm. 15.</p>
+            <p>Griechisch - Koptisch. Datierung: 8. Mai, 15. Indiktion. Vgl. ZPE 177, 2011, S. 237-239. Zu Z. 16 vgl. BASP 50, 2013, S. 326. Zu Z. 12 vgl. Tyche 30, 2015, S. 219, Korr. Tyche 782; zu Z. 3 vgl. ebenda, Anm. 15.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Gen.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">189</biblScope>
+                  <title level="s" type="abbreviated">SB Kopt.</title>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">1807</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -96,14 +99,19 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.ville-ge.ch/musinfo/imageZoom/?iip=bgeiip/papyrus/pgen149-ri.ptif"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="https://archives.bge-geneve.ch/ark:/17786/vta2648eaa40b282d94"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Gen. 4 189</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
