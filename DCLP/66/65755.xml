@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m65755" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Ryl. 1 39, P. Grenf. 2 7, P. Hib. 2 190</title>
@@ -13,17 +13,20 @@
             <idno type="LDAB">7009</idno>
             <idno type="filename">65755</idno>
             <idno type="dclp-hybrid">tm;;65755</idno>
-            <idno type="MP3">02343.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">Heidelberg, Institut für Papyrologie P. G 401 a-k</idno>
-                     <idno type="invNo">Manchester, John Rylands Library Gr. 39</idno>
+                     <idno type="invNo" n="1">Heidelberg, Institut für Papyrologie P. G 401 a-k</idno>
+                     <idno type="invNo" n="2">Manchester, John Rylands Library Gr. 39</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -42,19 +45,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Ankyropolis (Herakleopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0400" notAfter="-0200">400 - 200 v. Chr.</origDate>
+                     <origPlace>Fundort: Ankyropolis (Herakleopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0400" notAfter="-0200">400 - 200 v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/182">Ankyropolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/182">Ankyropolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -65,18 +69,18 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose medicine</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Diocles of Carystus?; Pathos, aetia, therapeia</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">prose medicine</term>
+               <term n="5" type="overview">Diocles of Carystus?; Pathos, aetia, therapeia</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -85,66 +89,702 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>Throughout the text Gerhard approximated the number of missing letters in the lacuna. Marganne does not follow this but prints a white space between the brackets. The presentation here in DCLP follows the practice of Gerhard, unless there is a difference. In The case of P.Hibeh 2.190 the same applies to Turners estimates of missing letters.</p>
+        <p>The supplements displayed here are Gerhard’s (except in P.Hibeh 2.190). Only when Marganne offers a different version, do we indicate both readings.</p>
+        <p>The supplements displayed in P.Hibeh 2.190 are Turner’s. only when Marganne offers a different version, do we indicate both readings.</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="7" subtype="PGrenf2" type="textpart">
+<div n="1" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>  
+<lb n="1"/><gap reason="lost" quantity="6" unit="character"/> <supplied reason="lost">ἐν</supplied> τοῖς <supplied reason="lost">ἀ</supplied>ριστεροῖς
+<lb n="2"/><gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost">καὶ ἐν</supplied> <unclear>τ</unclear><supplied reason="lost">οῖς</supplied> δεξιοῖς γίνεσ
+<lb n="3" break="no"/><supplied reason="lost">σθαι εἴωθε</supplied><unclear>ν</unclear>, ὲπειδὴ καὶ τὸ πν<unclear>ε</unclear><supplied reason="lost">ῦ</supplied>
+<lb n="4" break="no"/><supplied reason="lost">μα</supplied> <gap reason="lost" quantity="6" unit="character"/> ν ἐστιν ἐν τούτοι<supplied reason="lost">ς</supplied>
+<lb n="5"/><gap reason="lost" quantity="7" unit="character"/> <supplied reason="lost">π</supplied>ολλάκις τὸ δε<unclear>ξ</unclear><supplied reason="lost">ιὸν</supplied>
+<lb n="6"/><gap reason="lost" quantity="6" unit="character"/> <supplied reason="lost">ἀνα</supplied><unclear>νκ</unclear>α<unclear>ίων</unclear><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="5" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="4" unit="character"/></rdg></app><unclear>ε</unclear><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="3" unit="character"/></rdg></app>
+<lb n="7"/><gap reason="lost" quantity="8" unit="character"/> <supplied reason="lost">γ</supplied>ὰρ <unclear>ἐ</unclear><supplied reason="lost">σ</supplied>τι <gap reason="lost" quantity="5" unit="character"/>ν
+<lb n="8"/><gap reason="lost" quantity="7" unit="character"/> <supplied reason="lost">α</supplied><unclear>ὐ</unclear>τὴν δοίημεν
+<lb n="9"/><supplied reason="lost">ἂν</supplied> <gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">τὰ</supplied> δεξιὰ κατὰ τ<gap reason="lost" quantity="2" unit="character"/>
+<lb n="10"/><gap reason="lost" quantity="8" unit="character"/>ν τοῦτο π<supplied reason="lost">άσ</supplied><unclear>χ</unclear>ει<unclear>ν</unclear>
+<lb n="11"/><supplied reason="lost">το</supplied>ῦτο συν<unclear>β</unclear><supplied reason="lost">αίνει</supplied>
+<lb n="12"/><gap reason="lost" quantity="8" unit="character"/> <supplied reason="lost">τ</supplied>οῦτο <unclear>π</unclear><gap reason="lost" quantity="2" unit="character"/><unclear>αν</unclear><gap reason="lost" quantity="2" unit="character"/>
+<lb n="13"/><gap reason="lost" quantity="10" unit="character"/><unclear>γ</unclear><gap reason="lost" quantity="2" unit="character"/><unclear>ν</unclear>
+<lb n="14"/><gap reason="lost" quantity="8" unit="character"/><unclear>μ</unclear><gap reason="lost" quantity="1" unit="character"/>νο<unclear>ς</unclear> <supplied reason="lost">ὅ</supplied>θεν
+<lb n="15"/><gap reason="lost" quantity="7" unit="character"/> <supplied reason="lost">ἀ</supplied>λλὰ <gap reason="lost" quantity="1" unit="character"/>υν<gap reason="illegible" quantity="2" unit="character"/>ιν τὴν
+<lb n="16"/><gap reason="lost" quantity="8" unit="character"/>ν ἀνό<unclear>μ</unclear>οις δ<unclear>ῆ</unclear>τα
+<lb n="17"/><gap reason="lost" quantity="8" unit="character"/>ν<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/>ερη<gap reason="lost" quantity="1" unit="character"/>ε<unclear>ν</unclear>
+<lb n="18"/><gap reason="lost" quantity="13" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="6" unit="character"/>
+<lb n="18"/> <gap reason="lost" extent="unknown" unit="line"/>  
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="19"/> <gap reason="lost" extent="unknown" unit="line"/>  
+<lb n="19"/><unclear>λογο</unclear><gap reason="lost" quantity="21" unit="character"/>
+<lb n="20"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<lb n="21"/><unclear>η</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="22"/><unclear>τ</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="lost" quantity="22" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="23"/>τα<unclear>υ</unclear><gap reason="lost" quantity="23" unit="character"/>
+<lb n="24"/>ἐν αὐτ<gap reason="lost" quantity="20" unit="character"/>
+<lb n="25"/><gap reason="lost" quantity="26" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="26"/>κα<unclear>ι</unclear> <unclear>α</unclear> <gap reason="lost" quantity="22" unit="character"/>
+<lb n="27"/><gap reason="lost" quantity="26" unit="character"/>
+<lb n="28"/><unclear>ν</unclear> <gap reason="lost" quantity="25" unit="character"/>
+<lb n="29"/>παλ<supplied reason="lost">ιν</supplied> <gap reason="lost" quantity="21" unit="character"/> <supplied reason="lost">ἔ</supplied>
+<lb n="30" break="no"/>ξω τ<gap reason="lost" quantity="22" unit="character"/>
+<lb n="31"/><unclear>δ</unclear>ειν<app type="editorial"><lem resp="Marganne"><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="15" unit="character"/> <supplied reason="lost">συνβέβη</supplied></rdg></app>
+<lb n="32" break="no"/>κεν<gap reason="lost" quantity="22" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="33"/>τ<unclear>ινο</unclear><gap reason="lost" quantity="22" unit="character"/>
+<lb n="34"/><app type="editorial"><lem resp="Marganne">κ<gap reason="lost" quantity="1" unit="character"/>ιμ</lem><rdg resp="Gerhard">κ<supplied reason="lost">ε</supplied>ιμ</rdg></app> <gap reason="lost" quantity="21" unit="character"/>
+<lb n="35"/>τ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="36"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="2/3" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" quantity="24" unit="character"/>δεος
+<lb n="2"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="2"/>αυγην <unclear>μ</unclear><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="4" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="3" unit="character"/></rdg></app>τ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="8" unit="character"/> <supplied reason="lost">ἀναν</supplied>
+<lb n="3" break="no"/>καῖον ἐσ<supplied reason="lost">τὶν</supplied> <unclear>α</unclear>ν<gap reason="lost" quantity="11" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="4"/><unclear>τοὺς</unclear> δα<app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="3" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="2" unit="character"/></rdg></app> <unclear>λ</unclear>α<gap reason="lost" quantity="13" unit="character"/>
+<lb n="5"/>κεο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>να<gap reason="lost" quantity="15" unit="character"/>
+<lb n="6"/>καὶ α<gap reason="lost" quantity="2" unit="character"/>τον τ<gap reason="lost" quantity="13" unit="character"/>
+<lb n="7"/>τοῖς ἀναισθ<supplied reason="lost">ήτως</supplied> <gap reason="lost" quantity="13" unit="character"/>
+<lb n="8"/>δακρύουσιν <gap reason="lost" quantity="16" unit="character"/>
+<lb n="9"/><gap reason="lost" quantity="1" unit="character"/> δὲ φυ<gap reason="lost" quantity="17" unit="character"/>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="4" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear>ᾶλλον<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ἄν <app type="editorial"><lem resp="Marganne">τις</lem><rdg resp="Gerhard">τις<gap reason="illegible" quantity="1" unit="character"/></rdg></app> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>τὴν δ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>τ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="5" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="8" unit="character"/><unclear>τ</unclear>ω<gap reason="lost" quantity="13" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="6" unit="character"/><unclear>λ</unclear>α παρα<gap reason="lost" quantity="10" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="7" unit="character"/> λεγομένα<unclear>ς</unclear> <gap reason="lost" quantity="8" unit="character"/>
+<lb n="4"/><gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">δῆλ</supplied>ον ὡς οὐ δεῖ τ<gap reason="lost" quantity="5" unit="character"/>
+<lb n="5"/><gap reason="lost" quantity="6" unit="character"/> <supplied reason="lost">ὀδ</supplied>ύνης ε<gap reason="lost" quantity="19" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="6" unit="character"/>αβαλεῖν ἐ<unclear>ν</unclear> <supplied reason="lost">τοῖς</supplied>
+<lb n="7"/><supplied reason="lost">τοιούτ</supplied>οις πάθεσι <gap reason="lost" quantity="9" unit="character"/>
+<lb n="8"/><gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost">κι</supplied>νήσεως γ<gap reason="lost" quantity="10" unit="character"/>
+<lb n="9"/><app type="editorial"><lem resp="Marganne"><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost">θερ</supplied></rdg></app>μασιαν <gap reason="lost" quantity="12" unit="character"/>
+<lb n="10"/><gap reason="lost" quantity="6" unit="character"/>νασ<unclear>σει</unclear> <gap reason="lost" quantity="13" unit="character"/>
+</ab></div>
+<div n="6/7" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="11" unit="character"/>ει<gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="10" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="11" unit="character"/><unclear>δ</unclear>οντω<unclear>ν</unclear>
+<lb n="3"/><gap reason="lost" quantity="14" unit="character"/>ος δὲ<gap reason="illegible" quantity="2" unit="character"/>
+<lb n="4"/><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="7" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="9" unit="character"/></rdg></app><unclear>ε</unclear>ων ἔχοντες
+<lb n="5"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="6"/><gap reason="lost" quantity="9" unit="character"/>ης<app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="3" unit="character"/></rdg></app><gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" quantity="6" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="10" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α<gap reason="lost" quantity="11" unit="character"/>
+<lb n="8"/><gap reason="lost" quantity="8" unit="character"/>ουδ<gap reason="lost" quantity="11" unit="character"/>
+<lb n="9"/>τ<supplied reason="lost"><gap reason="illegible" quantity="2" unit="character"/> α</supplied>ὐγὴν δακρυ<gap reason="lost" quantity="9" unit="character"/>
+<lb n="10"/><unclear>κ</unclear><gap reason="lost" quantity="3" unit="character"/>μην καὶ διὰ τί κ<unclear>οι</unclear><supplied reason="lost">νὸν</supplied>
+<lb n="11"/>γί<supplied reason="lost">νε</supplied>ται μ<unclear>ᾶλλ</unclear>ον συν<unclear>ανφ</unclear><supplied reason="lost">οτέρων</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="12"/><unclear>μ</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><unclear>αι</unclear> <unclear>π</unclear>ερὶ τοῦ σοφ<gap reason="lost" quantity="5" unit="character"/>
+<lb n="13"/>σω<app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="3" unit="character"/></rdg></app> καὶ φυ<gap reason="illegible" quantity="10" unit="character"/>
+<lb n="14"/>πο<gap reason="lost" quantity="5" unit="character"/> εχοντ<gap reason="illegible" quantity="2" unit="character"/> καὶ τῶι
+<lb n="15"/>τ<gap reason="lost" quantity="6" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><unclear>κυ</unclear><gap reason="illegible" quantity="2" unit="character"/>αι ἐὰν<gap reason="lost" quantity="1" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="8" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>τη<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/>ω<unclear>τ</unclear>α<unclear>ισ</unclear>α
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="9" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="8" unit="character"/> <supplied reason="lost">προσ</supplied>ῆκεν ἡμῖν
+<lb n="2"/><gap reason="lost" quantity="12" unit="character"/><unclear>ε</unclear>νκρα<unclear>τ</unclear><gap reason="lost" quantity="2" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="13" unit="character"/>νη<unclear>ς</unclear> <unclear>θ</unclear>ερ<unclear>μ</unclear><gap reason="lost" quantity="3" unit="character"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+
+<div n="401" subtype="PHeid" type="textpart">
+<div n="10" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>  
+<lb n="1"/><gap reason="lost" quantity="11" unit="character"/><unclear>λ</unclear>υκαπο
+<lb n="2" xml:id="div13-div13-div13-lb3"/><gap reason="lost" quantity="11" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> ἐχθ<add place="above">λ</add>είβειν
+<lb n="3"/><gap reason="lost" quantity="11" unit="character"/> πάχους δυσ
+<lb n="4" break="no"/><gap reason="lost" quantity="10" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> τοῦ φλέγμα
+<lb n="5" break="no"/><supplied reason="lost">τος</supplied> <gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>λω<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ειαν
+<lb n="6"/><gap reason="lost" quantity="7" unit="character"/>ολον ὅτ<supplied reason="lost">ι</supplied> τ<unclear>ὸ</unclear> πν<unclear>ε</unclear><supplied reason="lost">ῦ</supplied>
+<lb n="7" break="no"/><supplied reason="lost">μα</supplied> <gap reason="lost" quantity="6" unit="character"/> τε καὶ πάλιν ε
+<lb n="8" break="no"/><gap reason="lost" quantity="7" unit="character"/>ιουτ<unclear>η</unclear> <gap reason="illegible" quantity="1" unit="character"/>ικρο
+<lb n="9" break="no"/><gap reason="lost" quantity="8" unit="character"/>ικειαν <gap reason="illegible" quantity="1" unit="character"/>υκεινη
+<lb n="10"/><gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost">ἀδυ</supplied>νατοῦσιν.
+<lb n="11"/><gap reason="lost" quantity="8" unit="character"/>ς τοιαῦτα τῶν
+<lb n="12"/><gap reason="lost" quantity="6" unit="character"/> <supplied reason="lost">ῥ</supplied>αιδίως ἂν ἐχθλείβειν
+<lb n="13"/><supplied reason="lost">δύναι</supplied>το.
+<lb n="14"/><gap reason="lost" quantity="6" unit="character"/><unclear>ε</unclear> καὶ τοῖς λελειμαγ<supplied reason="lost">χη</supplied>
+<lb n="15" break="no"/><supplied reason="lost">μένοις κ</supplied>αὶ τοῖς ὑπό τινος
+<lb n="16"/><gap reason="lost" quantity="6" unit="character"/> <supplied reason="lost">κ</supplied>αθάρσεως ἐκτε
+<lb n="17" break="no"/><supplied reason="lost">τηκόσι π</supplied>ροσῆκε γίνεσθαι
+<lb n="18"/><gap reason="lost" quantity="8" unit="character"/>ωσιν.
+<lb n="19"/><gap reason="lost" quantity="5" unit="character"/> <supplied reason="lost">το</supplied>ιούτο<unclear>ι</unclear>ς ἰσχυ
+<lb n="20" break="no"/><supplied reason="lost">ροῖς</supplied> <gap reason="lost" quantity="3" unit="character"/> τῶν <unclear>α</unclear>ὐτῶν <gap reason="illegible" quantity="1" unit="character"/>ε<gap reason="illegible" quantity="1" unit="character"/>
+<lb n="21" xml:id="div13-div13-div13-lb22"/><gap reason="lost" quantity="4" unit="character"/> <supplied reason="lost">γ</supplied><unclear>ί</unclear>νεται
+<lb n="22" xml:id="div13-div13-div13-lb23"/><gap reason="lost" quantity="1" unit="character"/> <supplied reason="lost">συ</supplied>νβαίνοντος δὲ του
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="23"/> <gap reason="lost" extent="unknown" unit="line"/>  
+<lb n="23"/><gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="25" unit="character"/>
+<lb n="24"/><unclear>ι</unclear> <gap reason="lost" quantity="25" unit="character"/>
+<lb n="25"/>κ<gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="26"/><gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="25" unit="character"/>
+<lb n="27"/><unclear>ε</unclear> <gap reason="lost" quantity="25" unit="character"/>
+<lb n="28"/><unclear>π</unclear> <gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="29"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="31"/><unclear>θ</unclear> <gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="32"/>τ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="33"/><unclear>ι</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="34"/>τ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="35"/><gap reason="lost" quantity="9" unit="line"/>
+<lb n="44"/><supplied reason="lost"><unclear>τ</unclear><gap reason="illegible" quantity="25" unit="character"/></supplied>
+<lb n="45"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="46"/><unclear>η</unclear><gap reason="lost" quantity="25" unit="character"/>
+</ab></div>
+</div>
+<div n="11" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">δῆ</supplied>λον ὡς ἐνγύς ἐ<unclear>σ</unclear><supplied reason="lost">τιν</supplied>
+<lb n="2"/><gap reason="lost" quantity="7" unit="character"/> τὰ σημεῖα τ<gap reason="lost" quantity="4" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="7" unit="character"/>ν ἄν τις οὐκ<gap reason="lost" quantity="4" unit="character"/>
+<lb n="4"/><gap reason="lost" quantity="5" unit="character"/>ν οὖν τούτω<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="7" unit="character"/>
+<lb n="5"/><gap reason="lost" quantity="5" unit="character"/>νει χ<unclear>ε</unclear><gap reason="illegible" quantity="1" unit="character"/>ιν<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="8" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="5" unit="character"/>ης <app type="editorial"><lem resp="Marganne">δι<gap reason="illegible" quantity="2" unit="character"/>.τ<gap reason="illegible" quantity="3" unit="character"/></lem><rdg resp="Gerhard">δι<unclear>οι</unclear>τ<unclear>ιωεν</unclear></rdg></app> <gap reason="lost" quantity="4" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="4" unit="character"/>τερον <unclear>ε</unclear>λ<unclear>α</unclear><gap reason="lost" quantity="9" unit="character"/>
+<lb n="8"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>σ</unclear>αι καὶ πάλι<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="4" unit="character"/>
+<lb n="9"/><gap reason="lost" quantity="5" unit="character"/>οντα δὲ γείν<gap reason="lost" quantity="5" unit="character"/>
+<lb n="10"/><gap reason="lost" quantity="5" unit="character"/>μεν.
+<lb n="11"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ν οὖ<unclear>ν</unclear> δι<unclear>α</unclear><gap reason="illegible" quantity="2" unit="character"/>γ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="5" unit="character"/>
+<lb n="12"/><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">γ</supplied></lem><rdg resp="Gerhard"><gap reason="lost" quantity="4" unit="character"/></rdg></app>είνεσθ<unclear>αι</unclear> <unclear>π</unclear>ᾶσα<gap reason="lost" quantity="4" unit="character"/>
+<lb n="13"/><gap reason="lost" quantity="5" unit="character"/>σειεν· ἐπεὶ γὰρ<gap reason="lost" quantity="3" unit="character"/>
+<lb n="14"/><gap reason="lost" quantity="2" unit="character"/> <supplied reason="lost">ἐν</supplied> τῶι νοσεῖν
+<lb n="15"/><gap reason="lost" quantity="4" unit="character"/><unclear>η</unclear> γ<unclear>ί</unclear>νεται τῶ<unclear>ν</unclear><gap reason="lost" quantity="5" unit="character"/>
+<lb n="16"/><gap reason="lost" quantity="2" unit="character"/> <supplied reason="lost">πν</supplied>ε<unclear>ῦ</unclear>μα κατὰ το<gap reason="lost" quantity="6" unit="character"/>
+<lb n="17"/><gap reason="lost" quantity="3" unit="character"/><app type="editorial"><lem resp="Marganne"><unclear>ν</unclear><gap reason="illegible" quantity="7" unit="character"/>μοιγ<gap reason="illegible" quantity="1" unit="character"/></lem><rdg resp="Gerhard">ν<gap reason="illegible" quantity="1" unit="character"/> <unclear>ανειμε</unclear>μ<unclear>ο</unclear>ιγ<gap reason="illegible" quantity="1" unit="character"/></rdg></app> <gap reason="lost" quantity="4" unit="character"/>
+<lb n="18"/><gap reason="lost" quantity="3" unit="character"/> <choice><reg>οἷον</reg><orig>ο<add place="above">ο</add>ιν</orig></choice> <unclear>δ</unclear>ῆλον ὡς οὐ δ<supplied reason="lost">εῖ</supplied>
+<lb n="19"/><gap reason="lost" quantity="1" unit="character"/> <supplied reason="lost">π</supplied>νεῦμ<unclear>α</unclear> <gap reason="lost" quantity="3" unit="character"/><unclear>ι</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="4" unit="character"/>
+<lb n="20"/><gap reason="lost" quantity="2" unit="character"/><unclear>ε</unclear><gap reason="lost" quantity="2" unit="character"/> ε<supplied reason="lost">ἰ</supplied>κός ἐ<supplied reason="lost">στι</supplied><unclear>ν</unclear> <unclear>ο</unclear><gap reason="lost" quantity="4" unit="character"/>
+<lb n="21"/><gap reason="lost" quantity="2" unit="character"/> ἀνα<supplied reason="lost">ν</supplied>καῖον <unclear>σαν</unclear>α<app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="6" unit="character"/></lem><rdg resp="Gerhard"><gap reason="lost" quantity="5" unit="character"/></rdg></app>
+<lb n="22"/><gap reason="lost" quantity="3" unit="character"/><unclear>τα</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>ιο</unclear><gap reason="lost" quantity="2" unit="character"/>νεισ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><unclear>ευι</unclear> <gap reason="lost" quantity="2" unit="character"/>
+<lb n="23"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="12" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/> <gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="13" unit="character"/> <unclear>πρ</unclear><gap reason="illegible" quantity="1" unit="character"/>νε
+<lb n="2"/><gap reason="lost" quantity="13" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ον ἐστιν
+<lb n="3"/><gap reason="lost" quantity="13" unit="character"/><unclear>η</unclear><gap reason="lost" quantity="1" unit="character"/>ας
+<lb n="4"/><gap reason="lost" quantity="17" unit="character"/>νη<gap reason="illegible" quantity="2" unit="character"/>
+<lb n="5"/><gap reason="lost" quantity="17" unit="character"/><unclear>α</unclear>λ<unclear>ει</unclear>ν
+<lb n="6"/><gap reason="lost" quantity="17" unit="character"/><unclear>ε</unclear>α<unclear>ν</unclear>
+<lb n="7"/> <gap reason="lost" quantity="2" unit="line"/>
+<lb n="9"/><gap reason="lost" quantity="18" unit="character"/>ν
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="10"/> <gap reason="lost" extent="unknown" unit="line"/>
+<lb n="10"/><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="6" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" quantity="6" unit="character"/></lem><rdg resp="Gerhard"><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="6" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="4" unit="character"/><gap reason="lost" quantity="6" unit="character"/></rdg></app>
+<lb n="11"/>.<gap reason="lost" quantity="3" unit="character"/><unclear>ατ</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>οις ἰσχου<gap reason="lost" quantity="4" unit="character"/>
+<lb n="12"/><unclear>τ</unclear>ω. <supplied reason="lost">β</supplied><unclear>λ</unclear>έφα<supplied reason="lost">ρ</supplied>ον ἢ χεῖλος
+<lb n="13"/>γίνητα<unclear>ι</unclear> διά τι <unclear>φ</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>ι</unclear>νο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/>
+<lb n="14"/>ἐνγὺς εἶναι τὸν <unclear>θ</unclear>ά<unclear>ν</unclear><supplied reason="lost">ατον</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="15"/>τὴν <gap reason="lost" quantity="2" unit="character"/>εννουν <app type="editorial"><lem resp="Marganne">τ<add place="above"><unclear>σ</unclear></add><unclear>ο</unclear><gap reason="lost" quantity="7" unit="character"/></lem><rdg resp="Gerhard">τ<add place="above"><unclear>σ</unclear></add>νο<gap reason="lost" quantity="7" unit="character"/></rdg></app>
+<lb n="16"/><gap reason="lost" quantity="2" unit="character"/><unclear>ε</unclear>ν<gap reason="illegible" quantity="2" unit="character"/><unclear>τε</unclear>ίνεσθαι τ<unclear>η</unclear><gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">τὸν</supplied>
+<lb n="17"/>δὲ τὴν χροιὰν ἐσχηκότ<supplied reason="lost">α</supplied>
+<lb n="18"/>περὶ τὸ πρόσωπον ὑγρῶ<supplied reason="lost">ς κα</supplied>
+<lb n="19" break="no"/>θάπερ ἐν τοῖς ὑπὲρ τῶ<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="4" unit="character"/>
+<lb n="20"/>εὶρημένοις δεδ<supplied reason="lost">ηλ</supplied><unclear>ώ</unclear>κα<unclear>μ</unclear><supplied reason="lost">εν</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="21"/><app type="editorial"><lem resp="Marganne"><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="Gerhard"><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/></rdg></app>τησεσθαι<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="8" unit="character"/>
+<lb n="22"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="13" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" quantity="5" unit="character"/> <supplied reason="lost">φερο</supplied>μένου διὰ τῶν 
+<lb n="2"/><gap reason="lost" quantity="5" unit="character"/> <supplied reason="lost">π</supplied><unclear>ό</unclear>ρων εἰς τὸν ἐκτὸς <unclear>ἀ</unclear>
+<lb n="3" break="no"/><supplied reason="lost">ερα</supplied> <gap reason="lost" quantity="3" unit="character"/> ἤτοι πνεύματος
+<lb n="4"/><supplied reason="lost">ἢ</supplied> <gap reason="lost" quantity="2" unit="character"/> <unclear>ει</unclear><add place="above">α</add><unclear>ς</unclear> ἢ τὸ συνανφοτέ<app type="editorial"><lem resp="Marganne">
+<lb n="5" break="no"/><supplied reason="lost">ρου</supplied> <gap reason="lost" quantity="5" unit="character"/></lem><rdg resp="Gerhard"><lb n="5" break="no"/><supplied reason="lost">ρον</supplied> <gap reason="lost" quantity="5" unit="character"/></rdg></app>ων τὸ φῶς <unclear>γ</unclear><supplied reason="lost">ί</supplied>νεσ
+<lb n="6" break="no"/><supplied reason="lost">θαι</supplied> <gap reason="lost" quantity="4" unit="character"/> <unclear>α</unclear> <gap reason="lost" quantity="14" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="13" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>σ<gap reason="lost" quantity="2" unit="character"/><unclear>ων</unclear>
+<lb n="8"/><gap reason="lost" quantity="11" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/> <unclear>ἄλλ</unclear>ο
+<lb n="9"/><gap reason="lost" quantity="11" unit="character"/><unclear>ει</unclear><gap reason="lost" quantity="1" unit="character"/> ν ἤτοι
+<lb n="10"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="11"/><gap reason="lost" quantity="6" unit="character"/><unclear>φυ</unclear><gap reason="illegible" quantity="2" unit="character"/>αν τοῦ φω
+<lb n="12" break="no"/><supplied reason="lost">τὸς<gap reason="illegible" quantity="13" unit="character"/></supplied>ωτ<unclear>ηι</unclear>
+<lb n="13"/><gap reason="lost" quantity="5" unit="character"/><unclear>τ</unclear>ων <gap reason="illegible" quantity="2" unit="character"/> <unclear>ἡ</unclear>μετέρων
+<lb n="14"/><gap reason="lost" quantity="5" unit="character"/>σ<gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ο<unclear>μ</unclear><gap reason="lost" quantity="2" unit="character"/> τὴν αὐτ<unclear>ῶ</unclear>ν
+<lb n="15"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>αι</unclear>λ<gap reason="lost" quantity="2" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="3" unit="character"/>εους τὰς
+<lb n="16"/><gap reason="lost" quantity="4" unit="character"/><unclear>αρα</unclear> γίνεσθαι τοῦ φω
+<lb n="17" break="no"/><supplied reason="lost">τὸς</supplied> <gap reason="lost" quantity="4" unit="character"/><unclear>ν</unclear> ὄψι<unclear>ν</unclear> δυμα<unclear>ν</unclear><gap reason="lost" quantity="3" unit="character"/>
+<lb n="18"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="18"/>τ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="19"/><unclear>τα</unclear><gap reason="lost" quantity="24" unit="character"/>
+<lb n="20"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="14" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="6" unit="character"/><unclear>αι</unclear> φήσειεν
+<lb n="2"/><gap reason="lost" quantity="2" unit="character"/> <supplied reason="lost">οὐδε</supplied>μιᾶς
+<lb n="3"/><gap reason="lost" quantity="6" unit="character"/>ης ἐν τῶι νοσεῖν
+<lb n="4"/><supplied reason="lost">προ</supplied><unclear>σ</unclear>πεσούσης ἀλλὰ τῆς
+<lb n="5"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>ευ<gap reason="lost" quantity="2" unit="character"/><unclear>γ</unclear>ομεν τὴν
+<lb n="6"/><gap reason="lost" quantity="4" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="6" unit="character"/> τε τὴν ἀσθένειαν
+<lb n="8"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> τις καὶ διὰ τὴν
+<lb n="9"/><gap reason="lost" quantity="6" unit="character"/><unclear>σε</unclear> ἐν ταῖς ὄψεσιν θερ
+<lb n="10" break="no"/><supplied reason="lost">μασίαν</supplied> τὴν κατὰ φύσιν ει
+<lb n="11"/><gap reason="lost" quantity="5" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ην ὑπομένειν οἷοί τ<unclear>ε</unclear>
+<lb n="12"/><gap reason="lost" quantity="8" unit="character"/>ως πονηρόν έσ
+<lb n="13"/><supplied reason="lost">τι</supplied> <gap reason="lost" quantity="3" unit="character"/>
+<lb n="14"/><supplied reason="lost">Τὴν ἐν ταῖς</supplied> ὄψ<supplied reason="lost">εσι</supplied> λήμωσιν
+<lb n="15"/><supplied reason="lost">διὰ τὶ σ</supplied><unclear>υ</unclear>νβαίνειν εἴωθεν
+<lb n="16"/><app type="editorial"><lem resp="Marganne"><supplied reason="lost">ῥάιδιον</supplied></lem><rdg resp="Gerhard"><gap reason="lost" quantity="5" unit="character"/></rdg></app> μαθεῖν <g type="dipunct"/> ἐπεὶ γὰρ
+<lb n="17"/><supplied reason="lost">διὰ τῶν</supplied> τῆς ὄψεως πόρων
+<lb n="18"/><supplied reason="lost">φερόμε</supplied><unclear>ν</unclear>ον εἰς τὸν ἔξ<unclear>ω</unclear>
+<lb n="19"/><supplied reason="lost">ἀέρα</supplied> <unclear>π</unclear>νεῦμα καθάπερ εἴ
+<lb n="20" break="no"/><supplied reason="lost">ωθε σ</supplied>υνβαίνειν ὑγρασίαν
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="21"/><gap reason="lost" extent="unknown" unit="line"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="21"/><unclear>ωσ</unclear><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" quantity="20" unit="character"/>
+<lb n="22"/>ὄψεις μ<gap reason="lost" quantity="20" unit="character"/>
+<lb n="23"/><unclear>τ</unclear>ὴν λή<supplied reason="lost">μωσιν</supplied> <gap reason="lost" quantity="17" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="24"/>μικρὰς <gap reason="lost" quantity="20" unit="character"/>
+<lb n="25"/>τὴν λε<unclear>γ</unclear><supplied reason="lost">ομένην</supplied> <gap reason="lost" quantity="13" unit="character"/>
+<lb n="26"/>ταῖς ὄψε<supplied reason="lost">σι</supplied> <gap reason="lost" quantity="17" unit="character"/>
+<lb n="27"/>τὸ πν<supplied reason="lost">εῦμα</supplied> <gap reason="lost" quantity="17" unit="character"/>
+<lb n="28"/>θων τ<gap reason="lost" quantity="21" unit="character"/>
+<lb n="29"/>ἐστιν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="20" unit="character"/>
+<milestone rend="coronis" unit="undefined"/> <milestone rend="paragraphos" unit="undefined"/>
+<lb n="30"/>ἐυ<add place="above">σ</add>τελο<gap reason="lost" quantity="20" unit="character"/>
+<lb n="31"/>καὶ το<gap reason="lost" quantity="20" unit="character"/>
+32.ειων εχ<gap reason="lost" quantity="19" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="33"/>εἴ τι πα<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="18" unit="character"/>
+<lb n="34"/>γείνεσθα<supplied reason="lost">ι <gap reason="illegible" quantity="12" unit="character"/> κα</supplied>
+<lb n="35"/>-θάπερ εἴ<supplied reason="lost">ωθε συνβαίνειν</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="36"/>οὗτος π<gap reason="lost" quantity="19" unit="character"/>
+<lb n="37"/>εἶναι φη<gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἐναν</supplied>
+<lb n="38"/>-τίως ευρ<gap reason="lost" quantity="20" unit="character"/>
+<lb n="39"/>τοῖς ἀπο<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="18" unit="character"/>
+</ab></div>
+</div>
+
+<div n="15" subtype="fragment" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="18" unit="character"/><unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="17" unit="character"/><unclear>ιοι</unclear>κ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="14" unit="character"/> <supplied reason="lost">συν</supplied>βέβηκε
+<lb n="4"/><gap reason="lost" quantity="14" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="1" unit="character"/><unclear>π</unclear>τ<unclear>ε</unclear>
+<lb n="5"/><gap reason="lost" quantity="18" unit="character"/>ε
+<lb n="6"/><gap reason="lost" quantity="18" unit="character"/><unclear>ε</unclear>ν<gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="7"/><gap reason="lost" quantity="21" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/> <gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+
+<div n="16" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="16" unit="character"/><unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="4"/><gap reason="lost" quantity="21" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>φ<unclear>ο</unclear>
+<lb n="5"/><gap reason="lost" quantity="22" unit="character"/>ου
+<lb n="6"/> <gap reason="lost" quantity="1" unit="line"/>
+<lb n="7"/><gap reason="lost" quantity="23" unit="character"/>υ
+<lb n="8"/><supplied reason="lost"><gap reason="illegible" quantity="18" unit="character"/> συ</supplied><unclear>ν</unclear>βέβηκεν
+<lb n="9"/> <gap reason="lost" quantity="1" unit="line"/>
+<lb n="10"/><gap reason="lost" quantity="20" unit="character"/><unclear>π</unclear>ος
+<lb n="11"/><gap reason="lost" quantity="18" unit="character"/><unclear>π</unclear>λείω
+<lb n="12"/><gap reason="lost" quantity="19" unit="character"/><unclear>ι</unclear>νην
+<lb n="13"/><supplied reason="lost"><gap reason="illegible" quantity="17" unit="character"/> ἐ</supplied>ξ ὅλου
+<lb n="14"/><supplied reason="lost"><gap reason="illegible" quantity="14" unit="character"/> πε</supplied><unclear>σ</unclear>οῦσαν
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="15"/> <gap reason="lost" extent="unknown" unit="line"/>
+<lb n="15"/>χ<unclear>ε</unclear><gap reason="lost" quantity="24" unit="character"/>
+<lb n="16"/>εξ<gap reason="lost" quantity="24" unit="character"/>
+<lb n="17"/>νου<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="22" unit="character"/>
+<lb n="18"/>δακρ<supplied reason="lost">υ</supplied> <gap reason="lost" quantity="21" unit="character"/>
+<lb n="19"/>τα<gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="22" unit="character"/>
+<lb n="20"/>σαμ<gap reason="lost" quantity="23" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="21"/>ο<unclear>υ</unclear><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="21" unit="character"/> <supplied reason="lost">ὄ</supplied>
+<lb n="22"/>-ψι<unclear>ν</unclear><gap reason="lost" quantity="23" unit="character"/>
+<lb n="23"/><unclear>ο</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>λ</unclear><gap reason="lost" quantity="23" unit="character"/>
+</ab></div>
+</div>
+
+<div n="17" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="10" unit="character"/>μεμ<gap reason="illegible" quantity="1" unit="character"/><unclear>γι</unclear><gap reason="illegible" quantity="2" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="9" unit="character"/> λή<unclear>μω</unclear>σις
+<lb n="3"/><gap reason="lost" quantity="9" unit="character"/><unclear>ω</unclear>ν μηθὲν
+<lb n="4"/><gap reason="lost" quantity="9" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>αποθ<unclear>ραι</unclear><gap reason="lost" quantity="1" unit="character"/>ν 
+<lb n="5"/><gap reason="lost" quantity="10" unit="character"/>ς ῥαδιο<gap reason="lost" quantity="2" unit="character"/>
+<lb n="6"/><gap reason="lost" quantity="8" unit="character"/>ε εἰπεῖν α<gap reason="illegible" quantity="2" unit="character"/>ει
+<lb n="7"/><gap reason="lost" quantity="8" unit="character"/>ι<unclear>γ</unclear> εὐχερὲς <gap reason="lost" quantity="2" unit="character"/>
+<lb n="8"/><gap reason="lost" quantity="8" unit="character"/> <unclear>τ</unclear>οῦ μὲν τ<unclear>ὴ</unclear>ν
+<lb n="9"/><gap reason="lost" quantity="8" unit="character"/>ὑποδεκτέον ἢ
+<lb n="10"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="4" unit="character"/> <unclear>π</unclear>ά<unclear>λ</unclear>ιν ἐπισκεπτ<add place="above">έ</add>ον
+<lb n="11"/>τὸ περὶ τὴν δά<unclear>κ</unclear>ρυ<supplied reason="lost">σι</supplied><unclear>ν</unclear>
+<lb n="12"/>πάθος, διὰ τίν<supplied reason="lost">α</supplied> α<supplied reason="lost">ἰ</supplied><unclear>τ</unclear><supplied reason="lost">ί</supplied>αν γί
+<lb n="13" break="no"/><unclear>ν</unclear>εται π<supplied reason="lost">ρὸ</supplied> τῆς τελευτῆς.
+<lb n="14"/>Ἀνανκαῖον τοίνυν ἢ λυ
+<lb n="15" break="no"/><supplied reason="lost">π</supplied>ουμένων αὐτῶν ἢ τι
+<lb n="16" break="no"/><supplied reason="lost">νο</supplied>ς φερομένης εἰς τ<supplied reason="lost">ο</supplied><unclear>ὺ</unclear><supplied reason="lost">ς</supplied>
+<lb n="17"/><supplied reason="lost">ὀφθα</supplied>λμοὺς ὑγρασίας καθά
+<lb n="18" break="no"/><supplied reason="lost">περ</supplied> ἐν ταῖς ὀφθαλμίαις
+<lb n="19"/><gap reason="lost" quantity="8" unit="character"/><unclear>ω</unclear>ν συνπεσουσῶν
+<lb n="20"/><gap reason="lost" quantity="6" unit="character"/> ἢ πόνους ἢ δῆξιν
+<lb n="21"/><gap reason="lost" quantity="5" unit="character"/> <supplied reason="lost">ἢ λήμ</supplied>ωσιν τοῖς ὄ<supplied reason="lost">μ</supplied>μασιν
+<lb n="22"/><supplied reason="lost">συνβαίνειν</supplied> <gap reason="lost" extent="unknown" unit="character"/>ατος μηδ’ <unclear>υ</unclear>
+<lb n="23" break="no"/><gap reason="lost" quantity="8" unit="character"/> παραβάλλειν
+<lb n="24"/><gap reason="lost" quantity="8" unit="character"/>δους περὶ τὸ προ
+<lb n="25"/><gap reason="lost" quantity="10" unit="character"/> γὰρ
+<lb n="26"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="26"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="26"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="27"/><unclear>δ</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="28"/><unclear>ι</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="29"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<lb n="30"/><unclear>γ</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="31"/>λ<gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="32"/>κ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="33"/>γ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="34"/>μ<gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="35"/>ω<gap reason="lost" quantity="25" unit="character"/>
+<lb n="36"/>τ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="37"/><unclear>ν</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="38"/>α<gap reason="lost" quantity="25" unit="character"/>
+<lb n="39"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="41"/>ρ<unclear>η</unclear><gap reason="lost" quantity="24" unit="character"/>
+<lb n="42"/>γ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="43"/>ν<gap reason="lost" quantity="25" unit="character"/>
+<lb n="44"/>α<gap reason="lost" quantity="25" unit="character"/>
+<lb n="45"/>π<gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="46"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="47"/><unclear>ι</unclear><gap reason="lost" quantity="25" unit="character"/>
+<lb n="48"/>σ<gap reason="lost" quantity="25" unit="character"/>
+<lb n="49"/>νω<gap reason="lost" quantity="24" unit="character"/>
+</ab></div>
+</div>
+
+<div n="18" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="2" unit="character"/>ο<gap reason="illegible" quantity="1" unit="character"/> <unclear>χρ</unclear>οτης εἰς <unclear>τ</unclear>α<unclear>τ</unclear><gap reason="illegible" quantity="1" unit="character"/>χας
+<lb n="2"/><gap reason="lost" quantity="2" unit="character"/><unclear>ι</unclear>τε τα κρατερ<gap reason="illegible" quantity="1" unit="character"/>ατα τ<gap reason="lost" quantity="2" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="2" unit="character"/><unclear>α</unclear>ρων εὶς τοὺς κατ<unclear>ὰ</unclear> το
+<lb n="4"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ς</unclear> φέρεσθαι τῶι βάρει
+<lb n="5"/><supplied reason="lost">κα</supplied><unclear>θ</unclear>άπερ ἐν ταῖς ὀφθαλμίαις
+<lb n="6"/><supplied reason="lost">π</supplied><unclear>νευ</unclear>ματος φερομένου
+<lb n="7"/><gap reason="lost" quantity="3" unit="character"/>ρ<gap reason="lost" quantity="1" unit="character"/>ομεν το<unclear>ῦ</unclear>τ<unclear>ο</unclear> <gap reason="lost" quantity="2" unit="character"/><unclear>α</unclear>
+<lb n="8"/><gap reason="lost" quantity="5" unit="character"/>μεν ἂν
+<lb n="9"/><supplied reason="lost">οὔτ</supplied>ε γάρ φλεγμονὴν, οὔ
+<lb n="10" break="no"/><supplied reason="lost">τε ὄ</supplied><unclear>νκο</unclear>ν, οὔτε πόνον, οὔτε τοῦ
+<lb n="11"/><supplied reason="lost">πνεύ</supplied>ματος φορὰν ἀλλὰ πολ
+<lb n="12" break="no"/><supplied reason="lost">λὴν</supplied> ἰσχνότητα καὶ δυσ<gap reason="lost" quantity="1" unit="character"/>ν
+<lb n="13"/><supplied reason="lost">τ</supplied>ῶν όφ<supplied reason="lost">θ</supplied><unclear>α</unclear>λ<surplus>αλ</surplus>μῶν καὶ ξηρό
+<lb n="14" break="no"/><supplied reason="lost">τη</supplied>τα καὶ σφοδρὰν ἀπονίαν
+<lb n="15"/><supplied reason="lost">τοῖς το</supplied><unclear>ιο</unclear>ύτοις π<unclear>ά</unclear><supplied reason="lost">θεσ</supplied><unclear>ι</unclear> <gap reason="lost" quantity="2" unit="character"/><unclear>ν</unclear>
+<lb n="16"/><gap reason="lost" quantity="4" unit="character"/>νε τούτων οὐδὲ<unclear>ν</unclear>
+<lb n="17"/><gap reason="lost" quantity="5" unit="character"/><unclear>λι</unclear>τεσαι τοῦτ<unclear>ο</unclear>
+<lb n="18"/><gap reason="lost" quantity="4" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><unclear>ι</unclear>ας σκευάζ<unclear>εσθ</unclear>α<unclear>ι</unclear> τὴν
+<lb n="19"/><gap reason="lost" quantity="4" unit="character"/>σι<unclear>ν</unclear> ποιήσουσιν τοῦ
+<lb n="20" break="no"/><supplied reason="lost">το</supplied> <gap reason="lost" quantity="1" unit="character"/> <unclear>εσ</unclear><gap reason="lost" quantity="1" unit="character"/> τις ἂν συνβ<supplied reason="lost">α</supplied>ῖ<unclear>νον</unclear>
+<lb n="21"/><supplied reason="lost">πρὸ τ</supplied>ῆς τλευτῆς.
+<lb n="22"/><supplied reason="lost">οὔτε</supplied> γάρ πληγῆς, οὔ<app type="editorial"><lem resp="Gerhard"><supplied reason="lost">τε</supplied></lem><rdg resp="Marganne"><gap reason="lost" quantity="2" unit="character"/></rdg></app> <unclear>θ</unclear>λεί
+<lb n="23" break="no"/><supplied reason="lost">ψεως</supplied>, οὔτε ἐνπ<unclear>τ</unclear>ώσεως, οὔτε
+<lb n="24"/><gap reason="lost" quantity="5" unit="character"/><unclear>ιας</unclear> οὐδεμιᾶς προσπε
+<lb n="25" break="no"/><supplied reason="lost">σούσ</supplied>ης πρὸς τὴν ὄψιν π<unclear>ρ</unclear>ὸ
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="26"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="26"/><gap reason="lost" quantity="3" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="18" unit="character"/> <supplied reason="lost">συν</supplied>
+<lb n="27" break="no"/>βέβ<unclear>η</unclear><supplied reason="lost">κε</supplied> <gap reason="lost" quantity="20" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="28"/><unclear>ων</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="20" unit="character"/>
+<lb n="29"/>τονω<gap reason="lost" quantity="21" unit="character"/>
+<lb n="30"/>τόνου <gap reason="lost" quantity="21" unit="character"/>
+<lb n="31"/>ἠ πρὸ τ<gap reason="lost" quantity="20" unit="character"/>
+<lb n="32"/>ὑγρ<gap reason="lost" quantity="22" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="33"/>ου<unclear>ν</unclear><gap reason="lost" quantity="22" unit="character"/>
+<lb n="34"/>κ<unclear>ειτ</unclear><gap reason="lost" quantity="21" unit="character"/>
+<lb n="35"/><unclear>φ</unclear><gap reason="lost" quantity="24" unit="character"/>
+<lb n="36"/><unclear>τ</unclear><gap reason="lost" quantity="24" unit="character"/>
+<lb n="37"/>στ<gap reason="lost" quantity="32" unit="character"/>
+<lb n="38"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="20" unit="character"/>
+<lb n="39"/><gap reason="lost" quantity="1" unit="character"/>τ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="22" unit="character"/>
+<lb n="40"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="41"/><unclear>ατ</unclear><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="20" unit="character"/>
+<lb n="42"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="22" unit="character"/>
+<lb n="43"/><gap reason="illegible" quantity="5" unit="character"/><gap reason="lost" quantity="20" unit="character"/>
+<lb n="44"/><unclear>τ</unclear>ακ<unclear>τ</unclear><gap reason="lost" quantity="21" unit="character"/>
+<lb n="45"/>ὡς ἄλλ<unclear>η</unclear><supplied reason="lost">ι π</supplied>η<supplied reason="lost">ι ἐν τοῖς προ</supplied>
+<lb n="46" break="no"/>ειρημέν<supplied reason="lost">o</supplied>ις σ <gap reason="lost" quantity="13" unit="character"/>
+<lb n="47"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="2" unit="character"/><unclear>τ</unclear>ι φε<unclear>υ</unclear><gap reason="lost" quantity="15" unit="character"/>
+</ab></div>
+</div>
+
+<div n="19" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="26" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="2"/><gap reason="lost" quantity="26" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="24" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α
+<lb n="4"/><add place="interlinear"><gap reason="lost" extent="unknown" unit="character"/>οντ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/></add>
+<lb n="4"/><gap reason="lost" quantity="15" unit="character"/><unclear>σ</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>υ</unclear>οι<unclear>οτ</unclear>ιε
+<lb n="5"/><gap reason="lost" quantity="11" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ον
+<lb n="6"/><gap reason="lost" quantity="10" unit="character"/> <supplied reason="lost"><unclear>σ</unclear></supplied>υνβαίνοι σφοδρῶς
+<lb n="7"/><gap reason="lost" quantity="19" unit="character"/> <supplied reason="lost">γε</supplied>νομένων τοῦ
+<lb n="8"/><gap reason="lost" quantity="11" unit="character"/><unclear>ος</unclear> καταήψεων
+<lb n="9"/><gap reason="lost" quantity="12" unit="character"/>σι ἡγεισσαμένοις
+<lb n="10"/><gap reason="lost" quantity="7" unit="character"/> <supplied reason="lost">τοῦ π</supplied>νεύματος ἀπο
+<lb n="11" break="no"/><supplied reason="lost">ληφθέντος μὴ</supplied> δυναμένου κα
+<lb n="12"/><supplied reason="lost">τὰ φύσιν διοδ</supplied>ε<supplied reason="lost">ύ</supplied><unclear>ε</unclear>ιν εἰς τὸν ὀ
+<lb n="13" break="no"/><supplied reason="lost">φθαλμὸν διὰ τ</supplied><unclear>ῶ</unclear>ν πόρων ἐξ<supplied reason="lost">αί</supplied>
+<lb n="14" break="no"/><supplied reason="lost">φνης τοῖς ὀφθ</supplied>αλμοῖς συνβέβ<supplied reason="lost">η</supplied>
+<lb n="15" break="no"/><supplied reason="lost">κε</supplied> <gap reason="lost" quantity="6" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>α δ’ ἐστιν διδ<supplied reason="lost">..</supplied>
+<lb n="16"/><gap reason="lost" quantity="10" unit="character"/> πολλὴν συνπ<unclear>ά</unclear>
+<lb n="17" break="no"/><supplied reason="lost">θειαν</supplied> <gap reason="lost" quantity="5" unit="character"/>ν ἐν τοῖς τοιού<supplied reason="lost">τ</supplied>οις
+<lb n="18"/><supplied reason="lost">πάθεσι τῶν ὀ</supplied>μ<unclear>μ</unclear>άτων.
+<lb n="19"/><gap reason="lost" quantity="9" unit="character"/>οὔτε θερμαίνει<supplied reason="lost">ν</supplied>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="20"/> <gap reason="lost" extent="unknown" unit="line"/>
+<lb n="20"/><gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" quantity="24" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="21"/><gap reason="lost" quantity="1" unit="character"/><unclear>π</unclear><gap reason="lost" quantity="24" unit="character"/>
+<lb n="22"/>εκη<gap reason="lost" quantity="1" unit="character"/><unclear>τ</unclear><gap reason="lost" quantity="19" unit="character"/>
+<lb n="23"/>ει<gap reason="lost" quantity="1" unit="character"/>σι<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="18" unit="character"/>
+<lb n="24"/>σια<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="20" unit="character"/>
+<lb n="25"/>τούτο<unclear>υ</unclear> ε<gap reason="lost" quantity="1" unit="character"/><unclear>ω</unclear> πολ<unclear>λὴ</unclear><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="8" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="26"/>ἐπί τε γὰρ τ<supplied reason="lost">ῶν</supplied> <gap reason="lost" quantity="13" unit="character"/>
+<lb n="27"/>τῶν καὶ τῶ<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="15" unit="character"/>
+<lb n="28"/>φόβων καὶ τῶ<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="13" unit="character"/>
+<lb n="29"/>ἀλγηδόνω<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="16" unit="character"/>
+<lb n="30"/>ἰσχυρᾶς τι<unclear>ν</unclear><supplied reason="lost">ος</supplied> <gap reason="lost" quantity="14" unit="character"/>
+<lb n="31"/>νιας καὶ δια<gap reason="lost" quantity="15" unit="character"/>
+<lb n="32"/>τοῖς ἔξωθεν <gap reason="lost" quantity="13" unit="character"/> <supplied reason="lost">εὕ</supplied>
+<lb n="33" break="no"/>ροι τις ἂν τ<gap reason="lost" quantity="18" unit="character"/>
+<lb n="34"/>συνβαίνου<supplied reason="lost">σαν</supplied> <gap reason="lost" quantity="14" unit="character"/>
+<lb n="35"/>περὶ αὐτῶ<supplied reason="lost">ν</supplied> <gap reason="lost" quantity="12" unit="character"/> <supplied reason="lost">ἐμνή</supplied>
+<lb n="36" break="no"/>σθης <g type="dipunct"/> οὐκ α<gap reason="lost" quantity="13" unit="character"/> <supplied reason="lost">νο</supplied>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="37" break="no"/>μίζω διότ<supplied reason="lost">ι</supplied> <gap reason="lost" quantity="16" unit="character"/>
+<lb n="38"/>ν<unclear>ω</unclear>ν.<app type="editorial"><lem resp="PN M.Schwemer">5-6<gap reason="lost" quantity="17" unit="character"/></lem><rdg resp="Gerhard"><gap reason="illegible" quantity="8" unit="character"/><gap reason="lost" quantity="15" unit="character"/></rdg></app>
+<lb n="39"/>τ<gap reason="illegible" quantity="4" unit="character"/>ο<unclear>ψ</unclear><gap reason="lost" quantity="18" unit="character"/>
+<lb n="40"/><gap reason="lost" quantity="2" unit="character"/>τον φε<gap reason="lost" quantity="17" unit="character"/>
+<lb n="41" rend="indent"/> απ<unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+</div>
+
+<div n="39" subtype="PRyl1" type="textpart">
+<div n="20" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" quantity="16" unit="character"/><unclear>ν</unclear>ας
+<lb n="2"/><gap reason="lost" quantity="10" unit="character"/> πνεῦμα ἔτι
+<lb n="3"/><gap reason="lost" quantity="7" unit="character"/>ν ἐστι πρὸ τῶν
+<lb n="4"/><gap reason="lost" quantity="7" unit="character"/>ων.
+<lb n="5"/><gap reason="lost" quantity="8" unit="character"/> τοῦτ’ ἐπιτελοῦσιν
+<lb n="6"/><gap reason="lost" quantity="8" unit="character"/>τιν ἐστί τι <app type="editorial"><lem resp="Marganne">συστελ
+<lb n="7" break="no"/><supplied reason="lost">λομένω</supplied>ν</lem><rdg resp="Gerhard">συστελ<lb n="7" break="no"/><supplied reason="lost">λ</supplied> <gap reason="lost" quantity="6" unit="character"/>ν</rdg></app> πόρων καὶ
+<lb n="8"/><gap reason="lost" quantity="5" unit="character"/> <supplied reason="lost">ἐ</supplied><unclear>χ</unclear>θλειβόντων εἴ τι
+<lb n="9"/><gap reason="lost" quantity="6" unit="character"/> <supplied reason="lost">ἐ</supplied>νεστήκει φλέγμα
+<lb n="10"/><gap reason="lost" quantity="7" unit="character"/> τὴν λήμωσιν
+<lb n="11"/><gap reason="lost" quantity="5" unit="character"/> <supplied reason="lost">το</supplied>ῦτο ἠδύναντο
+<lb n="12"/><supplied reason="lost"><gap reason="illegible" quantity="11" unit="character"/> </supplied>χαλεπω
+<lb n="13"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="13"/><gap reason="lost" quantity="2" unit="line"/>
+<lb n="15"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="coronis" unit="undefined"/> <milestone rend="paragraphos" unit="undefined"/>
+<lb n="16"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="17"/> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="18"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<lb n="19"/><gap reason="lost" quantity="2" unit="line"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="21"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="22"/>η<gap reason="lost" quantity="25" unit="character"/>
+<lb n="23"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="25" unit="character"/>
+<lb n="24"/><gap reason="lost" quantity="1" unit="line"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="25"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+</div>
+
+<div n="190" subtype="PHibeh2" type="textpart">
+<div n="21" subtype="fragment" type="textpart">
+<div n="i" subtype="column" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/>ν
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/>ν
+<lb n="3"/><gap reason="lost" quantity="1" unit="line"/>
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/>ν
+<lb n="4"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="ii" subtype="column" type="textpart"><ab>
+<lb n="1"/>σκληρότης <gap reason="lost" quantity="9" unit="character"/> <supplied reason="lost">φέ</supplied>
+<lb n="2" break="no"/><unclear>ρ</unclear>εται <app type="editorial"><lem resp="Marganne">δεδη<supplied reason="lost">λω</supplied> <gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Turner">δεδη<supplied reason="lost">λώκαμεν. <space extent="unknown" unit="character"/></supplied></rdg></app>
+<lb n="3"/>περὶ δὲ τῆς <app type="editorial"><lem resp="Marganne">ἀ<gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τῶν</supplied></lem><rdg resp="Turner">ἀ<supplied reason="lost">σθενείας τῶν</supplied></rdg></app>
+<milestone rend="coronis" unit="undefined"/>
+<lb n="4"/>ὀφ<unclear>θ</unclear>αλμῶν <gap reason="lost" quantity="12" unit="character"/>
+<lb n="5"/>αὐγὴν φ<gap reason="lost" atLeast="12" atMost="14" unit="character"/>
+<lb n="6"/><unclear>δ</unclear>ύοσιν κ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><unclear>λημ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+
+<div n="22" subtype="fragment" type="textpart"><ab>
+<lb n="8"/>καὶ του<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>τῆς ὄψ<supplied reason="lost">εως</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/>τόπο<unclear>ν</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<milestone rend="paragraphos" unit="undefined"/>
+<lb n="11"/>η<gap reason="illegible" quantity="2" unit="character"/>ρ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="12"/><gap reason="illegible" quantity="1" unit="line"><desc>vestiges</desc></gap>
+<lb n="12"/> <gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+
+</div></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#div13-div13-div13-lb3" xml:space="preserve">
+            <ref>2</ref>
+            <p>we follow Gerhard. There are traces of Ink before the epsilon.</p>
+          </item>
+               <item corresp="#div13-div13-div13-lb22" xml:space="preserve">
+            <ref>21</ref>
+            <p>we follow Gerhard's reading. The ny is quite clear, the iota is more difficult to identify.</p>
+          </item>
+               <item corresp="#div13-div13-div13-lb23" xml:space="preserve">
+            <ref>22</ref>
+            <p>Gerhard reads συ]νβαίνοντος, but only ίνοντος is visible on the papyrus. Possibly this is due to the deterioration of the papyrus since his edition.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/95015"/>
-                  <biblScope unit="number">39</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">P. Ryl. Gr.</title>
-                  <biblScope unit="volume">1</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95015"/>
+                  <biblScope n="1" unit="number">39</biblScope>
+                  <biblScope n="2" unit="volume">1</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/95162"/>
-                  <biblScope unit="number">7</biblScope>
-                  <biblScope unit="generic">b</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="2" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">P. Grenf.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95162"/>
+                  <biblScope n="1" unit="number">7</biblScope>
+                  <biblScope n="2" unit="generic">b</biblScope>
+                  <biblScope n="3" unit="volume">2</biblScope>
                </bibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/5284"/>
-                  <biblScope unit="number">190</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="3" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">P. Hibeh</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5284"/>
+                  <biblScope n="1" unit="number">190</biblScope>
+                  <biblScope n="2" unit="volume">2</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/13669"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="38" to="51">38-51</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author>Diocles of Carystus</author>
-               </bibl>
+               <bibl type="publication" subtype="ancient"/>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Sitzb.Heid.Akad., 1913, pl.I-II</bibl>
-               <bibl type="printed">R.Seider, Paläogr. griech. Papyri II.2, pl.IV</bibl>
-               <bibl type="online">
+               <bibl type="printed" n="1">Sitzb.Heid.Akad., 1913, pl.I-II</bibl>
+               <bibl type="printed" n="2">R.Seider, Paläogr. griech. Papyri II.2, pl.IV</bibl>
+               <bibl type="online" n="1">
                   <ptr target="https://papy.zaw.uni-heidelberg.de/gv0/Papyri/Verstreutes/0401_Gerhard/0401_Gerhard.html"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="http://enriqueta.man.ac.uk:8180/luna/servlet/detail/ManchesterDev~93~3~24752~100459:Medical-treatise?sort=Image_sequence_number%2CFolio%2CImage_Title%2CDate_created&amp;qvq=sort:Image_sequence_number,Folio,Image_Title,Date_created;lc:ManchesterDev~93~3&amp;mi=118&amp;trs=341"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="3">
                   <ptr target="https://digital.bodleian.ox.ac.uk/objects/79a8939e-f2aa-4570-9cef-28ed4f7ad58f/"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="4">
                   <ptr target="https://access.bl.uk/item/viewer/ark:/81055/vdc_100147471360.0x000001"/>
+               </bibl>
+               <bibl type="online" n="5">
+                  <ptr target="https://luna.manchester.ac.uk/luna/servlet/detail/ManchesterDev~93~3~24752~100459:Medical-treatise?qvq=q:medical%20treatise%20greek;lc:Manchester~25~25,Manchester~93~93,Manchester~11~11,Manchester~19~19,Manchester~10~10,nonconform~91~1,Gaskell2~91~1,Manchester~91~1,Manchester~20~20,Manchester~12~12,Manchester~15~15,Manchester~18~18,maps002~1~1,Man4MedievalVC~4~4,ManchesterDev~93~3,Manchester~24~24,ManchesterDev~95~2,Manchester~26~26,lib1~1~1,Manchester~14~14,Manchester~4~4&amp;mi=0&amp;trs=1"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
