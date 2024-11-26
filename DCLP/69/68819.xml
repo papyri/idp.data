@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m68819" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>O. Petr. Mus. 1, O. Petr. Mus. 9, O. Petr. Mus. 10</title>
+            <title>Old Testament; New Testament: Paulus apost.; Psalms 025.3-7; Galatians 1,8-11; 15-18; 2,3-8</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -16,15 +16,19 @@
             <idno type="MP3">02699.100</idno>
             <idno type="MP3">02699.300</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <idno>
-                     <idno type="invNo">London, University College, Petrie Museum UC 62732</idno>
-                     <idno type="invNo">London, University College, Petrie Museum UC 62583</idno>
+                     <idno type="invNo" n="1">London, University College, Petrie Museum UC 62732</idno>
+                     <idno type="invNo" n="2">London, University College, Petrie Museum UC 62583</idno>
                   </idno>
                </msIdentifier>
                <physDesc>
@@ -32,6 +36,10 @@
                      <supportDesc>
                         <support>
                            <material>pottery</material>
+                           <dimensions>
+                              <width unit="cm">12</width>
+                              <height unit="cm">13</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -43,25 +51,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Tentyris (Tentyrites, Egypt); written: Tentyris (Tentyrites, Egypt)</origPlace>
-                     <origDate notBefore="0450" notAfter="0499">450 - 499</origDate>
+                     <origPlace>Fundort: Peri Thebas (Upper Egypt, Egypt); Schreibort: Peri Thebas (Upper Egypt, Egypt)</origPlace>
+                     <origDate notBefore="0476" notAfter="0500" precision="low">Ende V</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2997">Tentyrites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2312">Tentyris</placeName>
+                                   ref="https://www.trismegistos.org/place/2997">Upper Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/2312">Peri Thebas</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2997">Tentyrites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2312">Tentyris</placeName>
+                                   ref="https://www.trismegistos.org/place/2997">Upper Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/2312">Peri Thebas</placeName>
                      </p>
                   </provenance>
                </history>
@@ -70,22 +80,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>lyric</term>
-               <term>psalm</term>
-               <term>prose</term>
-               <term>bible</term>
-               <term>letter</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">Old Testament; New Testament: Paulus apost.; Psalms 025.3-7; Galatians 1,8-11; 15-18; 2,3-8</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">psalm</term>
+               <term n="4">prose</term>
+               <term n="5">bible</term>
+               <term n="6">letter</term>
+               <term n="7">poetry</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -94,63 +102,155 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2024-11-26T09:54:26-05:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Finalized - Ready</change>
+         <change when="2024-11-26T09:13:17-05:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Vote - Accept-Straight-to-Finalization - I will enter changes</change>
+         <change when="2024-11-19T09:26:11-05:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - at the beginning of the recto of O. Petr. Mus. 10, the editor thought that there might be a margin; there are no traces of ink</change>
+          <change when="2024-11-26T09:54:26-05:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Finalized - Ready</change>
+          <change when="2024-11-26T09:13:17-05:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Vote - Accept-Straight-to-Finalization - I will enter changes</change>
+          <change when="2024-11-19T09:26:11-05:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - at the beginning of the recto of O. Petr. Mus. 10, the editor thought that there might be a margin; there are no traces of ink</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="r" type="textpart">
+<div n="OPetrMus-1" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> ὅ<unclear>τ</unclear>ι <unclear>τὸ</unclear> ἔλ<unclear>εός</unclear> <unclear>σ</unclear><supplied reason="lost">ου κατ</supplied>
+<lb n="2" break="no"/><supplied reason="lost">έναντι τῶν ὀφθαλμῶν μου ἐστὶν</supplied> <unclear>καὶ</unclear> <unclear>εὐ</unclear>ηρέστ<supplied reason="lost">ησα ἐν τῇ</supplied>
+<lb n="3"/><supplied reason="lost">ἀληθείᾳ σου. οὐκ ἐκάθισα με</supplied><unclear>τὰ</unclear> <unclear>συ</unclear>νεδρίου <supplied reason="lost">ματαιότητος</supplied>
+<lb n="4"/><supplied reason="lost">καὶ μετὰ παρανομούντων</supplied> <unclear>οὐ</unclear> μὴ εἰσέλθω.<g type="high-punctus"/> <supplied reason="lost">ἐμίσησα</supplied>
+<lb n="5"/><supplied reason="lost">ἐκκλησίαν πονηρευομένων</supplied> <unclear>καὶ</unclear> μετὰ ἀσεβῶ<supplied reason="lost">ν οὐ μὴ</supplied>
+<lb n="6"/><supplied reason="lost">καθίσω. νίψομαι ἐν ἀθῴοις τὰ</supplied>ς χείρας μου κα<supplied reason="lost">ὶ κυκλώσω</supplied>
+<lb n="7"/><supplied reason="lost">τὸ θυσιαστήριόν σου, <expan>κ<ex>ύρι</ex>ε</expan> ἀκο</supplied>ῦσαι φωνὴ<supplied reason="lost">ν αἰνέσεως</supplied>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="v" type="textpart">
+<div n="OPetrMus-9" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">εὐαγγε</supplied>λίζ<unclear>η</unclear><supplied reason="lost">ται παρ᾽ ὃ εὐηγγελισάμεθα ὑμῖν,</supplied>
+<lb n="3"/><supplied reason="lost">ἀνάθε</supplied>μα ἔστω, <unclear>ὡ</unclear>ς <supplied reason="lost">προειρήκαμεν καὶ ἄρτι</supplied>
+<lb n="4"/><supplied reason="lost">πάλιν</supplied> λέγω·<g type="high-punctus"/> εἴ τις ὑ<supplied reason="lost">μᾶς εὐαγγελίζεται παρ᾽ ὃ</supplied>
+<lb n="5"/><supplied reason="lost">παρελάβ</supplied><unclear>ε</unclear>τε,<g type="low-punctus"/> ἀνάθεμα <supplied reason="lost">ἔστω. ἄρτι γὰρ <expan>ἀν<ex>θρώπ</ex>ους</expan> πείθω</supplied>
+<lb n="6"/><supplied reason="lost">ἢ τὸν</supplied> <expan><supplied reason="lost">θ<ex>εό</ex></supplied>ν</expan> ζητῶ <expan>ἀν<ex>θρώπ</ex><unclear>ο</unclear><supplied reason="lost">ις</supplied></expan> <supplied reason="lost">ἀρέσκειν; εἰ ἔτι <expan>ἀν<ex>θρώπ</ex>οις</expan></supplied>
+<lb n="7"/><supplied reason="lost">ἤρεσκον</supplied> <expan>Χ<ex>ριστο</ex>ῦ</expan> δοῦλο<supplied reason="lost">ς οὐκ ἂν ἤμην. γνωρίζω</supplied>
+<lb n="8"/><supplied reason="lost">γὰρ ὑμ</supplied>ῖν, ἀδελφοί, τ<unclear>ὸ</unclear> <supplied reason="lost">εὐαγγέλιον τὸ εὐαγγελισθὲν</supplied>
+<lb n="9"/><supplied reason="lost">ὑπ᾽ ἐμο</supplied>ῦ ὅτι οὐκ ἔσ<supplied reason="lost">τιν κατὰ <expan>ἄν<ex>θρωπ</ex>ον</expan>· οὐδὲ γὰρ ἐγὼ</supplied>
+<lb n="10"/><supplied reason="lost">παρὰ</supplied> <expan><hi rend="supraline">ἀν</hi><ex>θρώπ</ex><hi rend="supraline">ου</hi></expan> <gap reason="illegible" quantity="2" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="10"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div>
+<div n="OPetrMus-10" type="textpart">
+<div n="r" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <unclear>δ</unclear>ασ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2"/><supplied reason="lost">ὅτε δὲ εὐδόκησεν ὁ <expan>θ<ex>εὸ</ex>ς</expan> ἀφο</supplied>ρίσας με ἐκ κοι<supplied reason="lost">λίας</supplied>
+<lb n="3"/><supplied reason="lost">μητρός μου καὶ καλέσας διὰ τῆς χά</supplied>ριτος αὐτοῦ ἀποκαλ<supplied reason="lost">ύψαι</supplied>
+<lb n="4"/><supplied reason="lost">τὸν <expan>υ<ex>ἱὸ</ex>ν</expan> αὐτοῦ ἐν ἐμοὶ, ἵν</supplied>α εὐαγγελίζωμαι αὐ<supplied reason="lost">τὸν ἐν</supplied>
+<lb n="5"/><supplied reason="lost">τοῖς ἔθνεσιν, εὐθέως οὐ προσανεθέμη</supplied>ν σαρκὶ καὶ αἵματι <supplied reason="lost">οὐδὲ</supplied>
+<lb n="6"/><supplied reason="lost">ἀνῆλθον εἰς Ἱεροσόλυμα πρὸς τοὺς</supplied> πρὸ ἐμοῦ ἀποστόλους, <supplied reason="lost">ἀλλὰ</supplied>
+<lb n="7"/><supplied reason="lost">ἀπῆλθον εἰς Ἀραβίαν καὶ πάλιν ὑπ</supplied>έστρεψα εἰς Δα<supplied reason="lost">μασκόν.</supplied>
+<lb n="8"/><supplied reason="lost">ἔπειτα μετὰ ἔτη <num value="3">τρία</num> ἀνῆλθον</supplied> εἰς <hi rend="diaeresis">Ἱ</hi>εροσόλυμα <supplied reason="lost">ἱστορῆσαι</supplied>
+<lb n="9"/><supplied reason="lost">Κηφᾶν καὶ ἐπέμεινα πρὸς αὐτ</supplied>ὸν ἡμέρας <supplied reason="lost"><num value="15">δεκαπέντε</num></supplied>
+<lb n="9"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="v" type="textpart"><ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><supplied reason="lost">ἠναγ</supplied>κάσθ<supplied reason="lost">η περιτμηθῆναι· διὰ δὲ τοὺς</supplied>
+<lb n="2"/>παρει<unclear>σά</unclear><supplied reason="lost">κτους ψευδαδέλφους, οἵτινες</supplied>
+<lb n="3"/>παρεισῆλ<supplied reason="lost">θον κατασκοπῆσαι τὴν ἐλευθερίαν</supplied>
+<lb n="4"/>ἡμῶν ἣν ἔ<supplied reason="lost">χομεν ἐν <expan>Χ<ex>ριστ</ex>ῶ</expan> <expan>Ἰ<ex>ησο</ex>ῦ</expan> ἵνα ἡμᾶς</supplied> <app type="alternative"><lem><supplied reason="lost">κατα</supplied>
+<lb n="5" break="no"/>δουλώσου<supplied reason="omitted">σ</supplied>ι<unclear>ν</unclear> τ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg><supplied reason="lost">κατα</supplied> <lb n="5" break="no"/>δουλώσου<supplied reason="omitted">σ</supplied>ι<unclear>ν</unclear>. τ<supplied reason="lost" cert="low">ούτοις </supplied></rdg></app> <supplied reason="lost">οἷς οὐδὲ πρὸς ὥραν εἴξαμεν</supplied>
+<lb n="6"/>τῇ ὑποταγῇ, ἵ<supplied reason="lost">να ἡ ἀλήθεια τοῦ εὐαγγελίου διαμένῃ</supplied>
+<lb n="7"/>πρὸς ὑμᾶς. ἀ<supplied reason="lost">πὸ δὲ τῶν δοκούντων εἶναί τι ὁποῖοί</supplied>
+<lb n="8"/>ποτε ἦσαν ο<supplied reason="lost">ὐδέν μοι διαφέρει· πρόσωπον ὁ <expan>θ<ex>εὸ</ex>ς</expan></supplied>
+<lb n="9"/>οὐ λαμβάνει, <unclear>ἐ</unclear><supplied reason="lost">μοὶ γὰρ οἱ δοκοῦντες οὐδὲν προσανέ</supplied>
+<lb n="10" break="no"/>θεντο, ἀλ<unclear>λ</unclear><supplied reason="lost">ὰ τοὐναντίον ἰδόντες, ὅτι πεπίστευμαι</supplied>
+<lb n="11"/>τὸ ε<unclear>ὐ</unclear><supplied reason="lost">αγγέλιον τῆς ἀκροβυστίας καθὼς Πέτρος</supplied>
+<lb n="12"/>τῆ<unclear>ς</unclear> <supplied reason="lost">περιτομῆς, ὁ γὰρ ἐνεργήσας Πέτρῳ εἰς ἀπο</supplied>
+<lb n="13" break="no"/><supplied reason="lost">στ</supplied>ολ<supplied reason="lost">ὴν τῆς περιτομῆς ἐνήργησεν</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="13"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+</div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/82190"/>
-                  <biblScope unit="number">1</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">O. Petrie Mus.</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/82190"/>
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/82190"/>
-                  <biblScope unit="number">9</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="2" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">O. Petrie Mus.</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/82190"/>
+                  <biblScope n="1" unit="number">9</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
-               <bibl type="reference" subtype="partial">
-                  <ptr target="http://papyri.info/biblio/82190"/>
-                  <biblScope unit="number">10</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="3" type="reference" subtype="partial">
                   <title level="s" type="abbreviated">O. Petrie Mus.</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/82190"/>
+                  <biblScope n="1" unit="number">10</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
+               <bibl type="publication" n="1" subtype="ancient">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/545">Psalmi</title>
+                  <biblScope n="1" unit="number">25</biblScope>
+                  <biblScope n="2" unit="line" from="3" to="7">3-7</biblScope>
                </bibl>
-               <bibl type="publication" subtype="ancient">
+               <bibl type="publication" n="2" subtype="ancient">
                   <author>Testamentum Novum, Paulus (Greek)</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/3067">Epistula ad Galatas</title>
+                  <biblScope n="1" unit="chapter">1</biblScope>
+                  <biblScope n="2" unit="line" from="8" to="11">8-11</biblScope>
+                  <biblScope n="3" unit="generic">and</biblScope>
+                  <biblScope n="4" unit="chapter">1</biblScope>
+                  <biblScope n="5" unit="line" from="15" to="18">15-18</biblScope>
+                  <biblScope n="6" unit="generic">and</biblScope>
+                  <biblScope n="7" unit="chapter">2</biblScope>
+                  <biblScope n="8" unit="line" from="3" to="8">3-8</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="online">
-                  <ptr target="http://www.petrie.ucl.ac.uk/search/main/museum_number.php?objectid=UC62732&amp;submit44522=Search"/>
+               <bibl type="online" n="1">
+                  <ptr target="https://collections.ucl.ac.uk/Details/collect/61392"/>
                </bibl>
-               <bibl type="online">
-                  <ptr target="http://www.petrie.ucl.ac.uk/search/main/museum_number.php?objectid=UC62583&amp;submit44522=Search"/>
+               <bibl type="online" n="2">
+                  <ptr target="https://collections.ucl.ac.uk/Details/collect/11012"/>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="general">
+            <p>O.Petr.Mus. 1 and 9 measure cm 10.7 (w) x 9.1 (h); O.Petr.Mus. 10 measures cm 12 (w) x 13 (h)</p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
