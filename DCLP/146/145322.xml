@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m145322" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>O. Petr. Mus. 18</title>
+            <title>New Testament; pater noster</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">145322</idno>
             <idno type="dclp-hybrid">o.petr.mus;;18</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -27,6 +31,10 @@
                      <supportDesc>
                         <support>
                            <material>stone: limestone</material>
+                           <dimensions>
+                              <width unit="cm">6,1</width>
+                              <height unit="cm">8,6</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -38,23 +46,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Thebes (Egypt); written: Thebes (Egypt)</origPlace>
+                     <origPlace>Fundort: Thebes, Egypt; Schreibort: Thebes, Egypt</origPlace>
                      <origDate notBefore="0500" notAfter="0599">500 - 599</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2355">Thebes</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2355">Thebes</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
                </history>
@@ -63,17 +73,16 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prayer</term>
-               <term type="culture">religion</term>
-               <term type="religion">christian</term>
-               <term type="overview">New Testament; pater noster</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">religion</term>
+               <term n="3">prayer</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -82,19 +91,32 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/><g type="stauros"/>
+<lb n="1"/><supplied reason="lost">Π</supplied>άτηρ ἡμῶν <supplied reason="lost">ὁ ἐν</supplied>
+<lb n="2"/><supplied reason="lost">τοῖς</supplied> οὐρανοῖς
+<lb n="3"/><supplied reason="lost">ἁγιασθήτω τ</supplied>ὸ ὄνομά <supplied reason="lost">σου</supplied>
+<lb n="4"/><supplied reason="lost">ἐλθέτω ἡ βασιλε</supplied>ία σου <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><supplied reason="lost">γενηθήτω τὸ θ</supplied>ήλεμά <supplied reason="lost">σου</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>νονη<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ε</unclear>πι<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/82190"/>
-                  <biblScope unit="number">18</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">O. Petrie Mus.</title>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/82190"/>
+                  <biblScope n="1" unit="number">18</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
@@ -105,10 +127,18 @@
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/3385">pater noster (Mt. 6.9-13)</title>
+                  <biblScope n="1" unit="chapter">6</biblScope>
+                  <biblScope n="2" unit="line" from="9" to="10">9-10</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve" xml:lang="grc"/>
+         <div type="bibliography" subtype="illustrations">
+            <listBibl>
+               <bibl type="online">
+                  <ptr target="https://collections.ucl.ac.uk/Details/collect/40210"/>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
