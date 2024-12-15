@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23210">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Testament</title>
@@ -10,15 +10,17 @@
             <idno type="filename">23210</idno>
             <idno type="TM">23210</idno>
             <idno type="ddb-perseus-style">0239;1;5590</idno>
-            <idno type="ddb-filename">sb.1.5590</idno>
-            <idno type="ddb-hybrid">sb;1;5590</idno>
+            <idno type="ddb-filename">p.kru.68</idno>
+            <idno type="ddb-hybrid">p.kru;;68</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Or 1061 C + Or 1062</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
+                     <origPlace>Theben (Ägypten)</origPlace>
                      <origDate notBefore="0723-05-26" notAfter="0723-06-24">26. Mai - 24. Juni 723</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/991398 https://www.trismegistos.org/place/2983 https://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,18 +66,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Testament</term>
-               <term>griechisches Protokoll</term>
+               <term n="1">Testament</term>
+               <term n="2">griechisches Protokoll</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-12-15T11:50:51-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-12-15T11:41:11-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-12-15T08:49:01-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Renamed the metadata. Remember to rename the ddb file before finalizing.</change>
          <change who="HGV" when="1995-06-23">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Koptisch - griechisch. Zur Datierung vgl. BL V, S. 96.</p>
@@ -81,20 +91,19 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">5590</biblScope>
+                  <title level="s" type="abbreviated">P.KRU</title>
+                  <biblScope type="numbers">68</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">321</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">184</biblScope>
                </bibl>
@@ -106,10 +115,10 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">KRU 68</bibl>
-               <bibl type="publication" subtype="other">P.Lond. Copt. 399 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">SB 1 5590</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Lond. Copt. 399 descr.</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
