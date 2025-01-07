@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61910" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Oxy. 11 1353</title>
@@ -14,13 +14,17 @@
             <idno type="filename">61910</idno>
             <idno type="dclp-hybrid">p.oxy;11;1353</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Oklahoma, Green collection P. Oxy. 1353</idno>
+                  <idno type="invNo">Washington, DC, Museum of the Bible MS.000284</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="codex">
@@ -46,17 +50,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0350" notAfter="0399">350 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -67,19 +74,19 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>bible</term>
-               <term>letter</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">New Testament, Petrus; 01 Petr 5,5-13</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">bible</term>
+               <term n="5">letter</term>
+               <term n="6" type="overview">New Testament, Petrus; 01 Petr 5,5-13</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -88,20 +95,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-07T12:49:55-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-01-07T07:59:22-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - Accept-Straight-to-Finalization - Fine</change>
+         <change when="2025-01-07T07:34:16-05:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added link to digital image of Museum of the Bible and updated collection data</change>
+         <change when="2025-01-07T07:34:10-05:00"
+                 who="http://papyri.info/editor/users/pag">Commit - added link to digital image of Museum of the Bible and updated collection data</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/95225"/>
-                  <biblScope unit="number">1353</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">11</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95225"/>
+                  <biblScope n="1" unit="number">1353</biblScope>
+                  <biblScope n="2" unit="volume">11</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
@@ -119,11 +135,14 @@
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Barker, Studies in Scripture in Early Judaism and Christianity 13, p. 193</bibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="https://dl.atla.com/concern/works/9s161c66c?locale=en"/>
+               </bibl>
+               <bibl type="online" n="2">
+                  <ptr target="http://collections.museumofthebible.org/artifacts/9371-1-peter-fragment-poxy-1353-uncial-0206"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
