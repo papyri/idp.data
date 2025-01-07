@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61941" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>P. Bodm. 24</title>
@@ -14,13 +14,17 @@
             <idno type="filename">61941</idno>
             <idno type="dclp-hybrid">p.bodm;;24</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Oklahoma, Green collection GC.MS 000170</idno>
+                  <idno type="invNo">Washington, DC, Museum of the Bible MS.000170</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="codex">
@@ -46,17 +50,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Panopolis (Panopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Panopolis (Panopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0300" notAfter="0399">300 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2719">Panopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1589">Panopolis</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2719">Panopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1589">Panopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -67,20 +74,20 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>bible</term>
-               <term>lyric</term>
-               <term>psalms</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">Old Testament; Psalms 017-0118 passim</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">bible</term>
+               <term n="5">lyric</term>
+               <term n="6">psalms</term>
+               <term n="7" type="overview">Old Testament; Psalms 017-0118 passim</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -91,22 +98,24 @@
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Bodmer</title>
-                  <biblScope unit="number">24</biblScope>
-                  <biblScope unit="generic">(Bibl. Bodm. 4, p. 1577-1809)</biblScope>
+                  <biblScope n="1" unit="number">24</biblScope>
+                  <biblScope n="2" unit="generic">(Bibl. Bodm. 4, p. 1577-1809)</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/545">Psalmi</title>
@@ -116,9 +125,10 @@
          <div type="edition" xml:space="preserve" xml:lang="grc"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">P.Bodmer XXIV (facsimile edition)</bibl>
+               <bibl type="printed" n="1">P.Bodmer XXIV (facsimile edition)</bibl>
+               <bibl type="printed" n="2">https://collections.museumofthebible.org/artifacts/42463-pbodmer-xxiv-rahlfs-2110</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
