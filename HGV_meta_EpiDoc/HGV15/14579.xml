@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv14579">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Penthemeros-Zertifikat</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cambridge, MA</settlement>
                   </placeName>
+                  <collection>Harvard University Library (Houghton Library)</collection>
+                  <idno type="invNo">MS Gr SM2229</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theadelphia (Arsinoites)</origPlace>
+                     <origPlace>Theadelphia (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0123-06-22">22. Juni 123</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737081 https://www.trismegistos.org/place/2349">Theadelphia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,21 +70,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Arbeit</term>
-               <term>fünf Tage</term>
-               <term>Damm</term>
-               <term>sechstürige Schleuse</term>
-               <term>Namen</term>
+               <term n="1">Arbeit</term>
+               <term n="2">fünf Tage</term>
+               <term n="3">Damm</term>
+               <term n="4">sechstürige Schleuse</term>
+               <term n="5">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-09T05:01:36-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-01-09T04:39:50-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-01-08T17:39:50-05:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added collection data</change>
+         <change when="2025-01-08T17:39:45-05:00"
+                 who="http://papyri.info/editor/users/pag">Commit - added collection data</change>
          <change who="HGV" when="1990-07-11">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -88,7 +101,7 @@
             <list>
                <item>
                   <ref>Z. 4</ref>
-                  <date type="mentioned" notBefore="0123-06-18" notAfter="0123-06-21">18. - 21. Juni 123</date>
+                  <date type="mentioned" notBefore="0123-06-18" notAfter="0123-06-21">18. Juni 123 - 21. Juni 123</date>
                </item>
             </list>
          </div>
@@ -96,8 +109,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">16</biblScope>
-                  <biblScope type="numbers">12316</biblScope>
+                  <biblScope n="1" type="volume">16</biblScope>
+                  <biblScope n="2" type="numbers">12316</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -125,5 +138,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
