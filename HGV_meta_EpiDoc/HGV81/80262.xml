@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv80262">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -16,7 +16,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Cairo, IFAO T. 44 + 49</idno>
+                  <placeName>
+                     <settlement>Cairo</settlement>
+                  </placeName>
+                  <collection>IFAO</collection>
+                  <idno type="invNo">T. 44 + 49</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -30,16 +34,18 @@
                <history>
                   <origin>
                      <origPlace>Bompae (Panopolites)</origPlace>
-                     <origDate notBefore="0201" notAfter="0225" precision="low">frühes III</origDate>
+                     <origDate notBefore="0101" notAfter="0200" precision="low">II</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/756542 https://www.trismegistos.org/place/3002">Bompae</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2719 https://pleiades.stoa.org/places/756614">Panopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient"/>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -73,8 +80,8 @@
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
          <change when="2015-06-18" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Demotisch - griechisch.</p>
@@ -82,9 +89,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">Short Texts</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">682</biblScope>
+                  <title level="s" type="abbreviated">Sammelbuch</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17444</biblScope>
+                  <biblScope n="3" type="number">Nr. 15</biblScope>
                </bibl>
                <bibl>
                   <title>DAHT</title>
@@ -94,16 +102,17 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">BIFAO 74, 1974, Pl. XIII, B</bibl>
-               <bibl type="illustration">BIFAO 81, 1981, Suppl., Pl. XLVIII</bibl>
+               <bibl type="illustration" n="1">BIFAO 74, 1974, Pl. XIII, B</bibl>
+               <bibl type="illustration" n="2">BIFAO 81, 1981, Suppl., Pl. XLVIII</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">C.Étiq. Mom. 1890</bibl>
+               <bibl type="publication" subtype="other" n="1">C.Étiq. Mom. 1890</bibl>
+               <bibl type="publication" subtype="other" n="2">Short Texts 2 682</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
