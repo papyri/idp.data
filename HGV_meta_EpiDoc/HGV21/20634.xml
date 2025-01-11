@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20634">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lease of Domain Land</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Graz</settlement>
                   </placeName>
+                  <collection>Universitätsbibliothek</collection>
+                  <idno type="invNo">Ms 1918</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Athribites</origPlace>
+                     <origPlace>Athribites, Ägypten</origPlace>
                      <origDate when="0130-10-02">2. Okt. 130</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/3086 https://pleiades.stoa.org/places/727079">Athribites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,21 +67,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Antrag</term>
-               <term>Pacht</term>
-               <term>Land (Domäne)</term>
-               <term>Juden und Griechen</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Antrag</term>
+               <term n="3">Pacht</term>
+               <term n="4">Land (Domäne)</term>
+               <term n="5">Juden und Griechen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-11T16:42:42-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-01-11T16:33:50-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-01-11T14:51:51-05:00"
+                 who="http://papyri.info/editor/users/pag">Submit - Changed outdated link of image to permalink and added collection data</change>
+         <change when="2025-01-11T14:51:45-05:00"
+                 who="http://papyri.info/editor/users/pag">Commit - Changed outdated link of image to permalink and added collection data</change>
          <change who="HGV" when="1996-07-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. Kruse, Der Königliche Schreiber, S. 578-581. Zu Z. 16 und 27 vgl. CPR XXIII 9,4-5 Anm. Vgl. Harrauer, Paläographie, Textband, S. 302-304, Nr. 116.</p>
@@ -86,8 +98,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">500</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">500</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,15 +109,15 @@
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/20634"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">180</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">139</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">147</biblScope>
                </bibl>
@@ -113,9 +125,9 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Auf dem Einband von Mélèze Modrzejewski, Juifs d'Égypte</bibl>
-               <bibl type="illustration">Symposion 1985, Tafel I</bibl>
-               <bibl type="illustration">Harrauer, Paläographie, Tafelband, Abb. 102</bibl>
+               <bibl type="illustration" n="1">Auf dem Einband von Mélèze Modrzejewski, Juifs d'Égypte</bibl>
+               <bibl type="illustration" n="2">Symposion 1985, Tafel I</bibl>
+               <bibl type="illustration" n="3">Harrauer, Paläographie, Tafelband, Abb. 102</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -134,10 +146,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://sosa2.uni-graz.at/sosa/katalog/katalogisate/1918.html"/>
+                  <graphic url="https://resolver.obvsg.at/urn:nbn:at:at-ubg:2-34996"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
