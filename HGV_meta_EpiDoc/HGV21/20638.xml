@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20638">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Loan of Money on Security</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cambridge, MA</settlement>
                   </placeName>
+                  <collection>Harvard University Library (Houghton Library)</collection>
+                  <idno type="invNo">MS Gr SM4366</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,18 +33,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
+                     <origPlace>Oxyrhynchos (Oxyrhynchites, Ägypten)</origPlace>
                      <origDate notBefore="0143-11-28">
-                        <offset type="after" n="1">nach</offset> 28. Nov. 143</origDate>
+                        <offset n="1" type="after">nach</offset>
+                28. Nov. 143
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +56,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,11 +73,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
-               <term>Kopie</term>
-               <term>Land als Sicherheit</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Geld</term>
+               <term n="4">Kopie</term>
+               <term n="5">Land als Sicherheit</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -79,8 +86,8 @@
          <change who="HGV" when="2010-01-16">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -90,7 +97,7 @@
                <item>
                   <ref>Z. 1-59</ref>
                   <note type="comment">Abschrift eines Dokuments vom</note>
-                  <date type="mentioned" notBefore="0143-11-28" notAfter="0143-12-27">28. Nov.  - 27. Dez. 143</date>
+                  <date type="mentioned" notBefore="0143-11-28" notAfter="0143-12-27">28. Nov. 143 - 27. Dez. 143</date>
                </item>
             </list>
          </div>
@@ -98,19 +105,19 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">506</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">506</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">236</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">144</biblScope>
                </bibl>
@@ -133,5 +140,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
