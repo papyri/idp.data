@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20406">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Report of Legal Proceedings</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Philadelphia</settlement>
                   </placeName>
+                  <collection>University of Pennsylvania Museum</collection>
+                  <idno type="invNo">E 2823</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,18 +34,19 @@
                <history>
                   <origin>
                      <origPlace>Alexandria oder Oxyrhynchos</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0073" cert="low">73 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="1" xml:id="dateAlternativeX" when="0073" cert="low">73 (?)</origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0113"
                                notAfter="0117"
                                cert="low">113 - 117 (?)</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2">
                         <placeName type="ancient"
                                    ref="https://pleiades.stoa.org/places/727070 https://www.trismegistos.org/place/100">Alexandria</placeName>
                      </p>
-                     <p xml:id="geog_2" exclude="#geog_1">
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
                         <placeName type="ancient"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
@@ -53,8 +56,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -69,21 +73,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Protokoll</term>
-               <term>Prozeß</term>
-               <term>Konflikt</term>
-               <term>ägyptisches Recht mit alexandrinischem Recht in Bezug auf das Verhältnis Patron - Freigelassener</term>
-               <term>Androhung der Strafe (Prügel)</term>
+               <term n="1">Protokoll</term>
+               <term n="2">Prozeß</term>
+               <term n="3">Konflikt</term>
+               <term n="4">ägyptisches Recht mit alexandrinischem Recht in Bezug auf das Verhältnis Patron - Freigelassener</term>
+               <term n="5">Androhung der Strafe (Prügel)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-02-02T10:03:01-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-02-02T09:45:49-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-02-01T23:42:37-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Submit - Added a correct link the image at Penn.</change>
+         <change when="2025-02-01T23:42:30-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Commit - Added a correct link the image at Penn.</change>
          <change who="HGV" when="1996-06-20">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 113 - 117. Zur Datierung vgl. BL IX, S. 181. Vgl. Atti del V Convegno Nazionale, S. 199-212. Vgl. Timai Ioannou Triantaphyllopoulou, S. 307-315.</p>
@@ -92,19 +104,19 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">706</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">706</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">181</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">136</biblScope>
                </bibl>
@@ -122,10 +134,10 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="http://sceti.library.upenn.edu/pages/index.cfm?so_id=4289"/>
+                  <graphic url="https://openn.library.upenn.edu/Data/0016/html/e2823.html"/>
                </figure>
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
