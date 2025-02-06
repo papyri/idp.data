@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63878" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 42 3008</title>
+            <title>Critica all'ontologia stoica</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">p.oxy;42;3008</idno>
             <idno type="MP3">02561.200</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -28,6 +32,10 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">8</width>
+                              <height unit="cm">16,6</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
@@ -44,19 +52,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -87,43 +96,119 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">platonic work about dualism</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose philosophy</term>
+               <term n="4" type="overview">platonic work about dualism</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Ilaria Andrea Serra during a workshop organized at the University of Florence by Valeria Piano (Univ. of Florence) with James Cowey (instructor; Univ. of Heidelberg) and Claudio Vergara (assistant; Univ. of Naples Federico II) within the project PRIN2022-INTEGRATION. INTEllectual miGRATION: circulation of philosophical books and ideas around the ancient Mediterranean through the evidence of Graeco-Romani papyri (CUP: B53D23023140006; P.I. Valeria Piano)</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" quantity="5" unit="character"/>.<gap reason="lost" atLeast="1" atMost="2" unit="character"/><gap reason="illegible" quantity="4" unit="character"/>αμ<gap reason="illegible" quantity="5" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="2" break="no" xml:id="lb2"/><app type="alternative"><lem>σαι δ’ εἶναι</lem><rdg>σαι δειναί</rdg></app>, τῆς περὶ <expan>ἕκαστο<ex>ν</ex></expan>
+<lb n="3"/>λεγομένης τῶν σωμάτων
+<lb n="4"/>δυάδος ἀδιάγνωστον αἰσθή
+<lb n="5" break="no"/>σει τὴν δ<supplied reason="lost">ι</supplied>αφορὰν ἐχούσης.
+<lb n="6"/>εἰ γὰρ σῶμα μὲν <hi rend="diaeresis">ἰ</hi>δίως ποι-
+<lb n="7"/>ὸν οἷον Πλάτων, σῶμα <app type="editorial"><lem resp="Long-Sedley"><unclear>θ</unclear>’ ἡ</lem><rdg resp="ed.pr."><gap reason="illegible" quantity="3" unit="character"/></rdg></app>
+<lb n="8"/>οὐσία τοῦ Πλάτωνος, διαφορὰ
+<lb n="9"/>δὲ φαινομένη τούτων οὔκ ἐ
+<lb n="10" break="no"/>στιν οὔτε σχήματος οὔτε<g rend="dot" type="filler"/>
+<lb n="11"/>χρώματος οὔτε μεγέθους οὔ<supplied reason="omitted">τε</supplied>
+<lb n="12"/>μορφῆς, ἀλλὰ καὶ βάρος <hi rend="diaeresis">ἴ</hi>σον
+
+<lb n="13" xml:id="lb13"/>καὶ <app type="editorial"><lem>τ<unclear>ό</unclear>πος</lem><rdg resp="Irwin">τ<supplied reason="lost">ό</supplied>πος</rdg><rdg resp="ed.pr.">τ<supplied reason="lost">ύ</supplied>πος</rdg></app> ὁ αὐτὸς ἀμφοτέ
+
+<lb n="14" break="no"/>ρων, τίνι διαιροῦντες ὅρῳ
+<lb n="15"/>κ<supplied reason="lost">αὶ</supplied> χαρακτῆρι νῦν μὲν<g rend="dot" type="filler"/>
+<lb n="16"/>φήσ<supplied reason="lost">ο</supplied>μεν αὐτοῦ Πλάτωνος
+<lb n="17"/>νῦν δὲ τῆς οὐσίας ἀντιλαμ
+<lb n="18" break="no"/>βάνεσθαι τῆς Πλάτωνος;<g type="middot"/>
+<lb n="19"/>εἰ μὲν γάρ ἐστ<unclear>ί</unclear>ν τις διαφο
+<lb n="20" break="no"/>ρά, λεγέσθω μ<unclear>ε</unclear>τὰ ἀποδεί
+<lb n="21" break="no"/><supplied reason="lost">ξεω</supplied>ς· εἰ δὲ μηδὲ λέγειν
+
+
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb2" xml:space="preserve">
+            <ref>2</ref>
+            <p>There is a top line above the omicron of ἕκαστο(ν) to indicate the abbreviation</p>
+          </item>
+               <item corresp="#lb13" xml:space="preserve">
+            <ref>13</ref>
+            <p>The papyrus reports the harsh spirit of ὁ αὐτὸς</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/8353"/>
-                  <biblScope unit="number">3008</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">42</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/8353"/>
+                  <biblScope n="1" unit="number">3008</biblScope>
+                  <biblScope n="2" unit="volume">42</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96748"/>
+                  <biblScope n="1" unit="volume">1</biblScope>
+                  <biblScope n="2" unit="chapter">20</biblScope>
+                  <biblScope n="3" unit="page" from="133" to="139">133-139</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="readings">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/97081"/>
+                  <biblScope n="1" unit="fascicle">10</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">478</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/83822"/>
+                  <biblScope n="1" unit="volume">3</biblScope>
+                  <biblScope n="2" unit="fragment">843b</biblScope>
+                  <biblScope n="3" unit="page" from="1044" to="1047">1044-1047</biblScope>
+               </bibl>
+               <bibl n="5" type="publication" subtype="principal">
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">P. Oxy. 42 pl.VI</bibl>
-               <bibl type="online">
+               <bibl type="online" n="1">
                   <ptr target="http://www.csad.ox.ac.uk/POxy/papyri/vol42/pages/3008.htm"/>
                </bibl>
-               <bibl type="online">
+               <bibl type="online" n="2">
                   <ptr target="https://doi.org/10.25446/oxford.21166846"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
