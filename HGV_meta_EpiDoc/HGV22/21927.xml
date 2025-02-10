@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21927">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Application to an Archidicastes</title>
+            <title>Bekanntmachung eines Darlehens</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">21927</idno>
             <idno type="TM">21927</idno>
             <idno type="ddb-perseus-style">0181;12;1561</idno>
-            <idno type="ddb-filename">p.oxy.12.1561</idno>
-            <idno type="ddb-hybrid">p.oxy;12;1561</idno>
+            <idno type="ddb-filename">sb.30.17614</idno>
+            <idno type="ddb-hybrid">sb;30;17614</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Oxford</settlement>
                   </placeName>
+                  <collection>Bodleian Library</collection>
+                  <idno type="invNo">MS. Gr. Class. e. 122 (P)</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,12 +34,12 @@
                <history>
                   <origin>
                      <origPlace>Oxyrhynchos</origPlace>
-                     <origDate notBefore="0269-08-29" notAfter="0269-09-27">29. Aug. - 27. Sept. 269</origDate>
+                     <origDate notBefore="0269-09-28" notAfter="0270-07-25">28. Sept. 269 - 25. Juli 270</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
                         <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                                   ref="http://www.trismegistos.org/place/1524 http://pleiades.stoa.org/places/736982">Oxyrhynchos</placeName>
                         <placeName type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,47 +68,68 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Gesuch an einen Archidikasten</term>
-               <term>Eingabe</term>
-               <term>Bekanntmachung eines Darlehens auf Basis einer Hypothek auf Besitz (Haus)</term>
-               <term>Geld</term>
+               <term n="1">Gesuch an einen Archidikasten</term>
+               <term n="2">Eingabe</term>
+               <term n="3">Bekanntmachung eines Darlehens auf Basis einer Hypothek auf Besitz (Haus)</term>
+               <term n="4">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-02-10T08:23:47-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-02-09T17:02:14-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-02-07T21:15:10-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - I first submitted this on 28 May 2021: ‘Text: updated from JJP 39 (2009) 25f. (S. 25; or S. 23, to align it with TM?). Meta: changed details on Publication; Date; Mentioned Dates; Place, Collection, Inventory Number; Illustrations; Other publications.’ Nothing happened to it; I’ve withdrawn it and updated the metadata from the SB 30 version (deleted the ‘notes’ as no longer necessary).</change>
          <change who="HGV" when="1994-08-16">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr. Zur Datierung vgl. P.Oxy. XL, S. 18 - 20. Zur Datierung vgl. JJP 37, 2007, S. 16, Anm. 3; zu Z. 20. vgl. ebenda, S. 18f. Neuedition: JJP 39, 2009, S. 23-29.</p>
-         </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">Bearbeitungsvermerk Z. 21: 29. Aug. 269</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
+                  <ref>Z. 6</ref>
+                  <date type="mentioned"
+                        when="0269-08-29"
+                        notBefore="0269-08-29"
+                        notAfter="0269-09-27">29. Aug. 269 - 27. Sept. 269</date>
+               </item>
+               <item n="2">
                   <ref>Z. 21</ref>
-                  <date type="mentioned" when="0269-08-29">29. Aug. 269</date>
+                  <date type="mentioned" notBefore="0269-09-28" notAfter="0270-07-25">
+              28. Sept. 269 - 25. Juli 270
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
                </item>
             </list>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">12</biblScope>
-                  <biblScope type="numbers">1561</biblScope>
+                  <title level="s" type="abbreviated">SB</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17614</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
+            <p>
+          keine
+          <bibl type="illustration">JJP 39, 2009, S. 24</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Oxy. 12 1561</bibl>
+            </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
