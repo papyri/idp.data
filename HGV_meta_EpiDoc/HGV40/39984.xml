@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv39984">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Lieferungsanweisung</title>
@@ -10,15 +10,17 @@
             <idno type="filename">39984</idno>
             <idno type="TM">39984</idno>
             <idno type="ddb-perseus-style">0239;20;14236</idno>
-            <idno type="ddb-filename">sb.20.14236</idno>
-            <idno type="ddb-hybrid">sb;20;14236</idno>
+            <idno type="ddb-filename">sb.30.17775</idno>
+            <idno type="ddb-hybrid">sb;30;17775</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berlin</settlement>
                   </placeName>
+                  <collection>Staatliche Museen</collection>
+                  <idno type="invNo">P. 7883</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Muchis (Arsinoites)</origPlace>
+                     <origPlace>Muchis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0701" notAfter="0800" precision="low">VIII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736970 https://www.trismegistos.org/place/1396">Muchis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +53,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,27 +70,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Auftrag an die Vorsteher des Dorfes Muchis zur Auszahlung eines Solidus an einen Bäcker</term>
+               <term n="1">Anweisung</term>
+               <term n="2">Lieferung</term>
+               <term n="3">Bäcker</term>
+               <term n="4">Geld</term>
+               <term n="5">Dorfvorsteher</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-02-16T10:18:56-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-02-16T09:37:29-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Add collection details. Clean up Bemerkungen.</change>
+         <change when="2025-02-15T17:40:43-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - = SB 30 17775</change>
          <change who="HGV" when="1997-09-22">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung: 11.(12.) Sept., 11. Indiktion. Unter dem griechischen Text eine Zeile in arabischer Schrift. Neuedition: ZPE 169, 2009, S.206f.</p>
+            <p>Datierung: 11.(12.) Sept., 11. Indiktion. Unter dem griechischen Text eine Zeile in arabischer Schrift.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">14236</biblScope>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17775</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,7 +115,12 @@
                   <graphic url="http://berlpap.smb.museum/02306/"/>
                </figure>
             </p>
-        </div>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB 20 14236</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
