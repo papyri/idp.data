@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv78850">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ordine di fornitura di vino</title>
+            <title>Weinleiferungsanweisung</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">78850</idno>
             <idno type="TM">78850</idno>
             <idno type="ddb-perseus-style">0277;;19</idno>
-            <idno type="ddb-filename">zpe.152.181</idno>
-            <idno type="ddb-hybrid">zpe;152;181</idno>
+            <idno type="ddb-filename">sb.30.17688</idno>
+            <idno type="ddb-hybrid">sb;30;17688</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Florence</settlement>
                   </placeName>
+                  <collection>Istituto Papirologico ’G. Vitelli’</collection>
+                  <idno type="invNo">PSI inv. 1133</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites</origPlace>
+                     <origPlace>Oxyrhynchites, Ägypten</origPlace>
                      <origDate notBefore="0301" notAfter="0400" precision="low">IV</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,9 +67,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Auftrag</term>
-               <term>N.N. an den Bruder Kopreus</term>
-               <term>Lieferung von Wein</term>
+               <term n="1">Auftrag</term>
+               <term n="2">N.N. an den Bruder Kopreus</term>
+               <term n="3">Lieferung von Wein</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -74,19 +78,15 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Vgl. ZPE 152, 2005, S. 180-181.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">ZPE</title>
-                  <biblScope n="1" type="volume">152</biblScope>
-                  <biblScope n="2" type="fascicle">(2005)</biblScope>
-                  <biblScope n="2" type="pages">S. 181</biblScope>
+                  <title level="s" type="abbreviated">SB</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17688</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -97,9 +97,9 @@
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
-               <listBibl>
-                  <bibl type="publication" subtype="other" n="1">PSI Com. 6 19</bibl>
-               </listBibl>
+            <listBibl>
+               <bibl type="publication" subtype="other">PSI Com. 6 19</bibl>
+            </listBibl>
          </div>
          <div type="figure">
             <p>
@@ -109,5 +109,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
