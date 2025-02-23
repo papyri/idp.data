@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv110062">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Four Byzantine Tax Receipts</title>
+            <title>Quittungen über Zahlungen in Gold für ἀννῶνα und κανονικά</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">110062</idno>
@@ -16,6 +16,10 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
+                  <placeName>
+                     <settlement>Berlin</settlement>
+                  </placeName>
+                  <collection>Staatliche Museen, Papyrussammlung</collection>
                   <idno type="invNo">P.Berol. 25135</idno>
                </msIdentifier>
                <physDesc>
@@ -29,24 +33,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Thynis (Hermopolites)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origPlace>Thynis (Hermopolites, Ägypten)</origPlace>
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0612"
                                notAfter="0613"
                                cert="low">612 - 613 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0627"
                                notAfter="0628"
                                cert="low">627 - 628 (?)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/789784 https://www.trismegistos.org/place/3209 https://www.trismegistos.org/place/816 https://www.trismegistos.org/place/2923">Thynis</placeName>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/789784 http://www.trismegistos.org/place/3209 http://www.trismegistos.org/place/816 http://www.trismegistos.org/place/2923">Thynis</placeName>
+                        <placeName n="2" type="ancient" subtype="nome">Hermopolites</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -54,8 +59,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -70,9 +76,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>4 Quittungen</term>
-               <term>Steuern (annona und canonica)</term>
-               <term>Geld</term>
+               <term n="1">Quittungen</term>
+               <term n="2">Steuern (annona und canonica)</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -81,8 +87,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 627 - 628. Gehört zum Magistor - Dossier. Vgl. JJP 37, 2007, S. 125-131. Neuedition ebenda S. 131-133.</p>
@@ -90,8 +96,9 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Berl. Cohen</title>
-                  <biblScope type="numbers">20</biblScope>
+                  <title level="s" type="abbreviated">SB</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17606</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -107,6 +114,11 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Berl. Cohen 20</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
