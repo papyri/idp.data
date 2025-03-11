@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23504">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Deposition</title>
@@ -31,14 +31,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Maoza? (Bezirk von Petra, Provinz Arabia)</origPlace>
+                     <origPlace>Maoza (Arabia)</origPlace>
                      <origDate when="0130-11-17">17. Nov. 130</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/687965 ? https://www.trismegistos.org/place/3146">Maoza</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/687965 https://www.trismegistos.org/place/3146">Maoza</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="province"
                                    ref="https://www.trismegistos.org/place/11132 https://pleiades.stoa.org/places/746711">Arabia</placeName>
                      </p>
@@ -48,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,9 +67,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aussage</term>
-               <term>Prozeß</term>
-               <term>Land</term>
+               <term n="1">Aussage</term>
+               <term n="2">Prozeß</term>
+               <term n="3">Land</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -75,8 +78,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Zur Datierung vgl. Einleitung.</p>
@@ -85,27 +88,27 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Yadin</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">24</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">24</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">376</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">286</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">292</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="4">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">291</biblScope>
                </bibl>
@@ -114,6 +117,13 @@
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.deadseascrolls.org.il/explore-the-archive/manuscript/5_6Hev24-1"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
