@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23491">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Petition to the Governor</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Jerusalem</settlement>
                   </placeName>
+                  <collection>Hebrew University, Library</collection>
+                  <idno type="invNo">13</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Maoza (Bezirk von Petra, Provinz Arabia)</origPlace>
-                     <origDate notBefore="0124-07" notAfter="0124-12" precision="low">2. Hälfte 124</origDate>
+                     <origPlace>Maoza (Arabia)</origPlace>
+                     <origDate notBefore="0124-07" notAfter="0124-12">
+                2. Hälfte - Dez. 124
+                <precision match="../@notBefore"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/687965 ? https://www.trismegistos.org/place/3146">Maoza</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/687965 https://www.trismegistos.org/place/3146">Maoza</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="province"
                                    ref="https://www.trismegistos.org/place/11132 https://pleiades.stoa.org/places/746711">Arabia</placeName>
                      </p>
@@ -48,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,26 +72,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Babatha an den Antistrategen N.N.</term>
-               <term>die Vormünder zahlen zu wenig für ihren Sohn</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Babatha an den Antistrategen N.N.</term>
+               <term n="3">die Vormünder zahlen zu wenig für ihren Sohn</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-03-11T10:57:09-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-03-11T09:45:05-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-03-11T08:37:10-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added digital image</change>
+         <change when="2025-03-11T08:37:04-04:00"
+                 who="http://papyri.info/editor/users/pag">Commit - added digital image</change>
          <change who="HGV" when="1997-08-28">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Yadin</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">13</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">13</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -101,6 +117,13 @@
                <bibl type="illustration">Plate 7</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.deadseascrolls.org.il/explore-the-archive/manuscript/5_6Hev13-1"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
