@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23494">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Deposition</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Jerusalem</settlement>
                   </placeName>
+                  <collection>Hebrew University Library</collection>
+                  <idno type="invNo">12</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,17 +33,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Maoza (Bezirk von Petra, Provinz Arabia)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0125-10-11">
-                        <certainty locus="value" match="../day-from-date(@when)"/>11. Okt. 125 (Tag unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0125-10-12">
-                        <certainty locus="value" match="../day-from-date(@when)"/>12. Okt. 125 (Tag unsicher)</origDate>
+                     <origPlace>Maoza (Arabia)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0125-10-11">
+                11. Okt. 125 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0125-10-12">
+                12. Okt. 125 (Tag unsicher)
+                <certainty locus="value" match="../day-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/687965 ? https://www.trismegistos.org/place/3146">Maoza</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/687965 https://www.trismegistos.org/place/3146">Maoza</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="province"
                                    ref="https://www.trismegistos.org/place/11132 https://pleiades.stoa.org/places/746711">Arabia</placeName>
                      </p>
@@ -51,8 +59,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,23 +76,31 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Anzeige</term>
-               <term>Erklärung</term>
-               <term>Protest</term>
-               <term>Vormünder</term>
-               <term>Geld</term>
-               <term>Mündel</term>
-               <term>die Mutter strebt Übereinkunft an</term>
+               <term n="1">Anzeige</term>
+               <term n="2">Erklärung</term>
+               <term n="3">Protest</term>
+               <term n="4">Vormünder</term>
+               <term n="5">Geld</term>
+               <term n="6">Mündel</term>
+               <term n="7">die Mutter strebt Übereinkunft an</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-03-11T14:14:27-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-03-11T10:44:10-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-03-11T08:38:51-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added digital image</change>
+         <change when="2025-03-11T08:38:45-04:00"
+                 who="http://papyri.info/editor/users/pag">Commit - added digital image</change>
          <change who="HGV" when="1997-10-07">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 12. Okt. 125. Griechisch - aramäisch - nabatäisch.</p>
@@ -92,17 +109,24 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Yadin</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">15</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">15</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plates 10 - 12</bibl>
-               <bibl type="illustration">Eretz Israel 8, 1967, "Tafel 10" nach S. 358</bibl>
-               <bibl type="illustration">ANRW II 13, nach S. 806</bibl>
-               <bibl type="illustration">Crisci, Scrivere greco, Tav. XXVI</bibl>
+               <bibl type="illustration" n="1">Plates 10 - 12</bibl>
+               <bibl type="illustration" n="2">Eretz Israel 8, 1967, "Tafel 10" nach S. 358</bibl>
+               <bibl type="illustration" n="3">ANRW II 13, nach S. 806</bibl>
+               <bibl type="illustration" n="4">Crisci, Scrivere greco, Tav. XXVI</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.deadseascrolls.org.il/explore-the-archive/manuscript/5_6Hev15-1"/>
+               </figure>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
@@ -115,8 +139,8 @@
             <head xml:lang="de">Übersetzungen</head>
             <listBibl xml:lang="en">
                <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">Grubbs, Women and the Law (2002), S. 252f</bibl>
-               <bibl type="translations">Kraemer, Women's Religions (2004), Nr. 62 C</bibl>
+               <bibl type="translations" n="1">Grubbs, Women and the Law (2002), S. 252f</bibl>
+               <bibl type="translations" n="2">Kraemer, Women's Religions (2004), Nr. 62 C</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="corrections">
@@ -156,5 +180,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
