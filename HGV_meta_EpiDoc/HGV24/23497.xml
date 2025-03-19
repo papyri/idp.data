@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv23497">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Deposit</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Jerusalem</settlement>
                   </placeName>
+                  <collection>Hebrew University Library</collection>
+                  <idno type="invNo">15</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,14 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Maoza (Bezirk von Petra, Provinz Arabia)</origPlace>
+                     <origPlace>Maoza (Arabia)</origPlace>
                      <origDate when="0128-02-21">21. Febr. 128</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/687965 ? https://www.trismegistos.org/place/3146">Maoza</placeName>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/687965 https://www.trismegistos.org/place/3146">Maoza</placeName>
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="province"
                                    ref="https://www.trismegistos.org/place/11132 https://pleiades.stoa.org/places/746711">Arabia</placeName>
                      </p>
@@ -48,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -64,19 +69,28 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Darlehen</term>
-               <term>Geld</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Darlehen</term>
+               <term n="3">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-03-13T16:33:35-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-03-11T10:46:27-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine&#xD;
+</change>
+         <change when="2025-03-11T08:40:36-04:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added digital image</change>
+         <change when="2025-03-11T08:40:30-04:00"
+                 who="http://papyri.info/editor/users/pag">Commit - added digital image</change>
          <change who="HGV" when="1997-08-28">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Griechisch - aramäisch. Zum Ort vgl. BL IX, S. 376 und ZPE 116, 1997, S. 204 - 208.</p>
@@ -85,8 +99,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Yadin</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">17</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">17</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,23 +120,50 @@
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
+<<<<<<< HEAD
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/23497"/>
                </bibl>
                <bibl type="BL">
+=======
+               <bibl type="BL" n="1">
+>>>>>>> 4c0d7149cac391d5847e64d0956bc885c422e75f
                   <biblScope type="volume">IX</biblScope>
                   <biblScope type="pages">268</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">X</biblScope>
                   <biblScope type="pages">285</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XI</biblScope>
                   <biblScope type="pages">292</biblScope>
                </bibl>
             </listBibl>
          </div>
+<<<<<<< HEAD
+=======
+         <div type="bibliography" subtype="illustrations">
+            <p>
+               <bibl type="illustration" n="1">Plates 15, 16</bibl>
+               <bibl type="illustration" n="2">Crisci, Scrivere greco, Tav. XXVII</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <head xml:lang="de">Übersetzungen</head>
+            <listBibl xml:lang="en">
+               <head xml:lang="de">Englisch:</head>
+               <bibl type="translations">Kraemer, Women's Religions (2004), Nr. 62 E</bibl>
+            </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://www.deadseascrolls.org.il/explore-the-archive/manuscript/5_6Hev17-1"/>
+               </figure>
+            </p>
+         </div>
+>>>>>>> 4c0d7149cac391d5847e64d0956bc885c422e75f
       </body>
-   </text>
+  </text>
 </TEI>
