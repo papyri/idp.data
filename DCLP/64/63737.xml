@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63737" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 3 438</title>
+            <title>Parte iniziale di esposizione filosofica</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">p.oxy;3;438</idno>
             <idno type="MP3">02589.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -28,10 +32,14 @@
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">4</width>
+                              <height unit="cm">12,9</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
+                        <layout writtenLines="23">
                            <p>papyrus fragment (columns: 0, pagination: 0)</p>
                         </layout>
                      </layoutDesc>
@@ -39,19 +47,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0101" notAfter="0300" precision="low">II - III</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,45 +71,117 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">philosophy</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
+               <term n="5" type="overview">philosophy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1,msup" xml:id="lb1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ον</unclear>
+
+<lb n="1"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/>ν παρόντ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF)"><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τὸ</supplied>ν παρόντ<supplied reason="lost">α</supplied><gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+
+<lb n="2"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/>υν</lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF)"><supplied reason="lost">ἁπλο</supplied>ῦν</rdg><rdg resp="Sedley (apud CPF)"><supplied reason="lost">βραχ</supplied>ὺν</rdg></app>τε καὶ <app type="editorial"><lem>ευ.<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF)">εὐ<unclear>μ</unclear><supplied reason="lost">αθῆ</supplied></rdg></app> 
+
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> ἐνόμισα οὖ<unclear>ν</unclear> <app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF e.g.)"><supplied reason="lost">ὅτι vel ὡς εὖ λε</supplied> <lb n="4" break="no"/><supplied reason="lost">γουσ</supplied><unclear>ι</unclear>ν vel <supplied reason="lost">ὅτι vel ὡς εὖ ἔ</supplied> <lb n="4" break="no"/><supplied reason="lost">χουσ</supplied><unclear>ι</unclear>ν</rdg></app>
+
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ι</unclear>ν οἱ τὰ ἄρισ<supplied reason="lost">τ</supplied>α<app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Sedley (apud CPF)"><supplied reason="lost">πάντων</supplied></rdg></app>
+
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/> <app type="editorial"><lem><supplied reason="lost">φιλο</supplied><unclear>σ</unclear>οφήσαντε<unclear>ς</unclear></lem><rdg resp="ed. pr."><supplied reason="lost">φιλο</supplied><unclear>σ</unclear>οφήσαντε<unclear>ς</unclear></rdg></app> <app type="editorial"><lem>τ<unclear>ὴ</unclear><supplied reason="lost">ν</supplied></lem><rdg resp="Sedley (apud CPF)"> τ<unclear>ὴ</unclear><supplied reason="lost">ν ἠθι</supplied><lb n="6" break="no"/><supplied reason="lost">κὴν</supplied></rdg></app><gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/> φιλοσοφίαν <app type="editorial"><lem>ω<unclear>σ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/>οντα ἐπίστασ<supplied reason="lost">θαι</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">κ</supplied>αὶ πόθεν καὶ τ<unclear>ί</unclear>ν<supplied reason="lost">ος</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="9"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">μέτ</supplied><unclear>ρ</unclear>ιος τὸν τρόπο<supplied reason="lost">ν</supplied> <gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF e.g.)">ὥ<unclear>σ</unclear><supplied reason="lost">τε τὰ συμ</supplied> <lb n="7" break="no"/><supplied reason="lost">φέρ</supplied>οντα ἐπίστασ<supplied reason="lost">θαι, καὶ</supplied> <lb n="8"/><supplied reason="lost">δὴ κ</supplied>αὶ πόθεν καὶ τ<unclear>ί</unclear>νο<supplied reason="lost">ς χάριν</supplied> <lb n="9"/><supplied reason="lost">μέτ</supplied><unclear>ρ</unclear>ιος τὸν τρόπο<supplied reason="lost">ν τις</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+
+<lb n="10"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/>.</lem><rdg resp="Montanari (apud CPF)"><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἐγ</supplied>ώ</rdg></app> μὲν γὰρ προσ<gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="11"/><gap reason="lost" extent="unknown" unit="character"/> <choice><reg><supplied reason="lost">γ</supplied>ινώσκω</reg><orig><supplied reason="lost">γ</supplied>εινώσκω</orig></choice> <app type="editorial"><lem>ἐκ <unclear>κ</unclear>ρ<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF)">ἐκ <unclear>κ</unclear>ρί<supplied reason="lost">σεως</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg><rdg resp="ed.pr.">εκ<unclear>ε</unclear>ρ<gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+
+<lb n="12"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τὸν</supplied> βουλόμενον .<gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="13"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τα</supplied>ῦτα μὲν εὐκαιρ<supplied reason="lost">ότερον</supplied> <gap reason="lost" extent="unknown" unit="character"/> <lb n="14"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ὕσ</supplied>τερον δειχθήσ<supplied reason="lost">εται</supplied> <gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="dubitanter ed. pr."><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">τα</supplied>ῦτα μὲν εὐκαιρ<supplied reason="lost">ότερον</supplied> <lb n="14"/><supplied reason="lost">ὕσ</supplied>τερον δειχθήσ<supplied reason="lost">εται</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+
+<lb n="15"/><app type="editorial"><lem><gap reason="lost" extent="unknown" unit="character"/>τα</lem><rdg resp="Martinelli Tempesta-Linguiti (prop. dubitanter apud CPF)"><gap reason="lost" extent="unknown" unit="character"/><supplied reason="lost">κἆ</supplied>τα</rdg></app> τίθεμαι κρ<supplied reason="lost">εῖττον</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/>ταῦτα <app type="editorial"><lem>πρω<gap reason="lost" extent="unknown" unit="character"/></lem><rdg resp="Martinelli Tempesta-Linguiti (prop. apud CPF)">πρῶ<supplied reason="lost">τα</supplied> <gap reason="lost" extent="unknown" unit="character"/> vel πρῶ<supplied reason="lost">τον</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+
+<lb n="17"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">μανθά</supplied>νειν μηθέν<supplied reason="lost">α</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="18"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">γεγο</supplied>νέναι κα<gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="19"/><gap reason="lost" extent="unknown" unit="character"/>ν<unclear>τω</unclear> ασ<gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="20"/><gap reason="lost" extent="unknown" unit="character"/>.νε<unclear>ι</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="21"/><gap reason="lost" extent="unknown" unit="character"/>αν<unclear> </unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="22"/><gap reason="lost" extent="unknown" unit="character"/>. <unclear>ε</unclear><gap reason="lost" extent="unknown" unit="character"/>
+
+<lb n="23"/><gap reason="lost" extent="unknown" unit="line"/>
+
+</ab></div>
+         <div type="commentary" subtype="linebyline">
+            <list>
+               <item corresp="#lb1" xml:space="preserve">
+            <ref>1,msup</ref>
+            <p>The editors suppose that these two traces in the upper margin can belong to: 1. a title; 2. a marginal note; 3. a correction.</p>
+          </item>
+            </list>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/95233"/>
-                  <biblScope unit="number">438</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">3</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95233"/>
+                  <biblScope n="1" unit="number">438</biblScope>
+                  <biblScope n="2" unit="volume">3</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96748"/>
+                  <biblScope n="1" unit="volume">CPF 2.1.1</biblScope>
+                  <biblScope n="2" unit="number">18</biblScope>
+                  <biblScope n="3" unit="page" from="119" to="124">119-124</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Liège</bibl>
+               <bibl type="printed">CPF 2 1* 18 fig. 18</bibl>
+               <bibl type="online">
+                  <ptr target="http://findit.library.yale.edu/catalog/digcoll:2756830"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
