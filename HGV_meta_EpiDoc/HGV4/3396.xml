@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv3396">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Eingabe gegen Amosis und Genossen</title>
@@ -33,7 +33,9 @@
                   <origin>
                      <origPlace>Memphis</origPlace>
                      <origDate notBefore="-0163-10-19">
-                        <offset type="after" n="1">nach</offset> 19. Okt. 163 v.Chr.</origDate>
+                        <offset n="1" type="after">nach</offset>
+                19. Okt. 163 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
@@ -46,8 +48,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,21 +65,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Eingabe</term>
-               <term>Ptolemaios an den königlichen Freund und Strategen Diodotos</term>
-               <term>Plünderung des Tempels durch Prieste</term>
-               <term>Gewalttaten</term>
-               <term>Entwurf</term>
+               <term n="1">Eingabe</term>
+               <term n="2">Ptolemaios an den königlichen Freund und Strategen Diodotos</term>
+               <term n="3">Plünderung des Tempels durch Prieste</term>
+               <term n="4">Gewalttaten</term>
+               <term n="5">Entwurf</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-03-25T10:40:47-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-03-25T10:25:15-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-03-24T11:54:35-04:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Submit - Added link to digital image</change>
          <change who="HGV" when="1904-04-14">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -93,8 +102,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">UPZ</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">5</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">5</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -115,24 +124,31 @@
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/3396"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">I</biblScope>
                   <biblScope type="pages">342</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">IV</biblScope>
                   <biblScope type="pages">100</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">V</biblScope>
                   <biblScope type="pages">149</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="4">
                   <biblScope type="volume">VII</biblScope>
                   <biblScope type="pages">276</biblScope>
                </bibl>
             </listBibl>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://collections.louvre.fr/en/ark:/53355/cl010001598"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
