@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5023">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Ἔγγραφον ἀφορῶν εἰς τὴν ἐλαϊκήν und Ἔγγραφον ἀφορῶν εἰς χρηματικὴν καταβολήν</title>
@@ -31,18 +31,23 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben (?)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0149-11-22">
-                        <certainty locus="value" match="../year-from-date(@when)"/>22. Nov. 149 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0138-11-20">
-                        <certainty locus="value" match="../year-from-date(@when)"/>20. Nov. 138 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Theben ? (Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="-0149-11-22">
+                22. Nov. 149 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="-0138-11-20">
+                20. Nov. 138 v.Chr. (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/991398 https://www.trismegistos.org/place/2983 https://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +55,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,10 +72,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Anweisung</term>
-               <term>Zahlung</term>
-               <term>Bank</term>
-               <term>Geld an Militär</term>
+               <term n="1">Anweisung</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Bank</term>
+               <term n="4">Geld an Militär</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -78,8 +84,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Vgl. APF 14, 1941, S. 159 - 160. Zur Datierung vgl. ebenda. Alternativdatierung: 20. Nov.138 v. Chr. Zum Ort vgl. P.Kramer, S. 15, Anm. 10.</p>
@@ -87,15 +93,22 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Athen.</title>
-                  <biblScope type="numbers">10</biblScope>
-                  <biblScope type="generic">und 11</biblScope>
+                  <title level="s" type="abbreviated">APF</title>
+                  <biblScope n="1" type="volume">14</biblScope>
+                  <biblScope n="2" type="fascicle">(1941)</biblScope>
+                  <biblScope n="3" type="pages">S. 159</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>keine</p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">P.Athen. 10</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Athen. 11</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
