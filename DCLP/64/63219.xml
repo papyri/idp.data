@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63219" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Bkt. 9 29</title>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">bkt;9;29</idno>
             <idno type="MP3">02797.750</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,18 +43,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Arsinoites (Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
+                     <origPlace>Fundort: Arsinoites, Egypt; Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0001" notAfter="0200" precision="low">I - II</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -81,10 +86,10 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>comedy (?)</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">prose</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">comedy (?)</term>
+               <term n="4" type="overview">prose</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -93,10 +98,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <ab>
@@ -121,12 +126,13 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/14433"/>
-                  <biblScope unit="number">29</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
                   <title level="s" type="abbreviated">BKT</title>
-                  <biblScope unit="volume">9</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope n="1" unit="number">29</biblScope>
+                  <biblScope n="2" unit="volume">9</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
@@ -139,5 +145,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
