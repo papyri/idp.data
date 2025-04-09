@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64070" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 4 684</title>
+            <title>Sul comportamento da tenere con un sovrano</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">p.oxy;4;684</idno>
             <idno type="MP3">02591.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -24,34 +28,42 @@
                   <idno type="invNo">Baltimore, Johns Hopkins University P. Oxy. 684</idno>
                </msIdentifier>
                <physDesc>
-                  <objectDesc form="fragment">
+                  <objectDesc form="roll">
                      <supportDesc>
                         <support>
                            <material>papyrus</material>
+                           <dimensions>
+                              <width unit="cm">6.5</width>
+                              <height unit="cm">12</height>
+                           </dimensions>
                         </support>
                      </supportDesc>
                      <layoutDesc>
-                        <layout>
-                           <p>papyrus fragment (columns: 0, pagination: 0)</p>
-                        </layout>
+                        <layout columns="1"/>
                      </layoutDesc>
                   </objectDesc>
+                  <handDesc>
+                     <p>
+                        <term>severe style</term>
+                     </p>
+                  </handDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="0200" notAfter="0299">200 - 299</origDate>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="0201" notAfter="0300" precision="low">III</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,45 +74,101 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>philosophy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">advice for dealings with sovereigns</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">philosophy</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>This papyrus has been digitally edited by Irene Gasperini and Ilaria Andrea Serra during a workshop organised at the University of Florence by Valeria Piano (Univ. of florence) with James Cowey (instructor; Univ. of Heidelberg) and Claudio vergara (assistant; Univ. of Naples Federico II) within the project PRIN2022-INTEGRATION.INTEllectual miGRATION: circulation of philosophical books and idea around the ancient Mediterranean through the evidence of Graeco-Roman papyri (CUP: B53D23023140006; P.I. Valeria Piano).</p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/> <gap reason="lost" quantity="2" unit="character"/> <supplied reason="lost">ἀν</supplied>τιδ<unclear>όσεις</unclear> <app type="editorial"><lem><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" quantity="1" unit="character"/><gap reason="illegible" quantity="3" unit="character"/></lem><rdg resp="ed.pr.">ο<gap reason="illegible" quantity="1" unit="character"/><unclear>ν</unclear><gap reason="lost" quantity="1" unit="character"/><unclear>ιδα</unclear><gap reason="lost" extent="unknown" unit="character"/></rdg></app> <gap reason="lost" quantity="8" unit="character"/>
+<lb n="2"/><app type="editorial"><lem><gap reason="lost" quantity="4" unit="character"/>ν ἔργων</lem><rdg resp="Sedley"><gap reason="lost" quantity="3" unit="character"/> <supplied reason="lost">ἐ</supplied>νεργῶν</rdg><rdg resp="Sedley"> <gap reason="lost" quantity="2" unit="character"/> <supplied reason="lost">συ</supplied>νεργῶν</rdg></app><app type="editorial"><lem>ἐν ο<supplied reason="lost">ἷ</supplied>ς</lem><rdg resp="ed.pr.">ενος</rdg></app> εἰσιν <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="6" unit="character"/>
+<lb n="3"/><gap reason="lost" quantity="4" unit="character"/>σων βούλονται πραγ<unclear>ματ</unclear><gap reason="lost" quantity="4" unit="character"/>
+<lb n="4"/><gap reason="lost" quantity="3" unit="character"/><unclear>νει</unclear>ν, ἔχει <unclear>δ</unclear>έ τινα κα<unclear>ὶ</unclear> <app type="editorial"><lem><unclear>αὐ</unclear><supplied reason="lost">γὴν</supplied></lem><rdg resp="ed.pr."><unclear>αυ</unclear><gap reason="lost" quantity="4" unit="character"/></rdg></app>
+<lb n="5"/><app type="editorial"><lem><supplied reason="lost">ἐ</supplied><unclear>νε</unclear>ργεστέρα<supplied reason="lost">ν</supplied></lem><rdg resp="ed.pr."><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ἐ</supplied><unclear>νε</unclear>ργεστέρα<supplied reason="lost">ν</supplied></rdg></app> <unclear>ἢ</unclear> <app type="editorial"><lem>τρόπο<unclear>ν</unclear>· <unclear>ο</unclear><supplied reason="lost">ὐ γάρ τι</supplied></lem><rdg resp="ed.pr.">τροπο<gap reason="illegible" quantity="2" unit="character"/> <supplied reason="lost">τί δὲ</supplied></rdg></app>
+<lb n="6"/><supplied reason="lost">δεῖ</supplied> μᾶ<unclear>λ</unclear><supplied reason="lost">λ</supplied>ον παιδεύει<unclear>ν</unclear> τ<unclear>οὺ</unclear><supplied reason="lost">ς</supplied> <unclear>π</unclear>ρο<supplied reason="lost">σελευ</supplied>
+<lb n="7" break="no"/><supplied reason="lost">σο</supplied><unclear>μ</unclear>ένους βασιλεῖ ἢ τοῦ ἀξ<unclear>ι</unclear>ώμ<supplied reason="lost">ατος</supplied>
+<lb n="8"/><supplied reason="lost">τὰ</supplied> <unclear>δ</unclear><supplied reason="lost">ιά</supplied>φορα· τί <unclear>μ</unclear>ὲ<unclear>ν</unclear> <unclear>τ</unclear>αρ<unclear>άσ</unclear>σε<unclear>ι</unclear> <app type="editorial"><lem><supplied reason="lost">κρεῖσ</supplied>
+<lb n="9" break="no"/><supplied reason="lost">σο</supplied><unclear>ν</unclear></lem><rdg resp="ed.pr."><gap reason="lost" quantity="4" unit="character"/> <lb n="9" break="no"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/></rdg></app> βυ<unclear>σ</unclear><supplied reason="lost">σ</supplied><unclear>ί</unclear>νου; τί δ<supplied reason="lost">ὲ</supplied> εὐνήτ<unclear>ου</unclear>; <supplied reason="lost">τί δὲ</supplied>
+<lb n="10"/><supplied reason="lost">οὐ</supplied> <unclear>τ</unclear>ῇ ὄ<unclear>ψ</unclear>ει <app type="editorial"><lem>ὑπ<supplied reason="lost">εῖ</supplied><unclear>κο</unclear>ν</lem><rdg resp="ed.pr.">υπ<gap reason="lost" quantity="1" unit="character"/>.<unclear>ο</unclear>ν</rdg></app>; τί δὲ τ<unclear>ῇ</unclear> α<supplied reason="lost">ὐδῇ</supplied>
+<lb n="11"/><supplied reason="lost">ἐσ</supplied><unclear>τ</unclear>ιν ἕτερ<supplied reason="lost">ο</supplied>ν; το<supplied reason="lost">ι</supplied><unclear>ο</unclear>ύτους <app type="editorial"><lem>ἀτ<unclear>αρά</unclear><supplied reason="lost">κτους</supplied></lem><rdg resp="ed.pr.">ατ<gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="12"/><supplied reason="lost">δεῖ</supplied> γίγνεσ<supplied reason="lost">θ</supplied>αι πρὸς τοὺς βασιλέα<supplied reason="lost">ς, καὶ</supplied>
+<lb n="13"/><supplied reason="lost">μά</supplied>λα <app type="editorial"><lem>εἰκότ<supplied reason="lost">ω</supplied><unclear>ς</unclear> <g type="high-punctus"/></lem><rdg resp="Piano ap. CPF">εἰκότ<supplied reason="lost">ω</supplied><unclear>ς</unclear> <g type="high-punctus"/></rdg><rdg resp="ed.pr.">εικοτ<supplied reason="lost">ω</supplied><unclear>ς</unclear></rdg></app> <app type="editorial"><lem><unclear>δειν</unclear>αὶ</lem><rdg resp="Funghi ap. CPF"><unclear>δειν</unclear>αὶ</rdg><rdg resp="ed.pr."><unclear>ακ</unclear>μαι</rdg></app> μὲν γά<unclear>ρ</unclear> <unclear>εἰσ</unclear><supplied reason="lost">ιν</supplied> <app type="editorial"><lem><supplied reason="lost">ὀρ</supplied>
+<lb n="14" break="no"/><supplied reason="lost">γαὶ</supplied></lem><rdg resp="Funghi"><supplied reason="lost">ὀρ</supplied><lb n="13" break="no"/><supplied reason="lost">γαὶ</supplied></rdg></app><app type="editorial"><lem resp="Bastianini 2009"><unclear>κ</unclear>υμάτων</lem><rdg resp="ed.pr."><gap reason="lost" extent="unknown" unit="character"/><unclear>α</unclear>υματων</rdg></app> θαλασσίων <app type="editorial"><lem><unclear>καὶ</unclear> <unclear>ῥ</unclear><supplied reason="lost">ύακος</supplied>
+<lb n="15"/><supplied reason="lost">ζε</supplied><unclear>σ</unclear>τοῦ</lem><rdg resp="Bastianini 2009"><unclear>καὶ</unclear> <unclear>ὕ</unclear><supplied reason="lost">δατος</supplied> <supplied reason="lost">ζε</supplied><unclear>σ</unclear>τοῦ</rdg><rdg resp="ed.pr."><gap reason="illegible" quantity="3" unit="character"/><gap reason="lost" quantity="6" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>του</rdg></app> καὶ πυρός, <supplied reason="lost">ο</supplied>ὐδὲν δὲ οὕτω <app type="editorial"><lem><supplied reason="lost">καίε</supplied>
+<lb n="16" break="no"/><supplied reason="lost">τα</supplied>ι</lem><rdg resp="Bastianini 2009"><supplied reason="lost">καίε</supplied><lb n="15" break="no"/><supplied reason="lost">τα</supplied>ι</rdg><rdg resp="Wilamowitz"><supplied reason="lost">οἰ</supplied><lb n="15" break="no"/><supplied reason="lost">δᾶ</supplied>ι</rdg></app> καὶ κυμαίνει καὶ <app type="editorial"><lem>ἀναζε<unclear>ῖ</unclear></lem><rdg resp="ed.pr.">αναζε<supplied reason="lost">ι</supplied></rdg></app> <supplied reason="lost">ὡς</supplied>
+<lb n="17"/><supplied reason="lost">θυ</supplied><unclear>μ</unclear>ὸς βασ<supplied reason="lost">ι</supplied>λέ<unclear>ω</unclear><supplied reason="lost">ς</supplied>· ἅτε γὰρ μέγας ὢ<supplied reason="lost">ν καὶ</supplied>
+<lb n="18"/><supplied reason="lost">αὐ</supplied>τοκράτωρ <unclear>κ</unclear><supplied reason="lost">α</supplied>ὶ <app type="editorial"><lem>πάλ<unclear>αι</unclear></lem><rdg resp="Bastianini 2009">πάλ<unclear>αι</unclear></rdg><rdg resp="ed.pr.">παλ<unclear>η</unclear></rdg></app> τῇ ἐξου<supplied reason="lost">σίᾳ</supplied>
+<lb n="19"/><supplied reason="lost">χρ</supplied>ώμενος, ὀξύς ἐστιν καὶ ἀκατά<supplied reason="lost">σχε</supplied>
+<lb n="20" break="no"/><supplied reason="lost">τος</supplied> καὶ πρός τε τὰς <choice><reg>τιμὰς</reg><orig>τειμὰς</orig></choice> πρόχ<supplied reason="lost">ειρος</supplied>
+<lb n="21"/><supplied reason="lost">πρό</supplied>ς τε τὰς κολάσεις ἀκώλυτος. <supplied reason="lost">χρὴ</supplied>
+<lb n="22"/><supplied reason="lost">οὖν</supplied> τὸν προσελευσόμενον τῷ τ<unclear>ο</unclear><supplied reason="lost">ιῷ</supplied>
+<lb n="23" break="no"/><supplied reason="lost">δε κ</supplied>αὶ τηλικῷδε χ<supplied reason="lost">ρ</supplied>ῆσθαι μὲν <gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/95234"/>
-                  <biblScope unit="number">684</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">4</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95234"/>
+                  <biblScope n="1" unit="number">684</biblScope>
+                  <biblScope n="2" unit="volume">4</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96750"/>
+                  <biblScope n="1" unit="volume">8</biblScope>
+                  <biblScope n="2" unit="page" from="118" to="126">118-126</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/77547"/>
+                  <biblScope n="1" unit="volume">19</biblScope>
+                  <biblScope n="2" unit="chapter" from="13" to="21">13-21</biblScope>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="4" type="reference" subtype="readings">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/96757"/>
+                  <biblScope n="1" unit="volume">166</biblScope>
+                  <biblScope n="2" unit="page">667</biblScope>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Liège</bibl>
+               <bibl type="printed">CPF II.1*** Tav. 8</bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
