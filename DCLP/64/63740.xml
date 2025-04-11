@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63740" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Tebt. 2 270</title>
+            <title>Fragment on grammar (?)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">p.tebt;2;270</idno>
             <idno type="MP3">02156.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,17 +43,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Tebtynis (Arsinoites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Tebtynis (Arsinoites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0299">100 - 299</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2287">Tebtynis</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/2287">Tebtynis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -87,29 +91,71 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>philology</term>
-               <term>grammar</term>
-               <term type="culture">science</term>
-               <term type="overview">Fragment on grammar (?)</term>
+               <term n="1" type="culture">science</term>
+               <term n="2">philology</term>
+               <term n="3">grammar</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2025-04-11T17:01:34-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Revised text and updated metadata.</change>
+         <change when="2025-04-11T15:59:10-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add diacritical signs to l. 1; l. 5-6 has traces, not lacunas ([.2] -&gt; .2 etc.). Add lost.?lin to the end.</change>
+         <change when="2025-04-10T09:26:33-04:00"
+                 who="http://papyri.info/editor/users/yasminkimmel">Submit - Entered text from edition.</change>
+          <change when="2025-04-11T17:01:34-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Revised text and updated metadata.</change>
+          <change when="2025-04-11T15:59:10-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add diacritical signs to l. 1; l. 5-6 has traces, not lacunas ([.2] -&gt; .2 etc.). Add lost.?lin to the end.</change>
+          <change when="2025-04-10T09:26:33-04:00"
+                 who="http://papyri.info/editor/users/yasminkimmel">Submit - Entered text from edition.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Yasmin Kimmel and revised by Holger Essler during a Erasmus+ BIP workshop (
+          <ref target="http://https://site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ).
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/>οἱ δὲ πα<supplied reason="lost">ρ</supplied>ὰ τὸ <app type="editorial"><lem>ἀκ<unclear>α</unclear>ν<unclear>θ</unclear><gap reason="lost" quantity="2" unit="character"/></lem><rdg resp="Körte">ἄκιδνο<supplied reason="lost">ν</supplied></rdg></app>
+<lb n="2"/>Ὅμηρο<supplied reason="lost">ς</supplied> οὐδὲν ἀ<supplied reason="lost">κί</supplied>
+<lb n="3" break="no"/>δνότε<unclear>ρ</unclear>ον γαῖα <supplied reason="lost">τρέ</supplied>
+<lb n="4" break="no"/>φει τὸ γὰρ ἀπαλ<unclear>ὸ</unclear><supplied reason="lost">ν</supplied>
+<lb n="5"/>θρυπτ<supplied reason="lost">όν</supplied> τε κα<unclear>ὶ</unclear> <gap reason="illegible" quantity="2" unit="character"/>
+<lb n="6"/>νεσο<unclear>ι</unclear><gap reason="illegible" quantity="3" unit="character"/>θε<unclear>ι</unclear><gap reason="illegible" quantity="1" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Tebt.</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <biblScope unit="number">270</biblScope>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95393"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="number">270</biblScope>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/97233"/>
+                  <biblScope n="1" unit="number">492</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">259</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Liège</bibl>
@@ -119,5 +165,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
