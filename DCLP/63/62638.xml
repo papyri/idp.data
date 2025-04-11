@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m62638" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Oxy. 49 3509</title>
+            <title>Plato, Republic 1.330 a2-b4</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">p.oxy;49;3509</idno>
             <idno type="MP3">01417.300</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -44,19 +48,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Oxyrhynchos (Oxyrhynchites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Oxyrhynchos (Oxyrhynchites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0250" notAfter="0350">250 - 350</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -67,17 +72,16 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose philosophy dialogue</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Plato philosophus; Res Publica (Republic) 01 330 a2-b4</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose philosophy dialogue</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -86,12 +90,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Alexandra Sfrintzeri and revised by Holger Essler during a Erasmus+ BIP workshop (<ref target="http://https://site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>).</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Alexandra Sfrintzeri and revised by Holger Essler during a Erasmus+ BIP workshop (
+          <ref target="http://https://site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ).
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
 <lb n="1" break="no"/><supplied reason="lost">σ</supplied>τὸς ἐγένετο οὔτ᾽ ἐ
 <lb n="2" break="no"/><supplied reason="lost">κ</supplied>εῖνος Ἀθηναῖος.<g type="high-punctus"/>
@@ -126,20 +136,38 @@
 </ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/9970"/>
-                  <biblScope unit="number">3509</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="reference" subtype="previous">
                   <title level="s" type="abbreviated">P. Oxy.</title>
-                  <biblScope unit="volume">49</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/9970"/>
+                  <biblScope n="1" unit="number">3509</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/97234"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="195" to="198">195-198</biblScope>
+               </bibl>
+               <bibl n="3" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/68414"/>
+                  <biblScope n="1" unit="number">63</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="335" to="337">335-337</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato philosophus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0059">Plato philosophus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/972">Res Publica</title>
@@ -148,13 +176,13 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">ZPE 30, pl.6</bibl>
-               <bibl type="printed">CPF IV.2, pl.209</bibl>
+               <bibl type="printed" n="1">ZPE 30, pl.6</bibl>
+               <bibl type="printed" n="2">CPF IV.2, pl.209</bibl>
                <bibl type="online">
                   <ptr target="https://doi.org/10.25446/oxford.21168625"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
