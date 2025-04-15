@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60406" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>TM 60406</title>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">tm;;60406</idno>
             <idno type="MP3">00662.010</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,19 +43,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0100" notAfter="0199">100 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -89,11 +94,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 02.629-637</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Ilias 02.629-637</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -102,12 +107,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Austėja Daukšaitė and revised by Holger Essler during an Erasmus+ BIP workshop (<ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>).</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Austėja Daukšaitė and revised by Holger Essler during an Erasmus+ BIP workshop (
+          <ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ).
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
 <lb n="1"/>ὅς π<unclear>ο</unclear>τε Δουλ<supplied reason="lost">ί</supplied><unclear>χ</unclear><supplied reason="lost">ιονδ᾽ ἀπενάσσατο πατρὶ χολωθείς</supplied>
 <lb n="2"/><app type="editorial"><lem>τοῖς</lem><rdg resp="codd.">τῷ</rdg></app> δ᾽ ἅμα τε<unclear>σ</unclear><supplied reason="lost">σαράκοντα μέλαιναι νῆες ἕποντο</supplied>
@@ -125,7 +136,8 @@
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
@@ -142,19 +154,25 @@
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">680</biblScope>
+                  <biblScope n="1" unit="number">680</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/63346"/>
+                  <biblScope n="1" unit="number">3</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">7</biblScope>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
