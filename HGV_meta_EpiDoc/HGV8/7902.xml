@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7902">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Receipt to Harentothes and his sons</title>
@@ -9,7 +9,6 @@
          <publicationStmt>
             <idno type="filename">7902</idno>
             <idno type="TM">7902</idno>
-            <idno type="ddb-perseus-style">0239;20;14426</idno>
             <idno type="ddb-filename">p.kynopolites.1</idno>
             <idno type="ddb-hybrid">p.kynopolites;;1</idno>
          </publicationStmt>
@@ -20,7 +19,7 @@
                      <settlement>Mallawi</settlement>
                   </placeName>
                   <collection>Mallawi Museum</collection>
-                  <idno type="invNo">602/8</idno>
+                  <idno type="invNo">inv. 602/8</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -33,23 +32,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kynopolites, Ägypten</origPlace>
-                     <origDate n="1" xml:id="dateAlternativeX" when="-0093-09-09">
-                9. Sept. 93 v.Chr. (Jahr unsicher)
-                <certainty locus="value" match="../year-from-date(@when)"/>
-                     </origDate>
-                     <origDate n="2" xml:id="dateAlternativeY" when="-0060-09-01">
-                1. Sept. 60 v.Chr. (Jahr unsicher)
-                <certainty locus="value" match="../year-from-date(@when)"/>
-                     </origDate>
+                     <origPlace>Kynopolites</origPlace>
+                     <origDate xml:id="dateAlternativeX"
+                               notBefore="-0093-09-09"
+                               notAfter="-0093-09-09">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>9. Sept. 93 v.Chr. (Jahr unsicher)</origDate>
+                     <origDate xml:id="dateAlternativeY"
+                               notBefore="-0060-09-01"
+                               notAfter="-0060-09-01">
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>1. Sept. 60 v.Chr. (Jahr unsicher)</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName n="1"
-                                   type="ancient"
+                        <placeName type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/3032 https://pleiades.stoa.org/places/736950">Kynopolites</placeName>
-                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName type="ancient"
+                                   subtype="region"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -57,9 +57,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>
-        This file encoded to comply with EpiDoc Guidelines and Schema version 8
-        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -74,10 +72,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Quittung</term>
-               <term n="2">Kedria</term>
-               <term n="3">Pharmakon</term>
-               <term n="4">Abgaben</term>
+               <term>Quittung</term>
+               <term>Kedria</term>
+               <term>Pharmakon</term>
+               <term>Abgabe</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -91,13 +89,11 @@
          <change who="HGV" when="1998-04-03">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+         <change who="HGV" when="2025-04-16">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Gehört zum Archiv der Nekrotaphoi des Kynopolites.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
@@ -108,15 +104,16 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration" n="1">Plate I</bibl>
-               <bibl type="illustration" n="2">Egitto e storia antica, S. 425</bibl>
+               <bibl type="illustration">Plate I</bibl>
+               <bibl type="illustration">Egitto e storia antica, S. 425</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikation</head>
             <listBibl>
                <bibl type="publication" subtype="other">SB 20 14426</bibl>
             </listBibl>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
