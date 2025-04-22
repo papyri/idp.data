@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m63975" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Bkt. 9 102</title>
+            <title>Introduction to a horoscope</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -14,7 +14,11 @@
             <idno type="filename">63975</idno>
             <idno type="dclp-hybrid">bkt;9;102</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,15 +42,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0225">200 - 225</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -77,45 +81,94 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>magic</term>
-               <term>horoscope</term>
-               <term>astronomy</term>
-               <term>astrology</term>
-               <term type="culture">science</term>
-               <term type="culture">religion</term>
-               <term type="religion">classical</term>
-               <term type="overview">introduction to a horoscope</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">science</term>
+               <term n="3" type="culture">religion</term>
+               <term n="4">magic</term>
+               <term n="5">horoscope</term>
+               <term n="6">astronomy</term>
+               <term n="7">astrology</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2025-04-22T06:27:32-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Revised text and updated metadata.</change>
+         <change when="2025-04-22T04:12:40-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add modern punctuation; l. 5, 8 14, 15 lacuna of unknown extent; correct hyphenation in l. 6, 7, 9, 12; add ancient diaeresis in l. 8; l. 12 {μοι} -&gt; \μοι/, correct double square brackets, spiritus on upsilon; add l. 13, l. 14 add markup for numbers and superscript lines; the the end: ---- -&gt; lost.?lin.</change>
+         <change when="2025-04-11T13:59:19-04:00"
+                 who="http://papyri.info/editor/users/andriusjagminas">Submit - Hi, I'm submitting a homework task for the Papyri workshop with Holger. I had a big problem with line 13, where I wasn't able to find out what was wrong with it and how to make it compatible with Leiden+. I tried fixing it in different ways, but there was still an error. I'm pasting it here as transcribed and with added diacritics: τῆς τοῦ // κζ_(ετους) Κομμόδου. I'm also unsure about line 15 where I wasn't sure how to indicate that there are 3 symbol gap.</change>
+          <change when="2025-04-22T06:27:32-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Finalized - Revised text and updated metadata.</change>
+          <change when="2025-04-22T04:12:40-04:00"
+                 who="http://papyri.info/editor/users/Holger%20Essler">Vote - Accept-Straight-to-Finalization - Add modern punctuation; l. 5, 8 14, 15 lacuna of unknown extent; correct hyphenation in l. 6, 7, 9, 12; add ancient diaeresis in l. 8; l. 12 {μοι} -&gt; \μοι/, correct double square brackets, spiritus on upsilon; add l. 13, l. 14 add markup for numbers and superscript lines; the the end: ---- -&gt; lost.?lin.</change>
+          <change when="2025-04-11T13:59:19-04:00"
+                 who="http://papyri.info/editor/users/andriusjagminas">Submit - Hi, I'm submitting a homework task for the Papyri workshop with Holger. I had a big problem with line 13, where I wasn't able to find out what was wrong with it and how to make it compatible with Leiden+. I tried fixing it in different ways, but there was still an error. I'm pasting it here as transcribed and with added diacritics: τῆς τοῦ // κζ_(ετους) Κομμόδου. I'm also unsure about line 15 where I wasn't sure how to indicate that there are 3 symbol gap.</change>
+          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Andrius Jagminas and revised by Holger Essler during an Erasmus+ BIP workshop (
+          <ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ).
+        </p>
+      </div>
+         <div xml:lang="grc" type="edition" xml:space="preserve"><ab>
+<lb n="1"/>ται πρὸς τὴν ἐπαγγε<supplied reason="lost">λίαν</supplied>
+<lb n="2"/>τῶν θείων δωρημάτ<supplied reason="lost">ων· ἡ</supplied>
+<lb n="3"/>δὲ ἀστρονομία μαν<supplied reason="lost">τικῆς</supplied>
+<lb n="4"/>οὐδὲν διέχει, ἡγοῦμα<supplied reason="lost">ι δὲ</supplied>
+<lb n="5"/>δυνατωτέραν εἶναι οσ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/>θεωρητὴ καθέστηκεν <supplied reason="lost">ὑπὸ σο</supplied>
+<lb n="7" break="no"/>φῶν· καὶ αὐτὸς ἐντὸς γ<supplied reason="lost">ενο</supplied>
+<lb n="8" break="no"/>μένος τῆς <hi rend="diaeresis">ἱ</hi>ερᾶς καὶ ἐν<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="9"/>τοῦ παιδείας, τὰ τῆς γεν<supplied reason="lost">ε</supplied>
+<lb n="10" break="no"/>σεως ἀριθμήσας δηλώ<supplied reason="lost">σω</supplied>
+<lb n="11"/>σοι. ἔστιν δὲ ὁ ἀν<supplied reason="lost">αδο</supplied>
+<lb n="12" break="no"/>θεὶς <add place="above">μοι</add> ὑπὸ σοῦ <del rend="erasure">μοι</del> χρόνος <unclear>α</unclear><supplied reason="lost">ὐ</supplied>
+<lb n="13" break="no"/>τῆς τοῦ <g type="slanting-stroke"/><g type="slanting-stroke"/> <num value="27">κζ</num> <expan><ex>ἔτους</ex></expan>  Κομμόδου <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="14"/><num value="7"><hi rend="supraline">ζ</hi></num> εἰς <num value="8"><hi rend="supraline">η</hi></num> ὥρα <num value="7"><hi rend="supraline">ζ</hi></num> νυκτός <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="15"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/><unclear>η</unclear>γα<gap reason="lost" quantity="3" unit="character"/> <unclear>κατ</unclear>ὰ δὲ <unclear>τοὺς</unclear> <unclear>α</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="character"/><unclear>μ</unclear><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="16"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/14433"/>
-                  <biblScope unit="number">102</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="reference" subtype="principal">
                   <title level="s" type="abbreviated">BKT</title>
-                  <biblScope unit="volume">9</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope n="1" unit="number">102</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/59217"/>
+                  <biblScope n="1" unit="number">I</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="261" to="263">261-263</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="edition" xml:space="preserve"/>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">BKT 9, pl.50</bibl>
-               <bibl type="printed">ZPE 72 (1972), pl. 7a</bibl>
+               <bibl type="printed" n="1">BKT 9, pl.50</bibl>
+               <bibl type="printed" n="2">ZPE 72 (1972), pl. 7a</bibl>
                <bibl type="online">
                   <ptr target="http://berlpap.smb.museum/04403"/>
                </bibl>
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
