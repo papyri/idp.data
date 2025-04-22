@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m61299" xml:lang="en">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>P. Hib. 2 224</title>
+            <title>Gnomic anthology in hexameters (with the acrostic name Chaeremon)</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">p.hib;2;224</idno>
             <idno type="MP3">01613.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,19 +43,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Ankyropolis (Herakleopolites, Egypt); written: Egypt</origPlace>
-                     <origDate notBefore="-0275" notAfter="-0225">275 - 225 v. Chr.</origDate>
+                     <origPlace>Fundort: Ankyropolis (Herakleopolites, Egypt); Schreibort: Egypt</origPlace>
+                     <origDate notBefore="-0275" notAfter="-0225">275 - 225 v.Chr.</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/182">Ankyropolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/182">Ankyropolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -62,19 +67,17 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>wisdom</term>
-               <term/>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">gnomic anthology in hexameters, acrostic (with the name Chaeremon)</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">wisdom</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -83,12 +86,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
+         <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Rusnė Valiukaitė and revised by Holger Essler during an Erasmus+ BIP workshop (<ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>) in collaboration with the project PRIN2022-INTEGRATION. INTEllectual miGRATION: circulation of philosophical books and ideas around the ancient Mediterranean through the evidence of Graeco-Roman papyri (CUP: B53D23023140006; P.I. Valeria Piano).</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Rusnė Valiukaitė and revised by Holger Essler during an Erasmus+ BIP workshop (
+          <ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ) in collaboration with the project PRIN2022-INTEGRATION. INTEllectual miGRATION: circulation of philosophical books and ideas around the ancient Mediterranean through the evidence of Graeco-Roman papyri (CUP: B53D23023140006; P.I. Valeria Piano).
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="1" subtype="column" type="textpart"><ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
@@ -127,13 +136,22 @@
 </ab></div></div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <ptr target="http://papyri.info/biblio/5284"/>
-                  <biblScope unit="number">224</biblScope>
-                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+               <bibl n="1" type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P. Hibeh</title>
-                  <biblScope unit="volume">2</biblScope>
-                  <!--ignore - stop-->
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/5284"/>
+                  <biblScope n="1" unit="number">224</biblScope>
+                  <biblScope n="2" unit="volume"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95344"/>
+                  <biblScope n="1" unit="number">32</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="254" to="263">254-263</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -146,5 +164,5 @@
             </listBibl>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
