@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv21148">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petition</title>
+            <title>Eingabe</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">21148</idno>
             <idno type="TM">21148</idno>
             <idno type="ddb-perseus-style">0135;2;274</idno>
-            <idno type="ddb-filename">p.hib.2.274</idno>
-            <idno type="ddb-hybrid">p.hib;2;274</idno>
+            <idno type="ddb-filename">sb.30.17285</idno>
+            <idno type="ddb-hybrid">sb;30;17285</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cairo</settlement>
                   </placeName>
+                  <collection>Egyptian Museum</collection>
+                  <idno type="invNo">JdE 89638 Vo</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,11 +34,13 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0212"
                                notAfter="0217-06"
                                cert="low">212 - Juni 217 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0218-06"
                                notAfter="0222-05"
                                cert="low">Juni 218 - Mai 222 (?)</origDate>
@@ -46,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,29 +67,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Petition</term>
-               <term>Verein</term>
-               <term>Kult</term>
+               <term n="1">Petition</term>
+               <term n="2">Verein</term>
+               <term n="3">Kult</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-04-29T06:07:09-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-04-22T10:30:02-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Change title</change>
+         <change when="2025-04-22T10:15:22-04:00"
+                 who="http://papyri.info/editor/users/MS2406">Submit - Meta and text updated. The readings in ll. 27 and 28 seem uncertain to me, possibly they are impacted by Turner's "offsets of other writing below".&#xD;
+&#xD;
+Column 2 seems to be a fragment of its own. It might need a new TM number.</change>
          <change who="HGV" when="1992-03-24">Record created</change>
          <change who="HGV" when="2011-02-03">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Rückseite: P.Hib. II 216. Alternativdatierung: Juni 218 - Mai 222. Zur Datierung vgl. CE 67, 1992, S. 305 und BL X, S. 87. Neuedition: Aegyptus 88, 2008, S. 127-136.</p>
+            <p>Rückseite: P.Hib. II 216. Alternativdatierung: Juni 218 - Mai 222. Zur Datierung vgl. CE 67, 1992, S. 305 und BL X, S. 87.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Hib.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">274</biblScope>
+                  <title level="s" type="abbreviated">SB</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17285</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -112,6 +125,11 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Hib. 2 274</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
