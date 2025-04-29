@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv129789">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Copie d'un compte rendu d'audience</title>
@@ -29,12 +29,12 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Antinoopolis?</origPlace>
+                     <origPlace>oder Antinoopolis ?</origPlace>
                      <origDate notBefore="0176" notAfter="0225" precision="low">Ende II - Anfang III</origDate>
                   </origin>
                   <provenance type="located">
-                     <p xml:id="geog_1" exclude="#geog_2"/>
-                     <p xml:id="geog_2" exclude="#geog_1">
+                     <p n="1" xml:id="geog_1" exclude="#geog_2"/>
+                     <p n="2" xml:id="geog_2" exclude="#geog_1">
                         <placeName type="ancient" cert="low">Antinoopolis</placeName>
                      </p>
                   </provenance>
@@ -43,8 +43,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -59,8 +60,8 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abschrift aus dem Protokoll einer Verhandlung (?)</term>
-               <term>Fragment</term>
+               <term n="1">Abschrift aus dem Protokoll einer Verhandlung (?)</term>
+               <term n="2">Fragment</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -69,8 +70,8 @@
          <change who="HGV" when="2011-03-23">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Geschrieben mit roter Tinte. Zu Z. 6 vgl. BASP 50, 2013, S. 324.</p>
@@ -79,27 +80,32 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Gen.</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">164</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">164</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Planche XXVII</bibl>
-               <bibl type="illustration">APF 51, 2005, Tafel XXIII</bibl>
+               <bibl type="illustration" n="1">Planche XXVII</bibl>
+               <bibl type="illustration" n="2">APF 51, 2005, Tafel XXIII</bibl>
             </p>
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.ville-ge.ch/musinfo/imageZoom/?iip=bgeiip/papyrus/pgen69-ri.ptif"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="https://archives.bge-geneve.ch/ark:/17786/vta409d8ab71a299bdf"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">SB 30 1733</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
