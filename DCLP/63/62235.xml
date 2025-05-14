@@ -14,7 +14,11 @@
             <idno type="filename">62235</idno>
             <idno type="dclp-hybrid">tm;;62235</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -38,19 +42,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Hermopolis (Hermopolites, Egypt); written: Egypt</origPlace>
+                     <origPlace>Fundort: Hermopolis (Hermopolites, Egypt); Schreibort: Egypt</origPlace>
                      <origDate notBefore="0600" notAfter="0699">600 - 699</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/816">Hermopolis</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -88,11 +93,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>prose</term>
-               <term>bible</term>
-               <term type="culture">literature</term>
-               <term type="religion">christian</term>
-               <term type="overview">Old Testament; 01 Kings 4.6-9, 13-16</term>
+               <term n="1" type="religion">christian</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">prose</term>
+               <term n="4">bible</term>
+               <term n="5" type="overview">Old Testament; 01 Kings 4.6-9, 13-16</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -106,7 +111,13 @@
    </teiHeader>
    <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Ieva Baronaitė and revised by Holger Essler during an Erasmus+ BIP workshop (<ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>).</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Ieva Baronaitė and revised by Holger Essler during an Erasmus+ BIP workshop (
+          <ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ).
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="side" subtype="flesh" type="textpart"><div n="1" subtype="column" type="textpart"><ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
@@ -149,7 +160,8 @@
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0527">Testamentum Vetus (Septuaginta)</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/541">1 Regum</title>
@@ -158,10 +170,30 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <listBibl>
-               <bibl type="printed">Archiv 34, pl.3-4</bibl>
-               <bibl type="printed">BKT 9, pl.80</bibl>
+               <bibl type="printed" n="1">Archiv 34, pl.3-4</bibl>
+               <bibl type="printed" n="2">BKT 9, pl.80</bibl>
                <bibl type="online">
                   <ptr target="http://berlpap.smb.museum/04486"/>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="principalEdition">
+            <listBibl>
+               <bibl n="1" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/58985"/>
+                  <biblScope n="1" unit="number">2</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="6" to="7">6-7</biblScope>
+               </bibl>
+               <bibl n="2" type="reference" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14433"/>
+                  <biblScope n="1" unit="number">197</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page">231</biblScope>
                </bibl>
             </listBibl>
          </div>
