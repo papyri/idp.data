@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">tm;;60935</idno>
             <idno type="MP3">00706.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0200" notAfter="0399">200 - 399</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -78,11 +82,11 @@
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; Ilias 04.1-13, 35-39</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">epic</term>
+               <term n="5" type="overview">Homerus; Ilias 04.1-13, 35-39</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -96,7 +100,13 @@
    </teiHeader>
    <text>
       <body>
-         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Apostolia Tepetzi and revised by Holger Essler during an Erasmus+ BIP workshop (<ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>).</p></div>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve">
+        <p>
+          This papyrus has been digitally edited by Apostolia Tepetzi and revised by Holger Essler during an Erasmus+ BIP workshop (
+          <ref target="http://https//site.unibo.it/encode/it/agenda/erasmus-bip-intensive-encode-digital-competences-in-ancient-writing-cultures">Intensive ENCODE: Digital Competences in Ancient Writing Cultures</ref>
+          ).
+        </p>
+      </div>
          <div xml:lang="grc" type="edition" xml:space="preserve">
 <div n="1" subtype="column" type="textpart"><ab>
 <lb n="1"/><supplied reason="lost">οἳ δὲ θεοὶ πὰρ Ζηνὶ καθήμενοι ἠγορόω</supplied>ντο
@@ -125,7 +135,8 @@
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
@@ -142,16 +153,22 @@
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">168</biblScope>
+                  <biblScope n="1" unit="number">168</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="publication" subtype="principal">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/65094"/>
+                  <biblScope n="1" unit="number">4</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="6" to="7">6-7</biblScope>
                </bibl>
             </listBibl>
          </div>
