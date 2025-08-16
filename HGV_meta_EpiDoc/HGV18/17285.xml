@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv17285">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Mietsangebot aus Hermupolis</title>
@@ -31,13 +31,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Hermopolis (Ägypten)</origPlace>
                      <origDate when="0417-06-15">15. Juni 417</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Arsinoites</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="https://pleiades.stoa.org/places/727122 http://www.trismegistos.org/place/816">Hermopolis</placeName>
+                        <placeName n="2" type="ancient" subtype="province">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -82,8 +84,8 @@ N. Gonis, Tyche 35 (2020) 228 (KorrTyche 970) [n.30]</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -103,29 +105,26 @@ N. Gonis, Tyche 35 (2020) 228 (KorrTyche 970) [n.30]</change>
                </figure>
             </p>
          </div>
-         <div type="commentary" subtype="general">
-            <p>Zum Ort vgl. Tyche 35, 2020, S. 228, Anm. 30, Korr. Tyche 970.</p>
-         </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/17285"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">V</biblScope>
                   <biblScope type="pages">18</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">64</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">9.1</biblScope>
                   <biblScope type="pages">5</biblScope>
                </bibl>
             </listBibl>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
