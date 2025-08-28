@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Brief an den königlichen Schreiber über Steuereinnahmen (Anzeige wegen Erpressung?)</title>
@@ -9,8 +9,8 @@
          <publicationStmt>
             <idno type="filename">111679</idno>
             <idno type="TM">111679</idno>
-            <idno type="ddb-filename">ddbdp.2021.1</idno>
-            <idno type="ddb-hybrid">ddbdp;2021;1</idno>
+            <idno type="ddb-filename">sb.30.17678</idno>
+            <idno type="ddb-hybrid">sb;30;17678</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -33,7 +33,10 @@
                <history>
                   <origin>
                      <origPlace>Koba (Herakleopolites, Ägypten)</origPlace>
-                     <origDate when="-0136-06-03">3. Juni 136 v.Chr.</origDate>
+                     <origDate notAfter="-0136-06-03">
+                        <offset n="1" type="before">vor</offset>
+                3. Juni 136 v.Chr.
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p xml:id="geoIH8DJ">
@@ -44,7 +47,7 @@
                                    type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -79,6 +82,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-07-21T07:19:25-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-07-08T10:09:32-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2025-07-08T09:47:45-04:00"
+                 who="http://papyri.info/editor/users/leat">Submit - I have updated the meta data and the text according to SB 30. There were only a few changes in the text.</change>
          <change when="2021-01-19T06:59:54-05:00"
                  who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
          <change when="2021-01-18T16:15:37-05:00"
@@ -87,18 +96,30 @@
                  who="http://papyri.info/users/LaviniaFerretti">Submit - Entry for TM 111679 (B. Kramer, von Noricum nach Ägypten, 2007, p. 277-284)</change>
          <change when="2021-01-18T06:42:14-05:00" who="http://papyri.info/editor">Automated creation from template</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">Von Noricum nach Ägypten</title>
-                  <biblScope n="1" type="pages">S. 279</biblScope>
-                  <biblScope n="2" type="generic">(DDbDP 2021 1)</biblScope>
+                  <title level="s" type="abbreviated">SB</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17678</biblScope>
                </bibl>
             </listBibl>
          </div>
+         <div type="commentary" subtype="mentionedDates">
+            <list>
+               <item>
+                  <ref>Z. 1</ref>
+                  <note type="comment">Bearbeitungsvermerk von</note>
+                  <date type="mentioned" when="-0136-06-03">
+              3. Juni 136 v.Chr.
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  </date>
+               </item>
+            </list>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>
