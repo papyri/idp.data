@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv35744">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Zahlungsanweisung für diverse Lohnzahlungen</title>
@@ -31,15 +31,20 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolites</origPlace>
-                     <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
+                     <origPlace>Herakleopolites, Ägypten</origPlace>
+                     <origDate notBefore="0426" notAfter="0475">
+                Mitte (?) V
+                <precision n="1" match="../@notBefore" degree="0.1"/>
+                        <precision n="2" match="../@notAfter" degree="0.3"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,12 +69,12 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Anweisung</term>
-               <term>Zahlung</term>
-               <term>Löhne</term>
-               <term>Bäcker</term>
-               <term>(Kuchen)</term>
-               <term>Käse</term>
+               <term n="1">Anweisung</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Löhne</term>
+               <term n="4">Bäcker</term>
+               <term n="5">(Kuchen)</term>
+               <term n="6">Käse</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,11 +83,11 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Datierung: 2. März, 15. Indiktion.</p>
+            <p>Datierung: 2. März, 15. Indiktion. Zur Datierung vgl. P.Jördens, S. 126.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -92,8 +98,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">20</biblScope>
-                  <biblScope type="numbers">14215</biblScope>
+                  <biblScope n="1" type="volume">20</biblScope>
+                  <biblScope n="2" type="numbers">14215</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -108,7 +114,7 @@
                   <graphic url="http://data.onb.ac.at/rec/RZ00005894"/>
                </figure>
             </p>
-        </div>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
