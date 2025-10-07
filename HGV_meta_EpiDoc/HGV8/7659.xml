@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7659">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Correspondence of Kleon. Fragment of a Letter</title>
+            <title>Letter from Thamoys to Kleon</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">7659</idno>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>London</settlement>
                   </placeName>
+                  <collection>British Library</collection>
+                  <idno type="invNo">Pap 519</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,30 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate notBefore="-0275" notAfter="-0226" precision="low">Mitte III v.Chr.</origDate>
+                     <origPlace>Schreibort: Arsinoites; Zielort: Arsinoites; Fundort: Gurob</origPlace>
+                     <origDate notBefore="-0260" notAfter="-0249">
+                ca. 260 - 249 v.Chr.
+                <precision match="../@notBefore" degree="0.5"/>
+                     </origDate>
                   </origin>
-                  <provenance type="located">
+                  <provenance n="1" type="composed">
                      <p>
                         <placeName type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="2" type="sent">
+                     <p xml:id="geoCH2JID">
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                     </p>
+                  </provenance>
+                  <provenance n="3" type="found">
+                     <p xml:id="geoBF5A0I">
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/720 https://www.trismegistos.org/place/720">Gurob</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +64,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,11 +81,11 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>Thamous an Kleon</term>
-               <term>Arbeit</term>
-               <term>Deich</term>
-               <term>Überschwemmung</term>
+               <term n="1">Brief (geschäftlich)</term>
+               <term n="2">Thamous an Kleon</term>
+               <term n="3">Arbeit</term>
+               <term n="4">Deich</term>
+               <term n="5">Überschwemmung</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -76,8 +94,8 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Gehört zum Kleon - Archiv. Datierung nach dem Rahmen des Kleon - Archivs. Zu Z. 3-4 vgl. Evans - Obbink, Language of the Papyri, S. 48f.</p>
@@ -85,10 +103,8 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">4</biblScope>
-                  <biblScope type="generic">(12)</biblScope>
+                  <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                  <biblScope type="numbers">33</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -98,8 +114,9 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 G (3)</bibl>
-               <bibl type="publication" subtype="other">P.Lond. III 519 descr.</bibl>
+               <bibl type="publication" subtype="other" n="1">P. Petrie II 4 (12)</bibl>
+               <bibl type="publication" subtype="other" n="2">P.Petr. III 42 G (3)</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Lond. III 519 descr.</bibl>
             </listBibl>
          </div>
          <div type="figure">
@@ -107,27 +124,8 @@
                <figure>
                   <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_519"/>
                </figure>
-               <figure>
-                  <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100147468862.0x000001"/>
-               </figure>
             </p>
          </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL-online">
-                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/7659"/>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">I</biblScope>
-                  <biblScope type="pages">351</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VII</biblScope>
-                  <biblScope type="pages">159</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
       </body>
-   </text>
+  </text>
 </TEI>
