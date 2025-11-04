@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13603">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>keiner</title>
+            <title>P.Tebt. II 536: Pachtzinsquittung für Weiden</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">13603</idno>
@@ -31,18 +31,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0161-09-07">
-                        <certainty locus="value" match="../year-from-date(@when)"/>7. Sept. 161 (Jahr unsicher)</origDate>
+                7. Sept. 161 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,9 +71,10 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
-               <term>Geld</term>
+               <term n="1">Quittung</term>
+               <term n="2">Pachtzinsen</term>
+               <term n="3">Weiden</term>
+               <term n="4">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -77,19 +83,15 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Descr.</p>
-         </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
             <note type="original">160 - 161</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
                <item>
-                  <ref/>
                   <date type="mentioned" notBefore="0160" notAfter="0161">160 - 161</date>
                </item>
             </list>
@@ -97,9 +99,10 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">536</biblScope>
+                  <title level="s" type="abbreviated">P.Poetke</title>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">6</biblScope>
+                  <biblScope n="3" type="number">Nr. 1</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -109,10 +112,15 @@
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="https://digicoll.lib.berkeley.edu/record/231755"/>
+                  <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=443&amp;item=1"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Tebt. II 536</bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>
