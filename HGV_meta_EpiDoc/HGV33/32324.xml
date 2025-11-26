@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv32324">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Zahlungsliste</title>
@@ -32,15 +32,20 @@
                <history>
                   <origin>
                      <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0301" notAfter="0500" precision="low">IV - V</origDate>
+                     <origDate notBefore="0426" notAfter="0475">
+                Mitte (?) V
+                <precision n="1" match="../@notBefore" degree="0.1"/>
+                        <precision n="2" match="../@notAfter" degree="0.3"/>
+                     </origDate>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,9 +60,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Zahlung</term>
-               <term>Namen</term>
+               <term n="1">Liste</term>
+               <term n="2">Zahlung</term>
+               <term n="3">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -66,14 +71,23 @@
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Rainer Cent.</title>
                   <biblScope type="numbers">152</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XII</biblScope>
+                  <biblScope type="pages">165</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -89,18 +103,9 @@
                </figure>
             </p>
          </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL-online">
-                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/32324"/>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope>
-                  <biblScope type="pages">165</biblScope>
-               </bibl>
-            </listBibl>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierung vgl. P.Jördens, S. 126.</p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>
