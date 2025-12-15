@@ -31,20 +31,26 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleia (Arsinoites)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0166-07-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Juli 166 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0169-07-16">
-                        <certainty locus="value" match="../year-from-date(@when)"/>16. Juli 169 (Jahr unsicher)</origDate>
+                     <origPlace>Herakleia (Arsinoites, Ägypten)</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" when="0166-07-16">
+                16. Juli 166 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" when="0169-07-16">
+                16. Juli 169 (Jahr unsicher)
+                <certainty locus="value" match="../year-from-date(@when)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/741467 https://www.trismegistos.org/place/772">Herakleia</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -52,8 +58,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -68,9 +75,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Rückzahluhg</term>
-               <term>Darlehen</term>
+               <term n="1">Quittung</term>
+               <term n="2">Rückzahluhg</term>
+               <term n="3">Darlehen</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -83,7 +90,7 @@
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Alternativdatierung: 16. Juli 169. Zur Datierung vgl. BL VIII, S. 482. Vgl. Harrauer, Paläographie, Textband, S. 322f., Nr. 137.</p>
+            <p>Alternativdatierung: 16. Juli 169. Zur Datierung vgl. BL VIII, S. 482. Vgl. Harrauer, Paläographie, Textband, S. 322f., Nr. 137. Zum Schreiber vgl. Pylon 8 (2025) Article 9 §11</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -93,7 +100,9 @@
             <list>
                <item>
                   <ref>Z. 19</ref>
-                  <date type="mentioned" notBefore="0150-10-28" notAfter="0150-11-26">28. Okt.  - 26. Nov. 150<certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" notBefore="0150-10-28" notAfter="0150-11-26">
+              28. Okt. 150 - 26. Nov. 150
+              <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
             </list>
@@ -102,15 +111,15 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SPP</title>
-                  <biblScope type="volume">22</biblScope>
-                  <biblScope type="numbers">45</biblScope>
+                  <biblScope n="1" type="volume">22</biblScope>
+                  <biblScope n="2" type="numbers">45</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">S. 16 (Z. 29 - 30)</bibl>
-               <bibl type="illustration">Harrauer, Paläographie, Tafelband, Abb. 122</bibl>
+               <bibl type="illustration" n="1">S. 16 (Z. 29 - 30)</bibl>
+               <bibl type="illustration" n="2">Harrauer, Paläographie, Tafelband, Abb. 122</bibl>
             </p>
          </div>
          <div type="figure">
@@ -126,11 +135,11 @@
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/15113"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">VI</biblScope>
                   <biblScope type="pages">196</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">482</biblScope>
                </bibl>
