@@ -4,7 +4,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>TM 60599</title>
+            <title>Geometric and Conversion Problems, as well as Homer</title>
          </titleStmt>
          <publicationStmt>
             <authority>Digital Corpus of Literary Papyri</authority>
@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">tm;;60599</idno>
             <idno type="MP3">02644.100</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,21 +43,25 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Soknopaiou Nesos (Arsinoites, Egypt); written: Soknopaiou Nesos (Arsinoites, Egypt)</origPlace>
+                     <origPlace>Fundort: Soknopaiou Nesos (Arsinoites, Egypt); Schreibort: Soknopaiou Nesos (Arsinoites, Egypt)</origPlace>
                      <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2157">Soknopaiou Nesos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2157 https://pleiades.stoa.org/places/737053">Soknopaiou Nesos</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Egypt</placeName>
-                        <placeName type="ancient" ref="https://www.trismegistos.org/place/2157">Soknopaiou Nesos</placeName>
+                        <placeName n="1" type="ancient" subtype="nome">Arsinoites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Egypt</placeName>
+                        <placeName n="3"
+                                   type="ancient"
+                                   ref="https://www.trismegistos.org/place/2157 https://pleiades.stoa.org/places/737053">Soknopaiou Nesos</placeName>
                      </p>
                   </provenance>
                </history>
@@ -62,22 +70,21 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>epic</term>
-               <term>mathematics</term>
-               <term>philology</term>
-               <term>paraphrase</term>
-               <term type="culture">literature</term>
-               <term type="culture">science</term>
-               <term type="religion">classical</term>
-               <term type="overview">Homerus; mathematical problems, Ilias 06.373-410 and paraphrase; with drawing</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3" type="culture">science</term>
+               <term n="4">poetry</term>
+               <term n="5">epic</term>
+               <term n="6">mathematics</term>
+               <term n="7">philology</term>
+               <term n="8">paraphrase</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -86,6 +93,12 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-12-12T12:25:54-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2025-12-12T12:17:16-05:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Add bibliography to metadata before finalizing</change>
+         <change when="2025-12-10T05:02:34-05:00"
+                 who="http://papyri.info/editor/users/enury">Submit - Added link to online image (ONB catalogue).</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
@@ -93,18 +106,21 @@
       <body>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
-               <bibl n="1" type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">Homerus</author>
+               <bibl n="2" type="reference" subtype="catalogue">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/14384"/>
+                  <biblScope unit="number">382</biblScope>
+                  <biblScope unit="generic">descr.</biblScope>
+               </bibl>
+               <bibl type="publication" subtype="ancient">
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012 http://cwkb.org/author/id/927/rdf">Homerus</author>
                   <title type="main"
                          level="m"
-                         ref="http://www.trismegistos.org/authorwork/511">Ilias</title>
-               </bibl>
-               <bibl n="2" type="reference" subtype="catalogue">
-                 <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                 <!-- ignore - stop -->
-                 <ptr target="http://papyri.info/biblio/14384"/>
-                 <biblScope unit="number">382</biblScope>
-                 <biblScope unit="generic">descr.</biblScope>
+                         ref="http://www.trismegistos.org/authorwork/511 http://cwkb.org/work/id/2815/rdf">Ilias</title>
+                  <biblScope n="1" unit="book">6</biblScope>
+                  <biblScope n="2" unit="line" from="373" to="410">373-410</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -112,20 +128,53 @@
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">MPER 15 pl.81</bibl>
+               <bibl type="online">
+                  <ptr target="http://data.onb.ac.at/rec/RZ00002550"/>
+               </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
-               <bibl type="reference" subtype="catalogue">
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+               <bibl n="1" type="reference" subtype="catalogue">
                   <title level="m" type="main">Studies in the Text and Transmission of the Iliad.</title>
-                  <author>
-                     <surname>West</surname>
-                     <forename>Martin L.</forename>
-                  </author>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
                   <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/16711"/>
-                  <biblScope unit="number">356</biblScope>
+                  <biblScope n="1" unit="number">356</biblScope>
+                  <biblScope n="2" unit="book"/>
+                  <biblScope n="3" unit="book"/>
+               </bibl>
+               <bibl n="2" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/10813"/>
+                  <biblScope n="1" unit="number">178</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
+               </bibl>
+               <bibl n="3" type="reference" subtype="partial">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/50308"/>
+                  <biblScope n="1" unit="number">1</biblScope>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="312" to="313">312-313</biblScope>
+               </bibl>
+               <bibl n="4" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/49887"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page" from="133" to="135">133-135</biblScope>
+               </bibl>
+               <bibl n="5" type="reference" subtype="previous">
+            <!-- ignore - start, i.e. SoSOL users may not edit this -->
+            <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/36531"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="chapter"/>
+                  <biblScope n="3" unit="page"/>
                </bibl>
             </listBibl>
          </div>

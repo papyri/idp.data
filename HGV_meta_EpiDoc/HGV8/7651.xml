@@ -1,145 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv7651">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Correspondence of Kleon. Letter from Alexander</title>
-         </titleStmt>
-         <publicationStmt>
-            <idno type="filename">7651</idno>
-            <idno type="TM">7651</idno>
-            <idno type="ddb-perseus-style">0187;2;4</idno>
-            <idno type="ddb-filename">p.petr.2.4_11</idno>
-            <idno type="ddb-hybrid">p.petr;2;4_11</idno>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc>
-               <msIdentifier>
-                  <placeName>
-                     <settlement>unbekannt</settlement>
-                  </placeName>
-               </msIdentifier>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>
-                           <material>Papyrus</material>
-                        </support>
-                     </supportDesc>
-                  </objectDesc>
-               </physDesc>
-               <history>
-                  <origin>
-                     <origPlace>Arsinoites</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="-0255-08-07">
-                        <certainty locus="value" match="../year-from-date(@when)"/>7. Aug. 255 v.Chr. (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="-0254-08-07">
-                        <certainty locus="value" match="../year-from-date(@when)"/>7. Aug. 254 v.Chr. (Jahr unsicher)</origDate>
-                  </origin>
-                  <provenance type="located">
-                     <p>
-                        <placeName type="ancient"
-                                   subtype="nome"
-                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
-                     </p>
-                  </provenance>
-               </history>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
-         </p>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="fr">Französisch</language>
-            <language ident="en">Englisch</language>
-            <language ident="de">Deutsch</language>
-            <language ident="it">Italienisch</language>
-            <language ident="es">Spanisch</language>
-            <language ident="la">Latein</language>
-            <language ident="el">Griechisch</language>
-         </langUsage>
-         <textClass>
-            <keywords scheme="hgv">
-               <term>Brief (geschäftlich)</term>
-               <term>Alexandros an Kleon</term>
-               <term>Kanal</term>
-               <term>Verschlammung</term>
-               <term>Arbeit daran</term>
-               <term>Holz</term>
-               <term>Brücken</term>
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change who="HGV" when="1998-03-02">Record created</change>
-         <change who="HGV" when="2011-04-19">Record last modified</change>
-         <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
-      </revisionDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <div type="commentary" subtype="general">
-            <p>Gehört zum Kleon - Archiv. Datierung nach dem makedonischen Regierungsjahr. Alternativdatierung: 7. Aug. 254 v. Chr.</p>
-         </div>
-         <div type="bibliography" subtype="principalEdition">
-            <listBibl>
-               <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Petr.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">4</biblScope>
-                  <biblScope type="generic">(11)</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="illustrations">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter from Alexandros to Kleon</title>
+            </titleStmt>
+            <publicationStmt>
+                <idno type="filename">7651</idno>
+                <idno type="TM">7651</idno>
+                <idno type="ddb-perseus-style">0187;2;4</idno>
+                <idno type="ddb-filename">p.petr.kleon.25</idno>
+                <idno type="ddb-hybrid">p.petr.kleon;;25</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <placeName>
+                            <settlement>Dublin</settlement>
+                        </placeName>
+                        <collection>Trinity College</collection>
+                        <idno type="invNo">Pap. F 44 a</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>Papyrus</material>
+                                </support>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Schreibort: Arsinoites; Zielort: Arsinoites; Fundort: Gurob</origPlace>
+                            <origDate when="-0254-08-07">7. Aug. 254 v.Chr.</origDate>
+                        </origin>
+                        <provenance n="1" type="composed">
+                            <p xml:id="geoIDBJE8">
+                                <placeName type="ancient"
+                                    subtype="nome"
+                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                            </p>
+                        </provenance>
+                        <provenance n="2" type="sent">
+                            <p xml:id="geoEGDJ4">
+                                <placeName type="ancient"
+                                    subtype="nome"
+                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
+                            </p>
+                        </provenance>
+                        <provenance n="3" type="found">
+                            <p xml:id="geoBEC2H4">
+                                <placeName type="ancient"
+                                    ref="https://www.trismegistos.org/place/720 https://pleiades.stoa.org/places/736943">Gurob</placeName>
+                            </p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
             <p>
-               <bibl type="illustration">IV, (1)</bibl>
+                This file encoded to comply with EpiDoc Guidelines and Schema version 8
+                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
             </p>
-         </div>
-         <div type="bibliography" subtype="otherPublications">
-            <head>Andere Publikation</head>
-            <listBibl>
-               <bibl type="publication" subtype="other">P.Petr. III 42 D (2)</bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="translations">
-            <head xml:lang="de">Übersetzungen</head>
-            <listBibl xml:lang="de">
-               <head xml:lang="de">Deutsch:</head>
-               <bibl type="translations">Schubart, Ein Jahrtausend am Nil (1912) 15 und (1923) 19</bibl>
-               <bibl type="translations">Metzger, Nachrichten aus dem Wüstensand (1974), Nr. 14.</bibl>
-            </listBibl>
-            <listBibl xml:lang="en">
-               <head xml:lang="de">Englisch:</head>
-               <bibl type="translations">Lewis, Greeks in Ptolemaic Egypt (1986), S. 41-42</bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL-online">
-                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/7651"/>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">I</biblScope>
-                  <biblScope type="pages">351</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">II 2</biblScope>
-                  <biblScope type="pages">108</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XIII</biblScope>
-                  <biblScope type="pages">170</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-      </body>
-   </text>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">Französisch</language>
+                <language ident="en">Englisch</language>
+                <language ident="de">Deutsch</language>
+                <language ident="it">Italienisch</language>
+                <language ident="es">Spanisch</language>
+                <language ident="la">Latein</language>
+                <language ident="el">Griechisch</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="hgv">
+                    <term n="1">Brief (geschäftlich)</term>
+                    <term n="2">Alexandros an Kleon</term>
+                    <term n="3">Kanal</term>
+                    <term n="4">Verschlammung</term>
+                    <term n="5">Arbeit daran</term>
+                    <term n="6">Holz</term>
+                    <term n="7">Brücken</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2025-10-02T07:18:06-05:00"
+                who="http://papyri.info/editor/users/james.cowey">Pushing through via github, because the file was broken in the HGV board</change>
+            <change when="2021-06-30T04:16:44-05:00"
+                who="http://papyri.info/editor/users/LisaVanoppr%C3%A9">Submit -  Changing metadata, text and translation for P.Petr. Kleon 25. Line 8 is indented, please use correct markup.</change>
+            <change who="HGV" when="1998-03-02">Record created</change>
+            <change who="HGV" when="2011-04-19">Record last modified</change>
+            <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="commentary" subtype="general">
+                <p>Gehört zum Kleon - Archiv. Datierung nach dem makedonischen Regierungsjahr.</p>
+            </div>
+            <div type="bibliography" subtype="principalEdition">
+                <listBibl>
+                    <bibl type="publication" subtype="principal">
+                        <title level="s" type="abbreviated">P.Petr. Kleon</title>
+                        <biblScope type="numbers">25</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="bibliography" subtype="illustrations">
+                <p>
+                    <bibl type="illustration">P.Petr. II Autotype IV, (1)</bibl>
+                </p>
+            </div>
+            <div type="bibliography" subtype="otherPublications">
+                <head>Andere Publikation</head>
+                <listBibl>
+                    <bibl type="publication" subtype="other" n="1">P.Petr. II 4 (11)</bibl>
+                    <bibl type="publication" subtype="other" n="2">P.Petr. III 42 D (2)</bibl>
+                    <bibl type="publication" subtype="other" n="3">E. Revillout, Mélanges, p. 382</bibl>
+                    <bibl type="publication" subtype="other" n="4">W. Schubart, Griechische Papyri, no.8</bibl>
+                </listBibl>
+            </div>
+            <div type="bibliography" subtype="translations">
+                <head xml:lang="de">Übersetzungen</head>
+                <listBibl xml:lang="de">
+                    <head xml:lang="de">Deutsch:</head>
+                    <bibl type="translations" n="1">Schubart, Ein Jahrtausend am Nil (1912) 15 und (1923) 19</bibl>
+                    <bibl type="translations" n="2">Metzger, Nachrichten aus dem Wüstensand (1974), Nr. 14.</bibl>
+                    <bibl type="translations" n="3">Thierfelder, Unbekannte antike Welt, no.82</bibl>
+                </listBibl>
+                <listBibl xml:lang="en">
+                    <head xml:lang="de">Englisch:</head>
+                    <bibl type="translations" n="1">Lewis, Greeks in Ptolemaic Egypt (1986), S. 41-42</bibl>
+                    <bibl type="translations" n="2">Clarysse-Thompson, P. Count, vol.II, p.43</bibl>
+                </listBibl>
+                <listBibl xml:lang="fr">
+                    <bibl type="translations">Bouché-Leclercq, REG 21 (1908), p.138</bibl>
+                </listBibl>
+            </div>
+            <div type="bibliography" subtype="corrections">
+                <head>BL-Einträge nach BL-Konkordanz</head>
+                <listBibl>
+                    <bibl type="BL-online">
+                        <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/7651"/>
+                    </bibl>
+                    <bibl type="BL">
+                        <biblScope type="volume">I</biblScope>
+                        <biblScope type="pages">351</biblScope>
+                    </bibl>
+                    <bibl type="BL">
+                        <biblScope type="volume">II 2</biblScope>
+                        <biblScope type="pages">108</biblScope>
+                    </bibl>
+                    <bibl type="BL">
+                        <biblScope type="volume">XIII</biblScope>
+                        <biblScope type="pages">170</biblScope>
+                    </bibl>
+                </listBibl>
+            </div>
+        </body>
+    </text>
 </TEI>
