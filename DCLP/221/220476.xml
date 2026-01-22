@@ -13,18 +13,18 @@
             <idno type="LDAB">220476</idno>
             <idno type="filename">220476</idno>
             <idno type="dclp-hybrid">p.herc;;1504</idno>
+            <idno type="herc-fr">9696</idno>
             <availability>
-               <p>
-            © Digital Corpus of Literary Papyri. This work is licensed under a
-            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
-            .
-          </p>
+               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">Naples, Biblioteca Nazionale 108930 / 1480</idno>
+                  <idno>
+                     <idno type="invNo">Naples, Biblioteca Nazionale 108930 / 1480</idno>
+                     <idno type="invNo" xml:id="FR9696">P.Herc. 1504 cr. 1 pz. 4</idno>
+                  </idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc form="roll">
@@ -42,17 +42,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Fundort: Herculaneum (Campania, Italy); Schreibort: Italy</origPlace>
-                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v.Chr.</origDate>
+                     <origPlace>Found: Herculaneum (Campania, Italy); written: Italy</origPlace>
+                     <origDate notBefore="-0100" notAfter="-0001" precision="low">I v. Chr.</origDate>
                   </origin>
-                  <provenance n="1" type="found">
+                  <provenance type="found">
                      <p>
-                        <placeName n="1" type="ancient" subtype="nome">Campania</placeName>
-                        <placeName n="2" type="ancient" subtype="region">Italy</placeName>
-                        <placeName n="3" type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
+                        <placeName type="ancient" subtype="nome">Campania</placeName>
+                        <placeName type="ancient" subtype="region">Italy</placeName>
+                        <placeName type="ancient" ref="https://www.trismegistos.org/place/3365">Herculaneum</placeName>
                      </p>
                   </provenance>
-                  <provenance n="2" type="composed">
+                  <provenance type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Italy</placeName>
                      </p>
@@ -61,13 +61,13 @@
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="MSI"
-                                   corresp="#FR12457"
-                                   xml:id="GR12457.01"
-                                   from="1999"
-                                   to="2015">
+                        <custEvent type="MSI" corresp="#FR12457" from="1999" to="2015">
                            <graphic url="http://www.chartes.it/images/photo/PHerc 1504-CR01-FIL8-FS8-18039.jpg"/>
                            <orgName>CPART, Brigham Young University</orgName>
+                        </custEvent>
+                        <custEvent type="unrolled" corresp="#FR9696" when="1969">
+                           <forename>Anton</forename>
+                           <surname>Fackelmann</surname>
                         </custEvent>
                      </custodialHist>
                   </adminInfo>
@@ -77,16 +77,16 @@
       </fileDesc>
       <encodingDesc>
          <p>
-        This file encoded to comply with EpiDoc Guidelines and Schema version 8
-        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+                This file encoded to comply with EpiDoc Guidelines and Schema version 8
+                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term n="1" type="religion">classical</term>
-               <term n="2" type="culture">literature</term>
-               <term n="3">philosophy</term>
+               <term>philosophy</term>
+               <term type="culture">literature</term>
+               <term type="religion">classical</term>
             </keywords>
          </textClass>
          <langUsage>
@@ -100,7 +100,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="grc" type="edition" xml:space="preserve"><div n="a" subtype="fragment" type="textpart"><ab>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+                <div n="c" subtype="fragment" type="textpart" corresp="#FR9696">
+<ab>
 <lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
 <lb n="1"/><gap reason="illegible" quantity="2" unit="line"/>
 <lb n="3"/><gap reason="lost" quantity="1" unit="character"/>οντο<gap reason="lost" extent="unknown" unit="character"/>
@@ -125,13 +127,16 @@
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="reference" subtype="principal">
-                  <title level="a" type="main">Recenti tentativi di svolgimento dei papiri ercolanesi</title>
-                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
-                  <!-- ignore - stop -->
                   <ptr target="http://papyri.info/biblio/83571"/>
+                  <!--ignore - start, i.e. SoSOL users may not edit this-->
+                  <title type="main" level="a">Recenti tentativi di svolgimento dei papiri ercolanesi</title>
+                  <author n="1">
+                     <surname>Sbordone</surname>
+                     <forename>Francesco</forename>
+                  </author>
+                  <date>1971</date>
+                  <!--ignore - stop-->
                   <biblScope n="1" unit="page">30</biblScope>
-                  <biblScope n="2" unit="book"/>
-                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
