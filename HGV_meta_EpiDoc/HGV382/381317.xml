@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Patched and peeled in London: A memorandum for a trip to Constantinople (P.Lond. inv. 2237)</title>
@@ -18,7 +18,7 @@
                   <placeName>
                      <settlement>London</settlement>
                   </placeName>
-                  <collection>British Museum</collection>
+                  <collection>British Library</collection>
                   <idno type="invNo">P.Lond. inv. 2237</idno>
                </msIdentifier>
                <physDesc>
@@ -32,15 +32,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites</origPlace>
+                     <origPlace>Oxyrhynchites, Ägypten</origPlace>
                      <origDate notBefore="0401" notAfter="0600" precision="low">V - VI</origDate>
                   </origin>
                   <provenance type="located">
                      <p xml:id="geoDGCFE6">
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -83,8 +84,8 @@
                  who="http://papyri.info/users/james.cowey">Submit - Entered metadata for APF 60, 2014, 219</change>
          <change when="2020-11-25T11:42:38-05:00" who="http://papyri.info/editor">Automated creation from template</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -98,8 +99,14 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_2237"/>
+               </figure>
+               <figure n="2">
+                  <graphic url="https://ia601201.us.archive.org/30/items/blpapimarchive/papyrus_2237_f001r.jpg"/>
+               </figure>
+               <figure n="3">
+                  <graphic url="https://ia601201.us.archive.org/30/items/blpapimarchive/papyrus_2237_f001v.jpg"/>
                </figure>
             </p>
          </div>
@@ -110,5 +117,5 @@
             </p>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
