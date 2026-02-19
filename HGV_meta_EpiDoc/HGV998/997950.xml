@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv997950">
    <teiHeader>
       <fileDesc>
@@ -32,17 +32,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
                      <origDate notBefore="0351" notAfter="0400" precision="low">2. Hälfte IV</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/756574 https://www.trismegistos.org/place/816">Hermopolis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,7 +52,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,14 +69,20 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Ladung</term>
-               <term>Weizen</term>
-               <term>Schiff</term>
+               <term n="1">Quittung</term>
+               <term n="2">Ladung</term>
+               <term n="3">Weizen</term>
+               <term n="4">Schiff</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-02-19T08:49:15-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Finalized - Metadata finalized</change>
+         <change when="2026-02-19T08:44:31-05:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Vote - HGVAccept - Yes</change>
+         <change when="2026-02-07T10:31:48-05:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Entered link to digital image.</change>
          <change who="HGV" when="2024-04-18">Xwalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
@@ -82,14 +92,21 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">21</biblScope>
-                  <biblScope type="numbers">2878</biblScope>
+                  <biblScope n="1" type="volume">21</biblScope>
+                  <biblScope n="2" type="numbers">2878</biblScope>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
                <bibl type="illustration">Plate III</bibl>
+            </p>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://berlpap.smb.museum/06569/"/>
+               </figure>
             </p>
          </div>
       </body>
