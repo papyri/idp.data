@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv30994">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Fragment eines Prozeßprotokolls</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
-                     <origDate notBefore="0276" notAfter="0325" precision="low">spätes III - frühes IV</origDate>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
+                     <origDate notBefore="0276" notAfter="0325" precision="low">Ende III - Anfang IV</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/756574 https://www.trismegistos.org/place/816">Hermopolis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,37 +68,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Protokoll (Prozeß)</term>
-               <term>praeses (Thebais)</term>
+               <term n="1">Protokoll (Prozeß)</term>
+               <term n="2">praeses (Thebais)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-10-17T03:51:01-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-10-17T03:49:44-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Beim Zeilenverweis Z. 7 ergänzen.</change>
+         <change when="2024-10-14T07:52:28-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added a general note about the information in Tyche 34 (Korr. Tyche 933)</change>
          <change who="HGV" when="1994-05-25">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Griechisch - lateinisch.</p>
+            <p>Griechisch - lateinisch. Zur Abkürzung d(ixit) in Z. 5 und 7 vgl. Tyche 34, 2019, S. 259, Korr. Tyche 933.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">18</biblScope>
-                  <biblScope type="numbers">13296</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>
-                  <biblScope type="pages">219</biblScope>
+                  <biblScope n="1" type="volume">18</biblScope>
+                  <biblScope n="2" type="numbers">13296</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -110,6 +110,18 @@
                <bibl type="publication" subtype="other">ChLA XLI 1189</bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/30994"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope>
+                  <biblScope type="pages">219</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv997971">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Liste von Kirchen mit Angaben zur (Beleuchtungs?-)Ausstattung</title>
@@ -25,22 +25,23 @@
                   <objectDesc>
                      <supportDesc>
                         <support>
-                           <material>Papyrus</material>
+                           <material>Pergament</material>
                         </support>
                      </supportDesc>
                   </objectDesc>
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoites</origPlace>
+                     <origPlace>Arsinoites, Ägypten</origPlace>
                      <origDate notBefore="0601" notAfter="0700" precision="low">VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -48,7 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,24 +66,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Kirchen</term>
-               <term>Ausstattung</term>
+               <term n="1">Liste</term>
+               <term n="2">Kirchen</term>
+               <term n="3">Ausstattung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-08-28T10:47:57-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-08-28T10:29:30-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-08-27T15:04:48-04:00"
+                 who="http://papyri.info/editor/users/GAJC%20v%20Loon">Submit - Inserted text according to edition. I am not sure if I inserted the word κεντ(ρ ) correctly (orthographic regularization with alternatives)</change>
+         <change when="2024-06-25T14:35:58-04:00"
+                 who="http://papyri.info/editor/users/GAJC%20v%20Loon">Commit - Changed material from Papyrus into Pergament, following the edition and checking it on the photograph</change>
          <change who="HGV" when="2024-04-18">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">21</biblScope>
-                  <biblScope type="numbers">2900</biblScope>
+                  <biblScope n="1" type="volume">21</biblScope>
+                  <biblScope n="2" type="numbers">2900</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -90,5 +101,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

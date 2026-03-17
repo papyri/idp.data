@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv13448">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Rescript of Gordian</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Berkeley</settlement>
                   </placeName>
+                  <collection>Bancroft Library</collection>
+                  <idno type="invNo">P. Tebt. 285</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,18 +33,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate notBefore="0244">
-                        <offset type="after" n="1">nach</offset> 244</origDate>
+                        <offset n="1" type="after">nach</offset>
+                244
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,8 +56,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,19 +73,27 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Reskript des Kaisers Gordian</term>
-               <term>in Deklarationen (Zensus) nicht erwähnte Kinder sollen deswegen nicht als illegitim gelten</term>
-               <term>Kopie</term>
+               <term n="1">Reskript des Kaisers Gordian</term>
+               <term n="2">in Deklarationen (Zensus) nicht erwähnte Kinder sollen deswegen nicht als illegitim gelten</term>
+               <term n="3">Kopie</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-12-15T11:49:07-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-12-15T11:44:56-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-12-14T19:58:46-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Submit - Corrected the link to the image at Berkeley.</change>
+         <change when="2024-12-14T19:58:36-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Commit - Corrected the link to the image at Berkeley.</change>
          <change who="HGV" when="1996-04-29">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -96,21 +111,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">2</biblScope>
-                  <biblScope type="numbers">285</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>
-                  <biblScope type="pages">355</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>
-                  <biblScope type="pages">278</biblScope>
+                  <biblScope n="1" type="volume">2</biblScope>
+                  <biblScope n="2" type="numbers">285</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -122,16 +124,44 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">M.Chr. 379</bibl>
+               <bibl type="publication" subtype="other">Chrest.Mitt. 379</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="https://dpg.lib.berkeley.edu/webdb/apis/apis2?apisid=335&amp;item=1"/>
+                  <graphic url="https://digicoll.lib.berkeley.edu/record/231621"/>
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/13448"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">I</biblScope>
+                  <biblScope type="pages">426</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">III</biblScope>
+                  <biblScope type="pages">241</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">IX</biblScope>
+                  <biblScope type="pages">355</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope>
+                  <biblScope type="pages">278</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">Konk. I</biblScope>
+                  <biblScope type="pages">259</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

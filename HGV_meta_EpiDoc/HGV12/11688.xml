@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11688">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -45,7 +45,7 @@
                                    type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -76,6 +76,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-07T08:11:48-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-05-07T08:09:04-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Sieht gut aus.</change>
+         <change when="2024-05-07T07:46:12-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added the journal article corrections from D. Hagedorn (AnalPap 30 (2018) S. 166) and a note to the metadata regarding the name Stotoetis</change>
          <change when="2019-12-17T16:30:53-05:00"
                  who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
          <change when="2019-12-17T16:06:35-05:00"
@@ -88,8 +94,8 @@
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -119,14 +125,29 @@
          </div>
          <div type="figure">
             <p>
-               <figure>
+               <figure n="1">
                   <graphic url="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Papyrus_309"/>
                </figure>
-               <figure>
+               <figure n="2">
                   <graphic url="https://access.bl.uk/item/viewer/ark:/81055/vdc_100143126186.0x000001"/>
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Stotoetis (Z. 4-5) vgl. AnalPap 30, 2018, S. 166.</p>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/11688"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">I</biblScope>
+                  <biblScope type="pages">247</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

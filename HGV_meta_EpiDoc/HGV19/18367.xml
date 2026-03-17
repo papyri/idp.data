@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv18367">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Fragment eines Prozeßprotokolls</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
                      <origDate notBefore="0298" notAfter="0300">298 - 300</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/756574 https://www.trismegistos.org/place/816">Hermopolis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,47 +68,36 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Prozeß (Protokoll)</term>
-               <term>praeses (Thebais)</term>
-               <term>curator</term>
-               <term>minor</term>
+               <term n="1">Prozeß (Protokoll)</term>
+               <term n="2">praeses (Thebais)</term>
+               <term n="3">curator</term>
+               <term n="4">minor</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-10-17T03:41:27-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-10-17T03:38:42-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Sieht gut aus.</change>
+         <change when="2024-10-14T07:44:05-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added a general note about the information in tyche 34 (Korr. Tyche 933)</change>
          <change who="HGV" when="1994-05-25">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Griechisch - lateinisch. Vgl. P.Kramer, S. 138-140.</p>
+            <p>Griechisch - lateinisch. Vgl. P.Kramer, S. 138-140. Zur Abkürzung d(ixit) in Z. 7, 9 und 11 vgl. Tyche 34, 2019, S. 259, Korr. Tyche 933.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope type="volume">18</biblScope>
-                  <biblScope type="numbers">13295</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL">
-                  <biblScope type="volume">X</biblScope>
-                  <biblScope type="pages">219</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XI</biblScope>
-                  <biblScope type="pages">224</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XII</biblScope>
-                  <biblScope type="pages">220</biblScope>
+                  <biblScope n="1" type="volume">18</biblScope>
+                  <biblScope n="2" type="numbers">13295</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -127,6 +119,26 @@
                <bibl type="translations">Mitthof in P.Kramer (2009), S. 139f., Anm. 19.</bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/18367"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">X</biblScope>
+                  <biblScope type="pages">219</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XI</biblScope>
+                  <biblScope type="pages">224</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XII</biblScope>
+                  <biblScope type="pages">220</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

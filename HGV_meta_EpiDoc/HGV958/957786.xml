@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Stellenbesetzung und Besoldung in der Militärverwaltung der Ptolemäerzeit</title>
@@ -32,7 +32,7 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolites</origPlace>
+                     <origPlace>Herakleopolites, Ägypten</origPlace>
                      <origDate notBefore="-0145-09-17">
                         <offset n="1" type="after">nach</offset>
                 17. Sept. 145 v.Chr.
@@ -40,10 +40,11 @@
                   </origin>
                   <provenance type="located">
                      <p xml:id="geoBA1EFG">
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -75,6 +76,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-08-21T04:48:34-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-08-19T04:45:38-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2024-12-04T06:18:18-05:00"
+                 who="http://papyri.info/editor/users/hagenscheit">Submit - Korrekturen der Datierungen in Zeile 40 und 93. Änderungen bei mentioned dates. ZPE 230 (2024), S.180</change>
          <change when="2021-07-20T04:19:21-04:00"
                  who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
          <change when="2021-07-16T07:39:14-04:00"
@@ -83,8 +90,8 @@
                  who="http://papyri.info/editor/users/james.cowey">Submit - Entered metadata for P.Trier II</change>
          <change when="2021-07-16T06:38:00-04:00" who="http://papyri.info/editor">Automated creation from template</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
@@ -122,8 +129,8 @@
                </item>
                <item n="2">
                   <ref>Kol. II, Z. 40</ref>
-                  <date type="mentioned" when="-0145-07-15">
-              15. Juli 145 v.Chr.
+                  <date type="mentioned" when="-0145-07-19">
+              19. Juli 145 v.Chr.
               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
@@ -149,8 +156,8 @@
                </item>
                <item n="5">
                   <ref>Kol. IV, Z. 93</ref>
-                  <date type="mentioned" when="-0146-08-25">
-              25. Aug. 146 v.Chr.
+                  <date type="mentioned" when="-0156-07-28">
+              28. Juli 156 v.Chr.
               <certainty locus="value" given="#dateAlternativeX" degree="1"/>
                   </date>
                </item>
@@ -163,6 +170,9 @@
                </item>
             </list>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zur Datierungen in Z. 40 und 93 vgl. ZPE 230, 2024, S.180.</p>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>

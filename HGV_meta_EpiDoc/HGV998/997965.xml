@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv997965">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Vertrag (?)</title>
@@ -32,18 +32,21 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Arsinoiton Polis (?)</origPlace>
+                     <origPlace>Arsinoiton Polis ? (Arsinoites ?, Ägypten)</origPlace>
                      <origDate notBefore="0501" notAfter="0675" precision="low">VI - Mitte VII</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    cert="low"
                                    ref="https://pleiades.stoa.org/places/736948 https://www.trismegistos.org/place/327">Arsinoiton Polis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
+                                   cert="low"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -51,7 +54,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -66,22 +71,32 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
+               <term n="1">Vertrag</term>
+               <term n="2">ekdikos</term>
+               <term n="3">defensor civitatis</term>
+               <term n="4">comes</term>
+               <term n="5">transversa charta</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-05-14T10:27:23-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-05-12T11:52:57-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2024-05-10T10:53:48-04:00"
+                 who="http://papyri.info/editor/users/MarkusResel">Submit - Addition of keywords to HGV data and text to DDbDP. Vienna workshop, 10.05.2024.</change>
          <change who="HGV" when="2024-04-18">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">BGU</title>
-                  <biblScope type="volume">21</biblScope>
-                  <biblScope type="numbers">2894</biblScope>
+                  <biblScope n="1" type="volume">21</biblScope>
+                  <biblScope n="2" type="numbers">2894</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -98,5 +113,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

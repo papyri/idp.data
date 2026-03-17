@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv976580">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Sale of Cretan slave</title>
@@ -21,28 +21,21 @@
                   <collection>Sackler Library, Papyrology Rooms</collection>
                   <idno type="invNo">63 6B.70/D(1)</idno>
                </msIdentifier>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>
-                           <material/>
-                        </support>
-                     </supportDesc>
-                  </objectDesc>
-               </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchos</origPlace>
+                     <origPlace>Oxyrhynchos (Oxyrhynchites, Ägypten)</origPlace>
                      <origDate when="0290">290</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736983 https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://pleiades.stoa.org/places/736982 https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -50,7 +43,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,24 +60,38 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Kauf</term>
-               <term>Sklave</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Kauf</term>
+               <term n="3">Sklave</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-11-26T11:29:51-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2024-11-26T11:19:22-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-11-26T11:18:32-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Submit - added link to the digital image and clicked "add".</change>
+         <change when="2024-11-26T11:18:22-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Commit - added link to the digital image and clicked "add".</change>
+         <change when="2024-11-26T09:42:03-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVReject - Please remember to click the English word "add" to the right of the entry box for "Digital images". That makes sure the what you entered into the box is preserved. If you do not do this the link you pasted in is not saved.</change>
+         <change when="2024-11-23T21:37:26-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Submit - Added a link to a digital image.</change>
+         <change when="2024-11-23T21:37:17-05:00"
+                 who="http://papyri.info/editor/users/gwschwendner">Commit - Added a link to a digital image.</change>
          <change who="HGV" when="2022-07-06">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Oxy.</title>
-                  <biblScope type="volume">86</biblScope>
-                  <biblScope type="numbers">5568</biblScope>
+                  <biblScope n="1" type="volume">86</biblScope>
+                  <biblScope n="2" type="numbers">5568</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -91,6 +100,13 @@
                <bibl type="illustration">Plate VII</bibl>
             </p>
          </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="https://doi.org/10.25446/oxford.21186688.v2"/>
+               </figure>
+            </p>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

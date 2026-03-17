@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv11620">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Scheidungsurkunde</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Tebtynis (Arsinoites)</origPlace>
+                     <origPlace>Tebtynis (Arsinoites, Ägypten)</origPlace>
                      <origDate when="0123-03-17">17. März 123</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/737072 https://www.trismegistos.org/place/2287">Tebtynis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,18 +68,24 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Vertrag</term>
-               <term>Scheidung (Ehe)</term>
+               <term n="1">Vertrag</term>
+               <term n="2">Scheidung (Ehe)</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-08-30T09:24:20-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-08-30T09:22:06-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Sieht gut aus.</change>
+         <change when="2024-07-19T09:28:13-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added a general note abou the information in Tyche 36 (Korr. Tyche 1022)</change>
          <change who="HGV" when="1997-03-05">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -85,7 +94,7 @@
             <list>
                <item>
                   <ref>Z. 18</ref>
-                  <date type="mentioned" notBefore="0120-10-28" notAfter="0120-11-26">28. Okt.  - 26. Nov. 120</date>
+                  <date type="mentioned" notBefore="0120-10-28" notAfter="0120-11-26">28. Okt. 120 - 26. Nov. 120</date>
                </item>
             </list>
          </div>
@@ -93,28 +102,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Lips.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">27</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL-online">
-                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/11620"/>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">VIII</biblScope>
-                  <biblScope type="pages">170</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">IX</biblScope>
-                  <biblScope type="pages">124</biblScope>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XIII</biblScope>
-                  <biblScope type="pages">121</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">27</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -126,7 +115,7 @@
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikation</head>
             <listBibl>
-               <bibl type="publication" subtype="other">M.Chr. 293</bibl>
+               <bibl type="publication" subtype="other">Chrest.Mitt. 293</bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="translations">
@@ -143,6 +132,45 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Zu Z. 26-27 vgl. Tyche 36, 2021, S. 189, Korr. Tyche 1022.</p>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/11620"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">I</biblScope>
+                  <biblScope type="pages">205</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">III</biblScope>
+                  <biblScope type="pages">91</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">IV</biblScope>
+                  <biblScope type="pages">42</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">V</biblScope>
+                  <biblScope type="pages">48</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VII</biblScope>
+                  <biblScope type="pages">79</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VIII</biblScope>
+                  <biblScope type="pages">170</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">121</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

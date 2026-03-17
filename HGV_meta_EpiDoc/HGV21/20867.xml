@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv20867">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Fragment einer datierten Liste (?)</title>
@@ -31,17 +31,17 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Herakleopolites (?)</origPlace>
-                     <origDate xml:id="dateAlternativeX" when="0436" cert="low">436 (?)</origDate>
-                     <origDate xml:id="dateAlternativeY" when="0435" cert="low">435 (?)</origDate>
+                     <origPlace>Herakleopolites ?, Ägypten</origPlace>
+                     <origDate when="0436">436</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    cert="low"
                                    ref="https://www.trismegistos.org/place/2713 https://pleiades.stoa.org/places/736921">Herakleopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +49,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,18 +66,25 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste (?)</term>
-               <term>Datierung</term>
+               <term n="1">Liste (?)</term>
+               <term n="2">Datierung</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-06-11T05:34:59-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-06-11T05:31:23-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Sieht gut aus. Bemerkungen aktualisieren.</change>
+         <change when="2024-06-10T09:15:33-04:00"
+                 who="http://papyri.info/editor/users/Julius%20Weinlein">Submit - Neues Datum: 436&#xD;
+P.Oxy. 71 4832.1-2 n.</change>
          <change who="HGV" when="1990-03-07">Record created</change>
          <change who="HGV" when="2011-04-18">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
             <p>Alternativdatierung: 435. Zur Datierung vgl. auch P.Oxy. LXXI 4832,1-2 Anm. Zur Rückseite vgl. ZPE 150, 2004, S. 158f.</p>
@@ -85,20 +93,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">CPR</title>
-                  <biblScope type="volume">10</biblScope>
-                  <biblScope type="numbers">114</biblScope>
-               </bibl>
-            </listBibl>
-         </div>
-         <div type="bibliography" subtype="corrections">
-            <head>BL-Einträge nach BL-Konkordanz</head>
-            <listBibl>
-               <bibl type="BL-online">
-                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/20867"/>
-               </bibl>
-               <bibl type="BL">
-                  <biblScope type="volume">XIII</biblScope>
-                  <biblScope type="pages">74</biblScope>
+                  <biblScope n="1" type="volume">10</biblScope>
+                  <biblScope n="2" type="numbers">114</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -114,6 +110,21 @@
                </figure>
             </p>
          </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/20867"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">74</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIV</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

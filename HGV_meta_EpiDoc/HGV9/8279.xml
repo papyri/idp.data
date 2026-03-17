@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv8279">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>keiner</title>
@@ -17,8 +17,10 @@
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Cambridge, MA</settlement>
                   </placeName>
+                  <collection>Harvard University Library (Houghton Library)</collection>
+                  <idno type="invNo">MS Gr SM6161</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -31,15 +33,16 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Oxyrhynchites</origPlace>
+                     <origPlace>Oxyrhynchites, Ägypten</origPlace>
                      <origDate when="-0260" precision="medium">ca. 260 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2722 https://pleiades.stoa.org/places/736982">Oxyrhynchites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -47,8 +50,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -63,29 +67,37 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Aufstellung</term>
-               <term>Pacht</term>
-               <term>gezahlte und geschuldete Beträge</term>
+               <term n="1">Aufstellung</term>
+               <term n="2">Pacht</term>
+               <term n="3">gezahlte und geschuldete Beträge</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-14T07:29:00-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-01-14T07:17:51-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-01-08T19:51:55-05:00"
+                 who="http://papyri.info/editor/users/pag">Submit - added collection data</change>
+         <change when="2025-01-08T19:51:50-05:00"
+                 who="http://papyri.info/editor/users/pag">Commit - added collection data</change>
          <change who="HGV" when="1996-12-20">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Descr. Duplikat: P.Hib. I  119.</p>
+            <p>Descr. Duplikat: P.Hib. I 119.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Hib.</title>
-                  <biblScope type="volume">1</biblScope>
-                  <biblScope type="numbers">166</biblScope>
+                  <biblScope n="1" type="volume">1</biblScope>
+                  <biblScope n="2" type="numbers">166</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -100,5 +112,5 @@
             </p>
          </div>
       </body>
-   </text>
+  </text>
 </TEI>

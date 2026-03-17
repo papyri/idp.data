@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv27147">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Personenliste</title>
+            <title>Personenliste </title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">27147</idno>
             <idno type="TM">27147</idno>
             <idno type="ddb-perseus-style">0218;;17</idno>
-            <idno type="ddb-filename">p.vind.bosw.17</idno>
-            <idno type="ddb-hybrid">p.vind.bosw;;17</idno>
+            <idno type="ddb-filename">p.vind.bosw.17v</idno>
+            <idno type="ddb-hybrid">p.vind.bosw;;17v</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
                <msIdentifier>
                   <placeName>
-                     <settlement>unbekannt</settlement>
+                     <settlement>Vienna</settlement>
                   </placeName>
+                  <collection>Nationalbibliothek</collection>
+                  <idno type="invNo">G 20154 Vo</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -39,8 +41,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -55,26 +58,34 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Personen</term>
-               <term>Namen</term>
-               <term>Zahlen</term>
+               <term n="1">Liste</term>
+               <term n="2">Personen</term>
+               <term n="3">Namen</term>
+               <term n="4">Zahlen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-24T15:55:41-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-01-24T15:33:22-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2024-11-28T12:32:59-05:00"
+                 who="http://papyri.info/editor/users/francescaiacono">Submit - Entered from Aegyptus 103 (2023) and added also the corrections from BL. I'm not sure about the metadata: how to deal with the reedition? It's better if I change the title? &#xD;
+Also check r. l.2: I'm not sure about the start of the line.</change>
          <change who="HGV" when="1992-07-31">Record created</change>
          <change who="HGV" when="2011-02-03">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Vindob. Bosw.</title>
-                  <biblScope type="numbers">17</biblScope>
+                  <biblScope n="1" type="numbers">17</biblScope>
+                  <biblScope n="2" type="side">V</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -90,6 +101,29 @@
                </figure>
             </p>
          </div>
+         <div type="commentary" subtype="general">
+            <p>Rückseite: Aegyptus 103 (2023) S. 75 Nr. 3.</p>
+         </div>
+         <div type="bibliography" subtype="corrections">
+            <head>BL-Einträge nach BL-Konkordanz</head>
+            <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/27147"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">III</biblScope>
+                  <biblScope type="pages">102</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">VII</biblScope>
+                  <biblScope type="pages">95</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">Konk. I</biblScope>
+                  <biblScope type="pages">115</biblScope>
+               </bibl>
+            </listBibl>
+         </div>
       </body>
-   </text>
+  </text>
 </TEI>

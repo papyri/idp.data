@@ -4,14 +4,14 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Letter Concerning a Centurio</title>
+            <title>Military letter</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">78495</idno>
             <idno type="TM">78495</idno>
             <idno type="ddb-perseus-style">0157;;726</idno>
-            <idno type="ddb-filename">p.masada.726</idno>
-            <idno type="ddb-hybrid">p.masada;;726</idno>
+            <idno type="ddb-filename">c.lat.text.pap.1B.73</idno>
+            <idno type="ddb-hybrid">c.lat.text.pap;1B;73</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -32,22 +32,29 @@
                <history>
                   <origin>
                      <origPlace>Masada (Palästina)</origPlace>
-                     <origDate xml:id="dateAlternativeX"
+                     <origDate n="1"
+                               xml:id="dateAlternativeX"
                                notBefore="0074-01"
-                               notAfter="0074-03"
-                               precision="low">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>Anfang 74 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY"
+                               notAfter="0074-03">
+                Anfang - März 74 (Jahr unsicher)
+                <precision match="../@notBefore"/>
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
+                     <origDate n="2"
+                               xml:id="dateAlternativeY"
                                notBefore="0073-01"
-                               notAfter="0073-03"
-                               precision="low">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>Anfang 73 (Jahr unsicher)</origDate>
+                               notAfter="0073-03">
+                Anfang - März 73 (Jahr unsicher)
+                <precision match="../@notBefore"/>
+                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
+                     </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
-                                   ref="https://pleiades.stoa.org/places/687968 https://www.trismegistos.org/place/3148">Masada</placeName>
-                        <placeName type="ancient" subtype="region">Palästina</placeName>
+                        <placeName n="1"
+                                   type="ancient"
+                                   ref="http://pleiades.stoa.org/places/687968 http://www.trismegistos.org/place/3148">Masada</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Palästina</placeName>
                      </p>
                   </provenance>
                </history>
@@ -55,8 +62,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -71,12 +79,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Zenturio</term>
-               <term>Militär</term>
+               <term n="1">Zenturio</term>
+               <term n="2">Militär</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-12-27T10:30:37-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-10-24T10:27:00-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2025-10-21T10:45:52-04:00"
+                 who="http://papyri.info/editor/users/andrea.bernini82">Submit - I updated the text and the metadata according to the CLTP edition</change>
          <change who="HGV" when="1999-06-30">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
@@ -85,13 +99,14 @@
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Lateinisch. Alternativdatierung: Anfang 73. Zur Datierung vgl. P.Masada, S. 27.</p>
+            <p>Lateinisch.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Masada</title>
-                  <biblScope type="numbers">726</biblScope>
+                  <title level="s" type="abbreviated">C.Lat.Text.Pap.</title>
+                  <biblScope n="1" type="volume">IB</biblScope>
+                  <biblScope n="2" type="numbers">73</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -106,15 +121,16 @@
          </div>
          <div type="bibliography" subtype="illustrations">
             <p>
-               <bibl type="illustration">Plate 5</bibl>
-               <bibl type="illustration">ChLA XLVI, S. 24</bibl>
+               <bibl type="illustration" n="1">P.Masada, Plate 5</bibl>
+               <bibl type="illustration" n="2">ChLA XLVI, S. 24</bibl>
             </p>
          </div>
          <div type="bibliography" subtype="otherPublications">
             <head>Andere Publikationen</head>
             <listBibl>
-               <bibl type="publication" subtype="other">ChLA XLVI 1369</bibl>
-               <bibl type="publication" subtype="other">CEL III 80 ter</bibl>
+               <bibl type="publication" subtype="other" n="1">ChLA 46 1369</bibl>
+               <bibl type="publication" subtype="other" n="2">C.Epist.Lat. 3 80 ter</bibl>
+               <bibl type="publication" subtype="other" n="3">P.Masada 726</bibl>
             </listBibl>
          </div>
       </body>

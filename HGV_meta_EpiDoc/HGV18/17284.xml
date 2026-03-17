@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv17284">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Cognitionsprozeß vor dem Praeses Thebaidis</title>
@@ -31,17 +31,19 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Hermopolis</origPlace>
+                     <origPlace>Hermopolis (Hermopolites, Ägypten)</origPlace>
                      <origDate when="0350" precision="medium">ca. 350</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/756574 https://www.trismegistos.org/place/816">Hermopolis</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -49,8 +51,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -65,23 +68,29 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Protokoll</term>
-               <term>Prozeß vor dem praeses Thebaidos</term>
-               <term>Erbe</term>
-               <term>Steuern</term>
+               <term n="1">Protokoll</term>
+               <term n="2">Prozeß vor dem praeses Thebaidos</term>
+               <term n="3">Erbe</term>
+               <term n="4">Steuern</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2024-10-17T07:18:23-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Finalized - Bereit.</change>
+         <change when="2024-10-17T07:15:54-04:00"
+                 who="http://papyri.info/editor/users/paulpeters">Vote - HGVAccept - Verweis auf die Hände ergänzen.</change>
+         <change when="2024-10-14T08:11:24-04:00"
+                 who="http://papyri.info/editor/users/jostrauss">Submit - added a general note about the information in Tyche 34 (Korr. Tyche 933 and 938)</change>
          <change who="HGV" when="1992-07-20">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. S. 30. Griechisch - lateinisch. Zu Z. 19 vgl. P.Kramer, S. 143, Anm. 27.</p>
+            <p>Zur Datierung vgl. S. 30. Griechisch - lateinisch. Zu Z. 19 vgl. P.Kramer, S. 143, Anm. 27. Zur Abkürzung d(ixit) in Z. 10, 12, 16, 19, 23 und 26 vgl. Tyche 34, 2019, S. 259, Korr. Tyche 933. Zu Z. 1, 5, 8-10 sowie 24 und zu den Händen in Z. 27-28 vgl. Tyche 34, 2019, S. 262-263, Korr. Tyche 938.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -96,9 +105,41 @@
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="illustrations">
+            <p>
+               <bibl type="illustration" n="1">Tafel IV</bibl>
+               <bibl type="illustration" n="2">ChLA X, S. 85-86</bibl>
+               <bibl type="illustration" n="3">Zilliacus, Nya vägar, vor S. 41</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <head>Andere Publikationen</head>
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">ChLA X 463</bibl>
+               <bibl type="publication" subtype="other" n="2">CPL, Annexe 8 (Auszüge)</bibl>
+            </listBibl>
+         </div>
+         <div type="figure">
+            <p>
+               <figure>
+                  <graphic url="http://berlpap.smb.museum/04052/"/>
+               </figure>
+            </p>
+         </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
+               <bibl type="BL-online">
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/17284"/>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">III</biblScope>
+                  <biblScope type="pages">30</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">V</biblScope>
+                  <biblScope type="pages">18</biblScope>
+               </bibl>
                <bibl type="BL">
                   <biblScope type="volume">VIII</biblScope>
                   <biblScope type="pages">64</biblScope>
@@ -109,27 +150,6 @@
                </bibl>
             </listBibl>
          </div>
-         <div type="bibliography" subtype="illustrations">
-            <p>
-               <bibl type="illustration">Tafel IV</bibl>
-               <bibl type="illustration">ChLA X, S. 85-86</bibl>
-               <bibl type="illustration">Zilliacus, Nya vägar, vor S. 41</bibl>
-            </p>
-         </div>
-         <div type="bibliography" subtype="otherPublications">
-            <head>Andere Publikationen</head>
-            <listBibl>
-               <bibl type="publication" subtype="other">ChLA X 463</bibl>
-               <bibl type="publication" subtype="other">CPL, Annexe 8 (Auszüge)</bibl>
-            </listBibl>
-         </div>
-         <div type="figure">
-            <p>
-               <figure>
-                  <graphic url="http://berlpap.smb.museum/04052/"/>
-               </figure>
-            </p>
-         </div>
       </body>
-   </text>
+  </text>
 </TEI>

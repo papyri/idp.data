@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv5531">
-   <teiHeader>
+  <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Apocha</title>
+            <title>Abgabequittung (für δεκάτη ἐγκυκλίου)</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">5531</idno>
             <idno type="TM">5531</idno>
             <idno type="ddb-perseus-style">0216;;52</idno>
-            <idno type="ddb-filename">p.vars.52</idno>
-            <idno type="ddb-hybrid">p.vars;;52</idno>
+            <idno type="ddb-filename">sb.30.17687</idno>
+            <idno type="ddb-hybrid">sb;30;17687</idno>
          </publicationStmt>
          <sourceDesc>
             <msDesc>
@@ -31,14 +31,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Theben</origPlace>
+                     <origPlace>Theben (Ägypten)</origPlace>
                      <origDate when="-0092-11-14">14. Nov. 92 v.Chr.</origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/991398 https://www.trismegistos.org/place/2983 https://www.trismegistos.org/place/1281">Theben</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -46,8 +47,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -62,46 +64,70 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Quittung</term>
-               <term>Steuern</term>
-               <term>Bank</term>
+               <term n="1">Quittung</term>
+               <term n="2">Steuern</term>
+               <term n="3">Bank</term>
+               <term n="4">Geld</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-01-23T14:34:40-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2025-01-23T14:22:05-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2025-01-23T14:10:02-05:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Updated to SB 30 17687</change>
          <change who="HGV" when="1992-11-25">Record created</change>
          <change who="HGV" when="2009-07-02">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-   </teiHeader>
-   <text>
+  </teiHeader>
+  <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Neuedition: ZPE 151, 2005, S. 159-162..</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Vars.</title>
-                  <biblScope type="numbers">52</biblScope>
+                  <title level="s" type="abbreviated">SB</title>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17687</biblScope>
                </bibl>
             </listBibl>
+         </div>
+         <div type="bibliography" subtype="illustrations">
+            <p>
+          keine
+          <bibl type="illustration">keine</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other">P.Vars. 52</bibl>
+            </listBibl>
+         </div>
+         <div type="commentary" subtype="general">
+            <p>Original zerstört.</p>
          </div>
          <div type="bibliography" subtype="corrections">
             <head>BL-Einträge nach BL-Konkordanz</head>
             <listBibl>
                <bibl type="BL-online">
-                  <ptr target="https://aquila.zaw.uni-heidelberg.de/bl/hgv/5531"/>
+                  <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/5531"/>
                </bibl>
                <bibl type="BL">
                   <biblScope type="volume">IX</biblScope>
-                  <biblScope type="pages">367/368</biblScope>
+                  <biblScope type="pages">367</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">IX</biblScope>
+                  <biblScope type="pages">368</biblScope>
+               </bibl>
+               <bibl type="BL">
+                  <biblScope type="volume">XIII</biblScope>
+                  <biblScope type="pages">260</biblScope>
                </bibl>
             </listBibl>
          </div>
-         <div type="bibliography" subtype="illustrations">
-            <p>keine</p>
-         </div>
       </body>
-   </text>
+  </text>
 </TEI>
