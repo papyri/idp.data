@@ -15,7 +15,11 @@
             <idno type="dclp-hybrid">psi;7;847</idno>
             <idno type="MP3">01670.000</idno>
             <availability>
-               <p>© Digital Corpus of Literary Papyri. This work is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>.</p>
+               <p>
+            © Digital Corpus of Literary Papyri. This work is licensed under a
+            <ref type="license" target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</ref>
+            .
+          </p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -39,15 +43,15 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Found: Egypt; written: Egypt</origPlace>
+                     <origPlace>Fundort: Egypt; Schreibort: Egypt</origPlace>
                      <origDate notBefore="0001" notAfter="0199">1 - 199</origDate>
                   </origin>
-                  <provenance type="found">
+                  <provenance n="1" type="found">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
                   </provenance>
-                  <provenance type="composed">
+                  <provenance n="2" type="composed">
                      <p>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                      </p>
@@ -58,22 +62,28 @@
       </fileDesc>
       <encodingDesc>
          <p>
-                This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords>
-               <term>poetry</term>
-               <term>comedy</term>
-               <term type="culture">literature</term>
-               <term type="religion">classical</term>
-               <term type="overview">Menander?; New Comedy (Eunouchos?), with drawings</term>
+               <term n="1" type="religion">classical</term>
+               <term n="2" type="culture">literature</term>
+               <term n="3">poetry</term>
+               <term n="4">comedy</term>
+               <term n="5" type="overview">Menander?; New Comedy (Eunouchos?), with drawings</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-04-13T15:19:36-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Finalized - This is good to go.</change>
+         <change when="2026-04-13T15:05:27-04:00"
+                 who="http://papyri.info/editor/users/Mike%20Sampson">Vote - Accept-Straight-to-Finalization - Yes. PSI 7 is Biblio 95262</change>
+         <change when="2026-01-15T05:55:25-05:00"
+                 who="http://papyri.info/editor/users/enury">Submit - Added image link</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
@@ -83,15 +93,20 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
-                  <biblScope unit="volume">7</biblScope>
-                  <biblScope unit="number">847</biblScope>
+                  <!-- ignore - start, i.e. SoSOL users may not edit this -->
+                  <!-- ignore - stop -->
+                  <ptr target="http://papyri.info/biblio/95262"/>
+                  <biblScope n="1" unit="volume"/>
+                  <biblScope n="2" unit="number">847</biblScope>
+                  <biblScope n="3" unit="book"/>
                </bibl>
             </listBibl>
          </div>
          <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
-                  <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0541">Menander</author>
+                  <author xml:lang="grc"
+                          ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0541">Menander</author>
                   <title type="main"
                          level="m"
                          ref="http://www.trismegistos.org/authorwork/854">Eunouchos</title>
@@ -102,6 +117,9 @@
          <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">BICS 27 (1980), pl.1</bibl>
+               <bibl type="online">
+                  <ptr target="https://psi-online.it/documents/psi;7;847"/>
+               </bibl>
             </listBibl>
          </div>
       </body>
