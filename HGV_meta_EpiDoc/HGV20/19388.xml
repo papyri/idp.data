@@ -31,24 +31,40 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate xml:id="dateAlternativeX" notBefore="0219-08-29">
+                     <origPlace>Leontopolites, Ägypten</origPlace>
+                     <origDate n="1" xml:id="dateAlternativeX" notBefore="0219-08-29">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 29. Aug. 219 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeY" notBefore="0223-08-29">
+                        <offset n="1" type="after">nach</offset>
+                29. Aug. 219 (Jahr unsicher)
+              </origDate>
+                     <origDate n="2" xml:id="dateAlternativeY" notBefore="0223-08-29">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 29. Aug. 223 (Jahr unsicher)</origDate>
-                     <origDate xml:id="dateAlternativeZ" notBefore="0239-08-29">
+                        <offset n="1" type="after">nach</offset>
+                29. Aug. 223 (Jahr unsicher)
+              </origDate>
+                     <origDate n="3" xml:id="dateAlternativeZ" notBefore="0239-08-29">
                         <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 29. Aug. 239 (Jahr unsicher)</origDate>
+                        <offset n="1" type="after">nach</offset>
+                29. Aug. 239 (Jahr unsicher)
+              </origDate>
                   </origin>
+                  <provenance type="located">
+                     <p xml:id="geoFBEJI1">
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   ref="www.trismegistos.org/place/3087">Leontopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -76,7 +92,7 @@
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Zur Datierung vgl. ZPE 161, 2007, S. 193f. Alternativdatierungen: nach 29. Aug. 223 oder 239.</p>
+            <p>Zur Datierung vgl. ZPE 161, 2007, S. 193f. Alternativdatierungen: nach 29. Aug. 223 oder 239. Zum Ort vgl. P.Jördens 12 S. 318, Anm. 21.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -85,22 +101,28 @@
             <note type="original" subtype="Z">Z. 50: 29. Aug. 239 (Jahr unsicher)</note>
             <note type="source">MentionedDates.fp7</note>
             <list>
-               <item>
+               <item n="1">
                   <ref>Z. 50</ref>
-                  <date type="mentioned" when="0219-08-29">29. Aug. 219 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
-                     <certainty locus="value" given="#dateAlternativeX" degree="1"/>
+                  <date type="mentioned" when="0219-08-29">
+              29. Aug. 219 (Jahr unsicher)
+              <certainty locus="value" n="1" given="#dateAlternativeX" degree="1"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@when)"/>
                   </date>
                </item>
-               <item>
+               <item n="2">
                   <ref>Z. 50</ref>
-                  <date type="mentioned" when="0223-08-29">29. Aug. 223 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
-                     <certainty locus="value" given="#dateAlternativeY" degree="1"/>
+                  <date type="mentioned" when="0223-08-29">
+              29. Aug. 223 (Jahr unsicher)
+              <certainty locus="value" n="1" given="#dateAlternativeY" degree="1"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@when)"/>
                   </date>
                </item>
-               <item>
+               <item n="3">
                   <ref>Z. 50</ref>
-                  <date type="mentioned" when="0239-08-29">29. Aug. 239 (Jahr unsicher)<certainty locus="value" match="../date/year-from-date(@when)"/>
-                     <certainty locus="value" given="#dateAlternativeZ" degree="1"/>
+                  <date type="mentioned" when="0239-08-29">
+              29. Aug. 239 (Jahr unsicher)
+              <certainty locus="value" n="1" given="#dateAlternativeZ" degree="1"/>
+                     <certainty locus="value" n="2" match="../date/year-from-date(@when)"/>
                   </date>
                </item>
             </list>
@@ -109,9 +131,9 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Flor.</title>
-                  <biblScope type="volume">3</biblScope>
-                  <biblScope type="numbers">375</biblScope>
-                  <biblScope type="side">R</biblScope>
+                  <biblScope n="1" type="volume">3</biblScope>
+                  <biblScope n="2" type="numbers">375</biblScope>
+                  <biblScope n="3" type="side">R</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -131,15 +153,15 @@
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/19388"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">I</biblScope>
                   <biblScope type="pages">460</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">VII</biblScope>
                   <biblScope type="pages">54</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">97</biblScope>
                </bibl>
