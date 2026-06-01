@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv87517">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Description of document</title>
+            <title>Letter</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">87517</idno>
@@ -18,8 +18,8 @@
                   <placeName>
                      <settlement>Manchester</settlement>
                   </placeName>
-                  <collection>John Rylands Library</collection>
-                  <idno type="invNo">Copt. 352</idno>
+                  <collection>Rylands Library</collection>
+                  <idno type="invNo">Rylands Copt. 352</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -32,15 +32,22 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
+                     <origPlace>Ägypten</origPlace>
                      <origDate notBefore="0501" notAfter="0550" precision="low">1. Hälfte VI</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p>
+                        <placeName type="ancient"
+                                   ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8</p>
+         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8 <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         </p>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -54,9 +61,9 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term n="1">Brief</term>
-               <term n="2">Getreide</term>
-               <term n="3">Linsen</term>
+               <term>Brief</term>
+               <term>Weizen</term>
+               <term>Komes</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -68,30 +75,45 @@
          <change when="2021-06-01T05:11:11-04:00"
                  who="http://papyri.info/editor/users/james.cowey">Submit - Entered metadata for P.Ryl. Copt. 352</change>
          <change when="2021-06-01T05:03:09-04:00" who="http://papyri.info/editor">Automated creation from template</change>
+         <change who="HGV" when="2026-06-01">Xwalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
+         <div type="commentary" subtype="general">
+            <p>Koptisch.</p>
+         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
-                  <title level="s" type="abbreviated">P.Ryl. Copt.</title>
+                  <title level="s" type="abbreviated">P.Ryl.Copt.</title>
                   <biblScope type="numbers">352</biblScope>
                </bibl>
+            </listBibl>
+         </div>
+         <div type="bibliography" subtype="illustrations">
+            <p>
+               <bibl type="illustration">Taf. 5</bibl>
+            </p>
+         </div>
+         <div type="bibliography" subtype="translations">
+            <head xml:lang="de">Übersetzungen</head>
+            <listBibl>
+               <head xml:lang="de">https:</head>
+               <bibl type="translations">//luna.manchester.ac.uk/luna/servlet/detail/ManchesterDev~93~3~55651~232490</bibl>
+            </listBibl>
+            <listBibl>
+               <head xml:lang="de">//luna.manchester.ac.uk/luna/servlet/detail/ManchesterDev~93~3~55651~232490:</head>
+               <bibl type="translations">Text?sort=reference_number%2Cimage_sequence_number%2Cimage_title%2Cimage_number</bibl>
             </listBibl>
          </div>
          <div type="figure">
             <p>
                <figure>
-                  <graphic url="https://luna.manchester.ac.uk/luna/servlet/detail/ManchesterDev~93~3~55650~232491:Letter?sort=reference_number%2Cimage_sequence_number%2Cimage_title%2Cimage_number&amp;qvq=q:copt%20352;sort:reference_number%2Cimage_sequence_number%2Cimage_title%2Cimage_number;lc:ManchesterDev~93~3&amp;mi=0&amp;trs=2"/>
+                  <graphic url="https://luna.manchester.ac.uk/MediaManager/srvr?mediafile=/Size1/ManchesterDev~93~3/7928/JRL19121154.jpg"/>
                </figure>
             </p>
          </div>
-         <div type="bibliography" subtype="illustrations">
-            <p>
-               <bibl type="illustration">Plate 5</bibl>
-            </p>
-         </div>
       </body>
-  </text>
+   </text>
 </TEI>
