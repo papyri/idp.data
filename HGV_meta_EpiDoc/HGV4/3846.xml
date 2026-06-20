@@ -31,19 +31,24 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>Kerkeosiris (Arsinoites)</origPlace>
-                     <origDate notBefore="-0113-03-11">
-                        <certainty locus="value" match="../year-from-date(@notBefore)"/>
-                        <offset type="after" n="1">nach</offset> 11. März 113 v.Chr. (Jahr unsicher)</origDate>
+                     <origPlace>Kerkeosiris (Arsinoites, Ägypten)</origPlace>
+                     <origDate notBefore="-0112-04-10">
+                        <certainty locus="value" n="1" match="../month-from-date(@notBefore)"/>
+                        <certainty locus="value" n="2" match="../year-from-date(@notBefore)"/>
+                        <offset n="1" type="after">nach</offset>
+                10. Apr. 112 v.Chr. (Jahr und Monat unsicher)
+              </origDate>
                   </origin>
                   <provenance type="located">
                      <p>
-                        <placeName type="ancient"
+                        <placeName n="1"
+                                   type="ancient"
                                    ref="https://pleiades.stoa.org/places/736936 https://www.trismegistos.org/place/1057 https://www.trismegistos.org/place/1078 https://www.trismegistos.org/place/1082">Kerkeosiris</placeName>
-                        <placeName type="ancient"
+                        <placeName n="2"
+                                   type="ancient"
                                    subtype="nome"
                                    ref="https://www.trismegistos.org/place/332 https://pleiades.stoa.org/places/736893">Arsinoites</placeName>
-                        <placeName type="ancient" subtype="region">Ägypten</placeName>
+                        <placeName n="3" type="ancient" subtype="region">Ägypten</placeName>
                      </p>
                   </provenance>
                </history>
@@ -51,8 +56,9 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -67,12 +73,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Abrechnung (Eingänge und Ausgaben, Geld)</term>
-               <term>Menches</term>
+               <term n="1">Abrechnung (Eingänge und Ausgaben, Geld)</term>
+               <term n="2">Menches</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-06-20T19:04:20-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2026-06-20T09:27:37-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Fine</change>
+         <change when="2026-06-20T03:22:41-04:00"
+                 who="http://papyri.info/editor/users/dkaltsas">Submit - Added bibliography in HGV, Bemerkungen.</change>
          <change who="HGV" when="1997-02-27">Record created</change>
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
@@ -81,7 +93,7 @@
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Vgl. MBAH 25 (2006) 268f.</p>
+            <p>Vgl. MBAH 25, 2006, S. 268f. Zur Datierung vgl. C. Lorber, AncSoc 47, 2017, S. 53 mit Anm. 98.</p>
          </div>
          <div type="commentary" subtype="mentionedDates">
             <head>Erwähnte Daten</head>
@@ -89,12 +101,20 @@
             <note type="source">HGV.fp7</note>
             <list>
                <item>
+                  <ref>Z. 36-72</ref>
                   <note type="comment">Tagesdaten zwischen dem</note>
-                  <date type="mentioned" when="-0113-03-11">3., dem 11. März 113 v.Chr.</date>
-               </item>
-               <item>
-                  <note type="comment">Tagesdaten zwischen dem</note>
-                  <date type="mentioned" when="-0113-03-11">3., dem 11. März 113 v.Chr.</date>
+                  <date type="mentioned"
+                        when="-0112-03-11"
+                        notBefore="-0112-04-02"
+                        notAfter="-0112-04-10">
+              11. März 112 - 10. Apr. 112 v.Chr. (Jahr und Monat unsicher)
+              <certainty locus="value" n="1" match="../date/month-from-date(@when)"/>
+                     <certainty locus="value" n="2" match="../date/month-from-date(@notBefore)"/>
+                     <certainty locus="value" n="3" match="../date/month-from-date(@notAfter)"/>
+                     <certainty locus="value" n="4" match="../date/year-from-date(@when)"/>
+                     <certainty locus="value" n="5" match="../date/year-from-date(@notBefore)"/>
+                     <certainty locus="value" n="6" match="../date/year-from-date(@notAfter)"/>
+                  </date>
                </item>
             </list>
          </div>
@@ -102,8 +122,8 @@
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Tebt.</title>
-                  <biblScope type="volume">5</biblScope>
-                  <biblScope type="numbers">1153</biblScope>
+                  <biblScope n="1" type="volume">5</biblScope>
+                  <biblScope n="2" type="numbers">1153</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -124,15 +144,15 @@
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/3846"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">133</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">256</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="3">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">257</biblScope>
                </bibl>
