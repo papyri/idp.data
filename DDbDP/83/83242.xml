@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -23,17 +25,43 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-08-31T13:48:58+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Finalized - Ready. Added commentary, supralinear strokes, and diareses from image.</change>
+         <change when="2026-08-10T13:05:33+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Vote - Accept-Straight-to-Finalization - lin1: ⲧⲁⲁⲉ ==&gt; ⲧⲁⲁⲥ  ;  lin2: add dash at start of line  ;  lin3: ⲡϩⲩⲅⲟⲩⲙⲉⲛⲟⲥ[.?] ==&gt; ⲡ&lt;:ἡγούμενος=grc|reg|ϩⲩⲅⲟⲩⲙⲉⲛⲟⲥ:&gt; [.?]  add reg and space  ;  lin4: &lt;:ἐπειδή=grc|reg|ⲉⲡⲓⲇⲏ:&gt; add reg  ;  lin5: &lt;:θαλλίς=grc|reg|ⲑⲁⲗⲓⲥ:&gt; [.?] add reg and space  ;  lin6: ⲉⲃⲟⲗ ϫⲉ ⲁⲓⲣ ⲡⲱⲃϣ ⲛ[.?] add spaces  ;  lin7: ϯ&lt;:παρακαλεῖν=grc|reg|ⲡⲁⲣⲁⲕⲁⲗⲉⲓ:&gt; add reg  ;  lin9: ⲁⲅⲓⲁ ⲧ[ⲣⲓⲁⲥ] ==&gt; ~|ἁγία τ[ριάς]|~grc  &#xD;
+</change>
+         <change when="2026-07-30T14:03:25+00:00"
+                 who="http://papyri.info/editor/users/TroyA.Griffitts">Submit - Entered text from the edition</change>
          <change when="2026-07-14T13:30:11.143391-04:00" who="http://papyri.info/about">Generated from HGV source.</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref target="https://papyri.info/editions/o.crum/351" n="102353"><title>O.Crum 351</title><date>1902</date></ref></head><div xml:lang="grc" type="edition" xml:space="preserve">
-              <note xml:lang="en">This text has not been added to papyri.info yet.</note>
-              <ab/>
-            </div></body>
+      <body>
+         <head>
+            <ref target="https://papyri.info/editions/o.crum/351" n="102353">
+               <title>O.Crum 351</title>
+               <date>1902</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Where diacritical signs or supralinear strokes above letters are present on the original, these were not recorded in Crum's edition. Since Crum in his later editions did indicate these marks, we have chosen to add them tacitly where access to an image has made this possible.</p></div>
+         <div xml:lang="cop" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><g type="rho-cross"/> ⲧⲁⲁⲥ ⲙⲡ<supplied reason="lost">ⲁⲥⲟ</supplied>
+<lb n="2" break="no"/>ⲛ ⲁⲡⲁ ⲃⲓⲕⲧⲱⲣ ⲡ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="3"/>ⲁⲩⲱ ⲡ<choice><reg xml:lang="grc">ἡγούμενος</reg><orig>ϩⲩⲅⲟⲩⲙⲉⲛⲟⲥ</orig></choice> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="4"/><choice><reg xml:lang="grc">ἐπειδή</reg><orig>ⲉⲡⲓⲇⲏ</orig></choice> ⲁⲕ<hi rend="supraline">ⲣ</hi> ⲡ<hi rend="supraline">ⲛⲁ</hi> ⲛ<hi rend="supraline">ⲙ</hi>ⲙ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/>ⲛⲣⲟⲩϩⲉ ⲁ<hi rend="diaeresis">ⲓ</hi>ⲟⲩⲱⲧϩ <choice><reg xml:lang="grc">θαλλίς</reg><orig>ⲑⲁⲗⲓⲥ</orig></choice> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6" break="no"/>ⲁⲧⲥ ⲉⲣⲟⲥ ⲉⲃⲟⲗ ϫⲉ ⲁ<hi rend="diaeresis">ⲓ</hi><hi rend="supraline">ⲣ</hi> ⲡⲱⲃ<hi rend="supraline">ϣ</hi> <hi rend="supraline">ⲛ</hi><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="7"/>ϯ<choice><reg xml:lang="grc">παρακαλεῖν</reg><orig>ⲡⲁⲣⲁⲕⲁⲗⲉⲓ</orig></choice> <hi rend="supraline">ⲙ</hi>ⲙⲟⲕ ϫⲟⲟⲩ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8"/>ϫ<gap reason="illegible" quantity="1" unit="character"/>ⲉ <unclear>ⲉ</unclear>ⲛϩⲙⲟⲟⲥ ⲉ<unclear>ⲃ</unclear><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ⲟⲩ</supplied>
+<lb n="9" break="no"/>ϫⲁⲓ <foreign xml:lang="grc">ἁγία τ<supplied reason="lost">ριάς</supplied></foreign>
+</ab>
+            </div>
+      </body>
    </text>
 </TEI>
