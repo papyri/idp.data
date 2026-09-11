@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -23,17 +25,41 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-08-31T07:57:56+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Finalized - Ready.</change>
+         <change when="2026-08-18T09:27:36+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Vote - Accept-Straight-to-Finalization - Accept with following changes: lin3: *rho-cross* ==&gt; *rho-cross?* (finaliser to check that this loads properly)  ;  lin3: &lt;:ἀγάπηⲁ ==&gt; &lt;:ἀγάπη=grc|reg|ⲁ   </change>
+         <change when="2026-08-12T10:26:53+00:00"
+                 who="http://papyri.info/editor/users/Frederic%20Krueger">Submit - new Coptic text</change>
          <change when="2026-07-14T13:29:57.49031-04:00" who="http://papyri.info/about">Generated from HGV source.</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref target="https://papyri.info/editions/o.lips.copt/2/112" n="1494250"><title>O.Lips.Copt. 2.2 112</title><date>2020</date></ref></head><div xml:lang="grc" type="edition" xml:space="preserve">
-              <note xml:lang="en">This text has not been added to papyri.info yet.</note>
-              <ab/>
-            </div></body>
+      <body>
+         <head>
+            <ref target="https://papyri.info/editions/o.lips.copt/2/112" n="1494250">
+               <title>O.Lips.Copt. 2.2 112</title>
+               <date>2020</date>
+            </ref>
+         </head>
+         <div xml:lang="cop" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="line"/>
+<lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/><choice><reg xml:lang="grc">χήρα</reg><orig>ⲭⲏⲣⲁ</orig></choice> ⲉ<supplied reason="omitted">ⲥ</supplied>ⲥϩⲁⲓ ⲉⲥ
+<lb n="2"/><gap reason="illegible" extent="unknown" unit="character"><desc>vestiges</desc></gap>
+<lb n="3"/><gap reason="lost" extent="unknown" unit="character"/> <supplied reason="lost">ϫⲟ</supplied>ⲉⲓⲥ <unclear>ϫⲉ</unclear> <unclear><g type="rho-cross"/></unclear> ⲁⲣⲓ ⲧ<choice><reg xml:lang="grc">ἀγάπη</reg><orig>ⲁ
+<lb n="4" break="no"/><supplied reason="lost">ⲅⲁⲡⲏ</supplied></orig></choice> <gap reason="lost" extent="unknown" unit="character"/> <gap reason="illegible" quantity="10" unit="character" precision="low"/> <add place="above"><unclear>ⲡ</unclear>ⲉ</add>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ⲟⲃ<gap reason="illegible" atLeast="3" atMost="4" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="character"/>ⲁ<unclear>ϫ</unclear><gap reason="illegible" atLeast="3" atMost="4" unit="character"/>
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ⲛ</unclear>
+<lb n="8"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+      </body>
    </text>
 </TEI>
