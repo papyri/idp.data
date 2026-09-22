@@ -6,12 +6,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: java -jar Validation/jing.jar Validation/rdfxml.rng RDF/collection.rdf
-  Validate_DDB_EpiDoc_XML:
+  Validate_DDbDP:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt-get install -y moreutils parallel
-      - run: find DDB_EpiDoc_XML -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.16/tei-epidoc.rng {}"
+      - run: find DDbDP -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.16/tei-epidoc.rng {}"
   Validate_HGV_meta_EpiDoc:
     runs-on: ubuntu-latest
     steps:
@@ -24,12 +24,12 @@ jobs:
       - uses: actions/checkout@v3
       - run: sudo apt-get install -y moreutils parallel
       - run: find DCLP -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.23/tei-epidoc.rng {}"
-  Validate_HGV_trans_EpiDoc:
+  Validate_Translations:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt-get install -y moreutils parallel
-      - run: find HGV_trans_EpiDoc -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.13/tei-epidoc.rng {}"
+      - run: find Translations -name "*.xml" | parallel --gnu --will-cite -X -j8 -u "java -jar Validation/jing.jar Validation/EpiDoc/8.13/tei-epidoc.rng {}"
   Validate_APIS:
     runs-on: ubuntu-latest
     steps:
