@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m60000" xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -56,10 +56,18 @@
                <additional>
                   <adminInfo>
                      <custodialHist>
-                        <custEvent type="imaged" corresp="#FR10391" xml:id="GR10391.01" from="2010" to="2015">
+                        <custEvent type="imaged"
+                                   corresp="#FR10391"
+                                   xml:id="GR10391.01"
+                                   from="2010"
+                                   to="2015">
                            <graphic url="http://ww2.smb.museum/berlpap/Original/P_21259_V_001.jpg"/>
                         </custEvent>
-                        <custEvent type="imaged" corresp="#FR10390" xml:id="GR10390.01" from="2010" to="2015">
+                        <custEvent type="imaged"
+                                   corresp="#FR10390"
+                                   xml:id="GR10390.01"
+                                   from="2010"
+                                   to="2015">
                            <graphic url="http://ww2.smb.museum/berlpap/Original/P_21259_R_001.jpg"/>
                         </custEvent>
                      </custodialHist>
@@ -87,30 +95,67 @@
             <language ident="en">English</language>
             <language ident="grc">Greek</language>
          </langUsage>
+         <handNotes>
+            <handNote xml:id="m2"/>
+            <handNote xml:id="m1"/>
+         </handNotes>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="71370" target="https://papyri.info/editions/p.berl.sarisch/9"><title>P.Berl.Sarisch. 9</title><date>1995</date></ref>; <ref n="81110"><title>BKT 9 163</title><date>1996</date></ref></head><div type="bibliography" subtype="principalEdition">
+      <body>
+         <head>
+            <ref n="71370" target="https://papyri.info/editions/p.berl.sarisch/9">
+               <title>P.Berl.Sarisch. 9</title>
+               <date>1995</date>
+            </ref>; <ref n="81110">
+               <title>BKT 9 163</title>
+               <date>1996</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Leslie Wegner and revised by Holger Essler during a course on digital papyrology taught at Universität Heidelberg.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<div n="v" type="textpart"><ab>
+<lb n="1,msup"/><handShift new="m2"/><num value="27">μζ</num> 
+<lb n="1"/><handShift new="m1"/><supplied reason="lost">ἔχουσιν</supplied> <unclear>οἱ</unclear> <unclear>λ</unclear>ίθοι. οἱ δὲ <unclear>κ</unclear><supplied reason="lost">εκο</supplied><unclear>λο</unclear>
+<lb n="2" break="no"/><supplied reason="lost">βωμέ</supplied><unclear>νοι</unclear>, <supplied reason="lost">ο</supplied>ὗτοί εἰσ<unclear>ι</unclear><supplied reason="lost">ν οἱ</supplied> πε
+<lb n="3"/><supplied reason="lost">πιστ</supplied>ευκότες μὲ<unclear>ν</unclear> <supplied reason="lost">καὶ τὸ πλεῖσ</supplied>
+<lb n="4" break="no"/><supplied reason="lost">τον μέ</supplied><unclear>ρ</unclear>ος ἔχουσι<unclear>ν</unclear> <unclear>ἐν</unclear> <supplied reason="lost">τῇ</supplied> δι
+<lb n="5" break="no"/><supplied reason="lost">καιο</supplied>σύνῃ, τιν<unclear>ὰ</unclear> <unclear>δὲ</unclear> <unclear>μ</unclear><supplied reason="lost">έρη ἔ</supplied>
+<lb n="6" break="no"/><supplied reason="lost">χο</supplied>ντ<supplied reason="lost">ες τῆς ἀνομίας</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="6"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div>
+<div n="r" type="textpart"><ab>
+<lb n="1,msup"/><handShift new="m2"/><num value="28">μη</num>  
+<lb n="1"/><handShift new="m1"/><supplied reason="lost">τῷ</supplied> <expan><supplied reason="lost">θ</supplied><ex>ε</ex>ῷ</expan>.<g type="dipunct"/> ὥσπερ <unclear>γὰρ</unclear> <supplied reason="lost">ὁ λίθος ὁ</supplied>
+<lb n="2"/><supplied reason="lost">στρ</supplied><unclear>ο</unclear>γγύλο<unclear>ς</unclear>, <unclear>ἐὰ</unclear><supplied reason="lost">ν μὴ πε</supplied>
+<lb n="3" break="no"/><supplied reason="lost">ρικ</supplied>οπῇ καὶ ἀπ<unclear>οβ</unclear><supplied reason="lost">άλῃ ἐξ</supplied>
+<lb n="4"/><supplied reason="lost">α</supplied>ὐτοῦ τι, οὐ δύν<supplied reason="lost">α</supplied>
+<lb n="5" break="no"/><unclear>τ</unclear>αι <unclear>τ</unclear>ετράγω<supplied reason="lost">νος</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+<lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+</ab></div></div>
+         <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <ptr target="http://papyri.info/biblio/14174"/>
                   <biblScope unit="number">9</biblScope>
-                  
                   <title level="s" type="abbreviated">P. Berl. Sarischouli</title>
-                  
                </bibl>
             </listBibl>
-         </div><div type="bibliography" subtype="ancientEdition">
+         </div>
+         <div type="bibliography" subtype="ancientEdition">
             <listBibl>
                <bibl type="publication" subtype="ancient">
                   <author>Hermas</author>
-                  <title type="main" level="m" ref="http://www.trismegistos.org/authorwork/791">Pastor</title>
+                  <title type="main"
+                         level="m"
+                         ref="http://www.trismegistos.org/authorwork/791">Pastor</title>
                </bibl>
             </listBibl>
-         </div><div type="edition" xml:space="preserve" xml:lang="grc"/><div type="bibliography" subtype="illustrations">
+         </div>
+         <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Berl. Griech. Pap. pl.5</bibl>
                <bibl type="printed">BKT 9 pl.71</bibl>
@@ -118,6 +163,7 @@
                   <ptr target="http://berlpap.smb.museum/04451"/>
                </bibl>
             </listBibl>
-         </div></body>
+         </div>
+      </body>
    </text>
 </TEI>
