@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m64292" xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -45,14 +45,18 @@
                   </origin>
                   <provenance type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                         <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                   <provenance type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                         <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
@@ -75,13 +79,42 @@
                <term type="overview">symbols of the numbers 1.000 - 10.000</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="75662" target="https://papyri.info/editions/psi/3/250"><title>PSI 3 250</title><date>1914</date></ref>; <ref n="1280199"><title>Catalogue of Paraliterary Papyri 272</title><date>online</date></ref></head><div type="bibliography" subtype="principalEdition">
+      <body>
+         <head>
+            <ref n="75662" target="https://papyri.info/editions/psi/3/250">
+               <title>PSI 3 250</title>
+               <date>1914</date>
+            </ref>; <ref n="1280199">
+               <title>Catalogue of Paraliterary Papyri 272</title>
+               <date>online</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>This papyrus has been digitally edited by Jeonghun Nam and revised by Holger Essler during a course on digital papyrology taught at Universität Heidelberg.</p></div>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/>χίλιαι <num value="1000">Α</num>
+<lb n="2"/>δισχίλιαι <num value="2000">Β</num>
+<lb n="3"/>τρισχίλιαι <num value="3000">Γ</num>
+<lb n="4"/>τετρα<supplied reason="omitted">κι</supplied>σχίλιαι <num value="4000">Δ</num>
+<lb n="5"/>πεντα<supplied reason="omitted">κι</supplied>σχίλιαι <num value="5000">ε</num>
+<lb n="6"/>ἑξα<supplied reason="omitted">κι</supplied>σχίλιαι <num value="6000">Ϛ</num>
+<lb n="7"/>ἑπτα<supplied reason="omitted">κι</supplied>σχίλιαι <num value="7000">Ζ</num>
+<lb n="8"/>ὀκτα<supplied reason="omitted">κι</supplied>σχίλιαι <num value="8000">Η</num>
+<lb n="9"/>ἐν<surplus>ν</surplus>α<supplied reason="omitted">κι</supplied>σχίλιαι <num value="9000">Θ</num>
+<lb n="10"/>μύριαι <num value="10000">Μα</num>
+<lb n="11"/><expan>γί<ex>νονται</ex></expan> <gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" quantity="2" unit="character"/><gap reason="illegible" quantity="1" unit="character"/> <num value="2000">,Β</num>
+</ab></div>
+         <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">PSI</title>
@@ -89,12 +122,14 @@
                   <biblScope unit="number">250</biblScope>
                </bibl>
             </listBibl>
-         </div><div type="bibliography" subtype="illustrations">
+         </div>
+         <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="online" n="1">
                   <ptr target="https://relicta.org/cpp/detail.php?CPP=0272"/>
                </bibl>
             </listBibl>
-         </div><div type="edition" xml:space="preserve"/></body>
+         </div>
+      </body>
    </text>
 </TEI>
