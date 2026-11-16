@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m69047" xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.23/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="m69047" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -41,14 +44,18 @@
                   </origin>
                   <provenance type="found">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                         <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
                   </provenance>
                   <provenance type="composed">
                      <p>
-                        <placeName type="ancient" subtype="nome" ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
+                        <placeName type="ancient"
+                                   subtype="nome"
+                                   ref="https://www.trismegistos.org/place/2722">Oxyrhynchites</placeName>
                         <placeName type="ancient" subtype="region">Egypt</placeName>
                         <placeName type="ancient" ref="https://www.trismegistos.org/place/1524">Oxyrhynchos</placeName>
                      </p>
@@ -76,38 +83,65 @@
                <term type="overview">instructions to make an amulet against tonsillitis</term>
             </keywords>
          </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-10-17T19:52:26+00:00"
+                 who="http://papyri.info/editor/users/saverio">Finalized - </change>
+         <change when="2026-10-17T19:52:10+00:00"
+                 who="http://papyri.info/editor/users/saverio">Commit - added regularization for γρά〚.1〛ψας</change>
+         <change when="2026-10-17T19:47:50+00:00"
+                 who="http://papyri.info/editor/users/saverio">Vote - Accept-Straight-to-Finalization - ok</change>
+         <change when="2026-10-17T19:45:22+00:00"
+                 who="http://papyri.info/editor/users/saverio">Submit - entered text according to SM I 5</change>
          <change when="2014-12-10" who="DCLP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="80417"><title>P. Oxy. 42 3068</title><date>1974</date></ref>; <ref target="https://papyri.info/editions/suppl.mag/1/5"><title>Suppl.Mag. 1 5</title><date>1990</date></ref></head><div type="bibliography" subtype="principalEdition">
+      <body>
+         <head>
+            <ref n="80417">
+               <title>P.Oxy. 42 3068</title>
+               <date>1974</date>
+            </ref>; <ref n="83988" target="https://papyri.info/editions/suppl.mag/1/5">
+               <title>Suppl.Mag. 1 5</title>
+               <date>1990</date>
+            </ref>
+         </head>
+         <div xml:lang="grc" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/>τὸ πρὸς παρίσθμια περίαμμα
+<lb n="2"/>εἰς τὸ χρυσοῦν πέταλον τῷ Σαρμάτῃ
+<lb n="3"/>πέμψον <choice><reg>γράψας</reg><orig>γρά<del rend="erasure"><gap reason="illegible" quantity="1" unit="character"/></del>ψας</orig></choice> εἰς πιττάκιον
+<lb n="4"/>ὡς περιέχει.
+</ab></div>
+         <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <ptr target="http://papyri.info/biblio/12016"/>
                   <biblScope unit="number">5</biblScope>
-                  
                   <title level="s" type="abbreviated">Suppl.Mag.</title>
                   <biblScope unit="volume">1</biblScope>
-                  
                </bibl>
                <bibl type="reference" subtype="principal">
-                  
                   <title level="m" type="main">Supplementum Magicum. Vol. I.</title>
                   <editor n="1">
                      <forename>Robert W.</forename>
                      <surname>Daniel</surname>
                   </editor>
-                  
                   <ptr target="http://papyri.info/biblio/12016"/>
                   <biblScope unit="number">5</biblScope>
                </bibl>
             </listBibl>
-         </div><div type="edition" xml:space="preserve"/><div type="bibliography" subtype="illustrations">
+         </div>
+         <div type="bibliography" subtype="illustrations">
             <listBibl>
                <bibl type="printed">Suppl. Mag. 1, pl. VII</bibl>
             </listBibl>
-         </div></body>
+         </div>
+      </body>
    </text>
 </TEI>
