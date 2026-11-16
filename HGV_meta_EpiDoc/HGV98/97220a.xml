@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Anfang eines Privatbriefs</title>
+            <title>Privatbrief</title>
          </titleStmt>
          <publicationStmt>
             <idno type="filename">97220a</idno>
@@ -15,7 +15,11 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <idno type="invNo">P.Med. Inv. 68.05a</idno>
+                  <placeName>
+                     <settlement>Milan</settlement>
+                  </placeName>
+                  <collection>Università Cattolica</collection>
+                  <idno type="invNo">P.Med. Inv. 68.05a + 68.06</idno>
                </msIdentifier>
                <physDesc>
                   <objectDesc>
@@ -67,6 +71,12 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-11-15T20:24:05+00:00"
+                 who="http://papyri.info/editor/users/LaviniaFerretti">Finalized - Removed old note on publications, now superfluous. Added SB 26 16710 to "other publications". Finalized</change>
+         <change when="2026-03-02T14:56:59+00:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2026-02-23T01:08:22+00:00"
+                 who="http://papyri.info/editor/users/ngonis">Submit - Updated Text and Meta of SB 26 16709, now SB 30 17713, and deleted the text of SB 26 16710.</change>
          <change when="2018-02-19T17:17:50-05:00"
                  who="http://papyri.info/users/james.cowey">Finalized - Ready.</change>
          <change when="2018-02-19T17:06:31-05:00"
@@ -77,18 +87,15 @@
          <change who="HGV" when="2011-04-19">Record last modified</change>
          <change when="2011-04-20" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
-         <div type="commentary" subtype="general">
-            <p>Gehört zu SB XXVI 16710. Vgl. Neuedition: ZPE 158, 2006, S. 201f. Vgl. SB XXVII, S. 54.</p>
-         </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">SB</title>
-                  <biblScope n="1" type="volume">26</biblScope>
-                  <biblScope n="2" type="numbers">16709</biblScope>
+                  <biblScope n="1" type="volume">30</biblScope>
+                  <biblScope n="2" type="numbers">17713</biblScope>
                </bibl>
             </listBibl>
          </div>
@@ -103,16 +110,22 @@
                <bibl type="BL-online">
                   <ptr target="https://beehive.zaw.uni-heidelberg.de/hgv/97220a"/>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="1">
                   <biblScope type="volume">XII</biblScope>
                   <biblScope type="pages">247</biblScope>
                </bibl>
-               <bibl type="BL">
+               <bibl type="BL" n="2">
                   <biblScope type="volume">XIII</biblScope>
                   <biblScope type="pages">231</biblScope>
                </bibl>
             </listBibl>
          </div>
+         <div type="bibliography" subtype="otherPublications">
+            <listBibl>
+               <bibl type="publication" subtype="other" n="1">SB 26 16709</bibl>
+               <bibl type="publication" subtype="other" n="2">SB 26 16710</bibl>
+            </listBibl>
+         </div>
       </body>
-  </text>
+   </text>
 </TEI>
