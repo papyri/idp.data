@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -26,17 +25,76 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-11-19T09:07:14+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Finalized - Ready.</change>
+         <change when="2026-11-16T11:07:09+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Vote - AcceptText - Accept with Lorelei's comments: no other changes required.</change>
+         <change when="2026-09-24T13:52:45+00:00"
+                 who="http://papyri.info/editor/users/L.%20Vanderheyden">Vote - AcceptText - Add disclaimer "Note that the presentation of the edition of O.Crum here represents a synthesis of Crum's original handwritten edition with his own corrections that he later supplied in the notes to his translations."&#xD;
+lin1=&gt; &lt;:κατά=grc|reg|ⲕⲁⲧⲁ:&gt; &lt;:ⲧⲛ|alt|ⲧⲉⲧⲛ (?):&gt;; lin3=&gt; ⲙⲛ ⲁⲡⲁ (add space); lin6=&gt; ⲛⲡⲉϥϭⲛ ⲑⲉ (add space) ; ⲛ&lt;:ἐμφανίζειν=grc|reg|ⲉⲙⲫⲁⲛⲓⲥⲑⲁⲓ:&gt; (exclude ⲛ from the tag); lin8=&gt; ⲛⲧⲛϭⲛ ⲡϫⲱⲕ (add space) ; &lt;:ⲁⲛⲕⲱ|reg|ⲁⲛϭⲱ:&gt;; lin10=&gt; ϩⲁⲙ̣.2ⲧⲙⲛⲧⲣⲉ (add underdot); lin11=&gt; &lt;:ⲙⲙ̣.1ⲉ|alt|ⲙⲙⲟⲩⲉ (?):&gt; ; the rest of the text looks good to me!</change>
+         <change when="2026-09-17T13:34:22+00:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Entered according to the edition. Please check the Greek loanwords carefully. Lin13 and lins17-18 ὅσον - I was unsure about these ones particularly. I had no access to an image and so made no attempt to add any diacritics.</change>
          <change when="2026-07-14T13:30:10.945083-04:00" who="http://papyri.info/about">Generated from HGV source.</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="160775"><title>O.Cair.Monuments 8228</title><date>1902</date></ref>; <ref n="102118" target="https://papyri.info/editions/o.crum/116"><title>O.Crum 116</title><date>1902</date></ref></head><div xml:lang="grc" type="edition" xml:space="preserve">
-              <note xml:lang="en">This text has not been added to papyri.info yet.</note>
-              <ab/>
-            </div></body>
+      <body>
+         <head>
+            <ref target="https://papyri.info/editions/o.crum/116" n="160775">
+               <title>O.Cair.Monuments 8228</title>
+               <date>1902</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Note that the presentation of the edition of O.Crum here represents a synthesis of Crum's original handwritten edition with his own corrections that he later supplied in the notes to his translations.</p></div>
+         <div xml:lang="cop" type="edition" xml:space="preserve">
+<ab>
+    <lb n="1"/><g type="stauros"/> <choice><reg xml:lang="grc">κατά</reg><orig>ⲕⲁⲧⲁ</orig></choice> <app type="alternative"><lem>ⲧⲛ</lem><rdg>ⲧⲉⲧⲛ <certainty match=".." locus="value"/></rdg></app>
+
+    <lb n="2" break="no"/><choice><reg xml:lang="grc">αἴτησις</reg><orig>ⲁⲓⲧⲏⲥⲓⲥ</orig></choice> ⲁⲛⲥⲱⲧⲙ
+
+    <lb n="3"/>ⲡϩⲱⲃ ⲛⲥⲟⲩⲣⲟⲩⲥ ⲙⲛ ⲁⲡⲁ
+
+    <lb n="4"/><unclear>ⲣ</unclear>ⲁⲥⲓⲟⲥ ⲉⲁⲛϣⲓⲛⲉ ϩⲓⲧⲛ ϩⲏⲗⲓⲁⲥ ⲛⲕⲁⲗⲁⲡⲏⲥ<unclear>ⲉ</unclear>
+
+    <lb n="5"/>ⲁⲛϩ<unclear>ⲏ</unclear> ⲉⲉⲧ<choice><reg xml:lang="grc">ἀσφάλεια</reg><orig><expan>ⲁⲥⲫ<ex>ⲁⲗⲉⲓⲁ</ex></expan></orig></choice> ⲛⲙⲁⲣⲓⲛⲟⲥ ⲉⲥⲟⲩⲏϩ ⲛⲉ<unclear>ϩⲱ</unclear> ⲉϥϣ
+
+    <lb n="6" break="no"/>ⲱ<unclear>ⲛ</unclear>ⲉ ⲛⲧⲟϥ ϩⲏⲗⲓⲁⲥ ⲛⲡⲉϥϭⲛⲑⲉ ⲛ<choice><reg xml:lang="grc">ἐμφανίζειν</reg><orig>ⲉⲙⲫⲁⲛⲓⲥⲑⲁⲓ</orig></choice> ⲙ
+
+    <lb n="7" break="no"/>ⲙⲟⲥ ⲉⲣϣⲁⲛⲧ<unclear>ⲉϩ</unclear>ⲉ ⲛⲁⲥ ϭⲙϭⲟⲙ ϣⲁϥ<choice><reg xml:lang="grc">ἐμφανίζειν</reg><orig>ⲉⲙⲫⲁⲛⲓⲥⲑⲁⲓ</orig></choice>
+
+    <lb n="8"/>ⲙⲙⲟⲥ ⲛⲧⲛϭⲛ ⲡϫⲱⲕ ⲛⲡϩⲱⲃ <choice><reg>ⲁⲛⲕⲱ</reg><orig>ⲁⲛϭⲱ</orig></choice> ⲡϩⲱⲃ ϣⲁⲛ
+
+    <lb n="9" break="no"/>ⲧⲉϩⲏⲗⲓⲁⲥ ⲧⲱⲟⲩⲛ ⲉϩⲣⲁⲓ ⲁⲁⲡⲁ <unclear>ⲣ</unclear>ⲁⲥⲓⲟⲥ <choice><reg xml:lang="grc">ἀμφιβάλλειν</reg><orig>ⲁⲙⲫⲓⲃⲟⲗⲉ</orig></choice> ⲉϥ
+
+    <lb n="10" break="no"/>ϫⲱ ⲙⲙⲟⲥ ϫⲉ ϩⲁ<unclear>ⲙ</unclear><gap reason="illegible" quantity="2" unit="character"/>ⲧⲙⲛⲧⲣⲉ ⲉⲁⲥⲟⲩⲣⲟⲩⲥ ⲃⲓ ϩⲉⲛⲥⲟⲓⲱ
+
+    <lb n="11"/>ⲙⲛ ⲟⲩⲉϣ<unclear>ⲱ</unclear> <app type="alternative"><lem>ⲙ<unclear>ⲙ</unclear><gap reason="illegible" quantity="1" unit="character"/>ⲉ</lem><rdg>ⲙ<unclear>ⲙⲟⲩ</unclear>ⲉ <certainty match=".." locus="value"/></rdg></app> ⲁⲩⲱ ⲟⲛ ⲁⲁⲡⲁ ⲣⲁⲥⲓⲟⲥ <choice><reg xml:lang="grc">πιστεύειν</reg><orig>ⲡⲓⲥⲧⲉⲩⲉ</orig></choice> ⲛⲥⲟ
+
+    <lb n="12" break="no"/>ⲩⲣⲟⲩⲥ ⲉⲧⲣⲉϥⲱⲣⲕ ⲁⲛⲁϣ ⲉϫⲛⲛⲥⲟⲓ ⲉⲧⲙⲙⲁⲩ ⲙⲛ ⲧⲉ
+
+    <lb n="13" break="no"/>ϣⲱ <choice><reg xml:lang="grc">πρός</reg><orig>ⲡⲣⲟⲥ</orig></choice> ⲑⲉ ⲛⲧⲁ<unclear>ϥ</unclear>ⲉⲓ ⲛⲁϩⲣⲁⲓ ⲉⲛ<choice><reg xml:lang="grc">ὅσον</reg><orig>ϩⲟⲥⲟⲛ</orig></choice> ⲁϥ<choice><reg xml:lang="grc">πιστεύειν</reg><orig>ⲡⲓⲥⲧⲉⲩⲉ</orig></choice>
+
+    <lb n="14"/>ⲛⲥⲟⲩⲣⲟⲩⲥ ⲡ<choice><reg xml:lang="grc">δίκαιον</reg><orig>ⲇⲓⲕⲁⲓⲟⲛ</orig></choice> ⲡⲉ ⲛⲧⲉⲥⲟⲩⲣⲟⲩⲥ <choice><reg xml:lang="grc">πληροφορεῖν</reg><orig>ⲡⲗⲏⲣⲟⲫⲟⲣⲉⲓ</orig></choice>
+
+    <lb n="15"/>ⲙⲙⲟϥ ϩⲛ ⲟⲩ<choice><reg xml:lang="grc">τόπος</reg><orig>ⲧⲟⲡⲟⲥ</orig></choice> ⲉϥⲟⲩⲁⲃ <choice><reg xml:lang="grc">πρός</reg><orig>ⲡⲣⲟⲥ</orig></choice> ⲑⲉ ⲉⲧⲉϥⲛⲁϭⲙϭⲟⲙ
+
+    <lb n="16"/>ⲛⲱⲣⲕ ⲉϥϣⲁⲛⲱⲣⲕ ϫⲉ ⲛⲧⲁⲓⲃⲓⲧⲟⲩ ϩⲁ ⲡⲟⲥⲉ ⲛⲧⲙⲟⲩ
+
+    <lb n="17" break="no"/>ⲉ ⲛⲧⲟϥ ⲉⲧⲥⲟⲟⲩⲛ ⲉϥϣⲁⲛⲱⲣⲕ ⲛϭⲉ<choice><reg xml:lang="grc">τρόπος</reg><orig>ⲧⲣⲟⲡⲟⲥ</orig></choice> ⲉⲛ<choice><reg xml:lang="grc">ὅσον</reg><orig>ϩⲟⲥ
+
+    <lb n="18" break="no"/>ⲟⲛ</orig></choice> ⲛⲧⲟϥ ⲉⲧⲱⲣⲕ ⲛⲧⲟϥ ⲟⲛ ⲛⲧⲁⲩ<choice><reg xml:lang="grc">πιστεύειν</reg><orig>ⲡⲓⲥⲧⲉⲩⲉ</orig></choice> ⲛⲁϥ ⲧⲁⲓ
+
+    <lb n="19"/>ⲧⲉ ⲑⲉ ⲛⲧⲁⲩⲧⲱϩ ⲙⲛ ⲛⲉⲩⲉⲣⲏⲩ
+
+    <lb n="20"/>ⲧⲁⲁⲥ ⲙⲡⲁⲥⲟⲛ ⲁⲃⲣⲁⲁⲙ ϩⲓⲧⲛ
+
+    <lb n="21"/>ⲓⲱⲁⲛⲛⲏⲥ ⲡⲗⲁϣ<supplied reason="lost">ⲁⲛⲉ</supplied> <gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>
+      </body>
    </text>
 </TEI>
