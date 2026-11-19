@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -26,17 +26,45 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-11-19T09:31:50+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Finalized - Ready.</change>
+         <change when="2026-11-16T14:48:29+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Vote - Accept-Straight-to-Finalization - Accept with the following changes: lin1: &lt;:μέν=grc|reg|ⲙⲉⲛ:&gt; add reg  ;  lin4: [.?]ϩ̣ⲁ ==&gt; ϩ̣ⲁ ;  lin6: ⲟ̣ⲩϥ̣ add underdots  ;  lin8: .3 ==&gt; .?  ;   lin9: ⲭⲣⲓⲥⲁⲫ.1 [.?] ==&gt; &lt;:ⲭⲣⲓⲥⲁⲫ.1[.?]|alt|ⲭⲣⲓⲥⲁⲫⲓ̣[ⲟⲥ] [.?]:&gt;  ;  lin11:  ⲡ̄&lt;:πρεσβύτερος=grc|reg|ⲡⲣⲉⲥⲃⲩⲧ[.?]:&gt; ==&gt;  ⲡ̄&lt;:πρεσβύτερος=grc|reg|ⲡⲣⲉⲥⲃⲩⲧ[ⲉⲣⲟⲥ]:&gt; [.?]</change>
+         <change when="2026-11-05T14:07:08+00:00"
+                 who="http://papyri.info/editor/users/L.%20Vanderheyden">Submit - Coptic text entered</change>
          <change when="2026-07-14T13:30:11.223278-04:00" who="http://papyri.info/about">Generated from HGV source.</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="102319" target="https://papyri.info/editions/o.crum/317"><title>O.Crum 317</title><date>1902</date></ref></head><div xml:lang="grc" type="edition" xml:space="preserve">
-              <note xml:lang="en">This text has not been added to papyri.info yet.</note>
-              <ab/>
-            </div></body>
+      <body>
+         <head>
+            <ref n="102319" target="https://papyri.info/editions/o.crum/317">
+               <title>O.Crum 317</title>
+               <date>1902</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Where diacritical signs or supralinear strokes above letters are present on the original, these were not recorded in Crum's edition. Since Crum in his later editions did indicate these marks, we have chosen to add them tacitly where access to an image has made this possible.</p></div>
+         <div xml:lang="cop" type="edition" xml:space="preserve">
+<div n="r" type="textpart" xml:id="_r"><head>r</head><ab>
+<lb n="1"/><supplied reason="lost">ϣⲟ</supplied>ⲣⲡ <choice><reg xml:lang="grc">μέν</reg><orig>ⲙⲉⲛ</orig></choice> ϯϣⲓⲛⲉ ⲉ
+<lb n="2" break="no"/><supplied reason="lost">ⲧⲉⲕⲙⲛ</supplied><hi rend="supraline">ⲧ</hi>ⲥⲟⲛ ⲡϫⲟⲉⲓⲥ ⲉϥⲉ
+<lb n="3" break="no"/><supplied reason="lost">ⲥⲙⲟⲩ ⲉⲣⲟ</supplied>ⲕ <choice><reg xml:lang="grc">ἐπειδή</reg><orig>ⲉⲡⲓⲇⲏ</orig></choice> ⲁⲕⲉⲓ ⲉϩⲟⲩ<unclear>ⲛ</unclear>   
+<lb n="4"/><gap reason="lost" extent="unknown" unit="character"/><app type="editorial"><lem resp="PN L. Vanderheyden (photograph)"><choice><reg xml:lang="grc">βάπτισμα</reg><orig><unclear>ⲃ</unclear>ⲁⲡⲧⲓⲥⲙⲁ</orig></choice></lem><rdg><unclear>ϩ</unclear>ⲁ ⲡⲧⲓⲥⲙⲁ</rdg></app> <hi rend="supraline">ⲙ</hi>ⲡⲓ   
+<lb n="5" break="no"/><gap reason="lost" extent="unknown" unit="character"/>ⲟⲥ ⲛⲁⲕ ϩⲁ ⲡϩⲟ   
+<lb n="6" break="no"/><gap reason="lost" extent="unknown" unit="character"/><unclear>ⲟ</unclear>ⲩ<unclear>ϥ</unclear> ⲛⲁⲧ<hi rend="supraline">ⲛ</hi>ⲧⲟ   
+<lb n="7"/><gap reason="lost" extent="unknown" unit="character"/><choice><reg xml:lang="grc">διάκονος</reg><orig><expan><unclear>ⲇ</unclear>ⲓⲁⲕ<ex>ⲟⲛⲟⲥ</ex></expan></orig></choice> ⲙ<gap reason="lost" extent="unknown" unit="character"/>
+<lb n="8" break="no"/><gap reason="illegible" extent="unknown" unit="character"/>
+</ab></div>
+<div n="v" type="textpart" xml:id="_v"><head>v</head><ab>
+<lb n="9"/><app type="alternative"><lem>ⲭⲣⲓⲥⲁⲫ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/></lem><rdg>ⲭⲣⲓⲥⲁⲫ<unclear>ⲓ</unclear><supplied reason="lost">ⲟⲥ</supplied> <gap reason="lost" extent="unknown" unit="character"/></rdg></app>
+<lb n="10"/> ϩⲓⲧ<hi rend="supraline">ⲛ</hi> ⲃⲓⲕⲧⲱ<supplied reason="lost">ⲣ</supplied> 
+<lb n="11"/><hi rend="supraline">ⲡ</hi><choice><reg xml:lang="grc">πρεσβύτερος</reg><orig>ⲡⲣⲉⲥⲃⲩⲧ<supplied reason="lost">ⲉⲣⲟⲥ</supplied></orig></choice> <gap reason="lost" extent="unknown" unit="character"/>
+</ab></div>        </div>
+      </body>
    </text>
 </TEI>
