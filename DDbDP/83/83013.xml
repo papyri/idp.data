@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -26,17 +25,62 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-11-19T09:11:02+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Finalized - Ready.</change>
+         <change when="2026-11-16T11:15:35+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Vote - AcceptText - Accept with Lorelei's comments, as well as the following:  lin4: implement (ⲡⲓ(ⲥⲣⲁ)ⲏⲗ) without any reg or supralinear strokes  ;  lin7: implement the alt &lt;:ⲕⲁ̣|alt|ⲕⲱ̣:&gt; with underdot on both sides  ;  lin8: &lt;:ⲧⲱϣⲟⲩ ⲁⲓⲉⲓ|alt|ⲧⲱϣ ⲟⲩⲁⲓⲉⲓ:&gt; implement new alt.</change>
+         <change when="2026-09-17T14:59:56+00:00"
+                 who="http://papyri.info/editor/users/L.%20Vanderheyden">Vote - AcceptText - add disclaimer “Note that the presentation of the edition of O.Crum here represents a synthesis of Crum's original handwritten edition with his own corrections that he later supplied in the notes to his translations.”; lin1=&gt; ⲛⲥⲧⲣⲁⲧⲓⲅⲉ (delete space); lin2=&gt; ϩⲓⲧⲛ ⲁⲍⲁⲣⲓⲁⲥ (add space); lin3=&gt; &lt;:οὖν=grc|reg|ⲟⲩⲛ:&gt;; lin4=&gt; ⲡ&lt;:(ⲓ̄(ⲥⲣⲁ)ⲏ̄ⲗ̄) (?)|reg|ⲓⲏⲗ:&gt; (according to Crum's translation) what do you think, finalizer?; ⲛϥⲣ ⲡϩⲱⲃ (add space); ⲛ̣ⲉϥϥⲓ ⲥⲁⲣⲁⲡⲓⲱⲛ (add space); lin7=&gt; 7.- &lt;:ⲕⲁ̣|alt|ⲕⲱ:&gt; ⲡⲙⲁ (add alt + add space before ⲡⲙⲁ); the rest of the text looks good to me!</change>
+         <change when="2026-09-15T20:03:19+00:00"
+                 who="http://papyri.info/editor/users/james.cowey">Submit - Entered according to the edition. I had no image to check. Probably no Greek loanwords, but maybe in lin3 ⲟⲩⲛ. Please check carefully.</change>
          <change when="2026-07-14T13:30:10.945821-04:00" who="http://papyri.info/about">Generated from HGV source.</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="102124" target="https://papyri.info/editions/o.crum/122"><title>O.Crum 122</title><date>1902</date></ref></head><div xml:lang="grc" type="edition" xml:space="preserve">
-              <note xml:lang="en">This text has not been added to papyri.info yet.</note>
-              <ab/>
-            </div></body>
+      <body>
+         <head>
+            <ref target="https://papyri.info/editions/o.crum/122" n="102124">
+               <title>O.Crum 122</title>
+               <date>1902</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Note that the presentation of the edition of O.Crum here represents a synthesis of Crum's original handwritten edition with his own corrections that he later supplied in the notes to his translations.</p></div>
+         <div xml:lang="cop" type="edition" xml:space="preserve">
+<ab>
+    <lb n="1"/><g type="rho-cross"/> ⲧⲁⲁⲥ ⲛⲥⲧⲣⲁⲧⲓⲅⲉ
+
+    <lb n="2"/>ⲡ<expan>ⲗⲁϣ<ex>ⲁⲛⲉ</ex></expan> ϩⲓⲧⲛ ⲁⲍⲁⲣⲓⲁⲥ ⲡⲉϥⲥⲟⲛ
+
+    <lb n="3"/>ⲟⲩⲱϣ <choice><reg xml:lang="grc">οὖν</reg><orig>ⲟⲩⲛ</orig></choice> ⲛⲅⲣⲡⲙⲛⲧⲥⲟⲛ ⲛⲅ
+
+    <lb n="4" break="no"/>ϫⲟⲟⲩ ⲙⲙⲁⲣⲕⲟⲥ <expan>ⲡⲓ<ex>ⲥⲣⲁ</ex>ⲏⲗ</expan> ⲛϥⲣ ⲡϩⲱⲃ
+
+    <lb n="5"/>ϫ<unclear>ⲉ</unclear><gap reason="illegible" quantity="2" unit="character"/> <unclear>ⲛ</unclear>ⲉϥϥⲓ ⲥⲁⲣⲁⲡⲓⲱⲛ ⲉⲡⲣ ϩ
+
+    <lb n="6" break="no"/>ⲱⲃ ⲙⲙⲟⲛ ⲛⲉϥϣⲃⲏⲣ ϣⲱⲛⲉ ⲉϥ
+
+    <lb n="7" break="no"/><app type="alternative"><lem>ⲕ<unclear>ⲁ</unclear></lem><rdg>ⲕ<unclear>ⲱ</unclear></rdg></app> ⲡⲙⲁ ⲉⲃⲟⲗ <unclear>ⲉ</unclear>ⲩⲁ<unclear>ⲛ</unclear>ⲧ<unclear>ⲁ</unclear>ⲕⲟⲥ
+
+    <lb n="8"/>ⲉⲡⲛⲟⲩⲧⲉ <app type="alternative"><lem>ⲧⲱϣⲟⲩ ⲁⲓⲉⲓ</lem><rdg>ⲧⲱϣ ⲟⲩⲁⲓⲉⲓ</rdg></app> 
+
+    <lb n="9"/>ⲉϩⲣⲁⲓ ⲛⲧⲁⲧⲁⲩⲟ ⲡϩⲱⲃ
+
+    <lb n="10"/>ⲉⲡⲁⲉⲓⲱⲧ ⲉⲧⲃⲏⲏⲧϥ ⲁⲩ
+
+    <lb n="11" break="no"/>ⲱ ⲛⲅⲣ ⲡϩⲱⲃ ⲛⲅϫⲓ ⲡⲉϥ
+
+    <lb n="12" break="no"/>ⲡⲣⲏϣ ⲛⲁϥ ⲉ<unclear>ⲓ</unclear>ⲉⲓ ⲉϩⲣⲁⲓ
+
+    <lb n="13"/>ⲟⲩⲁⲓⲧⲱϣ ⲡⲉϥϩⲱⲃ
+
+    <lb n="14"/>ⲟⲩϫⲁⲓ ϩⲙ ⲡϫⲟⲉⲓⲥ
+</ab>
+            </div>
+      </body>
    </text>
 </TEI>
