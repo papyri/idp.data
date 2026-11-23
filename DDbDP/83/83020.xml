@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://papyri.info/schemas/papyri.info.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/8.16/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
@@ -26,17 +26,53 @@
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
+            <language ident="cop">Coptic</language>
             <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-11-20T08:40:43+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Finalized - Ready. I've done my best to implement the changes to line endings/beginnings in a comprehensible way, but it may be worth double checking this one in the XML</change>
+         <change when="2026-11-19T16:16:56+00:00"
+                 who="http://papyri.info/editor/users/L.%20Vanderheyden">Vote - AcceptText - See Laver's comments, except lin6-7 where digital image contracdict both Crum's and De Curtis' readings. I propose here &lt;:ⲉⲡⲕⲟ[ⲩ] 7. ⲛ̄ⲥⲟⲛ=PN L. Vanderheyden (photograph)|ed|ⲉⲡⲕⲟ7.- ⲩⲛⲥⲟⲛ:&gt;  lin9=&gt; &lt;:καί=grc|reg|ⲕⲁ ⲓ(¨):&gt; (add diaresis); lin11 &lt;:ⲣ11.- ⲧⲁⲃ=PN L. Vanderheyden (photograph)|ed|11. ⲣⲧⲁⲃ:&gt;; lin11-12=&gt; correct de Curstis' PN corr to &lt;:ⲛⲛ̄ⲣⲧⲁⲃ ⲛⲁϥ=PN L. De Curtis (digital image)|ed|ⲛⲛⲣⲧⲁⲃ12. ⲛⲁϥ:&gt;; lin12=&gt; &lt;:καί=grc|reg|ⲕⲁ ⲓ(¨):&gt; (add diaresis); lin13=&gt; &lt;:καί=grc|reg|ⲕⲁ ⲓ(¨):&gt; (add diaresis); lin14-15=&gt; &lt;:ⲙⲛ̄ ⲛⲉⲩ ⲉⲣ[ⲏⲩ]=PN L. Vanderheyden (photograph)|ed|ⲙⲛ̄ ⲛⲉⲩ15.- ⲉⲣ[ⲏⲩ]:&gt;; lin16=&gt;  correct de Curstis' PN corr to &lt;:ⲙⲛ̄ ⲛⲉϥⲉⲣⲏⲩ ⲛ.?=PN L. De Curtis (digital image)|ed|ⲙⲛ̄ⲛⲉϥ 16-. ⲉⲣⲏⲩ ⲛ.3:&gt; ; lin17=&gt; ⲙⲡⲙⲁ (add supralinear stroke)</change>
+         <change when="2026-11-16T13:03:22+00:00"
+                 who="http://papyri.info/editor/users/thomaslaver">Vote - AcceptText - Add both disclaimers  ; lin4: remove de Curtis PN Corr. (the text may have been extant for Crum, even if not any longer)  ;  lin5: ⲛ̄ⲧⲁⲧⲉⲕⲙⲛ&lt;ⲧ&gt;ⲓⲱⲧ remove space and add correction  ;  lin6-7: ⲉⲡⲕⲟ7.- [ⲩ] remove space  ;  lin10: add dash at start of line  ; ϩⲛ ⲧⲉⲥ&lt;:τριμήσιον=grc|reg|(ⲧⲣⲉⲙ(ⲙⲏⲥⲓⲟⲛ)):&gt; ⲏ̣ⲧⲓ ==&gt; ϩⲛ ⲧⲉⲥⲧⲣ&lt;ⲉ&gt; &lt;:εἰ μή τι=grc|reg|ⲉⲓⲙⲏ̣ⲧⲓ:&gt; (see Crum commentary)  ;  ⲉϥⲧⲟⲟⲩⲛ ==&gt; ⲉ&lt;#ϥⲧⲟⲟⲩ=4#&gt; ⲛ add space and number ;  lin11: add dash at start of line  ;  &lt;:ἀρτάβη=grc|reg|&lt;:([ⲣ]ⲧⲁⲃ( ))=PN L. De Curtis (digital image)|ed|(ⲣⲧⲁⲃ( )):&gt;:&gt;  ==&gt; ⲣⲧⲁⲃ  (remove PN Corr. as in lin4, and no need to mark as abbreviation or loanword)  ;  ⲉⲓⲥ ϩⲏⲧⲏ add space  ;  ⲁⲥϯϯⲟⲩ  ==&gt; ⲁⲥϯ &lt;#ϯⲟⲩ=5#&gt; add space and number ;  ⲛⲛ̄&lt;:ἀρτάβη=grc|reg|(ⲣⲧⲁⲃ( )):&gt; ⲛⲁϥ ==&gt; ⲛⲛ̄ⲣⲧⲁⲃ ⲛⲁϥ remove abbrev ;  ⲛⲛ̄ⲣⲧⲁⲃ 12. ==&gt; ⲛⲛ̄ⲣⲧⲁⲃ12. remove space  ;  lin12: ϭⲛⲧⲙ̄ⲉ ==&gt; ϭⲛ ⲧⲙ̄ⲉ add space  ;  lin14: add dash at start of line  ;  ⲙⲛ̄ ⲛⲉⲩ add space  ;  lin15: add dash at start of line  ;  ϫⲉ ⲉⲛⲉⲟⲩ ⲟⲛ change spaces ;  ⲙⲛ̄ⲛⲉϥⲉⲣⲏⲩ ⲛ.? ==&gt; ⲙⲛ̄ ⲛⲉϥⲉⲣⲏⲩ ⲛ.? add space ;  ⲙⲛ̄ⲛⲉϥ 16-. ⲉⲣⲏⲩ  ==&gt; ⲙⲛ̄ ⲛⲉϥ16-. ⲉⲣⲏⲩ add and remove spaces  ;   lin16: ϩⲙ [ⲡϫⲟⲉⲓⲥ] add space (on both instances)  ;  lin18: 19. ==&gt; 18.- change number and add dash  ;  ⲛ̣ⲁ.1 remove space </change>
+         <change when="2026-10-15T10:59:16+00:00"
+                 who="http://papyri.info/editor/users/Luca%20De%20Curtis">Submit - Text added. The line breaks in Crum’s edition do not always match those visible on the ostracon, perhaps due to space constraints in the printed edition. I have tried to account for these discrepancies.</change>
          <change when="2026-07-14T13:30:11.274789-04:00" who="http://papyri.info/about">Generated from HGV source.</change>
       </revisionDesc>
    </teiHeader>
    <text>
-      <body><head><ref n="102131" target="https://papyri.info/editions/o.crum/129"><title>O.Crum 129</title><date>1902</date></ref></head><div xml:lang="grc" type="edition" xml:space="preserve">
-              <note xml:lang="en">This text has not been added to papyri.info yet.</note>
-              <ab/>
-            </div></body>
+      <body>
+         <head>
+            <ref n="102131" target="https://papyri.info/editions/o.crum/129">
+               <title>O.Crum 129</title>
+               <date>1902</date>
+            </ref>
+         </head>
+         <div type="commentary" subtype="frontmatter" xml:space="preserve"><p>Where diacritical signs or supralinear strokes above letters are present on the original, these were not recorded in Crum's edition. Since Crum in his later editions did indicate these marks, we have chosen to add them tacitly where access to an image has made this possible.</p><p>Note that the presentation of the edition of O.Crum here represents a synthesis of Crum's original handwritten edition with his own corrections that he later supplied in the notes to his translations.</p></div>
+         <div xml:lang="cop" type="edition" xml:space="preserve">
+<ab>
+<lb n="1"/>ⲕⲱ ⲛⲁⲓ ⲉⲃⲟⲗ ϫⲉ <hi rend="supraline">ⲙ</hi>ⲡⲓϭⲛ <choice><reg xml:lang="grc">χάρτης</reg><orig>ⲭⲁⲣⲧ<supplied reason="lost">ⲏⲥ</supplied></orig></choice>
+<lb n="2"/>ⲉⲓ ϩⲛ ⲧⲥⲱϣⲉ. ϯ<choice><reg xml:lang="grc">ἀσπάζεσθαι</reg><orig>ⲁⲥⲡⲁⲍⲉ</orig></choice> <hi rend="supraline">ⲛ</hi>ⲧⲉⲕ<supplied reason="lost">ⲙⲛⲧ</supplied>
+<lb n="3" break="no"/>ⲙⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲟⲩⲧⲉ ⲉⲧⲧⲁ<hi rend="diaeresis">ⲓ</hi>ⲏⲩ ⲙ<hi rend="supraline">ⲛ</hi> ⲡⲁ<hi rend="diaeresis">ⲓ</hi>ⲱⲧ
+<lb n="4"/>ⲉⲧⲟⲩⲁⲁⲃ ⲁⲩⲱ ⲡⲁⲥⲟⲛ ⲍⲁⲏⲗ <choice><reg xml:lang="grc">κατά</reg><orig>ⲕⲁⲧⲁ</orig></choice> ⲑⲉ
+<lb n="5"/><hi rend="supraline">ⲛ</hi>ⲧⲁⲧⲉⲕⲙⲛ<supplied reason="omitted">ⲧ</supplied>ⲓⲱⲧ ⲥϩⲁ<hi rend="diaeresis">ⲓ</hi> ⲛⲁ<hi rend="diaeresis">ⲓ</hi> <surplus>ⲉ</surplus>ⲉⲧⲃⲉ ⲛϣ<supplied reason="lost">ⲏ</supplied>
+<lb n="6" break="no"/>ⲣⲉ <hi rend="supraline">ⲛ</hi><hi rend="diaeresis">ⲓ</hi>ⲱⲁⲛⲛⲏⲥ ⲡ<choice><reg xml:lang="grc">πρεσβύτερος</reg><orig><expan>ⲡⲣ<ex>ⲉⲥⲃⲩⲧⲉⲣⲟⲥ</ex></expan></orig></choice> ⲛⲁⲙⲉ ⲁ<hi rend="diaeresis">ⲓ</hi>ϭⲛⲧⲥ <app type="editorial"><lem resp="PN L. Vanderheyden (photograph)">ⲉⲡⲕⲟ<supplied reason="lost">ⲩ</supplied>
+<lb n="7"/><hi rend="supraline">ⲛ</hi>ⲥⲟⲛ</lem><rdg>ⲉⲡⲕⲟ<lb n="7" break="no"/>ⲩ <hi rend="supraline">ⲛ</hi>ⲥⲟⲛ</rdg></app> ⲉⲧϩⲟⲗⲉ <choice><reg xml:lang="grc">κατά</reg><orig>ⲕⲁⲧⲁ</orig></choice> ⲧⲉⲩ<choice><reg xml:lang="grc">ὁμολογία</reg><orig>ϩⲟⲙⲟⲗⲟⲅⲓⲁ</orig></choice> ⲛⲧⲁⲩ
+<lb n="8" break="no"/>ⲧⲁⲙⲟ<hi rend="diaeresis">ⲓ</hi> ⲉⲣⲟⲥ ⲁⲩⲱ ⲟⲛ ⲉⲡϩⲓⲥⲉ ⲛⲧⲉ<choice><reg xml:lang="grc">χήρα</reg><orig>ⲭⲏⲣⲁ</orig></choice> ϩⲓ
+<lb n="9" break="no"/>ⲱⲱϥ <choice><reg xml:lang="grc">καί</reg><orig>ⲕⲁ<hi rend="diaeresis">ⲓ</hi></orig></choice> <add place="above"><choice><reg xml:lang="grc">γάρ</reg><orig>ⲅⲁⲣ</orig></choice></add> ⲁ<hi rend="diaeresis">ⲓ</hi>ⲥⲱⲧ<hi rend="supraline">ⲙ</hi> ϫⲉ ⲁⲕϫⲟⲟϥ ϫⲉ ⲉⲛⲉ<unclear>ⲩ</unclear>
+<lb n="10" break="no"/>ϫⲛⲟⲩⲥ ⲉⲗⲁⲁⲩ ϩⲛ ⲧⲉⲥ<choice><reg xml:lang="grc">τριμήσιον</reg><orig><expan>ⲧⲣⲉⲙ<ex>ⲙⲏⲥⲓⲟⲛ</ex></expan></orig></choice> <unclear>ⲏ</unclear>ⲧⲓ <app type="editorial"><lem resp="PN L. Vanderheyden (photograph)">ⲉϥⲧⲟⲟⲩⲛ ⲣ
+<lb n="11" break="no"/>ⲧⲁⲃ</lem><rdg>ⲉϥⲧⲟⲟⲩⲛ <lb n="11"/>ⲣⲧⲁⲃ</rdg></app> <hi rend="supraline">ⲛ</hi>ⲥⲟⲩⲟ ⲉⲓⲥ ϩⲏⲧⲏ ⲁⲥϯ <num value="5">ϯⲟⲩ</num> <app type="editorial"><lem resp="PN L. De Curtis (digital image)">ⲛ<hi rend="supraline">ⲛ</hi>ⲣⲧⲁⲃ ⲛⲁϥ 
+<lb n="12"/><choice><reg xml:lang="grc">καί</reg><orig>ⲕⲁ<hi rend="diaeresis">ⲓ</hi></orig></choice></lem><rdg>ⲛⲛⲣⲧⲁⲃ <lb n="12"/>ⲛⲁϥ <choice><reg xml:lang="grc">καί</reg><orig>ⲕⲁ<hi rend="diaeresis">ⲓ</hi></orig></choice></rdg></app> <choice><reg xml:lang="grc">γάρ</reg><orig>ⲅ<hi rend="supraline">ⲁⲣ</hi></orig></choice> <hi rend="supraline">ⲛ</hi>ⲧⲁ<hi rend="diaeresis">ⲓ</hi>ϭⲛ ⲧ<hi rend="supraline">ⲙ</hi>ⲉ <hi rend="supraline">ⲛ</hi>ⲧⲟⲟⲧ<hi rend="supraline">ϥ</hi> ⲙⲡⲉⲓⲱⲧ
+<lb n="13"/><choice><reg xml:lang="grc">καί</reg><orig>ⲕⲁ<hi rend="diaeresis">ⲓ</hi></orig></choice> <choice><reg xml:lang="grc">γάρ</reg><orig>ⲅ<hi rend="supraline">ⲁⲣ</hi></orig></choice> ⲕⲥⲟⲟⲩⲛ ϫⲉ ⲟⲩⲁⲧⲥⲱⲧ<hi rend="supraline">ⲙ</hi> ⲡⲉ ϩⲁⲑⲏ ⲙ
+<lb n="14" break="no"/>ⲡⲟⲟⲩ ⲧⲉⲛⲟⲩ ⲉⲓⲥ ϩⲏⲧⲏ ⲁ<hi rend="diaeresis">ⲓ</hi>ⲧⲁⲧⲟⲩ <app type="editorial"><lem resp="PN L. Vanderheyden (photograph)">ⲙ<hi rend="supraline">ⲛ</hi> ⲛⲉⲩⲉⲣ<supplied reason="lost">ⲏⲩ</supplied> 
+<lb n="15"/>ϫⲉ</lem><rdg>ⲙ<hi rend="supraline">ⲛ</hi> ⲛⲉⲩ<lb n="15" break="no"/>ⲉⲣ<supplied reason="lost">ⲏⲩ</supplied> ϫⲉ</rdg></app> ⲉⲛⲉⲟⲩ ⲟⲛ ⲛϩⲏⲧⲟⲩ ϫ<unclear>ⲱ</unclear>ⲣⲡ <app type="editorial"><lem resp="PN L. De Curtis (digital image)">ⲙ<hi rend="supraline">ⲛ</hi> ⲛⲉϥⲉⲣⲏⲩ ⲛ<gap reason="illegible" extent="unknown" unit="character"/>
+<lb n="16"/>ⲡⲉⲧⲛⲁϩⲱⲗⲉ</lem><rdg>ⲙ<hi rend="supraline">ⲛ</hi> ⲛⲉϥ<lb n="16" break="no"/>ⲉⲣⲏⲩ ⲛ<gap reason="illegible" quantity="3" unit="character"/> ⲡⲉⲧⲛⲁϩⲱⲗⲉ</rdg></app> ϯⲛⲁϫⲟⲟⲩ <app type="editorial"><lem resp="PN L. De Curtis (digital image)"><hi rend="supraline">ⲛ</hi>ⲁⲕ ⲟⲩϫⲁⲓ ϩⲙ <supplied reason="lost">ⲡϫⲟⲉⲓⲥ</supplied>
+<lb n="17"/>ⲧⲁⲁⲥ</lem><rdg><hi rend="supraline">ⲛ</hi>ⲁⲕ <lb n="17"/>ⲟⲩϫⲁⲓ ϩⲙ <supplied reason="lost">ⲡϫⲟⲉⲓⲥ</supplied> <lb n="18"/>ⲧⲁⲁⲥ</rdg></app> <hi rend="supraline">ⲙ</hi>ⲡⲙⲁ<supplied reason="lost">ⲓⲛⲟⲩ</supplied>
+<lb n="18" break="no"/>ⲧ<unclear>ⲉ</unclear> <unclear>ⲛ</unclear>ⲁ<gap reason="illegible" quantity="1" unit="character"/><gap reason="lost" extent="unknown" unit="character"/>
+</ab>
+            </div>
+      </body>
    </text>
 </TEI>
