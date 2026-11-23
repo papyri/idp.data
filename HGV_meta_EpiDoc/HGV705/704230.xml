@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv704230">
+<?xml-model href="https://epidoc.stoa.org/schema/8.13/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hgv704230">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -27,16 +28,27 @@
                </physDesc>
                <history>
                   <origin>
-                     <origPlace>unbekannt</origPlace>
-                     <origDate notBefore="0301" notAfter="0400" precision="low">IV</origDate>
+                     <origPlace>Hermopolites ?, Ägypten</origPlace>
+                     <origDate notBefore="0297" notAfter="0298" cert="low">297 - 298 (?)</origDate>
                   </origin>
+                  <provenance type="located">
+                     <p>
+                        <placeName n="1"
+                                   type="ancient"
+                                   subtype="nome"
+                                   cert="low"
+                                   ref="https://www.trismegistos.org/place/2720">Hermopolites</placeName>
+                        <placeName n="2" type="ancient" subtype="region">Ägypten</placeName>
+                     </p>
+                  </provenance>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>This file encoded to comply with EpiDoc Guidelines and Schema version 8
-                  <ref>http://www.stoa.org/epidoc/gl/5/</ref>
+         <p>
+        This file encoded to comply with EpiDoc Guidelines and Schema version 8
+        <ref>http://www.stoa.org/epidoc/gl/5/</ref>
          </p>
       </encodingDesc>
       <profileDesc>
@@ -51,12 +63,18 @@
          </langUsage>
          <textClass>
             <keywords scheme="hgv">
-               <term>Liste</term>
-               <term>Namen</term>
+               <term n="1">Liste</term>
+               <term n="2">Namen</term>
             </keywords>
          </textClass>
       </profileDesc>
       <revisionDesc>
+         <change when="2026-05-31T06:24:31-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Finalized - Ready.</change>
+         <change when="2026-05-31T05:05:03-04:00"
+                 who="http://papyri.info/editor/users/james.cowey">Vote - HGVAccept - Looks good.</change>
+         <change when="2026-05-31T04:52:18-04:00"
+                 who="http://papyri.info/editor/users/dkaltsas">Submit - Added bibliography in HGV, Bemerkungen.</change>
          <change who="HGV" when="2021-01-07">Record last modified</change>
          <change when="2021-01-07" who="IDP">Crosswalked to EpiDoc XML</change>
       </revisionDesc>
@@ -64,14 +82,14 @@
    <text>
       <body>
          <div type="commentary" subtype="general">
-            <p>Vielleicht nach 324 n.Chr.</p>
+            <p>Zur Datierung (297/298?) und zur möglichen Herkunft (Hermopolites?) vgl. D. Hagedorn, ZPE 207, 2018, 135.</p>
          </div>
          <div type="bibliography" subtype="principalEdition">
             <listBibl>
                <bibl type="publication" subtype="principal">
                   <title level="s" type="abbreviated">P.Eirene</title>
-                  <biblScope type="volume">4</biblScope>
-                  <biblScope type="numbers">39</biblScope>
+                  <biblScope n="1" type="volume">4</biblScope>
+                  <biblScope n="2" type="numbers">39</biblScope>
                </bibl>
             </listBibl>
          </div>
